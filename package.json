@@ -3,17 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --outfile=plugin.js src/plugin.ts",
-    "watch": "esbuild --target=es2018 --format=esm --platform=node --bundle --sourcemap=inline --watch --outfile=plugin.js src/plugin.ts"
+    "start": "node ./build.mjs",
+    "watch": "nodemon -i ./plugin.js -e ts,js,mjs,cjs,json"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.4.9",
     "esbuild": "^0.18.15",
+    "nodemon": "^3.0.1",
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "archipelago.js": "^1.1.0"
+    "archipelago.js": "^1.1.0",
+    "esbuild-plugin-polyfill-node": "^0.3.0"
   }
 }

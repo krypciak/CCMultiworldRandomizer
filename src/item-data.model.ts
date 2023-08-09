@@ -34,6 +34,7 @@ export interface RawChest {
 	amount: number;
 	type: ChestType;
 	condition: [area: string, ...conditions: string[]];
+	mwid?: number;
 }
 
 export type RawEvents = { [mapId: string]: RawEvent[] };
@@ -44,6 +45,7 @@ export interface RawEvent {
 	type: '';
 	condition: [area: string, ...conditions: string[]];
 	path: string;
+	mwid?: number;
 }
 
 export type RawElements = { [mapId: string]: RawElement };
@@ -54,6 +56,7 @@ export interface RawElement {
 	type: '';
 	condition: [area: string, ...conditions: string[]];
 	path: string;
+	mwid: number;
 }
 
 export type RawShops = { [shopName: string]: RawShop };

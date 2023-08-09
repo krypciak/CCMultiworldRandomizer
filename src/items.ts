@@ -1,1 +1,1 @@
-import {BASE_ITEM_ID, BASE_LOCATION_ID} from "./common.js"
+import {BASE_NORMAL_ITEM_ID} from "./common.js"

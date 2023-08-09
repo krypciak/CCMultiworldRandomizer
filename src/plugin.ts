@@ -1,4 +1,5 @@
 import * as ap from 'archipelago.js';
+const fs = require("fs");
 import {ItemData} from './item-data.model';
 
 declare const sc: any;
@@ -6,93 +7,70 @@ declare const ig: any;
 
 export default class MwRandomizer {
 	baseDirectory: string;
-	itemData: ItemData | null = null;
+	randoData: ItemData | null = null;
+	itemDB: any;
+	numItems: number = 0;
+
+	baseId: number = 300000;
+	baseNormalItemId: number = 300100;
 
 	constructor(mod: {baseDirectory: string}) {
 		console.log(arguments)
 		this.baseDirectory = mod.baseDirectory
 	}
 
+	getElementConstantFromComboId(comboId: number): number | null {
+		switch (comboId) {
+			case this.baseId:
+				return sc.PLAYER_CORE.ELEMENT_HEAT;
+			case this.baseId + 1:
+				return sc.PLAYER_CORE.ELEMENT_COLD;
+			case this.baseId + 2:
+				return sc.PLAYER_CORE.ELEMENT_SHOCK;
+			case this.baseId + 3:
+				return sc.PLAYER_CORE.ELEMENT_WAVE;
+			default:
+				return null;
+		}
+	}
+
+	getItemDataFromComboId(comboId: number): [itemId: number, quantity: number] {
+		if (this.numItems == 0) {
+			throw "Can't fetch item data before item database is loaded";
+		}
+
+		comboId -= this.baseNormalItemId;
+		return [comboId % this.numItems, (comboId / this.numItems) | 0 + 1];
+	}
+
 	async prestart() {
-		const item_data_buffer = await fs.promises.readFile(this.baseDirectory + "data/data.json");
-		this.itemData = JSON.parse(item_data_buffer as unknown as string);
+		const randoDataBuffer = await fs.promises.readFile(this.baseDirectory + "data/data.json");
+		let randoData: ItemData = JSON.parse(randoDataBuffer as unknown as string);
+		this.randoData = randoData;
+
+		const itemDBBuffer = await fs.promises.readFile(this.baseDirectory + "data/data.json");
+		let itemDB: ItemData = JSON.parse(itemDBBuffer as unknown as string);
+		this.itemDB = itemDB;
 
 		const client = new ap.Client();
-		await client.connect({
-			game: 'CrossCode',
-			hostname: 'localhost',
-			port: 38281,
-			items_handling: ap.ITEMS_HANDLING_FLAGS.REMOTE_DIFFERENT_WORLDS,
-			name: "CrossCodeTri",
-		});
+		// await client.connect({
+		// 	game: 'CrossCode',
+		// 	hostname: 'localhost',
+		// 	port: 38281,
+		// 	items_handling: ap.ITEMS_HANDLING_FLAGS.REMOTE_DIFFERENT_WORLDS,
+		// 	name: "CrossCodeTri",
+		// });
 
 		const pkg = client.data.package.get('CrossCode');
 		if (!pkg) {
 			throw new Error('Cannot read package');
 		}
 
-		const maps: { [mapName: string]: {
-			chests: { [mapId: string]: number },
-			events: { [mapId: string]: {
-				path: string,
-				locationId: number,
-			}[], },
-			element: { [element: number]: number }
-		} } = {};
-		const quests: { [name: string]: number } = {};
-
-		for (const [name, id] of Object.entries(pkg.location_name_to_id)) {
-			const [type, ...args] = name.split(';');
-			switch (type) {
-				case 'chest': {
-					const [map, mapId] = args;
-					maps[map] = maps[map] || { chests: {}, events: {}, element: {} };
-					maps[map].chests[mapId] = id;
-					break;
-				}
-				case 'event': {
-					const [map, mapId, path] = args;
-					maps[map] = maps[map] || { chests: {}, events: {}, element: {} };
-					maps[map].events[mapId] = maps[map].events[mapId] || [];
-					maps[map].events[mapId].push({
-						locationId: id,
-						path: path,
-					});
-					break;
-				}
-				case 'quest': {
-					const [name] = args;
-					quests[name] = id;
-					break;
-				}
-				case 'element': {
-					const [map, element] = args;
-					maps[map] = maps[map] || { chests: {}, events: {}, element: {} };
-					maps[map].element[sc.PLAYER_CORE[element]] = id;
-					break;
-				}
-			}
-		}
-
-		const items: {[apItemId: number]: {
-			id: string,
-			amount: number;
-		}} = {};
-		for (const [name, id] of Object.entries(pkg.item_name_to_id)) {
-			items[id] = {
-				id: name.split(';')[0],
-				amount: +name.split(';')[1],
-			};
-		}
-
 		client.addListener('ReceivedItems', packet => {
 			for (const item of packet.items) {
-				const local = items[item.item]
-				switch (local.id) {
-					case 'ELEMENT_HEAT':
-					case 'ELEMENT_COLD':
-					case 'ELEMENT_WAVE':
-					case 'ELEMENT_SHOCK':
+				let comboId = item.item;
+
+				if (comboId < this.baseNormalItemId) {
 						if (!sc.model.player.getCore(sc.PLAYER_CORE.ELEMENT_CHANGE)) {
 							sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_CHANGE, true);
 							sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_HEAT, false);
@@ -100,32 +78,34 @@ export default class MwRandomizer {
 							sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_WAVE, false);
 							sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_SHOCK, false);
 						}
-						sc.model.player.setCore(sc.PLAYER_CORE[local.id], true);
-						break;
-					default:
-						sc.model.player.addItem(Number(local.id), local.amount, false);
-						break;
+						let elementConstant = this.getElementConstantFromComboId(comboId);
+						if (elementConstant != null) {
+							sc.model.player.setCore(sc.PLAYER_CORE[elementConstant], true);
+						}
+				} else {
+					let [itemId, quantity] = this.getItemDataFromComboId(comboId);
+					sc.model.player.addItem(Number(itemId), quantity, false);
 				}
 			}
 		});
 
-
 		ig.ENTITY.Chest.inject({
 			_reallyOpenUp() {
-				const map = maps[ig.game.mapName];
+				const map = randoData.items[ig.game.mapName];
+				
 				if (!map) {
 					console.warn('Chest not in logic');
 					return this.parent();
 				}
 				const check = map.chests[this.mapId];
-				if (check === undefined) {
+				if (check === undefined || check.mwid === undefined) {
 					console.warn('Chest not in logic');
 					return this.parent();
 				}
 
 				const old = sc.ItemDropEntity.spawnDrops;
 				try {
-					client.locations.check(check);
+					client.locations.check(check.mwid);
 
 					this.amount = 0;
 					return this.parent();
@@ -135,13 +115,13 @@ export default class MwRandomizer {
 			}
 		});
 
-		const elementCores = [sc.PLAYER_CORE.ELEMENT_HEAT, sc.PLAYER_CORE.ELEMENT_COLD, sc.PLAYER_CORE.ELEMENT_WAVE, sc.PLAYER_CORE.ELEMENT_SHOCK];
 		ig.EVENT_STEP.SET_PLAYER_CORE.inject({
 			init(settings) {
 				this.bypass = !!settings.bypass;
 				this.alsoGiveElementChange = !!settings.alsoGiveElementChange;
 				return this.parent(settings);
 			},
+
 			start() {
 				if (this.alsoGiveElementChange) {
 					if (!sc.model.player.getCore(sc.PLAYER_CORE.ELEMENT_CHANGE)) {
