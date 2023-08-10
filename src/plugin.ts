@@ -221,7 +221,10 @@ export default class MwRandomizer {
 			},
 			onLevelLoaded(...args) {
 				this.parent(...args);
-				for (let i = Math.max(0, plugin.lastIndexSeen); i < client.items.received.length; i++) {
+				if (plugin.lastIndexSeen == null) {
+					plugin.lastIndexSeen = -1;
+				}
+				for (let i = plugin.lastIndexSeen + 1; i < client.items.received.length; i++) {
 					let item = client.items.received[i];
 					let comboId = item.item;
 					plugin.addMultiworldItem(comboId, i);
