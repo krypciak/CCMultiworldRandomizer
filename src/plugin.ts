@@ -12,7 +12,6 @@ export default class MwRandomizer {
 	randoData: ItemData | null = null;
 	itemdb: any;
 	numItems: number = 0;
-	lastIndexSeen: number = -1;
 
 	baseId: number = 300000;
 	baseNormalItemId: number = 300100;
@@ -22,6 +21,14 @@ export default class MwRandomizer {
 	constructor(mod: {baseDirectory: string}) {
 		console.log(arguments)
 		this.baseDirectory = mod.baseDirectory
+	}
+
+	get lastIndexSeen() {
+		return ig.vars.get("mw.lastIndexSeen");
+	}
+
+	set lastIndexSeen(index: number) {
+		ig.vars.set("mw.lastIndexSeen", index);
 	}
 
 	getElementConstantFromComboId(comboId: number): number | null {
@@ -214,9 +221,10 @@ export default class MwRandomizer {
 			},
 			onLevelLoaded(...args) {
 				this.parent(...args);
-				for (const [index, item] of client.items.received.entries()) {
+				for (let i = Math.max(0, plugin.lastIndexSeen); i < client.items.received.length; i++) {
+					let item = client.items.received[i];
 					let comboId = item.item;
-					plugin.addMultiworldItem(comboId, index);
+					plugin.addMultiworldItem(comboId, i);
 				}
 			}
 		});
