@@ -10,6 +10,7 @@ export interface ItemData {
 	shops: RawShops;
 	markers: Record<string, Marker[]>;
 	enemyData: EnemyData;
+	quests: RawQuests;
 }
 
 export type RawAreas = [from: string, type: '<->', to: string, ...conditions: string[]];
@@ -65,6 +66,15 @@ export interface RawShop {
 	scale: number;
 	area: string;
 	items: string[];
+}
+
+export type RawQuests = { [questName: string]: RawQuest };
+
+export interface RawQuest {
+	item: number;
+	amount: number;
+	condition: [area: string, ...conditions: string[]];
+	mwid?: number;
 }
 
 export interface Marker {

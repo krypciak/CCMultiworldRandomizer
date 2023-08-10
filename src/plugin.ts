@@ -1,5 +1,7 @@
-import * as ap from 'archipelago.js';
+// don't trust ts-server, you can't replace this `require`
 const fs = require("fs");
+
+import * as ap from 'archipelago.js';
 import {ItemData} from './item-data.model';
 
 declare const sc: any;
@@ -8,11 +10,14 @@ declare const ig: any;
 export default class MwRandomizer {
 	baseDirectory: string;
 	randoData: ItemData | null = null;
-	itemDB: any;
+	itemdb: any;
 	numItems: number = 0;
+	lastIndexSeen: number = -1;
 
 	baseId: number = 300000;
 	baseNormalItemId: number = 300100;
+
+	apClient: ap.Client | undefined = undefined;
 
 	constructor(mod: {baseDirectory: string}) {
 		console.log(arguments)
@@ -43,23 +48,54 @@ export default class MwRandomizer {
 		return [comboId % this.numItems, (comboId / this.numItems) | 0 + 1];
 	}
 
+	addMultiworldItem(comboId: number, index: number): void {
+		if (index <= this.lastIndexSeen) {
+			return;
+		}
+
+		if (comboId < this.baseNormalItemId) {
+				if (!sc.model.player.getCore(sc.PLAYER_CORE.ELEMENT_CHANGE)) {
+					sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_CHANGE, true);
+					sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_HEAT, false);
+					sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_COLD, false);
+					sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_WAVE, false);
+					sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_SHOCK, false);
+				}
+				let elementConstant = this.getElementConstantFromComboId(comboId);
+				if (elementConstant != null) {
+					sc.model.player.setCore(sc.PLAYER_CORE[elementConstant], true);
+				}
+		} else {
+			let [itemId, quantity] = this.getItemDataFromComboId(comboId);
+			sc.model.player.addItem(Number(itemId), quantity, false);
+		}
+
+		this.lastIndexSeen = index;
+	}
+
 	async prestart() {
 		const randoDataBuffer = await fs.promises.readFile(this.baseDirectory + "data/data.json");
 		let randoData: ItemData = JSON.parse(randoDataBuffer as unknown as string);
 		this.randoData = randoData;
 
-		const itemDBBuffer = await fs.promises.readFile(this.baseDirectory + "data/data.json");
-		let itemDB: ItemData = JSON.parse(itemDBBuffer as unknown as string);
-		this.itemDB = itemDB;
+		let maps = randoData.items;
+		let quests = randoData.quests;
+
+		const itemdbBuffer = await fs.promises.readFile("assets/data/item-database.json");
+		let itemdb = JSON.parse(itemdbBuffer as unknown as string);
+		this.itemdb = itemdb;
+		this.numItems = itemdb.items.length;
 
 		const client = new ap.Client();
-		// await client.connect({
-		// 	game: 'CrossCode',
-		// 	hostname: 'localhost',
-		// 	port: 38281,
-		// 	items_handling: ap.ITEMS_HANDLING_FLAGS.REMOTE_DIFFERENT_WORLDS,
-		// 	name: "CrossCodeTri",
-		// });
+		await client.connect({
+			game: 'CrossCode',
+			hostname: 'localhost',
+			port: 38281,
+			items_handling: ap.ITEMS_HANDLING_FLAGS.REMOTE_ALL,
+			name: "CrossCodeTri",
+		});
+
+		window.client = client;
 
 		const pkg = client.data.package.get('CrossCode');
 		if (!pkg) {
@@ -67,31 +103,20 @@ export default class MwRandomizer {
 		}
 
 		client.addListener('ReceivedItems', packet => {
-			for (const item of packet.items) {
+			let index = packet.index;
+			for (const [offset, item] of packet.items.entries()) {
 				let comboId = item.item;
-
-				if (comboId < this.baseNormalItemId) {
-						if (!sc.model.player.getCore(sc.PLAYER_CORE.ELEMENT_CHANGE)) {
-							sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_CHANGE, true);
-							sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_HEAT, false);
-							sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_COLD, false);
-							sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_WAVE, false);
-							sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_SHOCK, false);
-						}
-						let elementConstant = this.getElementConstantFromComboId(comboId);
-						if (elementConstant != null) {
-							sc.model.player.setCore(sc.PLAYER_CORE[elementConstant], true);
-						}
-				} else {
-					let [itemId, quantity] = this.getItemDataFromComboId(comboId);
-					sc.model.player.addItem(Number(itemId), quantity, false);
-				}
+				this.addMultiworldItem(comboId, index + offset);
 			}
 		});
 
+		// For those times JS decides to override `this`
+		// Used several times in the injection code
+		let plugin = this;
+
 		ig.ENTITY.Chest.inject({
 			_reallyOpenUp() {
-				const map = randoData.items[ig.game.mapName];
+				const map = maps[ig.game.mapName];
 				
 				if (!map) {
 					console.warn('Chest not in logic');
@@ -116,48 +141,29 @@ export default class MwRandomizer {
 		});
 
 		ig.EVENT_STEP.SET_PLAYER_CORE.inject({
-			init(settings) {
-				this.bypass = !!settings.bypass;
-				this.alsoGiveElementChange = !!settings.alsoGiveElementChange;
-				return this.parent(settings);
-			},
-
 			start() {
-				if (this.alsoGiveElementChange) {
-					if (!sc.model.player.getCore(sc.PLAYER_CORE.ELEMENT_CHANGE)) {
-						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_CHANGE, true);
-						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_HEAT, false);
-						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_COLD, false);
-						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_WAVE, false);
-						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_SHOCK, false);
-					}
-				}
-
-				if (this.bypass || !elementCores.includes(this.core) || !this.value) {
-					return this.parent();
-				}
-
 				const map = maps[ig.game.mapName];
-				if (!map) {
+				if (!map || !map.elements) {
 					return this.parent();
 				}
 
-				const check = map.element[this.core];
+				const check = map.elements[this.core];
 				if (check === undefined) {
 					return this.parent();
 				}
 				
-				client.locations.check(check);
+				client.locations.check(check.mwid);
 			}
 		});
 
 		ig.EVENT_STEP.SEND_ITEM = ig.EventStepBase.extend({
-			locationId: 0,
+			mwid: 0,
 			init(settings) {
-				this.locationId = settings.locationId;
+				this.mwid = settings.mwid;
 			},
 			start() {
-				client.locations.check(this.locationId);
+				console.log(`sending check for location ${this.mwid}`)
+				client.locations.check(this.mwid);
 			}
 		});
 
@@ -166,17 +172,19 @@ export default class MwRandomizer {
 				const mapOverrides = maps[map.name.replace(/[\\\/]/g, '.')];
 				if (mapOverrides) {
 					for (const entity of map.entities) {
-						if (entity
+						if (
+							entity
 							&& entity.settings
 							&& entity.settings.mapId
-							&& mapOverrides[entity.settings.mapId]
-							&& mapOverrides[entity.settings.mapId].events
-							&& mapOverrides[entity.settings.mapId].events[0]
-							&& mapOverrides[entity.settings.mapId].events[0].type === 'event') {
+							&& mapOverrides.events[entity.settings.mapId]
+						) {
 								for (const check of mapOverrides.events[entity.settings.mapId]) {
 									const path = check.path.slice(1).split(/\./g);
+									if (check.mwid == null) {
+										continue;
+									}
 									set(entity, 'SEND_ITEM', [...path, 'type']);
-									set(entity, check.locationId, [...path, 'locationId']);
+									set(entity, check.mwid, [...path, 'mwid']);
 								}
 							}
 					}
@@ -192,9 +200,31 @@ export default class MwRandomizer {
 				if (check === undefined) {
 					return this.parent(quest);
 				}
-				client.locations.check(check);
+				if (check.mwid === undefined) {
+					return this.parent(arguments);
+				}
+				client.locations.check(check.mwid);
 			}
 		});
+
+		ig.Storage.inject({
+			loadSlot(...args) {
+				this.parent(...args);
+				client.updateStatus(ap.CLIENT_STATUS.PLAYING);
+			},
+			onLevelLoaded(...args) {
+				this.parent(...args);
+				for (const [index, item] of client.items.received.entries()) {
+					let comboId = item.item;
+					plugin.addMultiworldItem(comboId, index);
+				}
+			}
+		});
+	}
+
+	async main() {
+		console.log("main");
+		this.apClient?.updateStatus(ap.CLIENT_STATUS.READY);
 	}
 }
 
