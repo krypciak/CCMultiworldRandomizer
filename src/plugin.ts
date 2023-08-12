@@ -350,6 +350,7 @@ export default class MwRandomizer {
 		sc.fontsystem.font.pushIconSet(mwIcons);
 		sc.fontsystem.font.setMapping({
 			"mw-item": [index, 0],
+			"ap-logo": [index, 1],
 		});
 
 		// And for my next trick I will rip off ItemContent and ItemHudGui from the base game
@@ -376,7 +377,7 @@ export default class MwRandomizer {
 
 				let playerName = playerObj?.name ?? "Archipelago";
 
-				let text = `\\i[mw-item] Sent \\c[3]${itemName}\\c[0] to \\c[3]${playerObj?.name}\\c[0]`;
+				let text = `\\i[ap-logo] Sent \\c[3]${itemName}\\c[0] to \\c[3]${playerObj?.name}\\c[0]`;
 				let isNormalSize = sc.options.get("item-hud-size") == sc.ITEM_HUD_SIZE.NORMAL;
 
 				this.textGui = new sc.TextGui(text, {
