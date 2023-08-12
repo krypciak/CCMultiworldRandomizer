@@ -174,7 +174,8 @@ export default class MwRandomizer {
 		} catch (e) {
 			sc.Dialogs.showErrorDialog(
 				"Could not connect to Archipelago server. " +
-					"You can still play, but your progress will not be uploaded until " +
+					"You may still be able to play if you have logged in to this server before, " + 
+					"but your progress will not be uploaded until " +
 					"you connect to the server.",
 				true
 			);
