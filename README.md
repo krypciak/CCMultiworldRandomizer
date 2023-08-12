@@ -15,3 +15,5 @@ Checklist:
 - [ ] Support for multiple slots
   - [x] Connect to AP server on load game, disconnect on quit game
   - [ ] Cache connection details in save file
+- [ ] Settle on a final AP item icon
+  - See `assets/icons.png` for options
