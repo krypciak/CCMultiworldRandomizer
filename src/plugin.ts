@@ -61,7 +61,8 @@ export default class MwRandomizer {
 		}
 
 		comboId -= this.baseNormalItemId;
-		return [comboId % this.numItems, (comboId / this.numItems) | 0 + 1];
+		debugger;
+		return [comboId % this.numItems, (comboId / this.numItems + 1) | 0];
 	}
 
 	addMultiworldItem(comboId: number, index: number): void {
@@ -315,21 +316,16 @@ export default class MwRandomizer {
 			}
 		});
 
-		sc.FontSystem.inject({
-			init(...args) {
-				this.parent(...args);
-				let mwIcons = new ig.Font(
-					plugin.baseDirectory.substring(7) + "assets/icons.png",
-					16,
-					ig.MultiFont.ICON_START,
-				);
+		let mwIcons = new ig.Font(
+			plugin.baseDirectory.substring(7) + "assets/icons.png",
+			16,
+			ig.MultiFont.ICON_START,
+		);
 
-				let index = sc.fontsystem.font.iconSets.length;
-				sc.fontsystem.font.pushIconSet(mwIcons);
-				sc.fontsystem.font.setMapping({
-					"mw-item": [index, 0],
-				});
-			}
+		let index = sc.fontsystem.font.iconSets.length;
+		sc.fontsystem.font.pushIconSet(mwIcons);
+		sc.fontsystem.font.setMapping({
+			"mw-item": [index, 0],
 		});
 
 		// And for my next trick I will rip off ItemContent and ItemHudGui from the base game
@@ -337,9 +333,7 @@ export default class MwRandomizer {
 		sc.MultiWorldItemContent = ig.GuiElementBase.extend({
 			timer: 0,
 			id: -1,
-			amount: 0,
 			textGui: null,
-			amountGui: null,
 			init: function (mwid: number, player: number) {
 				this.parent();
 				this.id = mwid == void 0 ? -1 : mwid;
