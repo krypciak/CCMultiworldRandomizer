@@ -168,11 +168,27 @@ export default class MwRandomizer {
 	}
 
 	onStoragePostLoad() {
-		this.client.updateStatus(ap.CLIENT_STATUS.PLAYING);
-
-		if (this.locationInfo == null) {
-			this.storeAllLocationInfo();
+		if (this.client.status == ap.CONNECTION_STATUS.CONNECTED) {
+			this.client.disconnect();
 		}
+
+		this.client.connect({
+			game: 'CrossCode',
+			hostname: 'localhost',
+			port: 38281,
+			items_handling: ap.ITEMS_HANDLING_FLAGS.REMOTE_ALL,
+			name: "CrossCodeTri",
+		}).then(() => {
+			this.client.updateStatus(ap.CLIENT_STATUS.PLAYING);
+
+			if (this.locationInfo == null) {
+				this.storeAllLocationInfo();
+			}
+
+			this.onLevelLoaded();
+		}).catch(() => {
+			console.error("Could not connect to Archipelago server");
+		});
 	}
 
 	onLevelLoaded() {
@@ -202,22 +218,10 @@ export default class MwRandomizer {
 
 		this.numItems = itemdb.items.length;
 
-		await this.client.connect({
-			game: 'CrossCode',
-			hostname: 'localhost',
-			port: 38281,
-			items_handling: ap.ITEMS_HANDLING_FLAGS.REMOTE_ALL,
-			name: "CrossCodeTri",
-		});
 		let client = this.client;
 
 		// @ts-ignore
 		window.apclient = client;
-
-		const pkg = client.data.package.get('CrossCode');
-		if (!pkg) {
-			throw new Error('Cannot read package');
-		}
 
 		client.addListener('ReceivedItems', packet => {
 			let index = packet.index;
@@ -475,7 +479,6 @@ export default class MwRandomizer {
 					) {
 						this.addEntry(data.item, data.player);
 					}
-
 				} else if (model == sc.model) {
 					if (model.isReset()) {
 						this.clearContent();
@@ -510,7 +513,14 @@ export default class MwRandomizer {
 				this.parent(...args);
 				sc.multiWorldHud = new sc.MultiWorldHudBox();
 				sc.gui.rightHudPanel.addHudBox(sc.multiWorldHud);
-			}
+			},
+
+			gotoTitle(...args) {
+				if (client.status == ap.CONNECTION_STATUS.CONNECTED) {
+					client.disconnect();
+					this.parent(...args);
+				}
+			},
 		});
 	}
 

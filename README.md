@@ -7,11 +7,11 @@ Checklist:
 - [x] Send and recieve items
 - [x] GUI for sent items
 - [ ] Offline play support
-  - [ ] Don't crash upon connection failure
+  - [x] Don't crash upon connection failure
   - [ ] Cached local list of checked locations
 - [ ] Useable interface
   - [ ] Ability to set URL, port, and slot name outside of code
   - [ ] Ability to set URL, port, and slot name in-game
 - [ ] Support for multiple slots
-  - [ ] Connect to AP server on load game, disconnect on quit game
+  - [x] Connect to AP server on load game, disconnect on quit game
   - [ ] Cache connection details in save file
