@@ -167,26 +167,11 @@ export default class MwRandomizer {
 		}
 	}
 
-	onStoragePostLoad() {
-		if (this.client.status == ap.CONNECTION_STATUS.CONNECTED) {
-			this.client.disconnect();
-		}
-
-		this.client.connect({
-			game: 'CrossCode',
-			hostname: 'localhost',
-			port: 38281,
-			items_handling: ap.ITEMS_HANDLING_FLAGS.REMOTE_ALL,
-			name: "CrossCodeTri",
-		}).then(() => {
-			this.client.updateStatus(ap.CLIENT_STATUS.PLAYING);
-
-			if (this.locationInfo == null) {
-				this.storeAllLocationInfo();
-			}
-
-			this.onLevelLoaded();
-		}).catch(e => {
+	async login(info: ap.ConnectionInformation): Promise<ap.ConnectedPacket | null> {
+		let packet = null;
+		try {
+			packet = await this.client.connect(info);
+		} catch (e) {
 			sc.Dialogs.showErrorDialog(
 				"Could not connect to Archipelago server. " +
 					"You can still play, but your progress will not be uploaded until " +
@@ -194,7 +179,54 @@ export default class MwRandomizer {
 				true
 			);
 			console.error("Could not connect to Archipelago server: ", e);
-		});
+			return null;
+		}
+
+		this.connectionInfo = info;
+
+		this.client.updateStatus(ap.CLIENT_STATUS.PLAYING);
+
+		if (this.locationInfo == null) {
+			this.storeAllLocationInfo();
+		}
+
+		this.onLevelLoaded();
+
+		return packet;
+	}
+
+	onStoragePostLoad() {
+		if (this.client.status == ap.CONNECTION_STATUS.CONNECTED) {
+			this.client.disconnect();
+		}
+
+		if (!this.connectionInfo) {
+			console.log("Reading connection info from file");
+			// temporary -- import connection info from a JSON file
+			// eventually this will be a ui in game
+			readJsonFromFile("apConnection.json")
+				.catch(e => {
+					sc.Dialogs.showErrorDialog(
+						"Could not read 'apConnection.json'. " +
+							"If you want to play online, please create this file " + 
+							"and fill it with connection details.",
+						true
+					);
+					console.error("Could not read apConnection.json: ", e);
+				})
+				.then(file => {
+					this.login({
+						game: 'CrossCode',
+						hostname: file.hostname,
+						port: file.port,
+						items_handling: ap.ITEMS_HANDLING_FLAGS.REMOTE_ALL,
+						name: file.name,
+					});
+				});
+		} else {
+			console.log("Reading connection info from save file");
+			this.login(this.connectionInfo);
+		}
 	}
 
 	onLevelLoaded() {
