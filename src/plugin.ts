@@ -242,7 +242,7 @@ export default class MwRandomizer {
 					return this.parent();
 				}
 				
-				client.locations.check(check.mwid);
+				plugin.reallyCheckLocation(check.mwid);
 			}
 		});
 
@@ -252,8 +252,8 @@ export default class MwRandomizer {
 				this.mwid = settings.mwid;
 			},
 			start() {
-				console.log(`sending check for location ${this.mwid}`)
-				client.locations.check(this.mwid);
+				console.log(`sending check for location ${this.mwid}`);
+				plugin.reallyCheckLocation(this.mwid);
 			}
 		});
 
@@ -293,7 +293,7 @@ export default class MwRandomizer {
 				if (check.mwid === undefined) {
 					return this.parent(arguments);
 				}
-				client.locations.check(check.mwid);
+				plugin.reallyCheckLocation(check.mwid);
 			}
 		});
 
