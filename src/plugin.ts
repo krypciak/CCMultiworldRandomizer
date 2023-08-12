@@ -22,6 +22,7 @@ export default class MwRandomizer {
 
 	declare lastIndexSeen: number;
 	declare locationInfo: {[idx: number]: ap.NetworkItem};
+	declare connectionInfo: ap.ConnectionInformation;
 
 	defineVarProperty(name: string, igVar: string) {
 		Object.defineProperty(this, name, {
@@ -93,6 +94,11 @@ export default class MwRandomizer {
 			let locationInfoMap = {};
 			packet.locations.forEach((item: any) => {
 				let mwid: number = item.location;
+				
+				// cut down on save file space by not storing unimportant parts
+				// item.location is redundant because you'll have the key whenever that's relevant
+				// item.class is a string which is the same for every instance
+				// together this saves several kilobytes of space in the save data
 				delete item.location;
 				delete item.class;
 				// @ts-ignore
@@ -155,6 +161,9 @@ export default class MwRandomizer {
 			this.getLocationInfo([mwid], this.notifyItemsSent);
 		} else {
 			this.notifyItemsSent([loc]);
+
+			// cut down on save file space by not storing what we have already
+			delete this.locationInfo[loc.item];
 		}
 	}
 
@@ -167,7 +176,6 @@ export default class MwRandomizer {
 	}
 
 	onLevelLoaded() {
-		debugger;
 		if (this.lastIndexSeen == null) {
 			this.lastIndexSeen = -1;
 		}
@@ -181,6 +189,7 @@ export default class MwRandomizer {
 	async prestart() {
 		this.defineVarProperty("lastIndexSeen", "mw.lastIndexSeen");
 		this.defineVarProperty("locationInfo", "mw.locationInfo");
+		this.defineVarProperty("connectionInfo", "mw.connectionInfo");
 
 		let randoData: ItemData = await readJsonFromFile(this.baseDirectory + "data/data.json")
 		this.randoData = randoData;
@@ -193,15 +202,14 @@ export default class MwRandomizer {
 
 		this.numItems = itemdb.items.length;
 
-		const client = new ap.Client();
-		await client.connect({
+		await this.client.connect({
 			game: 'CrossCode',
 			hostname: 'localhost',
 			port: 38281,
 			items_handling: ap.ITEMS_HANDLING_FLAGS.REMOTE_ALL,
 			name: "CrossCodeTri",
 		});
-		this.client = client;
+		let client = this.client;
 
 		// @ts-ignore
 		window.apclient = client;
@@ -507,7 +515,6 @@ export default class MwRandomizer {
 	}
 
 	async main() {
-		this.client.updateStatus(ap.CLIENT_STATUS.READY);
 		ig.storage.register(this);
 	}
 }
