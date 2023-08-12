@@ -377,7 +377,7 @@ export default class MwRandomizer {
 
 				let playerName = playerObj?.name ?? "Archipelago";
 
-				let text = `\\i[ap-logo] Sent \\c[3]${itemName}\\c[0] to \\c[3]${playerObj?.name}\\c[0]`;
+				let text = `\\i[ap-logo] Sent \\c[3]${itemName}\\c[0] to \\c[3]${playerName}\\c[0]`;
 				let isNormalSize = sc.options.get("item-hud-size") == sc.ITEM_HUD_SIZE.NORMAL;
 
 				this.textGui = new sc.TextGui(text, {
