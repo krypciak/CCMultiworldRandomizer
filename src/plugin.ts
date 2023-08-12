@@ -344,7 +344,7 @@ export default class MwRandomizer {
 				this.parent();
 				this.id = mwid == void 0 ? -1 : mwid;
 				this.player = player;
-				this.timer = 7;
+				this.timer = 5;
 
 				let playerObj = client.players.get(player);
 				let destGameName = playerObj?.game;
