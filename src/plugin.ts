@@ -61,7 +61,6 @@ export default class MwRandomizer {
 		}
 
 		comboId -= this.baseNormalItemId;
-		debugger;
 		return [comboId % this.numItems, (comboId / this.numItems + 1) | 0];
 	}
 
@@ -143,6 +142,9 @@ export default class MwRandomizer {
 
 	notifyItemsSent(items: NetworkItem[]) {
 		for (const item of items) {
+			if (item.player == this.client.data.slot) {
+				continue;
+			}
 			sc.Model.notifyObserver(sc.model.player, sc.PLAYER_MSG.MW_ITEM_SENT, item);
 		}
 	}
