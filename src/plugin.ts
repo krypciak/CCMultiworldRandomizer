@@ -186,8 +186,14 @@ export default class MwRandomizer {
 			}
 
 			this.onLevelLoaded();
-		}).catch(() => {
-			console.error("Could not connect to Archipelago server");
+		}).catch(e => {
+			sc.Dialogs.showErrorDialog(
+				"Could not connect to Archipelago server. " +
+					"You can still play, but your progress will not be uploaded until " +
+					"you connect to the server.",
+				true
+			);
+			console.error("Could not connect to Archipelago server: ", e);
 		});
 	}
 
