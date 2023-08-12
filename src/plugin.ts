@@ -2,7 +2,9 @@
 const fs = require("fs");
 
 import * as ap from 'archipelago.js';
+import {NetworkItem} from 'archipelago.js';
 import {ItemData} from './item-data.model';
+import {readJsonFromFile} from './utils';
 
 declare const sc: any;
 declare const ig: any;
@@ -16,19 +18,26 @@ export default class MwRandomizer {
 	baseId: number = 300000;
 	baseNormalItemId: number = 300100;
 
-	apClient: ap.Client | undefined = undefined;
+	client: ap.Client;
+
+	declare lastIndexSeen: number;
+	declare locationInfo: {[idx: number]: ap.NetworkItem};
+
+	defineVarProperty(name: string, igVar: string) {
+		Object.defineProperty(this, name, {
+			get() {
+				return ig.vars.get(igVar);
+			},
+			set(newValue: any) {
+				ig.vars.set(igVar, newValue);
+			},
+		});
+	}
 
 	constructor(mod: {baseDirectory: string}) {
 		console.log(arguments)
 		this.baseDirectory = mod.baseDirectory
-	}
-
-	get lastIndexSeen() {
-		return ig.vars.get("mw.lastIndexSeen");
-	}
-
-	set lastIndexSeen(index: number) {
-		ig.vars.set("mw.lastIndexSeen", index);
+		this.client = new ap.Client();
 	}
 
 	getElementConstantFromComboId(comboId: number): number | null {
@@ -80,17 +89,86 @@ export default class MwRandomizer {
 		this.lastIndexSeen = index;
 	}
 
+	async storeAllLocationInfo() {
+		let listener = (packet: ap.LocationInfoPacket) => {
+			let locationInfoMap = {};
+			packet.locations.forEach((item: any) => {
+				let mwid: number = item.location;
+				delete item.location;
+				delete item.class;
+				// @ts-ignore
+				locationInfoMap[mwid] = item;
+
+				ig.vars.set("mw.locationInfo", locationInfoMap);
+			});
+
+			this.client.removeListener("LocationInfo", listener);
+		};
+
+		this.client.addListener('LocationInfo', listener);
+
+		this.client.locations.scout(
+			ap.CREATE_AS_HINT_MODE.NO_HINT,
+			...this.client.locations.missing
+		);
+	}
+
+	getLocationInfo(locations: number[], callback: (info: NetworkItem[]) => void) {
+		let listener = (packet: ap.LocationInfoPacket) => {
+			let matches = true;
+			for (let i = 0; i < locations.length; i++) {
+				if (packet.locations[i].location != locations[i]) {
+					matches = false;
+					break;
+				}
+			}
+
+			if (!matches) {
+				return;
+			}
+
+			this.client.removeListener("LocationInfo", listener);
+
+			callback(packet.locations);
+		};
+
+		this.client.addListener('LocationInfo', listener);
+
+		this.client.locations.scout(
+			ap.CREATE_AS_HINT_MODE.NO_HINT,
+			...locations
+		);
+	}
+
+	notifyItemsSent(items: NetworkItem[]) {
+		for (const item of items) {
+			sc.Model.notifyObserver(sc.model.player, sc.PLAYER_MSG.MW_ITEM_SENT, item);
+		}
+	}
+
+	async reallyCheckLocation(mwid: number) {
+		this.client.locations.check(mwid);
+		let loc = this.locationInfo[mwid];
+		if (loc == undefined) {
+			this.getLocationInfo([mwid], this.notifyItemsSent);
+		} else {
+			this.notifyItemsSent([loc]);
+		}
+	}
+
 	async prestart() {
-		const randoDataBuffer = await fs.promises.readFile(this.baseDirectory + "data/data.json");
-		let randoData: ItemData = JSON.parse(randoDataBuffer as unknown as string);
+		this.defineVarProperty("lastIndexSeen", "mw.lastIndexSeen");
+		this.defineVarProperty("locationInfo", "mw.locationInfo");
+
+		let randoData: ItemData = await readJsonFromFile(this.baseDirectory + "data/data.json")
 		this.randoData = randoData;
 
 		let maps = randoData.items;
 		let quests = randoData.quests;
 
-		const itemdbBuffer = await fs.promises.readFile("assets/data/item-database.json");
-		let itemdb = JSON.parse(itemdbBuffer as unknown as string);
+		let itemdb = await readJsonFromFile("assets/data/item-database.json");
 		this.itemdb = itemdb;
+
 		this.numItems = itemdb.items.length;
 
 		const client = new ap.Client();
@@ -101,8 +179,10 @@ export default class MwRandomizer {
 			items_handling: ap.ITEMS_HANDLING_FLAGS.REMOTE_ALL,
 			name: "CrossCodeTri",
 		});
+		this.client = client;
 
-		window.client = client;
+		// @ts-ignore
+		window.apclient = client;
 
 		const pkg = client.data.package.get('CrossCode');
 		if (!pkg) {
@@ -137,7 +217,7 @@ export default class MwRandomizer {
 
 				const old = sc.ItemDropEntity.spawnDrops;
 				try {
-					client.locations.check(check.mwid);
+					plugin.reallyCheckLocation(check.mwid);
 
 					this.amount = 0;
 					return this.parent();
@@ -229,13 +309,205 @@ export default class MwRandomizer {
 					let comboId = item.item;
 					plugin.addMultiworldItem(comboId, i);
 				}
+				if (this.locationInfo == null) {
+					plugin.storeAllLocationInfo(client);
+				}
+			}
+		});
+
+		sc.FontSystem.inject({
+			init(...args) {
+				this.parent(...args);
+				let mwIcons = new ig.Font(
+					plugin.baseDirectory.substring(7) + "assets/icons.png",
+					16,
+					ig.MultiFont.ICON_START,
+				);
+
+				let index = sc.fontsystem.font.iconSets.length;
+				sc.fontsystem.font.pushIconSet(mwIcons);
+				sc.fontsystem.font.setMapping({
+					"mw-item": [index, 0],
+				});
+			}
+		});
+
+		// And for my next trick I will rip off ItemContent and ItemHudGui from the base game
+		// pls don't sue
+		sc.MultiWorldItemContent = ig.GuiElementBase.extend({
+			timer: 0,
+			id: -1,
+			amount: 0,
+			textGui: null,
+			amountGui: null,
+			init: function (mwid: number, player: number) {
+				this.parent();
+				this.id = mwid == void 0 ? -1 : mwid;
+				this.player = player;
+				this.timer = 7;
+
+				let playerObj = client.players.get(player);
+				let destGameName = playerObj?.game;
+				let itemName = "Unknown";
+				if (destGameName != undefined) {
+					let gameInfo = client.data.package.get(destGameName)
+					if (gameInfo != undefined) {
+						itemName = gameInfo.item_id_to_name[mwid];
+					}
+				}
+
+				let playerName = playerObj?.name ?? "Archipelago";
+
+				let text = `\\i[mw-item] Sent \\c[3]${itemName}\\c[0] to \\c[3]${playerObj?.name}\\c[0]`;
+				let isNormalSize = sc.options.get("item-hud-size") == sc.ITEM_HUD_SIZE.NORMAL;
+
+				this.textGui = new sc.TextGui(text, {
+					speed: ig.TextBlock.SPEED.IMMEDIATE,
+					font: isNormalSize ? sc.fontsystem.font : sc.fontsystem.smallFont,
+				});
+				this.textGui.setAlign(ig.GUI_ALIGN.X_LEFT, ig.GUI_ALIGN.Y_CENTER);
+				this.addChildGui(this.textGui);
+
+				this.setSize(
+					this.textGui.hook.size.x + 4,
+					isNormalSize ? 18 : 8
+				);
+
+				this.hook.pivot.x = this.hook.size.x;
+				this.hook.pivot.y = 0;
+			},
+
+			updateOption: function (isNormalSize: boolean) {
+				if (isNormalSize) {
+					if (this.textGui.font == sc.fontsystem.font) return;
+					this.textGui.setFont(sc.fontsystem.font);
+				} else {
+					if (this.textGui.font == sc.fontsystem.smallFont) return;
+					this.textGui.setFont(sc.fontsystem.smallFont);
+				}
+
+				this.setSize(
+					this.textGui.hook.size.x + 4,
+					isNormalSize ? 18 : 8
+				);
+			},
+
+			updateTimer: function () {
+				if (this.timer > 0) this.timer = this.timer - ig.system.tick;
+			},
+		});
+
+		sc.PLAYER_MSG["MW_ITEM_SENT"] = 300001;
+
+		sc.MultiWorldHudBox = sc.RightHudBoxGui.extend({
+			delayedStack: [],
+			size: 0,
+
+			init: function() {
+				this.parent("ARCHIPELAGO");
+				this.size = sc.options.get("item-hud-size");
+				sc.Model.addObserver(sc.model.player, this);
+				sc.Model.addObserver(sc.model, this);
+				sc.Model.addObserver(sc.options, this);
+			},
+
+			addEntry: function (mwid: number, player: number) {
+				let entry = new sc.MultiWorldItemContent(mwid, player);
+				if (this.contentEntries.length >= 5) {
+					this.delayedStack.push(entry);
+				} else {
+					this.pushContent(entry, true);
+				}
+				this.hidden && this.show();
+			},
+
+			update: function () {
+				if (!sc.model.isPaused() && !sc.model.isMenu() && !this.hidden) {
+					for (let i = this.contentEntries.length, gui = null; i--; ) {
+						gui = this.contentEntries[i].subGui;
+						gui.updateTimer();
+
+						if (gui.timer <= 0) {
+							gui = this.removeContent(i);
+							if (i == 0 && this.contentEntries.length == 0)
+								gui.hook.pivot.y = gui.hook.size.y / 2;
+							else {
+								gui.hook.pivot.y = 0;
+								gui.hook.anim.timeFunction = KEY_SPLINES.EASE_OUT;
+							}
+							this._popDelayed();
+						}
+					}
+
+					!this.hidden && this.contentEntries.length == 0 && this.hide();
+				}
+			},
+
+			_popDelayed: function () {
+				if (this.delayedStack.length != 0) {
+					var b = this.delayedStack.splice(0, 1)[0];
+					this.pushContent(b, true);
+				}
+			},
+
+			_updateSizes: function (isNormalSize: boolean) {
+				for (var i = this.contentEntries.length, gui = null; i--; ) {
+					gui = this.contentEntries[i];
+					gui.subGui.updateOption(isNormalSize);
+					gui.setContent(gui.subGui);
+				}
+				this.rearrangeContent();
+			},
+
+			modelChanged: function (model: any, msg: number, data: any) {
+				if (model == sc.model.player) {
+					if (
+						msg == sc.PLAYER_MSG.MW_ITEM_SENT &&
+						sc.options.get("show-items")
+					) {
+						this.addEntry(data.item, data.player);
+					}
+
+				} else if (model == sc.model) {
+					if (model.isReset()) {
+						this.clearContent();
+						this.delayedStack.length = 0;
+						this.hide();
+					} else if (
+						model.isCutscene() ||
+						model.isHUDBlocked() ||
+						sc.quests.hasQuestSolvedDialogs()
+					) {
+							this.hide()
+					} else if (
+						!model.isCutscene() &&
+						!model.isHUDBlocked() &&
+						this.contentEntries.length > 0 &&
+						!sc.quests.hasQuestSolvedDialogs()
+					) {
+						this.show();
+					}
+				} else if (model == sc.options && msg == sc.OPTIONS_EVENT.OPTION_CHANGED) {
+					model = sc.options.get("item-hud-size");
+					if (model != this.size) {
+						this._updateSizes(model == sc.ITEM_HUD_SIZE.NORMAL);
+						this.size = model;
+					}
+				}
+			},
+		});
+
+		sc.CrossCode.inject({
+			init(...args) {
+				this.parent(...args);
+				sc.multiWorldHud = new sc.MultiWorldHudBox();
+				sc.gui.rightHudPanel.addHudBox(sc.multiWorldHud);
 			}
 		});
 	}
 
 	async main() {
-		console.log("main");
-		this.apClient?.updateStatus(ap.CLIENT_STATUS.READY);
+		this.client.updateStatus(ap.CLIENT_STATUS.READY);
 	}
 }
 
