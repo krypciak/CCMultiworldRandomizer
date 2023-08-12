@@ -35,7 +35,6 @@ export default class MwRandomizer {
 	}
 
 	constructor(mod: {baseDirectory: string}) {
-		console.log(arguments)
 		this.baseDirectory = mod.baseDirectory
 		this.client = new ap.Client();
 	}
@@ -159,6 +158,26 @@ export default class MwRandomizer {
 		}
 	}
 
+	onStoragePostLoad() {
+		this.client.updateStatus(ap.CLIENT_STATUS.PLAYING);
+
+		if (this.locationInfo == null) {
+			this.storeAllLocationInfo();
+		}
+	}
+
+	onLevelLoaded() {
+		debugger;
+		if (this.lastIndexSeen == null) {
+			this.lastIndexSeen = -1;
+		}
+		for (let i = this.lastIndexSeen + 1; i < this.client.items.received.length; i++) {
+			let item = this.client.items.received[i];
+			let comboId = item.item;
+			this.addMultiworldItem(comboId, i);
+		}
+	}
+
 	async prestart() {
 		this.defineVarProperty("lastIndexSeen", "mw.lastIndexSeen");
 		this.defineVarProperty("locationInfo", "mw.locationInfo");
@@ -252,7 +271,6 @@ export default class MwRandomizer {
 				this.mwid = settings.mwid;
 			},
 			start() {
-				console.log(`sending check for location ${this.mwid}`);
 				plugin.reallyCheckLocation(this.mwid);
 			}
 		});
@@ -298,23 +316,9 @@ export default class MwRandomizer {
 		});
 
 		ig.Storage.inject({
-			loadSlot(...args) {
-				this.parent(...args);
-				client.updateStatus(ap.CLIENT_STATUS.PLAYING);
-			},
 			onLevelLoaded(...args) {
 				this.parent(...args);
-				if (plugin.lastIndexSeen == null) {
-					plugin.lastIndexSeen = -1;
-				}
-				for (let i = plugin.lastIndexSeen + 1; i < client.items.received.length; i++) {
-					let item = client.items.received[i];
-					let comboId = item.item;
-					plugin.addMultiworldItem(comboId, i);
-				}
-				if (this.locationInfo == null) {
-					plugin.storeAllLocationInfo(client);
-				}
+				plugin.onLevelLoaded();
 			}
 		});
 
@@ -504,6 +508,7 @@ export default class MwRandomizer {
 
 	async main() {
 		this.client.updateStatus(ap.CLIENT_STATUS.READY);
+		ig.storage.register(this);
 	}
 }
 
