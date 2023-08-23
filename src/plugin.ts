@@ -23,6 +23,7 @@ export default class MwRandomizer {
 	declare lastIndexSeen: number;
 	declare locationInfo: {[idx: number]: ap.NetworkItem};
 	declare connectionInfo: ap.ConnectionInformation;
+	declare localCheckedLocations: number[];
 
 	defineVarProperty(name: string, igVar: string) {
 		Object.defineProperty(this, name, {
@@ -155,7 +156,13 @@ export default class MwRandomizer {
 	}
 
 	async reallyCheckLocation(mwid: number) {
+		if (this.localCheckedLocations.indexOf(mwid) >= 0) {
+			return;
+		}
+
 		this.client.locations.check(mwid);
+		this.localCheckedLocations.push(mwid);
+
 		let loc = this.locationInfo[mwid];
 		if (loc == undefined) {
 			this.getLocationInfo([mwid], this.notifyItemsSent);
@@ -167,10 +174,9 @@ export default class MwRandomizer {
 		}
 	}
 
-	async login(info: ap.ConnectionInformation): Promise<ap.ConnectedPacket | null> {
-		let packet = null;
+	async login(info: ap.ConnectionInformation) {
 		try {
-			packet = await this.client.connect(info);
+			await this.client.connect(info);
 		} catch (e) {
 			sc.Dialogs.showErrorDialog(
 				"Could not connect to Archipelago server. " +
@@ -180,7 +186,6 @@ export default class MwRandomizer {
 				true
 			);
 			console.error("Could not connect to Archipelago server: ", e);
-			return null;
 		}
 
 		this.connectionInfo = info;
@@ -191,12 +196,23 @@ export default class MwRandomizer {
 			this.storeAllLocationInfo();
 		}
 
-		this.onLevelLoaded();
+		let checkedSet = new Set(this.client.locations.checked);
 
-		return packet;
+		for (const location of this.localCheckedLocations) {
+			if (!checkedSet.has(location)) {
+				this.reallyCheckLocation(location);
+			}
+		}
+
+		this.onLevelLoaded();
 	}
 
 	onStoragePostLoad() {
+		debugger;
+		if (!this.localCheckedLocations) {
+			this.localCheckedLocations = [];
+		}
+
 		if (this.client.status == ap.CONNECTION_STATUS.CONNECTED) {
 			this.client.disconnect();
 		}
@@ -245,6 +261,7 @@ export default class MwRandomizer {
 		this.defineVarProperty("lastIndexSeen", "mw.lastIndexSeen");
 		this.defineVarProperty("locationInfo", "mw.locationInfo");
 		this.defineVarProperty("connectionInfo", "mw.connectionInfo");
+		this.defineVarProperty("localCheckedLocations", "mw.checkedLocations");
 
 		let randoData: ItemData = await readJsonFromFile(this.baseDirectory + "data/data.json")
 		this.randoData = randoData;
