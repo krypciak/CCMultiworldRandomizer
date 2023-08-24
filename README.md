@@ -6,9 +6,9 @@ Checklist:
 
 - [x] Send and recieve items
 - [x] GUI for sent items
-- [ ] Offline play support
+- [x] Offline play support
   - [x] Don't crash upon connection failure
-  - [ ] Cached local list of checked locations
+  - [x] Cached local list of checked locations
 - [ ] Useable interface
   - [x] Ability to set URL, port, and slot name outside of code
   - [ ] Ability to set URL, port, and slot name in-game

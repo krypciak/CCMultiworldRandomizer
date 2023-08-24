@@ -156,12 +156,7 @@ export default class MwRandomizer {
 	}
 
 	async reallyCheckLocation(mwid: number) {
-		if (this.localCheckedLocations.indexOf(mwid) >= 0) {
-			return;
-		}
-
 		this.client.locations.check(mwid);
-		this.localCheckedLocations.push(mwid);
 
 		let loc = this.locationInfo[mwid];
 		if (loc == undefined) {
@@ -172,6 +167,12 @@ export default class MwRandomizer {
 			// cut down on save file space by not storing what we have already
 			delete this.locationInfo[loc.item];
 		}
+
+		if (this.localCheckedLocations.indexOf(mwid) >= 0) {
+			return;
+		}
+
+		this.localCheckedLocations.push(mwid);
 	}
 
 	async login(info: ap.ConnectionInformation) {
@@ -208,7 +209,6 @@ export default class MwRandomizer {
 	}
 
 	onStoragePostLoad() {
-		debugger;
 		if (!this.localCheckedLocations) {
 			this.localCheckedLocations = [];
 		}
@@ -575,8 +575,8 @@ export default class MwRandomizer {
 			gotoTitle(...args) {
 				if (client.status == ap.CONNECTION_STATUS.CONNECTED) {
 					client.disconnect();
-					this.parent(...args);
 				}
+				this.parent(...args);
 			},
 		});
 	}
