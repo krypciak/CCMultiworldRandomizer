@@ -187,6 +187,8 @@ export default class MwRandomizer {
 				true
 			);
 			console.error("Could not connect to Archipelago server: ", e);
+
+			return;
 		}
 
 		this.connectionInfo = info;
