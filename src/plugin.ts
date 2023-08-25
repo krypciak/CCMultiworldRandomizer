@@ -71,17 +71,17 @@ export default class MwRandomizer {
 		}
 
 		if (comboId < this.baseNormalItemId) {
-				if (!sc.model.player.getCore(sc.PLAYER_CORE.ELEMENT_CHANGE)) {
-					sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_CHANGE, true);
-					sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_HEAT, false);
-					sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_COLD, false);
-					sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_WAVE, false);
-					sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_SHOCK, false);
-				}
-				let elementConstant = this.getElementConstantFromComboId(comboId);
-				if (elementConstant != null) {
-					sc.model.player.setCore(sc.PLAYER_CORE[elementConstant], true);
-				}
+			if (!sc.model.player.getCore(sc.PLAYER_CORE.ELEMENT_CHANGE)) {
+				sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_CHANGE, true);
+				sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_HEAT, false);
+				sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_COLD, false);
+				sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_WAVE, false);
+				sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_SHOCK, false);
+			}
+			let elementConstant = this.getElementConstantFromComboId(comboId);
+			if (elementConstant != null) {
+				sc.model.player.setCore(elementConstant, true);
+			}
 		} else {
 			let [itemId, quantity] = this.getItemDataFromComboId(comboId);
 			sc.model.player.addItem(Number(itemId), quantity, false);
