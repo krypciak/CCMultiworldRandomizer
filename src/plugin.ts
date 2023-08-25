@@ -209,10 +209,6 @@ export default class MwRandomizer {
 	}
 
 	onStoragePostLoad() {
-		if (!this.localCheckedLocations) {
-			this.localCheckedLocations = [];
-		}
-
 		if (this.client.status == ap.CONNECTION_STATUS.CONNECTED) {
 			this.client.disconnect();
 		}
@@ -250,6 +246,11 @@ export default class MwRandomizer {
 		if (this.lastIndexSeen == null) {
 			this.lastIndexSeen = -1;
 		}
+
+		if (!this.localCheckedLocations) {
+			this.localCheckedLocations = [];
+		}
+
 		for (let i = this.lastIndexSeen + 1; i < this.client.items.received.length; i++) {
 			let item = this.client.items.received[i];
 			let comboId = item.item;
