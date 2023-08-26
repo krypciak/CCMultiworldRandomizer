@@ -191,6 +191,14 @@ export default class MwRandomizer {
 			return;
 		}
 
+		this.client.addListener('ReceivedItems', packet => {
+			let index = packet.index;
+			for (const [offset, item] of packet.items.entries()) {
+				let comboId = item.item;
+				this.addMultiworldItem(comboId, index + offset);
+			}
+		});
+
 		this.connectionInfo = info;
 
 		this.client.updateStatus(ap.CLIENT_STATUS.PLAYING);
@@ -281,14 +289,6 @@ export default class MwRandomizer {
 
 		// @ts-ignore
 		window.apclient = client;
-
-		client.addListener('ReceivedItems', packet => {
-			let index = packet.index;
-			for (const [offset, item] of packet.items.entries()) {
-				let comboId = item.item;
-				this.addMultiworldItem(comboId, index + offset);
-			}
-		});
 
 		// For those times JS decides to override `this`
 		// Used several times in the injection code
