@@ -323,10 +323,10 @@ export default class MwRandomizer {
 		ig.EVENT_STEP.SET_PLAYER_CORE.inject({
 			start() {
 				if (
-					this.core != "ELEMENT_HEAT" &&
-					this.core != "ELEMENT_COLD" &&
-					this.core != "ELEMENT_SHOCK" &&
-					this.core != "ELEMENT_WAVE"
+					this.core != sc.PLAYER_CORE.ELEMENT_HEAT &&
+					this.core != sc.PLAYER_CORE.ELEMENT_COLD &&
+					this.core != sc.PLAYER_CORE.ELEMENT_SHOCK &&
+					this.core != sc.PLAYER_CORE.ELEMENT_WAVE
 				) {
 					return this.parent();
 				}
