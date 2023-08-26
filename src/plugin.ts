@@ -3,7 +3,7 @@ const fs = require("fs");
 
 import * as ap from 'archipelago.js';
 import {NetworkItem} from 'archipelago.js';
-import {ItemData} from './item-data.model';
+import {ItemData, RawElement} from './item-data.model';
 import {readJsonFromFile} from './utils';
 
 declare const sc: any;
@@ -322,12 +322,26 @@ export default class MwRandomizer {
 
 		ig.EVENT_STEP.SET_PLAYER_CORE.inject({
 			start() {
+				if (
+					this.core != "ELEMENT_HEAT" &&
+					this.core != "ELEMENT_COLD" &&
+					this.core != "ELEMENT_SHOCK" &&
+					this.core != "ELEMENT_WAVE"
+				) {
+					return this.parent();
+				}
+
+				// do not disable elements
+				if (!this.value) {
+					return;
+				}
+
 				const map = maps[ig.game.mapName];
 				if (!map || !map.elements) {
 					return this.parent();
 				}
 
-				const check = map.elements[this.core];
+				const check = Object.values(map.elements)[0] as RawElement;
 				if (check === undefined) {
 					return this.parent();
 				}
