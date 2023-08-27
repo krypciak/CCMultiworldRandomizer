@@ -52,6 +52,22 @@ You will know if the mod is working when you get to space for the first time and
 
 Courtesy of Lurch9229, you can have a fancier interface for tracking your progress. [See here for information](https://github.com/lurch9229/CrossCode-Poptracker-AP).
 
+## How to get support
+
+First off, thank you for beta testing! I truly appreciate it.
+
+Second off, please make sure you are using the most recent version of both the mod and the APWorld. I will not provide support for outdated versions of either.
+
+With that out of the way, here's what to do:
+1. Join the [Archipelago discord server](https://discord.gg/8Z65BR2).
+2. Follow the CrossCode thread in the `#future-game-design` forum.
+3. Post the following details about your issue:
+  * What you did leading up to the issue.
+  * The *expected* behavior.
+  * The *actual* behavior (in enough detail that I could feasibly reproduce it).
+
+I'm pretty active on Discord, so I should see your message within a few hours. For bugs that have a quick fix, I have generally been able to address them within a week. For more sophisticated bugs or for bugs that I suspect are hidden in code that will be rewritten later, I'll modify this page to include a workaround until such time as I can actually fix it.
+
 # A note on versions
 
 Every `x.0.0` version and every `0.y.0` version defines a new connection interface between client and server. In other words, You can use any mod with version `0.1.a` to talk to any server with an APWorld of version `0.1.b` server, regardless of what `a` and `b` are, but a client with version `0.2.a` and a server with version `0.1.b` will not be able to talk to each other. Similarly, `1.a.b` can talk to `1.c.d` but `2.a.b` cannot talk to `1.c.d`.
