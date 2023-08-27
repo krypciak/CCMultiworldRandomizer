@@ -8,7 +8,7 @@ This is still under *heavy* development, though it does work if you're willing t
 
 Either:
 1. Download the [CrossCode development branch](https://github.com/CodeTriangle/Archipelago) and follow the [instructions for running from source](https://github.com/CodeTriangle/Archipelago/blob/crosscode-dev/docs/running%20from%20source.md).
-2. Download the APWorld file from the [releases page of the CrossCode development branch](https://github.com/CodeTriangle/Archipelago/releases) and put it into `lib/worlds` in your Archipelago folder downloaded from the [main Archipelago releases page](https://github.com/ArchipelagoMW/Archipelago/releases).
+2. Download the APWorld file from the [releases page of the CrossCode development branch](https://github.com/CodeTriangle/Archipelago/releases/latest) and put it into `lib/worlds` in your Archipelago folder. **This integration requires at least 0.4.2 RC to roll the seed**.
 
 Then put your yamls in the `Players` directory and run the `Generate` program. If you need a yaml to build off of, this should work:
 ```yaml
@@ -26,7 +26,7 @@ You should be able to use the `MultiServer` program from any up-to-date Archipel
 
 ## How to join a multiworld with crosscode seeds
 
-Install [CCLoader2](https://wiki.c2dl.info/CCLoader), then download the *most recent* [CCMultiworldRandomizer release](https://github.com/CodeTriangle/CCMultiworldRandomizer/releases) and place it into the `assets/mods` directory.
+Install [CCLoader2](https://wiki.c2dl.info/CCLoader), then download the *most recent* [CCMultiworldRandomizer release](https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/latest) and place it into the `assets/mods` directory.
 
 For now, you need to input connection data manually. Create a file `apConnection.json` in the root directory of your CrossCode installation and put the following into it:
 ```json
