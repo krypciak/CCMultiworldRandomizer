@@ -62,9 +62,9 @@ With that out of the way, here's what to do:
 1. Join the [Archipelago discord server](https://discord.gg/8Z65BR2).
 2. Follow the CrossCode thread in the `#future-game-design` forum.
 3. Post the following details about your issue:
-  * What you did leading up to the issue.
-  * The *expected* behavior.
-  * The *actual* behavior (in enough detail that I could feasibly reproduce it).
+   * What you did leading up to the issue.
+   * The *expected* behavior.
+   * The *actual* behavior (in enough detail that I could feasibly reproduce it).
 
 I'm pretty active on Discord, so I should see your message within a few hours. For bugs that have a quick fix, I have generally been able to address them within a week. For more sophisticated bugs or for bugs that I suspect are hidden in code that will be rewritten later, I'll modify this page to include a workaround until such time as I can actually fix it.
 
