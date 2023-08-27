@@ -10,7 +10,15 @@ Either:
 1. Download the [CrossCode development branch](https://github.com/CodeTriangle/Archipelago) and follow the [instructions for running from source](https://github.com/CodeTriangle/Archipelago/blob/crosscode-dev/docs/running%20from%20source.md).
 2. Download the APWorld file from the [releases page of the CrossCode development branch](https://github.com/CodeTriangle/Archipelago/releases) and put it into `lib/worlds` in your Archipelago folder downloaded from the [main Archipelago releases page](https://github.com/ArchipelagoMW/Archipelago/releases).
 
-Then put your yamls in the `Players` directory and run the `Generate` program.
+Then put your yamls in the `Players` directory and run the `Generate` program. If you need a yaml to build off of, this should work:
+```yaml
+CrossCode:
+  start_inventory:
+    Green Leaf Shade: 1 # Remove this if you don't want to be able to access Autumn's Rise immediately.
+description: Example yaml from https://github.com/CodeTriangle/Archipelago
+game: CrossCode
+name: CrossCodeTri
+```
 
 ## How to host a multiworld with crosscode seeds
 
