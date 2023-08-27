@@ -40,6 +40,10 @@ Until further notice, you need to **save and reload your game** before collectin
 
 You will know if the mod is working when you get to space for the first time and you don't recieve the Disc of Insight and Green Leaf Shade as expected.
 
+## Optional poptracker package
+
+Courtesy of Lurch9229, you can have a fancier interface for tracking your progress. [See here for information](https://github.com/lurch9229/CrossCode-Poptracker-AP).
+
 # A note on versions
 
 Every `x.0.0` version and every `0.y.0` version defines a new connection interface between client and server. In other words, You can use any mod with version `0.1.a` to talk to any server with an APWorld of version `0.1.b` server, regardless of what `a` and `b` are, but a client with version `0.2.a` and a server with version `0.1.b` will not be able to talk to each other. Similarly, `1.a.b` can talk to `1.c.d` but `2.a.b` cannot talk to `1.c.d`.
