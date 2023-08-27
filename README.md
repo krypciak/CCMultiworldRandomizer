@@ -18,7 +18,7 @@ You should be able to use the `MultiServer` program from any up-to-date Archipel
 
 ## How to join a multiworld with crosscode seeds
 
-Install CCLoader2 [(instructions)](https://wiki.c2dl.info/CCLoader), then download the pinned `.ccmod` and place it into the `assets/mods` directory.
+Install [CCLoader2](https://wiki.c2dl.info/CCLoader), then download the *most recent* [CCMultiworldRandomizer release](https://github.com/CodeTriangle/CCMultiworldRandomizer/releases) and place it into the `assets/mods` directory.
 
 For now, you need to input connection data manually. Create a file `apConnection.json` in the root directory of your CrossCode installation and put the following into it:
 ```json
