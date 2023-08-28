@@ -2,6 +2,10 @@
 
 This is still under *heavy* development, though it does work if you're willing to edit some files manually.
 
+# Discord server
+
+[**Join our Discord to help with alpha and beta testing.**](https://discord.gg/ZSWfgQdfGr)
+
 # Setup guide
 
 ## How to generate your own multiworld with crosscode seeds
@@ -59,7 +63,7 @@ First off, thank you for beta testing! I truly appreciate it.
 Second off, please make sure you are using the most recent version of both the mod and the APWorld. I will not provide support for outdated versions of either.
 
 With that out of the way, here's what to do:
-1. Join the [Archipelago discord server](https://discord.gg/8Z65BR2).
+1. Join our [testing discord server](https://discord.gg/ZSWfgQdfG).
 2. Follow the CrossCode thread in the `#future-game-design` forum.
 3. Post the following details about your issue:
    * What you did leading up to the issue.
