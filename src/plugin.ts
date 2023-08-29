@@ -6,9 +6,6 @@ import {NetworkItem} from 'archipelago.js';
 import {ItemData, RawElement} from './item-data.model';
 import {readJsonFromFile} from './utils';
 
-declare const sc: any;
-declare const ig: any;
-
 export default class MwRandomizer {
 	baseDirectory: string;
 	randoData: ItemData | null = null;
@@ -388,7 +385,7 @@ export default class MwRandomizer {
 		});
 
 		sc.QuestModel.inject({
-			_collectRewards(quest) {
+			collectRewards(quest) {
 				const check = quests[quest.id];
 				if (check === undefined) {
 					return this.parent(quest);
@@ -582,11 +579,204 @@ export default class MwRandomizer {
 			},
 		});
 
+		sc.APConnectionBox = ig.GuiElementBase.extend({
+			gfx: new ig.Image("media/gui/menu.png"),
+
+			transitions: {
+				DEFAULT: {
+					state: { alpha: 1 },
+					time: 0.2,
+					timeFunction: KEY_SPLINES.EASE_OUT,
+				},
+				HIDDEN: {
+					state: { alpha: 0 },
+					time: 0.2,
+					timeFunction: KEY_SPLINES.EASE_IN,
+				},
+			},
+
+			fields: [
+				{
+					key: "hostname",
+					label: "Hostname",
+				},
+				{
+					key: "port",
+					label: "Port",
+				},
+				{
+					key: "name",
+					label: "Slot Name",
+				}
+			],
+
+			textGuis: [],
+			inputGuis: [],
+
+			textColumnWidth: 0,
+			hSpacer: 3,
+			vSpacer: 3,
+
+			msgBox: null,
+			content: null,
+			buttons: [],
+			buttonInteract: null,
+			buttongroup: null,
+			callback: null,
+			back: null,
+			keepOpen: false,
+
+			init: function (callback: any) {
+				this.parent();
+
+				this.hook.zIndex = 9999999;
+				this.hook.localAlpha = 0.8;
+				this.hook.temporary = true;
+				this.hook.pauseGui = true;
+				this.hook.size.x = ig.system.width;
+				this.hook.size.y = ig.system.height;
+
+				this.callback = callback;
+
+				this.buttonInteract = new ig.ButtonInteractEntry();
+				this.buttongroup = new sc.ButtonGroup();
+				this.buttonInteract.pushButtonGroup(this.buttongroup);
+
+				this.buttongroup.addPressCallback((gui: any) => {
+					this.callback && gui.data != void 0 && this.callback(gui, this);
+				});
+
+				this.back = new sc.ButtonGui("", sc.BUTTON_DEFAULT_WIDTH);
+				this.back.data = -1;
+				this.back.submitSound = sc.BUTTON_SOUND.back;
+				this.back.onButtonPress = () => {
+					this.hide();
+					this.callback && this.callback(this.back);
+				};
+
+				this.buttonInteract.addGlobalButton(
+					this.back,
+					this.onBackButtonCheck.bind(this),
+				);
+
+				this.content = new ig.GuiElementBase();
+
+				for (let i = 0; i < this.fields.length; i++) {
+					let textGui = new sc.TextGui(this.fields[i].label);
+					this.textColumnWidth = Math.max(this.textColumnWidth, textGui.hook.size.x);
+					textGui.hook.pos.y = (textGui.hook.size.y + this.vSpacer) * i;
+					this.content.addChildGui(textGui);
+					this.textGuis.push(textGui);
+
+					let inputGui = new nax.ccuilib.InputField(200, textGui.hook.size.y);
+					this.buttongroup.addFocusGui(inputGui, 0, i);
+					inputGui.hook.pos.y = (textGui.hook.size.y + this.vSpacer) * i;
+					this.content.addChildGui(inputGui);
+					this.inputGuis.push(inputGui);
+				}
+ 
+				for (const gui of this.inputGuis) {
+					gui.hook.pos.x = this.textColumnWidth + this.hSpacer;
+				}
+
+				// let posX = 0;
+				// let posY = 0;
+
+				// if (labels) {
+				// 	var buttonContainer = new ig.GuiElementBase();
+				// 	buttonContainer.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_BOTTOM);
+
+				// 	for (let i = 0; i < labels.length; i++) {
+				// 		let button = new sc.ButtonGui(
+				// 			labels[i],
+				// 			sc.BUTTON_TOP_MENU_WIDTH,
+				// 			true,
+				// 			sc.BUTTON_TYPE.SMALL,
+				// 		);
+
+				// 		if (silent) {
+				// 			button.submitSound = null;
+				// 		}
+
+				// 		if (labels.length >= 4) {
+				// 			button.setPos(0, posX);
+				// 			posX = posX + (sc.BUTTON_TYPE.SMALL + 1);
+				// 			if (button.hook.size.x > posY) posY = button.hook.size.x;
+				// 			this.buttongroup.addFocusGui(button, 0, i);
+				// 		} else {
+				// 			button.setPos(posY, 0);
+				// 			posY = posY + (button.hook.size.x + 1);
+				// 			if (button.hook.size.y > posX) posX = button.hook.size.y;
+				// 			this.buttongroup.addFocusGui(button, i, 0);
+				// 		}
+
+				// 		button.data = i;
+				// 		this.buttons.push(button);
+				// 		buttonContainer.addChildGui(button);
+				// 	}
+
+				// 	buttonContainer.setSize(posY, posX);
+				// 	this.content.addChildGui(buttonContainer);
+				// }
+
+				// let d = Math.max(16, this.textGui.hook.size.x);
+				// if (posY > d) {
+				// 	d = posY;
+				// 	this.textGui.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_TOP);
+				// }
+
+				// let e = Math.max(16, this.textGui.hook.size.y + posX + 4);
+				this.content.setSize(
+					this.textColumnWidth + this.hSpacer + 200, 
+					this.textGuis[0].hook.size.y * this.textGuis.length + this.vSpacer * (this.textGuis.length - 1)
+				);
+
+				this.msgBox = new sc.CenterBoxGui(this.content);
+				this.msgBox.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_CENTER);
+				this.addChildGui(this.msgBox);
+				this.doStateTransition("HIDDEN", true);
+			},
+
+			updateDrawables: function (b) {
+				b.addColor("#000", 0, 0, this.hook.size.x, this.hook.size.y);
+			},
+
+			show: function () {
+				ig.interact.addEntry(this.buttonInteract);
+				ig.interact.setBlockDelay(0.2);
+				this.msgBox.doStateTransition("DEFAULT");
+				this.doStateTransition("DEFAULT");
+				this.buttons.length > 1 && sc.model.addChoiceGui(this);
+			},
+
+			hide: function () {
+				ig.interact.removeEntry(this.buttonInteract);
+				ig.interact.setBlockDelay(0.2);
+				this.msgBox.doStateTransition("HIDDEN");
+				this.doStateTransition("HIDDEN", false, true);
+				sc.model.removeChoiceGui(this);
+			},
+
+			invokeTopBackButton(a) {
+				console.log('meme');
+			},
+
+			onBackButtonCheck: function () {
+				return sc.control.menuBack();
+			},
+
+			onDetach: function () {},
+		});
+
 		sc.CrossCode.inject({
 			init(...args) {
 				this.parent(...args);
 				sc.multiWorldHud = new sc.MultiWorldHudBox();
 				sc.gui.rightHudPanel.addHudBox(sc.multiWorldHud);
+
+				sc.apConnectionGui = new sc.APConnectionBox((a) => {debugger});
+
+				ig.gui.addGuiElement(sc.apConnectionGui);
 			},
 
 			gotoTitle(...args) {

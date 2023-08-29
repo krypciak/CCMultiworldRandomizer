@@ -1,4 +1,9 @@
 {
+  "include": [
+    "src",
+    "node_modules/ultimate-crosscode-typedefs/crosscode-ccloader-all.d.ts",
+    "node_modules/nax-ccuilib/src/global.d.ts"
+  ],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
 

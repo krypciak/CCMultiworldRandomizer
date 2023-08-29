@@ -1,6 +1,10 @@
 {
     "id": "mw-rando",
-    "name": "Multiworld randomizer",
+    "title": "Multiworld randomizer",
     "version": "0.1.4",
-    "plugin": "plugin.js"
+    "plugin": "plugin.js",
+    "dependencies": {
+    	"open-world": ">=0.1.6",
+	"nax-ccuilib": ">=1.2"
+    }
 }
