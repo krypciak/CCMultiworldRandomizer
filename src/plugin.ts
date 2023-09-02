@@ -619,14 +619,12 @@ export default class MwRandomizer {
 
 			msgBox: null,
 			content: null,
-			buttons: [],
 			buttonInteract: null,
 			buttongroup: null,
-			callback: null,
 			back: null,
 			keepOpen: false,
 
-			init: function (callback: any) {
+			init: function () {
 				this.parent();
 
 				this.hook.zIndex = 9999999;
@@ -636,22 +634,15 @@ export default class MwRandomizer {
 				this.hook.size.x = ig.system.width;
 				this.hook.size.y = ig.system.height;
 
-				this.callback = callback;
-
 				this.buttonInteract = new ig.ButtonInteractEntry();
 				this.buttongroup = new sc.ButtonGroup();
 				this.buttonInteract.pushButtonGroup(this.buttongroup);
-
-				this.buttongroup.addPressCallback((gui: any) => {
-					this.callback && gui.data != void 0 && this.callback(gui, this);
-				});
 
 				this.back = new sc.ButtonGui("", sc.BUTTON_DEFAULT_WIDTH);
 				this.back.data = -1;
 				this.back.submitSound = sc.BUTTON_SOUND.back;
 				this.back.onButtonPress = () => {
 					this.hide();
-					this.callback && this.callback(this.back);
 				};
 
 				this.buttonInteract.addGlobalButton(
@@ -679,53 +670,6 @@ export default class MwRandomizer {
 					gui.hook.pos.x = this.textColumnWidth + this.hSpacer;
 				}
 
-				// let posX = 0;
-				// let posY = 0;
-
-				// if (labels) {
-				// 	var buttonContainer = new ig.GuiElementBase();
-				// 	buttonContainer.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_BOTTOM);
-
-				// 	for (let i = 0; i < labels.length; i++) {
-				// 		let button = new sc.ButtonGui(
-				// 			labels[i],
-				// 			sc.BUTTON_TOP_MENU_WIDTH,
-				// 			true,
-				// 			sc.BUTTON_TYPE.SMALL,
-				// 		);
-
-				// 		if (silent) {
-				// 			button.submitSound = null;
-				// 		}
-
-				// 		if (labels.length >= 4) {
-				// 			button.setPos(0, posX);
-				// 			posX = posX + (sc.BUTTON_TYPE.SMALL + 1);
-				// 			if (button.hook.size.x > posY) posY = button.hook.size.x;
-				// 			this.buttongroup.addFocusGui(button, 0, i);
-				// 		} else {
-				// 			button.setPos(posY, 0);
-				// 			posY = posY + (button.hook.size.x + 1);
-				// 			if (button.hook.size.y > posX) posX = button.hook.size.y;
-				// 			this.buttongroup.addFocusGui(button, i, 0);
-				// 		}
-
-				// 		button.data = i;
-				// 		this.buttons.push(button);
-				// 		buttonContainer.addChildGui(button);
-				// 	}
-
-				// 	buttonContainer.setSize(posY, posX);
-				// 	this.content.addChildGui(buttonContainer);
-				// }
-
-				// let d = Math.max(16, this.textGui.hook.size.x);
-				// if (posY > d) {
-				// 	d = posY;
-				// 	this.textGui.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_TOP);
-				// }
-
-				// let e = Math.max(16, this.textGui.hook.size.y + posX + 4);
 				this.content.setSize(
 					this.textColumnWidth + this.hSpacer + 200, 
 					this.textGuis[0].hook.size.y * this.textGuis.length + this.vSpacer * (this.textGuis.length - 1)
@@ -746,19 +690,13 @@ export default class MwRandomizer {
 				ig.interact.setBlockDelay(0.2);
 				this.msgBox.doStateTransition("DEFAULT");
 				this.doStateTransition("DEFAULT");
-				this.buttons.length > 1 && sc.model.addChoiceGui(this);
 			},
 
 			hide: function () {
 				ig.interact.removeEntry(this.buttonInteract);
 				ig.interact.setBlockDelay(0.2);
 				this.msgBox.doStateTransition("HIDDEN");
-				this.doStateTransition("HIDDEN", false, true);
-				sc.model.removeChoiceGui(this);
-			},
-
-			invokeTopBackButton(a) {
-				console.log('meme');
+				this.doStateTransition("HIDDEN", false);
 			},
 
 			onBackButtonCheck: function () {
