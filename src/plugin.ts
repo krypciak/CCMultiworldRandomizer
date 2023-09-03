@@ -579,21 +579,8 @@ export default class MwRandomizer {
 			},
 		});
 
-		sc.APConnectionBox = ig.GuiElementBase.extend({
+		sc.APConnectionBox = sc.BaseMenu.extend({
 			gfx: new ig.Image("media/gui/menu.png"),
-
-			transitions: {
-				DEFAULT: {
-					state: { alpha: 1 },
-					time: 0.2,
-					timeFunction: KEY_SPLINES.EASE_OUT,
-				},
-				HIDDEN: {
-					state: { alpha: 0 },
-					time: 0.2,
-					timeFunction: KEY_SPLINES.EASE_IN,
-				},
-			},
 
 			fields: [
 				{
@@ -619,7 +606,6 @@ export default class MwRandomizer {
 
 			msgBox: null,
 			content: null,
-			buttonInteract: null,
 			buttongroup: null,
 			back: null,
 			keepOpen: false,
@@ -628,27 +614,22 @@ export default class MwRandomizer {
 				this.parent();
 
 				this.hook.zIndex = 9999999;
-				this.hook.localAlpha = 0.8;
-				this.hook.temporary = true;
+				this.hook.localAlpha = 0.0;
 				this.hook.pauseGui = true;
 				this.hook.size.x = ig.system.width;
 				this.hook.size.y = ig.system.height;
 
-				this.buttonInteract = new ig.ButtonInteractEntry();
 				this.buttongroup = new sc.ButtonGroup();
-				this.buttonInteract.pushButtonGroup(this.buttongroup);
+				sc.menu.buttonInteract.pushButtonGroup(this.buttongroup);
+
+				this.buttongroup.addPressCallback(() => {});
 
 				this.back = new sc.ButtonGui("", sc.BUTTON_DEFAULT_WIDTH);
 				this.back.data = -1;
 				this.back.submitSound = sc.BUTTON_SOUND.back;
-				this.back.onButtonPress = () => {
-					this.hide();
-				};
-
-				this.buttonInteract.addGlobalButton(
-					this.back,
-					this.onBackButtonCheck.bind(this),
-				);
+				this.back.onButtonPress = this.onBackButtonPress.bind(this);
+				
+				sc.menu.pushBackCallback(this.onBackButtonPress.bind(this));
 
 				this.content = new ig.GuiElementBase();
 
@@ -685,16 +666,16 @@ export default class MwRandomizer {
 				b.addColor("#000", 0, 0, this.hook.size.x, this.hook.size.y);
 			},
 
-			show: function () {
-				ig.interact.addEntry(this.buttonInteract);
-				ig.interact.setBlockDelay(0.2);
+			showMenu: function () {
+				this.parent();
+				ig.interact.setBlockDelay(0.1);
 				this.msgBox.doStateTransition("DEFAULT");
 				this.doStateTransition("DEFAULT");
 			},
 
-			hide: function () {
-				ig.interact.removeEntry(this.buttonInteract);
-				ig.interact.setBlockDelay(0.2);
+			hideMenu: function () {
+				this.parent();
+				ig.interact.setBlockDelay(0.1);
 				this.msgBox.doStateTransition("HIDDEN");
 				this.doStateTransition("HIDDEN", false);
 			},
@@ -703,18 +684,25 @@ export default class MwRandomizer {
 				return sc.control.menuBack();
 			},
 
+			onBackButtonPress: function () {
+				sc.menu.popBackCallback();
+				sc.menu.popMenu();
+			},
+
 			onDetach: function () {},
 		});
+
+		sc.MENU_SUBMENU.AP_CONNECTION = 300000;
+		sc.SUB_MENU_INFO[sc.MENU_SUBMENU.AP_CONNECTION] = {
+			Clazz: sc.APConnectionBox,
+			name: "apConnection",
+		};
 
 		sc.CrossCode.inject({
 			init(...args) {
 				this.parent(...args);
 				sc.multiWorldHud = new sc.MultiWorldHudBox();
 				sc.gui.rightHudPanel.addHudBox(sc.multiWorldHud);
-
-				sc.apConnectionGui = new sc.APConnectionBox((a) => {debugger});
-
-				ig.gui.addGuiElement(sc.apConnectionGui);
 			},
 
 			gotoTitle(...args) {
