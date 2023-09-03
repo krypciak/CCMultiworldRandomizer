@@ -87,6 +87,18 @@ export default class MwRandomizer {
 		this.lastIndexSeen = index;
 	}
 
+	getColoredStatus(status: string) {
+		switch (status.toLowerCase()) {
+			case ap.CONNECTION_STATUS.CONNECTED.toLowerCase():
+				return `\\c[2]${status}\\c[0]`;
+			case ap.CONNECTION_STATUS.DISCONNECTED.toLowerCase():
+				return `\\c[1]${status}\\c[0]`;
+			case ap.CONNECTION_STATUS.WAITING_FOR_AUTH.toLowerCase():
+			case ap.CONNECTION_STATUS.CONNECTING.toLowerCase():
+				return `\\c[3]${status}\\c[0]`;
+		}
+	}
+
 	async storeAllLocationInfo() {
 		let listener = (packet: ap.LocationInfoPacket) => {
 			let locationInfoMap = {};
@@ -143,15 +155,6 @@ export default class MwRandomizer {
 		);
 	}
 
-	notifyItemsSent(items: NetworkItem[]) {
-		for (const item of items) {
-			if (item.player == this.client.data.slot) {
-				continue;
-			}
-			sc.Model.notifyObserver(sc.model.player, sc.PLAYER_MSG.MW_ITEM_SENT, item);
-		}
-	}
-
 	async reallyCheckLocation(mwid: number) {
 		this.client.locations.check(mwid);
 
@@ -185,8 +188,12 @@ export default class MwRandomizer {
 			);
 			console.error("Could not connect to Archipelago server: ", e);
 
+			// sc.multiworld.updateConnectionStatus();
+
 			return;
 		}
+
+		// sc.multiworld.updateConnectionStatus();
 
 		this.client.addListener('ReceivedItems', packet => {
 			let index = packet.index;
@@ -215,56 +222,6 @@ export default class MwRandomizer {
 		this.onLevelLoaded();
 	}
 
-	onStoragePostLoad() {
-		if (this.client.status == ap.CONNECTION_STATUS.CONNECTED) {
-			this.client.disconnect();
-		}
-
-		if (!this.connectionInfo) {
-			console.log("Reading connection info from file");
-			// temporary -- import connection info from a JSON file
-			// eventually this will be a ui in game
-			readJsonFromFile("apConnection.json")
-				.catch(e => {
-					sc.Dialogs.showErrorDialog(
-						"Could not read 'apConnection.json'. " +
-							"If you want to play online, please create this file " + 
-							"and fill it with connection details.",
-						true
-					);
-					console.error("Could not read apConnection.json: ", e);
-				})
-				.then(file => {
-					this.login({
-						game: 'CrossCode',
-						hostname: file.hostname,
-						port: file.port,
-						items_handling: ap.ITEMS_HANDLING_FLAGS.REMOTE_ALL,
-						name: file.name,
-					});
-				});
-		} else {
-			console.log("Reading connection info from save file");
-			this.login(this.connectionInfo);
-		}
-	}
-
-	onLevelLoaded() {
-		if (this.lastIndexSeen == null) {
-			this.lastIndexSeen = -1;
-		}
-
-		if (!this.localCheckedLocations) {
-			this.localCheckedLocations = [];
-		}
-
-		for (let i = this.lastIndexSeen + 1; i < this.client.items.received.length; i++) {
-			let item = this.client.items.received[i];
-			let comboId = item.item;
-			this.addMultiworldItem(comboId, i);
-		}
-	}
-
 	async prestart() {
 		this.defineVarProperty("lastIndexSeen", "mw.lastIndexSeen");
 		this.defineVarProperty("locationInfo", "mw.locationInfo");
@@ -290,6 +247,97 @@ export default class MwRandomizer {
 		// For those times JS decides to override `this`
 		// Used several times in the injection code
 		let plugin = this;
+
+		sc.MULTIWORLD_MSG = {
+			CONNECTION_STATUS_CHANGED: 0,
+			ITEM_SENT: 1,
+		};
+
+		sc.MultiWorldModel = ig.GameAddon.extend({
+			observers: [],
+			client: null,
+			previousConnectionStatus: ap.CONNECTION_STATUS.DISCONNECTED,
+
+			init() {
+				this.client = client;
+				ig.storage.register(this);
+
+				window.setTimeout(this.updateConnectionStatus.bind(this), 300);
+			},
+
+			onStoragePostLoad() {
+				if (client.status == ap.CONNECTION_STATUS.CONNECTED) {
+					client.disconnect();
+				}
+
+				if (!plugin.connectionInfo) {
+					console.log("Reading connection info from file");
+					// temporary -- import connection info from a JSON file
+					// eventually this will be a ui in game
+					readJsonFromFile("apConnection.json")
+						.catch(e => {
+							sc.Dialogs.showErrorDialog(
+								"Could not read 'apConnection.json'. " +
+									"If you want to play online, please create this file " + 
+									"and fill it with connection details.",
+								true
+							);
+							console.error("Could not read apConnection.json: ", e);
+						})
+						.then(file => {
+							plugin.login({
+								game: 'CrossCode',
+								hostname: file.hostname,
+								port: file.port,
+								items_handling: ap.ITEMS_HANDLING_FLAGS.REMOTE_ALL,
+								name: file.name,
+							});
+						});
+				} else {
+					console.log("Reading connection info from save file");
+					plugin.login(plugin.connectionInfo);
+				}
+			},
+
+			onLevelLoaded() {
+				if (plugin.lastIndexSeen == null) {
+					plugin.lastIndexSeen = -1;
+				}
+
+				if (!plugin.localCheckedLocations) {
+					plugin.localCheckedLocations = [];
+				}
+
+				for (let i = plugin.lastIndexSeen + 1; i < client.items.received.length; i++) {
+					let item = client.items.received[i];
+					let comboId = item.item;
+					plugin.addMultiworldItem(comboId, i);
+				}
+			},
+
+			notifyItemsSent(items: NetworkItem[]) {
+				for (const item of items) {
+					if (item.player == this.client.data.slot) {
+						continue;
+					}
+					sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.ITEM_SENT, item);
+				}
+			},
+
+			updateConnectionStatus() {
+				if (this.previousConnectionStatus == client.status) {
+					return;
+				}
+
+				this.previousConnectionStatus = client.status;
+
+				sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED, client.status);
+			},
+		});
+
+		ig.addGameAddon(() => {
+			return (sc.multiworld = new sc.MultiWorldModel());
+		});
 
 		ig.ENTITY.Chest.inject({
 			_reallyOpenUp() {
@@ -397,12 +445,12 @@ export default class MwRandomizer {
 			}
 		});
 
-		ig.Storage.inject({
-			onLevelLoaded(...args) {
-				this.parent(...args);
-				plugin.onLevelLoaded();
-			}
-		});
+		// ig.Storage.inject({
+		// 	onLevelLoaded(...args) {
+		// 		this.parent(...args);
+		// 		plugin.onLevelLoaded();
+		// 	}
+		// });
 
 		let mwIcons = new ig.Font(
 			plugin.baseDirectory.substring(7) + "assets/icons.png",
@@ -480,8 +528,6 @@ export default class MwRandomizer {
 			},
 		});
 
-		sc.PLAYER_MSG["MW_ITEM_SENT"] = 300001;
-
 		sc.MultiWorldHudBox = sc.RightHudBoxGui.extend({
 			delayedStack: [],
 			size: 0,
@@ -489,7 +535,7 @@ export default class MwRandomizer {
 			init: function() {
 				this.parent("ARCHIPELAGO");
 				this.size = sc.options.get("item-hud-size");
-				sc.Model.addObserver(sc.model.player, this);
+				sc.Model.addObserver(sc.multiworld, this);
 				sc.Model.addObserver(sc.model, this);
 				sc.Model.addObserver(sc.options, this);
 			},
@@ -543,9 +589,9 @@ export default class MwRandomizer {
 			},
 
 			modelChanged: function (model: any, msg: number, data: any) {
-				if (model == sc.model.player) {
+				if (model == sc.multiworld) {
 					if (
-						msg == sc.PLAYER_MSG.MW_ITEM_SENT &&
+						msg == sc.MULTIWORLD_MSG.ITEM_SENT &&
 						sc.options.get("show-items")
 					) {
 						this.addEntry(data.item, data.player);
@@ -579,6 +625,50 @@ export default class MwRandomizer {
 			},
 		});
 
+		sc.APConnectionStatusGui = sc.TextGui.extend({
+			init: function () {
+				this.parent("", {font: sc.fontsystem.tinyFont});
+				this.updateText();
+
+				sc.Model.addObserver(sc.multiworld, this.modelChanged);
+			},
+
+			updateText: function () {
+				this.setText(`AP: ${plugin.getColoredStatus(client.status.toUpperCase())}`);
+			},
+
+			modelChanged(model: any, msg: number, data: any) {
+				this.parent(model, msg, data);
+
+				if (model == sc.multiworld && msg == sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED) {
+					this.updateText();
+				}
+			},
+		});
+
+		sc.PauseScreenGui.inject({
+			init(...args) {
+				this.parent(...args);
+
+				this.apConnectionStatusGui = new sc.APConnectionStatusGui();
+
+				this.apConnectionStatusGui.setAlign(this.versionGui.hook.align.x, this.versionGui.hook.align.y);
+				this.apConnectionStatusGui.setPos(0, this.versionGui.hook.size.y * 2);
+
+				this.versionGui.addChildGui(this.apConnectionStatusGui);
+
+				this.apSettingsButton = new sc.ButtonGui("\\i[ap-logo] Archipelago Settings");
+				this.apSettingsButton.setPos(3, 3);
+				this.buttonGroup.addFocusGui(this.apSettingsButton);
+				this.apSettingsButton.onButtonPress = function () {
+					sc.menu.setDirectMode(true, sc.MENU_SUBMENU.AP_CONNECTION);
+					sc.model.enterMenu(true);
+				}.bind(this);
+
+				this.addChildGui(this.apSettingsButton);
+			},
+		});
+
 		sc.APConnectionBox = sc.BaseMenu.extend({
 			gfx: new ig.Image("media/gui/menu.png"),
 
@@ -601,11 +691,13 @@ export default class MwRandomizer {
 			inputGuis: [],
 
 			textColumnWidth: 0,
-			hSpacer: 3,
+			hSpacer: 5,
 			vSpacer: 3,
 
 			msgBox: null,
+			inputList: null,
 			content: null,
+			buttonHolder: null,
 
 			buttongroup: null,
 			back: null,
@@ -632,19 +724,19 @@ export default class MwRandomizer {
 				
 				sc.menu.pushBackCallback(this.onBackButtonPress.bind(this));
 
-				this.content = new ig.GuiElementBase();
+				this.inputList = new ig.GuiElementBase();
 
 				for (let i = 0; i < this.fields.length; i++) {
 					let textGui = new sc.TextGui(this.fields[i].label);
 					this.textColumnWidth = Math.max(this.textColumnWidth, textGui.hook.size.x);
 					textGui.hook.pos.y = (textGui.hook.size.y + this.vSpacer) * i;
-					this.content.addChildGui(textGui);
+					this.inputList.addChildGui(textGui);
 					this.textGuis.push(textGui);
 
 					let inputGui = new nax.ccuilib.InputField(200, textGui.hook.size.y);
 					this.buttongroup.addFocusGui(inputGui, 0, i);
 					inputGui.hook.pos.y = (textGui.hook.size.y + this.vSpacer) * i;
-					this.content.addChildGui(inputGui);
+					this.inputList.addChildGui(inputGui);
 					this.inputGuis.push(inputGui);
 				}
  
@@ -652,30 +744,47 @@ export default class MwRandomizer {
 					gui.hook.pos.x = this.textColumnWidth + this.hSpacer;
 				}
 
-				this.content.setSize(
+				this.inputList.setSize(
 					this.textColumnWidth + this.hSpacer + 200, 
 					this.textGuis[0].hook.size.y * this.textGuis.length + this.vSpacer * (this.textGuis.length - 1)
 				);
 
-				this.msgBox = new sc.BlackWhiteBox(this.content.hook.size.x, this.content.hook.size.y);
-				this.msgBox.setSize(this.content.hook.size.x + 22, this.content.hook.size.y + 10);
-				this.msgBox.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_CENTER);
+				this.content = new ig.GuiElementBase();
 
+				this.msgBox = new sc.BlackWhiteBox(this.inputList.hook.size.x, this.inputList.hook.size.y);
+				this.msgBox.setSize(this.inputList.hook.size.x + 22, this.inputList.hook.size.y + 10);
+				this.msgBox.addChildGui(this.inputList);
+
+				// this.msgBox.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_CENTER);
+				this.inputList.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_CENTER);
+
+				this.apConnectionStatusGui = new sc.APConnectionStatusGui();
+				this.apConnectionStatusGui.setPos(7, 0);
+
+				this.msgBoxBox = new ig.GuiElementBase();
+				this.msgBoxBox.setSize(
+					this.msgBox.hook.size.x,
+					this.msgBox.hook.size.y + this.apConnectionStatusGui.hook.size.y
+				);
+
+				this.msgBox.setPos(0, this.apConnectionStatusGui.hook.size.y);
+
+				this.msgBoxBox.addChildGui(this.apConnectionStatusGui);
+				this.msgBoxBox.addChildGui(this.msgBox);
+
+				this.content.addChildGui(this.msgBoxBox);
 				this.content.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_CENTER);
 
-				this.addChildGui(this.msgBox);
+				this.content.setSize(this.msgBoxBox.hook.size.x, this.msgBoxBox.hook.size.y);
 				this.addChildGui(this.content);
 
 				this.doStateTransition("HIDDEN", true);
 			},
 
-			updateDrawables: function (b) {
-				b.addColor("#000", 0, 0, this.hook.size.x, this.hook.size.y);
-			},
-
 			showMenu: function () {
 				this.parent();
 				ig.interact.setBlockDelay(0.1);
+				this.addObservers();
 				this.msgBox.doStateTransition("DEFAULT");
 				this.doStateTransition("DEFAULT");
 			},
@@ -683,17 +792,27 @@ export default class MwRandomizer {
 			hideMenu: function () {
 				this.parent();
 				ig.interact.setBlockDelay(0.1);
+				this.removeObservers();
 				this.msgBox.doStateTransition("HIDDEN");
 				this.doStateTransition("HIDDEN", false);
-			},
-
-			onBackButtonCheck: function () {
-				return sc.control.menuBack();
 			},
 
 			onBackButtonPress: function () {
 				sc.menu.popBackCallback();
 				sc.menu.popMenu();
+			},
+
+			addObservers: function () {
+				sc.Model.addObserver(sc.model, this);
+			},
+
+			removeObservers: function () {
+				sc.Model.removeObserver(sc.model, this);
+			},
+
+			modelChanged: function(model: any, msg: number, data: any) {
+				if (model == sc.multiworld && msg == sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED) {
+				}
 			},
 
 			onDetach: function () {},
@@ -715,14 +834,11 @@ export default class MwRandomizer {
 			gotoTitle(...args) {
 				if (client.status == ap.CONNECTION_STATUS.CONNECTED) {
 					client.disconnect();
+					// sc.multiworld.updateConnectionStatus();
 				}
 				this.parent(...args);
 			},
 		});
-	}
-
-	async main() {
-		ig.storage.register(this);
 	}
 }
 
