@@ -606,6 +606,7 @@ export default class MwRandomizer {
 
 			msgBox: null,
 			content: null,
+
 			buttongroup: null,
 			back: null,
 			keepOpen: false,
@@ -656,9 +657,15 @@ export default class MwRandomizer {
 					this.textGuis[0].hook.size.y * this.textGuis.length + this.vSpacer * (this.textGuis.length - 1)
 				);
 
-				this.msgBox = new sc.CenterBoxGui(this.content);
+				this.msgBox = new sc.BlackWhiteBox(this.content.hook.size.x, this.content.hook.size.y);
+				this.msgBox.setSize(this.content.hook.size.x + 22, this.content.hook.size.y + 10);
 				this.msgBox.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_CENTER);
+
+				this.content.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_CENTER);
+
 				this.addChildGui(this.msgBox);
+				this.addChildGui(this.content);
+
 				this.doStateTransition("HIDDEN", true);
 			},
 
