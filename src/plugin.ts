@@ -676,8 +676,11 @@ export default class MwRandomizer {
 			vSpacer: 3,
 
 			msgBox: null,
+			msgBoxBox: null,
 			inputList: null,
 			content: null,
+			connect: null,
+			disconnect: null,
 			buttonHolder: null,
 
 			buttongroup: null,
