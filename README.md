@@ -32,23 +32,15 @@ You should be able to use the `MultiServer` program from any up-to-date Archipel
 
 Install [CCLoader2](https://wiki.c2dl.info/CCLoader), then download the *most recent* [CCMultiworldRandomizer release](https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/latest) and place it into the `assets/mods` directory.
 
-For now, you need to input connection data manually. Create a file `apConnection.json` in the root directory of your CrossCode installation and put the following into it:
-```json
-{
-  "hostname": "archipelago.gg",
-  "port": 38281,
-  "name": "CrossCodeTri"
-}
-```
-
-Replace the fields with their correct values for the hosted game.
-
 You will also need the following dependency mods:
-* [CC-Open-World](https://github.com/buanjautista/cc-open-world/releases), the one that has no dependencies. This is to prevent softlocks when you inevitably sequence-break the game.
+* [CC-Open-World](https://github.com/buanjautista/cc-open-world/releases/latest), the version that has no dependencies. This is to prevent softlocks when you inevitably sequence-break the game.
+* [CCUILib](https://github.com/conorlawton/CCUILib/releases/latest): gives access to the text input box.
+  * Note that as of writing this, there is a bug with CCUILib where pressing tab while a text input field is selected unfocuses the window. This is expected, just don't press tab. I've submitted a fixed release to the author, but that has not been released yet and I can't be bothered to package someone else's mod.
+* [nax-module-cache](https://github.com/conorlawton/nax-module-cache/releases/latest): technically just a requirement for CCUILib.
 
 Open CrossCode and start a new save file. I recommend New Game+ with the Skip Beginning option. You will start in the last stretch of the Rookie Dungeon. **The chests in the rookie dungeon are not in logic.**
 
-Until further notice, you need to **save and reload your game** before collecting any chests beyond the Rookie Dungeon due to some latent bugs.
+Until further notice, you **must** associate an archipelago connection before collecting any chests beyond the Rookie Dungeon due to some latent bugs.
 
 You will know if the mod is working when you get to space for the first time and you don't recieve the Disc of Insight and Green Leaf Shade as expected.
 
@@ -64,8 +56,9 @@ Second off, please make sure you are using the most recent version of both the m
 
 With that out of the way, here's what to do:
 1. Join our [testing discord server](https://discord.gg/ZSWfgQdfG).
-2. Follow the CrossCode thread in the `#future-game-design` forum.
-3. Post the following details about your issue:
+2. Make sure you can see the #bug-report forum.
+3. Create a new thread in that forum, following all the rules for posting. These include but are not limited to:
+   * Software versions of all software involved.
    * What you did leading up to the issue.
    * The *expected* behavior.
    * The *actual* behavior (in enough detail that I could feasibly reproduce it).
@@ -75,19 +68,3 @@ I'm pretty active on Discord, so I should see your message within a few hours. F
 # A note on versions
 
 Every `x.0.0` version and every `0.y.0` version defines a new connection interface between client and server. In other words, You can use any mod with version `0.1.a` to talk to any server with an APWorld of version `0.1.b` server, regardless of what `a` and `b` are, but a client with version `0.2.a` and a server with version `0.1.b` will not be able to talk to each other. Similarly, `1.a.b` can talk to `1.c.d` but `2.a.b` cannot talk to `1.c.d`.
-
-# Checklist
-
-- [x] Send and recieve items
-- [x] GUI for sent items
-- [x] Offline play support
-  - [x] Don't crash upon connection failure
-  - [x] Cached local list of checked locations
-- [ ] Useable interface
-  - [x] Ability to set URL, port, and slot name outside of code
-  - [ ] Ability to set URL, port, and slot name in-game
-- [x] Support for multiple slots
-  - [x] Connect to AP server on load game, disconnect on quit game
-  - [x] Cache connection details in save file
-- [ ] Settle on a final AP item icon
-  - See `assets/icons.png` for options
