@@ -160,9 +160,9 @@ export default class MwRandomizer {
 
 		let loc = this.locationInfo[mwid];
 		if (loc == undefined) {
-			this.getLocationInfo([mwid], this.notifyItemsSent);
+			this.getLocationInfo([mwid], sc.multiworld.notifyItemsSent);
 		} else {
-			this.notifyItemsSent([loc]);
+			sc.multiworld.notifyItemsSent([loc]);
 
 			// cut down on save file space by not storing what we have already
 			delete this.locationInfo[loc.item];
@@ -219,7 +219,7 @@ export default class MwRandomizer {
 			}
 		}
 
-		this.onLevelLoaded();
+		sc.multiworld.onLevelLoaded();
 	}
 
 	async prestart() {
@@ -262,7 +262,7 @@ export default class MwRandomizer {
 				this.client = client;
 				ig.storage.register(this);
 
-				window.setTimeout(this.updateConnectionStatus.bind(this), 300);
+				window.setInterval(this.updateConnectionStatus.bind(this), 300);
 			},
 
 			onStoragePostLoad() {
@@ -270,32 +270,15 @@ export default class MwRandomizer {
 					client.disconnect();
 				}
 
-				if (!plugin.connectionInfo) {
-					console.log("Reading connection info from file");
-					// temporary -- import connection info from a JSON file
-					// eventually this will be a ui in game
-					readJsonFromFile("apConnection.json")
-						.catch(e => {
-							sc.Dialogs.showErrorDialog(
-								"Could not read 'apConnection.json'. " +
-									"If you want to play online, please create this file " + 
-									"and fill it with connection details.",
-								true
-							);
-							console.error("Could not read apConnection.json: ", e);
-						})
-						.then(file => {
-							plugin.login({
-								game: 'CrossCode',
-								hostname: file.hostname,
-								port: file.port,
-								items_handling: ap.ITEMS_HANDLING_FLAGS.REMOTE_ALL,
-								name: file.name,
-							});
-						});
-				} else {
+				if (plugin.connectionInfo) {
 					console.log("Reading connection info from save file");
 					plugin.login(plugin.connectionInfo);
+				} else {
+					sc.Dialogs.showInfoDialog(
+						"This save file has no Archpelago connection associated with it. " +
+							"To play online, open the pause menu and enter the details.",
+						true,
+					);
 				}
 			},
 
@@ -630,7 +613,7 @@ export default class MwRandomizer {
 				this.parent("", {font: sc.fontsystem.tinyFont});
 				this.updateText();
 
-				sc.Model.addObserver(sc.multiworld, this.modelChanged);
+				sc.Model.addObserver(sc.multiworld, this);
 			},
 
 			updateText: function () {
@@ -638,8 +621,6 @@ export default class MwRandomizer {
 			},
 
 			modelChanged(model: any, msg: number, data: any) {
-				this.parent(model, msg, data);
-
 				if (model == sc.multiworld && msg == sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED) {
 					this.updateText();
 				}
@@ -717,11 +698,6 @@ export default class MwRandomizer {
 
 				this.buttongroup.addPressCallback(() => {});
 
-				this.back = new sc.ButtonGui("", sc.BUTTON_DEFAULT_WIDTH);
-				this.back.data = -1;
-				this.back.submitSound = sc.BUTTON_SOUND.back;
-				this.back.onButtonPress = this.onBackButtonPress.bind(this);
-				
 				sc.menu.pushBackCallback(this.onBackButtonPress.bind(this));
 
 				this.inputList = new ig.GuiElementBase();
@@ -736,6 +712,16 @@ export default class MwRandomizer {
 					let inputGui = new nax.ccuilib.InputField(200, textGui.hook.size.y);
 					this.buttongroup.addFocusGui(inputGui, 0, i);
 					inputGui.hook.pos.y = (textGui.hook.size.y + this.vSpacer) * i;
+					
+					if (plugin.connectionInfo) {
+						//@ts-ignore
+						let prefill = "" + plugin.connectionInfo[this.fields[i].key];
+						inputGui.value = prefill.split("");
+						inputGui.textChild.setText(prefill);
+						inputGui.cursorPos = prefill.length;
+						inputGui.cursor.hook.pos.x = inputGui.calculateCursorPos();
+					}
+
 					this.inputList.addChildGui(inputGui);
 					this.inputGuis.push(inputGui);
 				}
@@ -755,7 +741,6 @@ export default class MwRandomizer {
 				this.msgBox.setSize(this.inputList.hook.size.x + 22, this.inputList.hook.size.y + 10);
 				this.msgBox.addChildGui(this.inputList);
 
-				// this.msgBox.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_CENTER);
 				this.inputList.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_CENTER);
 
 				this.apConnectionStatusGui = new sc.APConnectionStatusGui();
@@ -771,14 +756,75 @@ export default class MwRandomizer {
 
 				this.msgBoxBox.addChildGui(this.apConnectionStatusGui);
 				this.msgBoxBox.addChildGui(this.msgBox);
+				this.msgBoxBox.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_TOP);
+
+				this.connect = new sc.ButtonGui("Connect", sc.BUTTON_MENU_WIDTH);
+				this.connect.onButtonPress = this.connectFromInput.bind(this);
+				this.buttongroup.addFocusGui(this.connect, 0, this.fields.length);
+
+				this.disconnect = new sc.ButtonGui("Disconnect", sc.BUTTON_MENU_WIDTH);
+				this.disconnect.onButtonPress = () => { client.disconnect() };
+				this.disconnect.setPos(sc.BUTTON_MENU_WIDTH + this.hSpacer);
+				this.buttongroup.addFocusGui(this.disconnect, 1, this.fields.length);
+
+				this.buttonHolder = new ig.GuiElementBase();
+
+				this.buttonHolder.addChildGui(this.connect);
+				this.buttonHolder.addChildGui(this.disconnect);
+				this.buttonHolder.setSize(sc.BUTTON_MENU_WIDTH * 2 + this.hSpacer, sc.BUTTON_TYPE.DEFAULT.height);
+				this.buttonHolder.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_BOTTOM);
 
 				this.content.addChildGui(this.msgBoxBox);
+				this.content.addChildGui(this.buttonHolder);
 				this.content.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_CENTER);
 
-				this.content.setSize(this.msgBoxBox.hook.size.x, this.msgBoxBox.hook.size.y);
+				this.content.setSize(
+					Math.max(
+						this.msgBoxBox.hook.size.x,
+						this.buttonHolder.hook.size.x
+					),
+					this.msgBoxBox.hook.size.y + this.buttonHolder.hook.size.y + this.vSpacer,
+				);
 				this.addChildGui(this.content);
 
 				this.doStateTransition("HIDDEN", true);
+			},
+
+			getOptions() {
+				let result = {};
+				for (let i = 0; i < this.fields.length; i++) {
+					result[this.fields[i].key] = this.inputGuis[i].value.join("");
+				}
+
+				return result;
+			},
+
+			connectFromInput() {
+				let options = this.getOptions();
+				if (isNaN(options.port)) {
+					sc.Dialogs.showErrorDialog(
+						"Port is not a number",
+						true,
+					);
+					return;
+				}
+				let portNumber = Number(options.port);
+
+				if (portNumber > 65535 || portNumber < 1) {
+					sc.Dialogs.showErrorDialog(
+						"Port must be between 1 and 65535",
+						true
+					);
+					return;
+				}
+
+				plugin.login({
+					game: 'CrossCode',
+					hostname: options.hostname,
+					port: portNumber,
+					items_handling: ap.ITEMS_HANDLING_FLAGS.REMOTE_ALL,
+					name: options.name,
+				});
 			},
 
 			showMenu: function () {
