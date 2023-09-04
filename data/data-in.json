@@ -89,7 +89,6 @@
 		"linear": "31",
 		"open": "open19"
 	},
-	},
 	"keys": {
 		"Default": "",
 		"Bronze": "item.154.amount >= 1",
