@@ -143,7 +143,16 @@
 					"item": 79,
 					"amount": 4,
 					"type": "Default",
-					"condition": {}
+					"condition": {
+						"linear": [
+							"22",
+							""
+						],
+						"open": [
+							"open18",
+							""
+						]
+					}
 				}
 			},
 			"events": {}
