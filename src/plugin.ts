@@ -21,6 +21,8 @@ export default class MwRandomizer {
 	declare locationInfo: {[idx: number]: ap.NetworkItem};
 	declare connectionInfo: ap.ConnectionInformation;
 	declare localCheckedLocations: number[];
+	declare mode: string;
+	declare options: any;
 
 	defineVarProperty(name: string, igVar: string) {
 		Object.defineProperty(this, name, {
@@ -205,6 +207,13 @@ export default class MwRandomizer {
 
 		this.connectionInfo = info;
 
+		// eventually i'll get proper interfaces set up.....
+		// @ts-ignore
+		this.mode = this.client.data.slotData.mode;
+		this.options = this.client.data.slotData.options;
+
+		sc.Model.notifyObserver(sc.multiworld, sc.MULTIWORLD_MSG.OPTIONS_PRESENT);
+
 		this.client.updateStatus(ap.CLIENT_STATUS.PLAYING);
 
 		if (this.locationInfo == null) {
@@ -227,6 +236,8 @@ export default class MwRandomizer {
 		this.defineVarProperty("locationInfo", "mw.locationInfo");
 		this.defineVarProperty("connectionInfo", "mw.connectionInfo");
 		this.defineVarProperty("localCheckedLocations", "mw.checkedLocations");
+		this.defineVarProperty("mode", "mw.mode");
+		this.defineVarProperty("options", "mw.options");
 
 		let randoData: ItemData = await readJsonFromFile(this.baseDirectory + "data/data.json")
 		this.randoData = randoData;
@@ -251,6 +262,7 @@ export default class MwRandomizer {
 		sc.MULTIWORLD_MSG = {
 			CONNECTION_STATUS_CHANGED: 0,
 			ITEM_SENT: 1,
+			OPTIONS_PRESENT: 2,
 		};
 
 		sc.MultiWorldModel = ig.GameAddon.extend({
