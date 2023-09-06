@@ -82,7 +82,7 @@
 		]
 	},
 	"softLockAreas": {
-		"linear": [ "1", "22" ],
+		"linear": [ "1" ],
 		"open": [ "open1" ]
 	},
 	"startingArea": {

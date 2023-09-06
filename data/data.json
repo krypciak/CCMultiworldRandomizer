@@ -465,8 +465,7 @@
 	},
 	"softLockAreas": {
 		"linear": [
-			"1",
-			"22"
+			"1"
 		],
 		"open": [
 			"open1"
