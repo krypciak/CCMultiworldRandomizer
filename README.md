@@ -12,33 +12,25 @@ This is still under *heavy* development, though it does work if you're willing t
 
 Either:
 1. Download the [CrossCode development branch](https://github.com/CodeTriangle/Archipelago) and follow the [instructions for running from source](https://github.com/CodeTriangle/Archipelago/blob/crosscode-dev/docs/running%20from%20source.md).
-2. Download the APWorld file from the [releases page of the CrossCode development branch](https://github.com/CodeTriangle/Archipelago/releases/latest) and put it into `lib/worlds` in your Archipelago folder. **This integration requires at least 0.4.2 RC to roll the seed**.
+2. Download the APWorld file from the [releases page of the CrossCode development branch](https://github.com/CodeTriangle/Archipelago/releases/latest) and put it into `lib/worlds` in your Archipelago folder. **This integration requires Archipelago 0.4.2 to roll the seed**.
 
-Then put your yamls in the `Players` directory and run the `Generate` program. If you need a yaml to build off of, this should work:
-```yaml
-CrossCode:
-  start_inventory:
-    Green Leaf Shade: 1 # Remove this if you don't want to be able to access Autumn's Rise immediately.
-description: Example yaml from https://github.com/CodeTriangle/Archipelago
-game: CrossCode
-name: CrossCodeTri
-```
+Then put your yamls in the `Players` directory and run the `Generate` program. If you need a yaml to build off of, we have some in the discord.
 
 ## How to host a multiworld with crosscode seeds
 
-You should be able to use the `MultiServer` program from any up-to-date Archipelago installation regardless of whether it has the CrossCode APWorld. If you have issues, use the instructions above to install the CrossCode APWorld and then try again.
+Either host it on archipelago.gg using the usual process or self-host. You should be able to use the `MultiServer` program from any up-to-date Archipelago installation regardless of whether it has the CrossCode APWorld. If you have issues, use the instructions above to install the CrossCode APWorld and then try again.
 
 ## How to join a multiworld with crosscode seeds
 
 Install [CCLoader2](https://wiki.c2dl.info/CCLoader), then download the *most recent* [CCMultiworldRandomizer release](https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/latest) and place it into the `assets/mods` directory.
 
 You will also need the following dependency mods:
-* [CC-Open-World](https://github.com/buanjautista/cc-open-world/releases/latest), the version that has no dependencies. This is to prevent softlocks when you inevitably sequence-break the game.
+* [CC-Open-World](https://github.com/buanjautista/cc-open-world/releases/latest) (version 0.1.7 or greater): this is to prevent softlocks when you inevitably sequence-break the game.
 * [CCUILib](https://github.com/conorlawton/CCUILib/releases/latest): gives access to the text input box.
   * Note that as of writing this, there is a bug with CCUILib where pressing tab while a text input field is selected unfocuses the window. This is expected, just don't press tab. I've submitted a fixed release to the author, but that has not been released yet and I can't be bothered to package someone else's mod.
 * [nax-module-cache](https://github.com/conorlawton/nax-module-cache/releases/latest): technically just a requirement for CCUILib.
 
-Open CrossCode and start a new save file. I recommend New Game+ with the Skip Beginning option. You will start in the last stretch of the Rookie Dungeon. **The chests in the rookie dungeon are not in logic.**
+Open CrossCode and start a new save file. I recommend New Game+ with the Skip Beginning option. Also consider using Get on My Level, especially if you are using open mode logic. You will start in the last stretch of the Rookie Dungeon. **The chests in the rookie dungeon are not in logic.**
 
 Until further notice, you **must** associate an archipelago connection before collecting any chests beyond the Rookie Dungeon due to some latent bugs.
 
