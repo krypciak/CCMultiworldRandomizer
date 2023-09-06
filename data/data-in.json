@@ -1,5 +1,7 @@
 {
 	"version": "5",
+	"modes": [ "linear", "open" ],
+	"defaultMode": "open",
 	"areas": {
 		"linear": [
 			[ "2", "<->", "3", "item.145.amount >= 1" ],
@@ -78,7 +80,7 @@
 		]
 	},
 	"softLockAreas": {
-		"linear": [ "1" ],
+		"linear": [ "1", "22" ],
 		"open": [ "open1" ]
 	},
 	"startingArea": {
@@ -139,10 +141,7 @@
 					"item": 79,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"22",
-						""
-					]
+					"condition": {}
 				}
 			},
 			"events": {}
@@ -516,12 +515,12 @@
 						"type": "",
 						"condition": {
 							"linear": [
-								"3.1",
-								""
+								"3",
+								"item.149.amount >= 1"
 							],
 							"open": [
 								"open3.1",
-								""
+								"item.149.amount >= 1"
 							]
 						},
 						"path": ".settings.npcStates.1.event.10"
@@ -1752,10 +1751,16 @@
 					"item": 106,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					]
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					}
 				}
 			},
 			"events": {}
@@ -2574,10 +2579,16 @@
 					"item": 152,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"9",
-						""
-					]
+					"condition": {
+						"linear": [
+							"9",
+							""
+						],
+						"open": [
+							"open4.6",
+							""
+						]
+					}
 				}
 			},
 			"events": {}
@@ -5947,19 +5958,31 @@
 					"item": 1,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"1",
-						""
-					]
+					"condition": {
+						"linear": [
+							"1",
+							""
+						],
+						"open": [
+							"open1",
+							""
+						]
+					}
 				},
 				"184": {
 					"item": 2,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"1",
-						""
-					]
+					"condition": {
+						"linear": [
+							"1",
+							""
+						],
+						"open": [
+							"open1",
+							""
+						]
+					}
 				}
 			},
 			"events": {}
@@ -5971,37 +5994,61 @@
 					"item": 23,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"1",
-						""
-					]
+					"condition": {
+						"linear": [
+							"1",
+							""
+						],
+						"open": [
+							"open1",
+							""
+						]
+					}
 				},
 				"186": {
 					"item": 24,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"1",
-						""
-					]
+					"condition": {
+						"linear": [
+							"1",
+							""
+						],
+						"open": [
+							"open1",
+							""
+						]
+					}
 				},
 				"187": {
 					"item": 26,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"1",
-						""
-					]
+					"condition": {
+						"linear": [
+							"1",
+							""
+						],
+						"open": [
+							"open1",
+							""
+						]
+					}
 				},
 				"188": {
 					"item": 25,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"1",
-						""
-					]
+					"condition": {
+						"linear": [
+							"1",
+							""
+						],
+						"open": [
+							"open1",
+							""
+						]
+					}
 				}
 			},
 			"events": {}

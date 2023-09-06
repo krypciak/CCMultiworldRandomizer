@@ -1,205 +1,474 @@
 {
 	"version": "5",
-	"areas": [
-		[
-			"2",
-			"<->",
-			"3",
-			"item.145.amount >= 1"
+	"modes": [
+		"linear",
+		"open"
+	],
+	"defaultMode": "open",
+	"areas": {
+		"linear": [
+			[
+				"2",
+				"<->",
+				"3",
+				"item.145.amount >= 1"
+			],
+			[
+				"3",
+				"<->",
+				"4",
+				"item.149.amount >= 1",
+				"item.170.amount >= 1"
+			],
+			[
+				"4",
+				"<->",
+				"5",
+				"item.152.amount >= 1"
+			],
+			[
+				"5",
+				"<->",
+				"6",
+				"item.152.amount >= 2"
+			],
+			[
+				"6",
+				"<->",
+				"7",
+				"item.152.amount >= 3"
+			],
+			[
+				"7",
+				"<->",
+				"8",
+				"item.152.amount >= 6"
+			],
+			[
+				"7",
+				"<->",
+				"9",
+				"item.154.amount >= 1",
+				"heat"
+			],
+			[
+				"9",
+				"<->",
+				"10",
+				"item.152.amount >= 10"
+			],
+			[
+				"10",
+				"<->",
+				"11",
+				"item.153.amount >= 1",
+				"item.225.amount >= 1"
+			],
+			[
+				"11",
+				"<->",
+				"12",
+				"item.236.amount >= 1"
+			],
+			[
+				"12",
+				"<->",
+				"13",
+				"item.148.amount >= 1",
+				"heat"
+			],
+			[
+				"13",
+				"<->",
+				"14",
+				"item.146.amount >= 1"
+			],
+			[
+				"14",
+				"<->",
+				"15",
+				"item.146.amount >= 3"
+			],
+			[
+				"15",
+				"<->",
+				"16",
+				"item.146.amount >= 4"
+			],
+			[
+				"16",
+				"<->",
+				"17",
+				"cold"
+			],
+			[
+				"17",
+				"<->",
+				"17.5",
+				"item.155.amount >= 1"
+			],
+			[
+				"17.5",
+				"<->",
+				"18",
+				"item.146.amount >= 9"
+			],
+			[
+				"17.5",
+				"<->",
+				"19",
+				"item.147.amount >= 1"
+			],
+			[
+				"19",
+				"<->",
+				"20",
+				"item.230.amount >= 1"
+			],
+			[
+				"20",
+				"<->",
+				"21",
+				"item.376.amount >= 1"
+			],
+			[
+				"21",
+				"<->",
+				"23"
+			],
+			[
+				"21",
+				"<->",
+				"24",
+				"item.345.amount >= 1"
+			],
+			[
+				"23",
+				"<->",
+				"25",
+				"item.272.amount >= 2"
+			],
+			[
+				"23",
+				"<->",
+				"26",
+				"item.319.amount >= 4"
+			],
+			[
+				"26",
+				"<->",
+				"27",
+				"item.156.amount >= 1",
+				"item.319.amount >= 5"
+			],
+			[
+				"23",
+				"<->",
+				"28",
+				"item.286.amount >= 1",
+				"item.231.amount >= 1",
+				"wave",
+				"shock"
+			],
+			[
+				"28",
+				"<->",
+				"29",
+				"item.349.amount >= 2"
+			],
+			[
+				"28",
+				"<->",
+				"30",
+				"item.350.amount >= 1"
+			],
+			[
+				"30",
+				"<->",
+				"31",
+				"item.410.amount >= 1"
+			],
+			[
+				"31",
+				"<->",
+				"32",
+				"item.439.amount >= 1"
+			],
+			[
+				"32",
+				"<->",
+				"33",
+				"item.434.amount >= 1"
+			]
 		],
-		[
-			"3",
-			"<->",
-			"4",
-			"item.149.amount >= 1",
-			"item.170.amount >= 1"
-		],
-		[
-			"4",
-			"<->",
-			"5",
-			"item.152.amount >= 1"
-		],
-		[
-			"5",
-			"<->",
-			"6",
-			"item.152.amount >= 2"
-		],
-		[
-			"6",
-			"<->",
-			"7",
-			"item.152.amount >= 3"
-		],
-		[
-			"7",
-			"<->",
-			"8",
-			"item.152.amount >= 6"
-		],
-		[
-			"7",
-			"<->",
-			"9",
-			"item.154.amount >= 1",
-			"heat"
-		],
-		[
-			"9",
-			"<->",
-			"10",
-			"item.152.amount >= 10"
-		],
-		[
-			"10",
-			"<->",
-			"11",
-			"item.153.amount >= 1",
-			"item.225.amount >= 1"
-		],
-		[
-			"11",
-			"<->",
-			"12",
-			"item.236.amount >= 1"
-		],
-		[
-			"12",
-			"<->",
-			"13",
-			"item.148.amount >= 1",
-			"heat"
-		],
-		[
-			"13",
-			"<->",
-			"14",
-			"item.146.amount >= 1"
-		],
-		[
-			"14",
-			"<->",
-			"15",
-			"item.146.amount >= 3"
-		],
-		[
-			"15",
-			"<->",
-			"16",
-			"item.146.amount >= 4"
-		],
-		[
-			"16",
-			"<->",
-			"17",
-			"cold"
-		],
-		[
-			"17",
-			"<->",
-			"17.5",
-			"item.155.amount >= 1"
-		],
-		[
-			"17.5",
-			"<->",
-			"18",
-			"item.146.amount >= 9"
-		],
-		[
-			"17.5",
-			"<->",
-			"19",
-			"item.147.amount >= 1"
-		],
-		[
-			"19",
-			"<->",
-			"20",
-			"item.230.amount >= 1"
-		],
-		[
-			"20",
-			"<->",
-			"21",
-			"item.376.amount >= 1"
-		],
-		[
-			"21",
-			"<->",
-			"23"
-		],
-		[
-			"21",
-			"<->",
-			"24",
-			"item.345.amount >= 1"
-		],
-		[
-			"23",
-			"<->",
-			"25",
-			"item.272.amount >= 2"
-		],
-		[
-			"23",
-			"<->",
-			"26",
-			"item.319.amount >= 4"
-		],
-		[
-			"26",
-			"<->",
-			"27",
-			"item.156.amount >= 1",
-			"item.319.amount >= 5"
-		],
-		[
-			"23",
-			"<->",
-			"28",
-			"item.286.amount >= 1",
-			"item.231.amount >= 1",
-			"wave",
-			"shock"
-		],
-		[
-			"28",
-			"<->",
-			"29",
-			"item.349.amount >= 2"
-		],
-		[
-			"28",
-			"<->",
-			"30",
-			"item.350.amount >= 1"
-		],
-		[
-			"30",
-			"<->",
-			"31",
-			"item.410.amount >= 1"
-		],
-		[
-			"31",
-			"<->",
-			"32",
-			"item.439.amount >= 1"
-		],
-		[
-			"32",
-			"<->",
-			"33",
-			"item.434.amount >= 1"
+		"open": [
+			[
+				"open2",
+				"<->",
+				"open3",
+				"item.145.amount >= 1"
+			],
+			[
+				"open3",
+				"<->",
+				"open4.1",
+				"item.149.amount >= 1"
+			],
+			[
+				"open3",
+				"<->",
+				"open3.1",
+				"item.149.amount >= 1"
+			],
+			[
+				"open4.1",
+				"<->",
+				"open4.2",
+				"item.152.amount >= 1"
+			],
+			[
+				"open4.2",
+				"<->",
+				"open4.3",
+				"item.152.amount >= 2"
+			],
+			[
+				"open4.3",
+				"<->",
+				"open4.4",
+				"item.152.amount >= 3"
+			],
+			[
+				"open4.4",
+				"<->",
+				"open4.5",
+				"item.152.amount >= 6"
+			],
+			[
+				"open4.3",
+				"<->",
+				"open4.6",
+				"heat"
+			],
+			[
+				"open4.6",
+				"<->",
+				"open4.7",
+				"item.152.amount >= 10"
+			],
+			[
+				"open4.1",
+				"<->",
+				"open4.8",
+				"item.153.amount >= 1"
+			],
+			[
+				"open3",
+				"<->",
+				"open5",
+				"item.255.amount>= 1"
+			],
+			[
+				"open5",
+				"<->",
+				"open6",
+				"item.236.amount >= 1"
+			],
+			[
+				"open5",
+				"<->",
+				"open7.1",
+				"item.148.amount >= 1",
+				"heat"
+			],
+			[
+				"open7.1",
+				"<->",
+				"open7.2",
+				"item.146.amount >= 1"
+			],
+			[
+				"open7.2",
+				"<->",
+				"open7.3",
+				"item.146.amount >= 3"
+			],
+			[
+				"open7.3",
+				"<->",
+				"open7.4",
+				"item.146.amount >= 4"
+			],
+			[
+				"open7.4",
+				"<->",
+				"open7.5",
+				"cold"
+			],
+			[
+				"open7.5",
+				"<->",
+				"open7.6",
+				"item.155.amount >= 1"
+			],
+			[
+				"open7.6",
+				"<->",
+				"open7.7",
+				"item.146.amount >= 9"
+			],
+			[
+				"open7.6",
+				"<->",
+				"open7.8",
+				"item.147.amount >= 1"
+			],
+			[
+				"open2",
+				"<->",
+				"open8",
+				"item.230.amount >= 1"
+			],
+			[
+				"open2",
+				"<->",
+				"open9",
+				"item.230.amount >= 1"
+			],
+			[
+				"open2",
+				"<->",
+				"open20",
+				"item.434.amount >= 1"
+			],
+			[
+				"open9",
+				"<->",
+				"open9.1",
+				"item.376.amount >= 1"
+			],
+			[
+				"open9",
+				"<->",
+				"open10",
+				"item.376.amount >= 1"
+			],
+			[
+				"open10",
+				"<->",
+				"open11",
+				"item.345.amount >= 1"
+			],
+			[
+				"open10",
+				"<->",
+				"open12",
+				"heat",
+				"cold"
+			],
+			[
+				"open12",
+				"<->",
+				"open13.1",
+				"item.272.amount >= 2"
+			],
+			[
+				"open13.1",
+				"<->",
+				"open13.2",
+				"wave"
+			],
+			[
+				"open12",
+				"<->",
+				"open14.1",
+				"item.319.amount >= 4"
+			],
+			[
+				"open14.1",
+				"<->",
+				"open14.2",
+				"item.319.amount >= 5"
+			],
+			[
+				"open14.2",
+				"<->",
+				"open14.3",
+				"shock"
+			],
+			[
+				"open12",
+				"<->",
+				"open15.1",
+				"item.286.amount >= 1",
+				"item.231.amount >= 1",
+				"wave",
+				"shock"
+			],
+			[
+				"open15.1",
+				"<->",
+				"open15.2",
+				"item.349.amount >= 2"
+			],
+			[
+				"open15.2",
+				"<->",
+				"open15.3",
+				"item.350.amount >= 1"
+			],
+			[
+				"open9",
+				"<->",
+				"open16",
+				"item.410.amount >= 1"
+			],
+			[
+				"open16",
+				"<->",
+				"open17",
+				"item.439.amount >= 1"
+			],
+			[
+				"open16",
+				"<->",
+				"open16.1",
+				"item.434.amount >= 1",
+				"shock"
+			],
+			[
+				"open16",
+				"<->",
+				"open18"
+			],
+			[
+				"open16.1",
+				"<->",
+				"open19",
+				"heat",
+				"cold",
+				"shock",
+				"wave"
+			]
 		]
-	],
-	"softLockAreas": [
-		"1",
-		"22"
-	],
-	"startingArea": "2",
+	},
+	"softLockAreas": {
+		"linear": [
+			"1",
+			"22"
+		],
+		"open": [
+			"open1"
+		]
+	},
+	"startingArea": {
+		"linear": "2",
+		"open": "open2"
+	},
+	"goalArea": {
+		"linear": "32",
+		"open": "open19"
+	},
 	"keys": {
 		"Default": "",
 		"Bronze": "item.154.amount >= 1",
@@ -214,19 +483,33 @@
 					"item": 191,
 					"amount": 2,
 					"type": "Bronze",
-					"condition": [
-						"22",
-						""
-					]
+					"condition": {
+						"linear": [
+							"22",
+							""
+						],
+						"open": [
+							"open18",
+							""
+						]
+					},
+					"mwid": 300000
 				},
 				"468": {
 					"item": 402,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"22",
-						""
-					]
+					"condition": {
+						"linear": [
+							"22",
+							""
+						],
+						"open": [
+							"open18",
+							""
+						]
+					},
+					"mwid": 300001
 				}
 			},
 			"events": {}
@@ -238,10 +521,8 @@
 					"item": 79,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"22",
-						""
-					]
+					"condition": {},
+					"mwid": 300002
 				}
 			},
 			"events": {}
@@ -253,19 +534,33 @@
 					"item": 28,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"22",
-						""
-					]
+					"condition": {
+						"linear": [
+							"22",
+							""
+						],
+						"open": [
+							"open18",
+							""
+						]
+					},
+					"mwid": 300003
 				},
 				"647": {
 					"item": 401,
 					"amount": 5,
 					"type": "Default",
-					"condition": [
-						"22",
-						""
-					]
+					"condition": {
+						"linear": [
+							"22",
+							""
+						],
+						"open": [
+							"open18",
+							""
+						]
+					},
+					"mwid": 300004
 				}
 			},
 			"events": {}
@@ -277,28 +572,49 @@
 					"item": 480,
 					"amount": 1,
 					"type": "Silver",
-					"condition": [
-						"22",
-						""
-					]
+					"condition": {
+						"linear": [
+							"22",
+							""
+						],
+						"open": [
+							"open18",
+							""
+						]
+					},
+					"mwid": 300005
 				},
 				"335": {
 					"item": 336,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"22",
-						""
-					]
+					"condition": {
+						"linear": [
+							"22",
+							""
+						],
+						"open": [
+							"open18",
+							""
+						]
+					},
+					"mwid": 300006
 				},
 				"336": {
 					"item": 132,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"22",
-						""
-					]
+					"condition": {
+						"linear": [
+							"22",
+							""
+						],
+						"open": [
+							"open18",
+							""
+						]
+					},
+					"mwid": 300007
 				}
 			},
 			"events": {}
@@ -310,28 +626,49 @@
 					"item": 191,
 					"amount": 2,
 					"type": "Bronze",
-					"condition": [
-						"22",
-						""
-					]
+					"condition": {
+						"linear": [
+							"22",
+							""
+						],
+						"open": [
+							"open18",
+							""
+						]
+					},
+					"mwid": 300008
 				},
 				"486": {
 					"item": 488,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"22",
-						""
-					]
+					"condition": {
+						"linear": [
+							"22",
+							""
+						],
+						"open": [
+							"open18",
+							""
+						]
+					},
+					"mwid": 300009
 				},
 				"487": {
 					"item": 190,
 					"amount": 3,
 					"type": "Bronze",
-					"condition": [
-						"22",
-						""
-					]
+					"condition": {
+						"linear": [
+							"22",
+							""
+						],
+						"open": [
+							"open18",
+							""
+						]
+					},
+					"mwid": 300010
 				}
 			},
 			"events": {}
@@ -343,11 +680,17 @@
 					"item": 454,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300000
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300011
 				}
 			},
 			"events": {}
@@ -359,21 +702,33 @@
 					"item": 27,
 					"amount": 5,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300001
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300012
 				},
 				"201": {
 					"item": 6,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300002
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300013
 				}
 			},
 			"events": {}
@@ -385,11 +740,17 @@
 					"item": 1,
 					"amount": 5,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300003
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300014
 				}
 			},
 			"events": {}
@@ -401,11 +762,17 @@
 					"item": 18,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300004
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300015
 				}
 			},
 			"events": {}
@@ -417,11 +784,17 @@
 					"item": 74,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300005
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300016
 				}
 			},
 			"events": {}
@@ -433,11 +806,17 @@
 					"item": 81,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300006
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300017
 				}
 			},
 			"events": {}
@@ -449,11 +828,17 @@
 					"item": 133,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300007
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300018
 				}
 			},
 			"events": {}
@@ -465,11 +850,17 @@
 					"item": 93,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300008
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300019
 				}
 			},
 			"events": {}
@@ -481,11 +872,17 @@
 					"item": 65,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300009
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300020
 				}
 			},
 			"events": {}
@@ -497,11 +894,17 @@
 					"item": 71,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300010
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300021
 				}
 			},
 			"events": {
@@ -510,12 +913,18 @@
 						"item": 170,
 						"amount": 1,
 						"type": "",
-						"condition": [
-							"3",
-							""
-						],
+						"condition": {
+							"linear": [
+								"3",
+								"item.149.amount >= 1"
+							],
+							"open": [
+								"open3.1",
+								"item.149.amount >= 1"
+							]
+						},
 						"path": ".settings.npcStates.1.event.10",
-						"mwid": 300011
+						"mwid": 300022
 					}
 				]
 			}
@@ -527,11 +936,17 @@
 					"item": 68,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300012
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300023
 				}
 			},
 			"events": {}
@@ -543,11 +958,17 @@
 					"item": 116,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300013
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300024
 				}
 			},
 			"events": {}
@@ -559,31 +980,49 @@
 					"item": 48,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300014
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300025
 				},
 				"284": {
 					"item": 80,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300015
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300026
 				},
 				"1128": {
 					"item": 96,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300016
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300027
 				}
 			},
 			"events": {}
@@ -595,21 +1034,33 @@
 					"item": 165,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300017
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300028
 				},
 				"1142": {
 					"item": 28,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300018
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300029
 				}
 			},
 			"events": {}
@@ -621,11 +1072,17 @@
 					"item": 487,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300019
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300030
 				}
 			},
 			"events": {
@@ -634,12 +1091,18 @@
 						"item": 285,
 						"amount": 1,
 						"type": "",
-						"condition": [
-							"3",
-							""
-						],
+						"condition": {
+							"linear": [
+								"3",
+								""
+							],
+							"open": [
+								"open3",
+								""
+							]
+						},
 						"path": ".settings.event.21.accepted.6",
-						"mwid": 300020
+						"mwid": 300031
 					}
 				]
 			}
@@ -651,21 +1114,33 @@
 					"item": 0,
 					"amount": 1,
 					"type": "Bronze",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300021
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300032
 				},
 				"98": {
 					"item": 2,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300022
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300033
 				}
 			},
 			"events": {}
@@ -677,31 +1152,49 @@
 					"item": 82,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300023
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300034
 				},
 				"3": {
 					"item": 95,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300024
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300035
 				},
 				"4": {
 					"item": 94,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300025
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300036
 				}
 			},
 			"events": {}
@@ -713,21 +1206,33 @@
 					"item": 7,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300026
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300037
 				},
 				"15": {
 					"item": 57,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300027
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300038
 				}
 			},
 			"events": {}
@@ -739,11 +1244,17 @@
 					"item": 192,
 					"amount": 2,
 					"type": "Gold",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300028
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300039
 				}
 			},
 			"events": {}
@@ -755,11 +1266,17 @@
 					"item": 356,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300029
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300040
 				}
 			},
 			"events": {}
@@ -771,11 +1288,17 @@
 					"item": 381,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300030
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300041
 				}
 			},
 			"events": {}
@@ -787,11 +1310,17 @@
 					"item": 13,
 					"amount": 1,
 					"type": "Silver",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300031
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300042
 				}
 			},
 			"events": {}
@@ -803,11 +1332,17 @@
 					"item": 335,
 					"amount": 5,
 					"type": "Default",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300032
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300043
 				}
 			},
 			"events": {}
@@ -819,31 +1354,49 @@
 					"item": 87,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300033
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300044
 				},
 				"492": {
 					"item": 88,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300034
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300045
 				},
 				"493": {
 					"item": 63,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300035
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300046
 				}
 			},
 			"events": {}
@@ -855,21 +1408,33 @@
 					"item": 244,
 					"amount": 8,
 					"type": "Default",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300036
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300047
 				},
 				"98": {
 					"item": 192,
 					"amount": 2,
 					"type": "Gold",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300037
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300048
 				}
 			},
 			"events": {}
@@ -881,21 +1446,33 @@
 					"item": 302,
 					"amount": 1,
 					"type": "Silver",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300038
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300049
 				},
 				"494": {
 					"item": 242,
 					"amount": 7,
 					"type": "Default",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300039
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300050
 				}
 			},
 			"events": {}
@@ -907,21 +1484,33 @@
 					"item": 491,
 					"amount": 3,
 					"type": "Silver",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300040
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300051
 				},
 				"81": {
 					"item": 326,
 					"amount": 1,
 					"type": "Silver",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300041
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300052
 				}
 			},
 			"events": {}
@@ -933,21 +1522,33 @@
 					"item": 79,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300042
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300053
 				},
 				"124": {
 					"item": 72,
 					"amount": 3,
 					"type": "Bronze",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300043
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300054
 				}
 			},
 			"events": {}
@@ -959,31 +1560,49 @@
 					"item": 40,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300044
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300055
 				},
 				"40": {
 					"item": 245,
 					"amount": 7,
 					"type": "Default",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300045
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300056
 				},
 				"740": {
 					"item": 3,
 					"amount": 7,
 					"type": "Default",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300046
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300057
 				}
 			},
 			"events": {}
@@ -995,31 +1614,49 @@
 					"item": 246,
 					"amount": 7,
 					"type": "Silver",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300047
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300058
 				},
 				"85": {
 					"item": 336,
 					"amount": 4,
 					"type": "Gold",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300048
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300059
 				},
 				"128": {
 					"item": 488,
 					"amount": 3,
 					"type": "Bronze",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300049
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300060
 				}
 			},
 			"events": {}
@@ -1031,31 +1668,49 @@
 					"item": 380,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300050
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300061
 				},
 				"528": {
 					"item": 354,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300051
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300062
 				},
 				"818": {
 					"item": 357,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300052
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300063
 				}
 			},
 			"events": {}
@@ -1067,21 +1722,33 @@
 					"item": 455,
 					"amount": 1,
 					"type": "Silver",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300053
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300064
 				},
 				"82": {
 					"item": 489,
 					"amount": 1,
 					"type": "Bronze",
-					"condition": [
-						"20",
-						""
-					],
-					"mwid": 300054
+					"condition": {
+						"linear": [
+							"20",
+							""
+						],
+						"open": [
+							"open9",
+							""
+						]
+					},
+					"mwid": 300065
 				}
 			},
 			"events": {}
@@ -1093,11 +1760,17 @@
 					"item": 28,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"21",
-						""
-					],
-					"mwid": 300055
+					"condition": {
+						"linear": [
+							"21",
+							""
+						],
+						"open": [
+							"open9.1",
+							""
+						]
+					},
+					"mwid": 300066
 				}
 			},
 			"events": {}
@@ -1109,41 +1782,65 @@
 					"item": 165,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300056
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300067
 				},
 				"1258": {
 					"item": 112,
 					"amount": 1,
 					"type": "Bronze",
-					"condition": [
-						"3",
-						"heat"
-					],
-					"mwid": 300057
+					"condition": {
+						"linear": [
+							"3",
+							"heat"
+						],
+						"open": [
+							"open3",
+							"heat"
+						]
+					},
+					"mwid": 300068
 				},
 				"1265": {
 					"item": 163,
 					"amount": 3,
 					"type": "Bronze",
-					"condition": [
-						"3",
-						"heat"
-					],
-					"mwid": 300058
+					"condition": {
+						"linear": [
+							"3",
+							"heat"
+						],
+						"open": [
+							"open3",
+							"heat"
+						]
+					},
+					"mwid": 300069
 				},
 				"1952": {
 					"item": 339,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300059
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300070
 				}
 			},
 			"events": {}
@@ -1155,41 +1852,65 @@
 					"item": 159,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300060
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300071
 				},
 				"2012": {
 					"item": 40,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"3",
-						"heat"
-					],
-					"mwid": 300061
+					"condition": {
+						"linear": [
+							"3",
+							"heat"
+						],
+						"open": [
+							"open3",
+							"heat"
+						]
+					},
+					"mwid": 300072
 				},
 				"2021": {
 					"item": 63,
 					"amount": 3,
 					"type": "Silver",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300062
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300073
 				},
 				"2889": {
 					"item": 78,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300063
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300074
 				}
 			},
 			"events": {}
@@ -1201,11 +1922,17 @@
 					"item": 167,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300064
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300075
 				}
 			},
 			"events": {}
@@ -1217,21 +1944,33 @@
 					"item": 149,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300065
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300076
 				},
 				"136": {
 					"item": 337,
 					"amount": 1,
 					"type": "Bronze",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300066
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300077
 				}
 			},
 			"events": {}
@@ -1245,12 +1984,18 @@
 						"item": 466,
 						"amount": 1,
 						"type": "",
-						"condition": [
-							"3",
-							""
-						],
+						"condition": {
+							"linear": [
+								"3",
+								""
+							],
+							"open": [
+								"open3",
+								""
+							]
+						},
 						"path": ".settings.npcStates.1.event.quest.5",
-						"mwid": 300067
+						"mwid": 300078
 					}
 				]
 			}
@@ -1264,12 +2009,18 @@
 						"item": 366,
 						"amount": 2,
 						"type": "",
-						"condition": [
-							"4",
-							""
-						],
+						"condition": {
+							"linear": [
+								"4",
+								""
+							],
+							"open": [
+								"open4.1",
+								""
+							]
+						},
 						"path": ".settings.npcStates.0.event.quest.2.thenStep.17",
-						"mwid": 300068
+						"mwid": 300079
 					}
 				]
 			}
@@ -1281,11 +2032,17 @@
 					"item": 366,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300069
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300080
 				}
 			},
 			"events": {}
@@ -1297,11 +2054,17 @@
 					"item": 190,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300070
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300081
 				}
 			},
 			"events": {}
@@ -1313,11 +2076,17 @@
 					"item": 190,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"3",
-						"heat"
-					],
-					"mwid": 300071
+					"condition": {
+						"linear": [
+							"3",
+							"heat"
+						],
+						"open": [
+							"open3",
+							"heat"
+						]
+					},
+					"mwid": 300082
 				}
 			},
 			"events": {}
@@ -1329,11 +2098,17 @@
 					"item": 191,
 					"amount": 2,
 					"type": "Silver",
-					"condition": [
-						"3",
-						"heat"
-					],
-					"mwid": 300072
+					"condition": {
+						"linear": [
+							"3",
+							"heat"
+						],
+						"open": [
+							"open3",
+							"heat"
+						]
+					},
+					"mwid": 300083
 				}
 			},
 			"events": {}
@@ -1345,11 +2120,17 @@
 					"item": 137,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"3",
-						"heat"
-					],
-					"mwid": 300073
+					"condition": {
+						"linear": [
+							"3",
+							"heat"
+						],
+						"open": [
+							"open3",
+							"heat"
+						]
+					},
+					"mwid": 300084
 				}
 			},
 			"events": {}
@@ -1361,21 +2142,33 @@
 					"item": 88,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300074
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300085
 				},
 				"532": {
 					"item": 69,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300075
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300086
 				}
 			},
 			"events": {}
@@ -1387,11 +2180,17 @@
 					"item": 3,
 					"amount": 5,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300076
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300087
 				}
 			},
 			"events": {}
@@ -1403,21 +2202,33 @@
 					"item": 66,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300077
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300088
 				},
 				"454": {
 					"item": 106,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300078
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300089
 				}
 			},
 			"events": {}
@@ -1429,31 +2240,49 @@
 					"item": 107,
 					"amount": 5,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300079
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300090
 				},
 				"399": {
 					"item": 75,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300080
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300091
 				},
 				"451": {
 					"item": 487,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300081
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300092
 				}
 			},
 			"events": {}
@@ -1465,21 +2294,33 @@
 					"item": 129,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300082
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300093
 				},
 				"126": {
 					"item": 108,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300083
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300094
 				}
 			},
 			"events": {}
@@ -1491,11 +2332,17 @@
 					"item": 132,
 					"amount": 5,
 					"type": "Gold",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300084
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300095
 				}
 			},
 			"events": {}
@@ -1507,11 +2354,17 @@
 					"item": 97,
 					"amount": 5,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300085
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300096
 				}
 			},
 			"events": {}
@@ -1523,21 +2376,33 @@
 					"item": 108,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300086
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300097
 				},
 				"643": {
 					"item": 104,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300087
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300098
 				}
 			},
 			"events": {}
@@ -1549,21 +2414,33 @@
 					"item": 72,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300088
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300099
 				},
 				"1337": {
 					"item": 78,
 					"amount": 5,
 					"type": "Bronze",
-					"condition": [
-						"3",
-						"heat"
-					],
-					"mwid": 300089
+					"condition": {
+						"linear": [
+							"3",
+							"heat"
+						],
+						"open": [
+							"open3",
+							"heat"
+						]
+					},
+					"mwid": 300100
 				}
 			},
 			"events": {}
@@ -1575,11 +2452,17 @@
 					"item": 488,
 					"amount": 4,
 					"type": "Silver",
-					"condition": [
-						"3",
-						"heat"
-					],
-					"mwid": 300090
+					"condition": {
+						"linear": [
+							"3",
+							"heat"
+						],
+						"open": [
+							"open3",
+							"heat"
+						]
+					},
+					"mwid": 300101
 				}
 			},
 			"events": {}
@@ -1591,11 +2474,17 @@
 					"item": 0,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300091
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300102
 				}
 			},
 			"events": {}
@@ -1607,21 +2496,33 @@
 					"item": 140,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300092
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300103
 				},
 				"995": {
 					"item": 28,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300093
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300104
 				}
 			},
 			"events": {}
@@ -1633,11 +2534,17 @@
 					"item": 447,
 					"amount": 1,
 					"type": "Bronze",
-					"condition": [
-						"3",
-						"heat"
-					],
-					"mwid": 300094
+					"condition": {
+						"linear": [
+							"3",
+							"heat"
+						],
+						"open": [
+							"open3",
+							"heat"
+						]
+					},
+					"mwid": 300105
 				}
 			},
 			"events": {}
@@ -1649,11 +2556,17 @@
 					"item": 141,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300095
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300106
 				}
 			},
 			"events": {}
@@ -1665,11 +2578,17 @@
 					"item": 114,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"3",
-						""
-					],
-					"mwid": 300096
+					"condition": {
+						"linear": [
+							"3",
+							""
+						],
+						"open": [
+							"open3",
+							""
+						]
+					},
+					"mwid": 300107
 				}
 			},
 			"events": {}
@@ -1681,11 +2600,17 @@
 					"item": 159,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"5",
-						""
-					],
-					"mwid": 300097
+					"condition": {
+						"linear": [
+							"5",
+							""
+						],
+						"open": [
+							"open4.2",
+							""
+						]
+					},
+					"mwid": 300108
 				}
 			},
 			"events": {}
@@ -1697,11 +2622,17 @@
 					"item": 139,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"5",
-						"heat"
-					],
-					"mwid": 300098
+					"condition": {
+						"linear": [
+							"5",
+							"heat"
+						],
+						"open": [
+							"open4.2",
+							"heat"
+						]
+					},
+					"mwid": 300109
 				}
 			},
 			"events": {}
@@ -1713,11 +2644,17 @@
 					"item": 129,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"5",
-						""
-					],
-					"mwid": 300099
+					"condition": {
+						"linear": [
+							"5",
+							"heat"
+						],
+						"open": [
+							"open4.2",
+							"heat"
+						]
+					},
+					"mwid": 300110
 				}
 			},
 			"events": {}
@@ -1729,11 +2666,17 @@
 					"item": 487,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"5",
-						"heat"
-					],
-					"mwid": 300100
+					"condition": {
+						"linear": [
+							"5",
+							""
+						],
+						"open": [
+							"open4.2",
+							""
+						]
+					},
+					"mwid": 300111
 				}
 			},
 			"events": {}
@@ -1745,11 +2688,17 @@
 					"item": 152,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"5",
-						""
-					],
-					"mwid": 300101
+					"condition": {
+						"linear": [
+							"5",
+							""
+						],
+						"open": [
+							"open4.2",
+							""
+						]
+					},
+					"mwid": 300112
 				}
 			},
 			"events": {}
@@ -1761,11 +2710,17 @@
 					"item": 152,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"6",
-						""
-					],
-					"mwid": 300102
+					"condition": {
+						"linear": [
+							"6",
+							""
+						],
+						"open": [
+							"open4.3",
+							""
+						]
+					},
+					"mwid": 300113
 				}
 			},
 			"events": {}
@@ -1777,11 +2732,17 @@
 					"item": 160,
 					"amount": 2,
 					"type": "Bronze",
-					"condition": [
-						"7",
-						""
-					],
-					"mwid": 300103
+					"condition": {
+						"linear": [
+							"7",
+							""
+						],
+						"open": [
+							"open4.4",
+							""
+						]
+					},
+					"mwid": 300114
 				}
 			},
 			"events": {}
@@ -1793,11 +2754,17 @@
 					"item": 152,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"7",
-						""
-					],
-					"mwid": 300104
+					"condition": {
+						"linear": [
+							"7",
+							""
+						],
+						"open": [
+							"open4.4",
+							""
+						]
+					},
+					"mwid": 300115
 				}
 			},
 			"events": {}
@@ -1809,21 +2776,33 @@
 					"item": 154,
 					"amount": 1,
 					"type": "Bronze",
-					"condition": [
-						"9",
-						""
-					],
-					"mwid": 300105
+					"condition": {
+						"linear": [
+							"9",
+							""
+						],
+						"open": [
+							"open4.6",
+							""
+						]
+					},
+					"mwid": 300116
 				},
 				"66": {
 					"item": 190,
 					"amount": 2,
 					"type": "Bronze",
-					"condition": [
-						"9",
-						""
-					],
-					"mwid": 300106
+					"condition": {
+						"linear": [
+							"9",
+							""
+						],
+						"open": [
+							"open4.6",
+							""
+						]
+					},
+					"mwid": 300117
 				}
 			},
 			"events": {}
@@ -1835,11 +2814,17 @@
 					"item": 165,
 					"amount": 7,
 					"type": "Default",
-					"condition": [
-						"7",
-						""
-					],
-					"mwid": 300107
+					"condition": {
+						"linear": [
+							"7",
+							""
+						],
+						"open": [
+							"open4.4",
+							""
+						]
+					},
+					"mwid": 300118
 				}
 			},
 			"events": {}
@@ -1851,11 +2836,17 @@
 					"item": 119,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"7",
-						""
-					],
-					"mwid": 300108
+					"condition": {
+						"linear": [
+							"7",
+							""
+						],
+						"open": [
+							"open4.4",
+							""
+						]
+					},
+					"mwid": 300119
 				}
 			},
 			"events": {}
@@ -1867,21 +2858,33 @@
 					"item": 152,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"7",
-						""
-					],
-					"mwid": 300109
+					"condition": {
+						"linear": [
+							"7",
+							""
+						],
+						"open": [
+							"open4.4",
+							""
+						]
+					},
+					"mwid": 300120
 				},
 				"22": {
 					"item": 379,
 					"amount": 4,
 					"type": "Bronze",
-					"condition": [
-						"7",
-						""
-					],
-					"mwid": 300110
+					"condition": {
+						"linear": [
+							"7",
+							""
+						],
+						"open": [
+							"open4.4",
+							""
+						]
+					},
+					"mwid": 300121
 				}
 			},
 			"events": {}
@@ -1893,21 +2896,33 @@
 					"item": 152,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"7",
-						""
-					],
-					"mwid": 300111
+					"condition": {
+						"linear": [
+							"7",
+							""
+						],
+						"open": [
+							"open4.4",
+							""
+						]
+					},
+					"mwid": 300122
 				},
 				"68": {
 					"item": 167,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"7",
-						""
-					],
-					"mwid": 300112
+					"condition": {
+						"linear": [
+							"7",
+							""
+						],
+						"open": [
+							"open4.4",
+							""
+						]
+					},
+					"mwid": 300123
 				}
 			},
 			"events": {}
@@ -1920,11 +2935,17 @@
 				"45": {
 					"item": "heat",
 					"amount": 1,
-					"condition": [
-						"8",
-						""
-					],
-					"mwid": 300113
+					"condition": {
+						"linear": [
+							"8",
+							""
+						],
+						"open": [
+							"open4.5",
+							""
+						]
+					},
+					"mwid": 300124
 				}
 			}
 		},
@@ -1935,11 +2956,17 @@
 					"item": 38,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"9",
-						""
-					],
-					"mwid": 300114
+					"condition": {
+						"linear": [
+							"9",
+							""
+						],
+						"open": [
+							"open4.6",
+							""
+						]
+					},
+					"mwid": 300125
 				}
 			},
 			"events": {}
@@ -1951,11 +2978,17 @@
 					"item": 153,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"10",
-						""
-					],
-					"mwid": 300115
+					"condition": {
+						"linear": [
+							"10",
+							""
+						],
+						"open": [
+							"open4.7",
+							""
+						]
+					},
+					"mwid": 300126
 				}
 			},
 			"events": {}
@@ -1967,11 +3000,17 @@
 					"item": 152,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"9",
-						""
-					],
-					"mwid": 300116
+					"condition": {
+						"linear": [
+							"9",
+							""
+						],
+						"open": [
+							"open4.6",
+							""
+						]
+					},
+					"mwid": 300127
 				}
 			},
 			"events": {}
@@ -1983,11 +3022,17 @@
 					"item": 164,
 					"amount": 1,
 					"type": "Bronze",
-					"condition": [
-						"9",
-						""
-					],
-					"mwid": 300117
+					"condition": {
+						"linear": [
+							"9",
+							""
+						],
+						"open": [
+							"open4.6",
+							""
+						]
+					},
+					"mwid": 300128
 				}
 			},
 			"events": {}
@@ -1999,11 +3044,17 @@
 					"item": 152,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"9",
-						""
-					],
-					"mwid": 300118
+					"condition": {
+						"linear": [
+							"9",
+							""
+						],
+						"open": [
+							"open4.6",
+							""
+						]
+					},
+					"mwid": 300129
 				}
 			},
 			"events": {}
@@ -2015,11 +3066,17 @@
 					"item": 152,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"9",
-						""
-					],
-					"mwid": 300119
+					"condition": {
+						"linear": [
+							"9",
+							""
+						],
+						"open": [
+							"open4.6",
+							""
+						]
+					},
+					"mwid": 300130
 				}
 			},
 			"events": {}
@@ -2031,11 +3088,17 @@
 					"item": 152,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"9",
-						""
-					],
-					"mwid": 300120
+					"condition": {
+						"linear": [
+							"9",
+							""
+						],
+						"open": [
+							"open4.6",
+							""
+						]
+					},
+					"mwid": 300131
 				}
 			},
 			"events": {}
@@ -2047,11 +3110,17 @@
 					"item": 0,
 					"amount": 1,
 					"type": "Bronze",
-					"condition": [
-						"4",
-						"heat"
-					],
-					"mwid": 300121
+					"condition": {
+						"linear": [
+							"4",
+							"heat"
+						],
+						"open": [
+							"open4.1",
+							"heat"
+						]
+					},
+					"mwid": 300132
 				}
 			},
 			"events": {}
@@ -2065,12 +3134,18 @@
 						"item": 225,
 						"amount": 1,
 						"type": "",
-						"condition": [
-							"10",
-							"item.153.amount >= 1"
-						],
+						"condition": {
+							"linear": [
+								"10",
+								"item.153.amount >= 1"
+							],
+							"open": [
+								"open4.8",
+								""
+							]
+						},
 						"path": ".settings.event.20",
-						"mwid": 300122
+						"mwid": 300133
 					}
 				]
 			}
@@ -2082,11 +3157,17 @@
 					"item": 152,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"4",
-						""
-					],
-					"mwid": 300123
+					"condition": {
+						"linear": [
+							"4",
+							""
+						],
+						"open": [
+							"open4.1",
+							""
+						]
+					},
+					"mwid": 300134
 				}
 			},
 			"events": {}
@@ -2098,11 +3179,17 @@
 					"item": 292,
 					"amount": 4,
 					"type": "Bronze",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300124
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							"shock"
+						]
+					},
+					"mwid": 300135
 				}
 			},
 			"events": {}
@@ -2114,11 +3201,17 @@
 					"item": 515,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300125
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							"shock"
+						]
+					},
+					"mwid": 300136
 				}
 			},
 			"events": {}
@@ -2130,11 +3223,17 @@
 					"item": 191,
 					"amount": 3,
 					"type": "Gold",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300126
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300137
 				}
 			},
 			"events": {}
@@ -2146,21 +3245,33 @@
 					"item": 391,
 					"amount": 4,
 					"type": "Silver",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300127
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300138
 				},
 				"30": {
 					"item": 166,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300128
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300139
 				}
 			},
 			"events": {}
@@ -2172,21 +3283,33 @@
 					"item": 409,
 					"amount": 6,
 					"type": "Bronze",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300129
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300140
 				},
 				"63": {
 					"item": 381,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300130
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300141
 				}
 			},
 			"events": {}
@@ -2198,21 +3321,33 @@
 					"item": 354,
 					"amount": 5,
 					"type": "Silver",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300131
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300142
 				},
 				"13": {
 					"item": 390,
 					"amount": 8,
 					"type": "Bronze",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300132
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300143
 				}
 			},
 			"events": {}
@@ -2224,21 +3359,33 @@
 					"item": 424,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300133
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							"shock"
+						]
+					},
+					"mwid": 300144
 				},
 				"32": {
 					"item": 3,
 					"amount": 7,
 					"type": "Bronze",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300134
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							"shock"
+						]
+					},
+					"mwid": 300145
 				}
 			},
 			"events": {}
@@ -2252,12 +3399,18 @@
 						"item": 434,
 						"amount": 1,
 						"type": "",
-						"condition": [
-							"32",
-							""
-						],
+						"condition": {
+							"linear": [
+								"32",
+								""
+							],
+							"open": [
+								"open17",
+								""
+							]
+						},
 						"path": ".settings.event.19",
-						"mwid": 300135
+						"mwid": 300146
 					}
 				]
 			}
@@ -2269,11 +3422,17 @@
 					"item": 409,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300136
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300147
 				}
 			},
 			"events": {}
@@ -2285,11 +3444,17 @@
 					"item": 497,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300137
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300148
 				}
 			},
 			"events": {}
@@ -2301,21 +3466,33 @@
 					"item": 167,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300138
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300149
 				},
 				"109": {
 					"item": 79,
 					"amount": 6,
 					"type": "Bronze",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300139
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300150
 				}
 			},
 			"events": {}
@@ -2327,21 +3504,33 @@
 					"item": 406,
 					"amount": 4,
 					"type": "Silver",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300140
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300151
 				},
 				"160": {
 					"item": 488,
 					"amount": 3,
 					"type": "Bronze",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300141
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300152
 				}
 			},
 			"events": {}
@@ -2353,31 +3542,49 @@
 					"item": 388,
 					"amount": 4,
 					"type": "Bronze",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300142
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300153
 				},
 				"53": {
 					"item": 381,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300143
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300154
 				},
 				"145": {
 					"item": 356,
 					"amount": 5,
 					"type": "Bronze",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300144
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300155
 				}
 			},
 			"events": {}
@@ -2389,21 +3596,33 @@
 					"item": 88,
 					"amount": 6,
 					"type": "Bronze",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300145
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300156
 				},
 				"184": {
 					"item": 63,
 					"amount": 4,
 					"type": "Gold",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300146
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300157
 				}
 			},
 			"events": {}
@@ -2415,21 +3634,33 @@
 					"item": 408,
 					"amount": 3,
 					"type": "Bronze",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300147
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300158
 				},
 				"6": {
 					"item": 97,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300148
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300159
 				}
 			},
 			"events": {
@@ -2438,12 +3669,18 @@
 						"item": 439,
 						"amount": 1,
 						"type": "",
-						"condition": [
-							"31",
-							""
-						],
+						"condition": {
+							"linear": [
+								"31",
+								""
+							],
+							"open": [
+								"open16",
+								""
+							]
+						},
 						"path": ".settings.npcStates.2.event.quest.12",
-						"mwid": 300149
+						"mwid": 300160
 					}
 				]
 			}
@@ -2455,21 +3692,33 @@
 					"item": 407,
 					"amount": 2,
 					"type": "Silver",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300150
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300161
 				},
 				"9": {
 					"item": 420,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300151
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300162
 				}
 			},
 			"events": {}
@@ -2481,21 +3730,33 @@
 					"item": 405,
 					"amount": 4,
 					"type": "Silver",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300152
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300163
 				},
 				"53": {
 					"item": 425,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300153
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300164
 				}
 			},
 			"events": {}
@@ -2507,21 +3768,33 @@
 					"item": 423,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300154
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300165
 				},
 				"44": {
 					"item": 421,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300155
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300166
 				}
 			},
 			"events": {}
@@ -2533,31 +3806,49 @@
 					"item": 336,
 					"amount": 4,
 					"type": "Gold",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300156
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300167
 				},
 				"82": {
 					"item": 132,
 					"amount": 4,
 					"type": "Silver",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300157
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300168
 				},
 				"90": {
 					"item": 387,
 					"amount": 8,
 					"type": "Bronze",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300158
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300169
 				}
 			},
 			"events": {}
@@ -2569,21 +3860,33 @@
 					"item": 329,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300159
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300170
 				},
 				"100": {
 					"item": 385,
 					"amount": 5,
 					"type": "Silver",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300160
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300171
 				}
 			},
 			"events": {}
@@ -2595,31 +3898,49 @@
 					"item": 357,
 					"amount": 3,
 					"type": "Silver",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300161
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300172
 				},
 				"167": {
 					"item": 422,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300162
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300173
 				},
 				"904": {
 					"item": 351,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300163
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300174
 				}
 			},
 			"events": {}
@@ -2631,11 +3952,17 @@
 					"item": 392,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"33",
-						""
-					],
-					"mwid": 300164
+					"condition": {
+						"linear": [
+							"33",
+							""
+						],
+						"open": [
+							"open16.1",
+							""
+						]
+					},
+					"mwid": 300175
 				}
 			},
 			"events": {}
@@ -2647,31 +3974,49 @@
 					"item": 499,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"33",
-						""
-					],
-					"mwid": 300165
+					"condition": {
+						"linear": [
+							"33",
+							""
+						],
+						"open": [
+							"open16.1",
+							"wave"
+						]
+					},
+					"mwid": 300176
 				},
 				"301": {
 					"item": 192,
 					"amount": 2,
 					"type": "Silver",
-					"condition": [
-						"33",
-						""
-					],
-					"mwid": 300166
+					"condition": {
+						"linear": [
+							"33",
+							""
+						],
+						"open": [
+							"open16.1",
+							"wave"
+						]
+					},
+					"mwid": 300177
 				},
 				"302": {
 					"item": 489,
 					"amount": 3,
 					"type": "Silver",
-					"condition": [
-						"33",
-						""
-					],
-					"mwid": 300167
+					"condition": {
+						"linear": [
+							"33",
+							""
+						],
+						"open": [
+							"open16.1",
+							"wave"
+						]
+					},
+					"mwid": 300178
 				}
 			},
 			"events": {}
@@ -2683,11 +4028,17 @@
 					"item": 167,
 					"amount": 4,
 					"type": "Bronze",
-					"condition": [
-						"31",
-						""
-					],
-					"mwid": 300168
+					"condition": {
+						"linear": [
+							"31",
+							""
+						],
+						"open": [
+							"open16",
+							""
+						]
+					},
+					"mwid": 300179
 				}
 			},
 			"events": {}
@@ -2699,21 +4050,33 @@
 					"item": 183,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300169
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300180
 				},
 				"43": {
 					"item": 182,
 					"amount": 3,
 					"type": "Silver",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300170
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300181
 				}
 			},
 			"events": {}
@@ -2725,11 +4088,17 @@
 					"item": 353,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"12",
-						""
-					],
-					"mwid": 300171
+					"condition": {
+						"linear": [
+							"12",
+							""
+						],
+						"open": [
+							"open6",
+							""
+						]
+					},
+					"mwid": 300182
 				}
 			},
 			"events": {}
@@ -2741,21 +4110,33 @@
 					"item": 229,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300172
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300183
 				},
 				"197": {
 					"item": 185,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300173
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300184
 				}
 			},
 			"events": {}
@@ -2767,31 +4148,49 @@
 					"item": 182,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300174
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300185
 				},
 				"30": {
 					"item": 180,
 					"amount": 5,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300175
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300186
 				},
 				"32": {
 					"item": 187,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300176
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300187
 				}
 			},
 			"events": {}
@@ -2805,12 +4204,18 @@
 						"item": 230,
 						"amount": 1,
 						"type": "",
-						"condition": [
-							"19",
-							""
-						],
+						"condition": {
+							"linear": [
+								"19",
+								""
+							],
+							"open": [
+								"open7.8",
+								""
+							]
+						},
 						"path": ".settings.event.20",
-						"mwid": 300177
+						"mwid": 300188
 					}
 				]
 			}
@@ -2822,21 +4227,33 @@
 					"item": 178,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300178
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300189
 				},
 				"9": {
 					"item": 177,
 					"amount": 7,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300179
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300190
 				}
 			},
 			"events": {}
@@ -2848,21 +4265,33 @@
 					"item": 188,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300180
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300191
 				},
 				"97": {
 					"item": 71,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300181
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300192
 				}
 			},
 			"events": {}
@@ -2874,11 +4303,17 @@
 					"item": 221,
 					"amount": 1,
 					"type": "Bronze",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300182
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300193
 				}
 			},
 			"events": {}
@@ -2890,11 +4325,17 @@
 					"item": 139,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300183
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300194
 				}
 			},
 			"events": {}
@@ -2906,11 +4347,17 @@
 					"item": 487,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300184
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300195
 				}
 			},
 			"events": {}
@@ -2922,21 +4369,33 @@
 					"item": 228,
 					"amount": 1,
 					"type": "Bronze",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300185
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300196
 				},
 				"14": {
 					"item": 186,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300186
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300197
 				}
 			},
 			"events": {}
@@ -2948,21 +4407,33 @@
 					"item": 167,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300187
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300198
 				},
 				"25": {
 					"item": 488,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300188
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300199
 				}
 			},
 			"events": {}
@@ -2974,11 +4445,17 @@
 					"item": 79,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300189
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300200
 				}
 			},
 			"events": {}
@@ -2990,21 +4467,33 @@
 					"item": 197,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300190
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300201
 				},
 				"14": {
 					"item": 175,
 					"amount": 7,
 					"type": "Bronze",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300191
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300202
 				}
 			},
 			"events": {}
@@ -3016,11 +4505,17 @@
 					"item": 87,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300192
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300203
 				}
 			},
 			"events": {}
@@ -3032,21 +4527,33 @@
 					"item": 199,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300193
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300204
 				},
 				"78": {
 					"item": 66,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300194
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300205
 				}
 			},
 			"events": {}
@@ -3058,21 +4565,33 @@
 					"item": 195,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300195
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300206
 				},
 				"4": {
 					"item": 356,
 					"amount": 5,
 					"type": "Silver",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300196
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300207
 				}
 			},
 			"events": {}
@@ -3084,21 +4603,33 @@
 					"item": 487,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300197
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300208
 				},
 				"41": {
 					"item": 65,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300198
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300209
 				}
 			},
 			"events": {}
@@ -3110,11 +4641,17 @@
 					"item": 198,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300199
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300210
 				}
 			},
 			"events": {}
@@ -3126,21 +4663,33 @@
 					"item": 28,
 					"amount": 6,
 					"type": "Silver",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300200
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300211
 				},
 				"19": {
 					"item": 176,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300201
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300212
 				}
 			},
 			"events": {}
@@ -3152,11 +4701,17 @@
 					"item": 200,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"15",
-						""
-					],
-					"mwid": 300202
+					"condition": {
+						"linear": [
+							"15",
+							""
+						],
+						"open": [
+							"open7.3",
+							""
+						]
+					},
+					"mwid": 300213
 				}
 			},
 			"events": {}
@@ -3169,11 +4724,17 @@
 				"78": {
 					"item": "cold",
 					"amount": 1,
-					"condition": [
-						"16",
-						""
-					],
-					"mwid": 300203
+					"condition": {
+						"linear": [
+							"16",
+							""
+						],
+						"open": [
+							"open7.4",
+							""
+						]
+					},
+					"mwid": 300214
 				}
 			}
 		},
@@ -3184,11 +4745,17 @@
 					"item": 202,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"17",
-						""
-					],
-					"mwid": 300204
+					"condition": {
+						"linear": [
+							"17",
+							""
+						],
+						"open": [
+							"open7.5",
+							""
+						]
+					},
+					"mwid": 300215
 				}
 			},
 			"events": {}
@@ -3200,21 +4767,33 @@
 					"item": 155,
 					"amount": 1,
 					"type": "Bronze",
-					"condition": [
-						"17.5",
-						""
-					],
-					"mwid": 300205
+					"condition": {
+						"linear": [
+							"17.5",
+							""
+						],
+						"open": [
+							"open7.6",
+							""
+						]
+					},
+					"mwid": 300216
 				},
 				"79": {
 					"item": 191,
 					"amount": 2,
 					"type": "Silver",
-					"condition": [
-						"17.5",
-						""
-					],
-					"mwid": 300206
+					"condition": {
+						"linear": [
+							"17.5",
+							""
+						],
+						"open": [
+							"open7.6",
+							""
+						]
+					},
+					"mwid": 300217
 				}
 			},
 			"events": {}
@@ -3226,11 +4805,17 @@
 					"item": 146,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"17.5",
-						""
-					],
-					"mwid": 300207
+					"condition": {
+						"linear": [
+							"17.5",
+							""
+						],
+						"open": [
+							"open7.6",
+							""
+						]
+					},
+					"mwid": 300218
 				}
 			},
 			"events": {}
@@ -3242,11 +4827,17 @@
 					"item": 203,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"17",
-						""
-					],
-					"mwid": 300208
+					"condition": {
+						"linear": [
+							"17",
+							""
+						],
+						"open": [
+							"open7.5",
+							""
+						]
+					},
+					"mwid": 300219
 				}
 			},
 			"events": {}
@@ -3258,11 +4849,17 @@
 					"item": 146,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"17",
-						""
-					],
-					"mwid": 300209
+					"condition": {
+						"linear": [
+							"17",
+							""
+						],
+						"open": [
+							"open7.5",
+							""
+						]
+					},
+					"mwid": 300220
 				}
 			},
 			"events": {}
@@ -3274,11 +4871,17 @@
 					"item": 146,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"17.5",
-						""
-					],
-					"mwid": 300210
+					"condition": {
+						"linear": [
+							"17.5",
+							""
+						],
+						"open": [
+							"open7.6",
+							""
+						]
+					},
+					"mwid": 300221
 				}
 			},
 			"events": {}
@@ -3290,11 +4893,17 @@
 					"item": 146,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"17.5",
-						""
-					],
-					"mwid": 300211
+					"condition": {
+						"linear": [
+							"17.5",
+							""
+						],
+						"open": [
+							"open7.6",
+							""
+						]
+					},
+					"mwid": 300222
 				}
 			},
 			"events": {}
@@ -3306,11 +4915,17 @@
 					"item": 54,
 					"amount": 1,
 					"type": "Silver",
-					"condition": [
-						"17",
-						""
-					],
-					"mwid": 300212
+					"condition": {
+						"linear": [
+							"17",
+							""
+						],
+						"open": [
+							"open7.5",
+							""
+						]
+					},
+					"mwid": 300223
 				}
 			},
 			"events": {}
@@ -3322,11 +4937,17 @@
 					"item": 146,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"17.5",
-						""
-					],
-					"mwid": 300213
+					"condition": {
+						"linear": [
+							"17.5",
+							""
+						],
+						"open": [
+							"open7.6",
+							""
+						]
+					},
+					"mwid": 300224
 				}
 			},
 			"events": {}
@@ -3338,11 +4959,17 @@
 					"item": 147,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"18",
-						""
-					],
-					"mwid": 300214
+					"condition": {
+						"linear": [
+							"18",
+							""
+						],
+						"open": [
+							"open7.7",
+							""
+						]
+					},
+					"mwid": 300225
 				}
 			},
 			"events": {}
@@ -3354,11 +4981,17 @@
 					"item": 146,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"13",
-						""
-					],
-					"mwid": 300215
+					"condition": {
+						"linear": [
+							"13",
+							""
+						],
+						"open": [
+							"open7.1",
+							""
+						]
+					},
+					"mwid": 300226
 				}
 			},
 			"events": {}
@@ -3370,11 +5003,17 @@
 					"item": 201,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"14",
-						""
-					],
-					"mwid": 300216
+					"condition": {
+						"linear": [
+							"14",
+							""
+						],
+						"open": [
+							"open7.2",
+							""
+						]
+					},
+					"mwid": 300227
 				}
 			},
 			"events": {}
@@ -3386,21 +5025,33 @@
 					"item": 379,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"14",
-						""
-					],
-					"mwid": 300217
+					"condition": {
+						"linear": [
+							"14",
+							""
+						],
+						"open": [
+							"open7.2",
+							""
+						]
+					},
+					"mwid": 300228
 				},
 				"86": {
 					"item": 167,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"14",
-						""
-					],
-					"mwid": 300218
+					"condition": {
+						"linear": [
+							"14",
+							""
+						],
+						"open": [
+							"open7.2",
+							""
+						]
+					},
+					"mwid": 300229
 				}
 			},
 			"events": {}
@@ -3412,11 +5063,17 @@
 					"item": 28,
 					"amount": 5,
 					"type": "Default",
-					"condition": [
-						"14",
-						""
-					],
-					"mwid": 300219
+					"condition": {
+						"linear": [
+							"14",
+							""
+						],
+						"open": [
+							"open7.2",
+							""
+						]
+					},
+					"mwid": 300230
 				}
 			},
 			"events": {}
@@ -3428,11 +5085,17 @@
 					"item": 146,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"14",
-						""
-					],
-					"mwid": 300220
+					"condition": {
+						"linear": [
+							"14",
+							""
+						],
+						"open": [
+							"open7.2",
+							""
+						]
+					},
+					"mwid": 300231
 				}
 			},
 			"events": {}
@@ -3444,11 +5107,17 @@
 					"item": 146,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"14",
-						""
-					],
-					"mwid": 300221
+					"condition": {
+						"linear": [
+							"14",
+							""
+						],
+						"open": [
+							"open7.2",
+							""
+						]
+					},
+					"mwid": 300232
 				}
 			},
 			"events": {}
@@ -3460,11 +5129,17 @@
 					"item": 146,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"14",
-						""
-					],
-					"mwid": 300222
+					"condition": {
+						"linear": [
+							"14",
+							""
+						],
+						"open": [
+							"open7.2",
+							""
+						]
+					},
+					"mwid": 300233
 				}
 			},
 			"events": {}
@@ -3476,21 +5151,33 @@
 					"item": 187,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300223
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300234
 				},
 				"737": {
 					"item": 187,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300224
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300235
 				}
 			},
 			"events": {}
@@ -3502,21 +5189,33 @@
 					"item": 199,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300225
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300236
 				},
 				"1227": {
 					"item": 359,
 					"amount": 1,
 					"type": "Bronze",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300226
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300237
 				}
 			},
 			"events": {}
@@ -3530,12 +5229,18 @@
 						"item": 403,
 						"amount": 1,
 						"type": "",
-						"condition": [
-							"11",
-							"cold"
-						],
+						"condition": {
+							"linear": [
+								"11",
+								"cold"
+							],
+							"open": [
+								"open5",
+								"cold"
+							]
+						},
 						"path": ".settings.npcStates.0.event.4.0.9",
-						"mwid": 300227
+						"mwid": 300238
 					}
 				]
 			}
@@ -3549,12 +5254,18 @@
 						"item": 236,
 						"amount": 1,
 						"type": "",
-						"condition": [
-							"11",
-							""
-						],
+						"condition": {
+							"linear": [
+								"11",
+								""
+							],
+							"open": [
+								"open5",
+								""
+							]
+						},
 						"path": ".settings.npcStates.1.event.quest.3.accepted.3",
-						"mwid": 300228
+						"mwid": 300239
 					}
 				]
 			}
@@ -3566,17 +5277,23 @@
 					"item": 338,
 					"amount": 1,
 					"type": "Silver",
-					"condition": [
-						"11",
-						""
-					],
-					"mwid": 300229
+					"condition": {
+						"linear": [
+							"11",
+							""
+						],
+						"open": [
+							"open5",
+							""
+						]
+					},
+					"mwid": 300240
 				}
 			},
 			"events": {}
 		},
 		"heat-village.special.expo-space": {
-			"name": "Maroon Valley - Space",
+			"name": "Ba'kii Kum - Space",
 			"chests": {},
 			"events": {
 				"136": [
@@ -3584,12 +5301,18 @@
 						"item": 148,
 						"amount": 1,
 						"type": "",
-						"condition": [
-							"12",
-							""
-						],
+						"condition": {
+							"linear": [
+								"12",
+								""
+							],
+							"open": [
+								"open6",
+								""
+							]
+						},
 						"path": ".settings.event.17",
-						"mwid": 300230
+						"mwid": 300241
 					}
 				]
 			}
@@ -3601,11 +5324,17 @@
 					"item": 488,
 					"amount": 6,
 					"type": "Silver",
-					"condition": [
-						"23",
-						"wave"
-					],
-					"mwid": 300231
+					"condition": {
+						"linear": [
+							"23",
+							"wave"
+						],
+						"open": [
+							"open10",
+							"wave"
+						]
+					},
+					"mwid": 300242
 				}
 			},
 			"events": {}
@@ -3617,11 +5346,17 @@
 					"item": 261,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"23",
-						"wave"
-					],
-					"mwid": 300232
+					"condition": {
+						"linear": [
+							"23",
+							"wave"
+						],
+						"open": [
+							"open10",
+							"wave"
+						]
+					},
+					"mwid": 300243
 				}
 			},
 			"events": {}
@@ -3633,31 +5368,49 @@
 					"item": 257,
 					"amount": 5,
 					"type": "Gold",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300233
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300244
 				},
 				"6": {
 					"item": 283,
 					"amount": 2,
 					"type": "Silver",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300234
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300245
 				},
 				"125": {
 					"item": 282,
 					"amount": 2,
 					"type": "Bronze",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300235
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300246
 				}
 			},
 			"events": {}
@@ -3669,21 +5422,33 @@
 					"item": 331,
 					"amount": 4,
 					"type": "Bronze",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300236
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300247
 				},
 				"351": {
 					"item": 251,
 					"amount": 5,
 					"type": "Silver",
-					"condition": [
-						"23",
-						"wave"
-					],
-					"mwid": 300237
+					"condition": {
+						"linear": [
+							"23",
+							"wave"
+						],
+						"open": [
+							"open10",
+							"wave"
+						]
+					},
+					"mwid": 300248
 				}
 			},
 			"events": {}
@@ -3695,21 +5460,33 @@
 					"item": 257,
 					"amount": 3,
 					"type": "Gold",
-					"condition": [
-						"23",
-						"wave"
-					],
-					"mwid": 300238
+					"condition": {
+						"linear": [
+							"23",
+							"wave"
+						],
+						"open": [
+							"open10",
+							"wave"
+						]
+					},
+					"mwid": 300249
 				},
 				"33": {
 					"item": 191,
 					"amount": 2,
 					"type": "Silver",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300239
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300250
 				}
 			},
 			"events": {}
@@ -3721,31 +5498,49 @@
 					"item": 488,
 					"amount": 3,
 					"type": "Silver",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300240
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300251
 				},
 				"91": {
 					"item": 289,
 					"amount": 2,
 					"type": "Bronze",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300241
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300252
 				},
 				"135": {
 					"item": 485,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"23",
-						"wave"
-					],
-					"mwid": 300242
+					"condition": {
+						"linear": [
+							"23",
+							"wave"
+						],
+						"open": [
+							"open10",
+							"wave"
+						]
+					},
+					"mwid": 300253
 				}
 			},
 			"events": {}
@@ -3759,12 +5554,18 @@
 						"item": 231,
 						"amount": 1,
 						"type": "",
-						"condition": [
-							"25",
-							"wave"
-						],
+						"condition": {
+							"linear": [
+								"25",
+								"wave"
+							],
+							"open": [
+								"open13.2",
+								""
+							]
+						},
 						"path": ".settings.event.20",
-						"mwid": 300243
+						"mwid": 300254
 					}
 				]
 			}
@@ -3778,12 +5579,18 @@
 						"item": 410,
 						"amount": 1,
 						"type": "",
-						"condition": [
-							"30",
-							""
-						],
+						"condition": {
+							"linear": [
+								"30",
+								""
+							],
+							"open": [
+								"open15.3",
+								""
+							]
+						},
 						"path": ".settings.event.25",
-						"mwid": 300244
+						"mwid": 300255
 					}
 				]
 			}
@@ -3795,11 +5602,17 @@
 					"item": 379,
 					"amount": 4,
 					"type": "Bronze",
-					"condition": [
-						"28",
-						""
-					],
-					"mwid": 300245
+					"condition": {
+						"linear": [
+							"28",
+							""
+						],
+						"open": [
+							"open15.1",
+							""
+						]
+					},
+					"mwid": 300256
 				}
 			},
 			"events": {}
@@ -3813,12 +5626,18 @@
 						"item": 286,
 						"amount": 1,
 						"type": "",
-						"condition": [
-							"27",
-							"shock"
-						],
+						"condition": {
+							"linear": [
+								"27",
+								"shock"
+							],
+							"open": [
+								"open14.3",
+								""
+							]
+						},
 						"path": ".settings.event.20",
-						"mwid": 300246
+						"mwid": 300257
 					}
 				]
 			}
@@ -3830,11 +5649,17 @@
 					"item": 488,
 					"amount": 2,
 					"type": "Silver",
-					"condition": [
-						"23",
-						"wave"
-					],
-					"mwid": 300247
+					"condition": {
+						"linear": [
+							"23",
+							"wave"
+						],
+						"open": [
+							"open10",
+							"wave"
+						]
+					},
+					"mwid": 300258
 				}
 			},
 			"events": {}
@@ -3846,21 +5671,33 @@
 					"item": 260,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300248
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300259
 				},
 				"5": {
 					"item": 65,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300249
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300260
 				}
 			},
 			"events": {}
@@ -3872,41 +5709,65 @@
 					"item": 282,
 					"amount": 3,
 					"type": "Silver",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300250
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300261
 				},
 				"68": {
 					"item": 290,
 					"amount": 7,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300251
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300262
 				},
 				"69": {
 					"item": 258,
 					"amount": 8,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300252
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300263
 				},
 				"80": {
 					"item": 284,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300253
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300264
 				}
 			},
 			"events": {}
@@ -3918,21 +5779,33 @@
 					"item": 315,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300254
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300265
 				},
 				"42": {
 					"item": 291,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300255
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300266
 				}
 			},
 			"events": {}
@@ -3944,31 +5817,49 @@
 					"item": 68,
 					"amount": 5,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300256
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300267
 				},
 				"63": {
 					"item": 316,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300257
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300268
 				},
 				"170": {
 					"item": 292,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"23",
-						"wave"
-					],
-					"mwid": 300258
+					"condition": {
+						"linear": [
+							"23",
+							"wave"
+						],
+						"open": [
+							"open10",
+							"wave"
+						]
+					},
+					"mwid": 300269
 				}
 			},
 			"events": {}
@@ -3980,21 +5871,33 @@
 					"item": 66,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300259
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300270
 				},
 				"32": {
 					"item": 72,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300260
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300271
 				}
 			},
 			"events": {}
@@ -4006,41 +5909,65 @@
 					"item": 278,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300261
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300272
 				},
 				"70": {
 					"item": 279,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"23",
-						"wave"
-					],
-					"mwid": 300262
+					"condition": {
+						"linear": [
+							"23",
+							"wave"
+						],
+						"open": [
+							"open10",
+							"wave"
+						]
+					},
+					"mwid": 300273
 				},
 				"90": {
 					"item": 252,
 					"amount": 9,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300263
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300274
 				},
 				"97": {
 					"item": 40,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300264
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300275
 				}
 			},
 			"events": {}
@@ -4052,41 +5979,65 @@
 					"item": 78,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300265
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300276
 				},
 				"58": {
 					"item": 495,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300266
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300277
 				},
 				"82": {
 					"item": 254,
 					"amount": 5,
 					"type": "Silver",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300267
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300278
 				},
 				"949": {
 					"item": 488,
 					"amount": 5,
 					"type": "Silver",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300268
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300279
 				}
 			},
 			"events": {}
@@ -4098,21 +6049,33 @@
 					"item": 277,
 					"amount": 4,
 					"type": "Bronze",
-					"condition": [
-						"23",
-						"wave"
-					],
-					"mwid": 300269
+					"condition": {
+						"linear": [
+							"23",
+							"wave"
+						],
+						"open": [
+							"open10",
+							"wave"
+						]
+					},
+					"mwid": 300280
 				},
 				"75": {
 					"item": 75,
 					"amount": 5,
 					"type": "Bronze",
-					"condition": [
-						"23",
-						"wave"
-					],
-					"mwid": 300270
+					"condition": {
+						"linear": [
+							"23",
+							"wave"
+						],
+						"open": [
+							"open10",
+							"wave"
+						]
+					},
+					"mwid": 300281
 				}
 			},
 			"events": {}
@@ -4124,31 +6087,49 @@
 					"item": 332,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"23",
-						"wave"
-					],
-					"mwid": 300271
+					"condition": {
+						"linear": [
+							"23",
+							"wave"
+						],
+						"open": [
+							"open10",
+							"wave"
+						]
+					},
+					"mwid": 300282
 				},
 				"8": {
 					"item": 259,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300272
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300283
 				},
 				"12": {
 					"item": 3,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300273
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300284
 				}
 			},
 			"events": {}
@@ -4160,21 +6141,33 @@
 					"item": 87,
 					"amount": 4,
 					"type": "Bronze",
-					"condition": [
-						"23",
-						"wave"
-					],
-					"mwid": 300274
+					"condition": {
+						"linear": [
+							"23",
+							"wave"
+						],
+						"open": [
+							"open10",
+							"wave"
+						]
+					},
+					"mwid": 300285
 				},
 				"33": {
 					"item": 275,
 					"amount": 5,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300275
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300286
 				}
 			},
 			"events": {}
@@ -4186,21 +6179,33 @@
 					"item": 79,
 					"amount": 4,
 					"type": "Silver",
-					"condition": [
-						"23",
-						"wave"
-					],
-					"mwid": 300276
+					"condition": {
+						"linear": [
+							"23",
+							"wave"
+						],
+						"open": [
+							"open10",
+							"wave"
+						]
+					},
+					"mwid": 300287
 				},
 				"39": {
 					"item": 71,
 					"amount": 7,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300277
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300288
 				}
 			},
 			"events": {}
@@ -4212,21 +6217,33 @@
 					"item": 28,
 					"amount": 8,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300278
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300289
 				},
 				"13": {
 					"item": 290,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300279
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300290
 				}
 			},
 			"events": {}
@@ -4238,21 +6255,33 @@
 					"item": 192,
 					"amount": 2,
 					"type": "Gold",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300280
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300291
 				},
 				"14": {
 					"item": 251,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300281
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300292
 				}
 			},
 			"events": {}
@@ -4264,21 +6293,33 @@
 					"item": 276,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300282
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300293
 				},
 				"22": {
 					"item": 289,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300283
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300294
 				}
 			},
 			"events": {}
@@ -4290,21 +6331,33 @@
 					"item": 300,
 					"amount": 1,
 					"type": "Silver",
-					"condition": [
-						"23",
-						"wave"
-					],
-					"mwid": 300284
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300295
 				},
 				"58": {
 					"item": 292,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300285
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300296
 				}
 			},
 			"events": {}
@@ -4316,21 +6369,33 @@
 					"item": 262,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"23",
-						"wave"
-					],
-					"mwid": 300286
+					"condition": {
+						"linear": [
+							"23",
+							"wave"
+						],
+						"open": [
+							"open10",
+							"wave"
+						]
+					},
+					"mwid": 300297
 				},
 				"105": {
 					"item": 291,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300287
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300298
 				}
 			},
 			"events": {}
@@ -4342,21 +6407,33 @@
 					"item": 493,
 					"amount": 4,
 					"type": "Silver",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300288
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300299
 				},
 				"13": {
 					"item": 332,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"23",
-						"wave"
-					],
-					"mwid": 300289
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300300
 				}
 			},
 			"events": {}
@@ -4368,21 +6445,33 @@
 					"item": 278,
 					"amount": 2,
 					"type": "Bronze",
-					"condition": [
-						"23",
-						"wave"
-					],
-					"mwid": 300290
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300301
 				},
 				"14": {
 					"item": 274,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"23",
-						"wave"
-					],
-					"mwid": 300291
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300302
 				}
 			},
 			"events": {}
@@ -4394,11 +6483,17 @@
 					"item": 253,
 					"amount": 7,
 					"type": "Default",
-					"condition": [
-						"23",
-						"wave"
-					],
-					"mwid": 300292
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300303
 				}
 			},
 			"events": {}
@@ -4410,11 +6505,17 @@
 					"item": 484,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"24",
-						""
-					],
-					"mwid": 300293
+					"condition": {
+						"linear": [
+							"24",
+							""
+						],
+						"open": [
+							"open11",
+							""
+						]
+					},
+					"mwid": 300304
 				}
 			},
 			"events": {}
@@ -4426,31 +6527,49 @@
 					"item": 346,
 					"amount": 1,
 					"type": "Silver",
-					"condition": [
-						"24",
-						""
-					],
-					"mwid": 300294
+					"condition": {
+						"linear": [
+							"24",
+							""
+						],
+						"open": [
+							"open11",
+							""
+						]
+					},
+					"mwid": 300305
 				},
 				"322": {
 					"item": 192,
 					"amount": 1,
 					"type": "Silver",
-					"condition": [
-						"24",
-						""
-					],
-					"mwid": 300295
+					"condition": {
+						"linear": [
+							"24",
+							""
+						],
+						"open": [
+							"open11",
+							""
+						]
+					},
+					"mwid": 300306
 				},
 				"537": {
 					"item": 381,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"24",
-						""
-					],
-					"mwid": 300296
+					"condition": {
+						"linear": [
+							"24",
+							""
+						],
+						"open": [
+							"open11",
+							""
+						]
+					},
+					"mwid": 300307
 				}
 			},
 			"events": {}
@@ -4462,11 +6581,17 @@
 					"item": 250,
 					"amount": 5,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300297
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300308
 				}
 			},
 			"events": {}
@@ -4478,11 +6603,17 @@
 					"item": 358,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300298
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300309
 				}
 			},
 			"events": {}
@@ -4494,11 +6625,17 @@
 					"item": 191,
 					"amount": 3,
 					"type": "Silver",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300299
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open10",
+							""
+						]
+					},
+					"mwid": 300310
 				}
 			},
 			"events": {}
@@ -4510,19 +6647,33 @@
 					"item": 1,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"1",
-						""
-					]
+					"condition": {
+						"linear": [
+							"1",
+							""
+						],
+						"open": [
+							"open1",
+							""
+						]
+					},
+					"mwid": 300311
 				},
 				"184": {
 					"item": 2,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"1",
-						""
-					]
+					"condition": {
+						"linear": [
+							"1",
+							""
+						],
+						"open": [
+							"open1",
+							""
+						]
+					},
+					"mwid": 300312
 				}
 			},
 			"events": {}
@@ -4534,37 +6685,61 @@
 					"item": 23,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"1",
-						""
-					]
+					"condition": {
+						"linear": [
+							"1",
+							""
+						],
+						"open": [
+							"open1",
+							""
+						]
+					}
 				},
 				"186": {
 					"item": 24,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"1",
-						""
-					]
+					"condition": {
+						"linear": [
+							"1",
+							""
+						],
+						"open": [
+							"open1",
+							""
+						]
+					}
 				},
 				"187": {
 					"item": 26,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"1",
-						""
-					]
+					"condition": {
+						"linear": [
+							"1",
+							""
+						],
+						"open": [
+							"open1",
+							""
+						]
+					}
 				},
 				"188": {
 					"item": 25,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"1",
-						""
-					]
+					"condition": {
+						"linear": [
+							"1",
+							""
+						],
+						"open": [
+							"open1",
+							""
+						]
+					}
 				}
 			},
 			"events": {}
@@ -4576,21 +6751,33 @@
 					"item": 459,
 					"amount": 2,
 					"type": "Bronze",
-					"condition": [
-						"33",
-						""
-					],
-					"mwid": 300300
+					"condition": {
+						"linear": [
+							"33",
+							""
+						],
+						"open": [
+							"open20",
+							""
+						]
+					},
+					"mwid": 300313
 				},
 				"299": {
 					"item": 462,
 					"amount": 2,
 					"type": "Silver",
-					"condition": [
-						"33",
-						""
-					],
-					"mwid": 300301
+					"condition": {
+						"linear": [
+							"33",
+							""
+						],
+						"open": [
+							"open20",
+							""
+						]
+					},
+					"mwid": 300314
 				}
 			},
 			"events": {}
@@ -4602,21 +6789,33 @@
 					"item": 457,
 					"amount": 2,
 					"type": "Bronze",
-					"condition": [
-						"33",
-						""
-					],
-					"mwid": 300302
+					"condition": {
+						"linear": [
+							"33",
+							""
+						],
+						"open": [
+							"open20",
+							""
+						]
+					},
+					"mwid": 300315
 				},
 				"272": {
 					"item": 464,
 					"amount": 2,
 					"type": "Silver",
-					"condition": [
-						"33",
-						""
-					],
-					"mwid": 300303
+					"condition": {
+						"linear": [
+							"33",
+							""
+						],
+						"open": [
+							"open20",
+							""
+						]
+					},
+					"mwid": 300316
 				}
 			},
 			"events": {}
@@ -4628,11 +6827,17 @@
 					"item": 456,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"33",
-						""
-					],
-					"mwid": 300304
+					"condition": {
+						"linear": [
+							"33",
+							""
+						],
+						"open": [
+							"open20",
+							""
+						]
+					},
+					"mwid": 300317
 				}
 			},
 			"events": {}
@@ -4644,11 +6849,55 @@
 					"item": 489,
 					"amount": 3,
 					"type": "Silver",
-					"condition": [
-						"33",
-						""
-					],
-					"mwid": 300305
+					"condition": {
+						"linear": [
+							"33",
+							""
+						],
+						"open": [
+							"open20",
+							""
+						]
+					},
+					"mwid": 300318
+				}
+			},
+			"events": {}
+		},
+		"rhombus-sqr.residential-s1": {
+			"name": "Rhombus Square - Residential District West",
+			"chests": {
+				"333": {
+					"item": 499,
+					"amount": 1,
+					"type": "Gold",
+					"condition": {
+						"linear": [
+							"33",
+							""
+						],
+						"open": [
+							"open20",
+							""
+						]
+					},
+					"mwid": 300319
+				},
+				"852": {
+					"item": 460,
+					"amount": 1,
+					"type": "Default",
+					"condition": {
+						"linear": [
+							"33",
+							""
+						],
+						"open": [
+							"open20",
+							""
+						]
+					},
+					"mwid": 300320
 				}
 			},
 			"events": {}
@@ -4660,11 +6909,17 @@
 					"item": 73,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"2",
-						""
-					],
-					"mwid": 300306
+					"condition": {
+						"linear": [
+							"2",
+							""
+						],
+						"open": [
+							"open2",
+							""
+						]
+					},
+					"mwid": 300321
 				}
 			},
 			"events": {}
@@ -4676,11 +6931,17 @@
 					"item": 190,
 					"amount": 5,
 					"type": "Default",
-					"condition": [
-						"2",
-						"item.230.amount >= 1"
-					],
-					"mwid": 300307
+					"condition": {
+						"linear": [
+							"2",
+							"item.230.amount >= 1"
+						],
+						"open": [
+							"open8",
+							""
+						]
+					},
+					"mwid": 300322
 				}
 			},
 			"events": {}
@@ -4694,23 +6955,35 @@
 						"item": 145,
 						"amount": 1,
 						"type": "",
-						"condition": [
-							"2",
-							""
-						],
+						"condition": {
+							"linear": [
+								"2",
+								""
+							],
+							"open": [
+								"open2",
+								""
+							]
+						},
 						"path": ".settings.event.74",
-						"mwid": 300308
+						"mwid": 300323
 					},
 					{
 						"item": 135,
 						"amount": 1,
 						"type": "",
-						"condition": [
-							"2",
-							""
-						],
+						"condition": {
+							"linear": [
+								"2",
+								""
+							],
+							"open": [
+								"open2",
+								""
+							]
+						},
 						"path": ".settings.event.90",
-						"mwid": 300309
+						"mwid": 300324
 					}
 				],
 				"137": [
@@ -4718,12 +6991,18 @@
 						"item": 428,
 						"amount": 1,
 						"type": "",
-						"condition": [
-							"11",
-							""
-						],
+						"condition": {
+							"linear": [
+								"11",
+								""
+							],
+							"open": [
+								"open4.8",
+								""
+							]
+						},
 						"path": ".settings.event.36",
-						"mwid": 300310
+						"mwid": 300325
 					}
 				],
 				"138": [
@@ -4731,12 +7010,18 @@
 						"item": 428,
 						"amount": 1,
 						"type": "",
-						"condition": [
-							"19",
-							""
-						],
+						"condition": {
+							"linear": [
+								"19",
+								""
+							],
+							"open": [
+								"open7.8",
+								""
+							]
+						},
 						"path": ".settings.event.35",
-						"mwid": 300311
+						"mwid": 300326
 					}
 				],
 				"140": [
@@ -4744,12 +7029,18 @@
 						"item": 428,
 						"amount": 2,
 						"type": "",
-						"condition": [
-							"30",
-							""
-						],
+						"condition": {
+							"linear": [
+								"30",
+								""
+							],
+							"open": [
+								"open15.3",
+								""
+							]
+						},
 						"path": ".settings.event.36",
-						"mwid": 300312
+						"mwid": 300327
 					}
 				],
 				"142": [
@@ -4757,12 +7048,18 @@
 						"item": 428,
 						"amount": 1,
 						"type": "",
-						"condition": [
-							"27",
-							"shock"
-						],
+						"condition": {
+							"linear": [
+								"27",
+								"shock"
+							],
+							"open": [
+								"open14.3",
+								""
+							]
+						},
 						"path": ".settings.event.14",
-						"mwid": 300313
+						"mwid": 300328
 					}
 				],
 				"143": [
@@ -4770,12 +7067,18 @@
 						"item": 428,
 						"amount": 1,
 						"type": "",
-						"condition": [
-							"25",
-							"wave"
-						],
+						"condition": {
+							"linear": [
+								"25",
+								"wave"
+							],
+							"open": [
+								"open13.2",
+								""
+							]
+						},
 						"path": ".settings.event.14",
-						"mwid": 300314
+						"mwid": 300329
 					}
 				]
 			}
@@ -4787,11 +7090,17 @@
 					"item": 488,
 					"amount": 4,
 					"type": "Silver",
-					"condition": [
-						"19",
-						""
-					],
-					"mwid": 300315
+					"condition": {
+						"linear": [
+							"19",
+							""
+						],
+						"open": [
+							"open8",
+							""
+						]
+					},
+					"mwid": 300330
 				}
 			},
 			"events": {}
@@ -4803,11 +7112,17 @@
 					"item": 191,
 					"amount": 2,
 					"type": "Silver",
-					"condition": [
-						"19",
-						""
-					],
-					"mwid": 300316
+					"condition": {
+						"linear": [
+							"19",
+							""
+						],
+						"open": [
+							"open8",
+							""
+						]
+					},
+					"mwid": 300331
 				}
 			},
 			"events": {}
@@ -4819,11 +7134,17 @@
 					"item": 340,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"2",
-						""
-					],
-					"mwid": 300317
+					"condition": {
+						"linear": [
+							"2",
+							""
+						],
+						"open": [
+							"open2",
+							""
+						]
+					},
+					"mwid": 300332
 				}
 			},
 			"events": {}
@@ -4835,21 +7156,33 @@
 					"item": 64,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"2",
-						""
-					],
-					"mwid": 300318
+					"condition": {
+						"linear": [
+							"2",
+							""
+						],
+						"open": [
+							"open2",
+							""
+						]
+					},
+					"mwid": 300333
 				},
 				"402": {
 					"item": 70,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"2",
-						""
-					],
-					"mwid": 300319
+					"condition": {
+						"linear": [
+							"2",
+							""
+						],
+						"open": [
+							"open2",
+							""
+						]
+					},
+					"mwid": 300334
 				}
 			},
 			"events": {}
@@ -4861,21 +7194,33 @@
 					"item": 289,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300320
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open12",
+							""
+						]
+					},
+					"mwid": 300335
 				},
 				"79": {
 					"item": 272,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"25",
-						""
-					],
-					"mwid": 300321
+					"condition": {
+						"linear": [
+							"25",
+							""
+						],
+						"open": [
+							"open13.1",
+							""
+						]
+					},
+					"mwid": 300336
 				}
 			},
 			"events": {}
@@ -4887,11 +7232,17 @@
 					"item": 283,
 					"amount": 3,
 					"type": "Bronze",
-					"condition": [
-						"25",
-						"wave"
-					],
-					"mwid": 300322
+					"condition": {
+						"linear": [
+							"25",
+							"wave"
+						],
+						"open": [
+							"open13.1",
+							"wave"
+						]
+					},
+					"mwid": 300337
 				}
 			},
 			"events": {}
@@ -4903,11 +7254,17 @@
 					"item": 272,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300323
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open12",
+							""
+						]
+					},
+					"mwid": 300338
 				}
 			},
 			"events": {}
@@ -4919,11 +7276,17 @@
 					"item": 280,
 					"amount": 4,
 					"type": "Bronze",
-					"condition": [
-						"25",
-						"wave"
-					],
-					"mwid": 300324
+					"condition": {
+						"linear": [
+							"25",
+							"wave"
+						],
+						"open": [
+							"open13.1",
+							"wave"
+						]
+					},
+					"mwid": 300339
 				}
 			},
 			"events": {}
@@ -4936,11 +7299,17 @@
 				"86": {
 					"item": "wave",
 					"amount": 1,
-					"condition": [
-						"25",
-						""
-					],
-					"mwid": 300325
+					"condition": {
+						"linear": [
+							"25",
+							""
+						],
+						"open": [
+							"open13.1",
+							""
+						]
+					},
+					"mwid": 300340
 				}
 			}
 		},
@@ -4951,31 +7320,49 @@
 					"item": 11,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"28",
-						""
-					],
-					"mwid": 300326
+					"condition": {
+						"linear": [
+							"28",
+							""
+						],
+						"open": [
+							"open15.1",
+							""
+						]
+					},
+					"mwid": 300341
 				},
 				"167": {
 					"item": 289,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"28",
-						""
-					],
-					"mwid": 300327
+					"condition": {
+						"linear": [
+							"28",
+							""
+						],
+						"open": [
+							"open15.1",
+							""
+						]
+					},
+					"mwid": 300342
 				},
 				"168": {
 					"item": 292,
 					"amount": 2,
 					"type": "Default",
-					"condition": [
-						"28",
-						""
-					],
-					"mwid": 300328
+					"condition": {
+						"linear": [
+							"28",
+							""
+						],
+						"open": [
+							"open15.1",
+							""
+						]
+					},
+					"mwid": 300343
 				}
 			},
 			"events": {}
@@ -4987,21 +7374,33 @@
 					"item": 28,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"28",
-						""
-					],
-					"mwid": 300329
+					"condition": {
+						"linear": [
+							"28",
+							""
+						],
+						"open": [
+							"open15.1",
+							""
+						]
+					},
+					"mwid": 300344
 				},
 				"68": {
 					"item": 316,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"28",
-						""
-					],
-					"mwid": 300330
+					"condition": {
+						"linear": [
+							"28",
+							""
+						],
+						"open": [
+							"open15.1",
+							""
+						]
+					},
+					"mwid": 300345
 				}
 			},
 			"events": {}
@@ -5013,11 +7412,17 @@
 					"item": 350,
 					"amount": 1,
 					"type": "MasterKey",
-					"condition": [
-						"29",
-						""
-					],
-					"mwid": 300331
+					"condition": {
+						"linear": [
+							"29",
+							""
+						],
+						"open": [
+							"open15.2",
+							""
+						]
+					},
+					"mwid": 300346
 				}
 			},
 			"events": {}
@@ -5029,11 +7434,17 @@
 					"item": 349,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"28",
-						""
-					],
-					"mwid": 300332
+					"condition": {
+						"linear": [
+							"28",
+							""
+						],
+						"open": [
+							"open15.1",
+							""
+						]
+					},
+					"mwid": 300347
 				}
 			},
 			"events": {}
@@ -5045,21 +7456,33 @@
 					"item": 349,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"28",
-						""
-					],
-					"mwid": 300333
+					"condition": {
+						"linear": [
+							"28",
+							""
+						],
+						"open": [
+							"open15.1",
+							""
+						]
+					},
+					"mwid": 300348
 				},
 				"86": {
 					"item": 79,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"28",
-						""
-					],
-					"mwid": 300334
+					"condition": {
+						"linear": [
+							"28",
+							""
+						],
+						"open": [
+							"open15.1",
+							""
+						]
+					},
+					"mwid": 300349
 				}
 			},
 			"events": {}
@@ -5071,11 +7494,17 @@
 					"item": 292,
 					"amount": 4,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300335
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open12",
+							""
+						]
+					},
+					"mwid": 300350
 				}
 			},
 			"events": {}
@@ -5087,51 +7516,81 @@
 					"item": 319,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"26",
-						""
-					],
-					"mwid": 300336
+					"condition": {
+						"linear": [
+							"26",
+							""
+						],
+						"open": [
+							"open14.1",
+							""
+						]
+					},
+					"mwid": 300351
 				},
 				"258": {
 					"item": 319,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"26",
-						""
-					],
-					"mwid": 300337
+					"condition": {
+						"linear": [
+							"26",
+							""
+						],
+						"open": [
+							"open14.1",
+							""
+						]
+					},
+					"mwid": 300352
 				},
 				"329": {
 					"item": 319,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"23",
-						""
-					],
-					"mwid": 300338
+					"condition": {
+						"linear": [
+							"23",
+							""
+						],
+						"open": [
+							"open12",
+							""
+						]
+					},
+					"mwid": 300353
 				},
 				"670": {
 					"item": 156,
 					"amount": 1,
 					"type": "Silver",
-					"condition": [
-						"26",
-						""
-					],
-					"mwid": 300339
+					"condition": {
+						"linear": [
+							"26",
+							""
+						],
+						"open": [
+							"open14.1",
+							""
+						]
+					},
+					"mwid": 300354
 				},
 				"671": {
 					"item": 192,
 					"amount": 1,
 					"type": "Gold",
-					"condition": [
-						"26",
-						""
-					],
-					"mwid": 300340
+					"condition": {
+						"linear": [
+							"26",
+							""
+						],
+						"open": [
+							"open14.1",
+							""
+						]
+					},
+					"mwid": 300355
 				}
 			},
 			"events": {}
@@ -5144,11 +7603,17 @@
 				"248": {
 					"item": "shock",
 					"amount": 1,
-					"condition": [
-						"27",
-						""
-					],
-					"mwid": 300341
+					"condition": {
+						"linear": [
+							"27",
+							""
+						],
+						"open": [
+							"open14.2",
+							""
+						]
+					},
+					"mwid": 300356
 				}
 			}
 		},
@@ -5159,11 +7624,17 @@
 					"item": 319,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"26",
-						""
-					],
-					"mwid": 300342
+					"condition": {
+						"linear": [
+							"26",
+							""
+						],
+						"open": [
+							"open14.1",
+							""
+						]
+					},
+					"mwid": 300357
 				}
 			},
 			"events": {}
@@ -5175,11 +7646,17 @@
 					"item": 331,
 					"amount": 6,
 					"type": "Default",
-					"condition": [
-						"26",
-						""
-					],
-					"mwid": 300343
+					"condition": {
+						"linear": [
+							"26",
+							""
+						],
+						"open": [
+							"open14.1",
+							""
+						]
+					},
+					"mwid": 300358
 				}
 			},
 			"events": {}
@@ -5191,11 +7668,17 @@
 					"item": 303,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"26",
-						""
-					],
-					"mwid": 300344
+					"condition": {
+						"linear": [
+							"26",
+							""
+						],
+						"open": [
+							"open14.1",
+							""
+						]
+					},
+					"mwid": 300359
 				}
 			},
 			"events": {}
@@ -5207,11 +7690,17 @@
 					"item": 314,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"26",
-						""
-					],
-					"mwid": 300345
+					"condition": {
+						"linear": [
+							"26",
+							""
+						],
+						"open": [
+							"open14.1",
+							""
+						]
+					},
+					"mwid": 300360
 				}
 			},
 			"events": {}
@@ -5223,11 +7712,17 @@
 					"item": 319,
 					"amount": 1,
 					"type": "Default",
-					"condition": [
-						"26",
-						""
-					],
-					"mwid": 300346
+					"condition": {
+						"linear": [
+							"26",
+							""
+						],
+						"open": [
+							"open14.1",
+							""
+						]
+					},
+					"mwid": 300361
 				}
 			},
 			"events": {}
@@ -5239,11 +7734,17 @@
 					"item": 281,
 					"amount": 3,
 					"type": "Default",
-					"condition": [
-						"26",
-						""
-					],
-					"mwid": 300347
+					"condition": {
+						"linear": [
+							"26",
+							""
+						],
+						"open": [
+							"open14.1",
+							""
+						]
+					},
+					"mwid": 300362
 				}
 			},
 			"events": {}
@@ -9231,6 +11732,24 @@
 				"index": 5,
 				"map": "rhombus-sqr.center-se",
 				"mapId": 1209
+			},
+			{
+				"key": "CHEST",
+				"x": 264,
+				"y": 380,
+				"level": 2,
+				"index": 6,
+				"map": "rhombus-sqr.residential-s1",
+				"mapId": 333
+			},
+			{
+				"key": "CHEST",
+				"x": 1588,
+				"y": 796,
+				"level": 1,
+				"index": 7,
+				"map": "rhombus-sqr.residential-s1",
+				"mapId": 852
 			}
 		],
 		"jungle-city": [
@@ -9415,20 +11934,32 @@
 		"daft-frobbit": {
 			"item": 376,
 			"amount": 1,
-			"condition": [
-				"20",
-				""
-			],
-			"mwid": 300348
+			"condition": {
+				"linear": [
+					"20",
+					""
+				],
+				"open": [
+					"open9",
+					""
+				]
+			},
+			"mwid": 300363
 		},
 		"basin-mush-2": {
 			"item": 345,
 			"amount": 1,
-			"condition": [
-				"23",
-				""
-			],
-			"mwid": 300349
+			"condition": {
+				"linear": [
+					"23",
+					""
+				],
+				"open": [
+					"open9",
+					""
+				]
+			},
+			"mwid": 300364
 		}
 	},
 	"mwconstants": {
