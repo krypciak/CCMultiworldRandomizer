@@ -277,7 +277,7 @@
 				"open3",
 				"<->",
 				"open5",
-				"item.255.amount>= 1"
+				"item.225.amount>= 1"
 			],
 			[
 				"open5",

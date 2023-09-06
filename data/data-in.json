@@ -49,7 +49,7 @@
 			[ "open4.3", "<->", "open4.6", "heat" ],
 			[ "open4.6", "<->", "open4.7", "item.152.amount >= 10" ],
 			[ "open4.1", "<->", "open4.8", "item.153.amount >= 1" ],
-			[ "open3", "<->", "open5", "item.255.amount>= 1" ],
+			[ "open3", "<->", "open5", "item.225.amount>= 1" ],
 			[ "open5", "<->", "open6", "item.236.amount >= 1" ],
 			[ "open5", "<->", "open7.1", "item.148.amount >= 1", "heat" ],
 			[ "open7.1", "<->", "open7.2", "item.146.amount >= 1" ],
