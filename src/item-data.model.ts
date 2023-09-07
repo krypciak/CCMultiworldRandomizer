@@ -3,7 +3,7 @@ import { EnemyData } from "./enemy-data.model";
 export interface ItemData {
 	version: string;
 	areas: RawAreas;
-	softLockAreas: string[];
+	softLockAreas: { [area: string]: string[] };
 	startingArea: string;
 	keys: Record<ChestType, string>;
 	items: RawItems;
@@ -12,6 +12,8 @@ export interface ItemData {
 	enemyData: EnemyData;
 	quests: RawQuests;
 }
+
+export interface Condition { [mode: string]: [area: string, ...conditions: string[]] }
 
 export type RawAreas = [from: string, type: '<->', to: string, ...conditions: string[]];
 
@@ -34,7 +36,7 @@ export interface RawChest {
 	item: number;
 	amount: number;
 	type: ChestType;
-	condition: [area: string, ...conditions: string[]];
+	condition: Condition;
 	mwid?: number;
 }
 
@@ -44,7 +46,7 @@ export interface RawEvent {
 	item: number;
 	amount: number;
 	type: '';
-	condition: [area: string, ...conditions: string[]];
+	condition: Condition;
 	path: string;
 	mwid?: number;
 }
@@ -55,7 +57,7 @@ export interface RawElement {
 	item: string;
 	amount: number;
 	type: '';
-	condition: [area: string, ...conditions: string[]];
+	condition: Condition;
 	path: string;
 	mwid: number;
 }
@@ -73,7 +75,7 @@ export type RawQuests = { [questName: string]: RawQuest };
 export interface RawQuest {
 	item: number;
 	amount: number;
-	condition: [area: string, ...conditions: string[]];
+	condition: Condition;
 	mwid?: number;
 }
 

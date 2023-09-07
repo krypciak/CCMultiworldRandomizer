@@ -342,8 +342,15 @@ export default class MwRandomizer {
 					console.warn('Chest not in logic');
 					return this.parent();
 				}
+
 				const check = map.chests[this.mapId];
-				if (check === undefined || check.mwid === undefined) {
+				if (
+					check === undefined ||
+					check.mwid === undefined ||
+					check.condition === undefined ||
+					check.condition[plugin.mode] === undefined ||
+					randoData.softLockAreas[plugin.mode].indexOf(check.condition[plugin.mode][0]) !== -1
+				) {
 					console.warn('Chest not in logic');
 					return this.parent();
 				}
@@ -382,7 +389,14 @@ export default class MwRandomizer {
 				}
 
 				const check = Object.values(map.elements)[0] as RawElement;
-				if (check === undefined) {
+				if (
+					check === undefined ||
+					check.mwid === undefined ||
+					check.condition === undefined ||
+					check.condition[plugin.mode] === undefined ||
+					randoData.softLockAreas[plugin.mode].indexOf(check.condition[plugin.mode][0]) !== -1
+				) {
+					console.warn('Event not in logic');
 					return this.parent();
 				}
 				
@@ -413,9 +427,16 @@ export default class MwRandomizer {
 						) {
 								for (const check of mapOverrides.events[entity.settings.mapId]) {
 									const path = check.path.slice(1).split(/\./g);
-									if (check.mwid == null) {
+
+									if (
+										check.mwid === undefined ||
+										check.condition === undefined ||
+										check.condition[plugin.mode] === undefined ||
+										randoData.softLockAreas[plugin.mode].indexOf(check.condition[plugin.mode][0]) !== -1
+									) {
 										continue;
 									}
+
 									set(entity, 'SEND_ITEM', [...path, 'type']);
 									set(entity, check.mwid, [...path, 'mwid']);
 								}
@@ -430,11 +451,14 @@ export default class MwRandomizer {
 		sc.QuestModel.inject({
 			collectRewards(quest) {
 				const check = quests[quest.id];
-				if (check === undefined) {
+				if (
+					check === undefined ||
+					check.mwid === undefined ||
+				  check.condition === undefined ||
+          check.condition[plugin.mode] === undefined ||
+          randoData.softLockAreas[plugin.mode].indexOf(check.condition[plugin.mode][0]) !== -1
+				) {
 					return this.parent(quest);
-				}
-				if (check.mwid === undefined) {
-					return this.parent(arguments);
 				}
 				plugin.reallyCheckLocation(check.mwid);
 			}
