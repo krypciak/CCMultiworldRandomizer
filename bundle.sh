@@ -3,4 +3,5 @@
 version="$(jq -r <ccmod.json .version)";
 filename="CCMultiworldRandomizer-$version.ccmod";
 
-zip -r "$filename" assets ccmod.json data plugin.js
+[ -f "$filename" ] && rm "$filename"
+zip -r "$filename" assets ccmod.json data/data.json plugin.js
