@@ -449,7 +449,7 @@ export default class MwRandomizer {
 		});
 
 		sc.QuestModel.inject({
-			collectRewards(quest) {
+			_collectRewards(quest) {
 				const check = quests[quest.id];
 				if (
 					check === undefined ||
