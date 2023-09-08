@@ -466,7 +466,7 @@ export default class MwRandomizer {
 
 		sc.QuestDialog.inject({
 			setQuestRewards(quest: sc.Quest, hideRewards: boolean, finished: boolean) {
-				this.parent(quest, false, finished);
+				this.parent(quest, hideRewards, finished);
 				let mwQuest = randoData.quests[quest.id]
 				if (
 					mwQuest === undefined ||
@@ -483,6 +483,54 @@ export default class MwRandomizer {
 					const hook = this.itemsGui.hook.children[i];
 					const gui = hook.gui;
 					if (hideRewards) {
+						gui.setText("\\i[ap-logo]?????????????");
+					} else {
+						gui.setText(`\\i[ap-logo]Unknown`);
+					}
+
+					hook.pos.y += 3 * i;
+					let worldGui = new sc.TextGui("Archipelago", { "font": sc.fontsystem.tinyFont });
+					worldGui.setPos(15, gui.hook.size.y - 2);
+					gui.addChildGui(worldGui);
+					worldGuis.push(worldGui);
+				}
+
+				plugin.getLocationInfo([mwQuest.mwid], (info) => {
+					for (let i = 0; i < info.length; i++) {
+						const hook = this.itemsGui.hook.children[i];
+						const gui = hook.gui;
+
+						let gameName = client.data.players[info[i].player].game;
+						let gameInfo = client.data.package.get(gameName);
+						gui.setText(`\\i[ap-logo]${gameInfo?.item_id_to_name[info[i].item]}`);
+						let player = client.players.get(info[i].player);
+						let playerName = player?.alias ?? player?.name;
+						if (playerName) {
+							worldGuis[i].setText(`\\i[ap-logo]${playerName}`);
+						}
+					}
+				});
+			}
+		});
+
+		sc.QuestDetailsView.inject({
+			_setQuest(quest: sc.Quest) {
+				this.parent(quest);
+				let mwQuest = randoData.quests[quest.id]
+				if (
+					mwQuest === undefined ||
+					mwQuest.mwid === undefined
+				) {
+					return;
+				}
+
+				let worldGuis: sc.TextGui[] = [];
+
+				// const reward = client.locations.scout(ap.CREATE_AS_HINT_MODE.NO_HINT, randoData.quests[quest.id].mwid);
+				for (let i = 0; i < this.itemsGui.hook.children.length; i++) {
+					const hook = this.itemsGui.hook.children[i];
+					const gui = hook.gui;
+					if (quest.hideRewards) {
 						gui.setText("\\i[ap-logo]?????????????");
 					} else {
 						gui.setText(`\\i[ap-logo]Unknown`);
