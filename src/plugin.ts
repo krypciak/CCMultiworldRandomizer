@@ -464,6 +464,37 @@ export default class MwRandomizer {
 			}
 		});
 
+		sc.QuestDialog.inject({
+			setQuestRewards(quest: sc.Quest, hideRewards: boolean, finished: boolean) {
+				this.parent(quest, false, finished);
+				let mwQuest = randoData.quests[quest.id]
+				if (
+					mwQuest === undefined ||
+					mwQuest.mwid === undefined
+				) {
+					return;
+				}
+				this.setSize(this.hook.size.x, this.hook.size.y + 6);
+
+				// const reward = client.locations.scout(ap.CREATE_AS_HINT_MODE.NO_HINT, randoData.quests[quest.id].mwid);
+				for (let i = 0; i < this.itemsGui.hook.children.length; i++) {
+					const hook = this.itemsGui.hook.children[i];
+					const gui = hook.gui;
+					if (hideRewards) {
+						gui.setText("\\i[ap-logo]?????????????");
+					} else {
+						gui.setText(`\\i[ap-logo]Unknown`);
+						// plugin.getLocationInfo(
+					}
+
+					hook.pos.y += 3 * i;
+					// let worldGui = new sc.TextGui("Player1024", { "font": sc.fontsystem.tinyFont });
+					worldGui.setPos(15, gui.hook.size.y - 2);
+					gui.addChildGui(worldGui);
+				}
+			}
+		});
+
 		// ig.Storage.inject({
 		// 	onLevelLoaded(...args) {
 		// 		this.parent(...args);
