@@ -162,7 +162,7 @@ export default class MwRandomizer {
 
 		let loc = this.locationInfo[mwid];
 		if (loc == undefined) {
-			this.getLocationInfo([mwid], sc.multiworld.notifyItemsSent);
+			this.getLocationInfo([mwid], sc.multiworld.notifyItemsSent.bind(sc.multiworld));
 		} else {
 			sc.multiworld.notifyItemsSent([loc]);
 
