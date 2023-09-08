@@ -1,7 +1,7 @@
 {
     "id": "mw-rando",
     "title": "Multiworld randomizer",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "plugin": "plugin.js",
     "dependencies": {
     	"open-world": ">=0.1.7",
