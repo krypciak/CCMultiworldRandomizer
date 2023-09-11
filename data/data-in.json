@@ -5675,11 +5675,11 @@
 					"condition": {
 						"linear": [
 							"23",
-							""
+							"wave"
 						],
 						"open": [
 							"open10",
-							""
+							"wave"
 						]
 					}
 				},
