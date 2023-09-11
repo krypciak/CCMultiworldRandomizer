@@ -3535,6 +3535,75 @@
 			},
 			"events": {}
 		},
+		"heat.caves.cliffs-temple-02": {
+			"name": "Maroon Valley - Cursed Temple",
+			"chests": {
+				"48": {
+					"item": 187,
+					"amount": 4,
+					"type": "Silver",
+					"condition": {
+						"linear": [
+							"11",
+							"heat",
+							"cold",
+							"cursedcoin"
+						],
+						"open": [
+							"open5",
+							"heat",
+							"cold",
+							"cursedcoin"
+						]
+					}
+				},
+				"86": {
+					"item": 432,
+					"amount": 1,
+					"type": "Silver",
+					"condition": {
+						"linear": [
+							"11",
+							"heat",
+							"cold",
+							"cursedcoin"
+						],
+						"open": [
+							"open5",
+							"heat",
+							"cold",
+							"cursedcoin"
+						]
+					}
+				}
+			},
+			"events": {}
+		},
+		"heat.caves.cliff-temple-03": {
+			"name": "Maroon Valley - Cursed Temple Treasure Room",
+			"chests": {
+				"107": {
+					"item": 404,
+					"amount": 1,
+					"type": "Bronze",
+					"condition": {
+						"linear": [
+							"11",
+							"heat",
+							"cold",
+							"cursedcoin"
+						],
+						"open": [
+							"open5",
+							"heat",
+							"cold",
+							"cursedcoin"
+						]
+					}
+				}
+			},
+			"events": {}
+		},
 		"heat.caves.maroon-cave-01": {
 			"name": "Maroon Valley - Maroon Cave 1",
 			"chests": {
@@ -10143,6 +10212,33 @@
 				"map": "heat.caves.cliff-cave-01",
 				"mapId": 43
 			},
+			{
+				"key": "CHEST",
+				"x": 280,
+				"y": 632,
+				"level": 2,
+				"index": 32,
+				"map": "heat.caves.cliffs-temple-02",
+				"mapId": 48
+			},
+			{
+				"key": "CHEST",
+				"x": 1156,
+				"y": 156,
+				"level": 3,
+				"index": 33,
+				"map": "heat.caves.cliffs-temple-02",
+				"mapId": 86
+			},
+			{
+				"key": "CHEST",
+				"x": 544,
+				"y": 404,
+				"level": 1,
+				"index": 34,
+				"map": "heat.caves.cliffs-temple-03",
+				"mapId": 107
+			}
 			{
 				"key": "CHEST",
 				"x": 530.1714285714286,
