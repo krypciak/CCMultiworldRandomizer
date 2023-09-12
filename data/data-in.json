@@ -9170,7 +9170,7 @@
 				"x": 413.3818181818182,
 				"y": 722.9714285714285,
 				"level": 0,
-				"index": 3,
+				"index": 5,
 				"map": "jungle.clearing.clear-path-01",
 				"mapId": 5
 			},
@@ -9179,7 +9179,7 @@
 				"x": 478.83636363636367,
 				"y": 680.8571428571429,
 				"level": 0,
-				"index": 4,
+				"index": 6,
 				"map": "jungle.clearing.clear-path-01",
 				"mapId": 6
 			},
@@ -9188,7 +9188,7 @@
 				"x": 431.05454545454546,
 				"y": 721.0857142857143,
 				"level": 0,
-				"index": 5,
+				"index": 7,
 				"map": "jungle.clearing.clear-path-01",
 				"mapId": 125
 			},
@@ -9197,7 +9197,7 @@
 				"x": 539.6333333333333,
 				"y": 678.2,
 				"level": 0,
-				"index": 6,
+				"index": 8,
 				"map": "jungle.clearing.clear-path-02",
 				"mapId": 311
 			},
@@ -9206,7 +9206,7 @@
 				"x": 535.6,
 				"y": 694,
 				"level": 0,
-				"index": 7,
+				"index": 9,
 				"map": "jungle.clearing.clear-path-02",
 				"mapId": 351
 			},
@@ -9215,7 +9215,7 @@
 				"x": 532.6,
 				"y": 563.4,
 				"level": 0,
-				"index": 8,
+				"index": 10,
 				"map": "jungle.clearing.clear-path-03",
 				"mapId": 31
 			},
@@ -9224,7 +9224,7 @@
 				"x": 528,
 				"y": 580.2,
 				"level": 0,
-				"index": 9,
+				"index": 11,
 				"map": "jungle.clearing.clear-path-03",
 				"mapId": 33
 			},
@@ -9233,7 +9233,7 @@
 				"x": 525,
 				"y": 486.3272727272727,
 				"level": 0,
-				"index": 10,
+				"index": 12,
 				"map": "jungle.clearing.clear-path-04",
 				"mapId": 27
 			},
@@ -9242,7 +9242,7 @@
 				"x": 534.6,
 				"y": 449.23636363636365,
 				"level": 0,
-				"index": 11,
+				"index": 13,
 				"map": "jungle.clearing.clear-path-04",
 				"mapId": 91
 			},
@@ -9251,7 +9251,7 @@
 				"x": 530.4,
 				"y": 504,
 				"level": 0,
-				"index": 12,
+				"index": 14,
 				"map": "jungle.clearing.clear-path-04",
 				"mapId": 135
 			},
@@ -9260,7 +9260,7 @@
 				"x": 268,
 				"y": 116.64444444444445,
 				"level": 0,
-				"index": 13,
+				"index": 15,
 				"map": "jungle.dng.tree-exterior",
 				"mapId": 432
 			},
@@ -9269,7 +9269,7 @@
 				"x": 163.6,
 				"y": 129.4,
 				"level": 0,
-				"index": 14,
+				"index": 16,
 				"map": "jungle.dng.wave-exterior",
 				"mapId": 521
 			},
@@ -9278,7 +9278,7 @@
 				"x": 114,
 				"y": 435,
 				"level": 0,
-				"index": 15,
+				"index": 17,
 				"map": "jungle.grove.grove-path-01",
 				"mapId": 4
 			},
@@ -9287,7 +9287,7 @@
 				"x": 88.8,
 				"y": 372.6,
 				"level": 0,
-				"index": 16,
+				"index": 18,
 				"map": "jungle.grove.grove-path-01",
 				"mapId": 5
 			},
@@ -9296,7 +9296,7 @@
 				"x": 75.2,
 				"y": 325,
 				"level": 0,
-				"index": 17,
+				"index": 19,
 				"map": "jungle.grove.grove-path-02",
 				"mapId": 67
 			},
@@ -9305,7 +9305,7 @@
 				"x": 78.8,
 				"y": 297.2,
 				"level": 0,
-				"index": 18,
+				"index": 20,
 				"map": "jungle.grove.grove-path-02",
 				"mapId": 68
 			},
@@ -9314,7 +9314,7 @@
 				"x": 91.6,
 				"y": 282.4,
 				"level": 0,
-				"index": 19,
+				"index": 21,
 				"map": "jungle.grove.grove-path-02",
 				"mapId": 69
 			},
@@ -9323,7 +9323,7 @@
 				"x": 60,
 				"y": 256.2,
 				"level": 0,
-				"index": 20,
+				"index": 22,
 				"map": "jungle.grove.grove-path-02",
 				"mapId": 80
 			},
@@ -9332,7 +9332,7 @@
 				"x": 151.8,
 				"y": 258.8,
 				"level": 0,
-				"index": 21,
+				"index": 23,
 				"map": "jungle.grove.grove-path-03",
 				"mapId": 41
 			},
@@ -9341,7 +9341,7 @@
 				"x": 218.2,
 				"y": 226.6,
 				"level": 0,
-				"index": 22,
+				"index": 24,
 				"map": "jungle.grove.grove-path-03",
 				"mapId": 42
 			},
@@ -9350,7 +9350,7 @@
 				"x": 520,
 				"y": 440,
 				"level": 1,
-				"index": 23,
+				"index": 25,
 				"map": "jungle.grove.lost-shrine-02",
 				"mapId": 158
 			},
@@ -9359,7 +9359,7 @@
 				"x": 664,
 				"y": 652,
 				"level": 3,
-				"index": 24,
+				"index": 26,
 				"map": "jungle.grove.lost-shrine-03",
 				"mapId": 289
 			},
@@ -9368,7 +9368,7 @@
 				"x": 384,
 				"y": 196,
 				"level": 2,
-				"index": 25,
+				"index": 27,
 				"map": "jungle.grove.lost-shrine-04",
 				"mapId": 289
 			},
@@ -9377,7 +9377,7 @@
 				"x": 506.3692307692308,
 				"y": 325,
 				"level": 0,
-				"index": 23,
+				"index": 28,
 				"map": "jungle.infested.infested-path-01",
 				"mapId": 22
 			},
@@ -9386,7 +9386,7 @@
 				"x": 535.2307692307693,
 				"y": 335.2,
 				"level": 0,
-				"index": 24,
+				"index": 29,
 				"map": "jungle.infested.infested-path-01",
 				"mapId": 63
 			},
@@ -9395,7 +9395,7 @@
 				"x": 488.0615384615385,
 				"y": 305.8,
 				"level": 0,
-				"index": 25,
+				"index": 30,
 				"map": "jungle.infested.infested-path-01",
 				"mapId": 170
 			},
@@ -9404,7 +9404,7 @@
 				"x": 475.6,
 				"y": 223.6,
 				"level": 0,
-				"index": 26,
+				"index": 31,
 				"map": "jungle.infested.infested-path-02",
 				"mapId": 6
 			},
@@ -9413,7 +9413,7 @@
 				"x": 412.4,
 				"y": 246.2,
 				"level": 0,
-				"index": 27,
+				"index": 32,
 				"map": "jungle.infested.infested-path-02",
 				"mapId": 32
 			},
@@ -9422,7 +9422,7 @@
 				"x": 512.6,
 				"y": 273.8,
 				"level": 0,
-				"index": 28,
+				"index": 33,
 				"map": "jungle.infested.infested-path-03",
 				"mapId": 18
 			},
@@ -9431,7 +9431,7 @@
 				"x": 570.6,
 				"y": 278.6,
 				"level": 0,
-				"index": 29,
+				"index": 34,
 				"map": "jungle.infested.infested-path-03",
 				"mapId": 70
 			},
@@ -9440,7 +9440,7 @@
 				"x": 525.6,
 				"y": 242,
 				"level": 0,
-				"index": 30,
+				"index": 35,
 				"map": "jungle.infested.infested-path-03",
 				"mapId": 90
 			},
@@ -9449,7 +9449,7 @@
 				"x": 572.8,
 				"y": 237.4,
 				"level": 0,
-				"index": 31,
+				"index": 36,
 				"map": "jungle.infested.infested-path-03",
 				"mapId": 97
 			},
@@ -9458,7 +9458,7 @@
 				"x": 509.2,
 				"y": 208.2,
 				"level": 0,
-				"index": 32,
+				"index": 37,
 				"map": "jungle.infested.infested-path-04",
 				"mapId": 24
 			},
@@ -9467,7 +9467,7 @@
 				"x": 552.2,
 				"y": 155,
 				"level": 0,
-				"index": 33,
+				"index": 38,
 				"map": "jungle.infested.infested-path-04",
 				"mapId": 58
 			},
@@ -9476,7 +9476,7 @@
 				"x": 564.425,
 				"y": 208.475,
 				"level": 0,
-				"index": 34,
+				"index": 39,
 				"map": "jungle.infested.infested-path-04",
 				"mapId": 82
 			},
@@ -9485,7 +9485,7 @@
 				"x": 572.6,
 				"y": 156.8,
 				"level": 0,
-				"index": 35,
+				"index": 40,
 				"map": "jungle.infested.infested-path-04",
 				"mapId": 949
 			},
@@ -9494,7 +9494,7 @@
 				"x": 160.56296296296296,
 				"y": 622.8,
 				"level": 0,
-				"index": 36,
+				"index": 41,
 				"map": "jungle.left.path-left-01",
 				"mapId": 74
 			},
@@ -9503,7 +9503,7 @@
 				"x": 232.27962962962962,
 				"y": 597.575,
 				"level": 0,
-				"index": 37,
+				"index": 42,
 				"map": "jungle.left.path-left-01",
 				"mapId": 75
 			},
@@ -9512,7 +9512,7 @@
 				"x": 158.8,
 				"y": 483.0833333333333,
 				"level": 0,
-				"index": 38,
+				"index": 43,
 				"map": "jungle.left.path-left-02",
 				"mapId": 2
 			},
@@ -9521,7 +9521,7 @@
 				"x": 137.2,
 				"y": 535.7333333333333,
 				"level": 0,
-				"index": 39,
+				"index": 44,
 				"map": "jungle.left.path-left-02",
 				"mapId": 8
 			},
@@ -9530,7 +9530,7 @@
 				"x": 119.2,
 				"y": 495.43333333333334,
 				"level": 0,
-				"index": 40,
+				"index": 45,
 				"map": "jungle.left.path-left-02",
 				"mapId": 12
 			},
@@ -9539,7 +9539,7 @@
 				"x": 178.16470588235293,
 				"y": 431.4,
 				"level": 0,
-				"index": 41,
+				"index": 46,
 				"map": "jungle.left.path-left-03",
 				"mapId": 32
 			},
@@ -9548,7 +9548,7 @@
 				"x": 186.8235294117647,
 				"y": 366.2,
 				"level": 0,
-				"index": 42,
+				"index": 47,
 				"map": "jungle.left.path-left-03",
 				"mapId": 33
 			},
@@ -9557,7 +9557,7 @@
 				"x": 252.4,
 				"y": 298.6,
 				"level": 0,
-				"index": 43,
+				"index": 48,
 				"map": "jungle.left.path-left-04",
 				"mapId": 38
 			},
@@ -9566,7 +9566,7 @@
 				"x": 162,
 				"y": 303.2,
 				"level": 0,
-				"index": 44,
+				"index": 49,
 				"map": "jungle.left.path-left-04",
 				"mapId": 39
 			},
@@ -9575,7 +9575,7 @@
 				"x": 284.4,
 				"y": 717,
 				"level": 0,
-				"index": 45,
+				"index": 50,
 				"map": "jungle.path-01-entrance",
 				"mapId": 12
 			},
@@ -9584,7 +9584,7 @@
 				"x": 296.8,
 				"y": 727,
 				"level": 0,
-				"index": 46,
+				"index": 51,
 				"map": "jungle.path-01-entrance",
 				"mapId": 13
 			},
@@ -9593,7 +9593,7 @@
 				"x": 261.6,
 				"y": 609.675,
 				"level": 0,
-				"index": 47,
+				"index": 52,
 				"map": "jungle.path-02-crossroads",
 				"mapId": 13
 			},
@@ -9602,7 +9602,7 @@
 				"x": 349.8,
 				"y": 610.025,
 				"level": 0,
-				"index": 48,
+				"index": 53,
 				"map": "jungle.path-02-crossroads",
 				"mapId": 14
 			},
@@ -9611,7 +9611,7 @@
 				"x": 290.1090909090909,
 				"y": 330.8,
 				"level": 0,
-				"index": 49,
+				"index": 54,
 				"map": "jungle.path-03-sync",
 				"mapId": 21
 			},
@@ -9620,7 +9620,7 @@
 				"x": 295.3454545454546,
 				"y": 295.6,
 				"level": 0,
-				"index": 50,
+				"index": 55,
 				"map": "jungle.path-03-sync",
 				"mapId": 22
 			},
@@ -9629,7 +9629,7 @@
 				"x": 331.43333333333334,
 				"y": 256.6,
 				"level": 0,
-				"index": 51,
+				"index": 56,
 				"map": "jungle.path-04-end",
 				"mapId": 6
 			},
@@ -9638,7 +9638,7 @@
 				"x": 249.53333333333333,
 				"y": 229.2,
 				"level": 0,
-				"index": 52,
+				"index": 57,
 				"map": "jungle.path-04-end",
 				"mapId": 58
 			},
@@ -9647,7 +9647,7 @@
 				"x": 424.4,
 				"y": 580.2,
 				"level": 0,
-				"index": 53,
+				"index": 58,
 				"map": "jungle.right.right-path-01",
 				"mapId": 40
 			},
@@ -9656,7 +9656,7 @@
 				"x": 400.4,
 				"y": 617,
 				"level": 0,
-				"index": 54,
+				"index": 59,
 				"map": "jungle.right.right-path-01",
 				"mapId": 105
 			},
@@ -9665,7 +9665,7 @@
 				"x": 476.2,
 				"y": 540.64,
 				"level": 0,
-				"index": 55,
+				"index": 60,
 				"map": "jungle.right.right-path-02",
 				"mapId": 12
 			},
@@ -9674,7 +9674,7 @@
 				"x": 434,
 				"y": 544.6,
 				"level": 0,
-				"index": 56,
+				"index": 61,
 				"map": "jungle.right.right-path-02",
 				"mapId": 13
 			},
@@ -9683,7 +9683,7 @@
 				"x": 424.8,
 				"y": 451,
 				"level": 0,
-				"index": 57,
+				"index": 62,
 				"map": "jungle.right.right-path-03",
 				"mapId": 13
 			},
@@ -9692,7 +9692,7 @@
 				"x": 444.4,
 				"y": 399.6,
 				"level": 0,
-				"index": 58,
+				"index": 63,
 				"map": "jungle.right.right-path-03",
 				"mapId": 14
 			},
@@ -9701,7 +9701,7 @@
 				"x": 420.8,
 				"y": 326.3272727272727,
 				"level": 0,
-				"index": 59,
+				"index": 64,
 				"map": "jungle.right.right-path-04",
 				"mapId": 30
 			}
@@ -10368,7 +10368,7 @@
 				"x": 280,
 				"y": 632,
 				"level": 2,
-				"index": 32,
+				"index": 2,
 				"map": "heat.caves.cliffs-temple-02",
 				"mapId": 48
 			},
@@ -10377,7 +10377,7 @@
 				"x": 1156,
 				"y": 156,
 				"level": 3,
-				"index": 33,
+				"index": 3,
 				"map": "heat.caves.cliffs-temple-02",
 				"mapId": 86
 			},
@@ -10386,7 +10386,7 @@
 				"x": 544,
 				"y": 404,
 				"level": 1,
-				"index": 34,
+				"index": 4,
 				"map": "heat.caves.cliffs-temple-03",
 				"mapId": 107
 			},
@@ -10395,7 +10395,7 @@
 				"x": 530.1714285714286,
 				"y": 468.64,
 				"level": -1,
-				"index": 2,
+				"index": 5,
 				"map": "heat.caves.maroon-cave-01",
 				"mapId": 404
 			},
@@ -10404,7 +10404,7 @@
 				"x": 268.15,
 				"y": 466.54945054945057,
 				"level": 0,
-				"index": 3,
+				"index": 6,
 				"map": "heat.cliffs.cliffs-path-01",
 				"mapId": 105
 			},
@@ -10413,7 +10413,7 @@
 				"x": 219.675,
 				"y": 476,
 				"level": 0,
-				"index": 4,
+				"index": 7,
 				"map": "heat.cliffs.cliffs-path-01",
 				"mapId": 197
 			},
@@ -10422,7 +10422,7 @@
 				"x": 326.25454545454545,
 				"y": 517.6901408450705,
 				"level": 0,
-				"index": 5,
+				"index": 8,
 				"map": "heat.cliffs.cliffs-path-02",
 				"mapId": 29
 			},
@@ -10431,7 +10431,7 @@
 				"x": 338.4727272727273,
 				"y": 519.7183098591549,
 				"level": 0,
-				"index": 6,
+				"index": 9,
 				"map": "heat.cliffs.cliffs-path-02",
 				"mapId": 30
 			},
@@ -10440,7 +10440,7 @@
 				"x": 286.3272727272727,
 				"y": 535.7746478873239,
 				"level": 0,
-				"index": 7,
+				"index": 10,
 				"map": "heat.cliffs.cliffs-path-02",
 				"mapId": 32
 			},
@@ -10449,7 +10449,7 @@
 				"x": 507,
 				"y": 416.90666666666664,
 				"level": 0,
-				"index": 8,
+				"index": 11,
 				"map": "heat.oasis.oasis-path-01",
 				"mapId": 8
 			},
@@ -10458,7 +10458,7 @@
 				"x": 534.8,
 				"y": 392.82666666666665,
 				"level": 0,
-				"index": 9,
+				"index": 12,
 				"map": "heat.oasis.oasis-path-01",
 				"mapId": 9
 			},
@@ -10467,7 +10467,7 @@
 				"x": 534.5866666666667,
 				"y": 480.1904761904762,
 				"level": 0,
-				"index": 10,
+				"index": 13,
 				"map": "heat.oasis.oasis-path-02",
 				"mapId": 80
 			},
@@ -10476,7 +10476,7 @@
 				"x": 545.2266666666667,
 				"y": 442.8952380952381,
 				"level": 0,
-				"index": 11,
+				"index": 14,
 				"map": "heat.oasis.oasis-path-02",
 				"mapId": 97
 			},
@@ -10485,7 +10485,7 @@
 				"x": 499.4,
 				"y": 536.2,
 				"level": 0,
-				"index": 12,
+				"index": 15,
 				"map": "heat.oasis.oasis-path-03",
 				"mapId": 34
 			},
@@ -10494,7 +10494,7 @@
 				"x": 590.6666666666666,
 				"y": 298.42857142857144,
 				"level": 0,
-				"index": 13,
+				"index": 16,
 				"map": "heat.path-00",
 				"mapId": 6
 			},
@@ -10503,7 +10503,7 @@
 				"x": 478.4,
 				"y": 273.28,
 				"level": 0,
-				"index": 14,
+				"index": 17,
 				"map": "heat.path-01-entrance",
 				"mapId": 55
 			},
@@ -10512,7 +10512,7 @@
 				"x": 457.2,
 				"y": 310,
 				"level": 0,
-				"index": 15,
+				"index": 18,
 				"map": "heat.path-02",
 				"mapId": 7
 			},
@@ -10521,7 +10521,7 @@
 				"x": 448,
 				"y": 276.44444444444446,
 				"level": 0,
-				"index": 16,
+				"index": 19,
 				"map": "heat.path-02",
 				"mapId": 14
 			},
@@ -10530,7 +10530,7 @@
 				"x": 448,
 				"y": 385.37142857142857,
 				"level": 0,
-				"index": 17,
+				"index": 20,
 				"map": "heat.path-03",
 				"mapId": 23
 			},
@@ -10539,7 +10539,7 @@
 				"x": 421.6,
 				"y": 370.2857142857143,
 				"level": 0,
-				"index": 18,
+				"index": 21,
 				"map": "heat.path-03",
 				"mapId": 25
 			},
@@ -10548,7 +10548,7 @@
 				"x": 455.54285714285714,
 				"y": 471.1504424778761,
 				"level": 0,
-				"index": 19,
+				"index": 22,
 				"map": "heat.path-04",
 				"mapId": 34
 			},
@@ -10557,7 +10557,7 @@
 				"x": 369.8181818181818,
 				"y": 469.8,
 				"level": 0,
-				"index": 20,
+				"index": 23,
 				"map": "heat.path-05",
 				"mapId": 2
 			},
@@ -10566,7 +10566,7 @@
 				"x": 402.75,
 				"y": 486.6,
 				"level": 0,
-				"index": 21,
+				"index": 24,
 				"map": "heat.path-05",
 				"mapId": 14
 			},
@@ -10575,7 +10575,7 @@
 				"x": 402.225,
 				"y": 364.58666666666664,
 				"level": 0,
-				"index": 22,
+				"index": 25,
 				"map": "heat.path-06",
 				"mapId": 16
 			},
@@ -10584,7 +10584,7 @@
 				"x": 301.9047619047619,
 				"y": 403,
 				"level": 0,
-				"index": 23,
+				"index": 26,
 				"map": "heat.path-07",
 				"mapId": 7
 			},
@@ -10593,7 +10593,7 @@
 				"x": 249.9047619047619,
 				"y": 409.2,
 				"level": 0,
-				"index": 24,
+				"index": 27,
 				"map": "heat.path-07",
 				"mapId": 78
 			},
@@ -10602,7 +10602,7 @@
 				"x": 268.3,
 				"y": 370,
 				"level": 0,
-				"index": 25,
+				"index": 28,
 				"map": "heat.path-08",
 				"mapId": 1
 			},
@@ -10611,7 +10611,7 @@
 				"x": 293.15,
 				"y": 311.4,
 				"level": 0,
-				"index": 26,
+				"index": 29,
 				"map": "heat.path-08",
 				"mapId": 4
 			},
@@ -10620,7 +10620,7 @@
 				"x": 261.6,
 				"y": 267.2,
 				"level": 0,
-				"index": 27,
+				"index": 30,
 				"map": "heat.path-09",
 				"mapId": 8
 			},
@@ -10629,7 +10629,7 @@
 				"x": 286.2,
 				"y": 269,
 				"level": 0,
-				"index": 28,
+				"index": 31,
 				"map": "heat.path-09",
 				"mapId": 41
 			},
@@ -10638,7 +10638,7 @@
 				"x": 104.52000000000001,
 				"y": 317.2,
 				"level": 0,
-				"index": 29,
+				"index": 32,
 				"map": "heat.path-11",
 				"mapId": 19
 			},
@@ -10647,7 +10647,7 @@
 				"x": 350.72,
 				"y": 258.22222222222223,
 				"level": 0,
-				"index": 30,
+				"index": 33,
 				"map": "heat.shortcut-02-09",
 				"mapId": 17
 			},
@@ -10656,7 +10656,7 @@
 				"x": 406.15999999999997,
 				"y": 272.8888888888889,
 				"level": 0,
-				"index": 31,
+				"index": 34,
 				"map": "heat.shortcut-02-09",
 				"mapId": 19
 			}
