@@ -3566,13 +3566,13 @@
 							"11",
 							"heat",
 							"cold",
-							"cursedcoin"
+							"item.403.amount >= 1"
 						],
 						"open": [
 							"open5",
 							"heat",
 							"cold",
-							"cursedcoin"
+							"item.403.amount >= 1"
 						]
 					}
 				}
@@ -3591,13 +3591,13 @@
 							"11",
 							"heat",
 							"cold",
-							"cursedcoin"
+							"item.403.amount >= 1"
 						],
 						"open": [
 							"open5",
 							"heat",
 							"cold",
-							"cursedcoin"
+							"item.403.amount >= 1"
 						]
 					}
 				}
