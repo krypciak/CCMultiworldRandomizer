@@ -5248,6 +5248,75 @@
 			},
 			"events": {}
 		},
+		"jungle.grove.lost-shrine-02": {
+			"name": "Gaia's Garden - Lost Shrine Interior 1F",
+			"chests": {
+				"158": {
+					"item": 292,
+					"amount": 2,
+					"type": "Default",
+					"condition": {
+						"linear": [
+							"28",
+							"wave",
+							"shock"
+						],
+						"open": [
+							"open10",
+							"wave",
+							"shock"
+						]
+					}
+				}
+			},
+			"events": {}
+		},
+		"jungle.grove.lost-shrine-03": {
+			"name": "Gaia's Garden - Lost Shrine Interior B1",
+			"chests": {
+				"289": {
+					"item": 486,
+					"amount": 3,
+					"type": "Gold",
+					"condition": {
+						"linear": [
+							"28",
+							"wave",
+							"shock"
+						],
+						"open": [
+							"open10",
+							"wave",
+							"shock"
+						]
+					}
+				}
+			},
+			"events": {}
+		},
+		"jungle.grove.lost-shrine-04": {
+			"name": "Gaia's Garden - Lost Shrine Interior B2",
+			"chests": {
+				"363": {
+					"item": 443,
+					"amount": 1,
+					"type": "Silver",
+					"condition": {
+						"linear": [
+							"28",
+							"wave",
+							"shock"
+						],
+						"open": [
+							"open10",
+							"wave",
+							"shock"
+						]
+					}
+				}
+			},
+			"events": {}
+		},
 		"jungle.infested.infested-path-01": {
 			"name": "Gaia's Garden - Lost Lookout",
 			"chests": {
@@ -9223,6 +9292,33 @@
 			},
 			{
 				"key": "CHEST",
+				"x": 520,
+				"y": 440,
+				"level": 1,
+				"index": 23,
+				"map": "jungle.grove.lost-shrine-02",
+				"mapId": 158
+			},
+			{
+				"key": "CHEST",
+				"x": 664,
+				"y": 652,
+				"level": 3,
+				"index": 24,
+				"map": "jungle.grove.lost-shrine-03",
+				"mapId": 289
+			},
+			{
+				"key": "CHEST",
+				"x": 384,
+				"y": 196,
+				"level": 2,
+				"index": 25,
+				"map": "jungle.grove.lost-shrine-04",
+				"mapId": 289
+			},
+			{
+				"key": "CHEST",
 				"x": 506.3692307692308,
 				"y": 325,
 				"level": 0,
@@ -10238,7 +10334,7 @@
 				"index": 34,
 				"map": "heat.caves.cliffs-temple-03",
 				"mapId": 107
-			}
+			},
 			{
 				"key": "CHEST",
 				"x": 530.1714285714286,
