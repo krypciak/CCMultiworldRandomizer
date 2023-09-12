@@ -4822,6 +4822,43 @@
 			},
 			"events": {}
 		},
+		
+		"jungle.caves.smuggle-route-2": {
+			"name": "Gaia's Garden - Infested Cavern",
+			"chests": {
+				"55": {
+					"item": 489,
+					"amount": 1,
+					"type": "Bronze",
+					"condition": {
+						"linear": [
+							"25",
+							"wave"
+						],
+						"open": [
+							"open10",
+							"wave"
+						]
+					}
+				},
+				"60": {
+					"item": 279,
+					"amount": 3,
+					"type": "Silver",
+					"condition": {
+						"linear": [
+							"25",
+							"wave"
+						],
+						"open": [
+							"open10",
+							"wave"
+						]
+					}
+				}
+			},
+			"events": {}
+		},
 		"jungle.clearing.clear-path-01": {
 			"name": "Gaia's Garden - V'rda Vil West",
 			"chests": {
@@ -9109,6 +9146,24 @@
 				"index": 2,
 				"map": "jungle.caves.grove-cave-02",
 				"mapId": 1
+			},
+			{
+				"key": "CHEST",
+				"x": 696,
+				"y": 648,
+				"level": 2,
+				"index": 3,
+				"map": "jungle.caves.smuggle-route-2",
+				"mapId": 55
+			},
+			{
+				"key": "CHEST",
+				"x": 1644,
+				"y": 216,
+				"level": 2,
+				"index": 4,
+				"map": "jungle.caves.smuggle-route-2",
+				"mapId": 60
 			},
 			{
 				"key": "CHEST",
