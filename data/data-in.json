@@ -6513,11 +6513,11 @@
 					"condition": {
 						"linear": [
 							"25",
-							""
+							"wave"
 						],
 						"open": [
 							"open13.1",
-							""
+							"wave"
 						]
 					}
 				}
