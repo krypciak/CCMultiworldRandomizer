@@ -3545,11 +3545,11 @@
 					"condition": {
 						"linear": [
 							"12",
-							""
+							"heat"
 						],
 						"open": [
 							"open6",
-							""
+							"heat"
 						]
 					}
 				}
