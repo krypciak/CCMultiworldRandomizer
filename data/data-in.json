@@ -135,8 +135,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}		
 		},
 		"arid.interior.stealth-2": {
 			"name": "Vermillion Wasteland - Storage Basement",
@@ -156,8 +155,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}
 		},
 		"arid.lake-1": {
 			"name": "Vermillion Wasteland - Crimson Lake",
@@ -192,8 +190,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"arid.town-1": {
 			"name": "Vermillion Wasteland - East Town",
@@ -243,8 +240,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"arid.town-2": {
 			"name": "Vermillion Wasteland - West Town",
@@ -294,8 +290,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn.caves.cave-3-to-6": {
 			"name": "Autumn's Rise - Drippy Den",
@@ -315,8 +310,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn.cubaum": {
 			"name": "Autumn's Rise - Normal Clearing",
@@ -351,8 +345,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn.entrance": {
 			"name": "Autumn's Rise - Entrance",
@@ -372,8 +365,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn.lake-observatory": {
 			"name": "Autumn's Rise - Old Observatory",
@@ -393,8 +385,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn.path-1-1": {
 			"name": "Autumn's Rise - Quiet Passage 1",
@@ -414,8 +405,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn.path-1-2": {
 			"name": "Autumn's Rise - Quiet Passage 2",
@@ -435,8 +425,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn.path-1-3": {
 			"name": "Autumn's Rise - Hedgehag's Den",
@@ -456,8 +445,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn.path-1": {
 			"name": "Autumn's Rise - Pathway 1",
@@ -477,8 +465,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn.path-2": {
 			"name": "Autumn's Rise - Pathway 2",
@@ -498,8 +485,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn.path-3-1": {
 			"name": "Autumn's Rise - Pathway 3",
@@ -519,27 +505,7 @@
 						]
 					}
 				}
-			},
-			"events": {
-				"452": [
-					{
-						"item": 170,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"3.1",
-								""
-							],
-							"open": [
-								"open3.1",
-								""
-							]
-						},
-						"path": ".settings.npcStates.1.event.10"
-					}
-				]
-			}
+			}			
 		},
 		"autumn.path-3-2": {
 			"name": "Autumn's Rise - Off Road 1",
@@ -559,8 +525,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn.path-3-4": {
 			"name": "Autumn's Rise - Off Road 2",
@@ -580,8 +545,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn.path-7-1": {
 			"name": "Autumn's Rise - Pathway 6",
@@ -631,8 +595,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn.path-7-2": {
 			"name": "Autumn's Rise - Pathway 7",
@@ -667,8 +630,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn.path-8": {
 			"name": "Autumn's Rise - Ending Pathway",
@@ -688,27 +650,7 @@
 						]
 					}
 				}
-			},
-			"events": {
-				"458": [
-					{
-						"item": 285,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"3",
-								""
-							],
-							"open": [
-								"open3",
-								""
-							]
-						},
-						"path": ".settings.event.21.accepted.6"
-					}
-				]
-			}
+			}			
 		},
 		"autumn.path4": {
 			"name": "Autumn's Rise - Obelisk Lake",
@@ -743,8 +685,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn.path5": {
 			"name": "Autumn's Rise - Pathway 4",
@@ -794,8 +735,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn.path6": {
 			"name": "Autumn's Rise - Pathway 5",
@@ -830,8 +770,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn-fall.caves.path-03-exit": {
 			"name": "Autumn's Fall - Ruby Tunnel",
@@ -851,8 +790,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn-fall.caves.path-04-cave-01": {
 			"name": "Autumn's Fall - Lake Cave 1",
@@ -872,8 +810,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn-fall.caves.path-04-cave-02": {
 			"name": "Autumn's Fall - Lake Cave 2",
@@ -893,8 +830,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn-fall.caves.path-04-cave-03": {
 			"name": "Autumn's Fall - Lake Cave 3",
@@ -914,8 +850,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn-fall.caves.path-04-cave-04": {
 			"name": "Autumn's Fall - Lake Cave 4",
@@ -935,8 +870,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn-fall.path-01": {
 			"name": "Autumn's Fall - Southern Exit",
@@ -986,8 +920,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn-fall.path-02": {
 			"name": "Autumn's Fall - Ruined Path",
@@ -1022,8 +955,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn-fall.path-03": {
 			"name": "Autumn's Fall - Eastern Exit",
@@ -1058,8 +990,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn-fall.path-04": {
 			"name": "Autumn's Fall - Ancient Center",
@@ -1094,8 +1025,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn-fall.path-05": {
 			"name": "Autumn's Fall - Northern Exit",
@@ -1130,8 +1060,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn-fall.path-06": {
 			"name": "Autumn's Fall - Pillar Isle",
@@ -1181,8 +1110,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn-fall.path-07": {
 			"name": "Autumn's Fall - Village Remains",
@@ -1232,8 +1160,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn-fall.path-08": {
 			"name": "Autumn's Fall - Secluded Path",
@@ -1283,8 +1210,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn-fall.path-10": {
 			"name": "Autumn's Fall - Villa of Terror",
@@ -1319,8 +1245,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"autumn-fall.raid.raid-01": {
 			"name": "Autumn's Fall - Para Island 1",
@@ -1340,8 +1265,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen.bergen": {
 			"name": "Bergen Village - Bergen South",
@@ -1406,8 +1330,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen.bergen2": {
 			"name": "Bergen Village - Bergen North",
@@ -1472,8 +1395,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen.elevator": {
 			"name": "Bergen Village - Diving Railway",
@@ -1493,8 +1415,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen.inner-questhub-0": {
 			"name": "Bergen Village - Seeker Hub Cellar",
@@ -1529,56 +1450,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
-		},
-		"bergen.inner-questhub-1": {
-			"name": "Bergen Village - Seeker Hub",
-			"chests": {},
-			"events": {
-				"135": [
-					{
-						"item": 466,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"3",
-								""
-							],
-							"open": [
-								"open3",
-								""
-							]
-						},
-						"path": ".settings.npcStates.1.event.quest.5"
-					}
-				]
-			}
-		},
-		"bergen.mine-entrance": {
-			"name": "Bergen Village - Temple Mine Entrance",
-			"chests": {},
-			"events": {
-				"316": [
-					{
-						"item": 366,
-						"amount": 2,
-						"type": "",
-						"condition": {
-							"linear": [
-								"4",
-								""
-							],
-							"open": [
-								"open4.1",
-								""
-							]
-						},
-						"path": ".settings.npcStates.0.event.quest.2.thenStep.17"
-					}
-				]
-			}
+			}			
 		},
 		"bergen.storage": {
 			"name": "Bergen Village - Storage Room",
@@ -1598,8 +1470,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen-trail.cave.cave-08-smith": {
 			"name": "Bergen Trail - Abandoned Cave ",
@@ -1619,8 +1490,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen-trail.cave.cave-4-1-1": {
 			"name": "Bergen Trail - Frozen Cave",
@@ -1640,8 +1510,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen-trail.cave.cave-6-1": {
 			"name": "Bergen Trail - Abandoned Ground",
@@ -1661,8 +1530,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen-trail.cave.cave-6-3": {
 			"name": "Bergen Trail - Pengpeng's Den",
@@ -1682,8 +1550,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen-trail.path-1-entrance": {
 			"name": "Bergen Trail - Entrance",
@@ -1718,8 +1585,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen-trail.path-2": {
 			"name": "Bergen Trail - Rising Path 1",
@@ -1739,8 +1605,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen-trail.path-3-1": {
 			"name": "Bergen Trail - Off Road 1",
@@ -1775,8 +1640,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen-trail.path-3-2": {
 			"name": "Bergen Trail - Off Road 2",
@@ -1826,8 +1690,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen-trail.path-3-3": {
 			"name": "Bergen Trail - Off Road 3",
@@ -1862,8 +1725,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen-trail.path-4-1-1": {
 			"name": "Bergen Trail - Old Plateau",
@@ -1883,8 +1745,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen-trail.path-4-1": {
 			"name": "Bergen Trail - Rising Path 2",
@@ -1904,8 +1765,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen-trail.path-4-2": {
 			"name": "Bergen Trail - Rising Path 3",
@@ -1940,8 +1800,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen-trail.path-5": {
 			"name": "Bergen Trail - Spike Heights",
@@ -1976,8 +1835,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen-trail.path-6-1": {
 			"name": "Bergen Trail - Icy Cauldron",
@@ -1997,8 +1855,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen-trail.path-6": {
 			"name": "Bergen Trail - Bergen Waterfalls",
@@ -2018,8 +1875,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen-trail.path-7-1": {
 			"name": "Bergen Trail - Rising Path 4",
@@ -2054,8 +1910,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen-trail.path-7-2-1": {
 			"name": "Bergen Trail - Lofty Heights",
@@ -2075,8 +1930,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen-trail.path-7-2": {
 			"name": "Bergen Trail - Windy Climb",
@@ -2096,8 +1950,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"bergen-trail.path-8": {
 			"name": "Bergen Trail - Rising Path 5",
@@ -2117,8 +1970,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"cold-dng.b1.center": {
 			"name": "Temple Mine - Elevator U1",
@@ -2138,8 +1990,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"cold-dng.b1.room1": {
 			"name": "Temple Mine - Crossing Funnel",
@@ -2159,8 +2010,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"cold-dng.b1.room2": {
 			"name": "Temple Mine - Old Shaft 1",
@@ -2180,8 +2030,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"cold-dng.b1.room3": {
 			"name": "Temple Mine - Old Shaft 2",
@@ -2201,8 +2050,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}
 		},
 		"cold-dng.b1.room4": {
 			"name": "Temple Mine - Testing Chamber",
@@ -2222,8 +2070,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"cold-dng.b1.room6": {
 			"name": "Temple Mine - Old Chamber",
@@ -2243,8 +2090,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"cold-dng.b2.room1": {
 			"name": "Temple Mine - Storage Room 1",
@@ -2264,8 +2110,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"cold-dng.b2.room2": {
 			"name": "Temple Mine - Frozen Chamber 1",
@@ -2285,8 +2130,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"cold-dng.b2.room5": {
 			"name": "Temple Mine - Frozen Chamber 2",
@@ -2321,8 +2165,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"cold-dng.b3.room1": {
 			"name": "Temple Mine - Frozen Shaft 1",
@@ -2342,8 +2185,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"cold-dng.b3.room2": {
 			"name": "Temple Mine - Frozen Shaft 2",
@@ -2363,8 +2205,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"cold-dng.b3.room3": {
 			"name": "Temple Mine - Frozen Shaft 3",
@@ -2399,8 +2240,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"cold-dng.b3.room6": {
 			"name": "Temple Mine - Overrun Chamber",
@@ -2435,13 +2275,11 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"cold-dng.b3.room7": {
 			"name": "Temple Mine - Chamber of Fire",
 			"chests": {},
-			"events": {},
 			"elements": {
 				"45": {
 					"item": "heat",
@@ -2477,8 +2315,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"cold-dng.b4.room10": {
 			"name": "Temple Mine - Infested Chamber",
@@ -2498,8 +2335,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"cold-dng.b4.room4": {
 			"name": "Temple Mine - Forgotten Shaft 1",
@@ -2519,8 +2355,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"cold-dng.b4.room5": {
 			"name": "Temple Mine - Forgotten Shaft 2",
@@ -2540,8 +2375,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"cold-dng.b4.room6": {
 			"name": "Temple Mine - Forgotten Shaft 3",
@@ -2561,8 +2395,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"cold-dng.b4.room7": {
 			"name": "Temple Mine - Forgotten Shaft 4",
@@ -2582,8 +2415,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"cold-dng.b4.room8": {
 			"name": "Temple Mine - Forgotten Shaft 5",
@@ -2603,8 +2435,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"cold-dng.g.center": {
 			"name": "Temple Mine - Elevator GF",
@@ -2624,32 +2455,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
-		},
-		"cold-dng.g.expo-space": {
-			"name": "Temple Mine - Space",
-			"chests": {},
-			"events": {
-				"136": [
-					{
-						"item": 225,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"10",
-								"item.153.amount >= 1"
-							],
-							"open": [
-								"open4.8",
-								""
-							]
-						},
-						"path": ".settings.event.20"
-					}
-				]
-			}
+			}			
 		},
 		"cold-dng.g.room2": {
 			"name": "Temple Mine - Temple Chamber 2",
@@ -2669,8 +2475,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"forest.caves.cave-013-pandza-01": {
 			"name": "Sapphire Ridge - The Barracks",
@@ -2690,8 +2495,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"forest.caves.cave-013-pandza-02": {
 			"name": "Sapphire Ridge - The Bellow",
@@ -2712,8 +2516,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"forest.caves.path-01-entrance": {
 			"name": "Sapphire Ridge - Sapphire Tunnel",
@@ -2733,8 +2536,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"forest.caves.path-02-to-08": {
 			"name": "Sapphire Ridge - Eroded Passage",
@@ -2769,8 +2571,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"forest.caves.path-06-chasm": {
 			"name": "Sapphire Ridge - Spider Chasm",
@@ -2805,8 +2606,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"forest.caves.path-07-to-08": {
 			"name": "Sapphire Ridge - Narrow Passage",
@@ -2841,8 +2641,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"forest.caves.path-08-to-10": {
 			"name": "Sapphire Ridge - Wheel Passage",
@@ -2877,32 +2676,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
-		},
-		"forest.interior.expo-space": {
-			"name": "Sapphire Ridge - Space",
-			"chests": {},
-			"events": {
-				"137": [
-					{
-						"item": 434,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"32",
-								""
-							],
-							"open": [
-								"open17",
-								""
-							]
-						},
-						"path": ".settings.event.19"
-					}
-				]
-			}
+			}			
 		},
 		"forest.interior.inn-og-01": {
 			"name": "Sapphire Ridge - Cave Inn 1F",
@@ -2922,8 +2696,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"forest.interior.inn-storage": {
 			"name": "Sapphire Ridge - Cave Inn Storage",
@@ -2943,8 +2716,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"forest.path-01-entrance": {
 			"name": "Sapphire Ridge - Western Exit",
@@ -2979,8 +2751,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"forest.path-02": {
 			"name": "Sapphire Ridge - North West Path",
@@ -3015,8 +2786,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"forest.path-03": {
 			"name": "Sapphire Ridge - River Road",
@@ -3066,8 +2836,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"forest.path-04-hostel": {
 			"name": "Sapphire Ridge - The Cave Inn",
@@ -3102,8 +2871,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"forest.path-04-vaga": {
 			"name": "Sapphire Ridge - Tranquil Bamboo",
@@ -3138,27 +2906,7 @@
 						]
 					}
 				}
-			},
-			"events": {
-				"447": [
-					{
-						"item": 439,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"31",
-								""
-							],
-							"open": [
-								"open16",
-								""
-							]
-						},
-						"path": ".settings.npcStates.2.event.quest.12"
-					}
-				]
-			}
+			}			
 		},
 		"forest.path-05": {
 			"name": "Sapphire Ridge - Bamboo Thicket",
@@ -3193,8 +2941,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"forest.path-06": {
 			"name": "Sapphire Ridge - North East Path",
@@ -3229,8 +2976,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"forest.path-07": {
 			"name": "Sapphire Ridge - Flower Lake",
@@ -3265,8 +3011,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"forest.path-08": {
 			"name": "Sapphire Ridge - Carved Pathway",
@@ -3316,8 +3061,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"forest.path-09": {
 			"name": "Sapphire Ridge - High Ground",
@@ -3352,8 +3096,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"forest.path-10": {
 			"name": "Sapphire Ridge - Old Dojo",
@@ -3403,8 +3146,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"forest.path-11-behind-maze": {
 			"name": "Sapphire Ridge - Dream Pond",
@@ -3424,8 +3166,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"forest.path-12": {
 			"name": "Sapphire Ridge - Ascension Temple",
@@ -3475,8 +3216,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"forest.path-13": {
 			"name": "Sapphire Ridge - Baton Pond",
@@ -3496,8 +3236,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat.caves.cliff-cave-01": {
 			"name": "Maroon Valley - Mystery Cave",
@@ -3532,8 +3271,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat.caves.cliffs-temple-02": {
 			"name": "Maroon Valley - Cursed Temple",
@@ -3576,8 +3314,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}		
 		},
 		"heat.caves.cliff-temple-03": {
 			"name": "Maroon Valley - Cursed Temple Treasure Room",
@@ -3601,8 +3338,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat.caves.maroon-cave-01": {
 			"name": "Maroon Valley - Maroon Cave 1",
@@ -3622,8 +3358,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat.cliffs.cliffs-path-01": {
 			"name": "Maroon Valley - River Cliff",
@@ -3658,8 +3393,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat.cliffs.cliffs-path-02": {
 			"name": "Maroon Valley - Endless Pit",
@@ -3709,32 +3443,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
-		},
-		"heat.dng-expo-space": {
-			"name": "Faj'ro Temple - Space",
-			"chests": {},
-			"events": {
-				"136": [
-					{
-						"item": 230,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"19",
-								""
-							],
-							"open": [
-								"open7.8",
-								""
-							]
-						},
-						"path": ".settings.event.20"
-					}
-				]
-			}
+			}			
 		},
 		"heat.oasis.oasis-path-01": {
 			"name": "Maroon Valley - Vivid Path",
@@ -3769,8 +3478,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat.oasis.oasis-path-02": {
 			"name": "Maroon Valley - Maroon Oasis",
@@ -3805,8 +3513,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat.oasis.oasis-path-03": {
 			"name": "Maroon Valley - Bright Path",
@@ -3826,8 +3533,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat.path-00": {
 			"name": "Maroon Valley - Rising Railway",
@@ -3847,8 +3553,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat.path-01-entrance": {
 			"name": "Maroon Valley - East Entrance",
@@ -3868,8 +3573,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat.path-02": {
 			"name": "Maroon Valley - Dusty Path",
@@ -3904,8 +3608,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat.path-03": {
 			"name": "Maroon Valley - Crossroad",
@@ -3940,8 +3643,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat.path-04": {
 			"name": "Maroon Valley - Long Piece",
@@ -3961,8 +3663,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat.path-05": {
 			"name": "Maroon Valley - Barren Arcs",
@@ -3997,8 +3698,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat.path-06": {
 			"name": "Maroon Valley - Barren Land",
@@ -4018,8 +3718,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat.path-07": {
 			"name": "Maroon Valley - Overpass",
@@ -4054,8 +3753,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat.path-08": {
 			"name": "Maroon Valley - Paw Cliffs",
@@ -4090,8 +3788,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat.path-09": {
 			"name": "Maroon Valley - Torn Road",
@@ -4126,8 +3823,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat.path-11": {
 			"name": "Maroon Valley - West Entrance",
@@ -4147,8 +3843,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat.shortcut-02-09": {
 			"name": "Maroon Valley - Fractured Path",
@@ -4183,8 +3878,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat-dng.f1.room-03": {
 			"name": "Faj'ro Temple - Right Chamber 1 (1F)",
@@ -4204,13 +3898,11 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat-dng.f2.room-cold": {
 			"name": "Faj'ro Temple - Chamber of Ice",
 			"chests": {},
-			"events": {},
 			"elements": {
 				"78": {
 					"item": "cold",
@@ -4246,8 +3938,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat-dng.f3.room-05": {
 			"name": "Faj'ro Temple - Large Fire Chamber",
@@ -4282,8 +3973,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat-dng.f3.room-07": {
 			"name": "Faj'ro Temple - Test of Wisdom",
@@ -4303,8 +3993,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat-dng.f4.room-02": {
 			"name": "Faj'ro Temple - West Pathway",
@@ -4324,8 +4013,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat-dng.f4.room-03": {
 			"name": "Faj'ro Temple - Test of Surprise",
@@ -4345,8 +4033,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat-dng.f4.room-05": {
 			"name": "Faj'ro Temple - West Chamber 1",
@@ -4366,8 +4053,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat-dng.f4.room-09": {
 			"name": "Faj'ro Temple - East Chamber 1",
@@ -4387,8 +4073,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat-dng.f4.room-10": {
 			"name": "Faj'ro Temple - East Pathway",
@@ -4408,8 +4093,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat-dng.f4.room-11": {
 			"name": "Faj'ro Temple - Test of Memory",
@@ -4429,8 +4113,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat-dng.f4.room-12": {
 			"name": "Faj'ro Temple - Chamber of Prosperity",
@@ -4450,8 +4133,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat-dng.g.room-03": {
 			"name": "Faj'ro Temple - Left Chamber 1",
@@ -4471,8 +4153,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat-dng.g.room-07": {
 			"name": "Faj'ro Temple - Fire and Sand 2",
@@ -4492,8 +4173,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat-dng.g.room-09": {
 			"name": "Faj'ro Temple - Balance Room 2",
@@ -4528,8 +4208,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat-dng.g.room-10": {
 			"name": "Faj'ro Temple - Right Chamber 1 (GF)",
@@ -4549,8 +4228,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat-dng.g.room-12": {
 			"name": "Faj'ro Temple - Right Chamber 2",
@@ -4570,8 +4248,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat-dng.g.room-13": {
 			"name": "Faj'ro Temple - Test of Memory 1",
@@ -4591,8 +4268,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}		
 		},
 		"heat-dng.g.room-14": {
 			"name": "Faj'ro Temple - Test of Memory 2",
@@ -4612,8 +4288,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat-village.baki-1": {
 			"name": "Ba'kii Kum - Solar Farm",
@@ -4648,8 +4323,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"heat-village.baki-2": {
 			"name": "Ba'kii Kum - Market",
@@ -4684,56 +4358,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
-		},
-		"heat-village.interior.house-2": {
-			"name": "Ba'kii Kum - Dusty Home",
-			"chests": {},
-			"events": {
-				"31": [
-					{
-						"item": 403,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"11",
-								"cold"
-							],
-							"open": [
-								"open5",
-								"cold"
-							]
-						},
-						"path": ".settings.npcStates.0.event.4.0.9"
-					}
-				]
-			}
-		},
-		"heat-village.interior.quest-hub-og": {
-			"name": "Ba'kii Kum - Seeker Hub 2nd Floor",
-			"chests": {},
-			"events": {
-				"112": [
-					{
-						"item": 236,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"11",
-								""
-							],
-							"open": [
-								"open5",
-								""
-							]
-						},
-						"path": ".settings.npcStates.1.event.quest.3.accepted.3"
-					}
-				]
-			}
+			}			
 		},
 		"heat-village.interior.tradebuilding-eg": {
 			"name": "Ba'kii Kum - Bazaar House",
@@ -4753,32 +4378,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
-		},
-		"heat-village.special.expo-space": {
-			"name": "Ba'kii Kum - Space",
-			"chests": {},
-			"events": {
-				"136": [
-					{
-						"item": 148,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"12",
-								""
-							],
-							"open": [
-								"open6",
-								""
-							]
-						},
-						"path": ".settings.event.17"
-					}
-				]
-			}
+			}			
 		},
 		"jungle.caves.grove-cave-01": {
 			"name": "Gaia's Garden - Dripping Cave",
@@ -4798,8 +4398,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.caves.grove-cave-02": {
 			"name": "Gaia's Garden - Tranquility Pond",
@@ -4819,8 +4418,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		
 		"jungle.caves.smuggle-route-2": {
@@ -4856,8 +4454,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.clearing.clear-path-01": {
 			"name": "Gaia's Garden - V'rda Vil West",
@@ -4907,8 +4504,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.clearing.clear-path-02": {
 			"name": "Gaia's Garden - V'rda Vil East",
@@ -4943,8 +4539,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.clearing.clear-path-03": {
 			"name": "Gaia's Garden - V'rda Vil North",
@@ -4979,8 +4574,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.clearing.clear-path-04": {
 			"name": "Gaia's Garden - Chief's Den",
@@ -5030,56 +4624,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
-		},
-		"jungle.dng.shock-expo-space": {
-			"name": "Zir'vitar Temple - Space",
-			"chests": {},
-			"events": {
-				"136": [
-					{
-						"item": 231,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"25",
-								"wave"
-							],
-							"open": [
-								"open13.2",
-								""
-							]
-						},
-						"path": ".settings.event.20"
-					}
-				]
-			}
-		},
-		"jungle.dng.tree-expo-space": {
-			"name": "Grand Krys'kajo - Seeker's Conclusion",
-			"chests": {},
-			"events": {
-				"60": [
-					{
-						"item": 410,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"30",
-								""
-							],
-							"open": [
-								"open15.3",
-								""
-							]
-						},
-						"path": ".settings.event.25"
-					}
-				]
-			}
+			}			
 		},
 		"jungle.dng.tree-exterior": {
 			"name": "Gaia's Garden - Grand Krys'kajo Entrance",
@@ -5099,32 +4644,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
-		},
-		"jungle.dng.wave-expo-space": {
-			"name": "So'najiz Temple - Space",
-			"chests": {},
-			"events": {
-				"136": [
-					{
-						"item": 286,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"27",
-								"shock"
-							],
-							"open": [
-								"open14.3",
-								""
-							]
-						},
-						"path": ".settings.event.20"
-					}
-				]
-			}
+			}			
 		},
 		"jungle.dng.wave-exterior": {
 			"name": "Gaia's Garden - So'najiz Temple Entrance",
@@ -5144,8 +4664,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.grove.grove-path-01": {
 			"name": "Gaia's Garden - Covert Path",
@@ -5180,8 +4699,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.grove.grove-path-02": {
 			"name": "Gaia's Garden - Royal Grove",
@@ -5246,8 +4764,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.grove.grove-path-03": {
 			"name": "Gaia's Garden - Calm Backyard",
@@ -5282,8 +4799,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.grove.lost-shrine-02": {
 			"name": "Gaia's Garden - Lost Shrine Interior 1F",
@@ -5305,8 +4821,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.grove.lost-shrine-03": {
 			"name": "Gaia's Garden - Lost Shrine Interior B1",
@@ -5328,8 +4843,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.grove.lost-shrine-04": {
 			"name": "Gaia's Garden - Lost Shrine Interior B2",
@@ -5351,8 +4865,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.infested.infested-path-01": {
 			"name": "Gaia's Garden - Lost Lookout",
@@ -5402,8 +4915,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.infested.infested-path-02": {
 			"name": "Gaia's Garden - Seared Lake",
@@ -5438,8 +4950,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.infested.infested-path-03": {
 			"name": "Gaia's Garden - Infested Marshes South",
@@ -5504,8 +5015,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.infested.infested-path-04": {
 			"name": "Gaia's Garden - Infested Marshes North",
@@ -5570,8 +5080,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.left.path-left-01": {
 			"name": "Gaia's Garden - Overgrown Path",
@@ -5606,8 +5115,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.left.path-left-02": {
 			"name": "Gaia's Garden - Drizzle Bosk",
@@ -5657,8 +5165,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.left.path-left-03": {
 			"name": "Gaia's Garden - Wet Passage",
@@ -5693,8 +5200,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.left.path-left-04": {
 			"name": "Gaia's Garden - River's Bed",
@@ -5729,8 +5235,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.path-01-entrance": {
 			"name": "Gaia's Garden - Jungle Entrance",
@@ -5765,8 +5270,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.path-02-crossroads": {
 			"name": "Gaia's Garden - Crossroad",
@@ -5801,8 +5305,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.path-03-sync": {
 			"name": "Gaia's Garden - Tying Greens",
@@ -5837,8 +5340,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.path-04-end": {
 			"name": "Gaia's Garden - Peridot Approach",
@@ -5873,8 +5375,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.right.right-path-01": {
 			"name": "Gaia's Garden - Splitting Stumps",
@@ -5909,8 +5410,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.right.right-path-02": {
 			"name": "Gaia's Garden - Clinging River",
@@ -5945,8 +5445,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.right.right-path-03": {
 			"name": "Gaia's Garden - Ringing River",
@@ -5981,8 +5480,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle.right.right-path-04": {
 			"name": "Gaia's Garden - Old Timber",
@@ -6002,8 +5500,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle-city.center": {
 			"name": "Basin Keep - Centrum",
@@ -6023,8 +5520,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle-city.east": {
 			"name": "Basin Keep - Pond Slums",
@@ -6074,8 +5570,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle-city.entrance": {
 			"name": "Gaia's Garden - Basin Keep Entrance",
@@ -6095,8 +5590,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle-city.interior.faction-guard-1": {
 			"name": "Basin Keep - Basin Police Force HQ",
@@ -6116,8 +5610,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"jungle-city.interior.questhub-01": {
 			"name": "Basin Keep - Seeker Hub 1st Floor",
@@ -6137,8 +5630,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"rhombus-dng.room-1-6": {
 			"name": "Rhombus Dungeon - Ability Room 1",
@@ -6173,8 +5665,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"rhombus-dng.room-5-newer": {
 			"chests": {},
@@ -6239,8 +5730,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"rhombus-sqr.arena-1": {
 			"name": "Rhombus Square - Arena Plaza",
@@ -6275,8 +5765,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"rhombus-sqr.center-e": {
 			"name": "Rhombus Square - Garden Boulevard",
@@ -6311,8 +5800,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"rhombus-sqr.center-s": {
 			"name": "Rhombus Square - South Arch",
@@ -6332,8 +5820,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"rhombus-sqr.center-se": {
 			"name": "Rhombus Square - Lloyd Passage",
@@ -6353,8 +5840,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"rhombus-sqr.residential-s1": {
 			"name": "Rhombus Square - Residential District West",
@@ -6389,8 +5875,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"rookie-harbor.center": {
 			"name": "Rookie Harbor - Marketplace",
@@ -6410,8 +5895,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"rookie-harbor.east": {
 			"name": "Rookie Harbor - Falling Exit",
@@ -6431,138 +5915,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
-		},
-		"rookie-harbor.expo-space": {
-			"name": "Rookie Harbor - Space",
-			"chests": {},
-			"events": {
-				"136": [
-					{
-						"item": 145,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"2",
-								""
-							],
-							"open": [
-								"open2",
-								""
-							]
-						},
-						"path": ".settings.event.74"
-					},
-					{
-						"item": 135,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"2",
-								""
-							],
-							"open": [
-								"open2",
-								""
-							]
-						},
-						"path": ".settings.event.90"
-					}
-				],
-				"137": [
-					{
-						"item": 428,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"11",
-								""
-							],
-							"open": [
-								"open4.8",
-								""
-							]
-						},
-						"path": ".settings.event.36"
-					}
-				],
-				"138": [
-					{
-						"item": 428,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"19",
-								""
-							],
-							"open": [
-								"open7.8",
-								""
-							]
-						},
-						"path": ".settings.event.35"
-					}
-				],
-				"140": [
-					{
-						"item": 428,
-						"amount": 2,
-						"type": "",
-						"condition": {
-							"linear": [
-								"30",
-								""
-							],
-							"open": [
-								"open15.3",
-								""
-							]
-						},
-						"path": ".settings.event.36"
-					}
-				],
-				"142": [
-					{
-						"item": 428,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"27",
-								"shock"
-							],
-							"open": [
-								"open14.3",
-								""
-							]
-						},
-						"path": ".settings.event.14"
-					}
-				],
-				"143": [
-					{
-						"item": 428,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"25",
-								"wave"
-							],
-							"open": [
-								"open13.2",
-								""
-							]
-						},
-						"path": ".settings.event.14"
-					}
-				]
-			}
+			}			
 		},
 		"rookie-harbor.inner-equip-north": {
 			"name": "Rookie Harbor - Weapon & Backer Shop",
@@ -6582,8 +5935,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"rookie-harbor.inner-old": {
 			"name": "Rookie Harbor - Dusty Storage",
@@ -6603,8 +5955,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"rookie-harbor.south": {
 			"name": "Rookie Harbor - South Harbor",
@@ -6624,8 +5975,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"rookie-harbor.teleporter": {
 			"name": "Rookie Harbor - Beginners Arc",
@@ -6660,8 +6010,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"shock-dng.f1.room2": {
 			"name": "Zir'vitar Temple - Moving Transmit",
@@ -6696,8 +6045,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"shock-dng.f1.room3to4": {
 			"name": "Zir'vitar Temple - Haunted Waves",
@@ -6717,8 +6065,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"shock-dng.g.room4to5": {
 			"name": "Zir'vitar Temple - Hoodwink",
@@ -6738,8 +6085,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"shock-dng.g.room5": {
 			"name": "Zir'vitar Temple - Spinning Transmit",
@@ -6759,13 +6105,11 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"shock-dng.f2.room-element": {
 			"name": "Zir'vitar Temple - Chamber of Wave",
 			"chests": {},
-			"events": {},
 			"elements": {
 				"86": {
 					"item": "wave",
@@ -6831,8 +6175,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"tree-dng.f3.branch-west": {
 			"name": "Grand Krys'kajo - West Branch",
@@ -6867,8 +6210,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"tree-dng.f3.center-01": {
 			"name": "Grand Krys'kajo - Falling Leaves",
@@ -6888,8 +6230,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"tree-dng.f3.east-01": {
 			"name": "Grand Krys'kajo - Branch Conveyance",
@@ -6909,8 +6250,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"tree-dng.f3.west-01": {
 			"name": "Grand Krys'kajo - Branch Transmit",
@@ -6945,8 +6285,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"wave-dng.b1.center-01": {
 			"name": "So'najiz Temple - Principle of Conveyance",
@@ -6966,8 +6305,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"wave-dng.b1.center-04-long": {
 			"name": "So'najiz Temple - Trial of Persistence",
@@ -7047,13 +6385,11 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"wave-dng.b1.center-05-element": {
 			"name": "So'najiz Temple - Chamber of Shock",
 			"chests": {},
-			"events": {},
 			"elements": {
 				"248": {
 					"item": "shock",
@@ -7089,8 +6425,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"wave-dng.b1.north-03": {
 			"name": "So'najiz Temple - Slowing Attraction",
@@ -7110,8 +6445,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"wave-dng.b1.north-06": {
 			"name": "So'najiz Temple - Standing Attraction",
@@ -7131,8 +6465,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"wave-dng.b1.north-08": {
 			"name": "So'najiz Temple - Attracting Conveyance",
@@ -7152,8 +6485,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"wave-dng.b1.south-04": {
 			"name": "So'najiz Temple - Fast Conveyance",
@@ -7173,8 +6505,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		},
 		"wave-dng.b1.south-06": {
 			"name": "So'najiz Temple - Flaming Conveyance",
@@ -7194,8 +6525,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}			
 		}
 	},
 	"shops": {
