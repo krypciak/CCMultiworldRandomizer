@@ -278,10 +278,6 @@ export default class MwRandomizer {
 			},
 
 			onStoragePostLoad() {
-				if (client.status == ap.CONNECTION_STATUS.CONNECTED) {
-					client.disconnect();
-				}
-
 				if (plugin.connectionInfo) {
 					console.log("Reading connection info from save file");
 					plugin.login(plugin.connectionInfo);
