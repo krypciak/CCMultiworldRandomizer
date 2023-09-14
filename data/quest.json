@@ -500,7 +500,8 @@
 				"open": [ "open16" ]
 			},
 			"condition": [
-				[ "item", "Meteor Shade", 1 ]
+				[ "item", "Meteor Shade", 1 ],
+				[ "item", "Guild Pass", 1]
 			],
             "reward": [
                 [ "NONE", 0 ] 
