@@ -2,91 +2,17 @@
 const fs = require("fs");
 
 import * as ap from 'archipelago.js';
-import {NetworkItem} from 'archipelago.js';
 import {ItemData, RawElement} from './item-data.model';
 import {readJsonFromFile} from './utils';
+import "./types/multiworld-model";
 
 export default class MwRandomizer {
 	baseDirectory: string;
 	randoData: ItemData | null = null;
 	itemdb: any;
-	numItems: number = 0;
-
-	baseId: number = 300000;
-	baseNormalItemId: number = 300100;
-
-	client: ap.Client;
-
-	declare lastIndexSeen: number;
-	declare locationInfo: {[idx: number]: ap.NetworkItem};
-	declare connectionInfo: ap.ConnectionInformation;
-	declare localCheckedLocations: number[];
-	declare mode: string;
-	declare options: any;
-
-	defineVarProperty(name: string, igVar: string) {
-		Object.defineProperty(this, name, {
-			get() {
-				return ig.vars.get(igVar);
-			},
-			set(newValue: any) {
-				ig.vars.set(igVar, newValue);
-			},
-		});
-	}
 
 	constructor(mod: {baseDirectory: string}) {
 		this.baseDirectory = mod.baseDirectory
-		this.client = new ap.Client();
-	}
-
-	getElementConstantFromComboId(comboId: number): number | null {
-		switch (comboId) {
-			case this.baseId:
-				return sc.PLAYER_CORE.ELEMENT_HEAT;
-			case this.baseId + 1:
-				return sc.PLAYER_CORE.ELEMENT_COLD;
-			case this.baseId + 2:
-				return sc.PLAYER_CORE.ELEMENT_SHOCK;
-			case this.baseId + 3:
-				return sc.PLAYER_CORE.ELEMENT_WAVE;
-			default:
-				return null;
-		}
-	}
-
-	getItemDataFromComboId(comboId: number): [itemId: number, quantity: number] {
-		if (this.numItems == 0) {
-			throw "Can't fetch item data before item database is loaded";
-		}
-
-		comboId -= this.baseNormalItemId;
-		return [comboId % this.numItems, (comboId / this.numItems + 1) | 0];
-	}
-
-	addMultiworldItem(comboId: number, index: number): void {
-		if (index <= this.lastIndexSeen) {
-			return;
-		}
-
-		if (comboId < this.baseNormalItemId) {
-			if (!sc.model.player.getCore(sc.PLAYER_CORE.ELEMENT_CHANGE)) {
-				sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_CHANGE, true);
-				sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_HEAT, false);
-				sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_COLD, false);
-				sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_WAVE, false);
-				sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_SHOCK, false);
-			}
-			let elementConstant = this.getElementConstantFromComboId(comboId);
-			if (elementConstant != null) {
-				sc.model.player.setCore(elementConstant, true);
-			}
-		} else {
-			let [itemId, quantity] = this.getItemDataFromComboId(comboId);
-			sc.model.player.addItem(Number(itemId), quantity, false);
-		}
-
-		this.lastIndexSeen = index;
 	}
 
 	getColoredStatus(status: string) {
@@ -101,146 +27,11 @@ export default class MwRandomizer {
 		}
 	}
 
-	async storeAllLocationInfo() {
-		let listener = (packet: ap.LocationInfoPacket) => {
-			let locationInfoMap = {};
-			packet.locations.forEach((item: any) => {
-				let mwid: number = item.location;
-				
-				// cut down on save file space by not storing unimportant parts
-				// item.location is redundant because you'll have the key whenever that's relevant
-				// item.class is a string which is the same for every instance
-				// together this saves several kilobytes of space in the save data
-				delete item.location;
-				delete item.class;
-				// @ts-ignore
-				locationInfoMap[mwid] = item;
-
-				ig.vars.set("mw.locationInfo", locationInfoMap);
-			});
-
-			this.client.removeListener("LocationInfo", listener);
-		};
-
-		this.client.addListener('LocationInfo', listener);
-
-		this.client.locations.scout(
-			ap.CREATE_AS_HINT_MODE.NO_HINT,
-			...this.client.locations.missing
-		);
-	}
-
-	getLocationInfo(locations: number[], callback: (info: NetworkItem[]) => void) {
-		let listener = (packet: ap.LocationInfoPacket) => {
-			let matches = true;
-			for (let i = 0; i < locations.length; i++) {
-				if (packet.locations[i].location != locations[i]) {
-					matches = false;
-					break;
-				}
-			}
-
-			if (!matches) {
-				return;
-			}
-
-			this.client.removeListener("LocationInfo", listener);
-
-			callback(packet.locations);
-		};
-
-		this.client.addListener('LocationInfo', listener);
-
-		this.client.locations.scout(
-			ap.CREATE_AS_HINT_MODE.NO_HINT,
-			...locations
-		);
-	}
-
-	async reallyCheckLocation(mwid: number) {
-		this.client.locations.check(mwid);
-
-		let loc = this.locationInfo[mwid];
-		if (loc == undefined) {
-			this.getLocationInfo([mwid], sc.multiworld.notifyItemsSent.bind(sc.multiworld));
-		} else {
-			sc.multiworld.notifyItemsSent([loc]);
-
-			// cut down on save file space by not storing what we have already
-			delete this.locationInfo[loc.item];
-		}
-
-		if (this.localCheckedLocations.indexOf(mwid) >= 0) {
-			return;
-		}
-
-		this.localCheckedLocations.push(mwid);
-	}
-
-	async login(info: ap.ConnectionInformation) {
-		try {
-			await this.client.connect(info);
-		} catch (e) {
-			sc.Dialogs.showErrorDialog(
-				"Could not connect to Archipelago server. " +
-					"You may still be able to play if you have logged in to this server before, " + 
-					"but your progress will not be uploaded until " +
-					"you connect to the server.",
-				true
-			);
-			console.error("Could not connect to Archipelago server: ", e);
-
-			// sc.multiworld.updateConnectionStatus();
-
-			return;
-		}
-
-		// sc.multiworld.updateConnectionStatus();
-
-		this.client.addListener('ReceivedItems', packet => {
-			let index = packet.index;
-			for (const [offset, item] of packet.items.entries()) {
-				let comboId = item.item;
-				this.addMultiworldItem(comboId, index + offset);
-			}
-		});
-
-		this.connectionInfo = info;
-
-		// eventually i'll get proper interfaces set up.....
-		// @ts-ignore
-		this.mode = this.client.data.slotData.mode;
-		this.options = this.client.data.slotData.options;
-
-		sc.Model.notifyObserver(sc.multiworld, sc.MULTIWORLD_MSG.OPTIONS_PRESENT);
-
-		this.client.updateStatus(ap.CLIENT_STATUS.PLAYING);
-
-		if (this.locationInfo == null) {
-			this.storeAllLocationInfo();
-		}
-
-		let checkedSet = new Set(this.client.locations.checked);
-
-		for (const location of this.localCheckedLocations) {
-			if (!checkedSet.has(location)) {
-				this.reallyCheckLocation(location);
-			}
-		}
-
-		sc.multiworld.onLevelLoaded();
-	}
-
 	async prestart() {
-		this.defineVarProperty("lastIndexSeen", "mw.lastIndexSeen");
-		this.defineVarProperty("locationInfo", "mw.locationInfo");
-		this.defineVarProperty("connectionInfo", "mw.connectionInfo");
-		this.defineVarProperty("localCheckedLocations", "mw.checkedLocations");
-		this.defineVarProperty("mode", "mw.mode");
-		this.defineVarProperty("options", "mw.options");
-
 		let randoData: ItemData = await readJsonFromFile(this.baseDirectory + "data/data.json")
 		this.randoData = randoData;
+
+		sc.multiworld.enterData(randoData);
 
 		let maps = randoData.items;
 		let quests = randoData.quests;
@@ -248,83 +39,12 @@ export default class MwRandomizer {
 		let itemdb = await readJsonFromFile("assets/data/item-database.json");
 		this.itemdb = itemdb;
 
-		this.numItems = itemdb.items.length;
-
-		let client = this.client;
-
 		// @ts-ignore
 		window.apclient = client;
 
 		// For those times JS decides to override `this`
 		// Used several times in the injection code
 		let plugin = this;
-
-		sc.MULTIWORLD_MSG = {
-			CONNECTION_STATUS_CHANGED: 0,
-			ITEM_SENT: 1,
-			OPTIONS_PRESENT: 2,
-		};
-
-		sc.MultiWorldModel = ig.GameAddon.extend({
-			observers: [],
-			client: null,
-			previousConnectionStatus: ap.CONNECTION_STATUS.DISCONNECTED,
-
-			init() {
-				this.client = client;
-				ig.storage.register(this);
-
-				window.setInterval(this.updateConnectionStatus.bind(this), 300);
-			},
-
-			onStoragePostLoad() {
-				if (plugin.connectionInfo) {
-					console.log("Reading connection info from save file");
-					plugin.login(plugin.connectionInfo);
-				} else {
-					sc.Dialogs.showInfoDialog(
-						"This save file has no Archpelago connection associated with it. " +
-							"To play online, open the pause menu and enter the details.",
-						true,
-					);
-				}
-			},
-
-			onLevelLoaded() {
-				if (plugin.lastIndexSeen == null) {
-					plugin.lastIndexSeen = -1;
-				}
-
-				if (!plugin.localCheckedLocations) {
-					plugin.localCheckedLocations = [];
-				}
-
-				for (let i = plugin.lastIndexSeen + 1; i < client.items.received.length; i++) {
-					let item = client.items.received[i];
-					let comboId = item.item;
-					plugin.addMultiworldItem(comboId, i);
-				}
-			},
-
-			notifyItemsSent(items: NetworkItem[]) {
-				for (const item of items) {
-					if (item.player == this.client.data.slot) {
-						continue;
-					}
-					sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.ITEM_SENT, item);
-				}
-			},
-
-			updateConnectionStatus() {
-				if (this.previousConnectionStatus == client.status) {
-					return;
-				}
-
-				this.previousConnectionStatus = client.status;
-
-				sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED, client.status);
-			},
-		});
 
 		ig.addGameAddon(() => {
 			return (sc.multiworld = new sc.MultiWorldModel());
@@ -344,8 +64,8 @@ export default class MwRandomizer {
 					check === undefined ||
 					check.mwid === undefined ||
 					check.condition === undefined ||
-					check.condition[plugin.mode] === undefined ||
-					randoData.softLockAreas[plugin.mode].indexOf(check.condition[plugin.mode][0]) !== -1
+					check.condition[sc.multiworld.mode] === undefined ||
+					randoData.softLockAreas[sc.multiworld.mode].indexOf(check.condition[sc.multiworld.mode][0]) !== -1
 				) {
 					console.warn('Chest not in logic');
 					return this.parent();
@@ -353,7 +73,7 @@ export default class MwRandomizer {
 
 				const old = sc.ItemDropEntity.spawnDrops;
 				try {
-					plugin.reallyCheckLocation(check.mwid);
+					sc.multiworld.reallyCheckLocation(check.mwid);
 
 					this.amount = 0;
 					return this.parent();
@@ -389,14 +109,14 @@ export default class MwRandomizer {
 					check === undefined ||
 					check.mwid === undefined ||
 					check.condition === undefined ||
-					check.condition[plugin.mode] === undefined ||
-					randoData.softLockAreas[plugin.mode].indexOf(check.condition[plugin.mode][0]) !== -1
+					check.condition[sc.multiworld.mode] === undefined ||
+					randoData.softLockAreas[sc.multiworld.mode].indexOf(check.condition[sc.multiworld.mode][0]) !== -1
 				) {
 					console.warn('Event not in logic');
 					return this.parent();
 				}
-				
-				plugin.reallyCheckLocation(check.mwid);
+
+				sc.multiworld.reallyCheckLocation(check.mwid);
 			}
 		});
 
@@ -406,7 +126,7 @@ export default class MwRandomizer {
 				this.mwid = settings.mwid;
 			},
 			start() {
-				plugin.reallyCheckLocation(this.mwid);
+				sc.multiworld.reallyCheckLocation(this.mwid);
 			}
 		});
 
@@ -427,8 +147,8 @@ export default class MwRandomizer {
 									if (
 										check.mwid === undefined ||
 										check.condition === undefined ||
-										check.condition[plugin.mode] === undefined ||
-										randoData.softLockAreas[plugin.mode].indexOf(check.condition[plugin.mode][0]) !== -1
+										check.condition[sc.multiworld.mode] === undefined ||
+										randoData.softLockAreas[sc.multiworld.mode].indexOf(check.condition[sc.multiworld.mode][0]) !== -1
 									) {
 										continue;
 									}
@@ -445,18 +165,18 @@ export default class MwRandomizer {
 		});
 
 		sc.QuestModel.inject({
-			_collectRewards(quest) {
+			_collectRewards(quest: sc.Quest) {
 				const check = quests[quest.id];
 				if (
 					check === undefined ||
 					check.mwid === undefined ||
-				  check.condition === undefined ||
-          check.condition[plugin.mode] === undefined ||
-          randoData.softLockAreas[plugin.mode].indexOf(check.condition[plugin.mode][0]) !== -1
+					check.condition === undefined ||
+					check.condition[sc.multiworld.mode] === undefined ||
+					randoData.softLockAreas[sc.multiworld.mode].indexOf(check.condition[sc.multiworld.mode][0]) !== -1
 				) {
 					return this.parent(quest);
 				}
-				plugin.reallyCheckLocation(check.mwid);
+				sc.multiworld.reallyCheckLocation(check.mwid);
 			}
 		});
 
@@ -474,7 +194,7 @@ export default class MwRandomizer {
 
 				let worldGuis: sc.TextGui[] = [];
 
-				// const reward = client.locations.scout(ap.CREATE_AS_HINT_MODE.NO_HINT, randoData.quests[quest.id].mwid);
+				// const reward = sc.multiworld.client.locations.scout(ap.CREATE_AS_HINT_MODE.NO_HINT, randoData.quests[quest.id].mwid);
 				for (let i = 0; i < this.itemsGui.hook.children.length; i++) {
 					const hook = this.itemsGui.hook.children[i];
 					const gui = hook.gui;
@@ -491,15 +211,15 @@ export default class MwRandomizer {
 					worldGuis.push(worldGui);
 				}
 
-				plugin.getLocationInfo([mwQuest.mwid], (info) => {
+				sc.multiworld.getLocationInfo([mwQuest.mwid], (info) => {
 					for (let i = 0; i < info.length; i++) {
 						const hook = this.itemsGui.hook.children[i];
 						const gui = hook.gui;
 
-						let gameName = client.data.players[info[i].player].game;
-						let gameInfo = client.data.package.get(gameName);
+						let gameName = sc.multiworld.client.data.players[info[i].player].game;
+						let gameInfo = sc.multiworld.client.data.package.get(gameName);
 						gui.setText(`\\i[ap-logo]${gameInfo?.item_id_to_name[info[i].item]}`);
-						let player = client.players.get(info[i].player);
+						let player = sc.multiworld.client.players.get(info[i].player);
 						let playerName = player?.alias ?? player?.name;
 						if (playerName) {
 							worldGuis[i].setText(`\\i[ap-logo]${playerName}`);
@@ -522,7 +242,7 @@ export default class MwRandomizer {
 
 				let worldGuis: sc.TextGui[] = [];
 
-				// const reward = client.locations.scout(ap.CREATE_AS_HINT_MODE.NO_HINT, randoData.quests[quest.id].mwid);
+				// const reward = sc.multiworld.client.locations.scout(ap.CREATE_AS_HINT_MODE.NO_HINT, randoData.quests[quest.id].mwid);
 				for (let i = 0; i < this.itemsGui.hook.children.length; i++) {
 					const hook = this.itemsGui.hook.children[i];
 					const gui = hook.gui;
@@ -539,15 +259,15 @@ export default class MwRandomizer {
 					worldGuis.push(worldGui);
 				}
 
-				plugin.getLocationInfo([mwQuest.mwid], (info) => {
+				sc.multiworld.getLocationInfo([mwQuest.mwid], (info) => {
 					for (let i = 0; i < info.length; i++) {
 						const hook = this.itemsGui.hook.children[i];
 						const gui = hook.gui;
 
-						let gameName = client.data.players[info[i].player].game;
-						let gameInfo = client.data.package.get(gameName);
+						let gameName = sc.multiworld.client.data.players[info[i].player].game;
+						let gameInfo = sc.multiworld.client.data.package.get(gameName);
 						gui.setText(`\\i[ap-logo]${gameInfo?.item_id_to_name[info[i].item]}`);
-						let player = client.players.get(info[i].player);
+						let player = sc.multiworld.client.players.get(info[i].player);
 						let playerName = player?.alias ?? player?.name;
 						if (playerName) {
 							worldGuis[i].setText(`\\i[ap-logo]${playerName}`);
@@ -556,13 +276,6 @@ export default class MwRandomizer {
 				});
 			}
 		});
-
-		// ig.Storage.inject({
-		// 	onLevelLoaded(...args) {
-		// 		this.parent(...args);
-		// 		plugin.onLevelLoaded();
-		// 	}
-		// });
 
 		let mwIcons = new ig.Font(
 			plugin.baseDirectory.substring(7) + "assets/icons.png",
@@ -582,6 +295,7 @@ export default class MwRandomizer {
 		sc.MultiWorldItemContent = ig.GuiElementBase.extend({
 			timer: 0,
 			id: -1,
+			player: -1,
 			textGui: null,
 			init: function (mwid: number, player: number) {
 				this.parent();
@@ -589,11 +303,11 @@ export default class MwRandomizer {
 				this.player = player;
 				this.timer = 5;
 
-				let playerObj = client.players.get(player);
+				let playerObj = sc.multiworld.client.players.get(player);
 				let destGameName = playerObj?.game;
 				let itemName = "Unknown";
 				if (destGameName != undefined) {
-					let gameInfo = client.data.package.get(destGameName)
+					let gameInfo = sc.multiworld.client.data.package.get(destGameName)
 					if (gameInfo != undefined) {
 						itemName = gameInfo.item_id_to_name[mwid];
 					}
@@ -641,11 +355,12 @@ export default class MwRandomizer {
 		});
 
 		sc.MultiWorldHudBox = sc.RightHudBoxGui.extend({
+			contentEntries: [],
 			delayedStack: [],
 			size: 0,
 
 			init: function() {
-				this.parent("ARCHIPELAGO");
+				this.parent("Archipelago");
 				this.size = sc.options.get("item-hud-size");
 				sc.Model.addObserver(sc.multiworld, this);
 				sc.Model.addObserver(sc.model, this);
@@ -746,7 +461,7 @@ export default class MwRandomizer {
 			},
 
 			updateText: function () {
-				this.setText(`AP: ${plugin.getColoredStatus(client.status.toUpperCase())}`);
+				this.setText(`AP: ${plugin.getColoredStatus(sc.multiworld.client.status.toUpperCase())}`);
 			},
 
 			modelChanged(model: any, msg: number, data: any) {
@@ -845,9 +560,9 @@ export default class MwRandomizer {
 					this.buttongroup.addFocusGui(inputGui, 0, i);
 					inputGui.hook.pos.y = (textGui.hook.size.y + this.vSpacer) * i;
 					
-					if (plugin.connectionInfo) {
+					if (sc.multiworld.connectionInfo) {
 						//@ts-ignore
-						let prefill = "" + plugin.connectionInfo[this.fields[i].key];
+						let prefill = "" + sc.multiworld.connectionInfo[this.fields[i].key];
 						inputGui.value = prefill.split("");
 						inputGui.textChild.setText(prefill);
 						inputGui.cursorPos = prefill.length;
@@ -895,7 +610,7 @@ export default class MwRandomizer {
 				this.buttongroup.addFocusGui(this.connect, 0, this.fields.length);
 
 				this.disconnect = new sc.ButtonGui("Disconnect", sc.BUTTON_MENU_WIDTH);
-				this.disconnect.onButtonPress = () => { client.disconnect() };
+				this.disconnect.onButtonPress = () => { sc.multiworld.client.disconnect() };
 				this.disconnect.setPos(sc.BUTTON_MENU_WIDTH + this.hSpacer);
 				this.buttongroup.addFocusGui(this.disconnect, 1, this.fields.length);
 
@@ -950,7 +665,7 @@ export default class MwRandomizer {
 					return;
 				}
 
-				plugin.login({
+				sc.multiworld.login({
 					game: 'CrossCode',
 					hostname: options.hostname,
 					port: portNumber,
@@ -1010,8 +725,8 @@ export default class MwRandomizer {
 			},
 
 			gotoTitle(...args) {
-				if (client.status == ap.CONNECTION_STATUS.CONNECTED) {
-					client.disconnect();
+				if (sc.multiworld.client.status == ap.CONNECTION_STATUS.CONNECTED) {
+					sc.multiworld.client.disconnect();
 					// sc.multiworld.updateConnectionStatus();
 				}
 				this.parent(...args);
