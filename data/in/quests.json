@@ -249,9 +249,9 @@
 				"linear": "10",
 				"open": "open4_7" 
 			},
-            "condition": [
-                [ "item", "Heat", 1 ]
-            ],
+			"condition": [
+				[ "item", "Heat", 1 ]
+			],
 			"_comment": "Gives 1 CP Neutral"
 		},
 		"Filthy Frobbits": {
@@ -273,7 +273,7 @@
 			"condition": [
 				[ "quest", "Filthy Frobbits" ],
 				[ "item", "Blue Ice Shade" ],
-                [ "item", "Heat", 1 ]
+				[ "item", "Heat", 1 ]
 			],
 			"reward": [
 				[ "item", "Metal Gears", 3 ], [ "item", "Blue Orb", 2 ]
@@ -336,7 +336,7 @@
 			"condition": [
 				[ "quest", "Fancy Tophat" ],
 				[ "item", "Blue Ice Shade", 1 ],
-                [ "item", "Heat", 1 ]
+				[ "item", "Heat", 1 ]
 			],
 			"reward": [
 				[ "item", "Rusty Bits", 6 ], [ "item", "Winter Thorn", 3 ], [ "item", "Sweet Berry Tea", 5 ]
@@ -452,9 +452,9 @@
 				"linear": "4",
 				"open": "open4.1" 
 			},
-            "condition": [
-                [ "item", "Heat", 1 ]
-            ],
+			"condition": [
+				[ "item", "Heat", 1 ]
+			],
 			"reward": [
 				[ "NONE", 0 ]
 			]
@@ -510,9 +510,9 @@
 				[ "item", "Meteor Shade", 1 ],
 				[ "item", "Guild Pass", 1]
 			],
-            "reward": [
-                [ "NONE", 0 ] 
-            ]
+			"reward": [
+				[ "NONE", 0 ] 
+			]
 		},
 		"An Unfortunate Series of Features": {
 			"questid": "dekay-quest",
@@ -520,12 +520,12 @@
 				"linear": "31",
 				"open": "open16" 
 			},
-            "condition": [
-                [ "item", "Heat", 1 ],
-                [ "item", "Cold", 1 ],
-                [ "item", "Wave", 1 ],
-                [ "item", "Shock", 1 ] 
-            ],
+			"condition": [
+				[ "item", "Heat", 1 ],
+				[ "item", "Cold", 1 ],
+				[ "item", "Wave", 1 ],
+				[ "item", "Shock", 1 ] 
+			],
 			"reward": [
 				[ "item", "Lunatic Paws", 1 ]
 			]
@@ -604,11 +604,11 @@
 				"linear": "12",
 				"open": "open6" 
 			},
-            "condition": [
-                [ "item", "Maroon Tree Pass", 1 ],
-                [ "item", "Heat", 1 ]
+			"condition": [
+				[ "item", "Maroon Tree Pass", 1 ],
+				[ "item", "Heat", 1 ]
 
-            ],
+			],
 			"reward": [
 				[ "item", "Shiny Orb", 1 ]
 			]
@@ -672,7 +672,7 @@
 				[ "quest", "Shady Thief" ],
 				[ "item", "Red Flame Shade", 1 ],
 				[ "item", "Heat", 1 ],
-                [ "item", "Cold", 1 ]
+				[ "item", "Cold", 1 ]
 			],
 			"reward": [
 				[ "item", "Lucid Shard", 6 ], [ "item", "Jelly Extract", 5 ]
@@ -698,7 +698,7 @@
 				[ "quest", "Crate Hate" ],
 				[ "item", "Red Flame Shade", 1 ],
 				[ "item", "Cold", 1 ],
-                [ "item", "Heat", 1 ]
+				[ "item", "Heat", 1 ]
 			],
 			"reward": [
 				[ "item", "Bear Beer", 5 ]
@@ -726,10 +726,10 @@
 			"condition": [
 				[ "quest", "A Promise is a Promise 2" ],
 				[ "item", "Broken Sword", 1 ],
-                [ "item", "Cursed Coin", 1 ],
-                [ "item", "White Key", 1],
-                [ "item", "Heat", 1 ],
-                [ "item", "Cold", 1 ] 
+				[ "item", "Cursed Coin", 1 ],
+				[ "item", "White Key", 1],
+				[ "item", "Heat", 1 ],
+				[ "item", "Cold", 1 ] 
 			],
 			"reward": [
 				[ "NONE", 0 ]
@@ -754,8 +754,8 @@
 			"condition": [
 				[ "item", "Purple Bolt Shade", 1 ],
 				[ "item", "Azure Drop Shade", 1 ],
-                [ "item", "Shock", 1 ],
-                [ "item", "Wave", 1 ],
+				[ "item", "Shock", 1 ],
+				[ "item", "Wave", 1 ],
 				[ "quest", "Turret Defense" ]
 			],
 			"reward": [
@@ -781,8 +781,8 @@
 			"condition": [
 				[ "item", "Purple Bolt Shade", 1 ],
 				[ "item", "Azure Drop Shade", 1 ],
-                [ "item", "Shock", 1 ],
-                [ "item", "Wave", 1 ],
+				[ "item", "Shock", 1 ],
+				[ "item", "Wave", 1 ],
 				[ "quest", "Hostage Situtation" ]
 			],
 			"reward": [
@@ -808,8 +808,8 @@
 			"condition": [
 				[ "item", "Purple Bolt Shade", 1 ],
 				[ "item", "Azure Drop Shade", 1 ],
-                [ "item", "Shock", 1 ],
-                [ "item", "Wave", 1 ],
+				[ "item", "Shock", 1 ],
+				[ "item", "Wave", 1 ],
 				[ "quest", "Tropical Chill" ]
 			],
 			"reward": [
@@ -855,7 +855,7 @@
 			]
 		},
 		"Mushroom Kingdom": {
-            "questid": "basin-mush-2",
+			"questid": "basin-mush-2",
 			"region": {
 				"linear": "23",
 				"open": "open10" 
@@ -1115,8 +1115,8 @@
 			"condition": [
 				[ "item", "Blue Ice Shade", 1 ],
 				[ "item", "Red Flame Shade", 1 ],
-                [ "item", "Heat", 1],
-                [ "item", "Cold", 1],
+				[ "item", "Heat", 1],
+				[ "item", "Cold", 1],
 				[ "quest", "It Can Dig But It Can't Hide" ]
 			],
 			"reward": [
@@ -1158,8 +1158,8 @@
 			"condition": [
 				[ "item", "Blue Ice Shade", 1 ],
 				[ "item", "Red Flame Shade", 1 ],
-                [ "item", "Heat", 1 ],
-                [ "item", "Cold", 1 ],
+				[ "item", "Heat", 1 ],
+				[ "item", "Cold", 1 ],
 				[ "quest", "Smuggle Trouble" ]
 			],
 			"reward": [
@@ -1201,8 +1201,8 @@
 			"condition": [
 				[ "item", "Red Flame Shade", 1 ],
 				[ "item", "Blue Ice Shade", 1 ],
-                [ "item", "Heat", 1],
-                [ "item", "Cold", 1],
+				[ "item", "Heat", 1],
+				[ "item", "Cold", 1],
 				[ "quest", "Bull Grab" ]
 			],
 			"reward": [
