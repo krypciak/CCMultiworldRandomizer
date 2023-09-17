@@ -1,0 +1,56 @@
+{
+	"elements": {
+		"Heat Pedestal": {
+			"location": {
+				"map": "cold-dng.b3.room7",
+				"mapId": 45
+			},
+			"region": {
+				"linear": "8",
+				"open": "open4.5"
+			},
+			"reward": [
+				["item", "Heat"]
+			]
+		},
+		"Cold Pedestal": {
+			"location": {
+				"map": "heat-dng.f2.room-cold",
+				"mapId": 78
+			},
+			"region": {
+				"linear": "16",
+				"open": "open7.4"
+			},
+			"reward": [
+				["item", "Cold"]
+			]
+		},
+		"Shock Pedestal": {
+			"location": {
+				"map": "wave-dng.b1.center-05-element",
+				"mapId": 248
+			},
+			"region": {
+				"linear": "27",
+				"open": "open14.2"
+			},
+			"reward": [
+				["item", "Heat"]
+			]
+		},
+		"Wave Pedestal": {
+			"location": {
+				"map": "shock-dng.f2.room-element",
+				"mapId": 86
+			},
+			"region": {
+				"linear": "25",
+				"open": "open13.1"
+			},
+			"reward": [
+				["item", "Heat"]
+			]
+		}
+	}
+}

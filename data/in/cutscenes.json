@@ -1,5 +1,5 @@
 {
-    "events": {
+    "cutscenes": {
         "Talatu Introductions": {
             "location": {
                 "map": "autumn.path-8",
@@ -25,7 +25,7 @@
                 "open": "open3" 
             },
             "condition": [
-                [ "event", "Talatu Introductions" ],
+                [ "cutscene", "Talatu Introductions" ],
                 [ "item", "Disc of Flora", 1 ]
             ],
             "reward": [
@@ -43,7 +43,7 @@
                 "open": "open5" 
             },
             "condition": [
-                [ "event", "Talatu Bergen 25%" ]
+                [ "cutscene", "Talatu Bergen 25%" ]
             ],
             "reward": [
                 [ "item", "Dried Grass Hat", 1 ]
@@ -60,7 +60,7 @@
                 "open": "open10" 
             },
             "condition": [
-                [ "event", "Talatu Bergen 50%" ]
+                [ "cutscene", "Talatu Bergen 50%" ]
             ],
             "reward": [
                 [ "item", "Strawberry Hat", 1 ]

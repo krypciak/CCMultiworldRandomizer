@@ -1,5 +1,5 @@
 {
-	"includes": [ "events.json", "quests.json", "chests.json" ],
+	"includes": [ "cutscenes.json", "quests.json", "chests.json", "elements.json" ],
 	"version": "5",
 	"modes": [ "linear", "open" ],
 	"defaultMode": "open",

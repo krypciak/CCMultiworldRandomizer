@@ -99,9 +99,9 @@
 			"condition": [
 				[ "item", "Disc of Flora", 1 ],
 				[ "item", "Heat"], 
-				[ "event", "bergen.inner-questhub-01", "160" ],
-				[ "event", "heat-village.interior.quest-hub-eg", "134" ],
-				[ "event", "jungle-city.interior.questhub-01", "576" ],
+				[ "cutscene", "bergen.inner-questhub-01", "160" ],
+				[ "cutscene", "heat-village.interior.quest-hub-eg", "134" ],
+				[ "cutscene", "jungle-city.interior.questhub-01", "576" ],
 				[ "region", "open4.1"], 
 				[ "region", "open5"], 
 				[ "region", "open9"], 
