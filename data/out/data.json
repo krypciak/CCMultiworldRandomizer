@@ -500,7 +500,8 @@
 						],
 						"open": [
 							"open18",
-							""
+							"heat",
+							"cold"
 						]
 					},
 					"mwid": 300000
@@ -516,13 +517,13 @@
 						],
 						"open": [
 							"open18",
-							""
+							"heat",
+							"cold"
 						]
 					},
 					"mwid": 300001
 				}
-			},
-			"events": {}
+			}
 		},
 		"arid.interior.stealth-2": {
 			"name": "Vermillion Wasteland - Storage Basement",
@@ -543,8 +544,7 @@
 					},
 					"mwid": 300002
 				}
-			},
-			"events": {}
+			}
 		},
 		"arid.lake-1": {
 			"name": "Vermillion Wasteland - Crimson Lake",
@@ -581,8 +581,7 @@
 					},
 					"mwid": 300004
 				}
-			},
-			"events": {}
+			}
 		},
 		"arid.town-1": {
 			"name": "Vermillion Wasteland - East Town",
@@ -635,8 +634,7 @@
 					},
 					"mwid": 300007
 				}
-			},
-			"events": {}
+			}
 		},
 		"arid.town-2": {
 			"name": "Vermillion Wasteland - West Town",
@@ -689,8 +687,7 @@
 					},
 					"mwid": 300010
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn.caves.cave-3-to-6": {
 			"name": "Autumn's Rise - Drippy Den",
@@ -711,8 +708,7 @@
 					},
 					"mwid": 300011
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn.cubaum": {
 			"name": "Autumn's Rise - Normal Clearing",
@@ -749,8 +745,7 @@
 					},
 					"mwid": 300013
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn.entrance": {
 			"name": "Autumn's Rise - Entrance",
@@ -771,8 +766,7 @@
 					},
 					"mwid": 300014
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn.lake-observatory": {
 			"name": "Autumn's Rise - Old Observatory",
@@ -793,8 +787,7 @@
 					},
 					"mwid": 300015
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn.path-1-1": {
 			"name": "Autumn's Rise - Quiet Passage 1",
@@ -815,8 +808,7 @@
 					},
 					"mwid": 300016
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn.path-1-2": {
 			"name": "Autumn's Rise - Quiet Passage 2",
@@ -837,8 +829,7 @@
 					},
 					"mwid": 300017
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn.path-1-3": {
 			"name": "Autumn's Rise - Hedgehag's Den",
@@ -859,8 +850,7 @@
 					},
 					"mwid": 300018
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn.path-1": {
 			"name": "Autumn's Rise - Pathway 1",
@@ -881,8 +871,7 @@
 					},
 					"mwid": 300019
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn.path-2": {
 			"name": "Autumn's Rise - Pathway 2",
@@ -903,8 +892,7 @@
 					},
 					"mwid": 300020
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn.path-3-1": {
 			"name": "Autumn's Rise - Pathway 3",
@@ -925,27 +913,6 @@
 					},
 					"mwid": 300021
 				}
-			},
-			"events": {
-				"452": [
-					{
-						"item": 170,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"3.1",
-								""
-							],
-							"open": [
-								"open3.1",
-								""
-							]
-						},
-						"path": ".settings.npcStates.1.event.10",
-						"mwid": 300022
-					}
-				]
 			}
 		},
 		"autumn.path-3-2": {
@@ -965,10 +932,9 @@
 							""
 						]
 					},
-					"mwid": 300023
+					"mwid": 300022
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn.path-3-4": {
 			"name": "Autumn's Rise - Off Road 2",
@@ -987,10 +953,9 @@
 							""
 						]
 					},
-					"mwid": 300024
+					"mwid": 300023
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn.path-7-1": {
 			"name": "Autumn's Rise - Pathway 6",
@@ -1009,7 +974,7 @@
 							""
 						]
 					},
-					"mwid": 300025
+					"mwid": 300024
 				},
 				"284": {
 					"item": 80,
@@ -1025,7 +990,7 @@
 							""
 						]
 					},
-					"mwid": 300026
+					"mwid": 300025
 				},
 				"1128": {
 					"item": 96,
@@ -1041,10 +1006,9 @@
 							""
 						]
 					},
-					"mwid": 300027
+					"mwid": 300026
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn.path-7-2": {
 			"name": "Autumn's Rise - Pathway 7",
@@ -1063,7 +1027,7 @@
 							""
 						]
 					},
-					"mwid": 300028
+					"mwid": 300027
 				},
 				"1142": {
 					"item": 28,
@@ -1079,10 +1043,9 @@
 							""
 						]
 					},
-					"mwid": 300029
+					"mwid": 300028
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn.path-8": {
 			"name": "Autumn's Rise - Ending Pathway",
@@ -1101,29 +1064,8 @@
 							""
 						]
 					},
-					"mwid": 300030
+					"mwid": 300029
 				}
-			},
-			"events": {
-				"458": [
-					{
-						"item": 285,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"3",
-								""
-							],
-							"open": [
-								"open3",
-								""
-							]
-						},
-						"path": ".settings.event.21.accepted.6",
-						"mwid": 300031
-					}
-				]
 			}
 		},
 		"autumn.path4": {
@@ -1143,7 +1085,7 @@
 							""
 						]
 					},
-					"mwid": 300032
+					"mwid": 300030
 				},
 				"98": {
 					"item": 2,
@@ -1159,10 +1101,9 @@
 							""
 						]
 					},
-					"mwid": 300033
+					"mwid": 300031
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn.path5": {
 			"name": "Autumn's Rise - Pathway 4",
@@ -1181,7 +1122,7 @@
 							""
 						]
 					},
-					"mwid": 300034
+					"mwid": 300032
 				},
 				"3": {
 					"item": 95,
@@ -1197,7 +1138,7 @@
 							""
 						]
 					},
-					"mwid": 300035
+					"mwid": 300033
 				},
 				"4": {
 					"item": 94,
@@ -1213,10 +1154,9 @@
 							""
 						]
 					},
-					"mwid": 300036
+					"mwid": 300034
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn.path6": {
 			"name": "Autumn's Rise - Pathway 5",
@@ -1235,7 +1175,7 @@
 							""
 						]
 					},
-					"mwid": 300037
+					"mwid": 300035
 				},
 				"15": {
 					"item": 57,
@@ -1251,10 +1191,9 @@
 							""
 						]
 					},
-					"mwid": 300038
+					"mwid": 300036
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn-fall.caves.path-03-exit": {
 			"name": "Autumn's Fall - Ruby Tunnel",
@@ -1273,10 +1212,9 @@
 							""
 						]
 					},
-					"mwid": 300039
+					"mwid": 300037
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn-fall.caves.path-04-cave-01": {
 			"name": "Autumn's Fall - Lake Cave 1",
@@ -1295,10 +1233,9 @@
 							""
 						]
 					},
-					"mwid": 300040
+					"mwid": 300038
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn-fall.caves.path-04-cave-02": {
 			"name": "Autumn's Fall - Lake Cave 2",
@@ -1317,10 +1254,9 @@
 							""
 						]
 					},
-					"mwid": 300041
+					"mwid": 300039
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn-fall.caves.path-04-cave-03": {
 			"name": "Autumn's Fall - Lake Cave 3",
@@ -1339,10 +1275,9 @@
 							""
 						]
 					},
-					"mwid": 300042
+					"mwid": 300040
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn-fall.caves.path-04-cave-04": {
 			"name": "Autumn's Fall - Lake Cave 4",
@@ -1361,10 +1296,9 @@
 							""
 						]
 					},
-					"mwid": 300043
+					"mwid": 300041
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn-fall.path-01": {
 			"name": "Autumn's Fall - Southern Exit",
@@ -1383,7 +1317,7 @@
 							""
 						]
 					},
-					"mwid": 300044
+					"mwid": 300042
 				},
 				"492": {
 					"item": 88,
@@ -1399,7 +1333,7 @@
 							""
 						]
 					},
-					"mwid": 300045
+					"mwid": 300043
 				},
 				"493": {
 					"item": 63,
@@ -1415,10 +1349,9 @@
 							""
 						]
 					},
-					"mwid": 300046
+					"mwid": 300044
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn-fall.path-02": {
 			"name": "Autumn's Fall - Ruined Path",
@@ -1437,7 +1370,7 @@
 							""
 						]
 					},
-					"mwid": 300047
+					"mwid": 300045
 				},
 				"98": {
 					"item": 192,
@@ -1453,10 +1386,9 @@
 							""
 						]
 					},
-					"mwid": 300048
+					"mwid": 300046
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn-fall.path-03": {
 			"name": "Autumn's Fall - Eastern Exit",
@@ -1475,7 +1407,7 @@
 							""
 						]
 					},
-					"mwid": 300049
+					"mwid": 300047
 				},
 				"494": {
 					"item": 242,
@@ -1491,10 +1423,9 @@
 							""
 						]
 					},
-					"mwid": 300050
+					"mwid": 300048
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn-fall.path-04": {
 			"name": "Autumn's Fall - Ancient Center",
@@ -1513,7 +1444,7 @@
 							""
 						]
 					},
-					"mwid": 300051
+					"mwid": 300049
 				},
 				"81": {
 					"item": 326,
@@ -1529,10 +1460,9 @@
 							""
 						]
 					},
-					"mwid": 300052
+					"mwid": 300050
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn-fall.path-05": {
 			"name": "Autumn's Fall - Northern Exit",
@@ -1551,7 +1481,7 @@
 							""
 						]
 					},
-					"mwid": 300053
+					"mwid": 300051
 				},
 				"124": {
 					"item": 72,
@@ -1567,10 +1497,9 @@
 							""
 						]
 					},
-					"mwid": 300054
+					"mwid": 300052
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn-fall.path-06": {
 			"name": "Autumn's Fall - Pillar Isle",
@@ -1589,7 +1518,7 @@
 							""
 						]
 					},
-					"mwid": 300055
+					"mwid": 300053
 				},
 				"40": {
 					"item": 245,
@@ -1605,7 +1534,7 @@
 							""
 						]
 					},
-					"mwid": 300056
+					"mwid": 300054
 				},
 				"740": {
 					"item": 3,
@@ -1621,10 +1550,9 @@
 							""
 						]
 					},
-					"mwid": 300057
+					"mwid": 300055
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn-fall.path-07": {
 			"name": "Autumn's Fall - Village Remains",
@@ -1643,7 +1571,7 @@
 							""
 						]
 					},
-					"mwid": 300058
+					"mwid": 300056
 				},
 				"85": {
 					"item": 336,
@@ -1659,7 +1587,7 @@
 							""
 						]
 					},
-					"mwid": 300059
+					"mwid": 300057
 				},
 				"128": {
 					"item": 488,
@@ -1675,10 +1603,9 @@
 							""
 						]
 					},
-					"mwid": 300060
+					"mwid": 300058
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn-fall.path-08": {
 			"name": "Autumn's Fall - Secluded Path",
@@ -1697,7 +1624,7 @@
 							""
 						]
 					},
-					"mwid": 300061
+					"mwid": 300059
 				},
 				"528": {
 					"item": 354,
@@ -1713,7 +1640,7 @@
 							""
 						]
 					},
-					"mwid": 300062
+					"mwid": 300060
 				},
 				"818": {
 					"item": 357,
@@ -1729,10 +1656,9 @@
 							""
 						]
 					},
-					"mwid": 300063
+					"mwid": 300061
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn-fall.path-10": {
 			"name": "Autumn's Fall - Villa of Terror",
@@ -1751,7 +1677,7 @@
 							""
 						]
 					},
-					"mwid": 300064
+					"mwid": 300062
 				},
 				"82": {
 					"item": 489,
@@ -1767,10 +1693,9 @@
 							""
 						]
 					},
-					"mwid": 300065
+					"mwid": 300063
 				}
-			},
-			"events": {}
+			}
 		},
 		"autumn-fall.raid.raid-01": {
 			"name": "Autumn's Fall - Para Island 1",
@@ -1789,10 +1714,9 @@
 							""
 						]
 					},
-					"mwid": 300066
+					"mwid": 300064
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen.bergen": {
 			"name": "Bergen Village - Bergen South",
@@ -1811,7 +1735,7 @@
 							""
 						]
 					},
-					"mwid": 300067
+					"mwid": 300065
 				},
 				"1258": {
 					"item": 112,
@@ -1827,7 +1751,7 @@
 							"heat"
 						]
 					},
-					"mwid": 300068
+					"mwid": 300066
 				},
 				"1265": {
 					"item": 163,
@@ -1843,7 +1767,7 @@
 							"heat"
 						]
 					},
-					"mwid": 300069
+					"mwid": 300067
 				},
 				"1952": {
 					"item": 339,
@@ -1859,10 +1783,9 @@
 							""
 						]
 					},
-					"mwid": 300070
+					"mwid": 300068
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen.bergen2": {
 			"name": "Bergen Village - Bergen North",
@@ -1881,7 +1804,7 @@
 							""
 						]
 					},
-					"mwid": 300071
+					"mwid": 300069
 				},
 				"2012": {
 					"item": 40,
@@ -1897,7 +1820,7 @@
 							"heat"
 						]
 					},
-					"mwid": 300072
+					"mwid": 300070
 				},
 				"2021": {
 					"item": 63,
@@ -1913,7 +1836,7 @@
 							""
 						]
 					},
-					"mwid": 300073
+					"mwid": 300071
 				},
 				"2889": {
 					"item": 78,
@@ -1929,10 +1852,9 @@
 							""
 						]
 					},
-					"mwid": 300074
+					"mwid": 300072
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen.elevator": {
 			"name": "Bergen Village - Diving Railway",
@@ -1951,10 +1873,9 @@
 							""
 						]
 					},
-					"mwid": 300075
+					"mwid": 300073
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen.inner-questhub-0": {
 			"name": "Bergen Village - Seeker Hub Cellar",
@@ -1973,7 +1894,7 @@
 							""
 						]
 					},
-					"mwid": 300076
+					"mwid": 300074
 				},
 				"136": {
 					"item": 337,
@@ -1989,59 +1910,8 @@
 							""
 						]
 					},
-					"mwid": 300077
+					"mwid": 300075
 				}
-			},
-			"events": {}
-		},
-		"bergen.inner-questhub-1": {
-			"name": "Bergen Village - Seeker Hub",
-			"chests": {},
-			"events": {
-				"135": [
-					{
-						"item": 466,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"3",
-								""
-							],
-							"open": [
-								"open3",
-								""
-							]
-						},
-						"path": ".settings.npcStates.1.event.quest.5",
-						"mwid": 300078
-					}
-				]
-			}
-		},
-		"bergen.mine-entrance": {
-			"name": "Bergen Village - Temple Mine Entrance",
-			"chests": {},
-			"events": {
-				"316": [
-					{
-						"item": 366,
-						"amount": 2,
-						"type": "",
-						"condition": {
-							"linear": [
-								"4",
-								""
-							],
-							"open": [
-								"open4.1",
-								""
-							]
-						},
-						"path": ".settings.npcStates.0.event.quest.2.thenStep.17",
-						"mwid": 300079
-					}
-				]
 			}
 		},
 		"bergen.storage": {
@@ -2061,10 +1931,9 @@
 							""
 						]
 					},
-					"mwid": 300080
+					"mwid": 300076
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen-trail.cave.cave-08-smith": {
 			"name": "Bergen Trail - Abandoned Cave ",
@@ -2083,10 +1952,9 @@
 							""
 						]
 					},
-					"mwid": 300081
+					"mwid": 300077
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen-trail.cave.cave-4-1-1": {
 			"name": "Bergen Trail - Frozen Cave",
@@ -2105,10 +1973,9 @@
 							"heat"
 						]
 					},
-					"mwid": 300082
+					"mwid": 300078
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen-trail.cave.cave-6-1": {
 			"name": "Bergen Trail - Abandoned Ground",
@@ -2127,10 +1994,9 @@
 							"heat"
 						]
 					},
-					"mwid": 300083
+					"mwid": 300079
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen-trail.cave.cave-6-3": {
 			"name": "Bergen Trail - Pengpeng's Den",
@@ -2149,10 +2015,9 @@
 							"heat"
 						]
 					},
-					"mwid": 300084
+					"mwid": 300080
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen-trail.path-1-entrance": {
 			"name": "Bergen Trail - Entrance",
@@ -2171,7 +2036,7 @@
 							""
 						]
 					},
-					"mwid": 300085
+					"mwid": 300081
 				},
 				"532": {
 					"item": 69,
@@ -2187,10 +2052,9 @@
 							""
 						]
 					},
-					"mwid": 300086
+					"mwid": 300082
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen-trail.path-2": {
 			"name": "Bergen Trail - Rising Path 1",
@@ -2209,10 +2073,9 @@
 							""
 						]
 					},
-					"mwid": 300087
+					"mwid": 300083
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen-trail.path-3-1": {
 			"name": "Bergen Trail - Off Road 1",
@@ -2231,7 +2094,7 @@
 							""
 						]
 					},
-					"mwid": 300088
+					"mwid": 300084
 				},
 				"454": {
 					"item": 106,
@@ -2247,10 +2110,9 @@
 							""
 						]
 					},
-					"mwid": 300089
+					"mwid": 300085
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen-trail.path-3-2": {
 			"name": "Bergen Trail - Off Road 2",
@@ -2269,7 +2131,7 @@
 							""
 						]
 					},
-					"mwid": 300090
+					"mwid": 300086
 				},
 				"399": {
 					"item": 75,
@@ -2285,7 +2147,7 @@
 							""
 						]
 					},
-					"mwid": 300091
+					"mwid": 300087
 				},
 				"451": {
 					"item": 487,
@@ -2301,10 +2163,9 @@
 							""
 						]
 					},
-					"mwid": 300092
+					"mwid": 300088
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen-trail.path-3-3": {
 			"name": "Bergen Trail - Off Road 3",
@@ -2323,7 +2184,7 @@
 							""
 						]
 					},
-					"mwid": 300093
+					"mwid": 300089
 				},
 				"126": {
 					"item": 108,
@@ -2339,10 +2200,9 @@
 							""
 						]
 					},
-					"mwid": 300094
+					"mwid": 300090
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen-trail.path-4-1-1": {
 			"name": "Bergen Trail - Old Plateau",
@@ -2361,10 +2221,9 @@
 							""
 						]
 					},
-					"mwid": 300095
+					"mwid": 300091
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen-trail.path-4-1": {
 			"name": "Bergen Trail - Rising Path 2",
@@ -2383,10 +2242,9 @@
 							""
 						]
 					},
-					"mwid": 300096
+					"mwid": 300092
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen-trail.path-4-2": {
 			"name": "Bergen Trail - Rising Path 3",
@@ -2405,7 +2263,7 @@
 							""
 						]
 					},
-					"mwid": 300097
+					"mwid": 300093
 				},
 				"643": {
 					"item": 104,
@@ -2421,10 +2279,9 @@
 							""
 						]
 					},
-					"mwid": 300098
+					"mwid": 300094
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen-trail.path-5": {
 			"name": "Bergen Trail - Spike Heights",
@@ -2443,7 +2300,7 @@
 							""
 						]
 					},
-					"mwid": 300099
+					"mwid": 300095
 				},
 				"1337": {
 					"item": 78,
@@ -2459,10 +2316,9 @@
 							"heat"
 						]
 					},
-					"mwid": 300100
+					"mwid": 300096
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen-trail.path-6-1": {
 			"name": "Bergen Trail - Icy Cauldron",
@@ -2481,10 +2337,9 @@
 							"heat"
 						]
 					},
-					"mwid": 300101
+					"mwid": 300097
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen-trail.path-6": {
 			"name": "Bergen Trail - Bergen Waterfalls",
@@ -2503,10 +2358,9 @@
 							""
 						]
 					},
-					"mwid": 300102
+					"mwid": 300098
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen-trail.path-7-1": {
 			"name": "Bergen Trail - Rising Path 4",
@@ -2525,7 +2379,7 @@
 							""
 						]
 					},
-					"mwid": 300103
+					"mwid": 300099
 				},
 				"995": {
 					"item": 28,
@@ -2541,10 +2395,9 @@
 							""
 						]
 					},
-					"mwid": 300104
+					"mwid": 300100
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen-trail.path-7-2-1": {
 			"name": "Bergen Trail - Lofty Heights",
@@ -2563,10 +2416,9 @@
 							"heat"
 						]
 					},
-					"mwid": 300105
+					"mwid": 300101
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen-trail.path-7-2": {
 			"name": "Bergen Trail - Windy Climb",
@@ -2585,10 +2437,9 @@
 							""
 						]
 					},
-					"mwid": 300106
+					"mwid": 300102
 				}
-			},
-			"events": {}
+			}
 		},
 		"bergen-trail.path-8": {
 			"name": "Bergen Trail - Rising Path 5",
@@ -2607,10 +2458,9 @@
 							""
 						]
 					},
-					"mwid": 300107
+					"mwid": 300103
 				}
-			},
-			"events": {}
+			}
 		},
 		"cold-dng.b1.center": {
 			"name": "Temple Mine - Elevator U1",
@@ -2629,10 +2479,9 @@
 							""
 						]
 					},
-					"mwid": 300108
+					"mwid": 300104
 				}
-			},
-			"events": {}
+			}
 		},
 		"cold-dng.b1.room1": {
 			"name": "Temple Mine - Crossing Funnel",
@@ -2651,10 +2500,9 @@
 							"heat"
 						]
 					},
-					"mwid": 300109
+					"mwid": 300105
 				}
-			},
-			"events": {}
+			}
 		},
 		"cold-dng.b1.room2": {
 			"name": "Temple Mine - Old Shaft 1",
@@ -2673,10 +2521,9 @@
 							"heat"
 						]
 					},
-					"mwid": 300110
+					"mwid": 300106
 				}
-			},
-			"events": {}
+			}
 		},
 		"cold-dng.b1.room3": {
 			"name": "Temple Mine - Old Shaft 2",
@@ -2695,10 +2542,9 @@
 							""
 						]
 					},
-					"mwid": 300111
+					"mwid": 300107
 				}
-			},
-			"events": {}
+			}
 		},
 		"cold-dng.b1.room4": {
 			"name": "Temple Mine - Testing Chamber",
@@ -2717,10 +2563,9 @@
 							""
 						]
 					},
-					"mwid": 300112
+					"mwid": 300108
 				}
-			},
-			"events": {}
+			}
 		},
 		"cold-dng.b1.room6": {
 			"name": "Temple Mine - Old Chamber",
@@ -2739,10 +2584,9 @@
 							""
 						]
 					},
-					"mwid": 300113
+					"mwid": 300109
 				}
-			},
-			"events": {}
+			}
 		},
 		"cold-dng.b2.room1": {
 			"name": "Temple Mine - Storage Room 1",
@@ -2761,10 +2605,9 @@
 							""
 						]
 					},
-					"mwid": 300114
+					"mwid": 300110
 				}
-			},
-			"events": {}
+			}
 		},
 		"cold-dng.b2.room2": {
 			"name": "Temple Mine - Frozen Chamber 1",
@@ -2783,10 +2626,9 @@
 							""
 						]
 					},
-					"mwid": 300115
+					"mwid": 300111
 				}
-			},
-			"events": {}
+			}
 		},
 		"cold-dng.b2.room5": {
 			"name": "Temple Mine - Frozen Chamber 2",
@@ -2805,7 +2647,7 @@
 							""
 						]
 					},
-					"mwid": 300116
+					"mwid": 300112
 				},
 				"66": {
 					"item": 190,
@@ -2821,10 +2663,9 @@
 							""
 						]
 					},
-					"mwid": 300117
+					"mwid": 300113
 				}
-			},
-			"events": {}
+			}
 		},
 		"cold-dng.b3.room1": {
 			"name": "Temple Mine - Frozen Shaft 1",
@@ -2843,10 +2684,9 @@
 							""
 						]
 					},
-					"mwid": 300118
+					"mwid": 300114
 				}
-			},
-			"events": {}
+			}
 		},
 		"cold-dng.b3.room2": {
 			"name": "Temple Mine - Frozen Shaft 2",
@@ -2865,10 +2705,9 @@
 							""
 						]
 					},
-					"mwid": 300119
+					"mwid": 300115
 				}
-			},
-			"events": {}
+			}
 		},
 		"cold-dng.b3.room3": {
 			"name": "Temple Mine - Frozen Shaft 3",
@@ -2887,7 +2726,7 @@
 							""
 						]
 					},
-					"mwid": 300120
+					"mwid": 300116
 				},
 				"22": {
 					"item": 379,
@@ -2903,10 +2742,9 @@
 							""
 						]
 					},
-					"mwid": 300121
+					"mwid": 300117
 				}
-			},
-			"events": {}
+			}
 		},
 		"cold-dng.b3.room6": {
 			"name": "Temple Mine - Overrun Chamber",
@@ -2925,7 +2763,7 @@
 							""
 						]
 					},
-					"mwid": 300122
+					"mwid": 300118
 				},
 				"68": {
 					"item": 167,
@@ -2941,15 +2779,13 @@
 							""
 						]
 					},
-					"mwid": 300123
+					"mwid": 300119
 				}
-			},
-			"events": {}
+			}
 		},
 		"cold-dng.b3.room7": {
 			"name": "Temple Mine - Chamber of Fire",
 			"chests": {},
-			"events": {},
 			"elements": {
 				"45": {
 					"item": "heat",
@@ -2964,7 +2800,7 @@
 							""
 						]
 					},
-					"mwid": 300124
+					"mwid": 300120
 				}
 			}
 		},
@@ -2982,13 +2818,12 @@
 						],
 						"open": [
 							"open4.6",
-							""
+							"item.154.amount >= 1"
 						]
 					},
-					"mwid": 300125
+					"mwid": 300121
 				}
-			},
-			"events": {}
+			}
 		},
 		"cold-dng.b4.room10": {
 			"name": "Temple Mine - Infested Chamber",
@@ -3004,13 +2839,12 @@
 						],
 						"open": [
 							"open4.7",
-							""
+							"item.154.amount >= 1"
 						]
 					},
-					"mwid": 300126
+					"mwid": 300122
 				}
-			},
-			"events": {}
+			}
 		},
 		"cold-dng.b4.room4": {
 			"name": "Temple Mine - Forgotten Shaft 1",
@@ -3026,13 +2860,12 @@
 						],
 						"open": [
 							"open4.6",
-							""
+							"item.154.amount >= 1"
 						]
 					},
-					"mwid": 300127
+					"mwid": 300123
 				}
-			},
-			"events": {}
+			}
 		},
 		"cold-dng.b4.room5": {
 			"name": "Temple Mine - Forgotten Shaft 2",
@@ -3048,13 +2881,12 @@
 						],
 						"open": [
 							"open4.6",
-							""
+							"item.154.amount >= 1"
 						]
 					},
-					"mwid": 300128
+					"mwid": 300124
 				}
-			},
-			"events": {}
+			}
 		},
 		"cold-dng.b4.room6": {
 			"name": "Temple Mine - Forgotten Shaft 3",
@@ -3070,13 +2902,12 @@
 						],
 						"open": [
 							"open4.6",
-							""
+							"item.154.amount >= 1"
 						]
 					},
-					"mwid": 300129
+					"mwid": 300125
 				}
-			},
-			"events": {}
+			}
 		},
 		"cold-dng.b4.room7": {
 			"name": "Temple Mine - Forgotten Shaft 4",
@@ -3092,13 +2923,12 @@
 						],
 						"open": [
 							"open4.6",
-							""
+							"item.154.amount >= 1"
 						]
 					},
-					"mwid": 300130
+					"mwid": 300126
 				}
-			},
-			"events": {}
+			}
 		},
 		"cold-dng.b4.room8": {
 			"name": "Temple Mine - Forgotten Shaft 5",
@@ -3114,13 +2944,12 @@
 						],
 						"open": [
 							"open4.6",
-							""
+							"item.154.amount >= 1"
 						]
 					},
-					"mwid": 300131
+					"mwid": 300127
 				}
-			},
-			"events": {}
+			}
 		},
 		"cold-dng.g.center": {
 			"name": "Temple Mine - Elevator GF",
@@ -3139,34 +2968,8 @@
 							"heat"
 						]
 					},
-					"mwid": 300132
+					"mwid": 300128
 				}
-			},
-			"events": {}
-		},
-		"cold-dng.g.expo-space": {
-			"name": "Temple Mine - Space",
-			"chests": {},
-			"events": {
-				"136": [
-					{
-						"item": 225,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"10",
-								"item.153.amount >= 1"
-							],
-							"open": [
-								"open4.8",
-								""
-							]
-						},
-						"path": ".settings.event.20",
-						"mwid": 300133
-					}
-				]
 			}
 		},
 		"cold-dng.g.room2": {
@@ -3186,10 +2989,9 @@
 							""
 						]
 					},
-					"mwid": 300134
+					"mwid": 300129
 				}
-			},
-			"events": {}
+			}
 		},
 		"forest.caves.cave-013-pandza-01": {
 			"name": "Sapphire Ridge - The Barracks",
@@ -3208,10 +3010,9 @@
 							"shock"
 						]
 					},
-					"mwid": 300135
+					"mwid": 300130
 				}
-			},
-			"events": {}
+			}
 		},
 		"forest.caves.cave-013-pandza-02": {
 			"name": "Sapphire Ridge - The Bellow",
@@ -3227,13 +3028,13 @@
 						],
 						"open": [
 							"open16",
-							"shock"
+							"shock",
+							"wave"
 						]
 					},
-					"mwid": 300136
+					"mwid": 300131
 				}
-			},
-			"events": {}
+			}
 		},
 		"forest.caves.path-01-entrance": {
 			"name": "Sapphire Ridge - Sapphire Tunnel",
@@ -3252,10 +3053,9 @@
 							""
 						]
 					},
-					"mwid": 300137
+					"mwid": 300132
 				}
-			},
-			"events": {}
+			}
 		},
 		"forest.caves.path-02-to-08": {
 			"name": "Sapphire Ridge - Eroded Passage",
@@ -3274,7 +3074,7 @@
 							""
 						]
 					},
-					"mwid": 300138
+					"mwid": 300133
 				},
 				"30": {
 					"item": 166,
@@ -3290,10 +3090,9 @@
 							""
 						]
 					},
-					"mwid": 300139
+					"mwid": 300134
 				}
-			},
-			"events": {}
+			}
 		},
 		"forest.caves.path-06-chasm": {
 			"name": "Sapphire Ridge - Spider Chasm",
@@ -3312,7 +3111,7 @@
 							""
 						]
 					},
-					"mwid": 300140
+					"mwid": 300135
 				},
 				"63": {
 					"item": 381,
@@ -3328,10 +3127,9 @@
 							""
 						]
 					},
-					"mwid": 300141
+					"mwid": 300136
 				}
-			},
-			"events": {}
+			}
 		},
 		"forest.caves.path-07-to-08": {
 			"name": "Sapphire Ridge - Narrow Passage",
@@ -3350,7 +3148,7 @@
 							""
 						]
 					},
-					"mwid": 300142
+					"mwid": 300137
 				},
 				"13": {
 					"item": 390,
@@ -3366,10 +3164,9 @@
 							""
 						]
 					},
-					"mwid": 300143
+					"mwid": 300138
 				}
-			},
-			"events": {}
+			}
 		},
 		"forest.caves.path-08-to-10": {
 			"name": "Sapphire Ridge - Wheel Passage",
@@ -3385,10 +3182,10 @@
 						],
 						"open": [
 							"open16",
-							"shock"
+							""
 						]
 					},
-					"mwid": 300144
+					"mwid": 300139
 				},
 				"32": {
 					"item": 3,
@@ -3404,34 +3201,8 @@
 							"shock"
 						]
 					},
-					"mwid": 300145
+					"mwid": 300140
 				}
-			},
-			"events": {}
-		},
-		"forest.interior.expo-space": {
-			"name": "Sapphire Ridge - Space",
-			"chests": {},
-			"events": {
-				"137": [
-					{
-						"item": 434,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"32",
-								""
-							],
-							"open": [
-								"open17",
-								""
-							]
-						},
-						"path": ".settings.event.19",
-						"mwid": 300146
-					}
-				]
 			}
 		},
 		"forest.interior.inn-og-01": {
@@ -3451,10 +3222,9 @@
 							""
 						]
 					},
-					"mwid": 300147
+					"mwid": 300141
 				}
-			},
-			"events": {}
+			}
 		},
 		"forest.interior.inn-storage": {
 			"name": "Sapphire Ridge - Cave Inn Storage",
@@ -3473,10 +3243,9 @@
 							""
 						]
 					},
-					"mwid": 300148
+					"mwid": 300142
 				}
-			},
-			"events": {}
+			}
 		},
 		"forest.path-01-entrance": {
 			"name": "Sapphire Ridge - Western Exit",
@@ -3495,7 +3264,7 @@
 							""
 						]
 					},
-					"mwid": 300149
+					"mwid": 300143
 				},
 				"109": {
 					"item": 79,
@@ -3511,10 +3280,9 @@
 							""
 						]
 					},
-					"mwid": 300150
+					"mwid": 300144
 				}
-			},
-			"events": {}
+			}
 		},
 		"forest.path-02": {
 			"name": "Sapphire Ridge - North West Path",
@@ -3533,7 +3301,7 @@
 							""
 						]
 					},
-					"mwid": 300151
+					"mwid": 300145
 				},
 				"160": {
 					"item": 488,
@@ -3549,10 +3317,9 @@
 							""
 						]
 					},
-					"mwid": 300152
+					"mwid": 300146
 				}
-			},
-			"events": {}
+			}
 		},
 		"forest.path-03": {
 			"name": "Sapphire Ridge - River Road",
@@ -3571,7 +3338,7 @@
 							""
 						]
 					},
-					"mwid": 300153
+					"mwid": 300147
 				},
 				"53": {
 					"item": 381,
@@ -3587,7 +3354,7 @@
 							""
 						]
 					},
-					"mwid": 300154
+					"mwid": 300148
 				},
 				"145": {
 					"item": 356,
@@ -3603,10 +3370,9 @@
 							""
 						]
 					},
-					"mwid": 300155
+					"mwid": 300149
 				}
-			},
-			"events": {}
+			}
 		},
 		"forest.path-04-hostel": {
 			"name": "Sapphire Ridge - The Cave Inn",
@@ -3625,7 +3391,7 @@
 							""
 						]
 					},
-					"mwid": 300156
+					"mwid": 300150
 				},
 				"184": {
 					"item": 63,
@@ -3641,10 +3407,9 @@
 							""
 						]
 					},
-					"mwid": 300157
+					"mwid": 300151
 				}
-			},
-			"events": {}
+			}
 		},
 		"forest.path-04-vaga": {
 			"name": "Sapphire Ridge - Tranquil Bamboo",
@@ -3663,7 +3428,7 @@
 							""
 						]
 					},
-					"mwid": 300158
+					"mwid": 300152
 				},
 				"6": {
 					"item": 97,
@@ -3679,29 +3444,8 @@
 							""
 						]
 					},
-					"mwid": 300159
+					"mwid": 300153
 				}
-			},
-			"events": {
-				"447": [
-					{
-						"item": 439,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"31",
-								""
-							],
-							"open": [
-								"open16",
-								""
-							]
-						},
-						"path": ".settings.npcStates.2.event.quest.12",
-						"mwid": 300160
-					}
-				]
 			}
 		},
 		"forest.path-05": {
@@ -3721,7 +3465,7 @@
 							""
 						]
 					},
-					"mwid": 300161
+					"mwid": 300154
 				},
 				"9": {
 					"item": 420,
@@ -3737,10 +3481,9 @@
 							""
 						]
 					},
-					"mwid": 300162
+					"mwid": 300155
 				}
-			},
-			"events": {}
+			}
 		},
 		"forest.path-06": {
 			"name": "Sapphire Ridge - North East Path",
@@ -3759,7 +3502,7 @@
 							""
 						]
 					},
-					"mwid": 300163
+					"mwid": 300156
 				},
 				"53": {
 					"item": 425,
@@ -3775,10 +3518,9 @@
 							""
 						]
 					},
-					"mwid": 300164
+					"mwid": 300157
 				}
-			},
-			"events": {}
+			}
 		},
 		"forest.path-07": {
 			"name": "Sapphire Ridge - Flower Lake",
@@ -3797,7 +3539,7 @@
 							""
 						]
 					},
-					"mwid": 300165
+					"mwid": 300158
 				},
 				"44": {
 					"item": 421,
@@ -3813,10 +3555,9 @@
 							""
 						]
 					},
-					"mwid": 300166
+					"mwid": 300159
 				}
-			},
-			"events": {}
+			}
 		},
 		"forest.path-08": {
 			"name": "Sapphire Ridge - Carved Pathway",
@@ -3835,7 +3576,7 @@
 							""
 						]
 					},
-					"mwid": 300167
+					"mwid": 300160
 				},
 				"82": {
 					"item": 132,
@@ -3848,10 +3589,10 @@
 						],
 						"open": [
 							"open16",
-							""
+							"shock"
 						]
 					},
-					"mwid": 300168
+					"mwid": 300161
 				},
 				"90": {
 					"item": 387,
@@ -3864,13 +3605,12 @@
 						],
 						"open": [
 							"open16",
-							""
+							"shock"
 						]
 					},
-					"mwid": 300169
+					"mwid": 300162
 				}
-			},
-			"events": {}
+			}
 		},
 		"forest.path-09": {
 			"name": "Sapphire Ridge - High Ground",
@@ -3886,10 +3626,10 @@
 						],
 						"open": [
 							"open16",
-							""
+							"shock"
 						]
 					},
-					"mwid": 300170
+					"mwid": 300163
 				},
 				"100": {
 					"item": 385,
@@ -3902,13 +3642,12 @@
 						],
 						"open": [
 							"open16",
-							""
+							"shock"
 						]
 					},
-					"mwid": 300171
+					"mwid": 300164
 				}
-			},
-			"events": {}
+			}
 		},
 		"forest.path-10": {
 			"name": "Sapphire Ridge - Old Dojo",
@@ -3927,7 +3666,7 @@
 							""
 						]
 					},
-					"mwid": 300172
+					"mwid": 300165
 				},
 				"167": {
 					"item": 422,
@@ -3943,7 +3682,7 @@
 							""
 						]
 					},
-					"mwid": 300173
+					"mwid": 300166
 				},
 				"904": {
 					"item": 351,
@@ -3959,10 +3698,9 @@
 							""
 						]
 					},
-					"mwid": 300174
+					"mwid": 300167
 				}
-			},
-			"events": {}
+			}
 		},
 		"forest.path-11-behind-maze": {
 			"name": "Sapphire Ridge - Dream Pond",
@@ -3981,10 +3719,9 @@
 							""
 						]
 					},
-					"mwid": 300175
+					"mwid": 300168
 				}
-			},
-			"events": {}
+			}
 		},
 		"forest.path-12": {
 			"name": "Sapphire Ridge - Ascension Temple",
@@ -4003,7 +3740,7 @@
 							"wave"
 						]
 					},
-					"mwid": 300176
+					"mwid": 300169
 				},
 				"301": {
 					"item": 192,
@@ -4019,7 +3756,7 @@
 							"wave"
 						]
 					},
-					"mwid": 300177
+					"mwid": 300170
 				},
 				"302": {
 					"item": 489,
@@ -4035,10 +3772,9 @@
 							"wave"
 						]
 					},
-					"mwid": 300178
+					"mwid": 300171
 				}
-			},
-			"events": {}
+			}
 		},
 		"forest.path-13": {
 			"name": "Sapphire Ridge - Baton Pond",
@@ -4057,10 +3793,9 @@
 							""
 						]
 					},
-					"mwid": 300179
+					"mwid": 300172
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat.caves.cliff-cave-01": {
 			"name": "Maroon Valley - Mystery Cave",
@@ -4079,7 +3814,7 @@
 							""
 						]
 					},
-					"mwid": 300180
+					"mwid": 300173
 				},
 				"43": {
 					"item": 182,
@@ -4095,10 +3830,79 @@
 							""
 						]
 					},
-					"mwid": 300181
+					"mwid": 300174
 				}
-			},
-			"events": {}
+			}
+		},
+		"heat.caves.cliffs-temple-02": {
+			"name": "Maroon Valley - Cursed Temple",
+			"chests": {
+				"48": {
+					"item": 187,
+					"amount": 4,
+					"type": "Silver",
+					"condition": {
+						"linear": [
+							"11",
+							"heat",
+							"cold",
+							"item.403.amount >= 1"
+						],
+						"open": [
+							"open5",
+							"heat",
+							"cold",
+							"item.403.amount >= 1"
+						]
+					},
+					"mwid": 300175
+				},
+				"86": {
+					"item": 432,
+					"amount": 1,
+					"type": "Silver",
+					"condition": {
+						"linear": [
+							"11",
+							"heat",
+							"cold",
+							"item.403.amount >= 1"
+						],
+						"open": [
+							"open5",
+							"heat",
+							"cold",
+							"item.403.amount >= 1"
+						]
+					},
+					"mwid": 300176
+				}
+			}
+		},
+		"heat.caves.cliff-temple-03": {
+			"name": "Maroon Valley - Cursed Temple Treasure Room",
+			"chests": {
+				"107": {
+					"item": 404,
+					"amount": 1,
+					"type": "Bronze",
+					"condition": {
+						"linear": [
+							"11",
+							"heat",
+							"cold",
+							"item.403.amount >= 1"
+						],
+						"open": [
+							"open5",
+							"heat",
+							"cold",
+							"item.403.amount >= 1"
+						]
+					},
+					"mwid": 300177
+				}
+			}
 		},
 		"heat.caves.maroon-cave-01": {
 			"name": "Maroon Valley - Maroon Cave 1",
@@ -4110,17 +3914,16 @@
 					"condition": {
 						"linear": [
 							"12",
-							""
+							"heat"
 						],
 						"open": [
 							"open6",
-							""
+							"heat"
 						]
 					},
-					"mwid": 300182
+					"mwid": 300178
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat.cliffs.cliffs-path-01": {
 			"name": "Maroon Valley - River Cliff",
@@ -4139,7 +3942,7 @@
 							""
 						]
 					},
-					"mwid": 300183
+					"mwid": 300179
 				},
 				"197": {
 					"item": 185,
@@ -4155,10 +3958,9 @@
 							""
 						]
 					},
-					"mwid": 300184
+					"mwid": 300180
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat.cliffs.cliffs-path-02": {
 			"name": "Maroon Valley - Endless Pit",
@@ -4177,7 +3979,7 @@
 							""
 						]
 					},
-					"mwid": 300185
+					"mwid": 300181
 				},
 				"30": {
 					"item": 180,
@@ -4193,7 +3995,7 @@
 							""
 						]
 					},
-					"mwid": 300186
+					"mwid": 300182
 				},
 				"32": {
 					"item": 187,
@@ -4209,34 +4011,8 @@
 							""
 						]
 					},
-					"mwid": 300187
+					"mwid": 300183
 				}
-			},
-			"events": {}
-		},
-		"heat.dng-expo-space": {
-			"name": "Faj'ro Temple - Space",
-			"chests": {},
-			"events": {
-				"136": [
-					{
-						"item": 230,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"19",
-								""
-							],
-							"open": [
-								"open7.8",
-								""
-							]
-						},
-						"path": ".settings.event.20",
-						"mwid": 300188
-					}
-				]
 			}
 		},
 		"heat.oasis.oasis-path-01": {
@@ -4256,7 +4032,7 @@
 							""
 						]
 					},
-					"mwid": 300189
+					"mwid": 300184
 				},
 				"9": {
 					"item": 177,
@@ -4272,10 +4048,9 @@
 							""
 						]
 					},
-					"mwid": 300190
+					"mwid": 300185
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat.oasis.oasis-path-02": {
 			"name": "Maroon Valley - Maroon Oasis",
@@ -4294,7 +4069,7 @@
 							""
 						]
 					},
-					"mwid": 300191
+					"mwid": 300186
 				},
 				"97": {
 					"item": 71,
@@ -4310,10 +4085,9 @@
 							""
 						]
 					},
-					"mwid": 300192
+					"mwid": 300187
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat.oasis.oasis-path-03": {
 			"name": "Maroon Valley - Bright Path",
@@ -4332,10 +4106,9 @@
 							""
 						]
 					},
-					"mwid": 300193
+					"mwid": 300188
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat.path-00": {
 			"name": "Maroon Valley - Rising Railway",
@@ -4354,10 +4127,9 @@
 							""
 						]
 					},
-					"mwid": 300194
+					"mwid": 300189
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat.path-01-entrance": {
 			"name": "Maroon Valley - East Entrance",
@@ -4376,10 +4148,9 @@
 							""
 						]
 					},
-					"mwid": 300195
+					"mwid": 300190
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat.path-02": {
 			"name": "Maroon Valley - Dusty Path",
@@ -4398,7 +4169,7 @@
 							""
 						]
 					},
-					"mwid": 300196
+					"mwid": 300191
 				},
 				"14": {
 					"item": 186,
@@ -4414,10 +4185,9 @@
 							""
 						]
 					},
-					"mwid": 300197
+					"mwid": 300192
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat.path-03": {
 			"name": "Maroon Valley - Crossroad",
@@ -4436,7 +4206,7 @@
 							""
 						]
 					},
-					"mwid": 300198
+					"mwid": 300193
 				},
 				"25": {
 					"item": 488,
@@ -4452,10 +4222,9 @@
 							""
 						]
 					},
-					"mwid": 300199
+					"mwid": 300194
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat.path-04": {
 			"name": "Maroon Valley - Long Piece",
@@ -4474,10 +4243,9 @@
 							""
 						]
 					},
-					"mwid": 300200
+					"mwid": 300195
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat.path-05": {
 			"name": "Maroon Valley - Barren Arcs",
@@ -4496,7 +4264,7 @@
 							""
 						]
 					},
-					"mwid": 300201
+					"mwid": 300196
 				},
 				"14": {
 					"item": 175,
@@ -4512,10 +4280,9 @@
 							""
 						]
 					},
-					"mwid": 300202
+					"mwid": 300197
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat.path-06": {
 			"name": "Maroon Valley - Barren Land",
@@ -4534,10 +4301,9 @@
 							""
 						]
 					},
-					"mwid": 300203
+					"mwid": 300198
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat.path-07": {
 			"name": "Maroon Valley - Overpass",
@@ -4556,7 +4322,7 @@
 							""
 						]
 					},
-					"mwid": 300204
+					"mwid": 300199
 				},
 				"78": {
 					"item": 66,
@@ -4572,10 +4338,9 @@
 							""
 						]
 					},
-					"mwid": 300205
+					"mwid": 300200
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat.path-08": {
 			"name": "Maroon Valley - Paw Cliffs",
@@ -4594,7 +4359,7 @@
 							""
 						]
 					},
-					"mwid": 300206
+					"mwid": 300201
 				},
 				"4": {
 					"item": 356,
@@ -4610,10 +4375,9 @@
 							""
 						]
 					},
-					"mwid": 300207
+					"mwid": 300202
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat.path-09": {
 			"name": "Maroon Valley - Torn Road",
@@ -4632,7 +4396,7 @@
 							""
 						]
 					},
-					"mwid": 300208
+					"mwid": 300203
 				},
 				"41": {
 					"item": 65,
@@ -4648,10 +4412,9 @@
 							""
 						]
 					},
-					"mwid": 300209
+					"mwid": 300204
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat.path-11": {
 			"name": "Maroon Valley - West Entrance",
@@ -4670,10 +4433,9 @@
 							""
 						]
 					},
-					"mwid": 300210
+					"mwid": 300205
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat.shortcut-02-09": {
 			"name": "Maroon Valley - Fractured Path",
@@ -4692,7 +4454,7 @@
 							""
 						]
 					},
-					"mwid": 300211
+					"mwid": 300206
 				},
 				"19": {
 					"item": 176,
@@ -4708,10 +4470,9 @@
 							""
 						]
 					},
-					"mwid": 300212
+					"mwid": 300207
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat-dng.f1.room-03": {
 			"name": "Faj'ro Temple - Right Chamber 1 (1F)",
@@ -4730,15 +4491,13 @@
 							""
 						]
 					},
-					"mwid": 300213
+					"mwid": 300208
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat-dng.f2.room-cold": {
 			"name": "Faj'ro Temple - Chamber of Ice",
 			"chests": {},
-			"events": {},
 			"elements": {
 				"78": {
 					"item": "cold",
@@ -4753,7 +4512,7 @@
 							""
 						]
 					},
-					"mwid": 300214
+					"mwid": 300209
 				}
 			}
 		},
@@ -4774,10 +4533,9 @@
 							""
 						]
 					},
-					"mwid": 300215
+					"mwid": 300210
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat-dng.f3.room-05": {
 			"name": "Faj'ro Temple - Large Fire Chamber",
@@ -4796,7 +4554,7 @@
 							""
 						]
 					},
-					"mwid": 300216
+					"mwid": 300211
 				},
 				"79": {
 					"item": 191,
@@ -4812,10 +4570,9 @@
 							""
 						]
 					},
-					"mwid": 300217
+					"mwid": 300212
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat-dng.f3.room-07": {
 			"name": "Faj'ro Temple - Test of Wisdom",
@@ -4834,10 +4591,9 @@
 							""
 						]
 					},
-					"mwid": 300218
+					"mwid": 300213
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat-dng.f4.room-02": {
 			"name": "Faj'ro Temple - West Pathway",
@@ -4856,10 +4612,9 @@
 							""
 						]
 					},
-					"mwid": 300219
+					"mwid": 300214
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat-dng.f4.room-03": {
 			"name": "Faj'ro Temple - Test of Surprise",
@@ -4878,10 +4633,9 @@
 							""
 						]
 					},
-					"mwid": 300220
+					"mwid": 300215
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat-dng.f4.room-05": {
 			"name": "Faj'ro Temple - West Chamber 1",
@@ -4900,10 +4654,9 @@
 							""
 						]
 					},
-					"mwid": 300221
+					"mwid": 300216
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat-dng.f4.room-09": {
 			"name": "Faj'ro Temple - East Chamber 1",
@@ -4922,10 +4675,9 @@
 							""
 						]
 					},
-					"mwid": 300222
+					"mwid": 300217
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat-dng.f4.room-10": {
 			"name": "Faj'ro Temple - East Pathway",
@@ -4944,10 +4696,9 @@
 							""
 						]
 					},
-					"mwid": 300223
+					"mwid": 300218
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat-dng.f4.room-11": {
 			"name": "Faj'ro Temple - Test of Memory",
@@ -4966,10 +4717,9 @@
 							""
 						]
 					},
-					"mwid": 300224
+					"mwid": 300219
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat-dng.f4.room-12": {
 			"name": "Faj'ro Temple - Chamber of Prosperity",
@@ -4988,10 +4738,9 @@
 							""
 						]
 					},
-					"mwid": 300225
+					"mwid": 300220
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat-dng.g.room-03": {
 			"name": "Faj'ro Temple - Left Chamber 1",
@@ -5010,10 +4759,9 @@
 							""
 						]
 					},
-					"mwid": 300226
+					"mwid": 300221
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat-dng.g.room-07": {
 			"name": "Faj'ro Temple - Fire and Sand 2",
@@ -5032,10 +4780,9 @@
 							""
 						]
 					},
-					"mwid": 300227
+					"mwid": 300222
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat-dng.g.room-09": {
 			"name": "Faj'ro Temple - Balance Room 2",
@@ -5054,7 +4801,7 @@
 							""
 						]
 					},
-					"mwid": 300228
+					"mwid": 300223
 				},
 				"86": {
 					"item": 167,
@@ -5070,10 +4817,9 @@
 							""
 						]
 					},
-					"mwid": 300229
+					"mwid": 300224
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat-dng.g.room-10": {
 			"name": "Faj'ro Temple - Right Chamber 1 (GF)",
@@ -5092,10 +4838,9 @@
 							""
 						]
 					},
-					"mwid": 300230
+					"mwid": 300225
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat-dng.g.room-12": {
 			"name": "Faj'ro Temple - Right Chamber 2",
@@ -5114,10 +4859,9 @@
 							""
 						]
 					},
-					"mwid": 300231
+					"mwid": 300226
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat-dng.g.room-13": {
 			"name": "Faj'ro Temple - Test of Memory 1",
@@ -5136,10 +4880,9 @@
 							""
 						]
 					},
-					"mwid": 300232
+					"mwid": 300227
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat-dng.g.room-14": {
 			"name": "Faj'ro Temple - Test of Memory 2",
@@ -5158,10 +4901,9 @@
 							""
 						]
 					},
-					"mwid": 300233
+					"mwid": 300228
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat-village.baki-1": {
 			"name": "Ba'kii Kum - Solar Farm",
@@ -5180,7 +4922,7 @@
 							""
 						]
 					},
-					"mwid": 300234
+					"mwid": 300229
 				},
 				"737": {
 					"item": 187,
@@ -5196,10 +4938,9 @@
 							""
 						]
 					},
-					"mwid": 300235
+					"mwid": 300230
 				}
-			},
-			"events": {}
+			}
 		},
 		"heat-village.baki-2": {
 			"name": "Ba'kii Kum - Market",
@@ -5218,7 +4959,7 @@
 							""
 						]
 					},
-					"mwid": 300236
+					"mwid": 300231
 				},
 				"1227": {
 					"item": 359,
@@ -5234,59 +4975,8 @@
 							""
 						]
 					},
-					"mwid": 300237
+					"mwid": 300232
 				}
-			},
-			"events": {}
-		},
-		"heat-village.interior.house-2": {
-			"name": "Ba'kii Kum - Dusty Home",
-			"chests": {},
-			"events": {
-				"31": [
-					{
-						"item": 403,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"11",
-								"cold"
-							],
-							"open": [
-								"open5",
-								"cold"
-							]
-						},
-						"path": ".settings.npcStates.0.event.4.0.9",
-						"mwid": 300238
-					}
-				]
-			}
-		},
-		"heat-village.interior.quest-hub-og": {
-			"name": "Ba'kii Kum - Seeker Hub 2nd Floor",
-			"chests": {},
-			"events": {
-				"112": [
-					{
-						"item": 236,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"11",
-								""
-							],
-							"open": [
-								"open5",
-								""
-							]
-						},
-						"path": ".settings.npcStates.1.event.quest.3.accepted.3",
-						"mwid": 300239
-					}
-				]
 			}
 		},
 		"heat-village.interior.tradebuilding-eg": {
@@ -5306,34 +4996,8 @@
 							""
 						]
 					},
-					"mwid": 300240
+					"mwid": 300233
 				}
-			},
-			"events": {}
-		},
-		"heat-village.special.expo-space": {
-			"name": "Ba'kii Kum - Space",
-			"chests": {},
-			"events": {
-				"136": [
-					{
-						"item": 148,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"12",
-								""
-							],
-							"open": [
-								"open6",
-								""
-							]
-						},
-						"path": ".settings.event.17",
-						"mwid": 300241
-					}
-				]
 			}
 		},
 		"jungle.caves.grove-cave-01": {
@@ -5353,10 +5017,9 @@
 							"wave"
 						]
 					},
-					"mwid": 300242
+					"mwid": 300234
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle.caves.grove-cave-02": {
 			"name": "Gaia's Garden - Tranquility Pond",
@@ -5375,10 +5038,46 @@
 							"wave"
 						]
 					},
-					"mwid": 300243
+					"mwid": 300235
 				}
-			},
-			"events": {}
+			}
+		},
+		"jungle.caves.smuggle-route-2": {
+			"name": "Gaia's Garden - Infested Cavern",
+			"chests": {
+				"55": {
+					"item": 489,
+					"amount": 1,
+					"type": "Bronze",
+					"condition": {
+						"linear": [
+							"25",
+							"wave"
+						],
+						"open": [
+							"open10",
+							"wave"
+						]
+					},
+					"mwid": 300236
+				},
+				"60": {
+					"item": 279,
+					"amount": 3,
+					"type": "Silver",
+					"condition": {
+						"linear": [
+							"25",
+							"wave"
+						],
+						"open": [
+							"open10",
+							"wave"
+						]
+					},
+					"mwid": 300237
+				}
+			}
 		},
 		"jungle.clearing.clear-path-01": {
 			"name": "Gaia's Garden - V'rda Vil West",
@@ -5397,7 +5096,7 @@
 							""
 						]
 					},
-					"mwid": 300244
+					"mwid": 300238
 				},
 				"6": {
 					"item": 283,
@@ -5413,7 +5112,7 @@
 							""
 						]
 					},
-					"mwid": 300245
+					"mwid": 300239
 				},
 				"125": {
 					"item": 282,
@@ -5429,10 +5128,9 @@
 							""
 						]
 					},
-					"mwid": 300246
+					"mwid": 300240
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle.clearing.clear-path-02": {
 			"name": "Gaia's Garden - V'rda Vil East",
@@ -5451,7 +5149,7 @@
 							""
 						]
 					},
-					"mwid": 300247
+					"mwid": 300241
 				},
 				"351": {
 					"item": 251,
@@ -5467,10 +5165,9 @@
 							"wave"
 						]
 					},
-					"mwid": 300248
+					"mwid": 300242
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle.clearing.clear-path-03": {
 			"name": "Gaia's Garden - V'rda Vil North",
@@ -5489,7 +5186,7 @@
 							"wave"
 						]
 					},
-					"mwid": 300249
+					"mwid": 300243
 				},
 				"33": {
 					"item": 191,
@@ -5505,10 +5202,9 @@
 							""
 						]
 					},
-					"mwid": 300250
+					"mwid": 300244
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle.clearing.clear-path-04": {
 			"name": "Gaia's Garden - Chief's Den",
@@ -5527,7 +5223,7 @@
 							""
 						]
 					},
-					"mwid": 300251
+					"mwid": 300245
 				},
 				"91": {
 					"item": 289,
@@ -5543,7 +5239,7 @@
 							""
 						]
 					},
-					"mwid": 300252
+					"mwid": 300246
 				},
 				"135": {
 					"item": 485,
@@ -5559,59 +5255,8 @@
 							"wave"
 						]
 					},
-					"mwid": 300253
+					"mwid": 300247
 				}
-			},
-			"events": {}
-		},
-		"jungle.dng.shock-expo-space": {
-			"name": "Zir'vitar Temple - Space",
-			"chests": {},
-			"events": {
-				"136": [
-					{
-						"item": 231,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"25",
-								"wave"
-							],
-							"open": [
-								"open13.2",
-								""
-							]
-						},
-						"path": ".settings.event.20",
-						"mwid": 300254
-					}
-				]
-			}
-		},
-		"jungle.dng.tree-expo-space": {
-			"name": "Grand Krys'kajo - Seeker's Conclusion",
-			"chests": {},
-			"events": {
-				"60": [
-					{
-						"item": 410,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"30",
-								""
-							],
-							"open": [
-								"open15.3",
-								""
-							]
-						},
-						"path": ".settings.event.25",
-						"mwid": 300255
-					}
-				]
 			}
 		},
 		"jungle.dng.tree-exterior": {
@@ -5631,34 +5276,8 @@
 							""
 						]
 					},
-					"mwid": 300256
+					"mwid": 300248
 				}
-			},
-			"events": {}
-		},
-		"jungle.dng.wave-expo-space": {
-			"name": "So'najiz Temple - Space",
-			"chests": {},
-			"events": {
-				"136": [
-					{
-						"item": 286,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"27",
-								"shock"
-							],
-							"open": [
-								"open14.3",
-								""
-							]
-						},
-						"path": ".settings.event.20",
-						"mwid": 300257
-					}
-				]
 			}
 		},
 		"jungle.dng.wave-exterior": {
@@ -5678,10 +5297,9 @@
 							"wave"
 						]
 					},
-					"mwid": 300258
+					"mwid": 300249
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle.grove.grove-path-01": {
 			"name": "Gaia's Garden - Covert Path",
@@ -5700,7 +5318,7 @@
 							""
 						]
 					},
-					"mwid": 300259
+					"mwid": 300250
 				},
 				"5": {
 					"item": 65,
@@ -5716,10 +5334,9 @@
 							""
 						]
 					},
-					"mwid": 300260
+					"mwid": 300251
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle.grove.grove-path-02": {
 			"name": "Gaia's Garden - Royal Grove",
@@ -5738,7 +5355,7 @@
 							""
 						]
 					},
-					"mwid": 300261
+					"mwid": 300252
 				},
 				"68": {
 					"item": 290,
@@ -5754,7 +5371,7 @@
 							""
 						]
 					},
-					"mwid": 300262
+					"mwid": 300253
 				},
 				"69": {
 					"item": 258,
@@ -5770,7 +5387,7 @@
 							""
 						]
 					},
-					"mwid": 300263
+					"mwid": 300254
 				},
 				"80": {
 					"item": 284,
@@ -5786,10 +5403,9 @@
 							""
 						]
 					},
-					"mwid": 300264
+					"mwid": 300255
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle.grove.grove-path-03": {
 			"name": "Gaia's Garden - Calm Backyard",
@@ -5808,7 +5424,7 @@
 							""
 						]
 					},
-					"mwid": 300265
+					"mwid": 300256
 				},
 				"42": {
 					"item": 291,
@@ -5824,10 +5440,78 @@
 							""
 						]
 					},
-					"mwid": 300266
+					"mwid": 300257
 				}
-			},
-			"events": {}
+			}
+		},
+		"jungle.grove.lost-shrine-02": {
+			"name": "Gaia's Garden - Lost Shrine Interior 1F",
+			"chests": {
+				"158": {
+					"item": 292,
+					"amount": 2,
+					"type": "Default",
+					"condition": {
+						"linear": [
+							"28",
+							"wave",
+							"shock"
+						],
+						"open": [
+							"open10",
+							"wave",
+							"shock"
+						]
+					},
+					"mwid": 300258
+				}
+			}
+		},
+		"jungle.grove.lost-shrine-03": {
+			"name": "Gaia's Garden - Lost Shrine Interior B1",
+			"chests": {
+				"289": {
+					"item": 486,
+					"amount": 3,
+					"type": "Gold",
+					"condition": {
+						"linear": [
+							"28",
+							"wave",
+							"shock"
+						],
+						"open": [
+							"open10",
+							"wave",
+							"shock"
+						]
+					},
+					"mwid": 300259
+				}
+			}
+		},
+		"jungle.grove.lost-shrine-04": {
+			"name": "Gaia's Garden - Lost Shrine Interior B2",
+			"chests": {
+				"363": {
+					"item": 443,
+					"amount": 1,
+					"type": "Silver",
+					"condition": {
+						"linear": [
+							"28",
+							"wave",
+							"shock"
+						],
+						"open": [
+							"open10",
+							"wave",
+							"shock"
+						]
+					},
+					"mwid": 300260
+				}
+			}
 		},
 		"jungle.infested.infested-path-01": {
 			"name": "Gaia's Garden - Lost Lookout",
@@ -5846,7 +5530,7 @@
 							""
 						]
 					},
-					"mwid": 300267
+					"mwid": 300261
 				},
 				"63": {
 					"item": 316,
@@ -5862,7 +5546,7 @@
 							""
 						]
 					},
-					"mwid": 300268
+					"mwid": 300262
 				},
 				"170": {
 					"item": 292,
@@ -5878,10 +5562,9 @@
 							"wave"
 						]
 					},
-					"mwid": 300269
+					"mwid": 300263
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle.infested.infested-path-02": {
 			"name": "Gaia's Garden - Seared Lake",
@@ -5900,7 +5583,7 @@
 							""
 						]
 					},
-					"mwid": 300270
+					"mwid": 300264
 				},
 				"32": {
 					"item": 72,
@@ -5916,10 +5599,9 @@
 							""
 						]
 					},
-					"mwid": 300271
+					"mwid": 300265
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle.infested.infested-path-03": {
 			"name": "Gaia's Garden - Infested Marshes South",
@@ -5938,7 +5620,7 @@
 							""
 						]
 					},
-					"mwid": 300272
+					"mwid": 300266
 				},
 				"70": {
 					"item": 279,
@@ -5954,7 +5636,7 @@
 							"wave"
 						]
 					},
-					"mwid": 300273
+					"mwid": 300267
 				},
 				"90": {
 					"item": 252,
@@ -5970,7 +5652,7 @@
 							""
 						]
 					},
-					"mwid": 300274
+					"mwid": 300268
 				},
 				"97": {
 					"item": 40,
@@ -5986,10 +5668,9 @@
 							""
 						]
 					},
-					"mwid": 300275
+					"mwid": 300269
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle.infested.infested-path-04": {
 			"name": "Gaia's Garden - Infested Marshes North",
@@ -6008,7 +5689,7 @@
 							""
 						]
 					},
-					"mwid": 300276
+					"mwid": 300270
 				},
 				"58": {
 					"item": 495,
@@ -6024,7 +5705,7 @@
 							""
 						]
 					},
-					"mwid": 300277
+					"mwid": 300271
 				},
 				"82": {
 					"item": 254,
@@ -6040,7 +5721,7 @@
 							""
 						]
 					},
-					"mwid": 300278
+					"mwid": 300272
 				},
 				"949": {
 					"item": 488,
@@ -6056,10 +5737,9 @@
 							""
 						]
 					},
-					"mwid": 300279
+					"mwid": 300273
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle.left.path-left-01": {
 			"name": "Gaia's Garden - Overgrown Path",
@@ -6078,7 +5758,7 @@
 							"wave"
 						]
 					},
-					"mwid": 300280
+					"mwid": 300274
 				},
 				"75": {
 					"item": 75,
@@ -6094,10 +5774,9 @@
 							"wave"
 						]
 					},
-					"mwid": 300281
+					"mwid": 300275
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle.left.path-left-02": {
 			"name": "Gaia's Garden - Drizzle Bosk",
@@ -6116,7 +5795,7 @@
 							"wave"
 						]
 					},
-					"mwid": 300282
+					"mwid": 300276
 				},
 				"8": {
 					"item": 259,
@@ -6132,7 +5811,7 @@
 							""
 						]
 					},
-					"mwid": 300283
+					"mwid": 300277
 				},
 				"12": {
 					"item": 3,
@@ -6148,10 +5827,9 @@
 							""
 						]
 					},
-					"mwid": 300284
+					"mwid": 300278
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle.left.path-left-03": {
 			"name": "Gaia's Garden - Wet Passage",
@@ -6170,7 +5848,7 @@
 							"wave"
 						]
 					},
-					"mwid": 300285
+					"mwid": 300279
 				},
 				"33": {
 					"item": 275,
@@ -6186,10 +5864,9 @@
 							""
 						]
 					},
-					"mwid": 300286
+					"mwid": 300280
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle.left.path-left-04": {
 			"name": "Gaia's Garden - River's Bed",
@@ -6208,7 +5885,7 @@
 							"wave"
 						]
 					},
-					"mwid": 300287
+					"mwid": 300281
 				},
 				"39": {
 					"item": 71,
@@ -6224,10 +5901,9 @@
 							""
 						]
 					},
-					"mwid": 300288
+					"mwid": 300282
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle.path-01-entrance": {
 			"name": "Gaia's Garden - Jungle Entrance",
@@ -6246,7 +5922,7 @@
 							""
 						]
 					},
-					"mwid": 300289
+					"mwid": 300283
 				},
 				"13": {
 					"item": 290,
@@ -6262,10 +5938,9 @@
 							""
 						]
 					},
-					"mwid": 300290
+					"mwid": 300284
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle.path-02-crossroads": {
 			"name": "Gaia's Garden - Crossroad",
@@ -6284,7 +5959,7 @@
 							""
 						]
 					},
-					"mwid": 300291
+					"mwid": 300285
 				},
 				"14": {
 					"item": 251,
@@ -6300,10 +5975,9 @@
 							""
 						]
 					},
-					"mwid": 300292
+					"mwid": 300286
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle.path-03-sync": {
 			"name": "Gaia's Garden - Tying Greens",
@@ -6322,7 +5996,7 @@
 							""
 						]
 					},
-					"mwid": 300293
+					"mwid": 300287
 				},
 				"22": {
 					"item": 289,
@@ -6338,10 +6012,9 @@
 							""
 						]
 					},
-					"mwid": 300294
+					"mwid": 300288
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle.path-04-end": {
 			"name": "Gaia's Garden - Peridot Approach",
@@ -6353,14 +6026,14 @@
 					"condition": {
 						"linear": [
 							"23",
-							""
+							"wave"
 						],
 						"open": [
 							"open10",
-							""
+							"wave"
 						]
 					},
-					"mwid": 300295
+					"mwid": 300289
 				},
 				"58": {
 					"item": 292,
@@ -6376,10 +6049,9 @@
 							""
 						]
 					},
-					"mwid": 300296
+					"mwid": 300290
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle.right.right-path-01": {
 			"name": "Gaia's Garden - Splitting Stumps",
@@ -6398,7 +6070,7 @@
 							"wave"
 						]
 					},
-					"mwid": 300297
+					"mwid": 300291
 				},
 				"105": {
 					"item": 291,
@@ -6414,10 +6086,9 @@
 							""
 						]
 					},
-					"mwid": 300298
+					"mwid": 300292
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle.right.right-path-02": {
 			"name": "Gaia's Garden - Clinging River",
@@ -6436,7 +6107,7 @@
 							""
 						]
 					},
-					"mwid": 300299
+					"mwid": 300293
 				},
 				"13": {
 					"item": 332,
@@ -6452,10 +6123,9 @@
 							""
 						]
 					},
-					"mwid": 300300
+					"mwid": 300294
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle.right.right-path-03": {
 			"name": "Gaia's Garden - Ringing River",
@@ -6474,7 +6144,7 @@
 							""
 						]
 					},
-					"mwid": 300301
+					"mwid": 300295
 				},
 				"14": {
 					"item": 274,
@@ -6490,10 +6160,9 @@
 							""
 						]
 					},
-					"mwid": 300302
+					"mwid": 300296
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle.right.right-path-04": {
 			"name": "Gaia's Garden - Old Timber",
@@ -6512,10 +6181,9 @@
 							""
 						]
 					},
-					"mwid": 300303
+					"mwid": 300297
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle-city.center": {
 			"name": "Basin Keep - Centrum",
@@ -6534,10 +6202,9 @@
 							""
 						]
 					},
-					"mwid": 300304
+					"mwid": 300298
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle-city.east": {
 			"name": "Basin Keep - Pond Slums",
@@ -6556,7 +6223,7 @@
 							""
 						]
 					},
-					"mwid": 300305
+					"mwid": 300299
 				},
 				"322": {
 					"item": 192,
@@ -6572,7 +6239,7 @@
 							""
 						]
 					},
-					"mwid": 300306
+					"mwid": 300300
 				},
 				"537": {
 					"item": 381,
@@ -6588,10 +6255,9 @@
 							""
 						]
 					},
-					"mwid": 300307
+					"mwid": 300301
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle-city.entrance": {
 			"name": "Gaia's Garden - Basin Keep Entrance",
@@ -6610,10 +6276,9 @@
 							""
 						]
 					},
-					"mwid": 300308
+					"mwid": 300302
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle-city.interior.faction-guard-1": {
 			"name": "Basin Keep - Basin Police Force HQ",
@@ -6632,10 +6297,9 @@
 							""
 						]
 					},
-					"mwid": 300309
+					"mwid": 300303
 				}
-			},
-			"events": {}
+			}
 		},
 		"jungle-city.interior.questhub-01": {
 			"name": "Basin Keep - Seeker Hub 1st Floor",
@@ -6654,10 +6318,9 @@
 							""
 						]
 					},
-					"mwid": 300310
+					"mwid": 300304
 				}
-			},
-			"events": {}
+			}
 		},
 		"rhombus-dng.room-1-6": {
 			"name": "Rhombus Dungeon - Ability Room 1",
@@ -6676,7 +6339,7 @@
 							""
 						]
 					},
-					"mwid": 300311
+					"mwid": 300305
 				},
 				"184": {
 					"item": 2,
@@ -6692,10 +6355,9 @@
 							""
 						]
 					},
-					"mwid": 300312
+					"mwid": 300306
 				}
-			},
-			"events": {}
+			}
 		},
 		"rhombus-dng.room-5-newer": {
 			"chests": {},
@@ -6760,8 +6422,7 @@
 						]
 					}
 				}
-			},
-			"events": {}
+			}
 		},
 		"rhombus-sqr.arena-1": {
 			"name": "Rhombus Square - Arena Plaza",
@@ -6780,7 +6441,7 @@
 							""
 						]
 					},
-					"mwid": 300313
+					"mwid": 300307
 				},
 				"299": {
 					"item": 462,
@@ -6793,13 +6454,12 @@
 						],
 						"open": [
 							"open20",
-							""
+							"wave"
 						]
 					},
-					"mwid": 300314
+					"mwid": 300308
 				}
-			},
-			"events": {}
+			}
 		},
 		"rhombus-sqr.center-e": {
 			"name": "Rhombus Square - Garden Boulevard",
@@ -6818,7 +6478,7 @@
 							""
 						]
 					},
-					"mwid": 300315
+					"mwid": 300309
 				},
 				"272": {
 					"item": 464,
@@ -6834,10 +6494,9 @@
 							""
 						]
 					},
-					"mwid": 300316
+					"mwid": 300310
 				}
-			},
-			"events": {}
+			}
 		},
 		"rhombus-sqr.center-s": {
 			"name": "Rhombus Square - South Arch",
@@ -6856,10 +6515,9 @@
 							""
 						]
 					},
-					"mwid": 300317
+					"mwid": 300311
 				}
-			},
-			"events": {}
+			}
 		},
 		"rhombus-sqr.center-se": {
 			"name": "Rhombus Square - Lloyd Passage",
@@ -6878,10 +6536,9 @@
 							""
 						]
 					},
-					"mwid": 300318
+					"mwid": 300312
 				}
-			},
-			"events": {}
+			}
 		},
 		"rhombus-sqr.residential-s1": {
 			"name": "Rhombus Square - Residential District West",
@@ -6900,7 +6557,7 @@
 							""
 						]
 					},
-					"mwid": 300319
+					"mwid": 300313
 				},
 				"852": {
 					"item": 460,
@@ -6916,10 +6573,9 @@
 							""
 						]
 					},
-					"mwid": 300320
+					"mwid": 300314
 				}
-			},
-			"events": {}
+			}
 		},
 		"rookie-harbor.center": {
 			"name": "Rookie Harbor - Marketplace",
@@ -6938,10 +6594,9 @@
 							""
 						]
 					},
-					"mwid": 300321
+					"mwid": 300315
 				}
-			},
-			"events": {}
+			}
 		},
 		"rookie-harbor.east": {
 			"name": "Rookie Harbor - Falling Exit",
@@ -6960,146 +6615,8 @@
 							""
 						]
 					},
-					"mwid": 300322
+					"mwid": 300316
 				}
-			},
-			"events": {}
-		},
-		"rookie-harbor.expo-space": {
-			"name": "Rookie Harbor - Space",
-			"chests": {},
-			"events": {
-				"136": [
-					{
-						"item": 145,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"2",
-								""
-							],
-							"open": [
-								"open2",
-								""
-							]
-						},
-						"path": ".settings.event.74",
-						"mwid": 300323
-					},
-					{
-						"item": 135,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"2",
-								""
-							],
-							"open": [
-								"open2",
-								""
-							]
-						},
-						"path": ".settings.event.90",
-						"mwid": 300324
-					}
-				],
-				"137": [
-					{
-						"item": 428,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"11",
-								""
-							],
-							"open": [
-								"open4.8",
-								""
-							]
-						},
-						"path": ".settings.event.36",
-						"mwid": 300325
-					}
-				],
-				"138": [
-					{
-						"item": 428,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"19",
-								""
-							],
-							"open": [
-								"open7.8",
-								""
-							]
-						},
-						"path": ".settings.event.35",
-						"mwid": 300326
-					}
-				],
-				"140": [
-					{
-						"item": 428,
-						"amount": 2,
-						"type": "",
-						"condition": {
-							"linear": [
-								"30",
-								""
-							],
-							"open": [
-								"open15.3",
-								""
-							]
-						},
-						"path": ".settings.event.36",
-						"mwid": 300327
-					}
-				],
-				"142": [
-					{
-						"item": 428,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"27",
-								"shock"
-							],
-							"open": [
-								"open14.3",
-								""
-							]
-						},
-						"path": ".settings.event.14",
-						"mwid": 300328
-					}
-				],
-				"143": [
-					{
-						"item": 428,
-						"amount": 1,
-						"type": "",
-						"condition": {
-							"linear": [
-								"25",
-								"wave"
-							],
-							"open": [
-								"open13.2",
-								""
-							]
-						},
-						"path": ".settings.event.14",
-						"mwid": 300329
-					}
-				]
 			}
 		},
 		"rookie-harbor.inner-equip-north": {
@@ -7119,10 +6636,9 @@
 							""
 						]
 					},
-					"mwid": 300330
+					"mwid": 300317
 				}
-			},
-			"events": {}
+			}
 		},
 		"rookie-harbor.inner-old": {
 			"name": "Rookie Harbor - Dusty Storage",
@@ -7141,10 +6657,9 @@
 							""
 						]
 					},
-					"mwid": 300331
+					"mwid": 300318
 				}
-			},
-			"events": {}
+			}
 		},
 		"rookie-harbor.south": {
 			"name": "Rookie Harbor - South Harbor",
@@ -7163,10 +6678,9 @@
 							""
 						]
 					},
-					"mwid": 300332
+					"mwid": 300319
 				}
-			},
-			"events": {}
+			}
 		},
 		"rookie-harbor.teleporter": {
 			"name": "Rookie Harbor - Beginners Arc",
@@ -7185,7 +6699,7 @@
 							""
 						]
 					},
-					"mwid": 300333
+					"mwid": 300320
 				},
 				"402": {
 					"item": 70,
@@ -7201,10 +6715,9 @@
 							""
 						]
 					},
-					"mwid": 300334
+					"mwid": 300321
 				}
-			},
-			"events": {}
+			}
 		},
 		"shock-dng.f1.room2": {
 			"name": "Zir'vitar Temple - Moving Transmit",
@@ -7223,7 +6736,7 @@
 							""
 						]
 					},
-					"mwid": 300335
+					"mwid": 300322
 				},
 				"79": {
 					"item": 272,
@@ -7232,17 +6745,16 @@
 					"condition": {
 						"linear": [
 							"25",
-							""
+							"wave"
 						],
 						"open": [
 							"open13.1",
-							""
+							"wave"
 						]
 					},
-					"mwid": 300336
+					"mwid": 300323
 				}
-			},
-			"events": {}
+			}
 		},
 		"shock-dng.f1.room3to4": {
 			"name": "Zir'vitar Temple - Haunted Waves",
@@ -7261,10 +6773,9 @@
 							"wave"
 						]
 					},
-					"mwid": 300337
+					"mwid": 300324
 				}
-			},
-			"events": {}
+			}
 		},
 		"shock-dng.g.room4to5": {
 			"name": "Zir'vitar Temple - Hoodwink",
@@ -7283,10 +6794,9 @@
 							""
 						]
 					},
-					"mwid": 300338
+					"mwid": 300325
 				}
-			},
-			"events": {}
+			}
 		},
 		"shock-dng.g.room5": {
 			"name": "Zir'vitar Temple - Spinning Transmit",
@@ -7305,15 +6815,13 @@
 							"wave"
 						]
 					},
-					"mwid": 300339
+					"mwid": 300326
 				}
-			},
-			"events": {}
+			}
 		},
 		"shock-dng.f2.room-element": {
 			"name": "Zir'vitar Temple - Chamber of Wave",
 			"chests": {},
-			"events": {},
 			"elements": {
 				"86": {
 					"item": "wave",
@@ -7328,7 +6836,7 @@
 							""
 						]
 					},
-					"mwid": 300340
+					"mwid": 300327
 				}
 			}
 		},
@@ -7349,7 +6857,7 @@
 							""
 						]
 					},
-					"mwid": 300341
+					"mwid": 300328
 				},
 				"167": {
 					"item": 289,
@@ -7365,7 +6873,7 @@
 							""
 						]
 					},
-					"mwid": 300342
+					"mwid": 300329
 				},
 				"168": {
 					"item": 292,
@@ -7381,10 +6889,9 @@
 							""
 						]
 					},
-					"mwid": 300343
+					"mwid": 300330
 				}
-			},
-			"events": {}
+			}
 		},
 		"tree-dng.f3.branch-west": {
 			"name": "Grand Krys'kajo - West Branch",
@@ -7403,7 +6910,7 @@
 							""
 						]
 					},
-					"mwid": 300344
+					"mwid": 300331
 				},
 				"68": {
 					"item": 316,
@@ -7419,10 +6926,9 @@
 							""
 						]
 					},
-					"mwid": 300345
+					"mwid": 300332
 				}
-			},
-			"events": {}
+			}
 		},
 		"tree-dng.f3.center-01": {
 			"name": "Grand Krys'kajo - Falling Leaves",
@@ -7441,10 +6947,9 @@
 							""
 						]
 					},
-					"mwid": 300346
+					"mwid": 300333
 				}
-			},
-			"events": {}
+			}
 		},
 		"tree-dng.f3.east-01": {
 			"name": "Grand Krys'kajo - Branch Conveyance",
@@ -7463,10 +6968,9 @@
 							""
 						]
 					},
-					"mwid": 300347
+					"mwid": 300334
 				}
-			},
-			"events": {}
+			}
 		},
 		"tree-dng.f3.west-01": {
 			"name": "Grand Krys'kajo - Branch Transmit",
@@ -7485,7 +6989,7 @@
 							""
 						]
 					},
-					"mwid": 300348
+					"mwid": 300335
 				},
 				"86": {
 					"item": 79,
@@ -7501,10 +7005,9 @@
 							""
 						]
 					},
-					"mwid": 300349
+					"mwid": 300336
 				}
-			},
-			"events": {}
+			}
 		},
 		"wave-dng.b1.center-01": {
 			"name": "So'najiz Temple - Principle of Conveyance",
@@ -7523,10 +7026,9 @@
 							""
 						]
 					},
-					"mwid": 300350
+					"mwid": 300337
 				}
-			},
-			"events": {}
+			}
 		},
 		"wave-dng.b1.center-04-long": {
 			"name": "So'najiz Temple - Trial of Persistence",
@@ -7545,7 +7047,7 @@
 							""
 						]
 					},
-					"mwid": 300351
+					"mwid": 300338
 				},
 				"258": {
 					"item": 319,
@@ -7561,7 +7063,7 @@
 							""
 						]
 					},
-					"mwid": 300352
+					"mwid": 300339
 				},
 				"329": {
 					"item": 319,
@@ -7577,7 +7079,7 @@
 							""
 						]
 					},
-					"mwid": 300353
+					"mwid": 300340
 				},
 				"670": {
 					"item": 156,
@@ -7593,7 +7095,7 @@
 							""
 						]
 					},
-					"mwid": 300354
+					"mwid": 300341
 				},
 				"671": {
 					"item": 192,
@@ -7609,15 +7111,13 @@
 							""
 						]
 					},
-					"mwid": 300355
+					"mwid": 300342
 				}
-			},
-			"events": {}
+			}
 		},
 		"wave-dng.b1.center-05-element": {
 			"name": "So'najiz Temple - Chamber of Shock",
 			"chests": {},
-			"events": {},
 			"elements": {
 				"248": {
 					"item": "shock",
@@ -7632,7 +7132,7 @@
 							""
 						]
 					},
-					"mwid": 300356
+					"mwid": 300343
 				}
 			}
 		},
@@ -7653,10 +7153,9 @@
 							""
 						]
 					},
-					"mwid": 300357
+					"mwid": 300344
 				}
-			},
-			"events": {}
+			}
 		},
 		"wave-dng.b1.north-03": {
 			"name": "So'najiz Temple - Slowing Attraction",
@@ -7675,10 +7174,9 @@
 							""
 						]
 					},
-					"mwid": 300358
+					"mwid": 300345
 				}
-			},
-			"events": {}
+			}
 		},
 		"wave-dng.b1.north-06": {
 			"name": "So'najiz Temple - Standing Attraction",
@@ -7697,10 +7195,9 @@
 							""
 						]
 					},
-					"mwid": 300359
+					"mwid": 300346
 				}
-			},
-			"events": {}
+			}
 		},
 		"wave-dng.b1.north-08": {
 			"name": "So'najiz Temple - Attracting Conveyance",
@@ -7719,10 +7216,9 @@
 							""
 						]
 					},
-					"mwid": 300360
+					"mwid": 300347
 				}
-			},
-			"events": {}
+			}
 		},
 		"wave-dng.b1.south-04": {
 			"name": "So'najiz Temple - Fast Conveyance",
@@ -7741,10 +7237,9 @@
 							""
 						]
 					},
-					"mwid": 300361
+					"mwid": 300348
 				}
-			},
-			"events": {}
+			}
 		},
 		"wave-dng.b1.south-06": {
 			"name": "So'najiz Temple - Flaming Conveyance",
@@ -7763,10 +7258,9 @@
 							""
 						]
 					},
-					"mwid": 300362
+					"mwid": 300349
 				}
-			},
-			"events": {}
+			}
 		}
 	},
 	"shops": {
@@ -9720,10 +9214,28 @@
 			},
 			{
 				"key": "CHEST",
+				"x": 696,
+				"y": 648,
+				"level": 2,
+				"index": 3,
+				"map": "jungle.caves.smuggle-route-2",
+				"mapId": 55
+			},
+			{
+				"key": "CHEST",
+				"x": 1644,
+				"y": 216,
+				"level": 2,
+				"index": 4,
+				"map": "jungle.caves.smuggle-route-2",
+				"mapId": 60
+			},
+			{
+				"key": "CHEST",
 				"x": 413.3818181818182,
 				"y": 722.9714285714285,
 				"level": 0,
-				"index": 3,
+				"index": 5,
 				"map": "jungle.clearing.clear-path-01",
 				"mapId": 5
 			},
@@ -9732,7 +9244,7 @@
 				"x": 478.83636363636367,
 				"y": 680.8571428571429,
 				"level": 0,
-				"index": 4,
+				"index": 6,
 				"map": "jungle.clearing.clear-path-01",
 				"mapId": 6
 			},
@@ -9741,7 +9253,7 @@
 				"x": 431.05454545454546,
 				"y": 721.0857142857143,
 				"level": 0,
-				"index": 5,
+				"index": 7,
 				"map": "jungle.clearing.clear-path-01",
 				"mapId": 125
 			},
@@ -9750,7 +9262,7 @@
 				"x": 539.6333333333333,
 				"y": 678.2,
 				"level": 0,
-				"index": 6,
+				"index": 8,
 				"map": "jungle.clearing.clear-path-02",
 				"mapId": 311
 			},
@@ -9759,7 +9271,7 @@
 				"x": 535.6,
 				"y": 694,
 				"level": 0,
-				"index": 7,
+				"index": 9,
 				"map": "jungle.clearing.clear-path-02",
 				"mapId": 351
 			},
@@ -9768,7 +9280,7 @@
 				"x": 532.6,
 				"y": 563.4,
 				"level": 0,
-				"index": 8,
+				"index": 10,
 				"map": "jungle.clearing.clear-path-03",
 				"mapId": 31
 			},
@@ -9777,7 +9289,7 @@
 				"x": 528,
 				"y": 580.2,
 				"level": 0,
-				"index": 9,
+				"index": 11,
 				"map": "jungle.clearing.clear-path-03",
 				"mapId": 33
 			},
@@ -9786,7 +9298,7 @@
 				"x": 525,
 				"y": 486.3272727272727,
 				"level": 0,
-				"index": 10,
+				"index": 12,
 				"map": "jungle.clearing.clear-path-04",
 				"mapId": 27
 			},
@@ -9795,7 +9307,7 @@
 				"x": 534.6,
 				"y": 449.23636363636365,
 				"level": 0,
-				"index": 11,
+				"index": 13,
 				"map": "jungle.clearing.clear-path-04",
 				"mapId": 91
 			},
@@ -9804,7 +9316,7 @@
 				"x": 530.4,
 				"y": 504,
 				"level": 0,
-				"index": 12,
+				"index": 14,
 				"map": "jungle.clearing.clear-path-04",
 				"mapId": 135
 			},
@@ -9813,7 +9325,7 @@
 				"x": 268,
 				"y": 116.64444444444445,
 				"level": 0,
-				"index": 13,
+				"index": 15,
 				"map": "jungle.dng.tree-exterior",
 				"mapId": 432
 			},
@@ -9822,7 +9334,7 @@
 				"x": 163.6,
 				"y": 129.4,
 				"level": 0,
-				"index": 14,
+				"index": 16,
 				"map": "jungle.dng.wave-exterior",
 				"mapId": 521
 			},
@@ -9831,7 +9343,7 @@
 				"x": 114,
 				"y": 435,
 				"level": 0,
-				"index": 15,
+				"index": 17,
 				"map": "jungle.grove.grove-path-01",
 				"mapId": 4
 			},
@@ -9840,7 +9352,7 @@
 				"x": 88.8,
 				"y": 372.6,
 				"level": 0,
-				"index": 16,
+				"index": 18,
 				"map": "jungle.grove.grove-path-01",
 				"mapId": 5
 			},
@@ -9849,7 +9361,7 @@
 				"x": 75.2,
 				"y": 325,
 				"level": 0,
-				"index": 17,
+				"index": 19,
 				"map": "jungle.grove.grove-path-02",
 				"mapId": 67
 			},
@@ -9858,7 +9370,7 @@
 				"x": 78.8,
 				"y": 297.2,
 				"level": 0,
-				"index": 18,
+				"index": 20,
 				"map": "jungle.grove.grove-path-02",
 				"mapId": 68
 			},
@@ -9867,7 +9379,7 @@
 				"x": 91.6,
 				"y": 282.4,
 				"level": 0,
-				"index": 19,
+				"index": 21,
 				"map": "jungle.grove.grove-path-02",
 				"mapId": 69
 			},
@@ -9876,7 +9388,7 @@
 				"x": 60,
 				"y": 256.2,
 				"level": 0,
-				"index": 20,
+				"index": 22,
 				"map": "jungle.grove.grove-path-02",
 				"mapId": 80
 			},
@@ -9885,7 +9397,7 @@
 				"x": 151.8,
 				"y": 258.8,
 				"level": 0,
-				"index": 21,
+				"index": 23,
 				"map": "jungle.grove.grove-path-03",
 				"mapId": 41
 			},
@@ -9894,16 +9406,43 @@
 				"x": 218.2,
 				"y": 226.6,
 				"level": 0,
-				"index": 22,
+				"index": 24,
 				"map": "jungle.grove.grove-path-03",
 				"mapId": 42
+			},
+			{
+				"key": "CHEST",
+				"x": 520,
+				"y": 440,
+				"level": 1,
+				"index": 25,
+				"map": "jungle.grove.lost-shrine-02",
+				"mapId": 158
+			},
+			{
+				"key": "CHEST",
+				"x": 664,
+				"y": 652,
+				"level": 3,
+				"index": 26,
+				"map": "jungle.grove.lost-shrine-03",
+				"mapId": 289
+			},
+			{
+				"key": "CHEST",
+				"x": 384,
+				"y": 196,
+				"level": 2,
+				"index": 27,
+				"map": "jungle.grove.lost-shrine-04",
+				"mapId": 289
 			},
 			{
 				"key": "CHEST",
 				"x": 506.3692307692308,
 				"y": 325,
 				"level": 0,
-				"index": 23,
+				"index": 28,
 				"map": "jungle.infested.infested-path-01",
 				"mapId": 22
 			},
@@ -9912,7 +9451,7 @@
 				"x": 535.2307692307693,
 				"y": 335.2,
 				"level": 0,
-				"index": 24,
+				"index": 29,
 				"map": "jungle.infested.infested-path-01",
 				"mapId": 63
 			},
@@ -9921,7 +9460,7 @@
 				"x": 488.0615384615385,
 				"y": 305.8,
 				"level": 0,
-				"index": 25,
+				"index": 30,
 				"map": "jungle.infested.infested-path-01",
 				"mapId": 170
 			},
@@ -9930,7 +9469,7 @@
 				"x": 475.6,
 				"y": 223.6,
 				"level": 0,
-				"index": 26,
+				"index": 31,
 				"map": "jungle.infested.infested-path-02",
 				"mapId": 6
 			},
@@ -9939,7 +9478,7 @@
 				"x": 412.4,
 				"y": 246.2,
 				"level": 0,
-				"index": 27,
+				"index": 32,
 				"map": "jungle.infested.infested-path-02",
 				"mapId": 32
 			},
@@ -9948,7 +9487,7 @@
 				"x": 512.6,
 				"y": 273.8,
 				"level": 0,
-				"index": 28,
+				"index": 33,
 				"map": "jungle.infested.infested-path-03",
 				"mapId": 18
 			},
@@ -9957,7 +9496,7 @@
 				"x": 570.6,
 				"y": 278.6,
 				"level": 0,
-				"index": 29,
+				"index": 34,
 				"map": "jungle.infested.infested-path-03",
 				"mapId": 70
 			},
@@ -9966,7 +9505,7 @@
 				"x": 525.6,
 				"y": 242,
 				"level": 0,
-				"index": 30,
+				"index": 35,
 				"map": "jungle.infested.infested-path-03",
 				"mapId": 90
 			},
@@ -9975,7 +9514,7 @@
 				"x": 572.8,
 				"y": 237.4,
 				"level": 0,
-				"index": 31,
+				"index": 36,
 				"map": "jungle.infested.infested-path-03",
 				"mapId": 97
 			},
@@ -9984,7 +9523,7 @@
 				"x": 509.2,
 				"y": 208.2,
 				"level": 0,
-				"index": 32,
+				"index": 37,
 				"map": "jungle.infested.infested-path-04",
 				"mapId": 24
 			},
@@ -9993,7 +9532,7 @@
 				"x": 552.2,
 				"y": 155,
 				"level": 0,
-				"index": 33,
+				"index": 38,
 				"map": "jungle.infested.infested-path-04",
 				"mapId": 58
 			},
@@ -10002,7 +9541,7 @@
 				"x": 564.425,
 				"y": 208.475,
 				"level": 0,
-				"index": 34,
+				"index": 39,
 				"map": "jungle.infested.infested-path-04",
 				"mapId": 82
 			},
@@ -10011,7 +9550,7 @@
 				"x": 572.6,
 				"y": 156.8,
 				"level": 0,
-				"index": 35,
+				"index": 40,
 				"map": "jungle.infested.infested-path-04",
 				"mapId": 949
 			},
@@ -10020,7 +9559,7 @@
 				"x": 160.56296296296296,
 				"y": 622.8,
 				"level": 0,
-				"index": 36,
+				"index": 41,
 				"map": "jungle.left.path-left-01",
 				"mapId": 74
 			},
@@ -10029,7 +9568,7 @@
 				"x": 232.27962962962962,
 				"y": 597.575,
 				"level": 0,
-				"index": 37,
+				"index": 42,
 				"map": "jungle.left.path-left-01",
 				"mapId": 75
 			},
@@ -10038,7 +9577,7 @@
 				"x": 158.8,
 				"y": 483.0833333333333,
 				"level": 0,
-				"index": 38,
+				"index": 43,
 				"map": "jungle.left.path-left-02",
 				"mapId": 2
 			},
@@ -10047,7 +9586,7 @@
 				"x": 137.2,
 				"y": 535.7333333333333,
 				"level": 0,
-				"index": 39,
+				"index": 44,
 				"map": "jungle.left.path-left-02",
 				"mapId": 8
 			},
@@ -10056,7 +9595,7 @@
 				"x": 119.2,
 				"y": 495.43333333333334,
 				"level": 0,
-				"index": 40,
+				"index": 45,
 				"map": "jungle.left.path-left-02",
 				"mapId": 12
 			},
@@ -10065,7 +9604,7 @@
 				"x": 178.16470588235293,
 				"y": 431.4,
 				"level": 0,
-				"index": 41,
+				"index": 46,
 				"map": "jungle.left.path-left-03",
 				"mapId": 32
 			},
@@ -10074,7 +9613,7 @@
 				"x": 186.8235294117647,
 				"y": 366.2,
 				"level": 0,
-				"index": 42,
+				"index": 47,
 				"map": "jungle.left.path-left-03",
 				"mapId": 33
 			},
@@ -10083,7 +9622,7 @@
 				"x": 252.4,
 				"y": 298.6,
 				"level": 0,
-				"index": 43,
+				"index": 48,
 				"map": "jungle.left.path-left-04",
 				"mapId": 38
 			},
@@ -10092,7 +9631,7 @@
 				"x": 162,
 				"y": 303.2,
 				"level": 0,
-				"index": 44,
+				"index": 49,
 				"map": "jungle.left.path-left-04",
 				"mapId": 39
 			},
@@ -10101,7 +9640,7 @@
 				"x": 284.4,
 				"y": 717,
 				"level": 0,
-				"index": 45,
+				"index": 50,
 				"map": "jungle.path-01-entrance",
 				"mapId": 12
 			},
@@ -10110,7 +9649,7 @@
 				"x": 296.8,
 				"y": 727,
 				"level": 0,
-				"index": 46,
+				"index": 51,
 				"map": "jungle.path-01-entrance",
 				"mapId": 13
 			},
@@ -10119,7 +9658,7 @@
 				"x": 261.6,
 				"y": 609.675,
 				"level": 0,
-				"index": 47,
+				"index": 52,
 				"map": "jungle.path-02-crossroads",
 				"mapId": 13
 			},
@@ -10128,7 +9667,7 @@
 				"x": 349.8,
 				"y": 610.025,
 				"level": 0,
-				"index": 48,
+				"index": 53,
 				"map": "jungle.path-02-crossroads",
 				"mapId": 14
 			},
@@ -10137,7 +9676,7 @@
 				"x": 290.1090909090909,
 				"y": 330.8,
 				"level": 0,
-				"index": 49,
+				"index": 54,
 				"map": "jungle.path-03-sync",
 				"mapId": 21
 			},
@@ -10146,7 +9685,7 @@
 				"x": 295.3454545454546,
 				"y": 295.6,
 				"level": 0,
-				"index": 50,
+				"index": 55,
 				"map": "jungle.path-03-sync",
 				"mapId": 22
 			},
@@ -10155,7 +9694,7 @@
 				"x": 331.43333333333334,
 				"y": 256.6,
 				"level": 0,
-				"index": 51,
+				"index": 56,
 				"map": "jungle.path-04-end",
 				"mapId": 6
 			},
@@ -10164,7 +9703,7 @@
 				"x": 249.53333333333333,
 				"y": 229.2,
 				"level": 0,
-				"index": 52,
+				"index": 57,
 				"map": "jungle.path-04-end",
 				"mapId": 58
 			},
@@ -10173,7 +9712,7 @@
 				"x": 424.4,
 				"y": 580.2,
 				"level": 0,
-				"index": 53,
+				"index": 58,
 				"map": "jungle.right.right-path-01",
 				"mapId": 40
 			},
@@ -10182,7 +9721,7 @@
 				"x": 400.4,
 				"y": 617,
 				"level": 0,
-				"index": 54,
+				"index": 59,
 				"map": "jungle.right.right-path-01",
 				"mapId": 105
 			},
@@ -10191,7 +9730,7 @@
 				"x": 476.2,
 				"y": 540.64,
 				"level": 0,
-				"index": 55,
+				"index": 60,
 				"map": "jungle.right.right-path-02",
 				"mapId": 12
 			},
@@ -10200,7 +9739,7 @@
 				"x": 434,
 				"y": 544.6,
 				"level": 0,
-				"index": 56,
+				"index": 61,
 				"map": "jungle.right.right-path-02",
 				"mapId": 13
 			},
@@ -10209,7 +9748,7 @@
 				"x": 424.8,
 				"y": 451,
 				"level": 0,
-				"index": 57,
+				"index": 62,
 				"map": "jungle.right.right-path-03",
 				"mapId": 13
 			},
@@ -10218,7 +9757,7 @@
 				"x": 444.4,
 				"y": 399.6,
 				"level": 0,
-				"index": 58,
+				"index": 63,
 				"map": "jungle.right.right-path-03",
 				"mapId": 14
 			},
@@ -10227,7 +9766,7 @@
 				"x": 420.8,
 				"y": 326.3272727272727,
 				"level": 0,
-				"index": 59,
+				"index": 64,
 				"map": "jungle.right.right-path-04",
 				"mapId": 30
 			}
@@ -10891,10 +10430,37 @@
 			},
 			{
 				"key": "CHEST",
+				"x": 280,
+				"y": 632,
+				"level": 2,
+				"index": 2,
+				"map": "heat.caves.cliffs-temple-02",
+				"mapId": 48
+			},
+			{
+				"key": "CHEST",
+				"x": 1156,
+				"y": 156,
+				"level": 3,
+				"index": 3,
+				"map": "heat.caves.cliffs-temple-02",
+				"mapId": 86
+			},
+			{
+				"key": "CHEST",
+				"x": 544,
+				"y": 404,
+				"level": 1,
+				"index": 4,
+				"map": "heat.caves.cliffs-temple-03",
+				"mapId": 107
+			},
+			{
+				"key": "CHEST",
 				"x": 530.1714285714286,
 				"y": 468.64,
 				"level": -1,
-				"index": 2,
+				"index": 5,
 				"map": "heat.caves.maroon-cave-01",
 				"mapId": 404
 			},
@@ -10903,7 +10469,7 @@
 				"x": 268.15,
 				"y": 466.54945054945057,
 				"level": 0,
-				"index": 3,
+				"index": 6,
 				"map": "heat.cliffs.cliffs-path-01",
 				"mapId": 105
 			},
@@ -10912,7 +10478,7 @@
 				"x": 219.675,
 				"y": 476,
 				"level": 0,
-				"index": 4,
+				"index": 7,
 				"map": "heat.cliffs.cliffs-path-01",
 				"mapId": 197
 			},
@@ -10921,7 +10487,7 @@
 				"x": 326.25454545454545,
 				"y": 517.6901408450705,
 				"level": 0,
-				"index": 5,
+				"index": 8,
 				"map": "heat.cliffs.cliffs-path-02",
 				"mapId": 29
 			},
@@ -10930,7 +10496,7 @@
 				"x": 338.4727272727273,
 				"y": 519.7183098591549,
 				"level": 0,
-				"index": 6,
+				"index": 9,
 				"map": "heat.cliffs.cliffs-path-02",
 				"mapId": 30
 			},
@@ -10939,7 +10505,7 @@
 				"x": 286.3272727272727,
 				"y": 535.7746478873239,
 				"level": 0,
-				"index": 7,
+				"index": 10,
 				"map": "heat.cliffs.cliffs-path-02",
 				"mapId": 32
 			},
@@ -10948,7 +10514,7 @@
 				"x": 507,
 				"y": 416.90666666666664,
 				"level": 0,
-				"index": 8,
+				"index": 11,
 				"map": "heat.oasis.oasis-path-01",
 				"mapId": 8
 			},
@@ -10957,7 +10523,7 @@
 				"x": 534.8,
 				"y": 392.82666666666665,
 				"level": 0,
-				"index": 9,
+				"index": 12,
 				"map": "heat.oasis.oasis-path-01",
 				"mapId": 9
 			},
@@ -10966,7 +10532,7 @@
 				"x": 534.5866666666667,
 				"y": 480.1904761904762,
 				"level": 0,
-				"index": 10,
+				"index": 13,
 				"map": "heat.oasis.oasis-path-02",
 				"mapId": 80
 			},
@@ -10975,7 +10541,7 @@
 				"x": 545.2266666666667,
 				"y": 442.8952380952381,
 				"level": 0,
-				"index": 11,
+				"index": 14,
 				"map": "heat.oasis.oasis-path-02",
 				"mapId": 97
 			},
@@ -10984,7 +10550,7 @@
 				"x": 499.4,
 				"y": 536.2,
 				"level": 0,
-				"index": 12,
+				"index": 15,
 				"map": "heat.oasis.oasis-path-03",
 				"mapId": 34
 			},
@@ -10993,7 +10559,7 @@
 				"x": 590.6666666666666,
 				"y": 298.42857142857144,
 				"level": 0,
-				"index": 13,
+				"index": 16,
 				"map": "heat.path-00",
 				"mapId": 6
 			},
@@ -11002,7 +10568,7 @@
 				"x": 478.4,
 				"y": 273.28,
 				"level": 0,
-				"index": 14,
+				"index": 17,
 				"map": "heat.path-01-entrance",
 				"mapId": 55
 			},
@@ -11011,7 +10577,7 @@
 				"x": 457.2,
 				"y": 310,
 				"level": 0,
-				"index": 15,
+				"index": 18,
 				"map": "heat.path-02",
 				"mapId": 7
 			},
@@ -11020,7 +10586,7 @@
 				"x": 448,
 				"y": 276.44444444444446,
 				"level": 0,
-				"index": 16,
+				"index": 19,
 				"map": "heat.path-02",
 				"mapId": 14
 			},
@@ -11029,7 +10595,7 @@
 				"x": 448,
 				"y": 385.37142857142857,
 				"level": 0,
-				"index": 17,
+				"index": 20,
 				"map": "heat.path-03",
 				"mapId": 23
 			},
@@ -11038,7 +10604,7 @@
 				"x": 421.6,
 				"y": 370.2857142857143,
 				"level": 0,
-				"index": 18,
+				"index": 21,
 				"map": "heat.path-03",
 				"mapId": 25
 			},
@@ -11047,7 +10613,7 @@
 				"x": 455.54285714285714,
 				"y": 471.1504424778761,
 				"level": 0,
-				"index": 19,
+				"index": 22,
 				"map": "heat.path-04",
 				"mapId": 34
 			},
@@ -11056,7 +10622,7 @@
 				"x": 369.8181818181818,
 				"y": 469.8,
 				"level": 0,
-				"index": 20,
+				"index": 23,
 				"map": "heat.path-05",
 				"mapId": 2
 			},
@@ -11065,7 +10631,7 @@
 				"x": 402.75,
 				"y": 486.6,
 				"level": 0,
-				"index": 21,
+				"index": 24,
 				"map": "heat.path-05",
 				"mapId": 14
 			},
@@ -11074,7 +10640,7 @@
 				"x": 402.225,
 				"y": 364.58666666666664,
 				"level": 0,
-				"index": 22,
+				"index": 25,
 				"map": "heat.path-06",
 				"mapId": 16
 			},
@@ -11083,7 +10649,7 @@
 				"x": 301.9047619047619,
 				"y": 403,
 				"level": 0,
-				"index": 23,
+				"index": 26,
 				"map": "heat.path-07",
 				"mapId": 7
 			},
@@ -11092,7 +10658,7 @@
 				"x": 249.9047619047619,
 				"y": 409.2,
 				"level": 0,
-				"index": 24,
+				"index": 27,
 				"map": "heat.path-07",
 				"mapId": 78
 			},
@@ -11101,7 +10667,7 @@
 				"x": 268.3,
 				"y": 370,
 				"level": 0,
-				"index": 25,
+				"index": 28,
 				"map": "heat.path-08",
 				"mapId": 1
 			},
@@ -11110,7 +10676,7 @@
 				"x": 293.15,
 				"y": 311.4,
 				"level": 0,
-				"index": 26,
+				"index": 29,
 				"map": "heat.path-08",
 				"mapId": 4
 			},
@@ -11119,7 +10685,7 @@
 				"x": 261.6,
 				"y": 267.2,
 				"level": 0,
-				"index": 27,
+				"index": 30,
 				"map": "heat.path-09",
 				"mapId": 8
 			},
@@ -11128,7 +10694,7 @@
 				"x": 286.2,
 				"y": 269,
 				"level": 0,
-				"index": 28,
+				"index": 31,
 				"map": "heat.path-09",
 				"mapId": 41
 			},
@@ -11137,7 +10703,7 @@
 				"x": 104.52000000000001,
 				"y": 317.2,
 				"level": 0,
-				"index": 29,
+				"index": 32,
 				"map": "heat.path-11",
 				"mapId": 19
 			},
@@ -11146,7 +10712,7 @@
 				"x": 350.72,
 				"y": 258.22222222222223,
 				"level": 0,
-				"index": 30,
+				"index": 33,
 				"map": "heat.shortcut-02-09",
 				"mapId": 17
 			},
@@ -11155,7 +10721,7 @@
 				"x": 406.15999999999997,
 				"y": 272.8888888888889,
 				"level": 0,
-				"index": 31,
+				"index": 34,
 				"map": "heat.shortcut-02-09",
 				"mapId": 19
 			}
@@ -11963,7 +11529,7 @@
 					""
 				]
 			},
-			"mwid": 300363
+			"mwid": 300350
 		},
 		"basin-mush-2": {
 			"item": 345,
@@ -11978,7 +11544,7 @@
 					""
 				]
 			},
-			"mwid": 300364
+			"mwid": 300351
 		}
 	},
 	"mwconstants": {

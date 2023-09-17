@@ -1,0 +1,6804 @@
+{
+	"chests": {
+		"Vermillion Wasteland - Spiral Cliff - Bronze Chest": {
+			"location": {
+				"map": "arid.cliff-1",
+				"mapId": 467
+			},
+			"region": {
+				"linear": "22",
+				"open": "open18"
+			},
+			"reward": [
+				[
+					"item",
+					"Precious Metal",
+					2
+				]
+			],
+			"condition": {
+				"open": [
+					[
+						"item",
+						"Heat",
+						1
+					],
+					[
+						"item",
+						"Cold",
+						1
+					]
+				]
+			}
+		},
+		"Vermillion Wasteland - Spiral Cliff - Chest": {
+			"location": {
+				"map": "arid.cliff-1",
+				"mapId": 468
+			},
+			"region": {
+				"linear": "22",
+				"open": "open18"
+			},
+			"reward": [
+				[
+					"item",
+					"Elemental DNA",
+					4
+				]
+			],
+			"condition": {
+				"open": [
+					[
+						"item",
+						"Heat",
+						1
+					],
+					[
+						"item",
+						"Cold",
+						1
+					]
+				]
+			}
+		},
+		"Vermillion Wasteland - Storage Basement - Chest": {
+			"location": {
+				"map": "arid.interior.stealth-2",
+				"mapId": 94
+			},
+			"region": {
+				"linear": "22",
+				"open": "open18"
+			},
+			"reward": [
+				[
+					"item",
+					"Pepper Night Tea",
+					4
+				]
+			]
+		},
+		"Vermillion Wasteland - Crimson Lake - Chest 1": {
+			"location": {
+				"map": "arid.lake-1",
+				"mapId": 646
+			},
+			"region": {
+				"linear": "22",
+				"open": "open18"
+			},
+			"reward": [
+				[
+					"item",
+					"Chef Sandwich",
+					6
+				]
+			]
+		},
+		"Vermillion Wasteland - Crimson Lake - Chest 2": {
+			"location": {
+				"map": "arid.lake-1",
+				"mapId": 647
+			},
+			"region": {
+				"linear": "22",
+				"open": "open18"
+			},
+			"reward": [
+				[
+					"item",
+					"Infected Cell",
+					5
+				]
+			]
+		},
+		"Vermillion Wasteland - East Town - Silver Chest": {
+			"location": {
+				"map": "arid.town-1",
+				"mapId": 334
+			},
+			"region": {
+				"linear": "22",
+				"open": "open18"
+			},
+			"reward": [
+				[
+					"item",
+					"Vermillion Mantle",
+					1
+				]
+			]
+		},
+		"Vermillion Wasteland - East Town - Chest 1": {
+			"location": {
+				"map": "arid.town-1",
+				"mapId": 335
+			},
+			"region": {
+				"linear": "22",
+				"open": "open18"
+			},
+			"reward": [
+				[
+					"item",
+					"Full Course",
+					2
+				]
+			]
+		},
+		"Vermillion Wasteland - East Town - Chest 2": {
+			"location": {
+				"map": "arid.town-1",
+				"mapId": 336
+			},
+			"region": {
+				"linear": "22",
+				"open": "open18"
+			},
+			"reward": [
+				[
+					"item",
+					"Echo Roll",
+					3
+				]
+			]
+		},
+		"Vermillion Wasteland - West Town - Bronze Chest 1": {
+			"location": {
+				"map": "arid.town-2",
+				"mapId": 485
+			},
+			"region": {
+				"linear": "22",
+				"open": "open18"
+			},
+			"reward": [
+				[
+					"item",
+					"Precious Metal",
+					2
+				]
+			]
+		},
+		"Vermillion Wasteland - West Town - Chest": {
+			"location": {
+				"map": "arid.town-2",
+				"mapId": 486
+			},
+			"region": {
+				"linear": "22",
+				"open": "open18"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Bars",
+					3
+				]
+			]
+		},
+		"Vermillion Wasteland - West Town - Bronze Chest 2": {
+			"location": {
+				"map": "arid.town-2",
+				"mapId": 487
+			},
+			"region": {
+				"linear": "22",
+				"open": "open18"
+			},
+			"reward": [
+				[
+					"item",
+					"Refined Metal",
+					3
+				]
+			]
+		},
+		"Autumn's Rise - Drippy Den - Chest": {
+			"location": {
+				"map": "autumn.caves.cave-3-to-6",
+				"mapId": 2
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Halcyon Droplet",
+					1
+				]
+			]
+		},
+		"Autumn's Rise - Normal Clearing - Chest 1": {
+			"location": {
+				"map": "autumn.cubaum",
+				"mapId": 200
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Hi-Sandwich",
+					5
+				]
+			]
+		},
+		"Autumn's Rise - Normal Clearing - Chest 2": {
+			"location": {
+				"map": "autumn.cubaum",
+				"mapId": 201
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Masterball",
+					1
+				]
+			]
+		},
+		"Autumn's Rise - Entrance - Chest": {
+			"location": {
+				"map": "autumn.entrance",
+				"mapId": 112
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Sandwich",
+					5
+				]
+			]
+		},
+		"Autumn's Rise - Old Observatory - Chest": {
+			"location": {
+				"map": "autumn.lake-observatory",
+				"mapId": 329
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Dungeon Heart",
+					1
+				]
+			]
+		},
+		"Autumn's Rise - Quiet Passage 1 - Chest": {
+			"location": {
+				"map": "autumn.path-1-1",
+				"mapId": 378
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Tofu Cracker",
+					3
+				]
+			]
+		},
+		"Autumn's Rise - Quiet Passage 2 - Chest": {
+			"location": {
+				"map": "autumn.path-1-2",
+				"mapId": 346
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Metal Needles",
+					4
+				]
+			]
+		},
+		"Autumn's Rise - Hedgehag's Den - Chest": {
+			"location": {
+				"map": "autumn.path-1-3",
+				"mapId": 322
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Broken Gauntlet",
+					1
+				]
+			]
+		},
+		"Autumn's Rise - Pathway 1 - Chest": {
+			"location": {
+				"map": "autumn.path-1",
+				"mapId": 137
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Gold Beetle",
+					3
+				]
+			]
+		},
+		"Autumn's Rise - Pathway 2 - Chest": {
+			"location": {
+				"map": "autumn.path-2",
+				"mapId": 268
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Flaming Bun",
+					3
+				]
+			]
+		},
+		"Autumn's Rise - Pathway 3 - Chest": {
+			"location": {
+				"map": "autumn.path-3-1",
+				"mapId": 291
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Fruit Salad",
+					3
+				]
+			]
+		},
+		"Autumn's Rise - Off Road 1 - Chest": {
+			"location": {
+				"map": "autumn.path-3-2",
+				"mapId": 305
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Veggie Wraps",
+					3
+				]
+			]
+		},
+		"Autumn's Rise - Off Road 2 - Chest": {
+			"location": {
+				"map": "autumn.path-3-4",
+				"mapId": 265
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Cooling Veil",
+					1
+				]
+			]
+		},
+		"Autumn's Rise - Pathway 6 - Chest 1": {
+			"location": {
+				"map": "autumn.path-7-1",
+				"mapId": 283
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Assault Vest",
+					1
+				]
+			]
+		},
+		"Autumn's Rise - Pathway 6 - Chest 2": {
+			"location": {
+				"map": "autumn.path-7-1",
+				"mapId": 284
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Headphone Scraps",
+					6
+				]
+			]
+		},
+		"Autumn's Rise - Pathway 6 - Chest 3": {
+			"location": {
+				"map": "autumn.path-7-1",
+				"mapId": 1128
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Azure Dragonfly",
+					3
+				]
+			]
+		},
+		"Autumn's Rise - Pathway 7 - Chest 1": {
+			"location": {
+				"map": "autumn.path-7-2",
+				"mapId": 1115
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Sweet Lemonjuice",
+					3
+				]
+			]
+		},
+		"Autumn's Rise - Pathway 7 - Chest 2": {
+			"location": {
+				"map": "autumn.path-7-2",
+				"mapId": 1142
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Chef Sandwich",
+					2
+				]
+			]
+		},
+		"Autumn's Rise - Ending Pathway - Chest": {
+			"location": {
+				"map": "autumn.path-8",
+				"mapId": 12
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Satchel",
+					3
+				]
+			]
+		},
+		"Autumn's Rise - Obelisk Lake - Bronze Chest": {
+			"location": {
+				"map": "autumn.path4",
+				"mapId": 22
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Triangle",
+					1
+				]
+			]
+		},
+		"Autumn's Rise - Obelisk Lake - Chest": {
+			"location": {
+				"map": "autumn.path4",
+				"mapId": 98
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Green Leaf Tea",
+					4
+				]
+			]
+		},
+		"Autumn's Rise - Pathway 4 - Chest 1": {
+			"location": {
+				"map": "autumn.path5",
+				"mapId": 2
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Bovine Skin",
+					4
+				]
+			]
+		},
+		"Autumn's Rise - Pathway 4 - Chest 2": {
+			"location": {
+				"map": "autumn.path5",
+				"mapId": 3
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Bear Cicada",
+					3
+				]
+			]
+		},
+		"Autumn's Rise - Pathway 4 - Chest 3": {
+			"location": {
+				"map": "autumn.path5",
+				"mapId": 4
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Twilight Dew",
+					6
+				]
+			]
+		},
+		"Autumn's Rise - Pathway 5 - Chest 1": {
+			"location": {
+				"map": "autumn.path6",
+				"mapId": 13
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Blue Shell",
+					1
+				]
+			]
+		},
+		"Autumn's Rise - Pathway 5 - Chest 2": {
+			"location": {
+				"map": "autumn.path6",
+				"mapId": 15
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Daikon",
+					1
+				]
+			]
+		},
+		"Autumn's Fall - Ruby Tunnel - Gold Chest": {
+			"location": {
+				"map": "autumn-fall.caves.path-03-exit",
+				"mapId": 29
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Epic Metal",
+					2
+				]
+			]
+		},
+		"Autumn's Fall - Lake Cave 1 - Chest": {
+			"location": {
+				"map": "autumn-fall.caves.path-04-cave-01",
+				"mapId": 51
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Shrimp Risotto",
+					4
+				]
+			]
+		},
+		"Autumn's Fall - Lake Cave 2 - Chest": {
+			"location": {
+				"map": "autumn-fall.caves.path-04-cave-02",
+				"mapId": 92
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Tremor Engine",
+					1
+				]
+			]
+		},
+		"Autumn's Fall - Lake Cave 3 - Silver Chest": {
+			"location": {
+				"map": "autumn-fall.caves.path-04-cave-03",
+				"mapId": 157
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Humming Razor",
+					1
+				]
+			]
+		},
+		"Autumn's Fall - Lake Cave 4 - Chest": {
+			"location": {
+				"map": "autumn-fall.caves.path-04-cave-04",
+				"mapId": 109
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Cold Platter",
+					5
+				]
+			]
+		},
+		"Autumn's Fall - Southern Exit - Chest 1": {
+			"location": {
+				"map": "autumn-fall.path-01",
+				"mapId": 458
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Chili Dog",
+					3
+				]
+			]
+		},
+		"Autumn's Fall - Southern Exit - Chest 2": {
+			"location": {
+				"map": "autumn-fall.path-01",
+				"mapId": 492
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Raw Meat",
+					4
+				]
+			]
+		},
+		"Autumn's Fall - Southern Exit - Chest 3": {
+			"location": {
+				"map": "autumn-fall.path-01",
+				"mapId": 493
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Cross Sandwich",
+					4
+				]
+			]
+		},
+		"Autumn's Fall - Ruined Path - Chest": {
+			"location": {
+				"map": "autumn-fall.path-02",
+				"mapId": 85
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Sunset Dew",
+					8
+				]
+			]
+		},
+		"Autumn's Fall - Ruined Path - Gold Chest": {
+			"location": {
+				"map": "autumn-fall.path-02",
+				"mapId": 98
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Epic Metal",
+					2
+				]
+			]
+		},
+		"Autumn's Fall - Eastern Exit - Silver Chest": {
+			"location": {
+				"map": "autumn-fall.path-03",
+				"mapId": 48
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Sunset Claw",
+					1
+				]
+			]
+		},
+		"Autumn's Fall - Eastern Exit - Chest": {
+			"location": {
+				"map": "autumn-fall.path-03",
+				"mapId": 494
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Ripe Apples",
+					7
+				]
+			]
+		},
+		"Autumn's Fall - Ancient Center - Silver Chest 1": {
+			"location": {
+				"map": "autumn-fall.path-04",
+				"mapId": 14
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Cheese Spaetzle",
+					3
+				]
+			]
+		},
+		"Autumn's Fall - Ancient Center - Silver Chest 2": {
+			"location": {
+				"map": "autumn-fall.path-04",
+				"mapId": 81
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"King's Ring",
+					1
+				]
+			]
+		},
+		"Autumn's Fall - Northern Exit - Chest": {
+			"location": {
+				"map": "autumn-fall.path-05",
+				"mapId": 123
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Pepper Night Tea",
+					4
+				]
+			]
+		},
+		"Autumn's Fall - Northern Exit - Bronze Chest": {
+			"location": {
+				"map": "autumn-fall.path-05",
+				"mapId": 124
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Fruit Pie",
+					3
+				]
+			]
+		},
+		"Autumn's Fall - Pillar Isle - Chest 1": {
+			"location": {
+				"map": "autumn-fall.path-06",
+				"mapId": 39
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Mega-Sandwich",
+					6
+				]
+			]
+		},
+		"Autumn's Fall - Pillar Isle - Chest 2": {
+			"location": {
+				"map": "autumn-fall.path-06",
+				"mapId": 40
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Wolf Cicada",
+					7
+				]
+			]
+		},
+		"Autumn's Fall - Pillar Isle - Chest 3": {
+			"location": {
+				"map": "autumn-fall.path-06",
+				"mapId": 740
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Sweet Berry Tea",
+					7
+				]
+			]
+		},
+		"Autumn's Fall - Village Remains - Silver Chest": {
+			"location": {
+				"map": "autumn-fall.path-07",
+				"mapId": 79
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Crimson Dragonfly",
+					7
+				]
+			]
+		},
+		"Autumn's Fall - Village Remains - Gold Chest": {
+			"location": {
+				"map": "autumn-fall.path-07",
+				"mapId": 85
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Full Course",
+					4
+				]
+			]
+		},
+		"Autumn's Fall - Village Remains - Bronze Chest": {
+			"location": {
+				"map": "autumn-fall.path-07",
+				"mapId": 128
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Bars",
+					3
+				]
+			]
+		},
+		"Autumn's Fall - Secluded Path - Gold Chest": {
+			"location": {
+				"map": "autumn-fall.path-08",
+				"mapId": 527
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Mysterious Box",
+					1
+				]
+			]
+		},
+		"Autumn's Fall - Secluded Path - Chest 1": {
+			"location": {
+				"map": "autumn-fall.path-08",
+				"mapId": 528
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Wrap Roll",
+					4
+				]
+			]
+		},
+		"Autumn's Fall - Secluded Path - Chest 2": {
+			"location": {
+				"map": "autumn-fall.path-08",
+				"mapId": 818
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Green Risotto",
+					3
+				]
+			]
+		},
+		"Autumn's Fall - Villa of Terror - Silver Chest": {
+			"location": {
+				"map": "autumn-fall.path-10",
+				"mapId": 68
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Portrait of Ruin",
+					1
+				]
+			]
+		},
+		"Autumn's Fall - Villa of Terror - Bronze Chest": {
+			"location": {
+				"map": "autumn-fall.path-10",
+				"mapId": 82
+			},
+			"region": {
+				"linear": "20",
+				"open": "open9"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Ticket",
+					1
+				]
+			]
+		},
+		"Autumn's Fall - Para Island 1 - Chest": {
+			"location": {
+				"map": "autumn-fall.raid.raid-01",
+				"mapId": 375
+			},
+			"region": {
+				"linear": "21",
+				"open": "open9.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Chef Sandwich",
+					6
+				]
+			]
+		},
+		"Bergen Village - Bergen South - Chest": {
+			"location": {
+				"map": "bergen.bergen",
+				"mapId": 868
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Sweet Lemonjuice",
+					3
+				]
+			]
+		},
+		"Bergen Village - Bergen South - Bronze Chest 1": {
+			"location": {
+				"map": "bergen.bergen",
+				"mapId": 1258
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Copper Gull",
+					1
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				]
+			}
+		},
+		"Bergen Village - Bergen South - Bronze Chest 2": {
+			"location": {
+				"map": "bergen.bergen",
+				"mapId": 1265
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Metal Gears",
+					3
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				]
+			}
+		},
+		"Bergen Village - Bergen South - Gold Chest": {
+			"location": {
+				"map": "bergen.bergen",
+				"mapId": 1952
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Chest Plate",
+					1
+				]
+			]
+		},
+		"Bergen Village - Bergen North - Chest 1": {
+			"location": {
+				"map": "bergen.bergen2",
+				"mapId": 2003
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Bug Shell",
+					2
+				]
+			]
+		},
+		"Bergen Village - Bergen North - Chest 2": {
+			"location": {
+				"map": "bergen.bergen2",
+				"mapId": 2012
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Mega-Sandwich",
+					4
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				]
+			}
+		},
+		"Bergen Village - Bergen North - Silver Chest": {
+			"location": {
+				"map": "bergen.bergen2",
+				"mapId": 2021
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Cross Sandwich",
+					3
+				]
+			]
+		},
+		"Bergen Village - Bergen North - Chest 3": {
+			"location": {
+				"map": "bergen.bergen2",
+				"mapId": 2889
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Ginger Tom. Salad",
+					2
+				]
+			]
+		},
+		"Bergen Village - Diving Railway - Chest": {
+			"location": {
+				"map": "bergen.elevator",
+				"mapId": 35
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Vanilla Ice Cream",
+					4
+				]
+			]
+		},
+		"Bergen Village - Seeker Hub Cellar - Chest": {
+			"location": {
+				"map": "bergen.inner-questhub-0",
+				"mapId": 130
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Mine Pass",
+					1
+				]
+			]
+		},
+		"Bergen Village - Seeker Hub Cellar - Bronze Chest": {
+			"location": {
+				"map": "bergen.inner-questhub-0",
+				"mapId": 136
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Bronze Chest Plate",
+					1
+				]
+			]
+		},
+		"Bergen Village - Storage Room - Chest": {
+			"location": {
+				"map": "bergen.storage",
+				"mapId": 71
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Just Water",
+					6
+				]
+			]
+		},
+		"Bergen Trail - Abandoned Cave  - Chest": {
+			"location": {
+				"map": "bergen-trail.cave.cave-08-smith",
+				"mapId": 33
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Refined Metal",
+					2
+				]
+			]
+		},
+		"Bergen Trail - Frozen Cave - Chest": {
+			"location": {
+				"map": "bergen-trail.cave.cave-4-1-1",
+				"mapId": 20
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Refined Metal",
+					2
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				]
+			}
+		},
+		"Bergen Trail - Abandoned Ground - Silver Chest": {
+			"location": {
+				"map": "bergen-trail.cave.cave-6-1",
+				"mapId": 416
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Precious Metal",
+					2
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				]
+			}
+		},
+		"Bergen Trail - Pengpeng's Den - Chest": {
+			"location": {
+				"map": "bergen-trail.cave.cave-6-3",
+				"mapId": 24
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Broken Shield",
+					1
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				]
+			}
+		},
+		"Bergen Trail - Entrance - Chest 1": {
+			"location": {
+				"map": "bergen-trail.path-1-entrance",
+				"mapId": 531
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Raw Meat",
+					3
+				]
+			]
+		},
+		"Bergen Trail - Entrance - Chest 2": {
+			"location": {
+				"map": "bergen-trail.path-1-entrance",
+				"mapId": 532
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Veggie Burger",
+					4
+				]
+			]
+		},
+		"Bergen Trail - Rising Path 1 - Chest": {
+			"location": {
+				"map": "bergen-trail.path-2",
+				"mapId": 67
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Sweet Berry Tea",
+					5
+				]
+			]
+		},
+		"Bergen Trail - Off Road 1 - Chest 1": {
+			"location": {
+				"map": "bergen-trail.path-3-1",
+				"mapId": 432
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Blazing Bun",
+					4
+				]
+			]
+		},
+		"Bergen Trail - Off Road 1 - Chest 2": {
+			"location": {
+				"map": "bergen-trail.path-3-1",
+				"mapId": 454
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Pike Wood",
+					6
+				]
+			]
+		},
+		"Bergen Trail - Off Road 2 - Chest 1": {
+			"location": {
+				"map": "bergen-trail.path-3-2",
+				"mapId": 373
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Purple Ore Lump",
+					5
+				]
+			]
+		},
+		"Bergen Trail - Off Road 2 - Chest 2": {
+			"location": {
+				"map": "bergen-trail.path-3-2",
+				"mapId": 399
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Cheese Cracker",
+					4
+				]
+			]
+		},
+		"Bergen Trail - Off Road 2 - Chest 3": {
+			"location": {
+				"map": "bergen-trail.path-3-2",
+				"mapId": 451
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Satchel",
+					3
+				]
+			]
+		},
+		"Bergen Trail - Off Road 3 - Chest 1": {
+			"location": {
+				"map": "bergen-trail.path-3-3",
+				"mapId": 32
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Dropped Mic",
+					3
+				]
+			]
+		},
+		"Bergen Trail - Off Road 3 - Chest 2": {
+			"location": {
+				"map": "bergen-trail.path-3-3",
+				"mapId": 126
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Winter Thorn",
+					4
+				]
+			]
+		},
+		"Bergen Trail - Old Plateau - Gold Chest": {
+			"location": {
+				"map": "bergen-trail.path-4-1-1",
+				"mapId": 1015
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Echo Roll",
+					5
+				]
+			]
+		},
+		"Bergen Trail - Rising Path 2 - Chest": {
+			"location": {
+				"map": "bergen-trail.path-4-1",
+				"mapId": 288
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Veggie Set",
+					5
+				]
+			]
+		},
+		"Bergen Trail - Rising Path 3 - Chest 1": {
+			"location": {
+				"map": "bergen-trail.path-4-2",
+				"mapId": 269
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Winter Thorn",
+					3
+				]
+			]
+		},
+		"Bergen Trail - Rising Path 3 - Chest 2": {
+			"location": {
+				"map": "bergen-trail.path-4-2",
+				"mapId": 643
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Rusty Bits",
+					6
+				]
+			]
+		},
+		"Bergen Trail - Spike Heights - Chest": {
+			"location": {
+				"map": "bergen-trail.path-5",
+				"mapId": 572
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Fruit Pie",
+					4
+				]
+			]
+		},
+		"Bergen Trail - Spike Heights - Bronze Chest": {
+			"location": {
+				"map": "bergen-trail.path-5",
+				"mapId": 1337
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Ginger Tom. Salad",
+					5
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				]
+			}
+		},
+		"Bergen Trail - Icy Cauldron - Silver Chest": {
+			"location": {
+				"map": "bergen-trail.path-6-1",
+				"mapId": 26
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Bars",
+					4
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				]
+			}
+		},
+		"Bergen Trail - Bergen Waterfalls - Chest": {
+			"location": {
+				"map": "bergen-trail.path-6",
+				"mapId": 493
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Triangle",
+					1
+				]
+			]
+		},
+		"Bergen Trail - Rising Path 4 - Chest 1": {
+			"location": {
+				"map": "bergen-trail.path-7-1",
+				"mapId": 994
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Perforated Tophat",
+					1
+				]
+			]
+		},
+		"Bergen Trail - Rising Path 4 - Chest 2": {
+			"location": {
+				"map": "bergen-trail.path-7-1",
+				"mapId": 995
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Chef Sandwich",
+					6
+				]
+			]
+		},
+		"Bergen Trail - Lofty Heights - Bronze Chest": {
+			"location": {
+				"map": "bergen-trail.path-7-2-1",
+				"mapId": 28
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Heaven's Seed",
+					1
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				]
+			}
+		},
+		"Bergen Trail - Windy Climb - Chest": {
+			"location": {
+				"map": "bergen-trail.path-7-2",
+				"mapId": 1027
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Diabolic Horns",
+					4
+				]
+			]
+		},
+		"Bergen Trail - Rising Path 5 - Chest": {
+			"location": {
+				"map": "bergen-trail.path-8",
+				"mapId": 36
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Rocksplitter",
+					1
+				]
+			]
+		},
+		"Temple Mine - Elevator U1 - Chest": {
+			"location": {
+				"map": "cold-dng.b1.center",
+				"mapId": 223
+			},
+			"region": {
+				"linear": "5",
+				"open": "open4.2"
+			},
+			"reward": [
+				[
+					"item",
+					"Bug Shell",
+					3
+				]
+			]
+		},
+		"Temple Mine - Crossing Funnel - Chest": {
+			"location": {
+				"map": "cold-dng.b1.room1",
+				"mapId": 48
+			},
+			"region": {
+				"linear": "5",
+				"open": "open4.2"
+			},
+			"reward": [
+				[
+					"item",
+					"Frosted Carrot",
+					3
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				]
+			}
+		},
+		"Temple Mine - Old Shaft 1 - Chest": {
+			"location": {
+				"map": "cold-dng.b1.room2",
+				"mapId": 29
+			},
+			"region": {
+				"linear": "5",
+				"open": "open4.2"
+			},
+			"reward": [
+				[
+					"item",
+					"Dropped Mic",
+					2
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				]
+			}
+		},
+		"Temple Mine - Old Shaft 2 - Chest": {
+			"location": {
+				"map": "cold-dng.b1.room3",
+				"mapId": 26
+			},
+			"region": {
+				"linear": "5",
+				"open": "open4.2"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Satchel",
+					6
+				]
+			]
+		},
+		"Temple Mine - Testing Chamber - Chest": {
+			"location": {
+				"map": "cold-dng.b1.room4",
+				"mapId": 3
+			},
+			"region": {
+				"linear": "5",
+				"open": "open4.2"
+			},
+			"reward": [
+				[
+					"item",
+					"Mine Key",
+					1
+				]
+			]
+		},
+		"Temple Mine - Old Chamber - Chest": {
+			"location": {
+				"map": "cold-dng.b1.room6",
+				"mapId": 3
+			},
+			"region": {
+				"linear": "6",
+				"open": "open4.3"
+			},
+			"reward": [
+				[
+					"item",
+					"Mine Key",
+					1
+				]
+			]
+		},
+		"Temple Mine - Storage Room 1 - Bronze Chest": {
+			"location": {
+				"map": "cold-dng.b2.room1",
+				"mapId": 32
+			},
+			"region": {
+				"linear": "7",
+				"open": "open4.4"
+			},
+			"reward": [
+				[
+					"item",
+					"Blue Orb",
+					2
+				]
+			]
+		},
+		"Temple Mine - Frozen Chamber 1 - Chest": {
+			"location": {
+				"map": "cold-dng.b2.room2",
+				"mapId": 40
+			},
+			"region": {
+				"linear": "7",
+				"open": "open4.4"
+			},
+			"reward": [
+				[
+					"item",
+					"Mine Key",
+					1
+				]
+			]
+		},
+		"Temple Mine - Frozen Chamber 2 - Bronze Chest 1": {
+			"location": {
+				"map": "cold-dng.b2.room5",
+				"mapId": 21
+			},
+			"region": {
+				"linear": "9",
+				"open": "open4.6"
+			},
+			"reward": [
+				[
+					"item",
+					"Thief's Key",
+					1
+				]
+			]
+		},
+		"Temple Mine - Frozen Chamber 2 - Bronze Chest 2": {
+			"location": {
+				"map": "cold-dng.b2.room5",
+				"mapId": 66
+			},
+			"region": {
+				"linear": "9",
+				"open": "open4.6"
+			},
+			"reward": [
+				[
+					"item",
+					"Refined Metal",
+					2
+				]
+			]
+		},
+		"Temple Mine - Frozen Shaft 1 - Chest": {
+			"location": {
+				"map": "cold-dng.b3.room1",
+				"mapId": 30
+			},
+			"region": {
+				"linear": "7",
+				"open": "open4.4"
+			},
+			"reward": [
+				[
+					"item",
+					"Sweet Lemonjuice",
+					7
+				]
+			]
+		},
+		"Temple Mine - Frozen Shaft 2 - Chest": {
+			"location": {
+				"map": "cold-dng.b3.room2",
+				"mapId": 55
+			},
+			"region": {
+				"linear": "7",
+				"open": "open4.4"
+			},
+			"reward": [
+				[
+					"item",
+					"Furry Cap",
+					1
+				]
+			]
+		},
+		"Temple Mine - Frozen Shaft 3 - Chest": {
+			"location": {
+				"map": "cold-dng.b3.room3",
+				"mapId": 11
+			},
+			"region": {
+				"linear": "7",
+				"open": "open4.4"
+			},
+			"reward": [
+				[
+					"item",
+					"Mine Key",
+					1
+				]
+			]
+		},
+		"Temple Mine - Frozen Shaft 3 - Bronze Chest": {
+			"location": {
+				"map": "cold-dng.b3.room3",
+				"mapId": 22
+			},
+			"region": {
+				"linear": "7",
+				"open": "open4.4"
+			},
+			"reward": [
+				[
+					"item",
+					"Crystal Water",
+					4
+				]
+			]
+		},
+		"Temple Mine - Overrun Chamber - Chest 1": {
+			"location": {
+				"map": "cold-dng.b3.room6",
+				"mapId": 36
+			},
+			"region": {
+				"linear": "7",
+				"open": "open4.4"
+			},
+			"reward": [
+				[
+					"item",
+					"Mine Key",
+					1
+				]
+			]
+		},
+		"Temple Mine - Overrun Chamber - Chest 2": {
+			"location": {
+				"map": "cold-dng.b3.room6",
+				"mapId": 68
+			},
+			"region": {
+				"linear": "7",
+				"open": "open4.4"
+			},
+			"reward": [
+				[
+					"item",
+					"Vanilla Ice Cream",
+					2
+				]
+			]
+		},
+		"Temple Mine - Elevator U4 - Chest": {
+			"location": {
+				"map": "cold-dng.b4.center",
+				"mapId": 298
+			},
+			"region": {
+				"linear": "9",
+				"open": "open4.6"
+			},
+			"reward": [
+				[
+					"item",
+					"Winterclaw",
+					1
+				]
+			],
+			"condition": {
+				"open": [
+					[
+						"item",
+						"Thief's Key",
+						1
+					]
+				]
+			}
+		},
+		"Temple Mine - Infested Chamber - Chest": {
+			"location": {
+				"map": "cold-dng.b4.room10",
+				"mapId": 94
+			},
+			"region": {
+				"linear": "10",
+				"open": "open4.7"
+			},
+			"reward": [
+				[
+					"item",
+					"Mine Master Key",
+					1
+				]
+			],
+			"condition": {
+				"open": [
+					[
+						"item",
+						"Thief's Key",
+						1
+					]
+				]
+			}
+		},
+		"Temple Mine - Forgotten Shaft 1 - Chest": {
+			"location": {
+				"map": "cold-dng.b4.room4",
+				"mapId": 25
+			},
+			"region": {
+				"linear": "9",
+				"open": "open4.6"
+			},
+			"reward": [
+				[
+					"item",
+					"Mine Key",
+					1
+				]
+			],
+			"condition": {
+				"open": [
+					[
+						"item",
+						"Thief's Key",
+						1
+					]
+				]
+			}
+		},
+		"Temple Mine - Forgotten Shaft 2 - Bronze Chest": {
+			"location": {
+				"map": "cold-dng.b4.room5",
+				"mapId": 18
+			},
+			"region": {
+				"linear": "9",
+				"open": "open4.6"
+			},
+			"reward": [
+				[
+					"item",
+					"Ancient Sandals",
+					1
+				]
+			],
+			"condition": {
+				"open": [
+					[
+						"item",
+						"Thief's Key",
+						1
+					]
+				]
+			}
+		},
+		"Temple Mine - Forgotten Shaft 3 - Chest": {
+			"location": {
+				"map": "cold-dng.b4.room6",
+				"mapId": 16
+			},
+			"region": {
+				"linear": "9",
+				"open": "open4.6"
+			},
+			"reward": [
+				[
+					"item",
+					"Mine Key",
+					1
+				]
+			],
+			"condition": {
+				"open": [
+					[
+						"item",
+						"Thief's Key",
+						1
+					]
+				]
+			}
+		},
+		"Temple Mine - Forgotten Shaft 4 - Chest": {
+			"location": {
+				"map": "cold-dng.b4.room7",
+				"mapId": 44
+			},
+			"region": {
+				"linear": "9",
+				"open": "open4.6"
+			},
+			"reward": [
+				[
+					"item",
+					"Mine Key",
+					1
+				]
+			],
+			"condition": {
+				"open": [
+					[
+						"item",
+						"Thief's Key",
+						1
+					]
+				]
+			}
+		},
+		"Temple Mine - Forgotten Shaft 5 - Chest": {
+			"location": {
+				"map": "cold-dng.b4.room8",
+				"mapId": 16
+			},
+			"region": {
+				"linear": "9",
+				"open": "open4.6"
+			},
+			"reward": [
+				[
+					"item",
+					"Mine Key",
+					1
+				]
+			],
+			"condition": {
+				"open": [
+					[
+						"item",
+						"Thief's Key",
+						1
+					]
+				]
+			}
+		},
+		"Temple Mine - Elevator GF - Bronze Chest": {
+			"location": {
+				"map": "cold-dng.g.center",
+				"mapId": 249
+			},
+			"region": {
+				"linear": "4",
+				"open": "open4.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Triangle",
+					1
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				]
+			}
+		},
+		"Temple Mine - Temple Chamber 2 - Chest": {
+			"location": {
+				"map": "cold-dng.g.room2",
+				"mapId": 3
+			},
+			"region": {
+				"linear": "4",
+				"open": "open4.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Mine Key",
+					1
+				]
+			]
+		},
+		"Sapphire Ridge - The Barracks - Bronze Chest": {
+			"location": {
+				"map": "forest.caves.cave-013-pandza-01",
+				"mapId": 385
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Energy Espresso",
+					4
+				]
+			],
+			"condition": {
+				"open": [
+					[
+						"item",
+						"Shock",
+						1
+					]
+				]
+			}
+		},
+		"Sapphire Ridge - The Bellow - Gold Chest": {
+			"location": {
+				"map": "forest.caves.cave-013-pandza-02",
+				"mapId": 133
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Broken Chakrams",
+					1
+				]
+			],
+			"condition": {
+				"open": [
+					[
+						"item",
+						"Shock",
+						1
+					],
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Sapphire Ridge - Sapphire Tunnel - Gold Chest": {
+			"location": {
+				"map": "forest.caves.path-01-entrance",
+				"mapId": 23
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Precious Metal",
+					3
+				]
+			]
+		},
+		"Sapphire Ridge - Eroded Passage - Silver Chest": {
+			"location": {
+				"map": "forest.caves.path-02-to-08",
+				"mapId": 1
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Cobalt Crystal",
+					4
+				]
+			]
+		},
+		"Sapphire Ridge - Eroded Passage - Chest": {
+			"location": {
+				"map": "forest.caves.path-02-to-08",
+				"mapId": 30
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Hotsauce",
+					6
+				]
+			]
+		},
+		"Sapphire Ridge - Spider Chasm - Bronze Chest": {
+			"location": {
+				"map": "forest.caves.path-06-chasm",
+				"mapId": 40
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Sticky Web",
+					6
+				]
+			]
+		},
+		"Sapphire Ridge - Spider Chasm - Gold Chest": {
+			"location": {
+				"map": "forest.caves.path-06-chasm",
+				"mapId": 63
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Tremor Engine",
+					1
+				]
+			]
+		},
+		"Sapphire Ridge - Narrow Passage - Silver Chest": {
+			"location": {
+				"map": "forest.caves.path-07-to-08",
+				"mapId": 5
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Wrap Roll",
+					5
+				]
+			]
+		},
+		"Sapphire Ridge - Narrow Passage - Bronze Chest": {
+			"location": {
+				"map": "forest.caves.path-07-to-08",
+				"mapId": 13
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Spark Tin",
+					8
+				]
+			]
+		},
+		"Sapphire Ridge - Wheel Passage - Gold Chest": {
+			"location": {
+				"map": "forest.caves.path-08-to-10",
+				"mapId": 29
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Shining Bracer",
+					1
+				]
+			]
+		},
+		"Sapphire Ridge - Wheel Passage - Bronze Chest": {
+			"location": {
+				"map": "forest.caves.path-08-to-10",
+				"mapId": 32
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Sweet Berry Tea",
+					7
+				]
+			],
+			"condition": {
+				"open": [
+					[
+						"item",
+						"Shock",
+						1
+					]
+				]
+			}
+		},
+		"Sapphire Ridge - Cave Inn 1F - Chest": {
+			"location": {
+				"map": "forest.interior.inn-og-01",
+				"mapId": 128
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Sticky Web",
+					2
+				]
+			]
+		},
+		"Sapphire Ridge - Cave Inn Storage - Gold Chest": {
+			"location": {
+				"map": "forest.interior.inn-storage",
+				"mapId": 87
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Old Blueprint",
+					1
+				]
+			]
+		},
+		"Sapphire Ridge - Western Exit - Chest": {
+			"location": {
+				"map": "forest.path-01-entrance",
+				"mapId": 72
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Vanilla Ice Cream",
+					4
+				]
+			]
+		},
+		"Sapphire Ridge - Western Exit - Bronze Chest": {
+			"location": {
+				"map": "forest.path-01-entrance",
+				"mapId": 109
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Pepper Night Tea",
+					6
+				]
+			]
+		},
+		"Sapphire Ridge - North West Path - Silver Chest": {
+			"location": {
+				"map": "forest.path-02",
+				"mapId": 157
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Samurai Shell",
+					4
+				]
+			]
+		},
+		"Sapphire Ridge - North West Path - Bronze Chest": {
+			"location": {
+				"map": "forest.path-02",
+				"mapId": 160
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Bars",
+					3
+				]
+			]
+		},
+		"Sapphire Ridge - River Road - Bronze Chest 1": {
+			"location": {
+				"map": "forest.path-03",
+				"mapId": 11
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Steel Bamboo",
+					4
+				]
+			]
+		},
+		"Sapphire Ridge - River Road - Gold Chest": {
+			"location": {
+				"map": "forest.path-03",
+				"mapId": 53
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Tremor Engine",
+					1
+				]
+			]
+		},
+		"Sapphire Ridge - River Road - Bronze Chest 2": {
+			"location": {
+				"map": "forest.path-03",
+				"mapId": 145
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Shrimp Risotto",
+					5
+				]
+			]
+		},
+		"Sapphire Ridge - The Cave Inn - Bronze Chest": {
+			"location": {
+				"map": "forest.path-04-hostel",
+				"mapId": 52
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Raw Meat",
+					6
+				]
+			]
+		},
+		"Sapphire Ridge - The Cave Inn - Gold Chest": {
+			"location": {
+				"map": "forest.path-04-hostel",
+				"mapId": 184
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Cross Sandwich",
+					4
+				]
+			]
+		},
+		"Sapphire Ridge - Tranquil Bamboo - Bronze Chest": {
+			"location": {
+				"map": "forest.path-04-vaga",
+				"mapId": 5
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Hoverpad",
+					3
+				]
+			]
+		},
+		"Sapphire Ridge - Tranquil Bamboo - Chest": {
+			"location": {
+				"map": "forest.path-04-vaga",
+				"mapId": 6
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Veggie Set",
+					2
+				]
+			]
+		},
+		"Sapphire Ridge - Bamboo Thicket - Silver Chest": {
+			"location": {
+				"map": "forest.path-05",
+				"mapId": 4
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Sharp Splitter",
+					2
+				]
+			]
+		},
+		"Sapphire Ridge - Bamboo Thicket - Gold Chest": {
+			"location": {
+				"map": "forest.path-05",
+				"mapId": 9
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Tengu Mask",
+					1
+				]
+			]
+		},
+		"Sapphire Ridge - North East Path - Silver Chest": {
+			"location": {
+				"map": "forest.path-06",
+				"mapId": 33
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Ronin Shell",
+					4
+				]
+			]
+		},
+		"Sapphire Ridge - North East Path - Gold Chest": {
+			"location": {
+				"map": "forest.path-06",
+				"mapId": 53
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Bluefiber Robe",
+					1
+				]
+			]
+		},
+		"Sapphire Ridge - Flower Lake - Gold Chest 1": {
+			"location": {
+				"map": "forest.path-07",
+				"mapId": 6
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Omni Lock",
+					1
+				]
+			]
+		},
+		"Sapphire Ridge - Flower Lake - Gold Chest 2": {
+			"location": {
+				"map": "forest.path-07",
+				"mapId": 44
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Sonic Spike",
+					1
+				]
+			]
+		},
+		"Sapphire Ridge - Carved Pathway - Gold Chest": {
+			"location": {
+				"map": "forest.path-08",
+				"mapId": 68
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Full Course",
+					4
+				]
+			]
+		},
+		"Sapphire Ridge - Carved Pathway - Silver Chest": {
+			"location": {
+				"map": "forest.path-08",
+				"mapId": 82
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Echo Roll",
+					4
+				]
+			],
+			"condition": {
+				"open": [
+					[
+						"item",
+						"Shock",
+						1
+					]
+				]
+			}
+		},
+		"Sapphire Ridge - Carved Pathway - Bronze Chest": {
+			"location": {
+				"map": "forest.path-08",
+				"mapId": 90
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Catalop Pellet",
+					8
+				]
+			],
+			"condition": {
+				"open": [
+					[
+						"item",
+						"Shock",
+						1
+					]
+				]
+			}
+		},
+		"Sapphire Ridge - High Ground - Gold Chest": {
+			"location": {
+				"map": "forest.path-09",
+				"mapId": 24
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Burglar's Rope",
+					1
+				]
+			],
+			"condition": {
+				"open": [
+					[
+						"item",
+						"Shock",
+						1
+					]
+				]
+			}
+		},
+		"Sapphire Ridge - High Ground - Silver Chest": {
+			"location": {
+				"map": "forest.path-09",
+				"mapId": 100
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Mystery Grape",
+					5
+				]
+			],
+			"condition": {
+				"open": [
+					[
+						"item",
+						"Shock",
+						1
+					]
+				]
+			}
+		},
+		"Sapphire Ridge - Old Dojo - Silver Chest": {
+			"location": {
+				"map": "forest.path-10",
+				"mapId": 78
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Green Risotto",
+					3
+				]
+			]
+		},
+		"Sapphire Ridge - Old Dojo - Gold Chest 1": {
+			"location": {
+				"map": "forest.path-10",
+				"mapId": 167
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Lead Boots",
+					1
+				]
+			]
+		},
+		"Sapphire Ridge - Old Dojo - Gold Chest 2": {
+			"location": {
+				"map": "forest.path-10",
+				"mapId": 904
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Warkeeper",
+					1
+				]
+			]
+		},
+		"Sapphire Ridge - Dream Pond - Gold Chest": {
+			"location": {
+				"map": "forest.path-11-behind-maze",
+				"mapId": 59
+			},
+			"region": {
+				"linear": "33",
+				"open": "open16.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Dream Globe",
+					1
+				]
+			]
+		},
+		"Sapphire Ridge - Ascension Temple - Gold Chest": {
+			"location": {
+				"map": "forest.path-12",
+				"mapId": 298
+			},
+			"region": {
+				"linear": "33",
+				"open": "open16.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Antique Token",
+					1
+				]
+			],
+			"condition": {
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Sapphire Ridge - Ascension Temple - Silver Chest 1": {
+			"location": {
+				"map": "forest.path-12",
+				"mapId": 301
+			},
+			"region": {
+				"linear": "33",
+				"open": "open16.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Epic Metal",
+					2
+				]
+			],
+			"condition": {
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Sapphire Ridge - Ascension Temple - Silver Chest 2": {
+			"location": {
+				"map": "forest.path-12",
+				"mapId": 302
+			},
+			"region": {
+				"linear": "33",
+				"open": "open16.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Ticket",
+					3
+				]
+			],
+			"condition": {
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Sapphire Ridge - Baton Pond - Bronze Chest": {
+			"location": {
+				"map": "forest.path-13",
+				"mapId": 814
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"reward": [
+				[
+					"item",
+					"Vanilla Ice Cream",
+					4
+				]
+			]
+		},
+		"Maroon Valley - Mystery Cave - Gold Chest": {
+			"location": {
+				"map": "heat.caves.cliff-cave-01",
+				"mapId": 42
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Everlasting Amber",
+					1
+				]
+			]
+		},
+		"Maroon Valley - Mystery Cave - Silver Chest": {
+			"location": {
+				"map": "heat.caves.cliff-cave-01",
+				"mapId": 43
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Lucid Shard",
+					3
+				]
+			]
+		},
+		"Maroon Valley - Cursed Temple - Silver Chest 1": {
+			"location": {
+				"map": "heat.caves.cliffs-temple-02",
+				"mapId": 48
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Ancient Earth",
+					4
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Heat",
+						1
+					],
+					[
+						"item",
+						"Cold",
+						1
+					],
+					[
+						"item",
+						"Cursed Coin",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Heat",
+						1
+					],
+					[
+						"item",
+						"Cold",
+						1
+					],
+					[
+						"item",
+						"Cursed Coin",
+						1
+					]
+				]
+			}
+		},
+		"Maroon Valley - Cursed Temple - Silver Chest 2": {
+			"location": {
+				"map": "heat.caves.cliffs-temple-02",
+				"mapId": 86
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Bright Bracer",
+					1
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Heat",
+						1
+					],
+					[
+						"item",
+						"Cold",
+						1
+					],
+					[
+						"item",
+						"Cursed Coin",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Heat",
+						1
+					],
+					[
+						"item",
+						"Cold",
+						1
+					],
+					[
+						"item",
+						"Cursed Coin",
+						1
+					]
+				]
+			}
+		},
+		"Maroon Valley - Cursed Temple Treasure Room - Bronze Chest": {
+			"location": {
+				"map": "heat.caves.cliff-temple-03",
+				"mapId": 107
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Broken Sword",
+					1
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Heat",
+						1
+					],
+					[
+						"item",
+						"Cold",
+						1
+					],
+					[
+						"item",
+						"Cursed Coin",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Heat",
+						1
+					],
+					[
+						"item",
+						"Cold",
+						1
+					],
+					[
+						"item",
+						"Cursed Coin",
+						1
+					]
+				]
+			}
+		},
+		"Maroon Valley - Maroon Cave 1 - Chest": {
+			"location": {
+				"map": "heat.caves.maroon-cave-01",
+				"mapId": 404
+			},
+			"region": {
+				"linear": "12",
+				"open": "open6"
+			},
+			"reward": [
+				[
+					"item",
+					"Kebab Roll",
+					6
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Heat",
+						1
+					]
+				]
+			}
+		},
+		"Maroon Valley - River Cliff - Chest 1": {
+			"location": {
+				"map": "heat.cliffs.cliffs-path-01",
+				"mapId": 105
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Mighty Strand",
+					1
+				]
+			]
+		},
+		"Maroon Valley - River Cliff - Chest 2": {
+			"location": {
+				"map": "heat.cliffs.cliffs-path-01",
+				"mapId": 197
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Crystal Leek",
+					6
+				]
+			]
+		},
+		"Maroon Valley - Endless Pit - Chest 1": {
+			"location": {
+				"map": "heat.cliffs.cliffs-path-02",
+				"mapId": 29
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Lucid Shard",
+					2
+				]
+			]
+		},
+		"Maroon Valley - Endless Pit - Chest 2": {
+			"location": {
+				"map": "heat.cliffs.cliffs-path-02",
+				"mapId": 30
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Old Bones",
+					5
+				]
+			]
+		},
+		"Maroon Valley - Endless Pit - Chest 3": {
+			"location": {
+				"map": "heat.cliffs.cliffs-path-02",
+				"mapId": 32
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Ancient Earth",
+					3
+				]
+			]
+		},
+		"Maroon Valley - Vivid Path - Chest 1": {
+			"location": {
+				"map": "heat.oasis.oasis-path-01",
+				"mapId": 8
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Palmapple Seed",
+					2
+				]
+			]
+		},
+		"Maroon Valley - Vivid Path - Chest 2": {
+			"location": {
+				"map": "heat.oasis.oasis-path-01",
+				"mapId": 9
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Vivid Water",
+					7
+				]
+			]
+		},
+		"Maroon Valley - Maroon Oasis - Chest 1": {
+			"location": {
+				"map": "heat.oasis.oasis-path-02",
+				"mapId": 80
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Maroon Chestnut",
+					2
+				]
+			]
+		},
+		"Maroon Valley - Maroon Oasis - Chest 2": {
+			"location": {
+				"map": "heat.oasis.oasis-path-02",
+				"mapId": 97
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Fruit Salad",
+					6
+				]
+			]
+		},
+		"Maroon Valley - Bright Path - Bronze Chest": {
+			"location": {
+				"map": "heat.oasis.oasis-path-03",
+				"mapId": 34
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Hidden Blade",
+					1
+				]
+			]
+		},
+		"Maroon Valley - Rising Railway - Chest": {
+			"location": {
+				"map": "heat.path-00",
+				"mapId": 6
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Frosted Carrot",
+					3
+				]
+			]
+		},
+		"Maroon Valley - East Entrance - Chest": {
+			"location": {
+				"map": "heat.path-01-entrance",
+				"mapId": 55
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Satchel",
+					6
+				]
+			]
+		},
+		"Maroon Valley - Dusty Path - Bronze Chest": {
+			"location": {
+				"map": "heat.path-02",
+				"mapId": 7
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Thief's Band",
+					1
+				]
+			]
+		},
+		"Maroon Valley - Dusty Path - Chest": {
+			"location": {
+				"map": "heat.path-02",
+				"mapId": 14
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Arid Lumber",
+					4
+				]
+			]
+		},
+		"Maroon Valley - Crossroad - Chest 1": {
+			"location": {
+				"map": "heat.path-03",
+				"mapId": 23
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Vanilla Ice Cream",
+					2
+				]
+			]
+		},
+		"Maroon Valley - Crossroad - Chest 2": {
+			"location": {
+				"map": "heat.path-03",
+				"mapId": 25
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Bars",
+					2
+				]
+			]
+		},
+		"Maroon Valley - Long Piece - Chest": {
+			"location": {
+				"map": "heat.path-04",
+				"mapId": 34
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Pepper Night Tea",
+					4
+				]
+			]
+		},
+		"Maroon Valley - Barren Arcs - Chest": {
+			"location": {
+				"map": "heat.path-05",
+				"mapId": 2
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Squishy Teeth",
+					3
+				]
+			]
+		},
+		"Maroon Valley - Barren Arcs - Bronze Chest": {
+			"location": {
+				"map": "heat.path-05",
+				"mapId": 14
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Glaring Rock",
+					7
+				]
+			]
+		},
+		"Maroon Valley - Barren Land - Chest": {
+			"location": {
+				"map": "heat.path-06",
+				"mapId": 16
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Chili Dog",
+					3
+				]
+			]
+		},
+		"Maroon Valley - Overpass - Chest 1": {
+			"location": {
+				"map": "heat.path-07",
+				"mapId": 7
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Phoenix Feather",
+					4
+				]
+			]
+		},
+		"Maroon Valley - Overpass - Chest 2": {
+			"location": {
+				"map": "heat.path-07",
+				"mapId": 78
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Blazing Bun",
+					2
+				]
+			]
+		},
+		"Maroon Valley - Paw Cliffs - Chest": {
+			"location": {
+				"map": "heat.path-08",
+				"mapId": 1
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Drill Stone",
+					3
+				]
+			]
+		},
+		"Maroon Valley - Paw Cliffs - Silver Chest": {
+			"location": {
+				"map": "heat.path-08",
+				"mapId": 4
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Shrimp Risotto",
+					5
+				]
+			]
+		},
+		"Maroon Valley - Torn Road - Chest 1": {
+			"location": {
+				"map": "heat.path-09",
+				"mapId": 8
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Satchel",
+					3
+				]
+			]
+		},
+		"Maroon Valley - Torn Road - Chest 2": {
+			"location": {
+				"map": "heat.path-09",
+				"mapId": 41
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Flaming Bun",
+					4
+				]
+			]
+		},
+		"Maroon Valley - West Entrance - Chest": {
+			"location": {
+				"map": "heat.path-11",
+				"mapId": 19
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Hardened Liver",
+					2
+				]
+			]
+		},
+		"Maroon Valley - Fractured Path - Silver Chest": {
+			"location": {
+				"map": "heat.shortcut-02-09",
+				"mapId": 17
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Chef Sandwich",
+					6
+				]
+			]
+		},
+		"Maroon Valley - Fractured Path - Chest": {
+			"location": {
+				"map": "heat.shortcut-02-09",
+				"mapId": 19
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Rainbow Gem",
+					2
+				]
+			]
+		},
+		"Faj'ro Temple - Right Chamber 1 (1F) - Chest": {
+			"location": {
+				"map": "heat-dng.f1.room-03",
+				"mapId": 33
+			},
+			"region": {
+				"linear": "15",
+				"open": "open7.3"
+			},
+			"reward": [
+				[
+					"item",
+					"Butter Silk",
+					4
+				]
+			]
+		},
+		"Faj'ro Temple - Bottom Chamber - Chest": {
+			"location": {
+				"map": "heat-dng.f3.room-02",
+				"mapId": 31
+			},
+			"region": {
+				"linear": "17",
+				"open": "open7.5"
+			},
+			"reward": [
+				[
+					"item",
+					"Magma Residue",
+					2
+				]
+			]
+		},
+		"Faj'ro Temple - Large Fire Chamber - Bronze Chest": {
+			"location": {
+				"map": "heat-dng.f3.room-05",
+				"mapId": 69
+			},
+			"region": {
+				"linear": "17.5",
+				"open": "open7.6"
+			},
+			"reward": [
+				[
+					"item",
+					"White Key",
+					1
+				]
+			]
+		},
+		"Faj'ro Temple - Large Fire Chamber - Silver Chest": {
+			"location": {
+				"map": "heat-dng.f3.room-05",
+				"mapId": 79
+			},
+			"region": {
+				"linear": "17.5",
+				"open": "open7.6"
+			},
+			"reward": [
+				[
+					"item",
+					"Precious Metal",
+					2
+				]
+			]
+		},
+		"Faj'ro Temple - Test of Wisdom - Chest": {
+			"location": {
+				"map": "heat-dng.f3.room-07",
+				"mapId": 19
+			},
+			"region": {
+				"linear": "17.5",
+				"open": "open7.6"
+			},
+			"reward": [
+				[
+					"item",
+					"Faj'ro Key",
+					1
+				]
+			]
+		},
+		"Faj'ro Temple - West Pathway - Chest": {
+			"location": {
+				"map": "heat-dng.f4.room-02",
+				"mapId": 38
+			},
+			"region": {
+				"linear": "17",
+				"open": "open7.5"
+			},
+			"reward": [
+				[
+					"item",
+					"Laser Eyes",
+					1
+				]
+			]
+		},
+		"Faj'ro Temple - Test of Surprise - Chest": {
+			"location": {
+				"map": "heat-dng.f4.room-03",
+				"mapId": 21
+			},
+			"region": {
+				"linear": "17",
+				"open": "open7.5"
+			},
+			"reward": [
+				[
+					"item",
+					"Faj'ro Key",
+					1
+				]
+			]
+		},
+		"Faj'ro Temple - West Chamber 1 - Chest": {
+			"location": {
+				"map": "heat-dng.f4.room-05",
+				"mapId": 56
+			},
+			"region": {
+				"linear": "17.5",
+				"open": "open7.6"
+			},
+			"reward": [
+				[
+					"item",
+					"Faj'ro Key",
+					1
+				]
+			]
+		},
+		"Faj'ro Temple - East Chamber 1 - Chest": {
+			"location": {
+				"map": "heat-dng.f4.room-09",
+				"mapId": 92
+			},
+			"region": {
+				"linear": "17.5",
+				"open": "open7.6"
+			},
+			"reward": [
+				[
+					"item",
+					"Faj'ro Key",
+					1
+				]
+			]
+		},
+		"Faj'ro Temple - East Pathway - Silver Chest": {
+			"location": {
+				"map": "heat-dng.f4.room-10",
+				"mapId": 78
+			},
+			"region": {
+				"linear": "17",
+				"open": "open7.5"
+			},
+			"reward": [
+				[
+					"item",
+					"Dented Crown",
+					1
+				]
+			]
+		},
+		"Faj'ro Temple - Test of Memory - Chest": {
+			"location": {
+				"map": "heat-dng.f4.room-11",
+				"mapId": 27
+			},
+			"region": {
+				"linear": "17.5",
+				"open": "open7.6"
+			},
+			"reward": [
+				[
+					"item",
+					"Faj'ro Key",
+					1
+				]
+			]
+		},
+		"Faj'ro Temple - Chamber of Prosperity - Chest": {
+			"location": {
+				"map": "heat-dng.f4.room-12",
+				"mapId": 85
+			},
+			"region": {
+				"linear": "18",
+				"open": "open7.7"
+			},
+			"reward": [
+				[
+					"item",
+					"Faj'ro Master Key",
+					1
+				]
+			]
+		},
+		"Faj'ro Temple - Left Chamber 1 - Chest": {
+			"location": {
+				"map": "heat-dng.g.room-03",
+				"mapId": 71
+			},
+			"region": {
+				"linear": "13",
+				"open": "open7.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Faj'ro Key",
+					1
+				]
+			]
+		},
+		"Faj'ro Temple - Fire and Sand 2 - Chest": {
+			"location": {
+				"map": "heat-dng.g.room-07",
+				"mapId": 28
+			},
+			"region": {
+				"linear": "14",
+				"open": "open7.2"
+			},
+			"reward": [
+				[
+					"item",
+					"Jelly Extract",
+					3
+				]
+			]
+		},
+		"Faj'ro Temple - Balance Room 2 - Chest 1": {
+			"location": {
+				"map": "heat-dng.g.room-09",
+				"mapId": 85
+			},
+			"region": {
+				"linear": "14",
+				"open": "open7.2"
+			},
+			"reward": [
+				[
+					"item",
+					"Crystal Water",
+					3
+				]
+			]
+		},
+		"Faj'ro Temple - Balance Room 2 - Chest 2": {
+			"location": {
+				"map": "heat-dng.g.room-09",
+				"mapId": 86
+			},
+			"region": {
+				"linear": "14",
+				"open": "open7.2"
+			},
+			"reward": [
+				[
+					"item",
+					"Vanilla Ice Cream",
+					4
+				]
+			]
+		},
+		"Faj'ro Temple - Right Chamber 1 (GF) - Chest": {
+			"location": {
+				"map": "heat-dng.g.room-10",
+				"mapId": 16
+			},
+			"region": {
+				"linear": "14",
+				"open": "open7.2"
+			},
+			"reward": [
+				[
+					"item",
+					"Chef Sandwich",
+					5
+				]
+			]
+		},
+		"Faj'ro Temple - Right Chamber 2 - Chest": {
+			"location": {
+				"map": "heat-dng.g.room-12",
+				"mapId": 110
+			},
+			"region": {
+				"linear": "14",
+				"open": "open7.2"
+			},
+			"reward": [
+				[
+					"item",
+					"Faj'ro Key",
+					1
+				]
+			]
+		},
+		"Faj'ro Temple - Test of Memory 1 - Chest": {
+			"location": {
+				"map": "heat-dng.g.room-13",
+				"mapId": 2
+			},
+			"region": {
+				"linear": "14",
+				"open": "open7.2"
+			},
+			"reward": [
+				[
+					"item",
+					"Faj'ro Key",
+					1
+				]
+			]
+		},
+		"Faj'ro Temple - Test of Memory 2 - Chest": {
+			"location": {
+				"map": "heat-dng.g.room-14",
+				"mapId": 2
+			},
+			"region": {
+				"linear": "14",
+				"open": "open7.2"
+			},
+			"reward": [
+				[
+					"item",
+					"Faj'ro Key",
+					1
+				]
+			]
+		},
+		"Ba'kii Kum - Solar Farm - Chest 1": {
+			"location": {
+				"map": "heat-village.baki-1",
+				"mapId": 99
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Ancient Earth",
+					3
+				]
+			]
+		},
+		"Ba'kii Kum - Solar Farm - Chest 2": {
+			"location": {
+				"map": "heat-village.baki-1",
+				"mapId": 737
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Ancient Earth",
+					2
+				]
+			]
+		},
+		"Ba'kii Kum - Market - Chest": {
+			"location": {
+				"map": "heat-village.baki-2",
+				"mapId": 259
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Phoenix Feather",
+					2
+				]
+			]
+		},
+		"Ba'kii Kum - Market - Bronze Chest": {
+			"location": {
+				"map": "heat-village.baki-2",
+				"mapId": 1227
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Tattered Satchel",
+					1
+				]
+			]
+		},
+		"Ba'kii Kum - Bazaar House - Silver Chest": {
+			"location": {
+				"map": "heat-village.interior.tradebuilding-eg",
+				"mapId": 131
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"reward": [
+				[
+					"item",
+					"Silver Chest Plate",
+					1
+				]
+			]
+		},
+		"Gaia's Garden - Dripping Cave - Silver Chest": {
+			"location": {
+				"map": "jungle.caves.grove-cave-01",
+				"mapId": 3
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Bars",
+					6
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Gaia's Garden - Tranquility Pond - Gold Chest": {
+			"location": {
+				"map": "jungle.caves.grove-cave-02",
+				"mapId": 1
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Galaxy Berry",
+					1
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Gaia's Garden - Infested Cavern - Bronze Chest": {
+			"location": {
+				"map": "jungle.caves.smuggle-route-2",
+				"mapId": 55
+			},
+			"region": {
+				"linear": "25",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Ticket",
+					1
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Gaia's Garden - Infested Cavern - Silver Chest": {
+			"location": {
+				"map": "jungle.caves.smuggle-route-2",
+				"mapId": 60
+			},
+			"region": {
+				"linear": "25",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Stout Backplate",
+					3
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Gaia's Garden - V'rda Vil West - Gold Chest": {
+			"location": {
+				"map": "jungle.clearing.clear-path-01",
+				"mapId": 5
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Star Fruit",
+					5
+				]
+			]
+		},
+		"Gaia's Garden - V'rda Vil West - Silver Chest": {
+			"location": {
+				"map": "jungle.clearing.clear-path-01",
+				"mapId": 6
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Plain Cube",
+					2
+				]
+			]
+		},
+		"Gaia's Garden - V'rda Vil West - Bronze Chest": {
+			"location": {
+				"map": "jungle.clearing.clear-path-01",
+				"mapId": 125
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Metal Down",
+					2
+				]
+			]
+		},
+		"Gaia's Garden - V'rda Vil East - Bronze Chest": {
+			"location": {
+				"map": "jungle.clearing.clear-path-02",
+				"mapId": 311
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Snack Mix",
+					4
+				]
+			]
+		},
+		"Gaia's Garden - V'rda Vil East - Silver Chest": {
+			"location": {
+				"map": "jungle.clearing.clear-path-02",
+				"mapId": 351
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Elder Wood",
+					5
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Gaia's Garden - V'rda Vil North - Gold Chest": {
+			"location": {
+				"map": "jungle.clearing.clear-path-03",
+				"mapId": 31
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Star Fruit",
+					3
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Gaia's Garden - V'rda Vil North - Silver Chest": {
+			"location": {
+				"map": "jungle.clearing.clear-path-03",
+				"mapId": 33
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Precious Metal",
+					2
+				]
+			]
+		},
+		"Gaia's Garden - Chief's Den - Silver Chest": {
+			"location": {
+				"map": "jungle.clearing.clear-path-04",
+				"mapId": 27
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Bars",
+					3
+				]
+			]
+		},
+		"Gaia's Garden - Chief's Den - Bronze Chest": {
+			"location": {
+				"map": "jungle.clearing.clear-path-04",
+				"mapId": 91
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Prime Pistachios",
+					2
+				]
+			]
+		},
+		"Gaia's Garden - Chief's Den - Gold Chest": {
+			"location": {
+				"map": "jungle.clearing.clear-path-04",
+				"mapId": 135
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Geta Straps",
+					1
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Gaia's Garden - Grand Krys'kajo Entrance - Bronze Chest": {
+			"location": {
+				"map": "jungle.dng.tree-exterior",
+				"mapId": 432
+			},
+			"region": {
+				"linear": "28",
+				"open": "open15.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Crystal Water",
+					4
+				]
+			]
+		},
+		"Gaia's Garden - So'najiz Temple Entrance - Silver Chest": {
+			"location": {
+				"map": "jungle.dng.wave-exterior",
+				"mapId": 521
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Bars",
+					2
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Gaia's Garden - Covert Path - Chest 1": {
+			"location": {
+				"map": "jungle.grove.grove-path-01",
+				"mapId": 4
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Moon Fruit",
+					4
+				]
+			]
+		},
+		"Gaia's Garden - Covert Path - Chest 2": {
+			"location": {
+				"map": "jungle.grove.grove-path-01",
+				"mapId": 5
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Flaming Bun",
+					4
+				]
+			]
+		},
+		"Gaia's Garden - Royal Grove - Silver Chest": {
+			"location": {
+				"map": "jungle.grove.grove-path-02",
+				"mapId": 67
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Metal Down",
+					3
+				]
+			]
+		},
+		"Gaia's Garden - Royal Grove - Chest 1": {
+			"location": {
+				"map": "jungle.grove.grove-path-02",
+				"mapId": 68
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Salted Peanuts",
+					7
+				]
+			]
+		},
+		"Gaia's Garden - Royal Grove - Chest 2": {
+			"location": {
+				"map": "jungle.grove.grove-path-02",
+				"mapId": 69
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Common Planter",
+					8
+				]
+			]
+		},
+		"Gaia's Garden - Royal Grove - Chest 3": {
+			"location": {
+				"map": "jungle.grove.grove-path-02",
+				"mapId": 80
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Glow Pear",
+					3
+				]
+			]
+		},
+		"Gaia's Garden - Calm Backyard - Chest 1": {
+			"location": {
+				"map": "jungle.grove.grove-path-03",
+				"mapId": 41
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Maultasche",
+					4
+				]
+			]
+		},
+		"Gaia's Garden - Calm Backyard - Chest 2": {
+			"location": {
+				"map": "jungle.grove.grove-path-03",
+				"mapId": 42
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Cup o' Coffee",
+					6
+				]
+			]
+		},
+		"Gaia's Garden - Lost Shrine Interior 1F - Chest": {
+			"location": {
+				"map": "jungle.grove.lost-shrine-02",
+				"mapId": 158
+			},
+			"region": {
+				"linear": "28",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Energy Espresso",
+					2
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					],
+					[
+						"item",
+						"Shock",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					],
+					[
+						"item",
+						"Shock",
+						1
+					]
+				]
+			}
+		},
+		"Gaia's Garden - Lost Shrine Interior B1 - Gold Chest": {
+			"location": {
+				"map": "jungle.grove.lost-shrine-03",
+				"mapId": 289
+			},
+			"region": {
+				"linear": "28",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Geta Glue",
+					3
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					],
+					[
+						"item",
+						"Shock",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					],
+					[
+						"item",
+						"Shock",
+						1
+					]
+				]
+			}
+		},
+		"Gaia's Garden - Lost Shrine Interior B2 - Silver Chest": {
+			"location": {
+				"map": "jungle.grove.lost-shrine-04",
+				"mapId": 363
+			},
+			"region": {
+				"linear": "28",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Broken Deck",
+					1
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					],
+					[
+						"item",
+						"Shock",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					],
+					[
+						"item",
+						"Shock",
+						1
+					]
+				]
+			}
+		},
+		"Gaia's Garden - Lost Lookout - Chest 1": {
+			"location": {
+				"map": "jungle.infested.infested-path-01",
+				"mapId": 22
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Veggie Wraps",
+					5
+				]
+			]
+		},
+		"Gaia's Garden - Lost Lookout - Chest 2": {
+			"location": {
+				"map": "jungle.infested.infested-path-01",
+				"mapId": 63
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Werewolf Stick",
+					4
+				]
+			]
+		},
+		"Gaia's Garden - Lost Lookout - Chest 3": {
+			"location": {
+				"map": "jungle.infested.infested-path-01",
+				"mapId": 170
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Energy Espresso",
+					3
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Gaia's Garden - Seared Lake - Chest 1": {
+			"location": {
+				"map": "jungle.infested.infested-path-02",
+				"mapId": 6
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Blazing Bun",
+					2
+				]
+			]
+		},
+		"Gaia's Garden - Seared Lake - Chest 2": {
+			"location": {
+				"map": "jungle.infested.infested-path-02",
+				"mapId": 32
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Fruit Pie",
+					2
+				]
+			]
+		},
+		"Gaia's Garden - Infested Marshes South - Chest 1": {
+			"location": {
+				"map": "jungle.infested.infested-path-03",
+				"mapId": 18
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Lazy Claw",
+					3
+				]
+			]
+		},
+		"Gaia's Garden - Infested Marshes South - Chest 2": {
+			"location": {
+				"map": "jungle.infested.infested-path-03",
+				"mapId": 70
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Stout Backplate",
+					2
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Gaia's Garden - Infested Marshes South - Chest 3": {
+			"location": {
+				"map": "jungle.infested.infested-path-03",
+				"mapId": 90
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Venom Shroom",
+					9
+				]
+			]
+		},
+		"Gaia's Garden - Infested Marshes South - Chest 4": {
+			"location": {
+				"map": "jungle.infested.infested-path-03",
+				"mapId": 97
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Mega-Sandwich",
+					2
+				]
+			]
+		},
+		"Gaia's Garden - Infested Marshes North - Chest 1": {
+			"location": {
+				"map": "jungle.infested.infested-path-04",
+				"mapId": 24
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Ginger Tom. Salad",
+					3
+				]
+			]
+		},
+		"Gaia's Garden - Infested Marshes North - Chest 2": {
+			"location": {
+				"map": "jungle.infested.infested-path-04",
+				"mapId": 58
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Spicy Beat-0-Type",
+					3
+				]
+			]
+		},
+		"Gaia's Garden - Infested Marshes North - Silver Chest 1": {
+			"location": {
+				"map": "jungle.infested.infested-path-04",
+				"mapId": 82
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Virus Root",
+					5
+				]
+			]
+		},
+		"Gaia's Garden - Infested Marshes North - Silver Chest 2": {
+			"location": {
+				"map": "jungle.infested.infested-path-04",
+				"mapId": 949
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Bars",
+					5
+				]
+			]
+		},
+		"Gaia's Garden - Overgrown Path - Bronze Chest 1": {
+			"location": {
+				"map": "jungle.left.path-left-01",
+				"mapId": 74
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Huge Nut",
+					4
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Gaia's Garden - Overgrown Path - Bronze Chest 2": {
+			"location": {
+				"map": "jungle.left.path-left-01",
+				"mapId": 75
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Cheese Cracker",
+					5
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Gaia's Garden - Drizzle Bosk - Gold Chest": {
+			"location": {
+				"map": "jungle.left.path-left-02",
+				"mapId": 2
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Rough Branch",
+					1
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Gaia's Garden - Drizzle Bosk - Chest 1": {
+			"location": {
+				"map": "jungle.left.path-left-02",
+				"mapId": 8
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Spiky Nut",
+					6
+				]
+			]
+		},
+		"Gaia's Garden - Drizzle Bosk - Chest 2": {
+			"location": {
+				"map": "jungle.left.path-left-02",
+				"mapId": 12
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Sweet Berry Tea",
+					4
+				]
+			]
+		},
+		"Gaia's Garden - Wet Passage - Bronze Chest": {
+			"location": {
+				"map": "jungle.left.path-left-03",
+				"mapId": 32
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Chili Dog",
+					4
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Gaia's Garden - Wet Passage - Chest": {
+			"location": {
+				"map": "jungle.left.path-left-03",
+				"mapId": 33
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Slime Drop",
+					5
+				]
+			]
+		},
+		"Gaia's Garden - River's Bed - Silver Chest": {
+			"location": {
+				"map": "jungle.left.path-left-04",
+				"mapId": 38
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Pepper Night Tea",
+					4
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Gaia's Garden - River's Bed - Chest": {
+			"location": {
+				"map": "jungle.left.path-left-04",
+				"mapId": 39
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Fruit Salad",
+					7
+				]
+			]
+		},
+		"Gaia's Garden - Jungle Entrance - Chest 1": {
+			"location": {
+				"map": "jungle.path-01-entrance",
+				"mapId": 12
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Chef Sandwich",
+					8
+				]
+			]
+		},
+		"Gaia's Garden - Jungle Entrance - Chest 2": {
+			"location": {
+				"map": "jungle.path-01-entrance",
+				"mapId": 13
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Salted Peanuts",
+					4
+				]
+			]
+		},
+		"Gaia's Garden - Crossroad - Gold Chest": {
+			"location": {
+				"map": "jungle.path-02-crossroads",
+				"mapId": 13
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Epic Metal",
+					2
+				]
+			]
+		},
+		"Gaia's Garden - Crossroad - Chest": {
+			"location": {
+				"map": "jungle.path-02-crossroads",
+				"mapId": 14
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Elder Wood",
+					6
+				]
+			]
+		},
+		"Gaia's Garden - Tying Greens - Chest 1": {
+			"location": {
+				"map": "jungle.path-03-sync",
+				"mapId": 21
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Palette Blossom",
+					4
+				]
+			]
+		},
+		"Gaia's Garden - Tying Greens - Chest 2": {
+			"location": {
+				"map": "jungle.path-03-sync",
+				"mapId": 22
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Prime Pistachios",
+					6
+				]
+			]
+		},
+		"Gaia's Garden - Peridot Approach - Silver Chest": {
+			"location": {
+				"map": "jungle.path-04-end",
+				"mapId": 6
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Aehre",
+					1
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Gaia's Garden - Peridot Approach - Chest": {
+			"location": {
+				"map": "jungle.path-04-end",
+				"mapId": 58
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Energy Espresso",
+					4
+				]
+			]
+		},
+		"Gaia's Garden - Splitting Stumps - Chest 1": {
+			"location": {
+				"map": "jungle.right.right-path-01",
+				"mapId": 40
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Royal Hive",
+					4
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Gaia's Garden - Splitting Stumps - Chest 2": {
+			"location": {
+				"map": "jungle.right.right-path-01",
+				"mapId": 105
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Cup o' Coffee",
+					6
+				]
+			]
+		},
+		"Gaia's Garden - Clinging River - Silver Chest": {
+			"location": {
+				"map": "jungle.right.right-path-02",
+				"mapId": 12
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Durian",
+					4
+				]
+			]
+		},
+		"Gaia's Garden - Clinging River - Gold Chest": {
+			"location": {
+				"map": "jungle.right.right-path-02",
+				"mapId": 13
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Rough Branch",
+					1
+				]
+			]
+		},
+		"Gaia's Garden - Ringing River - Bronze Chest": {
+			"location": {
+				"map": "jungle.right.right-path-03",
+				"mapId": 13
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Lazy Claw",
+					2
+				]
+			]
+		},
+		"Gaia's Garden - Ringing River - Chest": {
+			"location": {
+				"map": "jungle.right.right-path-03",
+				"mapId": 14
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Static Furball",
+					6
+				]
+			]
+		},
+		"Gaia's Garden - Old Timber - Chest": {
+			"location": {
+				"map": "jungle.right.right-path-04",
+				"mapId": 30
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Glowing Sphere",
+					7
+				]
+			]
+		},
+		"Basin Keep - Centrum - Gold Chest": {
+			"location": {
+				"map": "jungle-city.center",
+				"mapId": 774
+			},
+			"region": {
+				"linear": "24",
+				"open": "open11"
+			},
+			"reward": [
+				[
+					"item",
+					"Geta Wood",
+					1
+				]
+			]
+		},
+		"Basin Keep - Pond Slums - Silver Chest 1": {
+			"location": {
+				"map": "jungle-city.east",
+				"mapId": 158
+			},
+			"region": {
+				"linear": "24",
+				"open": "open11"
+			},
+			"reward": [
+				[
+					"item",
+					"One Up",
+					1
+				]
+			]
+		},
+		"Basin Keep - Pond Slums - Silver Chest 2": {
+			"location": {
+				"map": "jungle-city.east",
+				"mapId": 322
+			},
+			"region": {
+				"linear": "24",
+				"open": "open11"
+			},
+			"reward": [
+				[
+					"item",
+					"Epic Metal",
+					1
+				]
+			]
+		},
+		"Basin Keep - Pond Slums - Gold Chest": {
+			"location": {
+				"map": "jungle-city.east",
+				"mapId": 537
+			},
+			"region": {
+				"linear": "24",
+				"open": "open11"
+			},
+			"reward": [
+				[
+					"item",
+					"Tremor Engine",
+					1
+				]
+			]
+		},
+		"Gaia's Garden - Basin Keep Entrance - Chest": {
+			"location": {
+				"map": "jungle-city.entrance",
+				"mapId": 423
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Steel Comb",
+					5
+				]
+			]
+		},
+		"Basin Keep - Basin Police Force HQ - Gold Chest": {
+			"location": {
+				"map": "jungle-city.interior.faction-guard-1",
+				"mapId": 1128
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Final Dinner",
+					1
+				]
+			]
+		},
+		"Basin Keep - Seeker Hub 1st Floor - Silver Chest": {
+			"location": {
+				"map": "jungle-city.interior.questhub-01",
+				"mapId": 533
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Precious Metal",
+					3
+				]
+			]
+		},
+		"Rhombus Dungeon - Ability Room 1 - Chest 1": {
+			"location": {
+				"map": "rhombus-dng.room-1-6",
+				"mapId": 183
+			},
+			"region": {
+				"linear": "1",
+				"open": "open1"
+			},
+			"reward": [
+				[
+					"item",
+					"Sandwich",
+					3
+				]
+			]
+		},
+		"Rhombus Dungeon - Ability Room 1 - Chest 2": {
+			"location": {
+				"map": "rhombus-dng.room-1-6",
+				"mapId": 184
+			},
+			"region": {
+				"linear": "1",
+				"open": "open1"
+			},
+			"reward": [
+				[
+					"item",
+					"Green Leaf Tea",
+					2
+				]
+			]
+		},
+		"Rhombus Square - Arena Plaza - Bronze Chest": {
+			"location": {
+				"map": "rhombus-sqr.arena-1",
+				"mapId": 298
+			},
+			"region": {
+				"linear": "33",
+				"open": "open20"
+			},
+			"reward": [
+				[
+					"item",
+					"Diamond",
+					2
+				]
+			]
+		},
+		"Rhombus Square - Arena Plaza - Silver Chest": {
+			"location": {
+				"map": "rhombus-sqr.arena-1",
+				"mapId": 299
+			},
+			"region": {
+				"linear": "33",
+				"open": "open20"
+			},
+			"reward": [
+				[
+					"item",
+					"Topaz",
+					2
+				]
+			],
+			"condition": {
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Rhombus Square - Garden Boulevard - Bronze Chest": {
+			"location": {
+				"map": "rhombus-sqr.center-e",
+				"mapId": 271
+			},
+			"region": {
+				"linear": "33",
+				"open": "open20"
+			},
+			"reward": [
+				[
+					"item",
+					"Ruby",
+					2
+				]
+			]
+		},
+		"Rhombus Square - Garden Boulevard - Silver Chest": {
+			"location": {
+				"map": "rhombus-sqr.center-e",
+				"mapId": 272
+			},
+			"region": {
+				"linear": "33",
+				"open": "open20"
+			},
+			"reward": [
+				[
+					"item",
+					"Emerald",
+					2
+				]
+			]
+		},
+		"Rhombus Square - South Arch - Gold Chest": {
+			"location": {
+				"map": "rhombus-sqr.center-s",
+				"mapId": 235
+			},
+			"region": {
+				"linear": "33",
+				"open": "open20"
+			},
+			"reward": [
+				[
+					"item",
+					"Very Large Ember",
+					1
+				]
+			]
+		},
+		"Rhombus Square - Lloyd Passage - Silver Chest": {
+			"location": {
+				"map": "rhombus-sqr.center-se",
+				"mapId": 1209
+			},
+			"region": {
+				"linear": "33",
+				"open": "open20"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Ticket",
+					3
+				]
+			]
+		},
+		"Rhombus Square - Residential District West - Gold Chest": {
+			"location": {
+				"map": "rhombus-sqr.residential-s1",
+				"mapId": 333
+			},
+			"region": {
+				"linear": "33",
+				"open": "open20"
+			},
+			"reward": [
+				[
+					"item",
+					"Antique Token",
+					1
+				]
+			]
+		},
+		"Rhombus Square - Residential District West - Chest": {
+			"location": {
+				"map": "rhombus-sqr.residential-s1",
+				"mapId": 852
+			},
+			"region": {
+				"linear": "33",
+				"open": "open20"
+			},
+			"reward": [
+				[
+					"item",
+					"Moonstone",
+					1
+				]
+			]
+		},
+		"Rookie Harbor - Marketplace - Chest": {
+			"location": {
+				"map": "rookie-harbor.center",
+				"mapId": 165
+			},
+			"region": {
+				"linear": "2",
+				"open": "open2"
+			},
+			"reward": [
+				[
+					"item",
+					"Rice Cracker",
+					6
+				]
+			]
+		},
+		"Rookie Harbor - Falling Exit - Chest": {
+			"location": {
+				"map": "rookie-harbor.east",
+				"mapId": 157
+			},
+			"region": {
+				"linear": "2",
+				"open": "open8"
+			},
+			"reward": [
+				[
+					"item",
+					"Refined Metal",
+					5
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Red Flame Shade",
+						1
+					]
+				]
+			}
+		},
+		"Rookie Harbor - Weapon & Backer Shop - Silver Chest": {
+			"location": {
+				"map": "rookie-harbor.inner-equip-north",
+				"mapId": 50
+			},
+			"region": {
+				"linear": "19",
+				"open": "open8"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Bars",
+					4
+				]
+			]
+		},
+		"Rookie Harbor - Dusty Storage - Silver Chest": {
+			"location": {
+				"map": "rookie-harbor.inner-old",
+				"mapId": 72
+			},
+			"region": {
+				"linear": "19",
+				"open": "open8"
+			},
+			"reward": [
+				[
+					"item",
+					"Precious Metal",
+					2
+				]
+			]
+		},
+		"Rookie Harbor - South Harbor - Gold Chest": {
+			"location": {
+				"map": "rookie-harbor.south",
+				"mapId": 216
+			},
+			"region": {
+				"linear": "2",
+				"open": "open2"
+			},
+			"reward": [
+				[
+					"item",
+					"Hungry Salmon",
+					1
+				]
+			]
+		},
+		"Rookie Harbor - Beginners Arc - Chest 1": {
+			"location": {
+				"map": "rookie-harbor.teleporter",
+				"mapId": 389
+			},
+			"region": {
+				"linear": "2",
+				"open": "open2"
+			},
+			"reward": [
+				[
+					"item",
+					"Spicy Bun",
+					6
+				]
+			]
+		},
+		"Rookie Harbor - Beginners Arc - Chest 2": {
+			"location": {
+				"map": "rookie-harbor.teleporter",
+				"mapId": 402
+			},
+			"region": {
+				"linear": "2",
+				"open": "open2"
+			},
+			"reward": [
+				[
+					"item",
+					"Fruit Drink",
+					6
+				]
+			]
+		},
+		"Zir'vitar Temple - Moving Transmit - Chest 1": {
+			"location": {
+				"map": "shock-dng.f1.room2",
+				"mapId": 64
+			},
+			"region": {
+				"linear": "23",
+				"open": "open12"
+			},
+			"reward": [
+				[
+					"item",
+					"Prime Pistachios",
+					4
+				]
+			]
+		},
+		"Zir'vitar Temple - Moving Transmit - Chest 2": {
+			"location": {
+				"map": "shock-dng.f1.room2",
+				"mapId": 79
+			},
+			"region": {
+				"linear": "25",
+				"open": "open13.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Zir'vitar Key",
+					1
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Zir'vitar Temple - Haunted Waves - Bronze Chest": {
+			"location": {
+				"map": "shock-dng.f1.room3to4",
+				"mapId": 23
+			},
+			"region": {
+				"linear": "25",
+				"open": "open13.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Plain Cube",
+					3
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Zir'vitar Temple - Hoodwink - Chest": {
+			"location": {
+				"map": "shock-dng.g.room4to5",
+				"mapId": 16
+			},
+			"region": {
+				"linear": "23",
+				"open": "open12"
+			},
+			"reward": [
+				[
+					"item",
+					"Zir'vitar Key",
+					1
+				]
+			]
+		},
+		"Zir'vitar Temple - Spinning Transmit - Bronze Chest": {
+			"location": {
+				"map": "shock-dng.g.room5",
+				"mapId": 164
+			},
+			"region": {
+				"linear": "25",
+				"open": "open13.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Power Spinach",
+					4
+				]
+			],
+			"condition": {
+				"linear": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				],
+				"open": [
+					[
+						"item",
+						"Wave",
+						1
+					]
+				]
+			}
+		},
+		"Grand Krys'kajo - East Branch - Gold Chest": {
+			"location": {
+				"map": "tree-dng.f3.branch-east",
+				"mapId": 166
+			},
+			"region": {
+				"linear": "28",
+				"open": "open15.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Timeworn Belt",
+					1
+				]
+			]
+		},
+		"Grand Krys'kajo - East Branch - Chest 1": {
+			"location": {
+				"map": "tree-dng.f3.branch-east",
+				"mapId": 167
+			},
+			"region": {
+				"linear": "28",
+				"open": "open15.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Prime Pistachios",
+					2
+				]
+			]
+		},
+		"Grand Krys'kajo - East Branch - Chest 2": {
+			"location": {
+				"map": "tree-dng.f3.branch-east",
+				"mapId": 168
+			},
+			"region": {
+				"linear": "28",
+				"open": "open15.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Energy Espresso",
+					2
+				]
+			]
+		},
+		"Grand Krys'kajo - West Branch - Chest 1": {
+			"location": {
+				"map": "tree-dng.f3.branch-west",
+				"mapId": 67
+			},
+			"region": {
+				"linear": "28",
+				"open": "open15.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Chef Sandwich",
+					4
+				]
+			]
+		},
+		"Grand Krys'kajo - West Branch - Chest 2": {
+			"location": {
+				"map": "tree-dng.f3.branch-west",
+				"mapId": 68
+			},
+			"region": {
+				"linear": "28",
+				"open": "open15.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Werewolf Stick",
+					3
+				]
+			]
+		},
+		"Grand Krys'kajo - Falling Leaves - Chest": {
+			"location": {
+				"map": "tree-dng.f3.center-01",
+				"mapId": 136
+			},
+			"region": {
+				"linear": "29",
+				"open": "open15.2"
+			},
+			"reward": [
+				[
+					"item",
+					"Kajo Master Key",
+					1
+				]
+			]
+		},
+		"Grand Krys'kajo - Branch Conveyance - Chest": {
+			"location": {
+				"map": "tree-dng.f3.east-01",
+				"mapId": 81
+			},
+			"region": {
+				"linear": "28",
+				"open": "open15.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Krys'kajo Key",
+					1
+				]
+			]
+		},
+		"Grand Krys'kajo - Branch Transmit - Chest 1": {
+			"location": {
+				"map": "tree-dng.f3.west-01",
+				"mapId": 81
+			},
+			"region": {
+				"linear": "28",
+				"open": "open15.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Krys'kajo Key",
+					1
+				]
+			]
+		},
+		"Grand Krys'kajo - Branch Transmit - Chest 2": {
+			"location": {
+				"map": "tree-dng.f3.west-01",
+				"mapId": 86
+			},
+			"region": {
+				"linear": "28",
+				"open": "open15.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Pepper Night Tea",
+					3
+				]
+			]
+		},
+		"So'najiz Temple - Principle of Conveyance - Chest": {
+			"location": {
+				"map": "wave-dng.b1.center-01",
+				"mapId": 276
+			},
+			"region": {
+				"linear": "23",
+				"open": "open12"
+			},
+			"reward": [
+				[
+					"item",
+					"Energy Espresso",
+					4
+				]
+			]
+		},
+		"So'najiz Temple - Trial of Persistence - Chest 1": {
+			"location": {
+				"map": "wave-dng.b1.center-04-long",
+				"mapId": 205
+			},
+			"region": {
+				"linear": "26",
+				"open": "open14.1"
+			},
+			"reward": [
+				[
+					"item",
+					"So'najiz Key",
+					1
+				]
+			]
+		},
+		"So'najiz Temple - Trial of Persistence - Chest 2": {
+			"location": {
+				"map": "wave-dng.b1.center-04-long",
+				"mapId": 258
+			},
+			"region": {
+				"linear": "26",
+				"open": "open14.1"
+			},
+			"reward": [
+				[
+					"item",
+					"So'najiz Key",
+					1
+				]
+			]
+		},
+		"So'najiz Temple - Trial of Persistence - Chest 3": {
+			"location": {
+				"map": "wave-dng.b1.center-04-long",
+				"mapId": 329
+			},
+			"region": {
+				"linear": "23",
+				"open": "open12"
+			},
+			"reward": [
+				[
+					"item",
+					"So'najiz Key",
+					1
+				]
+			]
+		},
+		"So'najiz Temple - Trial of Persistence - Silver Chest": {
+			"location": {
+				"map": "wave-dng.b1.center-04-long",
+				"mapId": 670
+			},
+			"region": {
+				"linear": "26",
+				"open": "open14.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Radiant Key",
+					1
+				]
+			]
+		},
+		"So'najiz Temple - Trial of Persistence - Gold Chest": {
+			"location": {
+				"map": "wave-dng.b1.center-04-long",
+				"mapId": 671
+			},
+			"region": {
+				"linear": "26",
+				"open": "open14.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Epic Metal",
+					1
+				]
+			]
+		},
+		"So'najiz Temple - Moving Attraction - Chest": {
+			"location": {
+				"map": "wave-dng.b1.north-01",
+				"mapId": 307
+			},
+			"region": {
+				"linear": "26",
+				"open": "open14.1"
+			},
+			"reward": [
+				[
+					"item",
+					"So'najiz Key",
+					1
+				]
+			]
+		},
+		"So'najiz Temple - Slowing Attraction - Chest": {
+			"location": {
+				"map": "wave-dng.b1.north-03",
+				"mapId": 249
+			},
+			"region": {
+				"linear": "26",
+				"open": "open14.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Snack Mix",
+					6
+				]
+			]
+		},
+		"So'najiz Temple - Standing Attraction - Chest": {
+			"location": {
+				"map": "wave-dng.b1.north-06",
+				"mapId": 193
+			},
+			"region": {
+				"linear": "26",
+				"open": "open14.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Sneaky Shiv",
+					1
+				]
+			]
+		},
+		"So'najiz Temple - Attracting Conveyance - Chest": {
+			"location": {
+				"map": "wave-dng.b1.north-08",
+				"mapId": 221
+			},
+			"region": {
+				"linear": "26",
+				"open": "open14.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Sea Disc",
+					3
+				]
+			]
+		},
+		"So'najiz Temple - Fast Conveyance - Chest": {
+			"location": {
+				"map": "wave-dng.b1.south-04",
+				"mapId": 309
+			},
+			"region": {
+				"linear": "26",
+				"open": "open14.1"
+			},
+			"reward": [
+				[
+					"item",
+					"So'najiz Key",
+					1
+				]
+			]
+		},
+		"So'najiz Temple - Flaming Conveyance - Chest": {
+			"location": {
+				"map": "wave-dng.b1.south-06",
+				"mapId": 242
+			},
+			"region": {
+				"linear": "26",
+				"open": "open14.1"
+			},
+			"reward": [
+				[
+					"item",
+					"Living Bolt",
+					3
+				]
+			]
+		}
+	}
+}
