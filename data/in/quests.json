@@ -34,9 +34,6 @@
 				[ "quest", "Autumn's Rise Defeat" ],
 				[ "quest", "Autumn's Rise Landmarks" ], 
 				[ "quest", "Autumn's Rise Data Probe" ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Autumn's Rise Collect": {
@@ -44,40 +41,28 @@
 			"region": {
 				"linear": "3",
 				"open": "open3" 
-			},
-			"reward": [
-				[ "NONE", 0 ]
-			]
+			}
 		},
 		"Autumn's Rise Defeat": {
 			"questid": "trailblaze-autumn-2",
 			"region": {
 				"linear": "3",
 				"open": "open3" 
-			},
-			"reward": [
-				[ "NONE", 0 ]
-			]
+			}
 		},
 		"Autumn's Rise Landmarks": {
 			"questid": "trailblaze-autumn-3",
 			"region": {
 				"linear": "3",
 				"open": "open3" 
-			},
-			"reward": [
-				[ "NONE", 0 ]
-			]
+			}
 		},
 		"Autumn's Rise Data Probe": {
 			"questid": "trailblaze-autumn-4",
 			"region": {
 				"linear": "3",
 				"open": "open3" 
-			},
-			"reward": [
-				[ "NONE", 0 ]
-			]
+			}
 		},
 		"Round and Round": {
 			"questid": "round-and-round",
@@ -123,9 +108,6 @@
 			"condition": [
 				[ "quest", "A Promise is a Promise 5" ]
 			],
-			"reward": [
-				[ "NONE", 0 ]
-			],
 			"_comment": "1 cp for each element"
 		},
 		"Chase the Hologram Frobbit": {
@@ -149,9 +131,6 @@
 				[ "quest", "Bergen Trailblazing Defeat" ],
 				[ "quest", "Bergen Trailbalzing Landmarks" ],
 				[ "quest", "Bergen Trailblazing Data Probe" ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Bergen Trailblazing Collect": {
@@ -162,9 +141,6 @@
 			},
 			"condition": [
 				[ "quest", "Autumn's Rise Trailblazing" ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Bergen Trailblazing Defeat": {
@@ -175,9 +151,6 @@
 			},
 			"condition": [
 				[ "quest", "Autumn's Rise Trailblazing" ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Bergen Trailblazing Landmarks": {
@@ -188,14 +161,10 @@
 			},
 			"condition": [
 				[ "quest", "Autumn's Rise Trailblazing" ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Bergen Trailblazing Data Probe": {
 			"questid": "trailblaze-bergen-4",
-			"item": "NONE",
 			"amount": 0,
 			"region": {
 				"linear": "3",
@@ -204,9 +173,6 @@
 			"condition": [
 				[ "quest", "Autumn's Rise Trailblazing" ],
 				[ "item", "Heat" ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 
@@ -225,10 +191,7 @@
 			"region": {
 				"linear": "3",
 				"open": "open3" 
-			},
-			"reward": [
-				[ "NONE", 0 ]
-			]
+			}
 		},
 		"Round and Round 2": {
 			"questid": "round-and-round-2",
@@ -261,7 +224,7 @@
 				"open": "open3" 
 			},
 			"reward": [
-				[ "item", "Metal Gears", 2 ], [ "item", "Purple Lump Ore", 4 ]
+				[ "item", "Metal Gears", 2 ], [ "item", "Purple Ore Lump", 4 ]
 			]
 		},
 		"Explosive Debugging": {
@@ -389,9 +352,6 @@
 			},
 			"condition": [
 				[ "quest", "Challenge of Aspiration" ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Aspiration No Shield Challenge": {
@@ -402,9 +362,6 @@
 			},
 			"condition": [
 				[ "quest", "Challenge of Aspiration" ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Challenge of Progression": {
@@ -428,9 +385,6 @@
 			},
 			"condition": [
 				[ "quest", "Challenge of Progression" ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Progression Frosty Challenge": {
@@ -441,9 +395,6 @@
 			},
 			"condition": [
 				[ "quest", "Challenge of Progression" ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Building a Base": {
@@ -454,9 +405,6 @@
 			},
 			"condition": [
 				[ "item", "Heat", 1 ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Pushing Bases": {
@@ -482,9 +430,6 @@
 			"condition": [
 				[ "quest", "A Promise is a Promise" ],
 				[ "item", "Broken Shield", 1 ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Henry Trailblazing": {
@@ -509,9 +454,6 @@
 			"condition": [
 				[ "item", "Meteor Shade", 1 ],
 				[ "item", "Guild Pass", 1]
-			],
-			"reward": [
-				[ "NONE", 0 ] 
 			]
 		},
 		"An Unfortunate Series of Features": {
@@ -541,9 +483,6 @@
 				[ "quest", "Maroon Valley Defeat" ],
 				[ "quest", "Maroon Valley Landmarks" ],
 				[ "quest", "Maroon Valley Probe" ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Maroon Valley Collect": {
@@ -554,9 +493,6 @@
 			},
 			"condition": [
 				[ "quest", "Bergen Trailblazing" ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Maroon Valley Defeat": {
@@ -567,9 +503,6 @@
 			},
 			"condition": [
 				[ "quest", "Bergen Trailblazing" ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Maroon Valley Landmarks": {
@@ -580,9 +513,6 @@
 			},
 			"condition": [ 
 				[ "quest", "Bergen Trailblazing" ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Maroon Valley Data Probe": {
@@ -593,9 +523,6 @@
 			},
 			"condition": [
 				[ "quest", "Bergen Trailblazing" ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Maroon Tree Defender": {
@@ -730,9 +657,6 @@
 				[ "item", "White Key", 1],
 				[ "item", "Heat", 1 ],
 				[ "item", "Cold", 1 ] 
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Turret Defense": {
@@ -838,7 +762,7 @@
 				[ "quest", "Lakeside Escort" ]
 			],
 			"reward": [
-				[ "item", "Echo Roll", 5 ], [ "item", "Glow Pear", 7 ], [ "item", "Power Spinich", 4 ]
+				[ "item", "Echo Roll", 5 ], [ "item", "Glow Pear", 7 ], [ "item", "Power Spinach", 4 ]
 			]
 		},
 		"Sprouting Business": {
@@ -849,9 +773,6 @@
 			},
 			"condition": [
 				[ "item", "wave", 1 ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Mushroom Kingdom": {
@@ -874,7 +795,7 @@
 				"open": "open10" 
 			},
 			"reward": [
-				[ "item", "Scarecrow", 1 ]
+				[ "item", "Scarecrown", 1 ]
 			]
 		},
 		"A Promise is a Promise 4": {
@@ -886,9 +807,6 @@
 			"condition": [ 
 				[ "quest", "A Promise is a Promise 3" ],
 				[ "item", "Broken Deck", 1 ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Gaia's Garden Trailblazing": {
@@ -902,9 +820,6 @@
 				[ "quest", "Gaia's Garden Defeat" ],
 				[ "quest", "Gaia's Garden Landmarks" ],
 				[ "quest", "Gaia's Garden Data Probe" ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Gaia's Garden Collect": {
@@ -915,9 +830,6 @@
 			},
 			"condition": [
 				[ "quest", "Maroon Valley Trailblazing" ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Gaia's Garden Defeat": {
@@ -928,9 +840,6 @@
 			},
 			"condition": [
 				[ "quest", "Maroon Trailblazing" ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Gaia's Garden Landmarks": {
@@ -941,9 +850,6 @@
 			},
 			"condition": [
 				[ "quest", "Maroon Trailblazing" ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Gaia's Garden Data Probe": {
@@ -955,9 +861,6 @@
 			"condition": [
 				[ "quest", "Maroon Trailblazing" ],
 				[ "item", "wave", 1 ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Turret Defense Challenge 1": {
@@ -995,9 +898,6 @@
 			"condition": [
 				[ "item", "Broken Chakrams" ],
 				[ "quest", "A Promise is a Promise 4" ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Railing Rider": {
@@ -1045,9 +945,6 @@
 				[ "item", "Red Flame Shade", 1 ],
 				[ "item", "Heat", 1 ],
 				[ "item", "cold", 1 ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Training: VPI": {
@@ -1061,9 +958,6 @@
 				[ "item", "Red Flame Shade", 1 ],
 				[ "item", "Heat", 1 ],
 				[ "item", "cold", 1 ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Faction Introduction": {
@@ -1176,7 +1070,7 @@
 				[ "item", "Disc of Insight", 1 ]
 			],
 			"reward": [
-				[ "item", "Golden Beetle", 5 ], [ "item", "Veggie Wraps", 3 ]
+				[ "item", "Gold Beetle", 5 ], [ "item", "Veggie Wraps", 3 ]
 			]
 		},
 		"Bull Grab": {
@@ -1232,7 +1126,7 @@
 				[ "quest", "Sickly Trees" ]
 			],
 			"reward": [
-				[ "item", "Autumn Leaves", 13 ], [ "item", "Azure Butterfly", 4 ], [ "item", "Chef Sandwich", 2 ]
+				[ "item", "Autumn Leaves", 13 ], [ "item", "Azure Dragonfly", 4 ], [ "item", "Chef Sandwich", 2 ]
 			]
 		},
 		"Bull on Fire": {
@@ -1256,9 +1150,6 @@
 			},
 			"condition": [
 				[ "item", "Broken Gauntlet", 1 ]
-			],
-			"reward": [
-				[ "NONE", 0 ]
 			]
 		},
 		"Wood 'n' Steaks": {

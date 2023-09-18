@@ -5,6 +5,7 @@
 				"map": "arid.cliff-1",
 				"mapId": 467
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "22",
 				"open": "open18"
@@ -16,26 +17,25 @@
 					2
 				]
 			],
-			"condition": {
-				"open": [
-					[
-						"item",
-						"Heat",
-						1
-					],
-					[
-						"item",
-						"Cold",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Heat",
+					1
+				],
+				[
+					"item",
+					"Cold",
+					1
 				]
-			}
+			]
 		},
 		"Vermillion Wasteland - Spiral Cliff - Chest": {
 			"location": {
 				"map": "arid.cliff-1",
 				"mapId": 468
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "22",
 				"open": "open18"
@@ -47,26 +47,25 @@
 					4
 				]
 			],
-			"condition": {
-				"open": [
-					[
-						"item",
-						"Heat",
-						1
-					],
-					[
-						"item",
-						"Cold",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Heat",
+					1
+				],
+				[
+					"item",
+					"Cold",
+					1
 				]
-			}
+			]
 		},
 		"Vermillion Wasteland - Storage Basement - Chest": {
 			"location": {
 				"map": "arid.interior.stealth-2",
 				"mapId": 94
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "22",
 				"open": "open18"
@@ -84,6 +83,7 @@
 				"map": "arid.lake-1",
 				"mapId": 646
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "22",
 				"open": "open18"
@@ -101,6 +101,7 @@
 				"map": "arid.lake-1",
 				"mapId": 647
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "22",
 				"open": "open18"
@@ -118,6 +119,7 @@
 				"map": "arid.town-1",
 				"mapId": 334
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "22",
 				"open": "open18"
@@ -135,6 +137,7 @@
 				"map": "arid.town-1",
 				"mapId": 335
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "22",
 				"open": "open18"
@@ -152,6 +155,7 @@
 				"map": "arid.town-1",
 				"mapId": 336
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "22",
 				"open": "open18"
@@ -169,6 +173,7 @@
 				"map": "arid.town-2",
 				"mapId": 485
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "22",
 				"open": "open18"
@@ -186,6 +191,7 @@
 				"map": "arid.town-2",
 				"mapId": 486
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "22",
 				"open": "open18"
@@ -203,6 +209,7 @@
 				"map": "arid.town-2",
 				"mapId": 487
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "22",
 				"open": "open18"
@@ -220,6 +227,7 @@
 				"map": "autumn.caves.cave-3-to-6",
 				"mapId": 2
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -237,6 +245,7 @@
 				"map": "autumn.cubaum",
 				"mapId": 200
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -254,6 +263,7 @@
 				"map": "autumn.cubaum",
 				"mapId": 201
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -271,6 +281,7 @@
 				"map": "autumn.entrance",
 				"mapId": 112
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -288,6 +299,7 @@
 				"map": "autumn.lake-observatory",
 				"mapId": 329
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -305,6 +317,7 @@
 				"map": "autumn.path-1-1",
 				"mapId": 378
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -322,6 +335,7 @@
 				"map": "autumn.path-1-2",
 				"mapId": 346
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -339,6 +353,7 @@
 				"map": "autumn.path-1-3",
 				"mapId": 322
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -356,6 +371,7 @@
 				"map": "autumn.path-1",
 				"mapId": 137
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -373,6 +389,7 @@
 				"map": "autumn.path-2",
 				"mapId": 268
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -390,6 +407,7 @@
 				"map": "autumn.path-3-1",
 				"mapId": 291
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -407,6 +425,7 @@
 				"map": "autumn.path-3-2",
 				"mapId": 305
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -424,6 +443,7 @@
 				"map": "autumn.path-3-4",
 				"mapId": 265
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -441,6 +461,7 @@
 				"map": "autumn.path-7-1",
 				"mapId": 283
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -458,6 +479,7 @@
 				"map": "autumn.path-7-1",
 				"mapId": 284
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -475,6 +497,7 @@
 				"map": "autumn.path-7-1",
 				"mapId": 1128
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -492,6 +515,7 @@
 				"map": "autumn.path-7-2",
 				"mapId": 1115
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -509,6 +533,7 @@
 				"map": "autumn.path-7-2",
 				"mapId": 1142
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -526,6 +551,7 @@
 				"map": "autumn.path-8",
 				"mapId": 12
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -543,6 +569,7 @@
 				"map": "autumn.path4",
 				"mapId": 22
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -560,6 +587,7 @@
 				"map": "autumn.path4",
 				"mapId": 98
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -577,6 +605,7 @@
 				"map": "autumn.path5",
 				"mapId": 2
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -594,6 +623,7 @@
 				"map": "autumn.path5",
 				"mapId": 3
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -611,6 +641,7 @@
 				"map": "autumn.path5",
 				"mapId": 4
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -628,6 +659,7 @@
 				"map": "autumn.path6",
 				"mapId": 13
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -645,6 +677,7 @@
 				"map": "autumn.path6",
 				"mapId": 15
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -662,6 +695,7 @@
 				"map": "autumn-fall.caves.path-03-exit",
 				"mapId": 29
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -679,6 +713,7 @@
 				"map": "autumn-fall.caves.path-04-cave-01",
 				"mapId": 51
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -696,6 +731,7 @@
 				"map": "autumn-fall.caves.path-04-cave-02",
 				"mapId": 92
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -713,6 +749,7 @@
 				"map": "autumn-fall.caves.path-04-cave-03",
 				"mapId": 157
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -730,6 +767,7 @@
 				"map": "autumn-fall.caves.path-04-cave-04",
 				"mapId": 109
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -747,6 +785,7 @@
 				"map": "autumn-fall.path-01",
 				"mapId": 458
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -764,6 +803,7 @@
 				"map": "autumn-fall.path-01",
 				"mapId": 492
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -781,6 +821,7 @@
 				"map": "autumn-fall.path-01",
 				"mapId": 493
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -798,6 +839,7 @@
 				"map": "autumn-fall.path-02",
 				"mapId": 85
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -815,6 +857,7 @@
 				"map": "autumn-fall.path-02",
 				"mapId": 98
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -832,6 +875,7 @@
 				"map": "autumn-fall.path-03",
 				"mapId": 48
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -849,6 +893,7 @@
 				"map": "autumn-fall.path-03",
 				"mapId": 494
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -866,6 +911,7 @@
 				"map": "autumn-fall.path-04",
 				"mapId": 14
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -883,6 +929,7 @@
 				"map": "autumn-fall.path-04",
 				"mapId": 81
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -900,6 +947,7 @@
 				"map": "autumn-fall.path-05",
 				"mapId": 123
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -917,6 +965,7 @@
 				"map": "autumn-fall.path-05",
 				"mapId": 124
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -934,6 +983,7 @@
 				"map": "autumn-fall.path-06",
 				"mapId": 39
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -951,6 +1001,7 @@
 				"map": "autumn-fall.path-06",
 				"mapId": 40
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -968,6 +1019,7 @@
 				"map": "autumn-fall.path-06",
 				"mapId": 740
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -985,6 +1037,7 @@
 				"map": "autumn-fall.path-07",
 				"mapId": 79
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -1002,6 +1055,7 @@
 				"map": "autumn-fall.path-07",
 				"mapId": 85
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -1019,6 +1073,7 @@
 				"map": "autumn-fall.path-07",
 				"mapId": 128
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -1036,6 +1091,7 @@
 				"map": "autumn-fall.path-08",
 				"mapId": 527
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -1053,6 +1109,7 @@
 				"map": "autumn-fall.path-08",
 				"mapId": 528
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -1070,6 +1127,7 @@
 				"map": "autumn-fall.path-08",
 				"mapId": 818
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -1087,6 +1145,7 @@
 				"map": "autumn-fall.path-10",
 				"mapId": 68
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -1104,6 +1163,7 @@
 				"map": "autumn-fall.path-10",
 				"mapId": 82
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "20",
 				"open": "open9"
@@ -1121,6 +1181,7 @@
 				"map": "autumn-fall.raid.raid-01",
 				"mapId": 375
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "21",
 				"open": "open9.1"
@@ -1138,6 +1199,7 @@
 				"map": "bergen.bergen",
 				"mapId": 868
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1155,6 +1217,7 @@
 				"map": "bergen.bergen",
 				"mapId": 1258
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1166,28 +1229,20 @@
 					1
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Heat",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Heat",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Heat",
+					1
 				]
-			}
+			]
 		},
 		"Bergen Village - Bergen South - Bronze Chest 2": {
 			"location": {
 				"map": "bergen.bergen",
 				"mapId": 1265
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1199,28 +1254,20 @@
 					3
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Heat",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Heat",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Heat",
+					1
 				]
-			}
+			]
 		},
 		"Bergen Village - Bergen South - Gold Chest": {
 			"location": {
 				"map": "bergen.bergen",
 				"mapId": 1952
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1238,6 +1285,7 @@
 				"map": "bergen.bergen2",
 				"mapId": 2003
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1255,6 +1303,7 @@
 				"map": "bergen.bergen2",
 				"mapId": 2012
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1266,28 +1315,20 @@
 					4
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Heat",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Heat",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Heat",
+					1
 				]
-			}
+			]
 		},
 		"Bergen Village - Bergen North - Silver Chest": {
 			"location": {
 				"map": "bergen.bergen2",
 				"mapId": 2021
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1305,6 +1346,7 @@
 				"map": "bergen.bergen2",
 				"mapId": 2889
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1322,6 +1364,7 @@
 				"map": "bergen.elevator",
 				"mapId": 35
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1339,6 +1382,7 @@
 				"map": "bergen.inner-questhub-0",
 				"mapId": 130
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1356,6 +1400,7 @@
 				"map": "bergen.inner-questhub-0",
 				"mapId": 136
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1373,6 +1418,7 @@
 				"map": "bergen.storage",
 				"mapId": 71
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1390,6 +1436,7 @@
 				"map": "bergen-trail.cave.cave-08-smith",
 				"mapId": 33
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1407,6 +1454,7 @@
 				"map": "bergen-trail.cave.cave-4-1-1",
 				"mapId": 20
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1418,28 +1466,20 @@
 					2
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Heat",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Heat",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Heat",
+					1
 				]
-			}
+			]
 		},
 		"Bergen Trail - Abandoned Ground - Silver Chest": {
 			"location": {
 				"map": "bergen-trail.cave.cave-6-1",
 				"mapId": 416
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1451,28 +1491,20 @@
 					2
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Heat",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Heat",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Heat",
+					1
 				]
-			}
+			]
 		},
 		"Bergen Trail - Pengpeng's Den - Chest": {
 			"location": {
 				"map": "bergen-trail.cave.cave-6-3",
 				"mapId": 24
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1484,28 +1516,20 @@
 					1
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Heat",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Heat",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Heat",
+					1
 				]
-			}
+			]
 		},
 		"Bergen Trail - Entrance - Chest 1": {
 			"location": {
 				"map": "bergen-trail.path-1-entrance",
 				"mapId": 531
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1523,6 +1547,7 @@
 				"map": "bergen-trail.path-1-entrance",
 				"mapId": 532
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1540,6 +1565,7 @@
 				"map": "bergen-trail.path-2",
 				"mapId": 67
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1557,6 +1583,7 @@
 				"map": "bergen-trail.path-3-1",
 				"mapId": 432
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1574,6 +1601,7 @@
 				"map": "bergen-trail.path-3-1",
 				"mapId": 454
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1591,6 +1619,7 @@
 				"map": "bergen-trail.path-3-2",
 				"mapId": 373
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1608,6 +1637,7 @@
 				"map": "bergen-trail.path-3-2",
 				"mapId": 399
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1625,6 +1655,7 @@
 				"map": "bergen-trail.path-3-2",
 				"mapId": 451
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1642,6 +1673,7 @@
 				"map": "bergen-trail.path-3-3",
 				"mapId": 32
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1659,6 +1691,7 @@
 				"map": "bergen-trail.path-3-3",
 				"mapId": 126
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1676,6 +1709,7 @@
 				"map": "bergen-trail.path-4-1-1",
 				"mapId": 1015
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1693,6 +1727,7 @@
 				"map": "bergen-trail.path-4-1",
 				"mapId": 288
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1710,6 +1745,7 @@
 				"map": "bergen-trail.path-4-2",
 				"mapId": 269
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1727,6 +1763,7 @@
 				"map": "bergen-trail.path-4-2",
 				"mapId": 643
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1744,6 +1781,7 @@
 				"map": "bergen-trail.path-5",
 				"mapId": 572
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1761,6 +1799,7 @@
 				"map": "bergen-trail.path-5",
 				"mapId": 1337
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1772,28 +1811,20 @@
 					5
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Heat",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Heat",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Heat",
+					1
 				]
-			}
+			]
 		},
 		"Bergen Trail - Icy Cauldron - Silver Chest": {
 			"location": {
 				"map": "bergen-trail.path-6-1",
 				"mapId": 26
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1805,28 +1836,20 @@
 					4
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Heat",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Heat",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Heat",
+					1
 				]
-			}
+			]
 		},
 		"Bergen Trail - Bergen Waterfalls - Chest": {
 			"location": {
 				"map": "bergen-trail.path-6",
 				"mapId": 493
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1844,6 +1867,7 @@
 				"map": "bergen-trail.path-7-1",
 				"mapId": 994
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1861,6 +1885,7 @@
 				"map": "bergen-trail.path-7-1",
 				"mapId": 995
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1878,6 +1903,7 @@
 				"map": "bergen-trail.path-7-2-1",
 				"mapId": 28
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1889,28 +1915,20 @@
 					1
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Heat",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Heat",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Heat",
+					1
 				]
-			}
+			]
 		},
 		"Bergen Trail - Windy Climb - Chest": {
 			"location": {
 				"map": "bergen-trail.path-7-2",
 				"mapId": 1027
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1928,6 +1946,7 @@
 				"map": "bergen-trail.path-8",
 				"mapId": 36
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "3",
 				"open": "open3"
@@ -1945,6 +1964,7 @@
 				"map": "cold-dng.b1.center",
 				"mapId": 223
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "5",
 				"open": "open4.2"
@@ -1962,6 +1982,7 @@
 				"map": "cold-dng.b1.room1",
 				"mapId": 48
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "5",
 				"open": "open4.2"
@@ -1973,28 +1994,20 @@
 					3
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Heat",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Heat",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Heat",
+					1
 				]
-			}
+			]
 		},
 		"Temple Mine - Old Shaft 1 - Chest": {
 			"location": {
 				"map": "cold-dng.b1.room2",
 				"mapId": 29
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "5",
 				"open": "open4.2"
@@ -2006,28 +2019,20 @@
 					2
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Heat",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Heat",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Heat",
+					1
 				]
-			}
+			]
 		},
 		"Temple Mine - Old Shaft 2 - Chest": {
 			"location": {
 				"map": "cold-dng.b1.room3",
 				"mapId": 26
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "5",
 				"open": "open4.2"
@@ -2045,6 +2050,7 @@
 				"map": "cold-dng.b1.room4",
 				"mapId": 3
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "5",
 				"open": "open4.2"
@@ -2062,6 +2068,7 @@
 				"map": "cold-dng.b1.room6",
 				"mapId": 3
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "6",
 				"open": "open4.3"
@@ -2079,6 +2086,7 @@
 				"map": "cold-dng.b2.room1",
 				"mapId": 32
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "7",
 				"open": "open4.4"
@@ -2096,6 +2104,7 @@
 				"map": "cold-dng.b2.room2",
 				"mapId": 40
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "7",
 				"open": "open4.4"
@@ -2113,6 +2122,7 @@
 				"map": "cold-dng.b2.room5",
 				"mapId": 21
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "9",
 				"open": "open4.6"
@@ -2130,6 +2140,7 @@
 				"map": "cold-dng.b2.room5",
 				"mapId": 66
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "9",
 				"open": "open4.6"
@@ -2147,6 +2158,7 @@
 				"map": "cold-dng.b3.room1",
 				"mapId": 30
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "7",
 				"open": "open4.4"
@@ -2164,6 +2176,7 @@
 				"map": "cold-dng.b3.room2",
 				"mapId": 55
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "7",
 				"open": "open4.4"
@@ -2181,6 +2194,7 @@
 				"map": "cold-dng.b3.room3",
 				"mapId": 11
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "7",
 				"open": "open4.4"
@@ -2198,6 +2212,7 @@
 				"map": "cold-dng.b3.room3",
 				"mapId": 22
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "7",
 				"open": "open4.4"
@@ -2215,6 +2230,7 @@
 				"map": "cold-dng.b3.room6",
 				"mapId": 36
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "7",
 				"open": "open4.4"
@@ -2232,6 +2248,7 @@
 				"map": "cold-dng.b3.room6",
 				"mapId": 68
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "7",
 				"open": "open4.4"
@@ -2249,6 +2266,7 @@
 				"map": "cold-dng.b4.center",
 				"mapId": 298
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "9",
 				"open": "open4.6"
@@ -2260,21 +2278,20 @@
 					1
 				]
 			],
-			"condition": {
-				"open": [
-					[
-						"item",
-						"Thief's Key",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Thief's Key",
+					1
 				]
-			}
+			]
 		},
 		"Temple Mine - Infested Chamber - Chest": {
 			"location": {
 				"map": "cold-dng.b4.room10",
 				"mapId": 94
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "10",
 				"open": "open4.7"
@@ -2286,21 +2303,20 @@
 					1
 				]
 			],
-			"condition": {
-				"open": [
-					[
-						"item",
-						"Thief's Key",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Thief's Key",
+					1
 				]
-			}
+			]
 		},
 		"Temple Mine - Forgotten Shaft 1 - Chest": {
 			"location": {
 				"map": "cold-dng.b4.room4",
 				"mapId": 25
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "9",
 				"open": "open4.6"
@@ -2312,21 +2328,20 @@
 					1
 				]
 			],
-			"condition": {
-				"open": [
-					[
-						"item",
-						"Thief's Key",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Thief's Key",
+					1
 				]
-			}
+			]
 		},
 		"Temple Mine - Forgotten Shaft 2 - Bronze Chest": {
 			"location": {
 				"map": "cold-dng.b4.room5",
 				"mapId": 18
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "9",
 				"open": "open4.6"
@@ -2338,21 +2353,20 @@
 					1
 				]
 			],
-			"condition": {
-				"open": [
-					[
-						"item",
-						"Thief's Key",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Thief's Key",
+					1
 				]
-			}
+			]
 		},
 		"Temple Mine - Forgotten Shaft 3 - Chest": {
 			"location": {
 				"map": "cold-dng.b4.room6",
 				"mapId": 16
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "9",
 				"open": "open4.6"
@@ -2364,21 +2378,20 @@
 					1
 				]
 			],
-			"condition": {
-				"open": [
-					[
-						"item",
-						"Thief's Key",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Thief's Key",
+					1
 				]
-			}
+			]
 		},
 		"Temple Mine - Forgotten Shaft 4 - Chest": {
 			"location": {
 				"map": "cold-dng.b4.room7",
 				"mapId": 44
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "9",
 				"open": "open4.6"
@@ -2390,21 +2403,20 @@
 					1
 				]
 			],
-			"condition": {
-				"open": [
-					[
-						"item",
-						"Thief's Key",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Thief's Key",
+					1
 				]
-			}
+			]
 		},
 		"Temple Mine - Forgotten Shaft 5 - Chest": {
 			"location": {
 				"map": "cold-dng.b4.room8",
 				"mapId": 16
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "9",
 				"open": "open4.6"
@@ -2416,21 +2428,20 @@
 					1
 				]
 			],
-			"condition": {
-				"open": [
-					[
-						"item",
-						"Thief's Key",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Thief's Key",
+					1
 				]
-			}
+			]
 		},
 		"Temple Mine - Elevator GF - Bronze Chest": {
 			"location": {
 				"map": "cold-dng.g.center",
 				"mapId": 249
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "4",
 				"open": "open4.1"
@@ -2442,28 +2453,20 @@
 					1
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Heat",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Heat",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Heat",
+					1
 				]
-			}
+			]
 		},
 		"Temple Mine - Temple Chamber 2 - Chest": {
 			"location": {
 				"map": "cold-dng.g.room2",
 				"mapId": 3
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "4",
 				"open": "open4.1"
@@ -2481,6 +2484,7 @@
 				"map": "forest.caves.cave-013-pandza-01",
 				"mapId": 385
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2492,21 +2496,20 @@
 					4
 				]
 			],
-			"condition": {
-				"open": [
-					[
-						"item",
-						"Shock",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Shock",
+					1
 				]
-			}
+			]
 		},
 		"Sapphire Ridge - The Bellow - Gold Chest": {
 			"location": {
 				"map": "forest.caves.cave-013-pandza-02",
 				"mapId": 133
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2518,26 +2521,25 @@
 					1
 				]
 			],
-			"condition": {
-				"open": [
-					[
-						"item",
-						"Shock",
-						1
-					],
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Shock",
+					1
+				],
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Sapphire Ridge - Sapphire Tunnel - Gold Chest": {
 			"location": {
 				"map": "forest.caves.path-01-entrance",
 				"mapId": 23
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2555,6 +2557,7 @@
 				"map": "forest.caves.path-02-to-08",
 				"mapId": 1
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2572,6 +2575,7 @@
 				"map": "forest.caves.path-02-to-08",
 				"mapId": 30
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2589,6 +2593,7 @@
 				"map": "forest.caves.path-06-chasm",
 				"mapId": 40
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2606,6 +2611,7 @@
 				"map": "forest.caves.path-06-chasm",
 				"mapId": 63
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2623,6 +2629,7 @@
 				"map": "forest.caves.path-07-to-08",
 				"mapId": 5
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2640,6 +2647,7 @@
 				"map": "forest.caves.path-07-to-08",
 				"mapId": 13
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2657,6 +2665,7 @@
 				"map": "forest.caves.path-08-to-10",
 				"mapId": 29
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2674,6 +2683,7 @@
 				"map": "forest.caves.path-08-to-10",
 				"mapId": 32
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2685,21 +2695,20 @@
 					7
 				]
 			],
-			"condition": {
-				"open": [
-					[
-						"item",
-						"Shock",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Shock",
+					1
 				]
-			}
+			]
 		},
 		"Sapphire Ridge - Cave Inn 1F - Chest": {
 			"location": {
 				"map": "forest.interior.inn-og-01",
 				"mapId": 128
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2717,6 +2726,7 @@
 				"map": "forest.interior.inn-storage",
 				"mapId": 87
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2734,6 +2744,7 @@
 				"map": "forest.path-01-entrance",
 				"mapId": 72
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2751,6 +2762,7 @@
 				"map": "forest.path-01-entrance",
 				"mapId": 109
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2768,6 +2780,7 @@
 				"map": "forest.path-02",
 				"mapId": 157
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2785,6 +2798,7 @@
 				"map": "forest.path-02",
 				"mapId": 160
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2802,6 +2816,7 @@
 				"map": "forest.path-03",
 				"mapId": 11
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2819,6 +2834,7 @@
 				"map": "forest.path-03",
 				"mapId": 53
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2836,6 +2852,7 @@
 				"map": "forest.path-03",
 				"mapId": 145
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2853,6 +2870,7 @@
 				"map": "forest.path-04-hostel",
 				"mapId": 52
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2870,6 +2888,7 @@
 				"map": "forest.path-04-hostel",
 				"mapId": 184
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2887,6 +2906,7 @@
 				"map": "forest.path-04-vaga",
 				"mapId": 5
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2904,6 +2924,7 @@
 				"map": "forest.path-04-vaga",
 				"mapId": 6
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2921,6 +2942,7 @@
 				"map": "forest.path-05",
 				"mapId": 4
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2938,6 +2960,7 @@
 				"map": "forest.path-05",
 				"mapId": 9
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2955,6 +2978,7 @@
 				"map": "forest.path-06",
 				"mapId": 33
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2972,6 +2996,7 @@
 				"map": "forest.path-06",
 				"mapId": 53
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -2989,6 +3014,7 @@
 				"map": "forest.path-07",
 				"mapId": 6
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -3006,6 +3032,7 @@
 				"map": "forest.path-07",
 				"mapId": 44
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -3023,6 +3050,7 @@
 				"map": "forest.path-08",
 				"mapId": 68
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -3040,6 +3068,7 @@
 				"map": "forest.path-08",
 				"mapId": 82
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -3051,21 +3080,20 @@
 					4
 				]
 			],
-			"condition": {
-				"open": [
-					[
-						"item",
-						"Shock",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Shock",
+					1
 				]
-			}
+			]
 		},
 		"Sapphire Ridge - Carved Pathway - Bronze Chest": {
 			"location": {
 				"map": "forest.path-08",
 				"mapId": 90
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -3077,21 +3105,20 @@
 					8
 				]
 			],
-			"condition": {
-				"open": [
-					[
-						"item",
-						"Shock",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Shock",
+					1
 				]
-			}
+			]
 		},
 		"Sapphire Ridge - High Ground - Gold Chest": {
 			"location": {
 				"map": "forest.path-09",
 				"mapId": 24
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -3103,21 +3130,20 @@
 					1
 				]
 			],
-			"condition": {
-				"open": [
-					[
-						"item",
-						"Shock",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Shock",
+					1
 				]
-			}
+			]
 		},
 		"Sapphire Ridge - High Ground - Silver Chest": {
 			"location": {
 				"map": "forest.path-09",
 				"mapId": 100
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -3129,21 +3155,20 @@
 					5
 				]
 			],
-			"condition": {
-				"open": [
-					[
-						"item",
-						"Shock",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Shock",
+					1
 				]
-			}
+			]
 		},
 		"Sapphire Ridge - Old Dojo - Silver Chest": {
 			"location": {
 				"map": "forest.path-10",
 				"mapId": 78
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -3161,6 +3186,7 @@
 				"map": "forest.path-10",
 				"mapId": 167
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -3178,6 +3204,7 @@
 				"map": "forest.path-10",
 				"mapId": 904
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -3195,6 +3222,7 @@
 				"map": "forest.path-11-behind-maze",
 				"mapId": 59
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "33",
 				"open": "open16.1"
@@ -3212,6 +3240,7 @@
 				"map": "forest.path-12",
 				"mapId": 298
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "33",
 				"open": "open16.1"
@@ -3223,21 +3252,20 @@
 					1
 				]
 			],
-			"condition": {
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Sapphire Ridge - Ascension Temple - Silver Chest 1": {
 			"location": {
 				"map": "forest.path-12",
 				"mapId": 301
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "33",
 				"open": "open16.1"
@@ -3249,21 +3277,20 @@
 					2
 				]
 			],
-			"condition": {
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Sapphire Ridge - Ascension Temple - Silver Chest 2": {
 			"location": {
 				"map": "forest.path-12",
 				"mapId": 302
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "33",
 				"open": "open16.1"
@@ -3275,21 +3302,20 @@
 					3
 				]
 			],
-			"condition": {
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Sapphire Ridge - Baton Pond - Bronze Chest": {
 			"location": {
 				"map": "forest.path-13",
 				"mapId": 814
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "31",
 				"open": "open16"
@@ -3307,6 +3333,7 @@
 				"map": "heat.caves.cliff-cave-01",
 				"mapId": 42
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3324,6 +3351,7 @@
 				"map": "heat.caves.cliff-cave-01",
 				"mapId": 43
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3341,6 +3369,7 @@
 				"map": "heat.caves.cliffs-temple-02",
 				"mapId": 48
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3352,48 +3381,30 @@
 					4
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Heat",
-						1
-					],
-					[
-						"item",
-						"Cold",
-						1
-					],
-					[
-						"item",
-						"Cursed Coin",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Heat",
+					1
 				],
-				"open": [
-					[
-						"item",
-						"Heat",
-						1
-					],
-					[
-						"item",
-						"Cold",
-						1
-					],
-					[
-						"item",
-						"Cursed Coin",
-						1
-					]
+				[
+					"item",
+					"Cold",
+					1
+				],
+				[
+					"item",
+					"Cursed Coin",
+					1
 				]
-			}
+			]
 		},
 		"Maroon Valley - Cursed Temple - Silver Chest 2": {
 			"location": {
 				"map": "heat.caves.cliffs-temple-02",
 				"mapId": 86
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3405,48 +3416,30 @@
 					1
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Heat",
-						1
-					],
-					[
-						"item",
-						"Cold",
-						1
-					],
-					[
-						"item",
-						"Cursed Coin",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Heat",
+					1
 				],
-				"open": [
-					[
-						"item",
-						"Heat",
-						1
-					],
-					[
-						"item",
-						"Cold",
-						1
-					],
-					[
-						"item",
-						"Cursed Coin",
-						1
-					]
+				[
+					"item",
+					"Cold",
+					1
+				],
+				[
+					"item",
+					"Cursed Coin",
+					1
 				]
-			}
+			]
 		},
 		"Maroon Valley - Cursed Temple Treasure Room - Bronze Chest": {
 			"location": {
 				"map": "heat.caves.cliff-temple-03",
 				"mapId": 107
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3458,48 +3451,30 @@
 					1
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Heat",
-						1
-					],
-					[
-						"item",
-						"Cold",
-						1
-					],
-					[
-						"item",
-						"Cursed Coin",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Heat",
+					1
 				],
-				"open": [
-					[
-						"item",
-						"Heat",
-						1
-					],
-					[
-						"item",
-						"Cold",
-						1
-					],
-					[
-						"item",
-						"Cursed Coin",
-						1
-					]
+				[
+					"item",
+					"Cold",
+					1
+				],
+				[
+					"item",
+					"Cursed Coin",
+					1
 				]
-			}
+			]
 		},
 		"Maroon Valley - Maroon Cave 1 - Chest": {
 			"location": {
 				"map": "heat.caves.maroon-cave-01",
 				"mapId": 404
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "12",
 				"open": "open6"
@@ -3511,28 +3486,20 @@
 					6
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Heat",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Heat",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Heat",
+					1
 				]
-			}
+			]
 		},
 		"Maroon Valley - River Cliff - Chest 1": {
 			"location": {
 				"map": "heat.cliffs.cliffs-path-01",
 				"mapId": 105
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3550,6 +3517,7 @@
 				"map": "heat.cliffs.cliffs-path-01",
 				"mapId": 197
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3567,6 +3535,7 @@
 				"map": "heat.cliffs.cliffs-path-02",
 				"mapId": 29
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3584,6 +3553,7 @@
 				"map": "heat.cliffs.cliffs-path-02",
 				"mapId": 30
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3601,6 +3571,7 @@
 				"map": "heat.cliffs.cliffs-path-02",
 				"mapId": 32
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3618,6 +3589,7 @@
 				"map": "heat.oasis.oasis-path-01",
 				"mapId": 8
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3635,6 +3607,7 @@
 				"map": "heat.oasis.oasis-path-01",
 				"mapId": 9
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3652,6 +3625,7 @@
 				"map": "heat.oasis.oasis-path-02",
 				"mapId": 80
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3669,6 +3643,7 @@
 				"map": "heat.oasis.oasis-path-02",
 				"mapId": 97
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3686,6 +3661,7 @@
 				"map": "heat.oasis.oasis-path-03",
 				"mapId": 34
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3703,6 +3679,7 @@
 				"map": "heat.path-00",
 				"mapId": 6
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3720,6 +3697,7 @@
 				"map": "heat.path-01-entrance",
 				"mapId": 55
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3737,6 +3715,7 @@
 				"map": "heat.path-02",
 				"mapId": 7
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3754,6 +3733,7 @@
 				"map": "heat.path-02",
 				"mapId": 14
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3771,6 +3751,7 @@
 				"map": "heat.path-03",
 				"mapId": 23
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3788,6 +3769,7 @@
 				"map": "heat.path-03",
 				"mapId": 25
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3805,6 +3787,7 @@
 				"map": "heat.path-04",
 				"mapId": 34
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3822,6 +3805,7 @@
 				"map": "heat.path-05",
 				"mapId": 2
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3839,6 +3823,7 @@
 				"map": "heat.path-05",
 				"mapId": 14
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3856,6 +3841,7 @@
 				"map": "heat.path-06",
 				"mapId": 16
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3873,6 +3859,7 @@
 				"map": "heat.path-07",
 				"mapId": 7
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3890,6 +3877,7 @@
 				"map": "heat.path-07",
 				"mapId": 78
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3907,6 +3895,7 @@
 				"map": "heat.path-08",
 				"mapId": 1
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3924,6 +3913,7 @@
 				"map": "heat.path-08",
 				"mapId": 4
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3941,6 +3931,7 @@
 				"map": "heat.path-09",
 				"mapId": 8
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3958,6 +3949,7 @@
 				"map": "heat.path-09",
 				"mapId": 41
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3975,6 +3967,7 @@
 				"map": "heat.path-11",
 				"mapId": 19
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -3992,6 +3985,7 @@
 				"map": "heat.shortcut-02-09",
 				"mapId": 17
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -4009,6 +4003,7 @@
 				"map": "heat.shortcut-02-09",
 				"mapId": 19
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -4026,6 +4021,7 @@
 				"map": "heat-dng.f1.room-03",
 				"mapId": 33
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "15",
 				"open": "open7.3"
@@ -4043,6 +4039,7 @@
 				"map": "heat-dng.f3.room-02",
 				"mapId": 31
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "17",
 				"open": "open7.5"
@@ -4060,6 +4057,7 @@
 				"map": "heat-dng.f3.room-05",
 				"mapId": 69
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "17.5",
 				"open": "open7.6"
@@ -4077,6 +4075,7 @@
 				"map": "heat-dng.f3.room-05",
 				"mapId": 79
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "17.5",
 				"open": "open7.6"
@@ -4094,6 +4093,7 @@
 				"map": "heat-dng.f3.room-07",
 				"mapId": 19
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "17.5",
 				"open": "open7.6"
@@ -4111,6 +4111,7 @@
 				"map": "heat-dng.f4.room-02",
 				"mapId": 38
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "17",
 				"open": "open7.5"
@@ -4128,6 +4129,7 @@
 				"map": "heat-dng.f4.room-03",
 				"mapId": 21
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "17",
 				"open": "open7.5"
@@ -4145,6 +4147,7 @@
 				"map": "heat-dng.f4.room-05",
 				"mapId": 56
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "17.5",
 				"open": "open7.6"
@@ -4162,6 +4165,7 @@
 				"map": "heat-dng.f4.room-09",
 				"mapId": 92
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "17.5",
 				"open": "open7.6"
@@ -4179,6 +4183,7 @@
 				"map": "heat-dng.f4.room-10",
 				"mapId": 78
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "17",
 				"open": "open7.5"
@@ -4196,6 +4201,7 @@
 				"map": "heat-dng.f4.room-11",
 				"mapId": 27
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "17.5",
 				"open": "open7.6"
@@ -4213,6 +4219,7 @@
 				"map": "heat-dng.f4.room-12",
 				"mapId": 85
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "18",
 				"open": "open7.7"
@@ -4230,6 +4237,7 @@
 				"map": "heat-dng.g.room-03",
 				"mapId": 71
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "13",
 				"open": "open7.1"
@@ -4247,6 +4255,7 @@
 				"map": "heat-dng.g.room-07",
 				"mapId": 28
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "14",
 				"open": "open7.2"
@@ -4264,6 +4273,7 @@
 				"map": "heat-dng.g.room-09",
 				"mapId": 85
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "14",
 				"open": "open7.2"
@@ -4281,6 +4291,7 @@
 				"map": "heat-dng.g.room-09",
 				"mapId": 86
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "14",
 				"open": "open7.2"
@@ -4298,6 +4309,7 @@
 				"map": "heat-dng.g.room-10",
 				"mapId": 16
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "14",
 				"open": "open7.2"
@@ -4315,6 +4327,7 @@
 				"map": "heat-dng.g.room-12",
 				"mapId": 110
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "14",
 				"open": "open7.2"
@@ -4332,6 +4345,7 @@
 				"map": "heat-dng.g.room-13",
 				"mapId": 2
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "14",
 				"open": "open7.2"
@@ -4349,6 +4363,7 @@
 				"map": "heat-dng.g.room-14",
 				"mapId": 2
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "14",
 				"open": "open7.2"
@@ -4366,6 +4381,7 @@
 				"map": "heat-village.baki-1",
 				"mapId": 99
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -4383,6 +4399,7 @@
 				"map": "heat-village.baki-1",
 				"mapId": 737
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -4400,6 +4417,7 @@
 				"map": "heat-village.baki-2",
 				"mapId": 259
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -4417,6 +4435,7 @@
 				"map": "heat-village.baki-2",
 				"mapId": 1227
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -4434,6 +4453,7 @@
 				"map": "heat-village.interior.tradebuilding-eg",
 				"mapId": 131
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "11",
 				"open": "open5"
@@ -4451,6 +4471,7 @@
 				"map": "jungle.caves.grove-cave-01",
 				"mapId": 3
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -4462,28 +4483,20 @@
 					6
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Gaia's Garden - Tranquility Pond - Gold Chest": {
 			"location": {
 				"map": "jungle.caves.grove-cave-02",
 				"mapId": 1
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -4495,28 +4508,20 @@
 					1
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Gaia's Garden - Infested Cavern - Bronze Chest": {
 			"location": {
 				"map": "jungle.caves.smuggle-route-2",
 				"mapId": 55
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "25",
 				"open": "open10"
@@ -4528,28 +4533,20 @@
 					1
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Gaia's Garden - Infested Cavern - Silver Chest": {
 			"location": {
 				"map": "jungle.caves.smuggle-route-2",
 				"mapId": 60
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "25",
 				"open": "open10"
@@ -4561,28 +4558,20 @@
 					3
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Gaia's Garden - V'rda Vil West - Gold Chest": {
 			"location": {
 				"map": "jungle.clearing.clear-path-01",
 				"mapId": 5
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -4600,6 +4589,7 @@
 				"map": "jungle.clearing.clear-path-01",
 				"mapId": 6
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -4617,6 +4607,7 @@
 				"map": "jungle.clearing.clear-path-01",
 				"mapId": 125
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -4634,6 +4625,7 @@
 				"map": "jungle.clearing.clear-path-02",
 				"mapId": 311
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -4651,6 +4643,7 @@
 				"map": "jungle.clearing.clear-path-02",
 				"mapId": 351
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -4662,28 +4655,20 @@
 					5
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Gaia's Garden - V'rda Vil North - Gold Chest": {
 			"location": {
 				"map": "jungle.clearing.clear-path-03",
 				"mapId": 31
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -4695,28 +4680,20 @@
 					3
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Gaia's Garden - V'rda Vil North - Silver Chest": {
 			"location": {
 				"map": "jungle.clearing.clear-path-03",
 				"mapId": 33
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -4734,6 +4711,7 @@
 				"map": "jungle.clearing.clear-path-04",
 				"mapId": 27
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -4751,6 +4729,7 @@
 				"map": "jungle.clearing.clear-path-04",
 				"mapId": 91
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -4768,6 +4747,7 @@
 				"map": "jungle.clearing.clear-path-04",
 				"mapId": 135
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -4779,28 +4759,20 @@
 					1
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Gaia's Garden - Grand Krys'kajo Entrance - Bronze Chest": {
 			"location": {
 				"map": "jungle.dng.tree-exterior",
 				"mapId": 432
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "28",
 				"open": "open15.1"
@@ -4818,6 +4790,7 @@
 				"map": "jungle.dng.wave-exterior",
 				"mapId": 521
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -4829,28 +4802,20 @@
 					2
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Gaia's Garden - Covert Path - Chest 1": {
 			"location": {
 				"map": "jungle.grove.grove-path-01",
 				"mapId": 4
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -4868,6 +4833,7 @@
 				"map": "jungle.grove.grove-path-01",
 				"mapId": 5
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -4885,6 +4851,7 @@
 				"map": "jungle.grove.grove-path-02",
 				"mapId": 67
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -4902,6 +4869,7 @@
 				"map": "jungle.grove.grove-path-02",
 				"mapId": 68
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -4919,6 +4887,7 @@
 				"map": "jungle.grove.grove-path-02",
 				"mapId": 69
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -4936,6 +4905,7 @@
 				"map": "jungle.grove.grove-path-02",
 				"mapId": 80
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -4953,6 +4923,7 @@
 				"map": "jungle.grove.grove-path-03",
 				"mapId": 41
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -4970,6 +4941,7 @@
 				"map": "jungle.grove.grove-path-03",
 				"mapId": 42
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -4987,6 +4959,7 @@
 				"map": "jungle.grove.lost-shrine-02",
 				"mapId": 158
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "28",
 				"open": "open10"
@@ -4998,38 +4971,25 @@
 					2
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					],
-					[
-						"item",
-						"Shock",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					],
-					[
-						"item",
-						"Shock",
-						1
-					]
+				[
+					"item",
+					"Shock",
+					1
 				]
-			}
+			]
 		},
 		"Gaia's Garden - Lost Shrine Interior B1 - Gold Chest": {
 			"location": {
 				"map": "jungle.grove.lost-shrine-03",
 				"mapId": 289
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "28",
 				"open": "open10"
@@ -5041,38 +5001,25 @@
 					3
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					],
-					[
-						"item",
-						"Shock",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					],
-					[
-						"item",
-						"Shock",
-						1
-					]
+				[
+					"item",
+					"Shock",
+					1
 				]
-			}
+			]
 		},
 		"Gaia's Garden - Lost Shrine Interior B2 - Silver Chest": {
 			"location": {
 				"map": "jungle.grove.lost-shrine-04",
 				"mapId": 363
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "28",
 				"open": "open10"
@@ -5084,38 +5031,25 @@
 					1
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					],
-					[
-						"item",
-						"Shock",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					],
-					[
-						"item",
-						"Shock",
-						1
-					]
+				[
+					"item",
+					"Shock",
+					1
 				]
-			}
+			]
 		},
 		"Gaia's Garden - Lost Lookout - Chest 1": {
 			"location": {
 				"map": "jungle.infested.infested-path-01",
 				"mapId": 22
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5133,6 +5067,7 @@
 				"map": "jungle.infested.infested-path-01",
 				"mapId": 63
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5150,6 +5085,7 @@
 				"map": "jungle.infested.infested-path-01",
 				"mapId": 170
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5161,28 +5097,20 @@
 					3
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Gaia's Garden - Seared Lake - Chest 1": {
 			"location": {
 				"map": "jungle.infested.infested-path-02",
 				"mapId": 6
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5200,6 +5128,7 @@
 				"map": "jungle.infested.infested-path-02",
 				"mapId": 32
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5217,6 +5146,7 @@
 				"map": "jungle.infested.infested-path-03",
 				"mapId": 18
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5234,6 +5164,7 @@
 				"map": "jungle.infested.infested-path-03",
 				"mapId": 70
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5245,28 +5176,20 @@
 					2
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Gaia's Garden - Infested Marshes South - Chest 3": {
 			"location": {
 				"map": "jungle.infested.infested-path-03",
 				"mapId": 90
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5284,6 +5207,7 @@
 				"map": "jungle.infested.infested-path-03",
 				"mapId": 97
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5301,6 +5225,7 @@
 				"map": "jungle.infested.infested-path-04",
 				"mapId": 24
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5318,6 +5243,7 @@
 				"map": "jungle.infested.infested-path-04",
 				"mapId": 58
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5335,6 +5261,7 @@
 				"map": "jungle.infested.infested-path-04",
 				"mapId": 82
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5352,6 +5279,7 @@
 				"map": "jungle.infested.infested-path-04",
 				"mapId": 949
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5369,6 +5297,7 @@
 				"map": "jungle.left.path-left-01",
 				"mapId": 74
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5380,28 +5309,20 @@
 					4
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Gaia's Garden - Overgrown Path - Bronze Chest 2": {
 			"location": {
 				"map": "jungle.left.path-left-01",
 				"mapId": 75
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5413,28 +5334,20 @@
 					5
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Gaia's Garden - Drizzle Bosk - Gold Chest": {
 			"location": {
 				"map": "jungle.left.path-left-02",
 				"mapId": 2
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5446,28 +5359,20 @@
 					1
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Gaia's Garden - Drizzle Bosk - Chest 1": {
 			"location": {
 				"map": "jungle.left.path-left-02",
 				"mapId": 8
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5485,6 +5390,7 @@
 				"map": "jungle.left.path-left-02",
 				"mapId": 12
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5502,6 +5408,7 @@
 				"map": "jungle.left.path-left-03",
 				"mapId": 32
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5513,28 +5420,20 @@
 					4
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Gaia's Garden - Wet Passage - Chest": {
 			"location": {
 				"map": "jungle.left.path-left-03",
 				"mapId": 33
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5552,6 +5451,7 @@
 				"map": "jungle.left.path-left-04",
 				"mapId": 38
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5563,28 +5463,20 @@
 					4
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Gaia's Garden - River's Bed - Chest": {
 			"location": {
 				"map": "jungle.left.path-left-04",
 				"mapId": 39
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5602,6 +5494,7 @@
 				"map": "jungle.path-01-entrance",
 				"mapId": 12
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5619,6 +5512,7 @@
 				"map": "jungle.path-01-entrance",
 				"mapId": 13
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5636,6 +5530,7 @@
 				"map": "jungle.path-02-crossroads",
 				"mapId": 13
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5653,6 +5548,7 @@
 				"map": "jungle.path-02-crossroads",
 				"mapId": 14
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5670,6 +5566,7 @@
 				"map": "jungle.path-03-sync",
 				"mapId": 21
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5687,6 +5584,7 @@
 				"map": "jungle.path-03-sync",
 				"mapId": 22
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5704,6 +5602,7 @@
 				"map": "jungle.path-04-end",
 				"mapId": 6
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5715,28 +5614,20 @@
 					1
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Gaia's Garden - Peridot Approach - Chest": {
 			"location": {
 				"map": "jungle.path-04-end",
 				"mapId": 58
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5754,6 +5645,7 @@
 				"map": "jungle.right.right-path-01",
 				"mapId": 40
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5765,28 +5657,20 @@
 					4
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Gaia's Garden - Splitting Stumps - Chest 2": {
 			"location": {
 				"map": "jungle.right.right-path-01",
 				"mapId": 105
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5804,6 +5688,7 @@
 				"map": "jungle.right.right-path-02",
 				"mapId": 12
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5821,6 +5706,7 @@
 				"map": "jungle.right.right-path-02",
 				"mapId": 13
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5838,6 +5724,7 @@
 				"map": "jungle.right.right-path-03",
 				"mapId": 13
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5855,6 +5742,7 @@
 				"map": "jungle.right.right-path-03",
 				"mapId": 14
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5872,6 +5760,7 @@
 				"map": "jungle.right.right-path-04",
 				"mapId": 30
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5889,6 +5778,7 @@
 				"map": "jungle-city.center",
 				"mapId": 774
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "24",
 				"open": "open11"
@@ -5906,6 +5796,7 @@
 				"map": "jungle-city.east",
 				"mapId": 158
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "24",
 				"open": "open11"
@@ -5923,6 +5814,7 @@
 				"map": "jungle-city.east",
 				"mapId": 322
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "24",
 				"open": "open11"
@@ -5940,6 +5832,7 @@
 				"map": "jungle-city.east",
 				"mapId": 537
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "24",
 				"open": "open11"
@@ -5957,6 +5850,7 @@
 				"map": "jungle-city.entrance",
 				"mapId": 423
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5974,6 +5868,7 @@
 				"map": "jungle-city.interior.faction-guard-1",
 				"mapId": 1128
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -5991,6 +5886,7 @@
 				"map": "jungle-city.interior.questhub-01",
 				"mapId": 533
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "23",
 				"open": "open10"
@@ -6008,6 +5904,7 @@
 				"map": "rhombus-dng.room-1-6",
 				"mapId": 183
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "1",
 				"open": "open1"
@@ -6025,6 +5922,7 @@
 				"map": "rhombus-dng.room-1-6",
 				"mapId": 184
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "1",
 				"open": "open1"
@@ -6042,6 +5940,7 @@
 				"map": "rhombus-sqr.arena-1",
 				"mapId": 298
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "33",
 				"open": "open20"
@@ -6059,6 +5958,7 @@
 				"map": "rhombus-sqr.arena-1",
 				"mapId": 299
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "33",
 				"open": "open20"
@@ -6070,21 +5970,20 @@
 					2
 				]
 			],
-			"condition": {
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Rhombus Square - Garden Boulevard - Bronze Chest": {
 			"location": {
 				"map": "rhombus-sqr.center-e",
 				"mapId": 271
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "33",
 				"open": "open20"
@@ -6102,6 +6001,7 @@
 				"map": "rhombus-sqr.center-e",
 				"mapId": 272
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "33",
 				"open": "open20"
@@ -6119,6 +6019,7 @@
 				"map": "rhombus-sqr.center-s",
 				"mapId": 235
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "33",
 				"open": "open20"
@@ -6136,6 +6037,7 @@
 				"map": "rhombus-sqr.center-se",
 				"mapId": 1209
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "33",
 				"open": "open20"
@@ -6153,6 +6055,7 @@
 				"map": "rhombus-sqr.residential-s1",
 				"mapId": 333
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "33",
 				"open": "open20"
@@ -6170,6 +6073,7 @@
 				"map": "rhombus-sqr.residential-s1",
 				"mapId": 852
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "33",
 				"open": "open20"
@@ -6187,6 +6091,7 @@
 				"map": "rookie-harbor.center",
 				"mapId": 165
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "2",
 				"open": "open2"
@@ -6204,6 +6109,7 @@
 				"map": "rookie-harbor.east",
 				"mapId": 157
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "2",
 				"open": "open8"
@@ -6215,21 +6121,20 @@
 					5
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Red Flame Shade",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Red Flame Shade",
+					1
 				]
-			}
+			]
 		},
 		"Rookie Harbor - Weapon & Backer Shop - Silver Chest": {
 			"location": {
 				"map": "rookie-harbor.inner-equip-north",
 				"mapId": 50
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "19",
 				"open": "open8"
@@ -6247,6 +6152,7 @@
 				"map": "rookie-harbor.inner-old",
 				"mapId": 72
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "19",
 				"open": "open8"
@@ -6264,6 +6170,7 @@
 				"map": "rookie-harbor.south",
 				"mapId": 216
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "2",
 				"open": "open2"
@@ -6281,6 +6188,7 @@
 				"map": "rookie-harbor.teleporter",
 				"mapId": 389
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "2",
 				"open": "open2"
@@ -6298,6 +6206,7 @@
 				"map": "rookie-harbor.teleporter",
 				"mapId": 402
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "2",
 				"open": "open2"
@@ -6315,6 +6224,7 @@
 				"map": "shock-dng.f1.room2",
 				"mapId": 64
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open12"
@@ -6332,6 +6242,7 @@
 				"map": "shock-dng.f1.room2",
 				"mapId": 79
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "25",
 				"open": "open13.1"
@@ -6343,28 +6254,20 @@
 					1
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Zir'vitar Temple - Haunted Waves - Bronze Chest": {
 			"location": {
 				"map": "shock-dng.f1.room3to4",
 				"mapId": 23
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "25",
 				"open": "open13.1"
@@ -6376,28 +6279,20 @@
 					3
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Zir'vitar Temple - Hoodwink - Chest": {
 			"location": {
 				"map": "shock-dng.g.room4to5",
 				"mapId": 16
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open12"
@@ -6415,6 +6310,7 @@
 				"map": "shock-dng.g.room5",
 				"mapId": 164
 			},
+			"clearance": "Bronze",
 			"region": {
 				"linear": "25",
 				"open": "open13.1"
@@ -6426,28 +6322,20 @@
 					4
 				]
 			],
-			"condition": {
-				"linear": [
-					[
-						"item",
-						"Wave",
-						1
-					]
-				],
-				"open": [
-					[
-						"item",
-						"Wave",
-						1
-					]
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
 				]
-			}
+			]
 		},
 		"Grand Krys'kajo - East Branch - Gold Chest": {
 			"location": {
 				"map": "tree-dng.f3.branch-east",
 				"mapId": 166
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "28",
 				"open": "open15.1"
@@ -6465,6 +6353,7 @@
 				"map": "tree-dng.f3.branch-east",
 				"mapId": 167
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "28",
 				"open": "open15.1"
@@ -6482,6 +6371,7 @@
 				"map": "tree-dng.f3.branch-east",
 				"mapId": 168
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "28",
 				"open": "open15.1"
@@ -6499,6 +6389,7 @@
 				"map": "tree-dng.f3.branch-west",
 				"mapId": 67
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "28",
 				"open": "open15.1"
@@ -6516,6 +6407,7 @@
 				"map": "tree-dng.f3.branch-west",
 				"mapId": 68
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "28",
 				"open": "open15.1"
@@ -6533,6 +6425,7 @@
 				"map": "tree-dng.f3.center-01",
 				"mapId": 136
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "29",
 				"open": "open15.2"
@@ -6550,6 +6443,7 @@
 				"map": "tree-dng.f3.east-01",
 				"mapId": 81
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "28",
 				"open": "open15.1"
@@ -6567,6 +6461,7 @@
 				"map": "tree-dng.f3.west-01",
 				"mapId": 81
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "28",
 				"open": "open15.1"
@@ -6584,6 +6479,7 @@
 				"map": "tree-dng.f3.west-01",
 				"mapId": 86
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "28",
 				"open": "open15.1"
@@ -6601,6 +6497,7 @@
 				"map": "wave-dng.b1.center-01",
 				"mapId": 276
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open12"
@@ -6618,6 +6515,7 @@
 				"map": "wave-dng.b1.center-04-long",
 				"mapId": 205
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "26",
 				"open": "open14.1"
@@ -6635,6 +6533,7 @@
 				"map": "wave-dng.b1.center-04-long",
 				"mapId": 258
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "26",
 				"open": "open14.1"
@@ -6652,6 +6551,7 @@
 				"map": "wave-dng.b1.center-04-long",
 				"mapId": 329
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "23",
 				"open": "open12"
@@ -6669,6 +6569,7 @@
 				"map": "wave-dng.b1.center-04-long",
 				"mapId": 670
 			},
+			"clearance": "Silver",
 			"region": {
 				"linear": "26",
 				"open": "open14.1"
@@ -6686,6 +6587,7 @@
 				"map": "wave-dng.b1.center-04-long",
 				"mapId": 671
 			},
+			"clearance": "Gold",
 			"region": {
 				"linear": "26",
 				"open": "open14.1"
@@ -6703,6 +6605,7 @@
 				"map": "wave-dng.b1.north-01",
 				"mapId": 307
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "26",
 				"open": "open14.1"
@@ -6720,6 +6623,7 @@
 				"map": "wave-dng.b1.north-03",
 				"mapId": 249
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "26",
 				"open": "open14.1"
@@ -6737,6 +6641,7 @@
 				"map": "wave-dng.b1.north-06",
 				"mapId": 193
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "26",
 				"open": "open14.1"
@@ -6754,6 +6659,7 @@
 				"map": "wave-dng.b1.north-08",
 				"mapId": 221
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "26",
 				"open": "open14.1"
@@ -6771,6 +6677,7 @@
 				"map": "wave-dng.b1.south-04",
 				"mapId": 309
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "26",
 				"open": "open14.1"
@@ -6788,6 +6695,7 @@
 				"map": "wave-dng.b1.south-06",
 				"mapId": 242
 			},
+			"clearance": "Default",
 			"region": {
 				"linear": "26",
 				"open": "open14.1"
