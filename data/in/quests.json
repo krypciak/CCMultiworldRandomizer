@@ -84,9 +84,9 @@
 			"condition": [
 				[ "item", "Disc of Flora", 1 ],
 				[ "item", "Heat"], 
-				[ "cutscene", "bergen.inner-questhub-01", "160" ],
-				[ "cutscene", "heat-village.interior.quest-hub-eg", "134" ],
-				[ "cutscene", "jungle-city.interior.questhub-01", "576" ],
+				[ "cutscene", "Talatu Bergen 25%"],
+				[ "cutscene", "Talatu Ba'kii 50%"],
+				[ "cutscene", "Talatu Basin 75%"],
 				[ "region", "open4.1"], 
 				[ "region", "open5"], 
 				[ "region", "open9"], 
@@ -127,9 +127,9 @@
 				"open": "open3" 
 			},
 			"condition": [
-				[ "quest", "Bergen Trailblazing Collect " ],
+				[ "quest", "Bergen Trailblazing Collect" ],
 				[ "quest", "Bergen Trailblazing Defeat" ],
-				[ "quest", "Bergen Trailbalzing Landmarks" ],
+				[ "quest", "Bergen Trailblazing Landmarks" ],
 				[ "quest", "Bergen Trailblazing Data Probe" ]
 			]
 		},
@@ -315,7 +315,7 @@
 				[ "item", "Rock Beak", 4 ], [ "item", "Pepper Night Tea", 3 ]
 			]
 		},
-		"Trial of  Progression": {
+		"Trial of Progression": {
 			"questid": "monks-2-jump_challenge_2",
 			"region": {
 				"linear": "3",
@@ -472,7 +472,7 @@
 				[ "item", "Lunatic Paws", 1 ]
 			]
 		},
-		"Maroon Trailblazing": {
+		"Maroon Valley Trailblazing": {
 			"questid": "trailblaze-maroon",
 			"region": {
 				"linear": "11",
@@ -482,7 +482,7 @@
 				[ "quest", "Maroon Valley Collect" ],
 				[ "quest", "Maroon Valley Defeat" ],
 				[ "quest", "Maroon Valley Landmarks" ],
-				[ "quest", "Maroon Valley Probe" ]
+				[ "quest", "Maroon Valley Data Probe" ]
 			]
 		},
 		"Maroon Valley Collect": {
@@ -707,7 +707,7 @@
 				[ "item", "Azure Drop Shade", 1 ],
 				[ "item", "Shock", 1 ],
 				[ "item", "Wave", 1 ],
-				[ "quest", "Hostage Situtation" ]
+				[ "quest", "Hostage Situation" ]
 			],
 			"reward": [
 				[ "item", "Plain Cube", 3 ], [ "item", "Metal Down", 4 ]
@@ -812,7 +812,7 @@
 		"Gaia's Garden Trailblazing": {
 			"questid": "trailblaze-jungle",
 			"region": {
-				"region": [ "23" ],
+				"linear": "23",
 				"open": "open10" 
 			},
 			"condition": [
@@ -839,7 +839,7 @@
 				"open": "open10" 
 			},
 			"condition": [
-				[ "quest", "Maroon Trailblazing" ]
+				[ "quest", "Maroon Valley Trailblazing" ]
 			]
 		},
 		"Gaia's Garden Landmarks": {
@@ -849,7 +849,7 @@
 				"open": "open10" 
 			},
 			"condition": [
-				[ "quest", "Maroon Trailblazing" ]
+				[ "quest", "Maroon Valley Trailblazing" ]
 			]
 		},
 		"Gaia's Garden Data Probe": {
@@ -859,7 +859,7 @@
 				"open": "open10" 
 			},
 			"condition": [
-				[ "quest", "Maroon Trailblazing" ],
+				[ "quest", "Maroon Valley Trailblazing" ],
 				[ "item", "wave", 1 ]
 			]
 		},
@@ -927,8 +927,8 @@
 				"open": "open2" 
 			},
 			"condition": [
-				[ "quest", "Training:VRP" ],
-				[ "quest", "Training:VPI" ]
+				[ "quest", "Training: VRP" ],
+				[ "quest", "Training: VPI" ]
 			],
 			"reward": [
 				[ "item", "Adept Gloves", 1 ]

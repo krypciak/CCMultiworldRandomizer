@@ -60,7 +60,7 @@
                 "open": "open10" 
             },
             "condition": [
-                [ "cutscene", "Talatu Bergen 50%" ]
+                [ "cutscene", "Talatu Ba'kii 50%" ]
             ],
             "reward": [
                 [ "item", "Strawberry Hat", 1 ]
