@@ -87,12 +87,11 @@
 				[ "cutscene", "Talatu Bergen 25%"],
 				[ "cutscene", "Talatu Ba'kii 50%"],
 				[ "cutscene", "Talatu Basin 75%"],
-				[ "region", "open4.1"], 
-				[ "region", "open5"], 
-				[ "region", "open9"], 
-				[ "region", "open10"], 
-				[ "region", "open16"] 
-			
+				[ "region", "open", "open4.1"],
+				[ "region", "open", "open5"],
+				[ "region", "open", "open9"],
+				[ "region", "open", "open10"],
+				[ "region", "open", "open16"]
 			],
 			"reward": [
 				[ "item", "The Last Strawhat", 1 ]
