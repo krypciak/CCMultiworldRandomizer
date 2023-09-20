@@ -370,7 +370,8 @@
 			"id": 132
 		},
 		"Broken Gauntlet": {
-			"id": 133
+			"id": 133,
+			"classification": "progression"
 		},
 		"Disc of Insight": {
 			"id": 135
@@ -379,7 +380,8 @@
 			"id": 136
 		},
 		"Broken Shield": {
-			"id": 137
+			"id": 137,
+			"classification": "progression"
 		},
 		"Autumn Ingredients": {
 			"id": 138
@@ -1171,7 +1173,8 @@
 			"id": 403
 		},
 		"Broken Sword": {
-			"id": 404
+			"id": 404,
+			"classification": "progression"
 		},
 		"Ronin Shell": {
 			"id": 405
@@ -1282,7 +1285,8 @@
 			"id": 441
 		},
 		"Broken Deck": {
-			"id": 443
+			"id": 443,
+			"classification": "progression"
 		},
 		"Stone of Spirit": {
 			"id": 444
@@ -1495,7 +1499,8 @@
 			"id": 514
 		},
 		"Broken Chakrams": {
-			"id": 515
+			"id": 515,
+			"classification": "progression"
 		},
 		"Mooncake": {
 			"id": 516

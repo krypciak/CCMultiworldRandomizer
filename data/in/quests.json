@@ -209,7 +209,7 @@
 			"questid": "bergen-mining_tools",
 			"region": {
 				"linear": "10",
-				"open": "open4_7" 
+				"open": "open4.7" 
 			},
 			"condition": [
 				[ "item", "Heat", 1 ]
@@ -531,7 +531,7 @@
 				"open": "open6" 
 			},
 			"condition": [
-				[ "item", "Maroon Tree Pass", 1 ],
+				[ "item", "Maroon Cave Pass", 1 ],
 				[ "item", "Heat", 1 ]
 
 			],
@@ -546,7 +546,7 @@
 				"open": "open5" 
 			},
 			"reward": [
-				[ "Pepper Night Tea", 2 ], [ "Old Bones", 10 ]
+				[ "item", "Pepper Night Tea", 2 ], [ "item", "Old Bones", 10 ]
 			]
 		},
 		"Hot Trail": {
@@ -575,7 +575,7 @@
 				[ "item", "Meteor Shade", 1 ]
 			],
 			"reward": [
-				[ "item", "Pepper Night Tea", 5 ], [ "Topaz", 4 ]
+				[ "item", "Pepper Night Tea", 5 ], [ "item", "Topaz", 4 ]
 			]
 		},
 		"Shady Thief": {
@@ -585,7 +585,7 @@
 				"open": "open5" 
 			},
 			"reward": [
-				[ "Glaring Rock", 6 ], [ "Maroon Chestnut", 2 ]
+				[ "item", "Glaring Rock", 6 ], [ "item", "Maroon Chestnut", 2 ]
 			]
 		},
 		"Just Deserts": {
@@ -771,7 +771,7 @@
 				"open": "open10" 
 			},
 			"condition": [
-				[ "item", "wave", 1 ]
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Mushroom Kingdom": {
@@ -859,7 +859,7 @@
 			},
 			"condition": [
 				[ "quest", "Maroon Valley Trailblazing" ],
-				[ "item", "wave", 1 ]
+				[ "item", "Wave", 1 ]
 			]
 		},
 		"Turret Defense Challenge 1": {
@@ -943,7 +943,7 @@
 				[ "item", "Blue Ice Shade", 1 ],
 				[ "item", "Red Flame Shade", 1 ],
 				[ "item", "Heat", 1 ],
-				[ "item", "cold", 1 ]
+				[ "item", "Cold", 1 ]
 			]
 		},
 		"Training: VPI": {
@@ -956,7 +956,7 @@
 				[ "item", "Blue Ice Shade", 1 ],
 				[ "item", "Red Flame Shade", 1 ],
 				[ "item", "Heat", 1 ],
-				[ "item", "cold", 1 ]
+				[ "item", "Cold", 1 ]
 			]
 		},
 		"Faction Introduction": {
