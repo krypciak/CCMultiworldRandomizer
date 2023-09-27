@@ -47,7 +47,7 @@ First off, thank you for beta testing! I truly appreciate it.
 Second off, please make sure you are using the most recent version of both the mod and the APWorld. I will not provide support for outdated versions of either.
 
 With that out of the way, here's what to do:
-1. Join our [testing discord server](https://discord.gg/ZSWfgQdfG).
+1. Join our [testing discord server](https://discord.gg/ZSWfgQdfGr).
 2. Make sure you can see the #bug-report forum.
 3. Create a new thread in that forum, following all the rules for posting. These include but are not limited to:
    * Software versions of all software involved.
