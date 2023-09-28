@@ -202,3 +202,28 @@ Furthermore, if the function only takes one argument called `content`, then repl
 Available functions include:
 
 ### REPLACE
+
+Replaces a certain region of the JSON with a specified new value
+
+Argument Name | Value
+--------------|------
+`content`     | The new value of the item
+
+### FIND
+
+Find the first element inside of an array or dictionary by its attributes and perform an action on it
+
+Argument Name | Value
+--------------|------
+`query`       | The value to look for
+`mode`        | What action to perform after encountering a match
+`content`     | A value to merge with the found item
+
+`query` may be:
+* a primitive (number, string, etc) in which case the two must equal each other exactly
+* an array (in which case all elements of both arrays must match)
+* an object (in which case all keys of `query` must exist in the original object and equal the given values)
+
+`mode` may be:
+* `"merge"`: enter merge mode and combine the original with `content`
+* `"replace"`: replace the original with `content`
