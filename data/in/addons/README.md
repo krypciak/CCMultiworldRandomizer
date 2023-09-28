@@ -120,12 +120,12 @@ There are a lot of situations where merge mode will not be sufficient. For these
 
 ## Diff Mode
 
-Diff mode can be entered by using a special key. Essentially, it will be the old key, followed by the sequence `~DIFF` (in all captial letters). The value for this key will be an array of changes to make to the object, specified in the following format:
+Diff mode can be entered by using a special key. Essentially, it will be the old key, followed by the sequence `::DIFF` (in all captial letters). The value for this key will be an array of changes to make to the object, specified in the following format:
 
 ```js
 {
     "foo": {
-        "numbers~DIFF": [
+        "numbers::DIFF": [
             {
                 "action: "[FUNCTION]",
                 // other keys required by function
@@ -154,7 +154,7 @@ If there is only one element in the list, the list can be replaced with just the
 ```js
 {
     "foo": {
-        "numbers~DIFF": [
+        "numbers::DIFF": [
             {
                 "action": "REPLACE",
                 "content": {
@@ -171,7 +171,7 @@ If there is only one element in the list, the list can be replaced with just the
 ```js
 {
     "foo": {
-        "numbers~DIFF": {
+        "numbers::DIFF": {
             "action": "REPLACE",
             "content": {
                 "one": 2,
@@ -188,7 +188,7 @@ Furthermore, if the function only takes one argument called `content`, then repl
 ```js
 {
     "foo": {
-        "numbers~REPLACE": {
+        "numbers::REPLACE": {
             "one": 2,
             "two": 3,
             "three": 4
