@@ -1,26 +1,20 @@
 {
 	"regions": {
-		"open/DIFF": [
-			{
-				"action": "find",
-				"query": {
-					"from": "open16.1",
-					"to": "open19"
-				},
-				"content": {
-					"condition/DIFF": [
-						{
-							"type": "push",
-							"content": [
-								[ "cutscene", "Temple Mine Shade Statue"],
-								[ "cutscene", "Faj'ro Shade Statue"],
-								[ "cutscene", "Zir'vitar Shade Statue"],
-								[ "cutscene", "So'najiz Mine Shade Statue"]
-							]
-						}
-					]
-				}
+		"open::DIFF": {
+			"action": "FIND",
+			"query": {
+				"from": "open16.1",
+				"to": "open19"
+			},
+			"mode": "merge",
+			"content": {
+				"condition": [
+					[ "cutscene", "Temple Mine Shade Statue"],
+					[ "cutscene", "Faj'ro Shade Statue"],
+					[ "cutscene", "Zir'vitar Shade Statue"],
+					[ "cutscene", "So'najiz Mine Shade Statue"]
+				]
 			}
-		]
+		}
 	}
 }
