@@ -7,6 +7,10 @@
 		"quests.json",
 		"items.json"
 	],
+	"addons": [
+		"vt-shade-lock",
+		"quest-rando"
+	],
 	"version": "5",
 	"modes": [ "linear", "open" ],
 	"defaultMode": "open",
