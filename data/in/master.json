@@ -8,8 +8,8 @@
 		"items.json"
 	],
 	"addons": [
-		"vt-shade-lock",
-		"quest-rando"
+		"vtShadeLock",
+		"questRando"
 	],
 	"version": "5",
 	"modes": [ "linear", "open" ],
