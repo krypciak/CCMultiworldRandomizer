@@ -12,8 +12,8 @@ export default class MwRandomizer {
 	itemdb: any;
 	numItems: number = 0;
 
-	baseId: number = 300000;
-	baseNormalItemId: number = 300100;
+	baseId: number = 3235824000;
+	baseNormalItemId: number = 3235824100;
 
 	client: ap.Client;
 
