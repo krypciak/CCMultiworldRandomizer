@@ -2,8 +2,8 @@ import { defineVarProperty } from "../utils";
 import * as ap from "archipelago.js";
 import {ig, sc} from "ultimate-crosscode-typedefs";
 
-ig.module("multiworld.multiworld-model")
-	.requires()
+ig.module("mw-rando.multiworld-model")
+	.requires("impact.feature.storage.storage")
 	.defines(() => {
 		sc.MULTIWORLD_MSG = {
 			CONNECTION_STATUS_CHANGED: 0,
@@ -27,7 +27,6 @@ ig.module("multiworld.multiworld-model")
 				defineVarProperty(this, "connectionInfo", "mw.connectionInfo");
 				defineVarProperty(this, "lastIndexSeen", "mw.lastIndexSeen");
 				defineVarProperty(this, "locationInfo", "mw.locationInfo");
-				defineVarProperty(this, "connectionInfo", "mw.connectionInfo");
 				defineVarProperty(this, "localCheckedLocations", "mw.checkedLocations");
 				defineVarProperty(this, "mode", "mw.mode");
 				defineVarProperty(this, "options", "mw.options");
@@ -262,6 +261,10 @@ ig.module("multiworld.multiworld-model")
 				}
 
 				sc.multiworld.onLevelLoaded();
-			}
+			},
+		});
+
+		ig.addGameAddon(() => {
+			return (sc.multiworld = new sc.MultiWorldModel());
 		});
 	});

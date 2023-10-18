@@ -4,7 +4,7 @@ const fs = require("fs");
 import * as ap from 'archipelago.js';
 import {WorldData, RawElement} from './item-data.model';
 import {readJsonFromFile} from './utils';
-import "./types/multiworld-model";
+import "./types/multiworld-model.d";
 
 export default class MwRandomizer {
 	baseDirectory: string;
@@ -28,7 +28,12 @@ export default class MwRandomizer {
 	}
 
 	async prestart() {
-		let randoData: WorldData = await readJsonFromFile(this.baseDirectory + "data/data.json")
+		window.moduleCache.registerModPrefix("mw-rando", this.baseDirectory.substring(7));
+		ig.lib = this.baseDirectory.substring(7);
+
+		ig._loadScript("mw-rando.multiworld-model");
+
+		let randoData: WorldData = await readJsonFromFile(this.baseDirectory + "data/out/data.json")
 		this.randoData = randoData;
 
 		let maps = randoData.items;
@@ -37,16 +42,9 @@ export default class MwRandomizer {
 		let itemdb = await readJsonFromFile("assets/data/item-database.json");
 		this.itemdb = itemdb;
 
-		// @ts-ignore
-		window.apclient = client;
-
 		// For those times JS decides to override `this`
 		// Used several times in the injection code
 		let plugin = this;
-
-		ig.addGameAddon(() => {
-			return (sc.multiworld = new sc.MultiWorldModel());
-		});
 
 		ig.ENTITY.Chest.inject({
 			_reallyOpenUp() {
