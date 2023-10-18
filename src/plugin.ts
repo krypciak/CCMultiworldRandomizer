@@ -1,5 +1,5 @@
 import * as ap from 'archipelago.js';
-import {WorldData, RawElement} from './item-data.model';
+import {WorldData, RawElement, RawQuest} from './item-data.model';
 import {readJsonFromFile} from './utils';
 import "./types/multiworld-model.d";
 
@@ -22,6 +22,62 @@ export default class MwRandomizer {
 			case ap.CONNECTION_STATUS.CONNECTING.toLowerCase():
 				return `\\c[3]${status}\\c[0]`;
 		}
+	}
+
+	makeApItemsGui(quest: sc.Quest, mwQuest: RawQuest, itemsGui: ig.GuiElementBase) {
+		let itemGuis: sc.TextGui[] = [];
+		let worldGuis: sc.TextGui[] = [];
+
+		itemsGui.removeAllChildren();
+		for (let i = 0; i < mwQuest.mwids.length; i++) {
+			const label = quest.hideRewards ? "\\i[ap-logo]?????????????" : `\\i[ap-logo]Unknown`;
+			const itemGui = new sc.TextGui(label);
+			itemGui.setPos(0, i * 20);
+			const worldGui = new sc.TextGui("Archipelago", { "font": sc.fontsystem.tinyFont });
+
+			worldGui.setPos(15, itemGui.hook.size.y - 2);
+			itemsGui.addChildGui(itemGui);
+			itemGui.addChildGui(worldGui);
+			worldGuis.push(worldGui);
+			itemGuis.push(itemGui);
+		}
+
+		sc.multiworld.getLocationInfo(mwQuest.mwids, (info) => {
+			for (let i = 0; i < info.length; i++) {
+				const gui = itemGuis[i];
+
+				const gameName: string = sc.multiworld.client.data.players[info[i].player].game;
+				const gameInfo: ap.GamePackage = sc.multiworld.client.data.package.get(gameName);
+
+				const player = sc.multiworld.client.players.get(info[i].player);
+				const playerName = player?.alias ?? player?.name;
+
+				let item = info[i].item;
+				let icon = "ap-logo";
+				let label = gameInfo.item_id_to_name[item];
+
+				if (gameName == "CrossCode") {
+					const comboId: number = info[i].item;
+					if (comboId < sc.multiworld.baseNormalItemId) {
+						icon = "item-default";
+					} else {
+						const [itemId, _] = sc.multiworld.getItemDataFromComboId(info[i].item);
+						const dbEntry = sc.inventory.getItem(itemId);
+						icon = dbEntry ? dbEntry.icon + sc.inventory.getRaritySuffix(dbEntry.rarity) : "item-default";
+					}
+				}
+
+				if (quest.hideRewards) {
+					label = "?????????????";
+				}
+
+				gui.setText(`\\i[${icon}]${label}`);
+
+				if (playerName) {
+					worldGuis[i].setText(`\\i[ap-logo]${playerName}`);
+				}
+			}
+		});
 	}
 
 	async prestart() {
@@ -153,41 +209,8 @@ export default class MwRandomizer {
 				}
 
 				this.setSize(this.hook.size.x, this.hook.size.y + 6);
-
-				let worldGuis: sc.TextGui[] = [];
-
-				// const reward = sc.multiworld.client.locations.scout(ap.CREATE_AS_HINT_MODE.NO_HINT, randoData.quests[quest.id].mwid);
-				for (let i = 0; i < this.itemsGui.hook.children.length; i++) {
-					const hook = this.itemsGui.hook.children[i];
-					const gui = hook.gui;
-					if (hideRewards) {
-						gui.setText("\\i[ap-logo]?????????????");
-					} else {
-						gui.setText(`\\i[ap-logo]Unknown`);
-					}
-
-					hook.pos.y += 3 * i;
-					let worldGui = new sc.TextGui("Archipelago", { "font": sc.fontsystem.tinyFont });
-					worldGui.setPos(15, gui.hook.size.y - 2);
-					gui.addChildGui(worldGui);
-					worldGuis.push(worldGui);
-				}
-
-				sc.multiworld.getLocationInfo(mwQuest.mwids, (info) => {
-					for (let i = 0; i < info.length; i++) {
-						const hook = this.itemsGui.hook.children[i];
-						const gui = hook.gui;
-
-						let gameName = sc.multiworld.client.data.players[info[i].player].game;
-						let gameInfo = sc.multiworld.client.data.package.get(gameName);
-						gui.setText(`\\i[ap-logo]${gameInfo?.item_id_to_name[info[i].item]}`);
-						let player = sc.multiworld.client.players.get(info[i].player);
-						let playerName = player?.alias ?? player?.name;
-						if (playerName) {
-							worldGuis[i].setText(`\\i[ap-logo]${playerName}`);
-						}
-					}
-				});
+				
+				plugin.makeApItemsGui(quest, mwQuest, this.itemsGui);
 			}
 		});
 
@@ -198,41 +221,8 @@ export default class MwRandomizer {
 				if (mwQuest === undefined) {
 					return;
 				}
-
-				let worldGuis: sc.TextGui[] = [];
-
-				// const reward = sc.multiworld.client.locations.scout(ap.CREATE_AS_HINT_MODE.NO_HINT, randoData.quests[quest.id].mwid);
-				for (let i = 0; i < this.itemsGui.hook.children.length; i++) {
-					const hook = this.itemsGui.hook.children[i];
-					const gui = hook.gui;
-					if (quest.hideRewards) {
-						gui.setText("\\i[ap-logo]?????????????");
-					} else {
-						gui.setText(`\\i[ap-logo]Unknown`);
-					}
-
-					hook.pos.y += 3 * i;
-					let worldGui = new sc.TextGui("Archipelago", { "font": sc.fontsystem.tinyFont });
-					worldGui.setPos(15, gui.hook.size.y - 2);
-					gui.addChildGui(worldGui);
-					worldGuis.push(worldGui);
-				}
-
-				sc.multiworld.getLocationInfo(mwQuest.mwids, (info) => {
-					for (let i = 0; i < info.length; i++) {
-						const hook = this.itemsGui.hook.children[i];
-						const gui = hook.gui;
-
-						let gameName = sc.multiworld.client.data.players[info[i].player].game;
-						let gameInfo = sc.multiworld.client.data.package.get(gameName);
-						gui.setText(`\\i[ap-logo]${gameInfo?.item_id_to_name[info[i].item]}`);
-						let player = sc.multiworld.client.players.get(info[i].player);
-						let playerName = player?.alias ?? player?.name;
-						if (playerName) {
-							worldGuis[i].setText(`\\i[ap-logo]${playerName}`);
-						}
-					}
-				});
+				
+				plugin.makeApItemsGui(quest, mwQuest, this.itemsGui);
 			}
 		});
 
