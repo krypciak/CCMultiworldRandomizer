@@ -479,7 +479,7 @@
 			]
 		},
 		"A Promise is a Promise 2": {
-			"questid": "unknown-warrior-2",
+			"questid": "unkown-warrior-2",
 			"region": {
 				"linear": "3",
 				"open": "open3" 
@@ -913,7 +913,7 @@
 			]
 		},
 		"Turret Defense Challenge 1": {
-			"questid": "jungleAdv-turret_defense_challenge_1",
+			"questid": "jungleAdv-turret_defense_challenge-1",
 			"region": {
 				"linear": "23",
 				"open": "open10" 
@@ -926,7 +926,7 @@
 			]
 		},
 		"Turret Defense Challenge 2": {
-			"questid": "jungleAdv-turret_defense_challenge_2",
+			"questid": "jungleAdv-turret_defense_challenge-2",
 			"region": {
 				"linear": "23",
 				"open": "open10" 
@@ -1010,7 +1010,7 @@
 			]
 		},
 		"Faction Introduction": {
-			"questid": "faction_tutorial",
+			"questid": "faction-tutorial",
 			"region": {
 				"linear": "2",
 				"open": "open2" 
@@ -1050,7 +1050,7 @@
 			]
 		},
 		"Points of Power": {
-			"questid": "fd-3-ball-egg",
+			"questid": "fd-3-ball_egg_1",
 			"region": {
 				"linear": "20",
 				"open": "open9" 
@@ -1080,7 +1080,7 @@
 			]
 		},
 		"Smuggle Trouble": {
-			"questid": "rhg-2-crate-smuggle",
+			"questid": "rhg-2-crate_smuggle",
 			"region": {
 				"linear": "3",
 				"open": "open3" 
@@ -1110,7 +1110,7 @@
 			]
 		},
 		"Small Time Delivery": {
-			"questid": "rftc-1-collect-trade",
+			"questid": "rftc-1-collect_trade",
 			"region": {
 				"linear": "3",
 				"open": "open3" 
@@ -1179,7 +1179,7 @@
 			]
 		},
 		"Bull on Fire": {
-			"questid": "foa-buffel_cave",
+			"questid": "foa-3-buffel_cave",
 			"region": {
 				"linear": "20",
 				"open": "open9" 

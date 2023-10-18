@@ -170,12 +170,14 @@
 				}
 			},
 			"cutscenes": {
-				"452": {
-					"mwids": [
-						3235824350
-					],
-					"path": ".settings.npcStates.1.event.10"
-				}
+				"452": [
+					{
+						"mwids": [
+							3235824350
+						],
+						"path": ".settings.npcStates.1.event.10"
+					}
+				]
 			}
 		},
 		"autumn.path-3-2": {
@@ -238,12 +240,14 @@
 				}
 			},
 			"cutscenes": {
-				"458": {
-					"mwids": [
-						3235824346
-					],
-					"path": ".settings.event.21.accepted.6"
-				}
+				"458": [
+					{
+						"mwids": [
+							3235824346
+						],
+						"path": ".settings.event.21.accepted.6"
+					}
+				]
 			}
 		},
 		"autumn.path4": {
@@ -1173,12 +1177,14 @@
 				}
 			},
 			"cutscenes": {
-				"447": {
-					"mwids": [
-						3235824354
-					],
-					"path": ".settings.event.19.settings.npcStates.2.event.quest.12"
-				}
+				"447": [
+					{
+						"mwids": [
+							3235824354
+						],
+						"path": ".settings.event.19.settings.npcStates.2.event.quest.12"
+					}
+				]
 			}
 		},
 		"forest.path-05": {
@@ -2279,12 +2285,14 @@
 				}
 			},
 			"cutscenes": {
-				"576": {
-					"mwids": [
-						3235824349
-					],
-					"path": ".settings.npcStates.0.event.quest.11"
-				}
+				"576": [
+					{
+						"mwids": [
+							3235824349
+						],
+						"path": ".settings.npcStates.0.event.quest.11"
+					}
+				]
 			}
 		},
 		"rhombus-dng.room-1-6": {
@@ -2620,162 +2628,204 @@
 		},
 		"bergen.mine-entrance": {
 			"cutscenes": {
-				"316": {
-					"mwids": [
-						3235824351
-					],
-					"path": ".settings.npcStates.0.event.quest.2.thenStep.17"
-				}
+				"316": [
+					{
+						"mwids": [
+							3235824351
+						],
+						"path": ".settings.npcStates.0.event.quest.2.thenStep.17"
+					}
+				]
 			}
 		},
 		"cold-dng.g.expo-space": {
 			"cutscenes": {
-				"136": {
-					"mwids": [
-						3235824352
-					],
-					"path": ".settings.event.20"
-				}
+				"136": [
+					{
+						"mwids": [
+							3235824352
+						],
+						"path": ".settings.event.20"
+					}
+				]
 			}
 		},
 		"forest.interior.expo-space": {
 			"cutscenes": {
-				"137": {
-					"mwids": [
-						3235824353
-					],
-					"path": ".settings.event.19"
-				}
+				"137": [
+					{
+						"mwids": [
+							3235824353
+						],
+						"path": ".settings.event.19"
+					}
+				]
 			}
 		},
 		"heat.dng-expo-space": {
 			"cutscenes": {
-				"136": {
-					"mwids": [
-						3235824355
-					],
-					"path": ".settings.event.20"
-				}
+				"136": [
+					{
+						"mwids": [
+							3235824355
+						],
+						"path": ".settings.event.20"
+					}
+				]
 			}
 		},
 		"heat-village.interior.house-2": {
 			"cutscenes": {
-				"31": {
-					"mwids": [
-						3235824356
-					],
-					"path": ".settings.npcStates.0.event.4.0.9"
-				}
+				"31": [
+					{
+						"mwids": [
+							3235824356
+						],
+						"path": ".settings.npcStates.0.event.4.0.9"
+					}
+				]
 			}
 		},
 		"heat-village.interior.quest-hub-og": {
 			"cutscenes": {
-				"112": {
-					"mwids": [
-						3235824357
-					],
-					"path": ".settings.npcStates.1.event.quest.3.accepted.3"
-				}
+				"112": [
+					{
+						"mwids": [
+							3235824357
+						],
+						"path": ".settings.npcStates.1.event.quest.3.accepted.3"
+					}
+				]
 			}
 		},
 		"heat-village.special.expo-space": {
 			"cutscenes": {
-				"136": {
-					"mwids": [
-						3235824358
-					],
-					"path": ".settings.event.17"
-				}
+				"136": [
+					{
+						"mwids": [
+							3235824358
+						],
+						"path": ".settings.event.17"
+					}
+				]
 			}
 		},
 		"jungle.dng.shock-expo-space": {
 			"cutscenes": {
-				"136": {
-					"mwids": [
-						3235824359
-					],
-					"path": ".settings.event.20"
-				}
+				"136": [
+					{
+						"mwids": [
+							3235824359
+						],
+						"path": ".settings.event.20"
+					}
+				]
 			}
 		},
 		"jungle.dng.tree-expo-space": {
 			"cutscenes": {
-				"60": {
-					"mwids": [
-						3235824360
-					],
-					"path": ".settings.event.25"
-				}
+				"60": [
+					{
+						"mwids": [
+							3235824360
+						],
+						"path": ".settings.event.25"
+					}
+				]
 			}
 		},
 		"jungle.dng.wave-expo-space": {
 			"cutscenes": {
-				"136": {
-					"mwids": [
-						3235824361
-					],
-					"path": ".settings.event.20"
-				}
+				"136": [
+					{
+						"mwids": [
+							3235824361
+						],
+						"path": ".settings.event.20"
+					}
+				]
 			}
 		},
 		"rookie-harbor.expo-space": {
 			"cutscenes": {
-				"136": {
-					"mwids": [
-						3235824363
-					],
-					"path": ".settings.event.90"
-				},
-				"137": {
-					"mwids": [
-						3235824364
-					],
-					"path": ".settings.event.36"
-				},
-				"138": {
-					"mwids": [
-						3235824365
-					],
-					"path": ".settings.event.35"
-				},
-				"140": {
-					"mwids": [
-						3235824366
-					],
-					"path": ".settings.event.36"
-				},
-				"142": {
-					"mwids": [
-						3235824367
-					],
-					"path": ".settings.event.14"
-				},
-				"143": {
-					"mwids": [
-						3235824368
-					],
-					"path": ".settings.event.14"
-				}
+				"136": [
+					{
+						"mwids": [
+							3235824362
+						],
+						"path": ".settings.event.74"
+					},
+					{
+						"mwids": [
+							3235824363
+						],
+						"path": ".settings.event.90"
+					}
+				],
+				"137": [
+					{
+						"mwids": [
+							3235824364
+						],
+						"path": ".settings.event.36"
+					}
+				],
+				"138": [
+					{
+						"mwids": [
+							3235824365
+						],
+						"path": ".settings.event.35"
+					}
+				],
+				"140": [
+					{
+						"mwids": [
+							3235824366
+						],
+						"path": ".settings.event.36"
+					}
+				],
+				"142": [
+					{
+						"mwids": [
+							3235824367
+						],
+						"path": ".settings.event.14"
+					}
+				],
+				"143": [
+					{
+						"mwids": [
+							3235824368
+						],
+						"path": ".settings.event.14"
+					}
+				]
 			}
 		},
 		"bergen.inner-questhub-1": {
 			"cutscenes": {
-				"160": {
-					"mwids": [
-						3235824347
-					],
-					"path": ".settings.npcStates.0.event.quest.14"
-				}
+				"160": [
+					{
+						"mwids": [
+							3235824347
+						],
+						"path": ".settings.npcStates.0.event.quest.14"
+					}
+				]
 			}
 		},
 		"heat-village.interior.quest-hub-eg": {
 			"cutscenes": {
-				"134": {
-					"mwids": [
-						3235824348
-					],
-					"path": ".settings.npcStates.0.event.quest.11"
-				}
+				"134": [
+					{
+						"mwids": [
+							3235824348
+						],
+						"path": ".settings.npcStates.0.event.quest.11"
+					}
+				]
 			}
 		},
 		"cold-dng.b3.room7": {
@@ -3024,7 +3074,7 @@
 				3235824428
 			]
 		},
-		"unknown-warrior-2": {
+		"unkown-warrior-2": {
 			"mwids": [
 				3235824429
 			]
@@ -3214,12 +3264,12 @@
 				3235824479
 			]
 		},
-		"jungleAdv-turret_defense_challenge_1": {
+		"jungleAdv-turret_defense_challenge-1": {
 			"mwids": [
 				3235824480
 			]
 		},
-		"jungleAdv-turret_defense_challenge_2": {
+		"jungleAdv-turret_defense_challenge-2": {
 			"mwids": [
 				3235824481
 			]
@@ -3254,7 +3304,7 @@
 				3235824487
 			]
 		},
-		"faction_tutorial": {
+		"faction-tutorial": {
 			"mwids": [
 				3235824488
 			]
@@ -3270,7 +3320,7 @@
 				3235824491
 			]
 		},
-		"fd-3-ball-egg": {
+		"fd-3-ball_egg_1": {
 			"mwids": [
 				3235824492,
 				3235824493
@@ -3282,7 +3332,7 @@
 				3235824495
 			]
 		},
-		"rhg-2-crate-smuggle": {
+		"rhg-2-crate_smuggle": {
 			"mwids": [
 				3235824496,
 				3235824497
@@ -3294,7 +3344,7 @@
 				3235824499
 			]
 		},
-		"rftc-1-collect-trade": {
+		"rftc-1-collect_trade": {
 			"mwids": [
 				3235824500,
 				3235824501
@@ -3326,7 +3376,7 @@
 				3235824511
 			]
 		},
-		"foa-buffel_cave": {
+		"foa-3-buffel_cave": {
 			"mwids": [
 				3235824512,
 				3235824513,
