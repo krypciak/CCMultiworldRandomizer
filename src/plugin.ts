@@ -1,6 +1,3 @@
-// don't trust ts-server, you can't replace this `require`
-const fs = require("fs");
-
 import * as ap from 'archipelago.js';
 import {WorldData, RawElement} from './item-data.model';
 import {readJsonFromFile} from './utils';

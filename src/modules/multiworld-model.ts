@@ -23,6 +23,7 @@ ig.module("mw-rando.multiworld-model")
 			init() {
 				this.client = new ap.Client();
 				ig.storage.register(this);
+				this.numItems = sc.inventory.items.length;
 
 				defineVarProperty(this, "connectionInfo", "mw.connectionInfo");
 				defineVarProperty(this, "lastIndexSeen", "mw.lastIndexSeen");
