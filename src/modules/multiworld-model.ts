@@ -1,7 +1,6 @@
 import { defineVarProperty } from "../utils";
 import * as ap from "archipelago.js";
 import {ig, sc} from "ultimate-crosscode-typedefs";
-import {ItemData} from "../item-data.model";
 
 ig.module("multiworld.multiworld-model")
 	.requires()
@@ -17,8 +16,8 @@ ig.module("multiworld.multiworld-model")
 			client: null,
 			previousConnectionStatus: ap.CONNECTION_STATUS.DISCONNECTED,
 
-			baseId: 300000,
-			baseNormalItemId: 300100,
+			baseId: 3235824000,
+			baseNormalItemId: 3235824100,
 			numItems: 0,
 
 			init() {
@@ -34,10 +33,6 @@ ig.module("multiworld.multiworld-model")
 				defineVarProperty(this, "options", "mw.options");
 
 				window.setInterval(this.updateConnectionStatus.bind(this), 300);
-			},
-
-			enterData(randoData: ItemData) {
-				randoData.
 			},
 
 			getElementConstantFromComboId(comboId: number): number | null {
@@ -211,6 +206,12 @@ ig.module("multiworld.multiworld-model")
 				}
 
 				this.localCheckedLocations.push(mwid);
+			},
+
+			async reallyCheckLocations(mwids: number[]) {
+				for (const mwid of mwids) {
+					this.reallyCheckLocation(mwid);
+				}
 			},
 
 			async login(info: ap.ConnectionInformation) {

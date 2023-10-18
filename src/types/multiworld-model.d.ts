@@ -1,11 +1,11 @@
 declare namespace ig {
 	namespace EVENT_STEP {
 		interface SEND_ITEM extends ig.EventStepBase {
-			mwid: number;
+			mwids: number[];
 		}
 
 		interface SendItemConstructor extends ImpactClass<SEND_ITEM> {
-			new(settings: { mwid: number }): SEND_ITEM;
+			new(settings: { mwids: number[] }): SEND_ITEM;
 		}
 
 		var SEND_ITEM: SendItemConstructor;
@@ -46,6 +46,7 @@ declare namespace sc {
 		getLocationInfo(this: this, locations: number[], callback: (info: ap.NetworkItem[]) => void);
 		async storeAllLocationInfo(this: this): void;
 		async reallyCheckLocation(this: this, mwid: number): void;
+		async reallyCheckLocations(this: this, mwids: number[]): void;
 		async login(this: this, connectionInfo: ap.ConnectionInformation): void;
 	}
 

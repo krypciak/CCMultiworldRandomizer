@@ -31,8 +31,6 @@ export default class MwRandomizer {
 		let randoData: WorldData = await readJsonFromFile(this.baseDirectory + "data/data.json")
 		this.randoData = randoData;
 
-		sc.multiworld.enterData(randoData);
-
 		let maps = randoData.items;
 		let quests = randoData.quests;
 
@@ -64,7 +62,7 @@ export default class MwRandomizer {
 				const old = sc.ItemDropEntity.spawnDrops;
 				try {
 					if (check) {
-						sc.multiworld.reallyCheckLocation(check.mwid);
+						sc.multiworld.reallyCheckLocations(check.mwids);
 					}
 
 					this.amount = 0;
@@ -97,28 +95,17 @@ export default class MwRandomizer {
 				}
 
 				const check = Object.values(map.elements)[0] as RawElement;
-				if (
-					check === undefined ||
-					check.mwid === undefined ||
-					check.condition === undefined ||
-					check.condition[sc.multiworld.mode] === undefined ||
-					randoData.softLockAreas[sc.multiworld.mode].indexOf(check.condition[sc.multiworld.mode][0]) !== -1
-				) {
-					console.warn('Event not in logic');
-					return this.parent();
-				}
-
-				sc.multiworld.reallyCheckLocation(check.mwid);
+				sc.multiworld.reallyCheckLocations(check.mwids);
 			}
 		});
 
 		ig.EVENT_STEP.SEND_ITEM = ig.EventStepBase.extend({
-			mwid: 0,
+			mwids: [],
 			init(settings) {
-				this.mwid = settings.mwid;
+				this.mwids = settings.mwids;
 			},
 			start() {
-				sc.multiworld.reallyCheckLocation(this.mwid);
+				sc.multiworld.reallyCheckLocations(this.mwids);
 			}
 		});
 
@@ -131,22 +118,14 @@ export default class MwRandomizer {
 							entity
 							&& entity.settings
 							&& entity.settings.mapId
-							&& mapOverrides.events[entity.settings.mapId]
+							&& mapOverrides.cutscenes
+							&& mapOverrides.cutscenes[entity.settings.mapId]
 						) {
-								for (const check of mapOverrides.events[entity.settings.mapId]) {
+								for (const check of mapOverrides.cutscenes[entity.settings.mapId]) {
 									const path = check.path.slice(1).split(/\./g);
 
-									if (
-										check.mwid === undefined ||
-										check.condition === undefined ||
-										check.condition[sc.multiworld.mode] === undefined ||
-										randoData.softLockAreas[sc.multiworld.mode].indexOf(check.condition[sc.multiworld.mode][0]) !== -1
-									) {
-										continue;
-									}
-
 									set(entity, 'SEND_ITEM', [...path, 'type']);
-									set(entity, check.mwid, [...path, 'mwid']);
+									set(entity, check.mwids, [...path, 'mwids']);
 								}
 							}
 					}
@@ -159,16 +138,11 @@ export default class MwRandomizer {
 		sc.QuestModel.inject({
 			_collectRewards(quest: sc.Quest) {
 				const check = quests[quest.id];
-				if (
-					check === undefined ||
-					check.mwid === undefined ||
-					check.condition === undefined ||
-					check.condition[sc.multiworld.mode] === undefined ||
-					randoData.softLockAreas[sc.multiworld.mode].indexOf(check.condition[sc.multiworld.mode][0]) !== -1
-				) {
+				if (check) {
+					sc.multiworld.reallyCheckLocations(check.mwids);
+				} else {
 					return this.parent(quest);
 				}
-				sc.multiworld.reallyCheckLocation(check.mwid);
 			}
 		});
 
@@ -178,10 +152,11 @@ export default class MwRandomizer {
 				let mwQuest = randoData.quests[quest.id]
 				if (
 					mwQuest === undefined ||
-					mwQuest.mwid === undefined
+					mwQuest.mwids === undefined
 				) {
 					return;
 				}
+
 				this.setSize(this.hook.size.x, this.hook.size.y + 6);
 
 				let worldGuis: sc.TextGui[] = [];
@@ -203,7 +178,7 @@ export default class MwRandomizer {
 					worldGuis.push(worldGui);
 				}
 
-				sc.multiworld.getLocationInfo([mwQuest.mwid], (info) => {
+				sc.multiworld.getLocationInfo(mwQuest.mwids, (info) => {
 					for (let i = 0; i < info.length; i++) {
 						const hook = this.itemsGui.hook.children[i];
 						const gui = hook.gui;
@@ -225,10 +200,7 @@ export default class MwRandomizer {
 			_setQuest(quest: sc.Quest) {
 				this.parent(quest);
 				let mwQuest = randoData.quests[quest.id]
-				if (
-					mwQuest === undefined ||
-					mwQuest.mwid === undefined
-				) {
+				if (mwQuest === undefined) {
 					return;
 				}
 
@@ -251,7 +223,7 @@ export default class MwRandomizer {
 					worldGuis.push(worldGui);
 				}
 
-				sc.multiworld.getLocationInfo([mwQuest.mwid], (info) => {
+				sc.multiworld.getLocationInfo(mwQuest.mwids, (info) => {
 					for (let i = 0; i < info.length; i++) {
 						const hook = this.itemsGui.hook.children[i];
 						const gui = hook.gui;
