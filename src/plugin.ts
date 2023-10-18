@@ -2,13 +2,13 @@
 const fs = require("fs");
 
 import * as ap from 'archipelago.js';
-import {ItemData, RawElement} from './item-data.model';
+import {WorldData, RawElement} from './item-data.model';
 import {readJsonFromFile} from './utils';
 import "./types/multiworld-model";
 
 export default class MwRandomizer {
 	baseDirectory: string;
-	randoData: ItemData | null = null;
+	randoData: WorldData | null = null;
 	itemdb: any;
 
 	constructor(mod: {baseDirectory: string}) {
@@ -28,7 +28,7 @@ export default class MwRandomizer {
 	}
 
 	async prestart() {
-		let randoData: ItemData = await readJsonFromFile(this.baseDirectory + "data/data.json")
+		let randoData: WorldData = await readJsonFromFile(this.baseDirectory + "data/data.json")
 		this.randoData = randoData;
 
 		sc.multiworld.enterData(randoData);
@@ -59,21 +59,13 @@ export default class MwRandomizer {
 					return this.parent();
 				}
 
-				const check = map.chests[this.mapId];
-				if (
-					check === undefined ||
-					check.mwid === undefined ||
-					check.condition === undefined ||
-					check.condition[sc.multiworld.mode] === undefined ||
-					randoData.softLockAreas[sc.multiworld.mode].indexOf(check.condition[sc.multiworld.mode][0]) !== -1
-				) {
-					console.warn('Chest not in logic');
-					return this.parent();
-				}
+				const check = map.chests?.[this.mapId];
 
 				const old = sc.ItemDropEntity.spawnDrops;
 				try {
-					sc.multiworld.reallyCheckLocation(check.mwid);
+					if (check) {
+						sc.multiworld.reallyCheckLocation(check.mwid);
+					}
 
 					this.amount = 0;
 					return this.parent();
