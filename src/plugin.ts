@@ -24,11 +24,12 @@ export default class MwRandomizer {
 		}
 	}
 
-	makeApItemsGui(quest: sc.Quest, mwQuest: RawQuest, itemsGui: ig.GuiElementBase) {
+	makeApItemsGui(quest: sc.Quest, mwQuest: RawQuest, itemsGui: ig.GuiElementBase, gfx: ig.Image) {
 		let itemGuis: sc.TextGui[] = [];
 		let worldGuis: sc.TextGui[] = [];
 
 		itemsGui.removeAllChildren();
+		itemsGui.gfx = gfx;
 		for (let i = 0; i < mwQuest.mwids.length; i++) {
 			const label = quest.hideRewards ? "\\i[ap-logo]?????????????" : `\\i[ap-logo]Unknown`;
 			const itemGui = new sc.TextGui(label);
@@ -64,6 +65,18 @@ export default class MwRandomizer {
 						const [itemId, _] = sc.multiworld.getItemDataFromComboId(info[i].item);
 						const dbEntry = sc.inventory.getItem(itemId);
 						icon = dbEntry ? dbEntry.icon + sc.inventory.getRaritySuffix(dbEntry.rarity) : "item-default";
+						let level = 0;
+						if (dbEntry && dbEntry.type == sc.ITEMS_TYPES.EQUIP && (level = dbEntry.level) != 0) {
+							gui.setDrawCallback(function (width: number, height: number) {
+								sc.MenuHelper.drawLevel(
+									level,
+									width,
+									height,
+									itemsGui.gfx,
+									dbEntry.isScalable || false,
+								);
+							});
+						}
 					}
 				}
 
@@ -203,14 +216,16 @@ export default class MwRandomizer {
 				let mwQuest = randoData.quests[quest.id]
 				if (
 					mwQuest === undefined ||
-					mwQuest.mwids === undefined
+					mwQuest.mwids === undefined ||
+					mwQuest.mwids.length === 0 ||
+					!sc.multiworld.locationInfo.hasOwnProperty(mwQuest.mwids[0])
 				) {
 					return;
 				}
 
 				this.setSize(this.hook.size.x, this.hook.size.y + 6);
 				
-				plugin.makeApItemsGui(quest, mwQuest, this.itemsGui);
+				plugin.makeApItemsGui(quest, mwQuest, this.itemsGui, this.gfx);
 			}
 		});
 
@@ -222,7 +237,7 @@ export default class MwRandomizer {
 					return;
 				}
 				
-				plugin.makeApItemsGui(quest, mwQuest, this.itemsGui);
+				plugin.makeApItemsGui(quest, mwQuest, this.itemsGui, this.gfx);
 			}
 		});
 
