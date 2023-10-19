@@ -28,6 +28,20 @@
                 [ "item", "Just Water", 2 ]
             ]
         },
+        "Bergen Mine Detector": {
+            "location": {
+                "map": "bergen.inner-questhub-1",
+                "mapId": 135,
+                "path": ".settings.npcStates.1.event.quest.5"
+            },
+            "region": {
+                "linear": "3",
+                "open": "open3"
+            },
+            "reward": [
+                [ "item", "Mine Detector", 1]
+            ]
+        },
         "Temple Mine Shade Statue": {
             "location": {
                 "map": "cold-dng.g.expo-space",
