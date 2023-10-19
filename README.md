@@ -1,6 +1,6 @@
 # Client for CrossCode Archipelago Integration
 
-This is still under *heavy* development, though it does work if you're willing to edit some files manually.
+This is still under heavy development, though it works and will, for the most part, be pretty stable.
 
 # Discord server
 
