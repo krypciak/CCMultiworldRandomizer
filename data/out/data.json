@@ -1182,7 +1182,7 @@
 						"mwids": [
 							3235824351
 						],
-						"path": ".settings.event.19.settings.npcStates.2.event.quest.12"
+						"path": ".settings.npcStates.2.event.quest.12"
 					}
 				]
 			}

@@ -77,7 +77,7 @@
             "location": {
                 "map": "forest.path-04-vaga",
                 "mapId": 447,
-                "path": ".settings.event.19.settings.npcStates.2.event.quest.12" 
+                "path": ".settings.npcStates.2.event.quest.12"
             },
             "region": {
                 "linear": "31",
