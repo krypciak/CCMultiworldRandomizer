@@ -195,6 +195,18 @@ export default class MwRandomizer {
 			}
 		});
 
+		ig.EVENT_STEP.MW_GOAL_COMPLETED = ig.EventStepBase.extend({
+			init(settings) {
+				// In the future, goal will only update client status if it checks off
+				// a specific goal specified by their yaml. For now, there's only one
+				// goal.
+				this.goal = settings.goal;
+			},
+			start() {
+				sc.multiworld.client.updateStatus(ap.CLIENT_STATUS.GOAL);
+			}
+		});
+
 		ig.Game.inject({
 			loadLevel(map, ...args) {
 				const mapOverrides = maps[map.name.replace(/[\\\/]/g, '.')];

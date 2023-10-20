@@ -4,11 +4,20 @@ declare namespace ig {
 			mwids: number[];
 		}
 
+		interface MW_GOAL_COMPLETED extends ig.EventStepBase {
+			goal: string;
+		}
+
 		interface SendItemConstructor extends ImpactClass<SEND_ITEM> {
 			new(settings: { mwids: number[] }): SEND_ITEM;
 		}
 
+		interface MwGoalCompletedConstructor extends ImpactClass<MW_GOAL_COMPLETED> {
+			new(settings: { goal: string }): MW_GOAL_COMPLETED;
+		}
+
 		var SEND_ITEM: SendItemConstructor;
+		var MW_GOAL_COMPLETED: MwGoalCompletedConstructor;
 	}
 }
 
