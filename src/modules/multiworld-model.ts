@@ -240,10 +240,15 @@ ig.module("mw-rando.multiworld-model")
 
 				this.connectionInfo = info;
 
-				// eventually i'll get proper interfaces set up.....
-				// @ts-ignore
 				this.mode = this.client.data.slotData.mode;
 				this.options = this.client.data.slotData.options;
+
+				const obfuscationLevel: string = this.options.hiddenQuestObfuscationLevel;
+
+				this.questSettings = {
+					hidePlayer: obfuscationLevel == "hide_text" || obfuscationLevel == "hide_all",
+					hideIcon: obfuscationLevel == "hide_all"
+				};
 
 				sc.Model.notifyObserver(sc.multiworld, sc.MULTIWORLD_MSG.OPTIONS_PRESENT);
 

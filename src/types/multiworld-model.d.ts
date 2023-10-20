@@ -27,13 +27,18 @@ declare namespace sc {
 		baseNormalItemId: number;
 		numItems: number;
 
+		questSettings: {
+			hidePlayer: boolean;
+			hideIcon: boolean;
+		};
+
 		connectionInfo: ap.ConnectionInformation;
 		lastIndexSeen: number;
-        locationInfo: {[idx: number]: ap.NetworkItem};
-        connectionInfo: ap.ConnectionInformation;
-        localCheckedLocations: number[];
-        mode: string;
-        options: any;
+		locationInfo: {[idx: number]: ap.NetworkItem};
+		connectionInfo: ap.ConnectionInformation;
+		localCheckedLocations: number[];
+		mode: string;
+		options: any;
 
 		enterData(this: this, randoData: ItemData): void;
 		getElementConstantFromComboId(this: this, comboId: number): number | null;

@@ -30,17 +30,34 @@ export default class MwRandomizer {
 
 		itemsGui.removeAllChildren();
 		itemsGui.gfx = gfx;
+
+		const hiddenQuestRewardMode = sc.multiworld.options.hiddenQuestRewardMode;
+		let hideRewards = quest.hideRewards;
+		if (hiddenQuestRewardMode == "show_all") {
+			hideRewards = false;
+		} else if (hiddenQuestRewardMode == "hide_all") {
+			hideRewards = true;
+		}
+
 		for (let i = 0; i < mwQuest.mwids.length; i++) {
-			const label = quest.hideRewards ? "\\i[ap-logo]?????????????" : `\\i[ap-logo]Unknown`;
+			const label = hideRewards ? "\\i[ap-logo]?????????????" : `\\i[ap-logo]Unknown`;
 			const itemGui = new sc.TextGui(label);
 			itemGui.setPos(0, i * 20);
-			const worldGui = new sc.TextGui("Archipelago", { "font": sc.fontsystem.tinyFont });
+			const worldGui = new sc.TextGui(
+				hideRewards ? "?????????????" : "Archipelago",
+				{ "font": sc.fontsystem.tinyFont }
+			);
 
 			worldGui.setPos(15, itemGui.hook.size.y - 2);
 			itemsGui.addChildGui(itemGui);
 			itemGui.addChildGui(worldGui);
 			worldGuis.push(worldGui);
 			itemGuis.push(itemGui);
+		}
+
+		if (sc.multiworld.questSettings.hideIcon) {
+			// It's a waste of time to get any location information because it will all be obscured anyway.
+			return;
 		}
 
 		sc.multiworld.getLocationInfo(mwQuest.mwids, (info) => {
@@ -56,6 +73,7 @@ export default class MwRandomizer {
 				let item = info[i].item;
 				let icon = "ap-logo";
 				let label = gameInfo.item_id_to_name[item];
+				let worldLabel = playerName ? playerName : "Archipelago";
 
 				if (gameName == "CrossCode") {
 					const comboId: number = info[i].item;
@@ -80,15 +98,15 @@ export default class MwRandomizer {
 					}
 				}
 
-				if (quest.hideRewards) {
+				if (hideRewards) {
 					label = "?????????????";
+					if (sc.multiworld.questSettings.hidePlayer) {
+						worldLabel =  "?????????????";
+					}
 				}
 
 				gui.setText(`\\i[${icon}]${label}`);
-
-				if (playerName) {
-					worldGuis[i].setText(`\\i[ap-logo]${playerName}`);
-				}
+				worldGuis[i].setText(worldLabel);
 			}
 		});
 	}
