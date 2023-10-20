@@ -781,7 +781,8 @@
 				"open": "open10" 
 			},
 			"condition": [ 
-				[ "quest", "Sprouting Business" ]
+				[ "quest", "Sprouting Business" ],
+				[ "item", "wave", 1]
 			],
 			"reward": [
 				[ "item", "Pond Slums Pass", 1 ]
