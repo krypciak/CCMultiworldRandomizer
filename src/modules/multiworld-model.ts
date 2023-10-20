@@ -132,7 +132,7 @@ ig.module("mw-rando.multiworld-model")
 				this.lastIndexSeen = index;
 			},
 
-			getLocationInfo(locations: number[], callback: (info: ap.NetworkItem[]) => void) {
+			getLocationInfo(mode: ap.CreateAsHintMode, locations: number[], callback: (info: ap.NetworkItem[]) => void) {
 				let listener = (packet: ap.LocationInfoPacket) => {
 					let matches = true;
 					for (let i = 0; i < locations.length; i++) {
@@ -153,10 +153,7 @@ ig.module("mw-rando.multiworld-model")
 
 				this.client.addListener('LocationInfo', listener);
 
-				this.client.locations.scout(
-					ap.CREATE_AS_HINT_MODE.NO_HINT,
-					...locations
-				);
+				this.client.locations.scout(mode, ...locations);
 			},
 
 			async storeAllLocationInfo() {

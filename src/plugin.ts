@@ -39,6 +39,10 @@ export default class MwRandomizer {
 			hideRewards = true;
 		}
 
+		const hintMode = sc.multiworld.options.questDialogHints && !hideRewards ?
+			ap.CREATE_AS_HINT_MODE.HINT_ONLY_NEW :
+			ap.CREATE_AS_HINT_MODE.NO_HINT;
+
 		for (let i = 0; i < mwQuest.mwids.length; i++) {
 			const label = hideRewards ? "\\i[ap-logo]?????????????" : `\\i[ap-logo]Unknown`;
 			const itemGui = new sc.TextGui(label);
@@ -60,7 +64,7 @@ export default class MwRandomizer {
 			return;
 		}
 
-		sc.multiworld.getLocationInfo(mwQuest.mwids, (info) => {
+		sc.multiworld.getLocationInfo(hintMode, mwQuest.mwids, (info) => {
 			for (let i = 0; i < info.length; i++) {
 				const gui = itemGuis[i];
 

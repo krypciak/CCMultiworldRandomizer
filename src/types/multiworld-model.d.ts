@@ -32,7 +32,6 @@ declare namespace sc {
 			hideIcon: boolean;
 		};
 
-		connectionInfo: ap.ConnectionInformation;
 		lastIndexSeen: number;
 		locationInfo: {[idx: number]: ap.NetworkItem};
 		connectionInfo: ap.ConnectionInformation;
@@ -48,7 +47,7 @@ declare namespace sc {
 		onLevelLoaded(this: this): void;
 		updateConnectionStatus(this: this): void;
 		addMultiworldItem(this: this, comboId: number, index: number): void;
-		getLocationInfo(this: this, locations: number[], callback: (info: ap.NetworkItem[]) => void);
+		getLocationInfo(this: this, mode: ap.CreateAsHintMode, locations: number[], callback: (info: ap.NetworkItem[]) => void);
 		async storeAllLocationInfo(this: this): void;
 		async reallyCheckLocation(this: this, mwid: number): void;
 		async reallyCheckLocations(this: this, mwids: number[]): void;
