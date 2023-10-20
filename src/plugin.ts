@@ -144,6 +144,15 @@ export default class MwRandomizer {
 				}
 
 				const check = map.chests?.[this.mapId];
+				if (
+					check === undefined ||
+					check.mwids === undefined ||
+					check.mwids.length == 0 ||
+					!sc.multiworld.locationInfo.hasOwnProperty(check.mwids[0])
+				) {
+					console.warn('Chest not in logic');
+					return this.parent();
+				}
 
 				const old = sc.ItemDropEntity.spawnDrops;
 				try {

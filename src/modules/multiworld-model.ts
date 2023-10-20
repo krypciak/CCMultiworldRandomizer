@@ -190,7 +190,7 @@ ig.module("mw-rando.multiworld-model")
 
 				let loc = this.locationInfo[mwid];
 				if (loc == undefined) {
-					this.getLocationInfo([mwid], sc.multiworld.notifyItemsSent.bind(sc.multiworld));
+					this.getLocationInfo(ap.CREATE_AS_HINT_MODE.NO_HINT, [mwid], sc.multiworld.notifyItemsSent.bind(sc.multiworld));
 				} else {
 					sc.multiworld.notifyItemsSent([loc]);
 
