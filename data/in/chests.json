@@ -2694,13 +2694,6 @@
 					"Sweet Berry Tea",
 					7
 				]
-			],
-			"condition": [
-				[
-					"item",
-					"Shock",
-					1
-				]
 			]
 		},
 		"Sapphire Ridge - Cave Inn 1F - Chest": {
@@ -6251,13 +6244,6 @@
 				[
 					"item",
 					"Zir'vitar Key",
-					1
-				]
-			],
-			"condition": [
-				[
-					"item",
-					"Wave",
 					1
 				]
 			]
