@@ -24,7 +24,32 @@ export default class MwRandomizer {
 		}
 	}
 
-	makeApItemsGui(quest: sc.Quest, mwQuest: RawQuest, itemsGui: ig.GuiElementBase, gfx: ig.Image) {
+	/**
+	 * Modify `itemsGui` such that represents the quest rewards for the
+	 * multiworld, based on user preferences for occluding specific data.
+	 *
+	 * @remarks
+	 * This function signature sucks. I have to do things a really annoying way
+	 * for this to work.
+	 *
+	 * @param quest - The sc.Quest object representing the quest in the base game.
+	 * @param showRewardAnyway - Overrides computed parameter for whether to hide
+	 * the rewards. This is meant to bypass user settings and show the reward
+	 * even if it is not desired (i.e. at the end of the quest).
+	 * @param mwQuest - The object from `data.json` that stores location IDs.
+	 * @param itemsGui - The GUI to modify.
+	 * @param gfx - Argument required to draw the level if required. Inspect
+	 * sc.QuestDialog.setQuest or sc.QuestDetailsView._setQuest for how to obtain
+	 * it.
+	 */
+
+	makeApItemsGui(
+		quest: sc.Quest,
+		showRewardAnyway: boolean,
+		mwQuest: RawQuest,
+		itemsGui: ig.GuiElementBase,
+		gfx: ig.Image
+	) {
 		let itemGuis: sc.TextGui[] = [];
 		let worldGuis: sc.TextGui[] = [];
 
@@ -39,18 +64,65 @@ export default class MwRandomizer {
 			hideRewards = true;
 		}
 
-		const hintMode = sc.multiworld.options.questDialogHints && !hideRewards ?
-			ap.CREATE_AS_HINT_MODE.HINT_ONLY_NEW :
-			ap.CREATE_AS_HINT_MODE.NO_HINT;
+		hideRewards = hideRewards && !showRewardAnyway;
+
+		if (sc.multiworld.options.questDialogHints && !hideRewards) {
+			sc.multiworld.client.locations.scout(ap.CREATE_AS_HINT_MODE.HINT_ONLY_NEW, mwQuest.mwids);
+		}
 
 		for (let i = 0; i < mwQuest.mwids.length; i++) {
-			const label = hideRewards ? "\\i[ap-logo]?????????????" : `\\i[ap-logo]Unknown`;
-			const itemGui = new sc.TextGui(label);
+			const mwid: number = mwQuest.mwids[i]
+			const locInfo: ap.NetworkItem = sc.multiworld.locationInfo[mwid];
+
+			const gameName: string = sc.multiworld.client.data.players[locInfo.player].game;
+			const gameInfo: ap.GamePackage = sc.multiworld.client.data.package.get(gameName);
+
+			const player = sc.multiworld.client.players.get(locInfo.player);
+			const playerName = player?.alias ?? player?.name;
+
+			let item = locInfo.item;
+			let icon = "ap-logo";
+			let label = gameInfo.item_id_to_name[item];
+			let worldLabel = playerName ? playerName : "Archipelago";
+			let level = 0;
+			let isScalable = false;
+
+			if (gameName == "CrossCode") {
+				const comboId: number = locInfo.item;
+				if (comboId < sc.multiworld.baseNormalItemId) {
+					icon = "item-default";
+				} else {
+					const [itemId, _] = sc.multiworld.getItemDataFromComboId(locInfo.item);
+					const dbEntry = sc.inventory.getItem(itemId);
+					icon = dbEntry ? dbEntry.icon + sc.inventory.getRaritySuffix(dbEntry.rarity) : "item-default";
+					if (dbEntry && dbEntry.type == sc.ITEMS_TYPES.EQUIP) {
+						level = dbEntry.level;
+					}
+				}
+			}
+
+			if (hideRewards) {
+				label = "?????????????";
+				if (sc.multiworld.questSettings.hidePlayer) {
+					worldLabel =  "?????????????";
+				}
+			}
+
+			const itemGui = new sc.TextGui(`\\i[${icon}]${label}`);
 			itemGui.setPos(0, i * 20);
-			const worldGui = new sc.TextGui(
-				hideRewards ? "?????????????" : "Archipelago",
-				{ "font": sc.fontsystem.tinyFont }
-			);
+			const worldGui = new sc.TextGui(worldLabel, { "font": sc.fontsystem.tinyFont });
+
+			if (level > 0) {
+				itemGui.setDrawCallback(function (width: number, height: number) {
+					sc.MenuHelper.drawLevel(
+						level,
+						width,
+						height,
+						itemsGui.gfx,
+						isScalable
+					);
+				});
+			}
 
 			worldGui.setPos(15, itemGui.hook.size.y - 2);
 			itemsGui.addChildGui(itemGui);
@@ -58,61 +130,6 @@ export default class MwRandomizer {
 			worldGuis.push(worldGui);
 			itemGuis.push(itemGui);
 		}
-
-		if (sc.multiworld.questSettings.hideIcon) {
-			// It's a waste of time to get any location information because it will all be obscured anyway.
-			return;
-		}
-
-		sc.multiworld.getLocationInfo(hintMode, mwQuest.mwids, (info) => {
-			for (let i = 0; i < info.length; i++) {
-				const gui = itemGuis[i];
-
-				const gameName: string = sc.multiworld.client.data.players[info[i].player].game;
-				const gameInfo: ap.GamePackage = sc.multiworld.client.data.package.get(gameName);
-
-				const player = sc.multiworld.client.players.get(info[i].player);
-				const playerName = player?.alias ?? player?.name;
-
-				let item = info[i].item;
-				let icon = "ap-logo";
-				let label = gameInfo.item_id_to_name[item];
-				let worldLabel = playerName ? playerName : "Archipelago";
-
-				if (gameName == "CrossCode") {
-					const comboId: number = info[i].item;
-					if (comboId < sc.multiworld.baseNormalItemId) {
-						icon = "item-default";
-					} else {
-						const [itemId, _] = sc.multiworld.getItemDataFromComboId(info[i].item);
-						const dbEntry = sc.inventory.getItem(itemId);
-						icon = dbEntry ? dbEntry.icon + sc.inventory.getRaritySuffix(dbEntry.rarity) : "item-default";
-						let level = 0;
-						if (dbEntry && dbEntry.type == sc.ITEMS_TYPES.EQUIP && (level = dbEntry.level) != 0) {
-							gui.setDrawCallback(function (width: number, height: number) {
-								sc.MenuHelper.drawLevel(
-									level,
-									width,
-									height,
-									itemsGui.gfx,
-									dbEntry.isScalable || false,
-								);
-							});
-						}
-					}
-				}
-
-				if (hideRewards) {
-					label = "?????????????";
-					if (sc.multiworld.questSettings.hidePlayer) {
-						worldLabel =  "?????????????";
-					}
-				}
-
-				gui.setText(`\\i[${icon}]${label}`);
-				worldGuis[i].setText(worldLabel);
-			}
-		});
 	}
 
 	async prestart() {
@@ -268,7 +285,7 @@ export default class MwRandomizer {
 
 				this.setSize(this.hook.size.x, this.hook.size.y + 6);
 				
-				plugin.makeApItemsGui(quest, mwQuest, this.itemsGui, this.gfx);
+				plugin.makeApItemsGui(quest, !hideRewards, mwQuest, this.itemsGui, this.gfx);
 			}
 		});
 
@@ -280,7 +297,7 @@ export default class MwRandomizer {
 					return;
 				}
 				
-				plugin.makeApItemsGui(quest, mwQuest, this.itemsGui, this.gfx);
+				plugin.makeApItemsGui(quest, false, mwQuest, this.itemsGui, this.gfx);
 			}
 		});
 

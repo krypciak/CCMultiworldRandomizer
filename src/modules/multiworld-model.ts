@@ -158,7 +158,7 @@ ig.module("mw-rando.multiworld-model")
 
 			async storeAllLocationInfo() {
 				let listener = (packet: ap.LocationInfoPacket) => {
-					let locationInfoMap = {};
+					let locationInfoMap = ig.vars.get("mw.locationInfo");
 					packet.locations.forEach((item: any) => {
 						let mwid: number = item.location;
 						
@@ -170,8 +170,6 @@ ig.module("mw-rando.multiworld-model")
 						delete item.class;
 						// @ts-ignore
 						locationInfoMap[mwid] = item;
-
-						ig.vars.set("mw.locationInfo", locationInfoMap);
 					});
 
 					this.client.removeListener("LocationInfo", listener);
@@ -179,9 +177,19 @@ ig.module("mw-rando.multiworld-model")
 
 				this.client.addListener('LocationInfo', listener);
 
+				const toScout: number[] = this.client.locations.missing.filter(
+					(mwid: number) => !this.locationInfo.hasOwnProperty(mwid)
+				);
+
+				if (!this.locationInfo) {
+					this.locationInfo = {};
+				} else if (toScout.length > 0) {
+					console.warn(`Something went wrong; need to scout following locations:\n${toScout.join('\n')}`);
+				}
+
 				this.client.locations.scout(
 					ap.CREATE_AS_HINT_MODE.NO_HINT,
-					...this.client.locations.missing
+					...toScout
 				);
 			},
 
@@ -193,9 +201,6 @@ ig.module("mw-rando.multiworld-model")
 					this.getLocationInfo(ap.CREATE_AS_HINT_MODE.NO_HINT, [mwid], sc.multiworld.notifyItemsSent.bind(sc.multiworld));
 				} else {
 					sc.multiworld.notifyItemsSent([loc]);
-
-					// cut down on save file space by not storing what we have already
-					delete this.locationInfo[loc.item];
 				}
 
 				if (this.localCheckedLocations.indexOf(mwid) >= 0) {
@@ -251,9 +256,7 @@ ig.module("mw-rando.multiworld-model")
 
 				this.client.updateStatus(ap.CLIENT_STATUS.PLAYING);
 
-				if (this.locationInfo == null) {
-					this.storeAllLocationInfo();
-				}
+				this.storeAllLocationInfo();
 
 				let checkedSet = new Set(this.client.locations.checked);
 
