@@ -10,7 +10,7 @@ declare namespace sc {
 	}
 
 	interface MultiWorldItemContentConstructor extends ImpactClass<MultiWorldItemContent> {
-		new(mwid: number, player: number): MultiWorldItemContent;
+		new(item: ItemInfo): MultiWorldItemContent;
 	}
 
 	var MultiWorldItemContent: sc.MultiWorldItemContentConstructor;
@@ -20,7 +20,7 @@ declare namespace sc {
 		delayedStack: MultiWorldItemContent[];
 		size: number;
 		
-		addEntry(this: this, mwid: number, player: number): void;
+		addEntry(this: this, itemInfo: ItemInfo): void;
 		_popDelayed(this: this): void;
 		_updateSizes(this: this, isNormalSize: boolean): void;
 		// modelChanged(this: this, model: sc.Model, msg: number, data: any);

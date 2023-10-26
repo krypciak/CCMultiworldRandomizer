@@ -35,3 +35,11 @@ export type RawQuests = { [questName: string]: RawQuest };
 export interface RawQuest {
 	mwids: number[];
 }
+
+export interface ItemInfo {
+	icon: string;
+	label: string;
+	player: string;
+	level: number;
+	isScalable: boolean;
+}

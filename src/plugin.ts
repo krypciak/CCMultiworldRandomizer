@@ -1,5 +1,5 @@
 import * as ap from 'archipelago.js';
-import {WorldData, RawElement, RawQuest} from './item-data.model';
+import {WorldData, RawElement, RawQuest, ItemInfo} from './item-data.model';
 import {readJsonFromFile} from './utils';
 import "./types/multiworld-model.d";
 
@@ -22,6 +22,55 @@ export default class MwRandomizer {
 			case ap.CONNECTION_STATUS.CONNECTING.toLowerCase():
 				return `\\c[3]${status}\\c[0]`;
 		}
+	}
+
+	getItemInfo(item: ap.NetworkItem): ItemInfo {
+		const gameName: string = sc.multiworld.client.data.players[item.player].game;
+		const gameInfo: ap.GamePackage = sc.multiworld.client.data.package.get(gameName);
+
+		const playerId = sc.multiworld.client.players.get(item.player);
+		const playerName = playerId?.alias ?? playerId?.name;
+
+		let label = gameInfo.item_id_to_name[item.item];
+		let player = playerName ? playerName : "Archipelago";
+
+		if (gameName == "CrossCode") {
+			const comboId: number = item.item;
+			let level = 0;
+			let icon = "item-default";
+			let isScalable = false;
+			if (comboId >= sc.multiworld.baseNormalItemId) {
+				const [itemId, _] = sc.multiworld.getItemDataFromComboId(item.item);
+				const dbEntry = sc.inventory.getItem(itemId);
+				if (dbEntry) {
+					icon = dbEntry.icon + sc.inventory.getRaritySuffix(dbEntry.rarity);
+					isScalable = dbEntry.isScalable || false;
+					if (dbEntry.type == sc.ITEMS_TYPES.EQUIP) {
+						level = dbEntry.level;
+					}
+				}
+			}
+
+			return {icon, label, player, level, isScalable};
+		}
+
+		let cls = "unknown";
+		if (item.flags & ap.ITEM_FLAGS.PROGRESSION) {
+			cls = "prog";
+		} else if (item.flags & ap.ITEM_FLAGS.NEVER_EXCLUDE) {
+			cls = "useful";
+		} else if (item.flags & ap.ITEM_FLAGS.TRAP) {
+			cls = "trap";
+		} else if (item.flags == 0) {
+			cls = "filler";
+		}
+
+		let icon = `ap-item-${cls}`;
+		return {icon, label, player, level: 0, isScalable: false};
+	}
+
+	getGuiString(item: {icon: string, label: string}): string {
+		return `\\i[${item.icon}]${item.label}`;
 	}
 
 	/**
@@ -72,54 +121,29 @@ export default class MwRandomizer {
 
 		for (let i = 0; i < mwQuest.mwids.length; i++) {
 			const mwid: number = mwQuest.mwids[i]
-			const locInfo: ap.NetworkItem = sc.multiworld.locationInfo[mwid];
+			const item: ap.NetworkItem = sc.multiworld.locationInfo[mwid];
 
-			const gameName: string = sc.multiworld.client.data.players[locInfo.player].game;
-			const gameInfo: ap.GamePackage = sc.multiworld.client.data.package.get(gameName);
-
-			const player = sc.multiworld.client.players.get(locInfo.player);
-			const playerName = player?.alias ?? player?.name;
-
-			let item = locInfo.item;
-			let icon = "ap-logo";
-			let label = gameInfo.item_id_to_name[item];
-			let worldLabel = playerName ? playerName : "Archipelago";
-			let level = 0;
-			let isScalable = false;
-
-			if (gameName == "CrossCode") {
-				const comboId: number = locInfo.item;
-				if (comboId < sc.multiworld.baseNormalItemId) {
-					icon = "item-default";
-				} else {
-					const [itemId, _] = sc.multiworld.getItemDataFromComboId(locInfo.item);
-					const dbEntry = sc.inventory.getItem(itemId);
-					icon = dbEntry ? dbEntry.icon + sc.inventory.getRaritySuffix(dbEntry.rarity) : "item-default";
-					if (dbEntry && dbEntry.type == sc.ITEMS_TYPES.EQUIP) {
-						level = dbEntry.level;
-					}
-				}
-			}
+			const itemInfo = this.getItemInfo(item);
 
 			if (hideRewards) {
-				label = "?????????????";
+				itemInfo.label = "?????????????";
 				if (sc.multiworld.questSettings.hidePlayer) {
-					worldLabel =  "?????????????";
+					itemInfo.player =  "?????????????";
 				}
 			}
 
-			const itemGui = new sc.TextGui(`\\i[${icon}]${label}`);
+			const itemGui = new sc.TextGui(this.getGuiString(itemInfo));
 			itemGui.setPos(0, i * 20);
-			const worldGui = new sc.TextGui(worldLabel, { "font": sc.fontsystem.tinyFont });
+			const worldGui = new sc.TextGui(itemInfo.player, { "font": sc.fontsystem.tinyFont });
 
-			if (level > 0) {
+			if (itemInfo.level > 0) {
 				itemGui.setDrawCallback(function (width: number, height: number) {
 					sc.MenuHelper.drawLevel(
-						level,
+						itemInfo.level,
 						width,
 						height,
 						itemsGui.gfx,
-						isScalable
+						itemInfo.isScalable
 					);
 				});
 			}
@@ -311,7 +335,12 @@ export default class MwRandomizer {
 		sc.fontsystem.font.pushIconSet(mwIcons);
 		sc.fontsystem.font.setMapping({
 			"mw-item": [index, 0],
-			"ap-logo": [index, 1],
+			"ap-logo": [index, 2],
+			"ap-item-unknown": [index, 2],
+			"ap-item-trap": [index, 3],
+			"ap-item-filler": [index, 4],
+			"ap-item-useful": [index, 5],
+			"ap-item-prog": [index, 6],
 		});
 
 		// And for my next trick I will rip off ItemContent and ItemHudGui from the base game
@@ -321,25 +350,11 @@ export default class MwRandomizer {
 			id: -1,
 			player: -1,
 			textGui: null,
-			init: function (mwid: number, player: number) {
+			init: function (item: ItemInfo) {
 				this.parent();
-				this.id = mwid == void 0 ? -1 : mwid;
-				this.player = player;
 				this.timer = 5;
 
-				let playerObj = sc.multiworld.client.players.get(player);
-				let destGameName = playerObj?.game;
-				let itemName = "Unknown";
-				if (destGameName != undefined) {
-					let gameInfo = sc.multiworld.client.data.package.get(destGameName)
-					if (gameInfo != undefined) {
-						itemName = gameInfo.item_id_to_name[mwid];
-					}
-				}
-
-				let playerName = playerObj?.name ?? "Archipelago";
-
-				let text = `\\i[ap-logo] Sent \\c[3]${itemName}\\c[0] to \\c[3]${playerName}\\c[0]`;
+				let text = `Sent \\c[3]${plugin.getGuiString(item)}\\c[0] to \\c[3]${item.player}\\c[0]`;
 				let isNormalSize = sc.options.get("item-hud-size") == sc.ITEM_HUD_SIZE.NORMAL;
 
 				this.textGui = new sc.TextGui(text, {
@@ -391,8 +406,8 @@ export default class MwRandomizer {
 				sc.Model.addObserver(sc.options, this);
 			},
 
-			addEntry: function (mwid: number, player: number) {
-				let entry = new sc.MultiWorldItemContent(mwid, player);
+			addEntry: function (itemInfo: ItemInfo) {
+				let entry = new sc.MultiWorldItemContent(itemInfo);
 				if (this.contentEntries.length >= 5) {
 					this.delayedStack.push(entry);
 				} else {
@@ -445,7 +460,7 @@ export default class MwRandomizer {
 						msg == sc.MULTIWORLD_MSG.ITEM_SENT &&
 						sc.options.get("show-items")
 					) {
-						this.addEntry(data.item, data.player);
+						this.addEntry(plugin.getItemInfo(data));
 					}
 				} else if (model == sc.model) {
 					if (model.isReset()) {

@@ -177,14 +177,16 @@ ig.module("mw-rando.multiworld-model")
 
 				this.client.addListener('LocationInfo', listener);
 
-				const toScout: number[] = this.client.locations.missing.filter(
-					(mwid: number) => !this.locationInfo.hasOwnProperty(mwid)
-				);
+				let toScout: number[] = this.client.locations.missing;
 
 				if (!this.locationInfo) {
 					this.locationInfo = {};
-				} else if (toScout.length > 0) {
-					console.warn(`Something went wrong; need to scout following locations:\n${toScout.join('\n')}`);
+				} else {
+					toScout = toScout.filter((mwid: number) => !this.locationInfo.hasOwnProperty(mwid));
+
+					if (toScout.length >= 1) {
+						console.warn(`Need to scout following locations:\n${toScout.join('\n')}`);
+					}
 				}
 
 				this.client.locations.scout(
