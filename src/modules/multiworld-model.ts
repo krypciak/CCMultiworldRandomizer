@@ -1,14 +1,17 @@
 import { defineVarProperty } from "../utils";
 import * as ap from "archipelago.js";
 import {ig, sc} from "ultimate-crosscode-typedefs";
+import {ItemInfo} from "../item-data.model";
 
 ig.module("mw-rando.multiworld-model")
 	.requires("impact.feature.storage.storage")
 	.defines(() => {
+
 		sc.MULTIWORLD_MSG = {
 			CONNECTION_STATUS_CHANGED: 0,
 			ITEM_SENT: 1,
-			OPTIONS_PRESENT: 2,
+			ITEM_RECEIVED: 2,
+			OPTIONS_PRESENT: 3,
 		};
 
 		sc.MultiWorldModel = ig.GameAddon.extend({
@@ -60,15 +63,17 @@ ig.module("mw-rando.multiworld-model")
 			},
 
 			onStoragePostLoad() {
-				if (this.connectionInfo) {
-					console.log("Reading connection info from save file");
-					this.login(this.connectionInfo);
-				} else {
-					sc.Dialogs.showInfoDialog(
-						"This save file has no Archpelago connection associated with it. " +
-							"To play online, open the pause menu and enter the details.",
-						true,
-					);
+				if (this.client.status != ap.CLIENT_STATUS.CONNECTED) {
+					if (this.connectionInfo) {
+						console.log("Reading connection info from save file");
+						this.login(this.connectionInfo);
+					} else {
+						sc.Dialogs.showInfoDialog(
+							"This save file has no Archpelago connection associated with it. " +
+								"To play online, open the pause menu and enter the details.",
+							true,
+						);
+					}
 				}
 			},
 
@@ -83,8 +88,7 @@ ig.module("mw-rando.multiworld-model")
 
 				for (let i = this.lastIndexSeen + 1; i < this.client.items.received.length; i++) {
 					let item = this.client.items.received[i];
-					let comboId = item.item;
-					this.addMultiworldItem(comboId, i);
+					this.addMultiworldItem(item, i);
 				}
 			},
 
@@ -107,12 +111,14 @@ ig.module("mw-rando.multiworld-model")
 				sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED, this.client.status);
 			},
 
-			addMultiworldItem(comboId: number, index: number): void {
+			addMultiworldItem(itemInfo: ap.NetworkItem, index: number): void {
 				if (index <= this.lastIndexSeen) {
 					return;
 				}
 
-				if (comboId < this.baseNormalItemId) {
+				const foreign = itemInfo.player != this.client.data.slot;
+
+				if (itemInfo.item < this.baseNormalItemId) {
 					if (!sc.model.player.getCore(sc.PLAYER_CORE.ELEMENT_CHANGE)) {
 						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_CHANGE, true);
 						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_HEAT, false);
@@ -120,13 +126,17 @@ ig.module("mw-rando.multiworld-model")
 						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_WAVE, false);
 						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_SHOCK, false);
 					}
-					let elementConstant = this.getElementConstantFromComboId(comboId);
+					let elementConstant = this.getElementConstantFromComboId(itemInfo.item);
 					if (elementConstant != null) {
 						sc.model.player.setCore(elementConstant, true);
 					}
 				} else {
-					let [itemId, quantity] = this.getItemDataFromComboId(comboId);
-					sc.model.player.addItem(Number(itemId), quantity, false);
+					let [itemId, quantity] = this.getItemDataFromComboId(itemInfo.item);
+					sc.model.player.addItem(Number(itemId), quantity, foreign);
+				}
+
+				if (foreign) {
+					sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.ITEM_RECEIVED, itemInfo);
 				}
 
 				this.lastIndexSeen = index;
@@ -234,11 +244,12 @@ ig.module("mw-rando.multiworld-model")
 					return;
 				}
 
+				this.datapackage = this.client.data.package.get("CrossCode");
+
 				this.client.addListener('ReceivedItems', (packet: ap.ReceivedItemsPacket) => {
 					let index = packet.index;
-					for (const [offset, item] of packet.items.entries()) {
-						let comboId = item.item;
-						this.addMultiworldItem(comboId, index + offset);
+					for (const [offset, itemInfo] of packet.items.entries()) {
+						this.addMultiworldItem(itemInfo, index + offset);
 					}
 				});
 

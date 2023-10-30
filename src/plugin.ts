@@ -25,8 +25,16 @@ export default class MwRandomizer {
 	}
 
 	getItemInfo(item: ap.NetworkItem): ItemInfo {
-		const gameName: string = sc.multiworld.client.data.players[item.player].game;
-		const gameInfo: ap.GamePackage = sc.multiworld.client.data.package.get(gameName);
+		let gameName: string = sc.multiworld.client.data.players[item.player].game;
+		let gameInfo: ap.GamePackage = sc.multiworld.client.data.package.get(gameName);
+		if (gameInfo.item_id_to_name[item.item] == undefined) {
+			gameInfo = sc.multiworld.datapackage;
+			gameName = "CrossCode";
+		}
+
+		if (gameInfo.item_id_to_name[item.item] == undefined) {
+			return {icon: "ap-item-default", label: "Unknown", player: "Archipelago", level: 0, isScalable: false};
+		}
 
 		const playerId = sc.multiworld.client.players.get(item.player);
 		const playerName = playerId?.alias ?? playerId?.name;
@@ -99,6 +107,10 @@ export default class MwRandomizer {
 		itemsGui: ig.GuiElementBase,
 		gfx: ig.Image
 	) {
+		if (sc.multiworld.client.status != ap.CONNECTION_STATUS.CONNECTED) {
+			return;
+		}
+
 		let itemGuis: sc.TextGui[] = [];
 		let worldGuis: sc.TextGui[] = [];
 
@@ -116,7 +128,7 @@ export default class MwRandomizer {
 		hideRewards = hideRewards && !showRewardAnyway;
 
 		if (sc.multiworld.options.questDialogHints && !hideRewards) {
-			sc.multiworld.client.locations.scout(ap.CREATE_AS_HINT_MODE.HINT_ONLY_NEW, mwQuest.mwids);
+			sc.multiworld.client.locations.scout(ap.CREATE_AS_HINT_MODE.HINT_ONLY_NEW, ...mwQuest.mwids);
 		}
 
 		for (let i = 0; i < mwQuest.mwids.length; i++) {
@@ -220,11 +232,6 @@ export default class MwRandomizer {
 					return this.parent();
 				}
 
-				// do not disable elements
-				if (!this.value) {
-					return;
-				}
-
 				const map = maps[ig.game.mapName];
 				if (!map || !map.elements) {
 					return this.parent();
@@ -295,9 +302,18 @@ export default class MwRandomizer {
 		});
 
 		sc.QuestDialog.inject({
+			init(quest: sc.Quest, finished: boolean) {
+				this.parent(quest, finished);
+
+				this.finished = finished;
+
+				sc.Model.addObserver(sc.multiworld, this);
+			},
+
 			setQuestRewards(quest: sc.Quest, hideRewards: boolean, finished: boolean) {
 				this.parent(quest, hideRewards, finished);
 				let mwQuest = randoData.quests[quest.id]
+				this.mwQuest = mwQuest;
 				if (
 					mwQuest === undefined ||
 					mwQuest.mwids === undefined ||
@@ -310,6 +326,16 @@ export default class MwRandomizer {
 				this.setSize(this.hook.size.x, this.hook.size.y + 6);
 				
 				plugin.makeApItemsGui(quest, !hideRewards, mwQuest, this.itemsGui, this.gfx);
+			},
+
+			modelChanged(model: sc.Model, msg: number, data: any) {
+				if (
+					model == sc.multiworld &&
+					msg == sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED &&
+					this.isVisible()
+				) {
+					plugin.makeApItemsGui(this.quest, this.finished, this.mwQuest, this.itemsGui, this.gfx);
+				}
 			}
 		});
 
@@ -350,11 +376,13 @@ export default class MwRandomizer {
 			id: -1,
 			player: -1,
 			textGui: null,
-			init: function (item: ItemInfo) {
+			init: function (item: ItemInfo, receive: boolean) {
 				this.parent();
 				this.timer = 5;
 
-				let text = `Sent \\c[3]${plugin.getGuiString(item)}\\c[0] to \\c[3]${item.player}\\c[0]`;
+				let verb = receive ? "Received" : "Sent";
+				let prep = receive ? "from": "to";
+				let text = `${verb} \\c[3]${plugin.getGuiString(item)}\\c[0] ${prep} \\c[3]${item.player}\\c[0]`;
 				let isNormalSize = sc.options.get("item-hud-size") == sc.ITEM_HUD_SIZE.NORMAL;
 
 				this.textGui = new sc.TextGui(text, {
@@ -406,8 +434,8 @@ export default class MwRandomizer {
 				sc.Model.addObserver(sc.options, this);
 			},
 
-			addEntry: function (itemInfo: ItemInfo) {
-				let entry = new sc.MultiWorldItemContent(itemInfo);
+			addEntry: function (itemInfo: ItemInfo, receive: boolean) {
+				let entry = new sc.MultiWorldItemContent(itemInfo, receive);
 				if (this.contentEntries.length >= 5) {
 					this.delayedStack.push(entry);
 				} else {
@@ -460,7 +488,12 @@ export default class MwRandomizer {
 						msg == sc.MULTIWORLD_MSG.ITEM_SENT &&
 						sc.options.get("show-items")
 					) {
-						this.addEntry(plugin.getItemInfo(data));
+						this.addEntry(plugin.getItemInfo(data), false);
+					} else if (
+						msg == sc.MULTIWORLD_MSG.ITEM_RECEIVED &&
+						sc.options.get("show-items")
+					) {
+						this.addEntry(plugin.getItemInfo(data), true);
 					}
 				} else if (model == sc.model) {
 					if (model.isReset()) {

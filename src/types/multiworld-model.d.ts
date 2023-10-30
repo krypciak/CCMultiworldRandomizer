@@ -25,6 +25,7 @@ declare namespace sc {
 	enum MULTIWORLD_MSG {
 		CONNECTION_STATUS_CHANGED,
 		ITEM_SENT,
+		ITEM_RECEIVED,
 		OPTIONS_PRESENT,
 	};
 
@@ -35,6 +36,7 @@ declare namespace sc {
 		baseId: number;
 		baseNormalItemId: number;
 		numItems: number;
+		datapackage: ap.GamePackage;
 
 		questSettings: {
 			hidePlayer: boolean;
@@ -55,7 +57,7 @@ declare namespace sc {
 		notifyItemsSent(this: this, items: ap.NetworkItem[]): void;
 		onLevelLoaded(this: this): void;
 		updateConnectionStatus(this: this): void;
-		addMultiworldItem(this: this, comboId: number, index: number): void;
+		addMultiworldItem(this: this, itemInfo: ap.NetworkItem, index: number): void;
 		getLocationInfo(this: this, mode: ap.CreateAsHintMode, locations: number[], callback: (info: ap.NetworkItem[]) => void);
 		async storeAllLocationInfo(this: this): void;
 		async reallyCheckLocation(this: this, mwid: number): void;
