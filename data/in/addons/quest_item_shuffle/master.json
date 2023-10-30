@@ -1,0 +1,3 @@
+{
+	"includes": [ "chests.json", "cutscenes.json" ]
+}

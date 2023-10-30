@@ -1,0 +1,214 @@
+{
+    "cutscenes": {
+        "Temple Mine - Elevator GF - Laser Pickaxe": {
+            "location": {
+                "map": "cold-dng.g.center",
+                "mapId": 292,
+                "path": ".settings.event.1"
+            },
+            "region": {
+                "linear": "4",
+                "open": "open4.1"
+            },
+            "reward": [
+                [ "item", "Laser Pickaxe", 1 ]
+            ]
+        },
+        "Temple Mine - Elevator GF - Laser TNT": {
+            "location": {
+                "map": "cold-dng.g.center",
+                "mapId": 293,
+                "path": ".settings.event.1"
+            },
+            "region": {
+                "linear": "4",
+                "open": "open4.1" 
+            },
+            "reward": [
+                [ "item", "Laser TNT", 1 ]
+            ]
+        },
+        "Temple Mine - Elevator Control - Mining Docs": {
+            "location": {
+                "map": "cold-dng.g.room4",
+                "mapId": 52,
+                "path": ".settings.event.0"
+            },
+            "region": {
+                "linear": "5",
+                "open": "open4.2" 
+            },
+            "reward": [
+                [ "item", "Mining Docs", 1 ]
+            ]
+        },
+        "Temple Mine - Elevator U1 - Laser Pickaxe": {
+            "location": {
+                "map": "cold-dng.b1.center",
+                "mapId": 225,
+                "path": ".settings.event.1"
+            },
+            "region": {
+                "linear": "5",
+                "open": "open4.2"
+            },
+            "reward": [
+                [ "item", "Laser Pickaxe", 1 ]
+            ]
+        },
+        "Temple Mine - Old Shaft 1 - Laser TNT": {
+            "location": {
+                "map": "cold-dng.b1.room2",
+                "mapId": 30,
+                "path": ".settings.event.1"
+            },
+            "region": {
+                "linear": "5",
+                "open": "open4.2" 
+            },
+            "reward": [
+                [ "item", "Laser TNT", 1 ]
+            ]
+        },
+        "Temple Mine - Control Room A - Mining Docs": {
+            "location": {
+                "map": "cold-dng.b1.control-a",
+                "mapId": 82,
+                "path": ".settings.event.0"
+            },
+            "region": {
+                "linear": "7",
+                "open": "open4.4" 
+            },
+            "reward": [
+                [ "item", "Mining Docs", 1 ]
+            ]
+        },
+        "Temple Mine - Frozen Chamber 1 - Laser Pickaxe": {
+            "location": {
+                "map": "cold-dng.b2.room2",
+                "mapId": 42,
+                "path": ".settings.event.1"
+            },
+            "region": {
+                "linear": "7",
+                "open": "open4.4"
+            },
+            "reward": [
+                [ "item", "Laser Pickaxe", 1 ]
+            ]
+        },
+        "Temple Mine - Frozen Shaft 2 - Laser TNT": {
+            "location": {
+                "map": "cold-dng.b3.room2",
+                "mapId": 56,
+                "path": ".settings.event.1"
+            },
+            "region": {
+                "linear": "7",
+                "open": "open4.4" 
+            },
+            "reward": [
+                [ "item", "Laser TNT", 1 ]
+            ]
+        },
+        "Temple Mine - Frozen Shaft 4 - Laser Pickaxe": {
+            "location": {
+                "map": "cold-dng.b3.room4",
+                "mapId": 53,
+                "path": ".settings.event.1"
+            },
+            "region": {
+                "linear": "9",
+                "open": "open4.6"
+            },
+            "reward": [
+                [ "item", "Laser Pickaxe", 1 ]
+            ]
+        },
+        "Temple Mine - Storage Room 4 - Laser Pickaxe": {
+            "location": {
+                "map": "cold-dng.b2.room2",
+                "mapId": 56,
+                "path": ".settings.event.1"
+            },
+            "region": {
+                "linear": "9",
+                "open": "open4.6"
+            },
+            "reward": [
+                [ "item", "Laser Pickaxe", 1 ]
+            ]
+        },
+        "Temple Mine - Abandoned Chamber 1 - Laser Pickaxe": {
+            "location": {
+                "map": "cold-dng.b1.room7",
+                "mapId": 65,
+                "path": ".settings.event.1"
+            },
+            "region": {
+                "linear": "9",
+                "open": "open4.6"
+            },
+            "reward": [
+                [ "item", "Laser Pickaxe", 1 ]
+            ]
+        },
+        "Temple Mine - Control Room B - Mining Docs": {
+            "location": {
+                "map": "cold-dng.b1.control-b",
+                "mapId": 70,
+                "path": ".settings.event.0"
+            },
+            "region": {
+                "linear": "9",
+                "open": "open4.6" 
+            },
+            "reward": [
+                [ "item", "Mining Docs", 1 ]
+            ]
+        },
+        "Temple Mine - Forgotten Shaft 2 - Laser TNT": {
+            "location": {
+                "map": "cold-dng.b4.room5",
+                "mapId": 40,
+                "path": ".settings.event.1"
+            },
+            "region": {
+                "linear": "9",
+                "open": "open4.6" 
+            },
+            "reward": [
+                [ "item", "Laser TNT", 1 ]
+            ]
+        },
+        "Temple Mine - Forgotten Shaft 4 - Laser TNT": {
+            "location": {
+                "map": "cold-dng.b4.room7",
+                "mapId": 239,
+                "path": ".settings.event.1"
+            },
+            "region": {
+                "linear": "9",
+                "open": "open4.6" 
+            },
+            "reward": [
+                [ "item", "Laser TNT", 1 ]
+            ]
+        },
+        "Temple Mine - Forgotten Test Chamber - Laser Pickaxe": {
+            "location": {
+                "map": "cold-dng.b4.room9",
+                "mapId": 154,
+                "path": ".settings.event.1"
+            },
+            "region": {
+                "linear": "9",
+                "open": "open4.6"
+            },
+            "reward": [
+                [ "item", "Laser Pickaxe", 1 ]
+            ]
+        }
+    }
+}
