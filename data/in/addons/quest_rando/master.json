@@ -78,7 +78,7 @@
 				[ "item", "Edge o' All", 1 ], [ "item", "Grasswalkers", 1 ]
 			]
 		},
-		"A Few More Steps": {
+		"A Few Steps More": {
 			"questid": "my-first-quest_2",
 			"region": {
 				"linear": "3",
