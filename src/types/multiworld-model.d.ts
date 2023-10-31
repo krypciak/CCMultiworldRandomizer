@@ -2,6 +2,7 @@ declare namespace ig {
 	namespace EVENT_STEP {
 		interface SEND_ITEM extends ig.EventStepBase {
 			mwids: number[];
+			oldItem: { item: string, amount: number};
 		}
 
 		interface MW_GOAL_COMPLETED extends ig.EventStepBase {
@@ -9,7 +10,7 @@ declare namespace ig {
 		}
 
 		interface SendItemConstructor extends ImpactClass<SEND_ITEM> {
-			new(settings: { mwids: number[] }): SEND_ITEM;
+			new(settings: { mwids: number[], item: string, amount: number}): SEND_ITEM;
 		}
 
 		interface MwGoalCompletedConstructor extends ImpactClass<MW_GOAL_COMPLETED> {

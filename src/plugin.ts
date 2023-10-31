@@ -244,10 +244,20 @@ export default class MwRandomizer {
 
 		ig.EVENT_STEP.SEND_ITEM = ig.EventStepBase.extend({
 			mwids: [],
+			oldItem: undefined,
 			init(settings) {
-				this.mwids = settings.mwids;
+				this.mwids = settings.mwids.filter(x => sc.multiworld.locationInfo[x] != undefined);
+				this.oldItem = {
+					"item": settings.item,
+					"amount": settings.amount,
+				}
 			},
 			start() {
+				if (this.mwids.length == 0) {
+					let amount = ig.Event.getExpressionValue(this.oldItem.amount);
+					sc.model.player.addItem(this.oldItem.item, amount, false);
+				}
+
 				sc.multiworld.reallyCheckLocations(this.mwids);
 			}
 		});
