@@ -1,19 +1,5 @@
 {
 	"cutscenes": {
-		"Talatu Introductions": {
-		    "location": {
-			"map": "autumn.path-8",
-			"mapId": 458,
-			"path": ".settings.event.21.accepted.6" 
-		    },
-		    "region": {
-			"linear": "3",
-			"open": "open3" 
-		    },
-		    "reward": [
-			[ "item", "Disc of Flora", 1 ]
-		    ]
-		},
 		"Talatu Bergen 25%": {
 		    "location": {
 			"map": "bergen.inner-questhub-1",
