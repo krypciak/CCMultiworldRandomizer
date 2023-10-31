@@ -63,7 +63,7 @@ ig.module("mw-rando.multiworld-model")
 			},
 
 			onStoragePostLoad() {
-				if (this.client.status != ap.CLIENT_STATUS.CONNECTED) {
+				if (this.client.status != "Connected") {
 					if (this.connectionInfo) {
 						console.log("Reading connection info from save file");
 						this.login(this.connectionInfo);
