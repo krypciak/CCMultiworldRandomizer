@@ -176,7 +176,7 @@
 					"from": "23",
 					"to": "26",
 					"condition": [
-						[ "item", "So'najiz Key", 4 ]
+						[ "item", "So'najiz Key", 2 ]
 					]
 				},
 				{
@@ -184,7 +184,8 @@
 					"to": "27",
 					"condition": [
 						[ "item", "Radiant Key", 1 ],
-						[ "item", "So'najiz Key", 5 ]
+						[ "item", "So'najiz Key", 5 ],
+						[ "item", "Shock" ]
 					]
 				},
 				{
@@ -452,20 +453,21 @@
 					"from": "open12",
 					"to": "open14.1",
 					"condition": [
-						[ "item", "So'najiz Key", 4 ]
+						[ "item", "So'najiz Key", 1 ]
 					]
 				},
 				{
 					"from": "open14.1",
 					"to": "open14.2",
 					"condition": [
-						[ "item", "So'najiz Key", 5 ]
+						[ "item", "So'najiz Key", 3 ]
 					]
 				},
 				{
 					"from": "open14.2",
 					"to": "open14.3",
 					"condition": [
+						[ "item", "So'najiz Key", 4 ],
 						[ "item", "Shock", 1 ]
 					]
 				},
