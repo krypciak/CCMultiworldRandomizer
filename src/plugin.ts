@@ -242,6 +242,15 @@ export default class MwRandomizer {
 			}
 		});
 
+		ig.EVENT_STEP.RESET_SKILL_TREE.extend({
+			start() {
+				if (maps[ig.game.mapName]) {
+					return; // do not reset the skilltree if there is a check in the room
+				}
+				return this.parent();
+			}
+		});
+
 		ig.EVENT_STEP.SEND_ITEM = ig.EventStepBase.extend({
 			mwids: [],
 			oldItem: undefined,
@@ -307,7 +316,7 @@ export default class MwRandomizer {
 					check == undefined ||
 					check.mwids == undefined ||
 					check.mwids.length == 0 ||
-					sc.multiworld.localCheckedLocations
+					!sc.multiworld.locationInfo.hasOwnProperty(check.mwids[0])
 				) {
 					return this.parent(quest);
 				}
@@ -364,7 +373,9 @@ export default class MwRandomizer {
 			modelChanged(model: sc.Model, msg: number, data: any) {
 				if (
 					model == sc.multiworld &&
-					msg == sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED
+					msg == sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED &&
+					this.mwQuest &&
+					sc.multiworld.hasOwnProperty(this.mwQuest.mwids[0])
 				) {
 					plugin.makeApItemsGui(this.quest, this.finished, this.mwQuest, this.itemsGui, this.gfx);
 				}
@@ -375,7 +386,10 @@ export default class MwRandomizer {
 			_setQuest(quest: sc.Quest) {
 				this.parent(quest);
 				let mwQuest = randoData.quests[quest.id]
-				if (mwQuest === undefined) {
+				if (
+					mwQuest === undefined ||
+					!sc.multiworld.locationInfo.hasOwnProperty(mwQuest.mwids[0])
+				) {
 					return;
 				}
 				
