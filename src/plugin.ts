@@ -201,7 +201,7 @@ export default class MwRandomizer {
 					check === undefined ||
 					check.mwids === undefined ||
 					check.mwids.length == 0 ||
-					!sc.multiworld.locationInfo.hasOwnProperty(check.mwids[0])
+					sc.multiworld.locationInfo[check.mwids[0]] === undefined
 				) {
 					console.warn('Chest not in logic');
 					return this.parent();
@@ -242,7 +242,7 @@ export default class MwRandomizer {
 			}
 		});
 
-		ig.EVENT_STEP.RESET_SKILL_TREE.extend({
+		ig.EVENT_STEP.RESET_SKILL_TREE.inject({
 			start() {
 				if (maps[ig.game.mapName]) {
 					return; // do not reset the skilltree if there is a check in the room
@@ -316,7 +316,7 @@ export default class MwRandomizer {
 					check == undefined ||
 					check.mwids == undefined ||
 					check.mwids.length == 0 ||
-					!sc.multiworld.locationInfo.hasOwnProperty(check.mwids[0])
+					sc.multiworld.locationInfo[check.mwids[0]] === undefined
 				) {
 					return this.parent(quest);
 				}
@@ -360,7 +360,7 @@ export default class MwRandomizer {
 					mwQuest === undefined ||
 					mwQuest.mwids === undefined ||
 					mwQuest.mwids.length === 0 ||
-					!sc.multiworld.locationInfo.hasOwnProperty(mwQuest.mwids[0])
+					sc.multiworld.locationInfo[mwQuest.mwids[0]] === undefined
 				) {
 					return;
 				}
@@ -375,7 +375,7 @@ export default class MwRandomizer {
 					model == sc.multiworld &&
 					msg == sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED &&
 					this.mwQuest &&
-					sc.multiworld.hasOwnProperty(this.mwQuest.mwids[0])
+					sc.multiworld.locationInfo[this.mwQuest.mwids[0]] === undefined
 				) {
 					plugin.makeApItemsGui(this.quest, this.finished, this.mwQuest, this.itemsGui, this.gfx);
 				}
@@ -388,7 +388,7 @@ export default class MwRandomizer {
 				let mwQuest = randoData.quests[quest.id]
 				if (
 					mwQuest === undefined ||
-					!sc.multiworld.locationInfo.hasOwnProperty(mwQuest.mwids[0])
+					sc.multiworld.locationInfo[mwQuest.mwids[0]] === undefined
 				) {
 					return;
 				}
