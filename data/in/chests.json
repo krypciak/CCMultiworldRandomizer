@@ -3429,7 +3429,7 @@
 		},
 		"Maroon Valley - Cursed Temple Treasure Room - Bronze Chest": {
 			"location": {
-				"map": "heat.caves.cliff-temple-03",
+				"map": "heat.caves.cliffs-temple-03",
 				"mapId": 107
 			},
 			"clearance": "Bronze",
