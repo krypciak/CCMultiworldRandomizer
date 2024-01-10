@@ -436,10 +436,11 @@
 					]
 				},
 				{
-					"from": "open12",
+					"from": "open10",
 					"to": "open13.1",
 					"condition": [
-						[ "item", "Zir'vitar Key", 2 ]
+						[ "item", "Zir'vitar Key", 2 ],
+						[ "any_element" ]
 					]
 				},
 				{
@@ -450,22 +451,31 @@
 					]
 				},
 				{
-					"from": "open12",
+					"from": "open10",
 					"to": "open14.1",
 					"condition": [
-						[ "item", "So'najiz Key", 1 ]
+						[ "item", "So'najiz Key", 1 ],
+						[ "any_element" ]
 					]
 				},
 				{
-					"from": "open14.1",
+					"from": "open10",
 					"to": "open14.2",
 					"condition": [
-						[ "item", "So'najiz Key", 3 ]
+						[ "item", "So'najiz Key", 3 ],
+						[ "item", "Heat" ]
 					]
 				},
 				{
 					"from": "open14.2",
 					"to": "open14.3",
+					"condition": [
+						[ "item", "Cold" ]
+					]
+				},
+				{
+					"from": "open14.3",
+					"to": "open14.4",
 					"condition": [
 						[ "item", "So'najiz Key", 4 ],
 						[ "item", "Shock", 1 ]

@@ -408,7 +408,8 @@
 			"id": 145
 		},
 		"Faj'ro Key": {
-			"id": 146
+			"id": 146,
+			"explicitAmounts": [ 9 ]
 		},
 		"Faj'ro Master Key": {
 			"id": 147
@@ -426,7 +427,8 @@
 			"id": 151
 		},
 		"Mine Key": {
-			"id": 152
+			"id": 152,
+			"explicitAmounts": [ 10 ]
 		},
 		"Mine Master Key": {
 			"id": 153
@@ -777,7 +779,8 @@
 			"id": 271
 		},
 		"Zir'vitar Key": {
-			"id": 272
+			"id": 272,
+			"explicitAmounts": [ 2 ]
 		},
 		"GIT": {
 			"id": 273
@@ -918,7 +921,12 @@
 			"id": 318
 		},
 		"So'najiz Key": {
-			"id": 319
+			"id": 319,
+			"explicitAmounts": [ 4 ],
+			"maxQuantity": {
+				"linear": 4,
+				"open": 4
+			}
 		},
 		"Jack's Flame": {
 			"id": 320
@@ -1008,7 +1016,8 @@
 			"id": 348
 		},
 		"Krys'kajo Key": {
-			"id": 349
+			"id": 349,
+			"explicitAmounts": [ 2 ]
 		},
 		"Kajo Master Key": {
 			"id": 350

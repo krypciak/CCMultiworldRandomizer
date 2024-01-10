@@ -6220,7 +6220,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "23",
-				"open": "open12"
+				"open": "open10"
 			},
 			"reward": [
 				[
@@ -6281,8 +6281,11 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "23",
-				"open": "open12"
+				"open": "open10"
 			},
+			"condition": [
+				[ "any_element" ]
+			],
 			"reward": [
 				[
 					"item",
@@ -6486,7 +6489,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "23",
-				"open": "open12"
+				"open": "open10"
 			},
 			"reward": [
 				[
@@ -6504,7 +6507,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "26",
-				"open": "open14.2"
+				"open": "open14.3"
 			},
 			"reward": [
 				[
@@ -6540,7 +6543,7 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "23",
-				"open": "open12"
+				"open": "open10"
 			},
 			"reward": [
 				[
@@ -6558,7 +6561,7 @@
 			"clearance": "Silver",
 			"region": {
 				"linear": "26",
-				"open": "open14.2"
+				"open": "open14.3"
 			},
 			"reward": [
 				[
@@ -6576,7 +6579,7 @@
 			"clearance": "Gold",
 			"region": {
 				"linear": "26",
-				"open": "open14.2"
+				"open": "open14.3"
 			},
 			"reward": [
 				[
@@ -6612,8 +6615,11 @@
 			"clearance": "Default",
 			"region": {
 				"linear": "26",
-				"open": "open14.1"
+				"open": "open10"
 			},
+			"condition": [
+				[ "item", "So'najiz Key", 3 ]
+			],
 			"reward": [
 				[
 					"item",
