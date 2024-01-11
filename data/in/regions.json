@@ -176,7 +176,14 @@
 					"from": "23",
 					"to": "26",
 					"condition": [
-						[ "item", "So'najiz Key", 2 ]
+						[ "item", "So'najiz Key", 1 ]
+					]
+				},
+				{
+					"from": "26",
+					"to": "26.5",
+					"condition": [
+						[ "item", "So'najiz Key", 3 ]
 					]
 				},
 				{
@@ -184,7 +191,7 @@
 					"to": "27",
 					"condition": [
 						[ "item", "Radiant Key", 1 ],
-						[ "item", "So'najiz Key", 5 ],
+						[ "item", "So'najiz Key", 4 ],
 						[ "item", "Shock" ]
 					]
 				},

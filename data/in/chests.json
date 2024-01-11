@@ -6506,7 +6506,7 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "26",
+				"linear": "26.5",
 				"open": "open14.3"
 			},
 			"reward": [
@@ -6524,7 +6524,7 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "26",
+				"linear": "26.5",
 				"open": "open14.2"
 			},
 			"reward": [
@@ -6560,7 +6560,7 @@
 			},
 			"clearance": "Silver",
 			"region": {
-				"linear": "26",
+				"linear": "26.5",
 				"open": "open14.3"
 			},
 			"reward": [
@@ -6578,7 +6578,7 @@
 			},
 			"clearance": "Gold",
 			"region": {
-				"linear": "26",
+				"linear": "26.5",
 				"open": "open14.3"
 			},
 			"reward": [
@@ -6653,7 +6653,7 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "26",
+				"linear": "26.5",
 				"open": "open14.2"
 			},
 			"reward": [
@@ -6689,7 +6689,7 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "26",
+				"linear": "26.5",
 				"open": "open14.2"
 			},
 			"reward": [
