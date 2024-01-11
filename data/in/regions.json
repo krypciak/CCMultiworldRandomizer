@@ -49,7 +49,7 @@
 					"from": "7",
 					"to": "8",
 					"condition": [
-						[ "item", "Mine Key", 6 ]
+						[ "item", "Mine Key", 4 ]
 					]
 				},
 				{
@@ -64,7 +64,7 @@
 					"from": "9",
 					"to": "10",
 					"condition": [
-						[ "item", "Mine Key", 10 ]
+						[ "item", "Mine Key", 5 ]
 					]
 				},
 				{
@@ -176,7 +176,14 @@
 					"from": "23",
 					"to": "26",
 					"condition": [
-						[ "item", "So'najiz Key", 4 ]
+						[ "item", "So'najiz Key", 1 ]
+					]
+				},
+				{
+					"from": "26",
+					"to": "26.5",
+					"condition": [
+						[ "item", "So'najiz Key", 3 ]
 					]
 				},
 				{
@@ -184,7 +191,8 @@
 					"to": "27",
 					"condition": [
 						[ "item", "Radiant Key", 1 ],
-						[ "item", "So'najiz Key", 5 ]
+						[ "item", "So'najiz Key", 4 ],
+						[ "item", "Shock" ]
 					]
 				},
 				{
@@ -289,7 +297,7 @@
 					"from": "open4.4",
 					"to": "open4.5",
 					"condition": [
-						[ "item", "Mine Key", 6 ]
+						[ "item", "Mine Key", 4 ]
 					]
 				},
 				{
@@ -303,7 +311,7 @@
 					"from": "open4.6",
 					"to": "open4.7",
 					"condition": [
-						[ "item", "Mine Key", 10 ]
+						[ "item", "Mine Key", 5 ]
 					]
 				},
 				{
@@ -435,10 +443,11 @@
 					]
 				},
 				{
-					"from": "open12",
+					"from": "open10",
 					"to": "open13.1",
 					"condition": [
-						[ "item", "Zir'vitar Key", 2 ]
+						[ "item", "Zir'vitar Key", 2 ],
+						[ "any_element" ]
 					]
 				},
 				{
@@ -449,23 +458,33 @@
 					]
 				},
 				{
-					"from": "open12",
+					"from": "open10",
 					"to": "open14.1",
 					"condition": [
-						[ "item", "So'najiz Key", 4 ]
+						[ "item", "So'najiz Key", 1 ],
+						[ "any_element" ]
 					]
 				},
 				{
-					"from": "open14.1",
+					"from": "open10",
 					"to": "open14.2",
 					"condition": [
-						[ "item", "So'najiz Key", 5 ]
+						[ "item", "So'najiz Key", 3 ],
+						[ "item", "Heat" ]
 					]
 				},
 				{
 					"from": "open14.2",
 					"to": "open14.3",
 					"condition": [
+						[ "item", "Cold" ]
+					]
+				},
+				{
+					"from": "open14.3",
+					"to": "open14.4",
+					"condition": [
+						[ "item", "So'najiz Key", 4 ],
 						[ "item", "Shock", 1 ]
 					]
 				},

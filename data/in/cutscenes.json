@@ -199,11 +199,8 @@
             },
             "region": {
                 "linear": "27",
-                "open": "open14.3" 
+                "open": "open14.4" 
             },
-            "condition": [
-                [ "item", "Shock", 1 ]
-            ],
             "reward": [
                 [ "item", "Azure Drop Shade", 1 ]
             ]
@@ -286,11 +283,8 @@
             },
             "region": {
                 "linear": "27",
-                "open": "open14.3" 
+                "open": "open14.4" 
             },
-            "condition": [
-                [ "item", "Shock", 1 ]
-            ],
             "reward": [
                 [ "item", "Circuit Override", 1 ]
             ]

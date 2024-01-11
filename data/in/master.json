@@ -14,6 +14,7 @@
 	"version": "5",
 	"modes": [ "linear", "open" ],
 	"defaultMode": "open",
+	"dungeons": [ "cold-dng", "heat-dng", "shock-dng", "wave-dng", "tree-dng" ],
 	"shops": {
 		"rookieHarborItems": {
 			"scale": 1,
