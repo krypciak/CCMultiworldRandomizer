@@ -536,7 +536,10 @@
 				},
 				{
 					"from": "open16",
-					"to": "open18"
+					"to": "open18",
+					"condition": [
+						["var", "vwPassage"]
+					]
 				},
 				{
 					"from": "open16.1",
@@ -545,7 +548,8 @@
 						[ "item", "Heat", 1 ],
 						[ "item", "Cold", 1 ],
 						[ "item", "Shock", 1 ],
-						[ "item", "Wave", 1 ]
+						[ "item", "Wave", 1 ],
+						[ "var", "vtShadeLock" ]
 					]
 				}
 			],

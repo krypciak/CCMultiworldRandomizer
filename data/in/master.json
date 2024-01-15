@@ -5,10 +5,10 @@
 		"chests.json",
 		"cutscenes.json",
 		"quests.json",
-		"items.json"
+		"items.json",
+		"vars.json"
 	],
 	"addons": [
-		"vt_shade_lock",
 		"quest_rando"
 	],
 	"version": "5",
