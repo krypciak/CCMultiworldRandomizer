@@ -1,4 +1,11 @@
 {
+	"keyringItems": [
+		"Mine Key",
+		"Faj'ro Key",
+		"So'najiz Key",
+		"Zir'vitar Key",
+		"Krys'kajo Key"
+	],
 	"items": {
 		"Golden Triangle": {
 			"id": 0

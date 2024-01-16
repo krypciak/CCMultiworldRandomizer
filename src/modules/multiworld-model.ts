@@ -132,6 +132,9 @@ ig.module("mw-rando.multiworld-model")
 					}
 				} else {
 					let [itemId, quantity] = this.getItemDataFromComboId(itemInfo.item);
+					if (this.options.keyrings && this.options.keyrings.includes(itemId)) {
+						quantity = 99;
+					}
 					sc.model.player.addItem(Number(itemId), quantity, foreign);
 				}
 
