@@ -2288,7 +2288,7 @@
 				"576": [
 					{
 						"mwids": [
-							3235824375
+							3235824377
 						],
 						"path": ".settings.npcStates.0.event.quest.11"
 					}
@@ -2651,7 +2651,7 @@
 				"160": [
 					{
 						"mwids": [
-							3235824373
+							3235824375
 						],
 						"path": ".settings.npcStates.0.event.quest.14"
 					}
@@ -2690,6 +2690,12 @@
 							3235824353
 						],
 						"path": ".settings.event.20"
+					},
+					{
+						"mwids": [
+							3235824367
+						],
+						"path": ".settings.event.38"
 					}
 				]
 			}
@@ -2750,6 +2756,12 @@
 							3235824358
 						],
 						"path": ".settings.event.25"
+					},
+					{
+						"mwids": [
+							3235824368
+						],
+						"path": ".settings.event.44"
 					}
 				]
 			}
@@ -2829,7 +2841,7 @@
 				"134": [
 					{
 						"mwids": [
-							3235824374
+							3235824376
 						],
 						"path": ".settings.npcStates.0.event.quest.11"
 					}
@@ -2840,7 +2852,7 @@
 			"elements": {
 				"45": {
 					"mwids": [
-						3235824367
+						3235824369
 					]
 				}
 			}
@@ -2849,7 +2861,7 @@
 			"elements": {
 				"78": {
 					"mwids": [
-						3235824368
+						3235824370
 					]
 				}
 			}
@@ -2858,7 +2870,7 @@
 			"elements": {
 				"248": {
 					"mwids": [
-						3235824369
+						3235824371
 					]
 				}
 			}
@@ -2867,7 +2879,7 @@
 			"elements": {
 				"86": {
 					"mwids": [
-						3235824370
+						3235824372
 					]
 				}
 			}
@@ -2876,540 +2888,540 @@
 	"quests": {
 		"daft-frobbit": {
 			"mwids": [
-				3235824371
+				3235824373
 			]
 		},
 		"basin-mush-2": {
 			"mwids": [
-				3235824473
+				3235824475
 			]
 		},
 		"my-first-quest": {
-			"mwids": [
-				3235824376,
-				3235824377
-			]
-		},
-		"my-first-quest_2": {
 			"mwids": [
 				3235824378,
 				3235824379
 			]
 		},
-		"trailblaze-autumn": {
+		"my-first-quest_2": {
 			"mwids": [
-				3235824380
-			]
-		},
-		"trailblaze-autumn-1": {
-			"mwids": [
+				3235824380,
 				3235824381
 			]
 		},
-		"trailblaze-autumn-2": {
+		"trailblaze-autumn": {
 			"mwids": [
 				3235824382
 			]
 		},
-		"trailblaze-autumn-3": {
+		"trailblaze-autumn-1": {
 			"mwids": [
 				3235824383
 			]
 		},
-		"trailblaze-autumn-4": {
+		"trailblaze-autumn-2": {
 			"mwids": [
 				3235824384
 			]
 		},
+		"trailblaze-autumn-3": {
+			"mwids": [
+				3235824385
+			]
+		},
+		"trailblaze-autumn-4": {
+			"mwids": [
+				3235824386
+			]
+		},
 		"round-and-round": {
 			"mwids": [
-				3235824385,
-				3235824386,
-				3235824387
+				3235824387,
+				3235824388,
+				3235824389
 			]
 		},
 		"botanics": {
 			"mwids": [
-				3235824388
+				3235824390
 			]
 		},
 		"observatory": {
 			"mwids": [
-				3235824389
+				3235824391
 			]
 		},
 		"trailblaze-bergen": {
 			"mwids": [
-				3235824390
+				3235824392
 			]
 		},
 		"trailblaze-bergen-1": {
 			"mwids": [
-				3235824391
+				3235824393
 			]
 		},
 		"trailblaze-bergen-2": {
 			"mwids": [
-				3235824392
+				3235824394
 			]
 		},
 		"trailblaze-bergen-3": {
 			"mwids": [
-				3235824393
+				3235824395
 			]
 		},
 		"trailblaze-bergen-4": {
 			"mwids": [
-				3235824394
+				3235824396
 			]
 		},
 		"you-got-mail": {
 			"mwids": [
-				3235824395,
-				3235824396
+				3235824397,
+				3235824398
 			]
 		},
 		"legend-bunny": {
 			"mwids": [
-				3235824397
+				3235824399
 			]
 		},
 		"round-and-round-2": {
 			"mwids": [
-				3235824398,
-				3235824399,
-				3235824400
+				3235824400,
+				3235824401,
+				3235824402
 			]
 		},
 		"bergen-mining_tools": {
 			"mwids": [
-				3235824401
-			]
-		},
-		"miners-1-dirtbunnies": {
-			"mwids": [
-				3235824402,
 				3235824403
 			]
 		},
-		"miners-2-mine_bombing_1": {
+		"miners-1-dirtbunnies": {
 			"mwids": [
 				3235824404,
 				3235824405
 			]
 		},
-		"miners-2-mine_challenge-1": {
+		"miners-2-mine_bombing_1": {
 			"mwids": [
 				3235824406,
 				3235824407
 			]
 		},
-		"bg-1-lost_pet": {
+		"miners-2-mine_challenge-1": {
 			"mwids": [
 				3235824408,
 				3235824409
 			]
 		},
-		"bg-2-goat_cave_1": {
+		"bg-1-lost_pet": {
 			"mwids": [
 				3235824410,
 				3235824411
 			]
 		},
-		"bergen-fancy-tophat": {
+		"bg-2-goat_cave_1": {
 			"mwids": [
 				3235824412,
 				3235824413
 			]
 		},
-		"bergtraders-2-hermit_materials": {
+		"bergen-fancy-tophat": {
 			"mwids": [
 				3235824414,
-				3235824415,
-				3235824416
+				3235824415
 			]
 		},
-		"monks-1-jump_challenge": {
+		"bergtraders-2-hermit_materials": {
 			"mwids": [
+				3235824416,
 				3235824417,
 				3235824418
 			]
 		},
-		"monks-2-jump_challenge_2": {
+		"monks-1-jump_challenge": {
 			"mwids": [
 				3235824419,
-				3235824420,
-				3235824421
+				3235824420
+			]
+		},
+		"monks-2-jump_challenge_2": {
+			"mwids": [
+				3235824421,
+				3235824422,
+				3235824423
 			]
 		},
 		"monks-jump_1_bonus": {
 			"mwids": [
-				3235824422
+				3235824424
 			]
 		},
 		"monks-jump_1_time": {
 			"mwids": [
-				3235824423
+				3235824425
 			]
 		},
 		"monks-jump_1_noShield": {
 			"mwids": [
-				3235824424
+				3235824426
 			]
 		},
 		"monks-jump_2_bonus": {
 			"mwids": [
-				3235824425
+				3235824427
 			]
 		},
 		"monks-jump_2_time": {
 			"mwids": [
-				3235824426
+				3235824428
 			]
 		},
 		"monks-jump_2_frosty": {
 			"mwids": [
-				3235824427
+				3235824429
 			]
 		},
 		"omni-1": {
 			"mwids": [
-				3235824428
+				3235824430
 			]
 		},
 		"omni-2": {
 			"mwids": [
-				3235824429
+				3235824431
 			]
 		},
 		"unkown-warrior-2": {
 			"mwids": [
-				3235824430
+				3235824432
 			]
 		},
 		"trailblaze-forest": {
 			"mwids": [
-				3235824431
+				3235824433
 			]
 		},
 		"wervyn-quest": {
 			"mwids": [
-				3235824432
+				3235824434
 			]
 		},
 		"dekay-quest": {
 			"mwids": [
-				3235824433
+				3235824435
 			]
 		},
 		"trailblaze-maroon": {
 			"mwids": [
-				3235824434
+				3235824436
 			]
 		},
 		"trailblaze-maroon-1": {
 			"mwids": [
-				3235824435
+				3235824437
 			]
 		},
 		"trailblaze-maroon-2": {
 			"mwids": [
-				3235824436
+				3235824438
 			]
 		},
 		"trailblaze-maroon-3": {
 			"mwids": [
-				3235824437
+				3235824439
 			]
 		},
 		"trailblaze-maroon-4": {
 			"mwids": [
-				3235824438
+				3235824440
 			]
 		},
 		"maroon-tree-defend": {
 			"mwids": [
-				3235824439
+				3235824441
 			]
 		},
 		"nomadAdv-1-turtle_bombing_1": {
 			"mwids": [
-				3235824440,
-				3235824441
+				3235824442,
+				3235824443
 			]
 		},
 		"nomadAdv-2-tomb_raiding_2": {
 			"mwids": [
-				3235824442
-			]
-		},
-		"nomadAdv-3-sandman_tomb_1": {
-			"mwids": [
-				3235824443,
 				3235824444
 			]
 		},
-		"bakiGuard-1-basar_thief_1": {
+		"nomadAdv-3-sandman_tomb_1": {
 			"mwids": [
 				3235824445,
 				3235824446
 			]
 		},
-		"bakiGuard-2-evil_guard": {
+		"bakiGuard-1-basar_thief_1": {
 			"mwids": [
 				3235824447,
 				3235824448
 			]
 		},
-		"bakiTrader-1-crate_defense_1": {
+		"bakiGuard-2-evil_guard": {
 			"mwids": [
 				3235824449,
 				3235824450
 			]
 		},
-		"bakiTrader-2-brewing_fun_1": {
+		"bakiTrader-1-crate_defense_1": {
 			"mwids": [
-				3235824451
-			]
-		},
-		"bakiTrader-2-brewing_challenge_1": {
-			"mwids": [
+				3235824451,
 				3235824452
 			]
 		},
-		"unknown-warrior-3": {
+		"bakiTrader-2-brewing_fun_1": {
 			"mwids": [
 				3235824453
 			]
 		},
-		"jungleAdv-1-turret_defense_1": {
+		"bakiTrader-2-brewing_challenge_1": {
 			"mwids": [
-				3235824454,
+				3235824454
+			]
+		},
+		"unknown-warrior-3": {
+			"mwids": [
 				3235824455
 			]
 		},
-		"jungleAdv-2-turret_defense_2": {
+		"jungleAdv-1-turret_defense_1": {
 			"mwids": [
 				3235824456,
 				3235824457
 			]
 		},
-		"jungleGuard-1-hostage_1": {
+		"jungleAdv-2-turret_defense_2": {
 			"mwids": [
 				3235824458,
 				3235824459
 			]
 		},
-		"jungleGuard-2-crate_rooftop_1": {
+		"jungleGuard-1-hostage_1": {
 			"mwids": [
 				3235824460,
 				3235824461
 			]
 		},
-		"jungleTrader-1-snowman_thief_1": {
+		"jungleGuard-2-crate_rooftop_1": {
 			"mwids": [
 				3235824462,
-				3235824463,
-				3235824464
+				3235824463
+			]
+		},
+		"jungleTrader-1-snowman_thief_1": {
+			"mwids": [
+				3235824464,
+				3235824465,
+				3235824466
 			]
 		},
 		"jungleTrader-2-snowman_thief_2": {
 			"mwids": [
-				3235824465
+				3235824467
 			]
 		},
 		"jungleGreens-1-escort_1": {
 			"mwids": [
-				3235824466,
-				3235824467,
-				3235824468
+				3235824468,
+				3235824469,
+				3235824470
 			]
 		},
 		"jungleGreens-2-plantSearch_1": {
 			"mwids": [
-				3235824469,
-				3235824470,
-				3235824471
+				3235824471,
+				3235824472,
+				3235824473
 			]
 		},
 		"basin-mush-1": {
 			"mwids": [
-				3235824472
+				3235824474
 			]
 		},
 		"halloween": {
 			"mwids": [
-				3235824474
+				3235824476
 			]
 		},
 		"unknown-warrior-4": {
 			"mwids": [
-				3235824475
+				3235824477
 			]
 		},
 		"trailblaze-jungle": {
 			"mwids": [
-				3235824476
+				3235824478
 			]
 		},
 		"trailblaze-jungle-1": {
 			"mwids": [
-				3235824477
+				3235824479
 			]
 		},
 		"trailblaze-jungle-2": {
 			"mwids": [
-				3235824478
+				3235824480
 			]
 		},
 		"trailblaze-jungle-3": {
 			"mwids": [
-				3235824479
+				3235824481
 			]
 		},
 		"trailblaze-jungle-4": {
 			"mwids": [
-				3235824480
+				3235824482
 			]
 		},
 		"jungleAdv-turret_defense_challenge-1": {
 			"mwids": [
-				3235824481
+				3235824483
 			]
 		},
 		"jungleAdv-turret_defense_challenge-2": {
 			"mwids": [
-				3235824482
+				3235824484
 			]
 		},
 		"unknown-warrior-5": {
 			"mwids": [
-				3235824483
+				3235824485
 			]
 		},
 		"railing-rider-1": {
 			"mwids": [
-				3235824484
+				3235824486
 			]
 		},
 		"ice-cream-hype": {
 			"mwids": [
-				3235824485
+				3235824487
 			]
 		},
 		"training-tutorial": {
 			"mwids": [
-				3235824486
+				3235824488
 			]
 		},
 		"training-balls": {
 			"mwids": [
-				3235824487
+				3235824489
 			]
 		},
 		"training-close": {
 			"mwids": [
-				3235824488
+				3235824490
 			]
 		},
 		"faction-tutorial": {
 			"mwids": [
-				3235824489
+				3235824491
 			]
 		},
 		"wa-1-digging": {
 			"mwids": [
-				3235824490
-			]
-		},
-		"fd-2-meerkat-cave": {
-			"mwids": [
-				3235824491,
 				3235824492
 			]
 		},
-		"fd-3-ball_egg_1": {
+		"fd-2-meerkat-cave": {
 			"mwids": [
 				3235824493,
 				3235824494
 			]
 		},
-		"rhg-1-pickpocket": {
+		"fd-3-ball_egg_1": {
 			"mwids": [
 				3235824495,
 				3235824496
 			]
 		},
-		"rhg-2-crate_smuggle": {
+		"rhg-1-pickpocket": {
 			"mwids": [
 				3235824497,
 				3235824498
 			]
 		},
-		"rhg-3-maritime_smuggle": {
+		"rhg-2-crate_smuggle": {
 			"mwids": [
 				3235824499,
 				3235824500
 			]
 		},
-		"rftc-1-collect_trade": {
+		"rhg-3-maritime_smuggle": {
 			"mwids": [
 				3235824501,
 				3235824502
 			]
 		},
-		"bull-arena-1": {
+		"rftc-1-collect_trade": {
 			"mwids": [
 				3235824503,
-				3235824504,
-				3235824505
+				3235824504
 			]
 		},
-		"rftc-3-metalstuff": {
+		"bull-arena-1": {
 			"mwids": [
+				3235824505,
 				3235824506,
 				3235824507
 			]
 		},
-		"foa-1-treedoc": {
+		"rftc-3-metalstuff": {
 			"mwids": [
 				3235824508,
 				3235824509
 			]
 		},
-		"foa-2-tree_defense": {
+		"foa-1-treedoc": {
 			"mwids": [
 				3235824510,
-				3235824511,
-				3235824512
+				3235824511
+			]
+		},
+		"foa-2-tree_defense": {
+			"mwids": [
+				3235824512,
+				3235824513,
+				3235824514
 			]
 		},
 		"foa-3-buffel_cave": {
 			"mwids": [
-				3235824513,
-				3235824514,
-				3235824515
+				3235824515,
+				3235824516,
+				3235824517
 			]
 		},
 		"unknown-warrior-1": {
 			"mwids": [
-				3235824516
+				3235824518
 			]
 		},
 		"steaks_1": {
 			"mwids": [
-				3235824517,
-				3235824518
+				3235824519,
+				3235824520
 			]
 		},
 		"steaks_2": {
 			"mwids": [
-				3235824519
+				3235824521
 			]
 		},
 		"steaks_3": {
 			"mwids": [
-				3235824520
+				3235824522
 			]
 		}
 	}

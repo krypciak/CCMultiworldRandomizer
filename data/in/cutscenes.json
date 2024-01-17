@@ -305,6 +305,34 @@
             "reward": [
                 [ "item", "Circuit Override", 1 ]
             ]
+        } ,
+        "Faj'ro SP Upgrade": {
+            "location": {
+                "map": "heat.dng-expo-space",
+                "mapId": 136,
+                "path": ".settings.event.38" 
+            },
+            "region": {
+                "linear": "19",
+                "open": "open7.8" 
+            },
+            "reward": [
+                [ "sp" ]
+            ]
+        },
+        "Krys'kajo SP Upgrade": {
+            "location": {
+                "map": "jungle.dng.tree-expo-space",
+                "mapId": 60,
+                "path": ".settings.event.44" 
+            },
+            "region": {
+                "linear": "30",
+                "open": "open15.3" 
+            },
+            "reward": [
+                [ "sp" ]
+            ]
         }
     }
 }

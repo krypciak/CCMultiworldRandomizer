@@ -69,7 +69,7 @@ ig.module("mw-rando.multiworld-model")
 						this.login(this.connectionInfo);
 					} else {
 						sc.Dialogs.showInfoDialog(
-							"This save file has no Archpelago connection associated with it. " +
+							"This save file has no Archipelago connection associated with it. " +
 								"To play online, open the pause menu and enter the details.",
 							true,
 						);
@@ -118,7 +118,7 @@ ig.module("mw-rando.multiworld-model")
 
 				const foreign = itemInfo.player != this.client.data.slot;
 
-				if (itemInfo.item < this.baseNormalItemId) {
+				if (itemInfo.item < this.baseId + 4) {
 					if (!sc.model.player.getCore(sc.PLAYER_CORE.ELEMENT_CHANGE)) {
 						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_CHANGE, true);
 						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_HEAT, false);
@@ -130,6 +130,16 @@ ig.module("mw-rando.multiworld-model")
 					if (elementConstant != null) {
 						sc.model.player.setCore(elementConstant, true);
 					}
+				} else if (itemInfo.item < this.baseNormalItemId) {
+					switch (this.datapackage.item_id_to_name[itemInfo.item]) {
+						case "SP Upgrade":
+							sc.model.player.setSpLevel(Number(sc.model.player.spLevel) + 1);
+							sc.party.currentParty.forEach((name: string) => {
+								sc.party.getPartyMemberModel(name).setSpLevel(sc.model.player.spLevel);
+							});
+
+							break;
+					}
 				} else {
 					let [itemId, quantity] = this.getItemDataFromComboId(itemInfo.item);
 					if (this.options.keyrings && this.options.keyrings.includes(itemId)) {
@@ -138,7 +148,7 @@ ig.module("mw-rando.multiworld-model")
 					sc.model.player.addItem(Number(itemId), quantity, foreign);
 				}
 
-				if (foreign) {
+				if (foreign || itemInfo.item < this.baseNormalItemId) {
 					sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.ITEM_RECEIVED, itemInfo);
 				}
 

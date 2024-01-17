@@ -283,6 +283,13 @@ export default class MwRandomizer {
 			}
 		});
 
+		sc.PartyModel.inject({
+			addPartyMember(name: string, ...args) {
+				this.parent(name, ...args);
+				sc.party.getPartyMemberModel(name).setSpLevel(sc.model.player.spLevel);
+			}
+		});
+
 		ig.Game.inject({
 			loadLevel(map, ...args) {
 				const mapOverrides = maps[map.name.replace(/[\\\/]/g, '.')];
