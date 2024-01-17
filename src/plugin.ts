@@ -188,20 +188,49 @@ export default class MwRandomizer {
 		let plugin = this;
 
 		ig.ENTITY.Chest.inject({
-			_reallyOpenUp() {
+			init(...args) {
+				this.parent(...args);
+
 				const map = maps[ig.game.mapName];
-				
 				if (!map) {
-					console.warn('Chest not in logic');
-					return this.parent();
+					return;
 				}
 
-				const check = map.chests?.[this.mapId];
+				this.check = map.chests?.[this.mapId];
+				if (!this.check) {
+					return;
+				}
+
+				let newOffY = 0;
+				let flags = sc.multiworld.locationInfo[this.check.mwids[0]].flags;
+				if (flags & (ap.ITEM_FLAGS.NEVER_EXCLUDE | ap.ITEM_FLAGS.TRAP)) {
+					// USEFUL and TRAP items get a blue chest
+					newOffY = 80;
+				} else if (flags & ap.ITEM_FLAGS.PROGRESSION) {
+					// PROGRESSION items get a green chest
+					newOffY = 136;
+				}
+
+				if (newOffY == 0) {
+					return;
+				}
+
+				for (const name of Object.keys(this.animSheet.anims)) {
+					if (name.startsWith("idle")) {
+						this.animSheet.anims[name].animations[0].sheet.offY = newOffY;
+					}
+					if (name == "open" || name == "end") {
+						this.animSheet.anims[name].animations[0].sheet.offY = newOffY + 24;
+					}
+				}
+			},
+
+			_reallyOpenUp() {
 				if (
-					check === undefined ||
-					check.mwids === undefined ||
-					check.mwids.length == 0 ||
-					sc.multiworld.locationInfo[check.mwids[0]] === undefined
+					this.check === undefined ||
+					this.check.mwids === undefined ||
+					this.check.mwids.length == 0 ||
+					sc.multiworld.locationInfo[this.check.mwids[0]] === undefined
 				) {
 					console.warn('Chest not in logic');
 					return this.parent();
@@ -209,8 +238,8 @@ export default class MwRandomizer {
 
 				const old = sc.ItemDropEntity.spawnDrops;
 				try {
-					if (check) {
-						sc.multiworld.reallyCheckLocations(check.mwids);
+					if (this.check) {
+						sc.multiworld.reallyCheckLocations(this.check.mwids);
 					}
 
 					this.amount = 0;
