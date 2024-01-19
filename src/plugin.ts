@@ -201,14 +201,25 @@ export default class MwRandomizer {
 					return;
 				}
 
+				if (!sc.multiworld.locationInfo) {
+					return;
+				}
+
+				const keyLayer = this.animSheet.anims.idleKey.animations[1];
+				const masterKeyLayer = this.animSheet.anims.idleMasterKey.animations[1];
+				let layerToAdd = null;
+
 				let newOffY = 0;
 				let flags = sc.multiworld.locationInfo[this.check.mwids[0]].flags;
 				if (flags & (ap.ITEM_FLAGS.NEVER_EXCLUDE | ap.ITEM_FLAGS.TRAP)) {
 					// USEFUL and TRAP items get a blue chest
 					newOffY = 80;
+					layerToAdd = keyLayer;
+
 				} else if (flags & ap.ITEM_FLAGS.PROGRESSION) {
 					// PROGRESSION items get a green chest
 					newOffY = 136;
+					layerToAdd = masterKeyLayer;
 				}
 
 				if (newOffY == 0) {
@@ -216,8 +227,11 @@ export default class MwRandomizer {
 				}
 
 				for (const name of Object.keys(this.animSheet.anims)) {
+					let animations = this.animSheet.anims[name].animations;
+
 					if (name.startsWith("idle")) {
-						this.animSheet.anims[name].animations[0].sheet.offY = newOffY;
+						animations[0].sheet.offY = newOffY;
+						layerToAdd && animations.splice(1, 0, layerToAdd);
 					}
 					if (name == "open" || name == "end") {
 						this.animSheet.anims[name].animations[0].sheet.offY = newOffY + 24;
