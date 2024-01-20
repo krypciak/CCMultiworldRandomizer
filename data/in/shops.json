@@ -1,0 +1,295 @@
+[
+	{
+		"location": "rookieHarborItems",
+		"region": {
+			"linear": "3",
+			"open": "open0"
+		},
+		"reward": [
+			[ "item", "Sandwich" ],
+			[ "item", "Hi-Sandwich" ],
+			[ "item", "Green Leaf Tea" ],
+			[ "item", "Just Water" ],
+			[ "item", "Kebab Roll" ],
+			[ "item", "Meaty Risotto" ],
+			[ "item", "Spicy Bun" ],
+			[ "item", "Fruit Drink" ],
+			[ "item", "Rice Cracker" ],
+			[ "item", "Veggie Sticks" ],
+			[ "item", "Bergen Ice Cream" ],
+			[ "item", "Sweet Lemonjuice" ],
+			[ "item", "Salted Peanuts" ],
+			[ "item", "Cup o' Coffee" ],
+			[ "item", "Snack Mix" ]
+		]
+	},
+	{
+		"location": "rookieHarborWeapons",
+		"region": {
+			"linear": "3",
+			"open": "open0"
+		},
+		"reward": [
+			[ "item", "Bronze Goggles" ],
+			[ "item", "Bronze Edge" ],
+			[ "item", "Bronze Mail" ],
+			[ "item", "Bronze Boots" ],
+			[ "item", "Iron Goggles" ],
+			[ "item", "Iron Edge" ],
+			[ "item", "Iron Mail" ],
+			[ "item", "Iron Boots" ],
+			[ "item", "Silver Goggles" ],
+			[ "item", "Silver Edge" ],
+			[ "item", "Silver Mail" ],
+			[ "item", "Silver Boots" ]
+		]
+	},
+	{
+		"location": "rookieHarborWeaponsNorth",
+		"region": {
+			"linear": "19",
+			"open": "open0"
+		},
+		"reward": [
+			[ "item", "Steel Goggles" ],
+			[ "item", "Steel Edge" ],
+			[ "item", "Steel Mail" ],
+			[ "item", "Steel Boots" ],
+			[ "item", "Silver Goggles" ],
+			[ "item", "Silver Edge" ],
+			[ "item", "Silver Mail" ],
+			[ "item", "Silver Boots" ]
+		]
+	},
+	{
+		"location": "rookieHarborTara",
+		"region": {
+			"linear": "3",
+			"open": "open0"
+		},
+		"reward": [
+			[ "item", "Sandwich" ]
+		]
+	},
+	{
+		"location": "rookieBacker",
+		"region": {
+			"linear": "19",
+			"open": "open0"
+		},
+		"reward": [
+			[ "item", "Rising Super Star" ],
+			[ "item", "Dk Pepper" ],
+			[ "item", "Cheese Spaetzle" ],
+			[ "item", "Maultasche" ],
+			[ "item", "Durian" ],
+			[ "item", "PengoPop" ],
+			[ "item", "Spicy Beat-0-Type" ],
+			[ "item", "Werewolf Stick" ],
+			[ "item", "Mooncake" ],
+			[ "item", "Guacamole Toast" ],
+			[ "item", "Willis Waldmahl" ],
+			[ "item", "Pumpkin Spice Cof." ]
+		]
+	},
+	{
+		"location": "bergenVillageItems",
+		"region": {
+			"linear": "3",
+			"open": "open0"
+		},
+		"reward": [
+			[ "item", "Sandwich" ],
+			[ "item", "Hi-Sandwich" ],
+			[ "item", "Green Leaf Tea" ],
+			[ "item", "Just Water" ],
+			[ "item", "Kebab Roll" ],
+			[ "item", "Meaty Risotto" ],
+			[ "item", "Spicy Bun" ],
+			[ "item", "Fruit Drink" ],
+			[ "item", "Rice Cracker" ],
+			[ "item", "Veggie Sticks" ],
+			[ "item", "Bergen Ice Cream" ],
+			[ "item", "Sweet Lemonjuice" ],
+			[ "item", "Salted Peanuts" ],
+			[ "item", "Cup o' Coffee" ],
+			[ "item", "Snack Mix" ]
+		]
+	},
+	{
+		"location": "bergenVillageWeapons",
+		"region": {
+			"linear": "3",
+			"open": "open0"
+		},
+		"reward": [
+			[ "item", "Iron Goggles" ],
+			[ "item", "Iron Edge" ],
+			[ "item", "Iron Mail" ],
+			[ "item", "Iron Boots" ]
+		]
+	},
+	{
+		"location": "bergenHermit",
+		"region": {
+			"linear": "3",
+			"open": "open0"
+		},
+		"reward": []
+	},
+	{
+		"location": "bakiItems",
+		"region": {
+			"linear": "11",
+			"open": "open0"
+		},
+		"reward": [
+			[ "item", "Sandwich" ],
+			[ "item", "Hi-Sandwich" ],
+			[ "item", "Green Leaf Tea" ],
+			[ "item", "Just Water" ],
+			[ "item", "Kebab Roll" ],
+			[ "item", "Meaty Risotto" ],
+			[ "item", "Spicy Bun" ],
+			[ "item", "Fruit Drink" ],
+			[ "item", "Rice Cracker" ],
+			[ "item", "Veggie Sticks" ],
+			[ "item", "Bergen Ice Cream" ],
+			[ "item", "Sweet Lemonjuice" ],
+			[ "item", "Salted Peanuts" ],
+			[ "item", "Cup o' Coffee" ],
+			[ "item", "Snack Mix" ]
+		]
+	},
+	{
+		"location": "bakiWeapons",
+		"region": {
+			"linear": "11",
+			"open": "open0"
+		},
+		"reward": [
+			[ "item", "Iron Goggles" ],
+			[ "item", "Iron Edge" ],
+			[ "item", "Iron Mail" ],
+			[ "item", "Iron Boots" ],
+			[ "item", "Steel Goggles" ],
+			[ "item", "Steel Edge" ],
+			[ "item", "Steel Mail" ],
+			[ "item", "Steel Boots" ]
+		]
+	},
+	{
+		"location": "basinVendingMachines",
+		"region": {
+			"linear": "21",
+			"open": "open0"
+		},
+		"reward": [
+			[ "item", "Sandwich" ],
+			[ "item", "Hi-Sandwich" ],
+			[ "item", "Green Leaf Tea" ],
+			[ "item", "Just Water" ],
+			[ "item", "Spicy Bun" ],
+			[ "item", "Fruit Drink" ],
+			[ "item", "Rice Cracker" ],
+			[ "item", "Veggie Sticks" ],
+			[ "item", "Bergen Ice Cream" ],
+			[ "item", "Sweet Lemonjuice" ],
+			[ "item", "Salted Peanuts" ],
+			[ "item", "Cup o' Coffee" ],
+			[ "item", "Snack Mix" ],
+			[ "item", "Kebab Roll" ],
+			[ "item", "Meaty Risotto" ]
+		]
+	},
+	{
+		"location": "basinItems",
+		"region": {
+			"linear": "21",
+			"open": "open0"
+		},
+		"reward": [
+			[ "item", "Sandwich" ],
+			[ "item", "Hi-Sandwich" ],
+			[ "item", "Green Leaf Tea" ],
+			[ "item", "Just Water" ],
+			[ "item", "Kebab Roll" ],
+			[ "item", "Meaty Risotto" ],
+			[ "item", "Spicy Bun" ],
+			[ "item", "Fruit Drink" ],
+			[ "item", "Rice Cracker" ],
+			[ "item", "Veggie Sticks" ],
+			[ "item", "Bergen Ice Cream" ],
+			[ "item", "Sweet Lemonjuice" ],
+			[ "item", "Salted Peanuts" ],
+			[ "item", "Cup o' Coffee" ],
+			[ "item", "Snack Mix" ]
+		]
+	},
+	{
+		"location": "basinWeapons",
+		"region": {
+			"linear": "21",
+			"open": "open0"
+		},
+		"reward": [
+			[ "item", "Silver Goggles" ],
+			[ "item", "Silver Edge" ],
+			[ "item", "Silver Mail" ],
+			[ "item", "Silver Boots" ],
+			[ "item", "Titan Goggles" ],
+			[ "item", "Titan Edge" ],
+			[ "item", "Titan Mail" ],
+			[ "item", "Titan Boots" ]
+		]
+	},
+	{
+		"location": "basinMushroom",
+		"region": {
+			"linear": "21",
+			"open": "open0"
+		},
+		"reward": []
+	},
+	{
+		"location": "sapphireWeapons",
+		"region": {
+			"linear": "31",
+			"open": "open0"
+		},
+		"reward": [
+			[ "item", "Titan Goggles" ],
+			[ "item", "Titan Edge" ],
+			[ "item", "Titan Mail" ],
+			[ "item", "Titan Boots" ],
+			[ "item", "Cobalt Goggles" ],
+			[ "item", "Cobalt Edge" ],
+			[ "item", "Cobalt Mail" ],
+			[ "item", "Cobalt Boots" ]
+		]
+	},
+	{
+		"location": "sapphireItems",
+		"region": {
+			"linear": "31",
+			"open": "open0"
+		},
+		"reward": [
+			[ "item", "Sandwich" ],
+			[ "item", "Hi-Sandwich" ],
+			[ "item", "Green Leaf Tea" ],
+			[ "item", "Just Water" ],
+			[ "item", "Kebab Roll" ],
+			[ "item", "Meaty Risotto" ],
+			[ "item", "Spicy Bun" ],
+			[ "item", "Fruit Drink" ],
+			[ "item", "Rice Cracker" ],
+			[ "item", "Veggie Sticks" ],
+			[ "item", "Bergen Ice Cream" ],
+			[ "item", "Sweet Lemonjuice" ],
+			[ "item", "Salted Peanuts" ],
+			[ "item", "Cup o' Coffee" ],
+			[ "item", "Snack Mix" ]
+		]
+	}
+]
