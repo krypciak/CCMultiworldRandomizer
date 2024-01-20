@@ -326,6 +326,7 @@ export default class MwRandomizer {
 				this.locationGui = new sc.TextGui("", {
 					font: sc.fontsystem.smallFont,
 					maxWidth: 115,
+					linePadding: -2,
 				});
 				this.locationGui.setPos(8, 19);
 				this.addChildGui(this.locationGui);
@@ -343,7 +344,7 @@ export default class MwRandomizer {
 				this.addChildGui(this.arrow);
 
 				this.typeGui = new sc.TextGui("", { font: sc.fontsystem.tinyFont });
-				this.typeGui.setPos(8, 6);
+				this.typeGui.setPos(8, 5);
 				this.typeGui.setAlign(ig.GUI_ALIGN.X_LEFT, ig.GUI_ALIGN.Y_BOTTOM);
 				this.addChildGui(this.typeGui);
 			},
@@ -386,7 +387,7 @@ export default class MwRandomizer {
 					this.line.hook.size.x = 117;
 				}
 
-				this.hook.size.y = 33 + this.locationGui.hook.size.y;
+				this.hook.size.y = 34 + this.locationGui.hook.size.y;
 
 				this.typeGui.setText(`Type: \\c[3]${chest.analyzeLabel}\\c[0]`);
 
