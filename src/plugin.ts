@@ -243,6 +243,8 @@ export default class MwRandomizer {
 						this.animSheet.anims[name].animations[0].sheet.offY = newOffY + 24;
 					}
 				}
+
+				this.animSheet.anims.idleKey = this.animSheet.anims.idleMasterKey = this.animSheet.anims.idle;
 			},
 
 			getQuickMenuSettings() {
