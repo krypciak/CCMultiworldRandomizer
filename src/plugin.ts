@@ -213,7 +213,8 @@ export default class MwRandomizer {
 				this.analyzeLabel = "Filler";
 
 				let newOffY = 0;
-				let flags = sc.multiworld.locationInfo[this.mwCheck.mwids[0]].flags;
+				this.rawChest = sc.multiworld.locationInfo[this.mwCheck.mwids[0]];
+				let flags = this.rawChest.flags;
 				if (flags & (ap.ITEM_FLAGS.NEVER_EXCLUDE | ap.ITEM_FLAGS.TRAP)) {
 					// USEFUL and TRAP items get a blue chest
 					newOffY = 80;
@@ -248,15 +249,20 @@ export default class MwRandomizer {
 			},
 
 			getQuickMenuSettings() {
-				return {
-					disabled: this.isOpen || (this.hideManager && this.hideManager.hidden),
-					type: "Analyzable",
-					color: this.analyzeColor ?? 0,
-					text: this.mwCheck
-						? `\\c[4]${this.mwCheck.name}\\c[0]\nType: \\c[3]${this.analyzeLabel}\\c[3]` 
-						: "\\c[1]Not in logic",
-
-				};
+				let disabled = this.isOpen || (this.hideManager && this.hideManager.hidden);
+				if (this.mwCheck) {
+					return {
+						type: "Chest",
+						disabled: disabled,
+					};
+				} else {
+					return {
+						type: "Analyzable",
+						disabled: disabled,
+						color: this.analyzeColor ?? 0,
+						text: "\\c[1]Not in logic",
+					}
+				}
 			},
 
 			_reallyOpenUp() {
@@ -280,6 +286,156 @@ export default class MwRandomizer {
 					return this.parent();
 				} finally {
 					sc.ItemDropEntity.spawnDrops = old;
+				}
+			},
+		});
+
+		sc.QUICK_MENU_TYPES.Chest = sc.QuickMenuTypesBase.extend({
+			init(type, settings, screen) {
+				this.parent(type, settings, screen);
+				this.setIconColor(settings.entity.analyzeColor);
+			},
+		});
+
+		sc.QUICK_INFO_BOXES.Chest = ig.BoxGui.extend({
+			ninepatch: new ig.NinePatch("media/gui/menu.png", {
+				width: 8,
+				height: 8,
+				left: 8,
+				top: 8,
+				right: 8,
+				bottom: 8,
+				offsets: { default: { x: 432, y: 304 }, flipped: { x: 456, y: 304 } },
+			}),
+			transitions: {
+				HIDDEN: {
+					state: { alpha: 0 },
+					time: 0.2,
+					timeFunction: KEY_SPLINES.LINEAR,
+				},
+				DEFAULT: { state: {}, time: 0.2, timeFunction: KEY_SPLINES.EASE },
+			},
+			
+			init() {
+				this.parent(127, 100);
+				this.areaGui = new sc.TextGui("", { font: sc.fontsystem.tinyFont });
+				this.areaGui.setPos(12, 6);
+				this.addChildGui(this.areaGui);
+				this.locationGui = new sc.TextGui("", {
+					font: sc.fontsystem.smallFont,
+					maxWidth: 115,
+				});
+				this.locationGui.setPos(8, 19);
+				this.addChildGui(this.locationGui);
+
+				this.line = new sc.LineGui(117);
+				this.line.setPos(5, 16);
+				this.addChildGui(this.line);
+
+				this.clearance = new sc.TextGui("", { font: sc.fontsystem.tinyFont });
+				this.clearance.setPos(5, 13);
+				this.clearance.setAlign(ig.GUI_ALIGN.X_RIGHT, ig.GUI_ALIGN.Y_TOP);
+				this.addChildGui(this.clearance);
+
+				this.arrow = new sc.QuickItemArrow();
+				this.addChildGui(this.arrow);
+
+				this.typeGui = new sc.TextGui("", { font: sc.fontsystem.tinyFont });
+				this.typeGui.setPos(6, 6);
+				this.typeGui.setAlign(ig.GUI_ALIGN.X_LEFT, ig.GUI_ALIGN.Y_BOTTOM);
+				this.addChildGui(this.typeGui);
+			},
+
+			show(tooltip) {
+				let chest = tooltip.entity;
+				if (!this.setData(chest)) {
+					return;
+				}
+				this.alignToBase(tooltip.hook);
+				this.doStateTransition("DEFAULT");
+				this.active = true;
+			},
+			
+			hide() {
+				this.doStateTransition("HIDDEN");
+				this.active = false;
+			},
+
+			setData(chest) {
+				if (!chest.mwCheck) {
+					return false;
+				}
+
+				let [area, location] =  chest.mwCheck.name.split(" - ");
+				let level = null;
+				const match = RegExp("(.+) \\((.+)\\)").exec(location);
+				if (match) {
+					location = match[1];
+					level = match[2];
+				}
+
+				this.areaGui.setText(`\\c[4]${area}\\c[0]`);
+				this.locationGui.setText(location);
+				if (level) {
+					this.clearance.setText(`\\c[3]${level}\\c[0]`);
+					this.line.hook.size.x = 114 - this.clearance.hook.size.x;
+				} else {
+					this.clearance.setText("");
+					this.line.hook.size.x = 117;
+				}
+
+				this.hook.size.y = 33 + this.locationGui.hook.size.y;
+
+				this.typeGui.setText(`Type: \\c[3]${chest.analyzeLabel}\\c[0]`);
+
+				return true;
+			},
+
+			alignToBase: function (otherHook) {
+				let hook = this.hook;
+				let invisible = hook.currentState.alpha == 0;
+
+				let vec = Vec2.createC(0, 0);
+				vec.x = otherHook.pos.x + Math.floor(otherHook.size.x / 2);
+				vec.y = otherHook.pos.y + Math.floor(otherHook.size.y / 2);
+
+				let above = vec.y - 25;
+
+				vec.y = Math.max(10, Math.min(ig.system.height - this.hook.size.y - 10, above));
+
+				if (invisible) {
+					hook.pos.y = vec.y;
+				}
+
+				var arrowY = 17 + (above - vec.y);
+				if (vec.x + 173 < ig.system.width) {
+					this.currentTileOffset = "default";
+					if (invisible) hook.pos.x = vec.x + 20 + 10;
+					hook.doPosTranstition(vec.x + 20, vec.y, 0.2, KEY_SPLINES.EASE);
+					this.arrow.setPosition(-10, Math.max(7, Math.min(hook.size.y - 15, arrowY)), false);
+				} else {
+					this.currentTileOffset = "flipped";
+					if (invisible) hook.pos.x = vec.x - hook.size.x - 20 - 10 - 1;
+					hook.doPosTranstition(
+						vec.x - hook.size.x - 20 - 1,
+						vec.y,
+						0.2,
+						KEY_SPLINES.EASE,
+					);
+					this.arrow.setPosition(
+						hook.size.x + 1,
+						Math.max(7, Math.min(hook.size.y - 15, arrowY)),
+						true,
+					);
+				}
+
+				this.arrow.bottomAnchor = false;
+				this.arrow.flipY = false;
+				if (arrowY < 7) {
+					this.arrow.bottomAnchor = true;
+					this.arrow.flipY = true;
+				} else if (arrowY > hook.size.y - 15) {
+					this.arrow.bottomAnchor = true;
 				}
 			},
 		});
