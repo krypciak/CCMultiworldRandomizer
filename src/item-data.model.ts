@@ -14,6 +14,7 @@ export interface RawMapItems {
 export type RawChests = { [mapId: string]: RawChest };
 
 export interface RawChest {
+	name: string;
 	mwids: number[];
 }
 
