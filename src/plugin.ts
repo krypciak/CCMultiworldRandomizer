@@ -229,6 +229,8 @@ export default class MwRandomizer {
 					this.analyzeLabel = "Progression";
 				}
 
+				this.animSheet.anims.idleKey = this.animSheet.anims.idleMasterKey = this.animSheet.anims.idle;
+
 				if (newOffY == 0) {
 					return;
 				}
@@ -244,8 +246,6 @@ export default class MwRandomizer {
 						this.animSheet.anims[name].animations[0].sheet.offY = newOffY + 24;
 					}
 				}
-
-				this.animSheet.anims.idleKey = this.animSheet.anims.idleMasterKey = this.animSheet.anims.idle;
 			},
 
 			getQuickMenuSettings() {
@@ -319,8 +319,10 @@ export default class MwRandomizer {
 			init() {
 				this.parent(127, 100);
 				this.areaGui = new sc.TextGui("", { font: sc.fontsystem.tinyFont });
-				this.areaGui.setPos(12, 6);
+				this.areaGui.setPos(0, 6);
+				this.areaGui.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_TOP);
 				this.addChildGui(this.areaGui);
+
 				this.locationGui = new sc.TextGui("", {
 					font: sc.fontsystem.smallFont,
 					maxWidth: 115,
@@ -341,7 +343,7 @@ export default class MwRandomizer {
 				this.addChildGui(this.arrow);
 
 				this.typeGui = new sc.TextGui("", { font: sc.fontsystem.tinyFont });
-				this.typeGui.setPos(6, 6);
+				this.typeGui.setPos(8, 6);
 				this.typeGui.setAlign(ig.GUI_ALIGN.X_LEFT, ig.GUI_ALIGN.Y_BOTTOM);
 				this.addChildGui(this.typeGui);
 			},
