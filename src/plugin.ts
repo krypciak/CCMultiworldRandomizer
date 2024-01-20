@@ -196,8 +196,8 @@ export default class MwRandomizer {
 					return;
 				}
 
-				this.check = map.chests?.[this.mapId];
-				if (!this.check) {
+				this.mwCheck = map.chests?.[this.mapId];
+				if (!this.mwCheck) {
 					return;
 				}
 
@@ -209,17 +209,23 @@ export default class MwRandomizer {
 				const masterKeyLayer = this.animSheet.anims.idleMasterKey.animations[1];
 				let layerToAdd = null;
 
+				this.analyzeColor = sc.ANALYSIS_COLORS.GREY;
+				this.analyzeLabel = "Filler";
+
 				let newOffY = 0;
-				let flags = sc.multiworld.locationInfo[this.check.mwids[0]].flags;
+				let flags = sc.multiworld.locationInfo[this.mwCheck.mwids[0]].flags;
 				if (flags & (ap.ITEM_FLAGS.NEVER_EXCLUDE | ap.ITEM_FLAGS.TRAP)) {
 					// USEFUL and TRAP items get a blue chest
 					newOffY = 80;
 					layerToAdd = keyLayer;
-
+					this.analyzeColor = sc.ANALYSIS_COLORS.BLUE;
+					this.analyzeLabel = "Useful";
 				} else if (flags & ap.ITEM_FLAGS.PROGRESSION) {
 					// PROGRESSION items get a green chest
 					newOffY = 136;
 					layerToAdd = masterKeyLayer;
+					this.analyzeColor = sc.ANALYSIS_COLORS.GREEN;
+					this.analyzeLabel = "Progression";
 				}
 
 				if (newOffY == 0) {
@@ -239,12 +245,24 @@ export default class MwRandomizer {
 				}
 			},
 
+			getQuickMenuSettings() {
+				return {
+					disabled: this.isOpen || (this.hideManager && this.hideManager.hidden),
+					type: "Analyzable",
+					color: this.analyzeColor ?? 0,
+					text: this.mwCheck
+						? `\\c[4]${this.mwCheck.name}\\c[0]\nType: \\c[3]${this.analyzeLabel}\\c[3]` 
+						: "\\c[1]Not in logic",
+
+				};
+			},
+
 			_reallyOpenUp() {
 				if (
-					this.check === undefined ||
-					this.check.mwids === undefined ||
-					this.check.mwids.length == 0 ||
-					sc.multiworld.locationInfo[this.check.mwids[0]] === undefined
+					this.mwCheck === undefined ||
+					this.mwCheck.mwids === undefined ||
+					this.mwCheck.mwids.length == 0 ||
+					sc.multiworld.locationInfo[this.mwCheck.mwids[0]] === undefined
 				) {
 					console.warn('Chest not in logic');
 					return this.parent();
@@ -252,8 +270,8 @@ export default class MwRandomizer {
 
 				const old = sc.ItemDropEntity.spawnDrops;
 				try {
-					if (this.check) {
-						sc.multiworld.reallyCheckLocations(this.check.mwids);
+					if (this.mwCheck) {
+						sc.multiworld.reallyCheckLocations(this.mwCheck.mwids);
 					}
 
 					this.amount = 0;
@@ -261,7 +279,7 @@ export default class MwRandomizer {
 				} finally {
 					sc.ItemDropEntity.spawnDrops = old;
 				}
-			}
+			},
 		});
 
 		ig.EVENT_STEP.SET_PLAYER_CORE.inject({
