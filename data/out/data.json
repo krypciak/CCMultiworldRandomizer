@@ -3,11 +3,13 @@
 		"arid.cliff-1": {
 			"chests": {
 				"467": {
+					"name": "Vermillion Wasteland - Spiral Cliff Center (Bronze)",
 					"mwids": [
 						3235824000
 					]
 				},
 				"468": {
+					"name": "Vermillion Wasteland - Spiral Cliff Upper",
 					"mwids": [
 						3235824001
 					]
@@ -17,6 +19,7 @@
 		"arid.interior.stealth-2": {
 			"chests": {
 				"94": {
+					"name": "Vermillion Wasteland - Storage Basement",
 					"mwids": [
 						3235824002
 					]
@@ -26,11 +29,13 @@
 		"arid.lake-1": {
 			"chests": {
 				"646": {
+					"name": "Vermillion Wasteland - Crimson Lake Upper",
 					"mwids": [
 						3235824003
 					]
 				},
 				"647": {
+					"name": "Vermillion Wasteland - Crimson Lake Lower",
 					"mwids": [
 						3235824004
 					]
@@ -40,16 +45,19 @@
 		"arid.town-1": {
 			"chests": {
 				"334": {
+					"name": "Vermillion Wasteland - East Town Left (Silver)",
 					"mwids": [
 						3235824005
 					]
 				},
 				"335": {
+					"name": "Vermillion Wasteland - East Town Center",
 					"mwids": [
 						3235824006
 					]
 				},
 				"336": {
+					"name": "Vermillion Wasteland - East Town Lower",
 					"mwids": [
 						3235824007
 					]
@@ -59,16 +67,19 @@
 		"arid.town-2": {
 			"chests": {
 				"485": {
+					"name": "Vermillion Wasteland - West Town Upper Right (Bronze)",
 					"mwids": [
 						3235824008
 					]
 				},
 				"486": {
+					"name": "Vermillion Wasteland - West Town Upper Left",
 					"mwids": [
 						3235824009
 					]
 				},
 				"487": {
+					"name": "Vermillion Wasteland - West Town Lower (Bronze)",
 					"mwids": [
 						3235824010
 					]
@@ -78,6 +89,7 @@
 		"autumn.caves.cave-3-to-6": {
 			"chests": {
 				"2": {
+					"name": "Autumn's Rise - Drippy Den",
 					"mwids": [
 						3235824011
 					]
@@ -87,11 +99,13 @@
 		"autumn.cubaum": {
 			"chests": {
 				"200": {
+					"name": "Autumn's Rise - Normal Clearing Lower",
 					"mwids": [
 						3235824012
 					]
 				},
 				"201": {
+					"name": "Autumn's Rise - Normal Clearing Left",
 					"mwids": [
 						3235824013
 					]
@@ -101,6 +115,7 @@
 		"autumn.entrance": {
 			"chests": {
 				"112": {
+					"name": "Autumn's Rise - Entrance",
 					"mwids": [
 						3235824014
 					]
@@ -110,6 +125,7 @@
 		"autumn.lake-observatory": {
 			"chests": {
 				"329": {
+					"name": "Autumn's Rise - Old Observatory",
 					"mwids": [
 						3235824015
 					]
@@ -119,6 +135,7 @@
 		"autumn.path-1-1": {
 			"chests": {
 				"378": {
+					"name": "Autumn's Rise - Quiet Passage 1",
 					"mwids": [
 						3235824016
 					]
@@ -128,6 +145,7 @@
 		"autumn.path-1-2": {
 			"chests": {
 				"346": {
+					"name": "Autumn's Rise - Quiet Passage 2",
 					"mwids": [
 						3235824017
 					]
@@ -137,6 +155,7 @@
 		"autumn.path-1-3": {
 			"chests": {
 				"322": {
+					"name": "Autumn's Rise - Hedgehag's Den (Defeat)",
 					"mwids": [
 						3235824018
 					]
@@ -146,6 +165,7 @@
 		"autumn.path-1": {
 			"chests": {
 				"137": {
+					"name": "Autumn's Rise - Pathway 1",
 					"mwids": [
 						3235824019
 					]
@@ -155,6 +175,7 @@
 		"autumn.path-2": {
 			"chests": {
 				"268": {
+					"name": "Autumn's Rise - Pathway 2",
 					"mwids": [
 						3235824020
 					]
@@ -164,6 +185,7 @@
 		"autumn.path-3-1": {
 			"chests": {
 				"291": {
+					"name": "Autumn's Rise - Pathway 3 Upper",
 					"mwids": [
 						3235824021
 					]
@@ -173,7 +195,7 @@
 				"452": [
 					{
 						"mwids": [
-							3235824347
+							3235824345
 						],
 						"path": ".settings.npcStates.1.event.10"
 					}
@@ -183,6 +205,7 @@
 		"autumn.path-3-2": {
 			"chests": {
 				"305": {
+					"name": "Autumn's Rise - Off Road 1 Right",
 					"mwids": [
 						3235824022
 					]
@@ -192,6 +215,7 @@
 		"autumn.path-3-4": {
 			"chests": {
 				"265": {
+					"name": "Autumn's Rise - Off Road 2",
 					"mwids": [
 						3235824023
 					]
@@ -201,16 +225,19 @@
 		"autumn.path-7-1": {
 			"chests": {
 				"283": {
+					"name": "Autumn's Rise - Pathway 6 Left",
 					"mwids": [
 						3235824024
 					]
 				},
 				"284": {
+					"name": "Autumn's Rise - Pathway 6 Right",
 					"mwids": [
 						3235824025
 					]
 				},
 				"1128": {
+					"name": "Autumn's Rise - Pathway 6 Center",
 					"mwids": [
 						3235824026
 					]
@@ -220,11 +247,13 @@
 		"autumn.path-7-2": {
 			"chests": {
 				"1115": {
+					"name": "Autumn's Rise - Pathway 7 Left",
 					"mwids": [
 						3235824027
 					]
 				},
 				"1142": {
+					"name": "Autumn's Rise - Pathway 7 Upper",
 					"mwids": [
 						3235824028
 					]
@@ -234,6 +263,7 @@
 		"autumn.path-8": {
 			"chests": {
 				"12": {
+					"name": "Autumn's Rise - Ending Pathway Lower",
 					"mwids": [
 						3235824029
 					]
@@ -243,7 +273,7 @@
 				"458": [
 					{
 						"mwids": [
-							3235824346
+							3235824344
 						],
 						"path": ".settings.event.21.accepted.6"
 					}
@@ -253,11 +283,13 @@
 		"autumn.path4": {
 			"chests": {
 				"22": {
+					"name": "Autumn's Rise - Obelisk Lake Upper (Bronze)",
 					"mwids": [
 						3235824030
 					]
 				},
 				"98": {
+					"name": "Autumn's Rise - Obelisk Lake Lower",
 					"mwids": [
 						3235824031
 					]
@@ -267,16 +299,19 @@
 		"autumn.path5": {
 			"chests": {
 				"2": {
+					"name": "Autumn's Rise - Pathway 4 Upper",
 					"mwids": [
 						3235824032
 					]
 				},
 				"3": {
+					"name": "Autumn's Rise - Pathway 4 Center",
 					"mwids": [
 						3235824033
 					]
 				},
 				"4": {
+					"name": "Autumn's Rise - Pathway 4 Lower",
 					"mwids": [
 						3235824034
 					]
@@ -286,11 +321,13 @@
 		"autumn.path6": {
 			"chests": {
 				"13": {
+					"name": "Autumn's Rise - Pathway 5 Upper",
 					"mwids": [
 						3235824035
 					]
 				},
 				"15": {
+					"name": "Autumn's Rise - Pathway 5 Lower",
 					"mwids": [
 						3235824036
 					]
@@ -300,6 +337,7 @@
 		"autumn-fall.caves.path-03-exit": {
 			"chests": {
 				"29": {
+					"name": "Autumn's Fall - Ruby Tunnel (Gold)",
 					"mwids": [
 						3235824037
 					]
@@ -309,6 +347,7 @@
 		"autumn-fall.caves.path-04-cave-01": {
 			"chests": {
 				"51": {
+					"name": "Autumn's Fall - Lake Cave 1",
 					"mwids": [
 						3235824038
 					]
@@ -318,6 +357,7 @@
 		"autumn-fall.caves.path-04-cave-02": {
 			"chests": {
 				"92": {
+					"name": "Autumn's Fall - Lake Cave 2",
 					"mwids": [
 						3235824039
 					]
@@ -327,6 +367,7 @@
 		"autumn-fall.caves.path-04-cave-03": {
 			"chests": {
 				"157": {
+					"name": "Autumn's Fall - Lake Cave 3 (Silver)",
 					"mwids": [
 						3235824040
 					]
@@ -336,6 +377,7 @@
 		"autumn-fall.caves.path-04-cave-04": {
 			"chests": {
 				"109": {
+					"name": "Autumn's Fall - Lake Cave 4",
 					"mwids": [
 						3235824041
 					]
@@ -345,16 +387,19 @@
 		"autumn-fall.path-01": {
 			"chests": {
 				"458": {
+					"name": "Autumn's Fall - Southern Exit Center",
 					"mwids": [
 						3235824042
 					]
 				},
 				"492": {
+					"name": "Autumn's Fall - Southern Exit Upper",
 					"mwids": [
 						3235824043
 					]
 				},
 				"493": {
+					"name": "Autumn's Fall - Southern Exit Lower",
 					"mwids": [
 						3235824044
 					]
@@ -364,11 +409,13 @@
 		"autumn-fall.path-02": {
 			"chests": {
 				"85": {
+					"name": "Autumn's Fall - Ruined Path Upper",
 					"mwids": [
 						3235824045
 					]
 				},
 				"98": {
+					"name": "Autumn's Fall - Ruined Path Lower (Gold)",
 					"mwids": [
 						3235824046
 					]
@@ -378,11 +425,13 @@
 		"autumn-fall.path-03": {
 			"chests": {
 				"48": {
+					"name": "Autumn's Fall - Eastern Exit Center (Silver)",
 					"mwids": [
 						3235824047
 					]
 				},
 				"494": {
+					"name": "Autumn's Fall - Eastern Exit Right",
 					"mwids": [
 						3235824048
 					]
@@ -392,11 +441,13 @@
 		"autumn-fall.path-04": {
 			"chests": {
 				"14": {
+					"name": "Autumn's Fall - Ancient Center Upper (Silver)",
 					"mwids": [
 						3235824049
 					]
 				},
 				"81": {
+					"name": "Autumn's Fall - Ancient Center Left (Silver)",
 					"mwids": [
 						3235824050
 					]
@@ -406,11 +457,13 @@
 		"autumn-fall.path-05": {
 			"chests": {
 				"123": {
+					"name": "Autumn's Fall - Northern Exit Lower",
 					"mwids": [
 						3235824051
 					]
 				},
 				"124": {
+					"name": "Autumn's Fall - Northern Exit Upper (Bronze)",
 					"mwids": [
 						3235824052
 					]
@@ -420,16 +473,19 @@
 		"autumn-fall.path-06": {
 			"chests": {
 				"39": {
+					"name": "Autumn's Fall - Pillar Isle Upper",
 					"mwids": [
 						3235824053
 					]
 				},
 				"40": {
+					"name": "Autumn's Fall - Pillar Isle Right",
 					"mwids": [
 						3235824054
 					]
 				},
 				"740": {
+					"name": "Autumn's Fall - Pillar Isle Left",
 					"mwids": [
 						3235824055
 					]
@@ -439,16 +495,19 @@
 		"autumn-fall.path-07": {
 			"chests": {
 				"79": {
+					"name": "Autumn's Fall - Village Remains Left (Silver)",
 					"mwids": [
 						3235824056
 					]
 				},
 				"85": {
+					"name": "Autumn's Fall - Village Remains Upper (Gold)",
 					"mwids": [
 						3235824057
 					]
 				},
 				"128": {
+					"name": "Autumn's Fall - Village Remains Right (Bronze)",
 					"mwids": [
 						3235824058
 					]
@@ -458,16 +517,19 @@
 		"autumn-fall.path-08": {
 			"chests": {
 				"527": {
+					"name": "Autumn's Fall - Secluded Path Upper (Gold)",
 					"mwids": [
 						3235824059
 					]
 				},
 				"528": {
+					"name": "Autumn's Fall - Secluded Path Left",
 					"mwids": [
 						3235824060
 					]
 				},
 				"818": {
+					"name": "Autumn's Fall - Secluded Path Right",
 					"mwids": [
 						3235824061
 					]
@@ -477,11 +539,13 @@
 		"autumn-fall.path-10": {
 			"chests": {
 				"68": {
+					"name": "Autumn's Fall - Villa of Terror Right (Silver)",
 					"mwids": [
 						3235824062
 					]
 				},
 				"82": {
+					"name": "Autumn's Fall - Villa of Terror Left (Bronze)",
 					"mwids": [
 						3235824063
 					]
@@ -491,6 +555,7 @@
 		"autumn-fall.raid.raid-01": {
 			"chests": {
 				"375": {
+					"name": "Autumn's Fall - Para Island 1",
 					"mwids": [
 						3235824064
 					]
@@ -500,21 +565,25 @@
 		"bergen.bergen": {
 			"chests": {
 				"868": {
+					"name": "Bergen Village South - On Top Of Bergen Bar",
 					"mwids": [
 						3235824065
 					]
 				},
 				"1258": {
+					"name": "Bergen Village South - Behind Ice In East (Bronze)",
 					"mwids": [
 						3235824066
 					]
 				},
 				"1265": {
+					"name": "Bergen Village South - Behind Ice In South (Bronze)",
 					"mwids": [
 						3235824067
 					]
 				},
 				"1952": {
+					"name": "Bergen Village South - Top West Roof (Gold)",
 					"mwids": [
 						3235824068
 					]
@@ -524,21 +593,25 @@
 		"bergen.bergen2": {
 			"chests": {
 				"2003": {
+					"name": "Bergen Village North - On Ledge Near Trader Den",
 					"mwids": [
 						3235824069
 					]
 				},
 				"2012": {
+					"name": "Bergen Village North - Hidden Cave In West",
 					"mwids": [
 						3235824070
 					]
 				},
 				"2021": {
+					"name": "Bergen Village North - On Ledge In Lower East (Silver)",
 					"mwids": [
 						3235824071
 					]
 				},
 				"2889": {
+					"name": "Bergen Village North - Roof Of Eastern Archway",
 					"mwids": [
 						3235824072
 					]
@@ -548,6 +621,7 @@
 		"bergen.elevator": {
 			"chests": {
 				"35": {
+					"name": "Bergen Village - Diving Railway",
 					"mwids": [
 						3235824073
 					]
@@ -557,11 +631,13 @@
 		"bergen.inner-questhub-0": {
 			"chests": {
 				"130": {
+					"name": "Bergen Village - Seeker Hub Cellar Left",
 					"mwids": [
 						3235824074
 					]
 				},
 				"136": {
+					"name": "Bergen Village - Seeker Hub Cellar Right (Bronze)",
 					"mwids": [
 						3235824075
 					]
@@ -571,6 +647,7 @@
 		"bergen.storage": {
 			"chests": {
 				"71": {
+					"name": "Bergen Village South - Storage Room",
 					"mwids": [
 						3235824076
 					]
@@ -580,6 +657,7 @@
 		"bergen-trail.cave.cave-08-smith": {
 			"chests": {
 				"33": {
+					"name": "Bergen Trail - Abandoned Cave",
 					"mwids": [
 						3235824077
 					]
@@ -589,6 +667,7 @@
 		"bergen-trail.cave.cave-4-1-1": {
 			"chests": {
 				"20": {
+					"name": "Bergen Trail - Frozen Cave",
 					"mwids": [
 						3235824078
 					]
@@ -598,6 +677,7 @@
 		"bergen-trail.cave.cave-6-1": {
 			"chests": {
 				"416": {
+					"name": "Bergen Trail - Abandoned Ground (Silver)",
 					"mwids": [
 						3235824079
 					]
@@ -607,6 +687,7 @@
 		"bergen-trail.cave.cave-6-3": {
 			"chests": {
 				"24": {
+					"name": "Bergen Trail - Pengpeng Den",
 					"mwids": [
 						3235824080
 					]
@@ -616,11 +697,13 @@
 		"bergen-trail.path-1-entrance": {
 			"chests": {
 				"531": {
+					"name": "Bergen Trail - Entrance Left",
 					"mwids": [
 						3235824081
 					]
 				},
 				"532": {
+					"name": "Bergen Trail - Entrance Right",
 					"mwids": [
 						3235824082
 					]
@@ -630,6 +713,7 @@
 		"bergen-trail.path-2": {
 			"chests": {
 				"67": {
+					"name": "Bergen Trail - Rising Path 1",
 					"mwids": [
 						3235824083
 					]
@@ -639,11 +723,13 @@
 		"bergen-trail.path-3-1": {
 			"chests": {
 				"432": {
+					"name": "Bergen Trail - Off Road 1 Lower",
 					"mwids": [
 						3235824084
 					]
 				},
 				"454": {
+					"name": "Bergen Trail - Off Road 1 Upper",
 					"mwids": [
 						3235824085
 					]
@@ -653,16 +739,19 @@
 		"bergen-trail.path-3-2": {
 			"chests": {
 				"373": {
+					"name": "Bergen Trail - Off Road 2 Center",
 					"mwids": [
 						3235824086
 					]
 				},
 				"399": {
+					"name": "Bergen Trail - Off Road 2 Lower",
 					"mwids": [
 						3235824087
 					]
 				},
 				"451": {
+					"name": "Bergen Trail - Off Road 2 Upper",
 					"mwids": [
 						3235824088
 					]
@@ -672,11 +761,13 @@
 		"bergen-trail.path-3-3": {
 			"chests": {
 				"32": {
+					"name": "Bergen Trail - Off Road 3 Upper",
 					"mwids": [
 						3235824089
 					]
 				},
 				"126": {
+					"name": "Bergen Trail - Off Road 3 Lower",
 					"mwids": [
 						3235824090
 					]
@@ -686,6 +777,7 @@
 		"bergen-trail.path-4-1-1": {
 			"chests": {
 				"1015": {
+					"name": "Bergen Trail - Old Plateau (Gold)",
 					"mwids": [
 						3235824091
 					]
@@ -695,6 +787,7 @@
 		"bergen-trail.path-4-1": {
 			"chests": {
 				"288": {
+					"name": "Bergen Trail - Rising Path 2",
 					"mwids": [
 						3235824092
 					]
@@ -704,11 +797,13 @@
 		"bergen-trail.path-4-2": {
 			"chests": {
 				"269": {
+					"name": "Bergen Trail - Rising Path 3 Left",
 					"mwids": [
 						3235824093
 					]
 				},
 				"643": {
+					"name": "Bergen Trail - Rising Path 3 Right",
 					"mwids": [
 						3235824094
 					]
@@ -718,11 +813,13 @@
 		"bergen-trail.path-5": {
 			"chests": {
 				"572": {
+					"name": "Bergen Trail - Spike Heights Upper",
 					"mwids": [
 						3235824095
 					]
 				},
 				"1337": {
+					"name": "Bergen Trail - Spike Heights Lower (Bronze)",
 					"mwids": [
 						3235824096
 					]
@@ -732,6 +829,7 @@
 		"bergen-trail.path-6-1": {
 			"chests": {
 				"26": {
+					"name": "Bergen Trail - Icy Cauldron (Silver)",
 					"mwids": [
 						3235824097
 					]
@@ -741,6 +839,7 @@
 		"bergen-trail.path-6": {
 			"chests": {
 				"493": {
+					"name": "Bergen Trail - Bergen Waterfalls",
 					"mwids": [
 						3235824098
 					]
@@ -750,11 +849,13 @@
 		"bergen-trail.path-7-1": {
 			"chests": {
 				"994": {
+					"name": "Bergen Trail - Rising Path 4 Upper",
 					"mwids": [
 						3235824099
 					]
 				},
 				"995": {
+					"name": "Bergen Trail - Rising Path 4 Lower",
 					"mwids": [
 						3235824100
 					]
@@ -764,6 +865,7 @@
 		"bergen-trail.path-7-2-1": {
 			"chests": {
 				"28": {
+					"name": "Bergen Trail - Lofty Heights (Bronze)",
 					"mwids": [
 						3235824101
 					]
@@ -773,6 +875,7 @@
 		"bergen-trail.path-7-2": {
 			"chests": {
 				"1027": {
+					"name": "Bergen Trail - Windy Climb",
 					"mwids": [
 						3235824102
 					]
@@ -782,6 +885,7 @@
 		"bergen-trail.path-8": {
 			"chests": {
 				"36": {
+					"name": "Bergen Trail - Rising Path 5",
 					"mwids": [
 						3235824103
 					]
@@ -791,6 +895,7 @@
 		"cold-dng.b1.center": {
 			"chests": {
 				"223": {
+					"name": "Temple Mine U1 - Elevator",
 					"mwids": [
 						3235824104
 					]
@@ -800,6 +905,7 @@
 		"cold-dng.b1.room1": {
 			"chests": {
 				"48": {
+					"name": "Temple Mine U1 - Crossing Funnel",
 					"mwids": [
 						3235824105
 					]
@@ -809,6 +915,7 @@
 		"cold-dng.b1.room2": {
 			"chests": {
 				"29": {
+					"name": "Temple Mine U1 - Old Shaft 1",
 					"mwids": [
 						3235824106
 					]
@@ -818,6 +925,7 @@
 		"cold-dng.b1.room3": {
 			"chests": {
 				"26": {
+					"name": "Temple Mine U1 - Old Shaft 2",
 					"mwids": [
 						3235824107
 					]
@@ -827,6 +935,7 @@
 		"cold-dng.b1.room4": {
 			"chests": {
 				"3": {
+					"name": "Temple Mine U1 - Testing Chamber",
 					"mwids": [
 						3235824108
 					]
@@ -836,6 +945,7 @@
 		"cold-dng.b1.room6": {
 			"chests": {
 				"3": {
+					"name": "Temple Mine U1 - Old Chamber",
 					"mwids": [
 						3235824109
 					]
@@ -845,6 +955,7 @@
 		"cold-dng.b2.room1": {
 			"chests": {
 				"32": {
+					"name": "Temple Mine U2 - Storage Room 1 (Bronze)",
 					"mwids": [
 						3235824110
 					]
@@ -854,6 +965,7 @@
 		"cold-dng.b2.room2": {
 			"chests": {
 				"40": {
+					"name": "Temple Mine U2 - Frozen Chamber 1",
 					"mwids": [
 						3235824111
 					]
@@ -863,11 +975,13 @@
 		"cold-dng.b2.room5": {
 			"chests": {
 				"21": {
+					"name": "Temple Mine U2 - Frozen Chamber 2 Left",
 					"mwids": [
 						3235824112
 					]
 				},
 				"66": {
+					"name": "Temple Mine U2 - Frozen Chamber 2 Right (Bronze)",
 					"mwids": [
 						3235824113
 					]
@@ -877,6 +991,7 @@
 		"cold-dng.b3.room1": {
 			"chests": {
 				"30": {
+					"name": "Temple Mine U3 - Frozen Shaft 1",
 					"mwids": [
 						3235824114
 					]
@@ -886,6 +1001,7 @@
 		"cold-dng.b3.room2": {
 			"chests": {
 				"55": {
+					"name": "Temple Mine U3 - Frozen Shaft 2",
 					"mwids": [
 						3235824115
 					]
@@ -895,11 +1011,13 @@
 		"cold-dng.b3.room3": {
 			"chests": {
 				"11": {
+					"name": "Temple Mine U3 - Frozen Shaft 3 Right",
 					"mwids": [
 						3235824116
 					]
 				},
 				"22": {
+					"name": "Temple Mine U3 - Frozen Shaft 3 Left (Bronze)",
 					"mwids": [
 						3235824117
 					]
@@ -909,11 +1027,13 @@
 		"cold-dng.b3.room6": {
 			"chests": {
 				"36": {
+					"name": "Temple Mine U3 - Overrun Chamber Upper",
 					"mwids": [
 						3235824118
 					]
 				},
 				"68": {
+					"name": "Temple Mine U3 - Overrun Chamber Lower",
 					"mwids": [
 						3235824119
 					]
@@ -923,6 +1043,7 @@
 		"cold-dng.b4.center": {
 			"chests": {
 				"298": {
+					"name": "Temple Mine U4 - Elevator",
 					"mwids": [
 						3235824120
 					]
@@ -932,6 +1053,7 @@
 		"cold-dng.b4.room10": {
 			"chests": {
 				"94": {
+					"name": "Temple Mine U4 - Infested Chamber",
 					"mwids": [
 						3235824121
 					]
@@ -941,6 +1063,7 @@
 		"cold-dng.b4.room4": {
 			"chests": {
 				"25": {
+					"name": "Temple Mine U4 - Forgotten Shaft 1",
 					"mwids": [
 						3235824122
 					]
@@ -950,6 +1073,7 @@
 		"cold-dng.b4.room5": {
 			"chests": {
 				"18": {
+					"name": "Temple Mine U4 - Forgotten Shaft 2 (Bronze)",
 					"mwids": [
 						3235824123
 					]
@@ -959,6 +1083,7 @@
 		"cold-dng.b4.room6": {
 			"chests": {
 				"16": {
+					"name": "Temple Mine U4 - Forgotten Shaft 3",
 					"mwids": [
 						3235824124
 					]
@@ -968,6 +1093,7 @@
 		"cold-dng.b4.room7": {
 			"chests": {
 				"44": {
+					"name": "Temple Mine U4 - Forgotten Shaft 4",
 					"mwids": [
 						3235824125
 					]
@@ -977,6 +1103,7 @@
 		"cold-dng.b4.room8": {
 			"chests": {
 				"16": {
+					"name": "Temple Mine U4 - Forgotten Shaft 5",
 					"mwids": [
 						3235824126
 					]
@@ -986,6 +1113,7 @@
 		"cold-dng.g.center": {
 			"chests": {
 				"249": {
+					"name": "Temple Mine GF - Elevator (Bronze)",
 					"mwids": [
 						3235824127
 					]
@@ -995,6 +1123,7 @@
 		"cold-dng.g.room2": {
 			"chests": {
 				"3": {
+					"name": "Temple Mine GF - Temple Chamber 2",
 					"mwids": [
 						3235824128
 					]
@@ -1004,6 +1133,7 @@
 		"forest.caves.cave-013-pandza-01": {
 			"chests": {
 				"385": {
+					"name": "Sapphire Ridge - The Barracks (Bronze)",
 					"mwids": [
 						3235824129
 					]
@@ -1013,6 +1143,7 @@
 		"forest.caves.cave-013-pandza-02": {
 			"chests": {
 				"133": {
+					"name": "Sapphire Ridge - The Bellow (Gold)",
 					"mwids": [
 						3235824130
 					]
@@ -1022,6 +1153,7 @@
 		"forest.caves.path-01-entrance": {
 			"chests": {
 				"23": {
+					"name": "Sapphire Ridge - Sapphire Tunnel (Gold)",
 					"mwids": [
 						3235824131
 					]
@@ -1031,11 +1163,13 @@
 		"forest.caves.path-02-to-08": {
 			"chests": {
 				"1": {
+					"name": "Sapphire Ridge - Eroded Passage Lower (Silver)",
 					"mwids": [
 						3235824132
 					]
 				},
 				"30": {
+					"name": "Sapphire Ridge - Eroded Passage Upper",
 					"mwids": [
 						3235824133
 					]
@@ -1045,11 +1179,13 @@
 		"forest.caves.path-06-chasm": {
 			"chests": {
 				"40": {
+					"name": "Sapphire Ridge - Spider Chasm Lower (Bronze)",
 					"mwids": [
 						3235824134
 					]
 				},
 				"63": {
+					"name": "Sapphire Ridge - Spider Chasm Upper (Gold)",
 					"mwids": [
 						3235824135
 					]
@@ -1059,11 +1195,13 @@
 		"forest.caves.path-07-to-08": {
 			"chests": {
 				"5": {
+					"name": "Sapphire Ridge - Narrow Passage Left (Silver)",
 					"mwids": [
 						3235824136
 					]
 				},
 				"13": {
+					"name": "Sapphire Ridge - Narrow Passage Right (Bronze)",
 					"mwids": [
 						3235824137
 					]
@@ -1073,11 +1211,13 @@
 		"forest.caves.path-08-to-10": {
 			"chests": {
 				"29": {
+					"name": "Sapphire Ridge - Wheel Passage Lower (Gold)",
 					"mwids": [
 						3235824138
 					]
 				},
 				"32": {
+					"name": "Sapphire Ridge - Wheel Passage Upper (Bronze)",
 					"mwids": [
 						3235824139
 					]
@@ -1087,6 +1227,7 @@
 		"forest.interior.inn-og-01": {
 			"chests": {
 				"128": {
+					"name": "Sapphire Ridge - Cave Inn Interior 1F",
 					"mwids": [
 						3235824140
 					]
@@ -1096,6 +1237,7 @@
 		"forest.interior.inn-storage": {
 			"chests": {
 				"87": {
+					"name": "Sapphire Ridge - Cave Inn Interior Storage (Gold)",
 					"mwids": [
 						3235824141
 					]
@@ -1105,11 +1247,13 @@
 		"forest.path-01-entrance": {
 			"chests": {
 				"72": {
+					"name": "Sapphire Ridge - Western Exit Upper",
 					"mwids": [
 						3235824142
 					]
 				},
 				"109": {
+					"name": "Sapphire Ridge - Western Exit Lower (Bronze)",
 					"mwids": [
 						3235824143
 					]
@@ -1119,11 +1263,13 @@
 		"forest.path-02": {
 			"chests": {
 				"157": {
+					"name": "Sapphire Ridge - North West Path Lower (Silver)",
 					"mwids": [
 						3235824144
 					]
 				},
 				"160": {
+					"name": "Sapphire Ridge - North West Path Upper (Bronze)",
 					"mwids": [
 						3235824145
 					]
@@ -1133,16 +1279,19 @@
 		"forest.path-03": {
 			"chests": {
 				"11": {
+					"name": "Sapphire Ridge - River Road Upper (Bronze)",
 					"mwids": [
 						3235824146
 					]
 				},
 				"53": {
+					"name": "Sapphire Ridge - River Road Center (Gold)",
 					"mwids": [
 						3235824147
 					]
 				},
 				"145": {
+					"name": "Sapphire Ridge - River Road Lower (Bronze)",
 					"mwids": [
 						3235824148
 					]
@@ -1152,11 +1301,13 @@
 		"forest.path-04-hostel": {
 			"chests": {
 				"52": {
+					"name": "Sapphire Ridge - Cave Inn Exterior Upper (Bronze)",
 					"mwids": [
 						3235824149
 					]
 				},
 				"184": {
+					"name": "Sapphire Ridge - Cave Inn Exterior Lower (Gold)",
 					"mwids": [
 						3235824150
 					]
@@ -1166,11 +1317,13 @@
 		"forest.path-04-vaga": {
 			"chests": {
 				"5": {
+					"name": "Sapphire Ridge - Tranquil Bamboo Lower (Bronze)",
 					"mwids": [
 						3235824151
 					]
 				},
 				"6": {
+					"name": "Sapphire Ridge - Tranquil Bamboo Upper",
 					"mwids": [
 						3235824152
 					]
@@ -1180,7 +1333,7 @@
 				"447": [
 					{
 						"mwids": [
-							3235824352
+							3235824350
 						],
 						"path": ".settings.npcStates.2.event.quest.12"
 					}
@@ -1190,11 +1343,13 @@
 		"forest.path-05": {
 			"chests": {
 				"4": {
+					"name": "Sapphire Ridge - Bamboo Thicket Upper (Silver)",
 					"mwids": [
 						3235824153
 					]
 				},
 				"9": {
+					"name": "Sapphire Ridge - Bamboo Thicket Center (Gold)",
 					"mwids": [
 						3235824154
 					]
@@ -1204,11 +1359,13 @@
 		"forest.path-06": {
 			"chests": {
 				"33": {
+					"name": "Sapphire Ridge - North East Path Upper (Silver)",
 					"mwids": [
 						3235824155
 					]
 				},
 				"53": {
+					"name": "Sapphire Ridge - North East Path Lower (Gold)",
 					"mwids": [
 						3235824156
 					]
@@ -1218,11 +1375,13 @@
 		"forest.path-07": {
 			"chests": {
 				"6": {
+					"name": "Sapphire Ridge - Flower Lake Left (Gold)",
 					"mwids": [
 						3235824157
 					]
 				},
 				"44": {
+					"name": "Sapphire Ridge - Flower Lake Right (Gold)",
 					"mwids": [
 						3235824158
 					]
@@ -1232,16 +1391,19 @@
 		"forest.path-08": {
 			"chests": {
 				"68": {
+					"name": "Sapphire Ridge - Carved Pathway Center (Gold)",
 					"mwids": [
 						3235824159
 					]
 				},
 				"82": {
+					"name": "Sapphire Ridge - Carved Pathway Lower (Silver)",
 					"mwids": [
 						3235824160
 					]
 				},
 				"90": {
+					"name": "Sapphire Ridge - Carved Pathway Upper (Bronze)",
 					"mwids": [
 						3235824161
 					]
@@ -1251,11 +1413,13 @@
 		"forest.path-09": {
 			"chests": {
 				"24": {
+					"name": "Sapphire Ridge - High Ground Lower (Gold)",
 					"mwids": [
 						3235824162
 					]
 				},
 				"100": {
+					"name": "Sapphire Ridge - High Ground Upper (Silver)",
 					"mwids": [
 						3235824163
 					]
@@ -1265,16 +1429,19 @@
 		"forest.path-10": {
 			"chests": {
 				"78": {
+					"name": "Sapphire Ridge - Old Dojo Lower (Silver)",
 					"mwids": [
 						3235824164
 					]
 				},
 				"167": {
+					"name": "Sapphire Ridge - Old Dojo Left (Gold)",
 					"mwids": [
 						3235824165
 					]
 				},
 				"904": {
+					"name": "Sapphire Ridge - Old Dojo Upper (Gold)",
 					"mwids": [
 						3235824166
 					]
@@ -1284,6 +1451,7 @@
 		"forest.path-11-behind-maze": {
 			"chests": {
 				"59": {
+					"name": "Sapphire Ridge - Dream Pond (Gold)",
 					"mwids": [
 						3235824167
 					]
@@ -1293,16 +1461,19 @@
 		"forest.path-12": {
 			"chests": {
 				"298": {
+					"name": "Sapphire Ridge - Ascension Temple Upper Left (Gold)",
 					"mwids": [
 						3235824168
 					]
 				},
 				"301": {
+					"name": "Sapphire Ridge - Ascension Temple Upper Right (Silver)",
 					"mwids": [
 						3235824169
 					]
 				},
 				"302": {
+					"name": "Sapphire Ridge - Ascension Temple Lower (Silver)",
 					"mwids": [
 						3235824170
 					]
@@ -1312,6 +1483,7 @@
 		"forest.path-13": {
 			"chests": {
 				"814": {
+					"name": "Sapphire Ridge - Baton Pond (Bronze)",
 					"mwids": [
 						3235824171
 					]
@@ -1321,11 +1493,13 @@
 		"heat.caves.cliff-cave-01": {
 			"chests": {
 				"42": {
+					"name": "Maroon Valley - Mystery Cave Lower (Gold)",
 					"mwids": [
 						3235824172
 					]
 				},
 				"43": {
+					"name": "Maroon Valley - Mystery Cave Upper (Silver)",
 					"mwids": [
 						3235824173
 					]
@@ -1335,11 +1509,13 @@
 		"heat.caves.cliffs-temple-02": {
 			"chests": {
 				"48": {
+					"name": "Maroon Valley - Cursed Temple Upper (Silver)",
 					"mwids": [
 						3235824174
 					]
 				},
 				"86": {
+					"name": "Maroon Valley - Cursed Temple Lower (Silver)",
 					"mwids": [
 						3235824175
 					]
@@ -1349,6 +1525,7 @@
 		"heat.caves.cliffs-temple-03": {
 			"chests": {
 				"107": {
+					"name": "Maroon Valley - Cursed Temple Treasure Room (Bronze)",
 					"mwids": [
 						3235824176
 					]
@@ -1358,6 +1535,7 @@
 		"heat.caves.maroon-cave-01": {
 			"chests": {
 				"404": {
+					"name": "Maroon Valley - Maroon Cave 1",
 					"mwids": [
 						3235824177
 					]
@@ -1367,11 +1545,13 @@
 		"heat.cliffs.cliffs-path-01": {
 			"chests": {
 				"105": {
+					"name": "Maroon Valley - River Cliff Right",
 					"mwids": [
 						3235824178
 					]
 				},
 				"197": {
+					"name": "Maroon Valley - River Cliff Left",
 					"mwids": [
 						3235824179
 					]
@@ -1381,16 +1561,19 @@
 		"heat.cliffs.cliffs-path-02": {
 			"chests": {
 				"29": {
+					"name": "Maroon Valley - Endless Pit Center",
 					"mwids": [
 						3235824180
 					]
 				},
 				"30": {
+					"name": "Maroon Valley - Endless Pit Right",
 					"mwids": [
 						3235824181
 					]
 				},
 				"32": {
+					"name": "Maroon Valley - Endless Pit Left",
 					"mwids": [
 						3235824182
 					]
@@ -1400,11 +1583,13 @@
 		"heat.oasis.oasis-path-01": {
 			"chests": {
 				"8": {
+					"name": "Maroon Valley - Vivid Path Lower",
 					"mwids": [
 						3235824183
 					]
 				},
 				"9": {
+					"name": "Maroon Valley - Vivid Path Upper",
 					"mwids": [
 						3235824184
 					]
@@ -1414,11 +1599,13 @@
 		"heat.oasis.oasis-path-02": {
 			"chests": {
 				"80": {
+					"name": "Maroon Valley - Maroon Oasis Center",
 					"mwids": [
 						3235824185
 					]
 				},
 				"97": {
+					"name": "Maroon Valley - Maroon Oasis Upper",
 					"mwids": [
 						3235824186
 					]
@@ -1428,6 +1615,7 @@
 		"heat.oasis.oasis-path-03": {
 			"chests": {
 				"34": {
+					"name": "Maroon Valley - Bright Path (Bronze)",
 					"mwids": [
 						3235824187
 					]
@@ -1437,6 +1625,7 @@
 		"heat.path-00": {
 			"chests": {
 				"6": {
+					"name": "Maroon Valley - Rising Railway",
 					"mwids": [
 						3235824188
 					]
@@ -1446,6 +1635,7 @@
 		"heat.path-01-entrance": {
 			"chests": {
 				"55": {
+					"name": "Maroon Valley - East Entrance",
 					"mwids": [
 						3235824189
 					]
@@ -1455,11 +1645,13 @@
 		"heat.path-02": {
 			"chests": {
 				"7": {
+					"name": "Maroon Valley - Dusty Path Center (Bronze)",
 					"mwids": [
 						3235824190
 					]
 				},
 				"14": {
+					"name": "Maroon Valley - Dusty Path Upper",
 					"mwids": [
 						3235824191
 					]
@@ -1469,11 +1661,13 @@
 		"heat.path-03": {
 			"chests": {
 				"23": {
+					"name": "Maroon Valley - Crossroad Center",
 					"mwids": [
 						3235824192
 					]
 				},
 				"25": {
+					"name": "Maroon Valley - Crossroad Left",
 					"mwids": [
 						3235824193
 					]
@@ -1483,6 +1677,7 @@
 		"heat.path-04": {
 			"chests": {
 				"34": {
+					"name": "Maroon Valley - Long Piece",
 					"mwids": [
 						3235824194
 					]
@@ -1492,11 +1687,13 @@
 		"heat.path-05": {
 			"chests": {
 				"2": {
+					"name": "Maroon Valley - Barren Arcs Center",
 					"mwids": [
 						3235824195
 					]
 				},
 				"14": {
+					"name": "Maroon Valley - Barren Arcs Left (Bronze)",
 					"mwids": [
 						3235824196
 					]
@@ -1506,6 +1703,7 @@
 		"heat.path-06": {
 			"chests": {
 				"16": {
+					"name": "Maroon Valley - Barren Land",
 					"mwids": [
 						3235824197
 					]
@@ -1515,11 +1713,13 @@
 		"heat.path-07": {
 			"chests": {
 				"7": {
+					"name": "Maroon Valley - Overpass Upper",
 					"mwids": [
 						3235824198
 					]
 				},
 				"78": {
+					"name": "Maroon Valley - Overpass Left",
 					"mwids": [
 						3235824199
 					]
@@ -1529,11 +1729,13 @@
 		"heat.path-08": {
 			"chests": {
 				"1": {
+					"name": "Maroon Valley - Paw Cliffs Lower",
 					"mwids": [
 						3235824200
 					]
 				},
 				"4": {
+					"name": "Maroon Valley - Paw Cliffs Upper (Silver)",
 					"mwids": [
 						3235824201
 					]
@@ -1543,11 +1745,13 @@
 		"heat.path-09": {
 			"chests": {
 				"8": {
+					"name": "Maroon Valley - Torn Road Center",
 					"mwids": [
 						3235824202
 					]
 				},
 				"41": {
+					"name": "Maroon Valley - Torn Road Right",
 					"mwids": [
 						3235824203
 					]
@@ -1557,6 +1761,7 @@
 		"heat.path-11": {
 			"chests": {
 				"19": {
+					"name": "Maroon Valley - West Entrance",
 					"mwids": [
 						3235824204
 					]
@@ -1566,11 +1771,13 @@
 		"heat.shortcut-02-09": {
 			"chests": {
 				"17": {
+					"name": "Maroon Valley - Fractured Path Upper (Silver)",
 					"mwids": [
 						3235824205
 					]
 				},
 				"19": {
+					"name": "Maroon Valley - Fractured Path Right",
 					"mwids": [
 						3235824206
 					]
@@ -1580,6 +1787,7 @@
 		"heat-dng.f1.room-03": {
 			"chests": {
 				"33": {
+					"name": "Faj'ro Temple 1F - Right Chamber 1",
 					"mwids": [
 						3235824207
 					]
@@ -1589,6 +1797,7 @@
 		"heat-dng.f3.room-02": {
 			"chests": {
 				"31": {
+					"name": "Faj'ro Temple 3F - Bottom Chamber",
 					"mwids": [
 						3235824208
 					]
@@ -1598,11 +1807,13 @@
 		"heat-dng.f3.room-05": {
 			"chests": {
 				"69": {
+					"name": "Faj'ro Temple 3F - Large Fire Chamber Left (Bronze)",
 					"mwids": [
 						3235824209
 					]
 				},
 				"79": {
+					"name": "Faj'ro Temple 3F - Large Fire Chamber Right (Silver)",
 					"mwids": [
 						3235824210
 					]
@@ -1612,6 +1823,7 @@
 		"heat-dng.f3.room-07": {
 			"chests": {
 				"19": {
+					"name": "Faj'ro Temple 3F - Test of Wisdom",
 					"mwids": [
 						3235824211
 					]
@@ -1621,6 +1833,7 @@
 		"heat-dng.f4.room-02": {
 			"chests": {
 				"38": {
+					"name": "Faj'ro Temple 4F - West Pathway",
 					"mwids": [
 						3235824212
 					]
@@ -1630,6 +1843,7 @@
 		"heat-dng.f4.room-03": {
 			"chests": {
 				"21": {
+					"name": "Faj'ro Temple 4F - Test of Surprise",
 					"mwids": [
 						3235824213
 					]
@@ -1639,6 +1853,7 @@
 		"heat-dng.f4.room-05": {
 			"chests": {
 				"56": {
+					"name": "Faj'ro Temple 4F - West Chamber 1",
 					"mwids": [
 						3235824214
 					]
@@ -1648,6 +1863,7 @@
 		"heat-dng.f4.room-09": {
 			"chests": {
 				"92": {
+					"name": "Faj'ro Temple 4F - East Chamber 1",
 					"mwids": [
 						3235824215
 					]
@@ -1657,6 +1873,7 @@
 		"heat-dng.f4.room-10": {
 			"chests": {
 				"78": {
+					"name": "Faj'ro Temple 4F - East Pathway (Silver)",
 					"mwids": [
 						3235824216
 					]
@@ -1666,6 +1883,7 @@
 		"heat-dng.f4.room-11": {
 			"chests": {
 				"27": {
+					"name": "Faj'ro Temple 4F - Test of Memory",
 					"mwids": [
 						3235824217
 					]
@@ -1675,6 +1893,7 @@
 		"heat-dng.f4.room-12": {
 			"chests": {
 				"85": {
+					"name": "Faj'ro Temple 4F - Chamber of Prosperity",
 					"mwids": [
 						3235824218
 					]
@@ -1684,6 +1903,7 @@
 		"heat-dng.g.room-03": {
 			"chests": {
 				"71": {
+					"name": "Faj'ro Temple GF - Left Chamber 1",
 					"mwids": [
 						3235824219
 					]
@@ -1693,6 +1913,7 @@
 		"heat-dng.g.room-07": {
 			"chests": {
 				"28": {
+					"name": "Faj'ro Temple GF - Fire and Sand 2",
 					"mwids": [
 						3235824220
 					]
@@ -1702,11 +1923,13 @@
 		"heat-dng.g.room-09": {
 			"chests": {
 				"85": {
+					"name": "Faj'ro Temple GF - Balance Room 2 Right",
 					"mwids": [
 						3235824221
 					]
 				},
 				"86": {
+					"name": "Faj'ro Temple GF - Balance Room 2 Left",
 					"mwids": [
 						3235824222
 					]
@@ -1716,6 +1939,7 @@
 		"heat-dng.g.room-10": {
 			"chests": {
 				"16": {
+					"name": "Faj'ro Temple GF - Right Chamber 1",
 					"mwids": [
 						3235824223
 					]
@@ -1725,6 +1949,7 @@
 		"heat-dng.g.room-12": {
 			"chests": {
 				"110": {
+					"name": "Faj'ro Temple GF - Right Chamber 2",
 					"mwids": [
 						3235824224
 					]
@@ -1734,6 +1959,7 @@
 		"heat-dng.g.room-13": {
 			"chests": {
 				"2": {
+					"name": "Faj'ro Temple GF - Test of Memory 2",
 					"mwids": [
 						3235824225
 					]
@@ -1743,6 +1969,7 @@
 		"heat-dng.g.room-14": {
 			"chests": {
 				"2": {
+					"name": "Faj'ro Temple GF - Test of Memory 1",
 					"mwids": [
 						3235824226
 					]
@@ -1752,11 +1979,13 @@
 		"heat-village.baki-1": {
 			"chests": {
 				"99": {
+					"name": "Ba'kii Kum - Solar Farm Upper",
 					"mwids": [
 						3235824227
 					]
 				},
 				"737": {
+					"name": "Ba'kii Kum - Solar Farm Lower",
 					"mwids": [
 						3235824228
 					]
@@ -1766,11 +1995,13 @@
 		"heat-village.baki-2": {
 			"chests": {
 				"259": {
+					"name": "Ba'kii Kum - Market East",
 					"mwids": [
 						3235824229
 					]
 				},
 				"1227": {
+					"name": "Ba'kii Kum - Market West (Bronze)",
 					"mwids": [
 						3235824230
 					]
@@ -1780,6 +2011,7 @@
 		"heat-village.interior.tradebuilding-eg": {
 			"chests": {
 				"131": {
+					"name": "Ba'kii Kum - Bazaar House (Silver)",
 					"mwids": [
 						3235824231
 					]
@@ -1789,6 +2021,7 @@
 		"jungle.caves.grove-cave-01": {
 			"chests": {
 				"3": {
+					"name": "Gaia's Garden - Dripping Cave (Silver)",
 					"mwids": [
 						3235824232
 					]
@@ -1798,6 +2031,7 @@
 		"jungle.caves.grove-cave-02": {
 			"chests": {
 				"1": {
+					"name": "Gaia's Garden - Tranquility Pond (Gold)",
 					"mwids": [
 						3235824233
 					]
@@ -1807,11 +2041,13 @@
 		"jungle.caves.smuggle-route-2": {
 			"chests": {
 				"55": {
+					"name": "Gaia's Garden - Infested Cavern Left (Bronze)",
 					"mwids": [
 						3235824234
 					]
 				},
 				"60": {
+					"name": "Gaia's Garden - Infested Cavern Right (Silver)",
 					"mwids": [
 						3235824235
 					]
@@ -1821,16 +2057,19 @@
 		"jungle.clearing.clear-path-01": {
 			"chests": {
 				"5": {
+					"name": "Gaia's Garden - V'rda Vil West Lower Left (Gold)",
 					"mwids": [
 						3235824236
 					]
 				},
 				"6": {
+					"name": "Gaia's Garden - V'rda Vil West Upper (Silver)",
 					"mwids": [
 						3235824237
 					]
 				},
 				"125": {
+					"name": "Gaia's Garden - V'rda Vil West Lower Right (Bronze)",
 					"mwids": [
 						3235824238
 					]
@@ -1840,11 +2079,13 @@
 		"jungle.clearing.clear-path-02": {
 			"chests": {
 				"311": {
+					"name": "Gaia's Garden - V'rda Vil East Right (Bronze)",
 					"mwids": [
 						3235824239
 					]
 				},
 				"351": {
+					"name": "Gaia's Garden - V'rda Vil East Lower (Silver)",
 					"mwids": [
 						3235824240
 					]
@@ -1854,11 +2095,13 @@
 		"jungle.clearing.clear-path-03": {
 			"chests": {
 				"31": {
+					"name": "Gaia's Garden - V'rda Vil North Right (Gold)",
 					"mwids": [
 						3235824241
 					]
 				},
 				"33": {
+					"name": "Gaia's Garden - V'rda Vil North Left (Silver)",
 					"mwids": [
 						3235824242
 					]
@@ -1868,16 +2111,19 @@
 		"jungle.clearing.clear-path-04": {
 			"chests": {
 				"27": {
+					"name": "Gaia's Garden - Chief's Den Center (Silver)",
 					"mwids": [
 						3235824243
 					]
 				},
 				"91": {
+					"name": "Gaia's Garden - Chief's Den Upper (Bronze)",
 					"mwids": [
 						3235824244
 					]
 				},
 				"135": {
+					"name": "Gaia's Garden - Chief's Den Lower (Gold)",
 					"mwids": [
 						3235824245
 					]
@@ -1887,6 +2133,7 @@
 		"jungle.dng.tree-exterior": {
 			"chests": {
 				"432": {
+					"name": "Gaia's Garden - Grand Krys'kajo Entrance (Bronze)",
 					"mwids": [
 						3235824246
 					]
@@ -1896,6 +2143,7 @@
 		"jungle.dng.wave-exterior": {
 			"chests": {
 				"521": {
+					"name": "Gaia's Garden - So'najiz Temple Entrance (Silver)",
 					"mwids": [
 						3235824247
 					]
@@ -1905,11 +2153,13 @@
 		"jungle.grove.grove-path-01": {
 			"chests": {
 				"4": {
+					"name": "Gaia's Garden - Covert Path Lower",
 					"mwids": [
 						3235824248
 					]
 				},
 				"5": {
+					"name": "Gaia's Garden - Covert Path Upper",
 					"mwids": [
 						3235824249
 					]
@@ -1919,21 +2169,25 @@
 		"jungle.grove.grove-path-02": {
 			"chests": {
 				"67": {
+					"name": "Gaia's Garden - Royal Grove Lower Right (Silver)",
 					"mwids": [
 						3235824250
 					]
 				},
 				"68": {
+					"name": "Gaia's Garden - Royal Grove Lower Left",
 					"mwids": [
 						3235824251
 					]
 				},
 				"69": {
+					"name": "Gaia's Garden - Royal Grove Upper Right",
 					"mwids": [
 						3235824252
 					]
 				},
 				"80": {
+					"name": "Gaia's Garden - Royal Grove Upper Left",
 					"mwids": [
 						3235824253
 					]
@@ -1943,11 +2197,13 @@
 		"jungle.grove.grove-path-03": {
 			"chests": {
 				"41": {
+					"name": "Gaia's Garden - Calm Backyard Left",
 					"mwids": [
 						3235824254
 					]
 				},
 				"42": {
+					"name": "Gaia's Garden - Calm Backyard Right",
 					"mwids": [
 						3235824255
 					]
@@ -1957,6 +2213,7 @@
 		"jungle.grove.lost-shrine-02": {
 			"chests": {
 				"158": {
+					"name": "Gaia's Garden - Lost Shrine GF",
 					"mwids": [
 						3235824256
 					]
@@ -1966,6 +2223,7 @@
 		"jungle.grove.lost-shrine-03": {
 			"chests": {
 				"289": {
+					"name": "Gaia's Garden - Lost Shrine B1 (Gold)",
 					"mwids": [
 						3235824257
 					]
@@ -1975,6 +2233,7 @@
 		"jungle.grove.lost-shrine-04": {
 			"chests": {
 				"363": {
+					"name": "Gaia's Garden - Lost Shrine B2 (Silver)",
 					"mwids": [
 						3235824258
 					]
@@ -1984,16 +2243,19 @@
 		"jungle.infested.infested-path-01": {
 			"chests": {
 				"22": {
+					"name": "Gaia's Garden - Lost Lookout Center",
 					"mwids": [
 						3235824259
 					]
 				},
 				"63": {
+					"name": "Gaia's Garden - Lost Lookout Lower",
 					"mwids": [
 						3235824260
 					]
 				},
 				"170": {
+					"name": "Gaia's Garden - Lost Lookout Upper",
 					"mwids": [
 						3235824261
 					]
@@ -2003,11 +2265,13 @@
 		"jungle.infested.infested-path-02": {
 			"chests": {
 				"6": {
+					"name": "Gaia's Garden - Seared Lake Right",
 					"mwids": [
 						3235824262
 					]
 				},
 				"32": {
+					"name": "Gaia's Garden - Seared Lake Left",
 					"mwids": [
 						3235824263
 					]
@@ -2017,21 +2281,25 @@
 		"jungle.infested.infested-path-03": {
 			"chests": {
 				"18": {
+					"name": "Gaia's Garden - Infested Marshes South Lower Left",
 					"mwids": [
 						3235824264
 					]
 				},
 				"70": {
+					"name": "Gaia's Garden - Infested Marshes South Lower Right",
 					"mwids": [
 						3235824265
 					]
 				},
 				"90": {
+					"name": "Gaia's Garden - Infested Marshes South Upper Left",
 					"mwids": [
 						3235824266
 					]
 				},
 				"97": {
+					"name": "Gaia's Garden - Infested Marshes South Upper Right",
 					"mwids": [
 						3235824267
 					]
@@ -2041,21 +2309,25 @@
 		"jungle.infested.infested-path-04": {
 			"chests": {
 				"24": {
+					"name": "Gaia's Garden - Infested Marshes North Lower Left",
 					"mwids": [
 						3235824268
 					]
 				},
 				"58": {
+					"name": "Gaia's Garden - Infested Marshes North Upper Center",
 					"mwids": [
 						3235824269
 					]
 				},
 				"82": {
+					"name": "Gaia's Garden - Infested Marshes North Lower Right (Silver)",
 					"mwids": [
 						3235824270
 					]
 				},
 				"949": {
+					"name": "Gaia's Garden - Infested Marshes North Upper Right (Silver)",
 					"mwids": [
 						3235824271
 					]
@@ -2065,11 +2337,13 @@
 		"jungle.left.path-left-01": {
 			"chests": {
 				"74": {
+					"name": "Gaia's Garden - Overgrown Path Left (Bronze)",
 					"mwids": [
 						3235824272
 					]
 				},
 				"75": {
+					"name": "Gaia's Garden - Overgrown Path Right (Bronze)",
 					"mwids": [
 						3235824273
 					]
@@ -2079,16 +2353,19 @@
 		"jungle.left.path-left-02": {
 			"chests": {
 				"2": {
+					"name": "Gaia's Garden - Drizzle Bosk Right (Gold)",
 					"mwids": [
 						3235824274
 					]
 				},
 				"8": {
+					"name": "Gaia's Garden - Drizzle Bosk Lower",
 					"mwids": [
 						3235824275
 					]
 				},
 				"12": {
+					"name": "Gaia's Garden - Drizzle Bosk Center",
 					"mwids": [
 						3235824276
 					]
@@ -2098,11 +2375,13 @@
 		"jungle.left.path-left-03": {
 			"chests": {
 				"32": {
+					"name": "Gaia's Garden - Wet Passage Lower (Bronze)",
 					"mwids": [
 						3235824277
 					]
 				},
 				"33": {
+					"name": "Gaia's Garden - Wet Passage Upper",
 					"mwids": [
 						3235824278
 					]
@@ -2112,11 +2391,13 @@
 		"jungle.left.path-left-04": {
 			"chests": {
 				"38": {
+					"name": "Gaia's Garden - River's Bed Right (Silver)",
 					"mwids": [
 						3235824279
 					]
 				},
 				"39": {
+					"name": "Gaia's Garden - River's Bed Left",
 					"mwids": [
 						3235824280
 					]
@@ -2126,11 +2407,13 @@
 		"jungle.path-01-entrance": {
 			"chests": {
 				"12": {
+					"name": "Gaia's Garden - Jungle Entrance Left",
 					"mwids": [
 						3235824281
 					]
 				},
 				"13": {
+					"name": "Gaia's Garden - Jungle Entrance Lower",
 					"mwids": [
 						3235824282
 					]
@@ -2140,11 +2423,13 @@
 		"jungle.path-02-crossroads": {
 			"chests": {
 				"13": {
+					"name": "Gaia's Garden - Crossroad Left (Gold)",
 					"mwids": [
 						3235824283
 					]
 				},
 				"14": {
+					"name": "Gaia's Garden - Crossroad Right",
 					"mwids": [
 						3235824284
 					]
@@ -2154,11 +2439,13 @@
 		"jungle.path-03-sync": {
 			"chests": {
 				"21": {
+					"name": "Gaia's Garden - Tying Greens Lower",
 					"mwids": [
 						3235824285
 					]
 				},
 				"22": {
+					"name": "Gaia's Garden - Tying Greens Upper",
 					"mwids": [
 						3235824286
 					]
@@ -2168,11 +2455,13 @@
 		"jungle.path-04-end": {
 			"chests": {
 				"6": {
+					"name": "Gaia's Garden - Peridot Approach Lower (Silver)",
 					"mwids": [
 						3235824287
 					]
 				},
 				"58": {
+					"name": "Gaia's Garden - Peridot Approach Upper",
 					"mwids": [
 						3235824288
 					]
@@ -2182,11 +2471,13 @@
 		"jungle.right.right-path-01": {
 			"chests": {
 				"40": {
+					"name": "Gaia's Garden - Splitting Stumps Upper",
 					"mwids": [
 						3235824289
 					]
 				},
 				"105": {
+					"name": "Gaia's Garden - Splitting Stumps Lower",
 					"mwids": [
 						3235824290
 					]
@@ -2196,11 +2487,13 @@
 		"jungle.right.right-path-02": {
 			"chests": {
 				"12": {
+					"name": "Gaia's Garden - Clinging River Right (Silver)",
 					"mwids": [
 						3235824291
 					]
 				},
 				"13": {
+					"name": "Gaia's Garden - Clinging River Left (Gold)",
 					"mwids": [
 						3235824292
 					]
@@ -2210,11 +2503,13 @@
 		"jungle.right.right-path-03": {
 			"chests": {
 				"13": {
+					"name": "Gaia's Garden - Ringing River Lower (Bronze)",
 					"mwids": [
 						3235824293
 					]
 				},
 				"14": {
+					"name": "Gaia's Garden - Ringing River Upper",
 					"mwids": [
 						3235824294
 					]
@@ -2224,6 +2519,7 @@
 		"jungle.right.right-path-04": {
 			"chests": {
 				"30": {
+					"name": "Gaia's Garden - Old Timber",
 					"mwids": [
 						3235824295
 					]
@@ -2233,6 +2529,7 @@
 		"jungle-city.center": {
 			"chests": {
 				"774": {
+					"name": "Basin Keep - Centrum (Gold)",
 					"mwids": [
 						3235824296
 					]
@@ -2242,16 +2539,19 @@
 		"jungle-city.east": {
 			"chests": {
 				"158": {
+					"name": "Basin Keep - Pond Slums Lower (Silver)",
 					"mwids": [
 						3235824297
 					]
 				},
 				"322": {
+					"name": "Basin Keep - Pond Slums Center (Silver)",
 					"mwids": [
 						3235824298
 					]
 				},
 				"537": {
+					"name": "Basin Keep - Pond Slums Upper (Gold)",
 					"mwids": [
 						3235824299
 					]
@@ -2261,6 +2561,7 @@
 		"jungle-city.entrance": {
 			"chests": {
 				"423": {
+					"name": "Gaia's Garden - Basin Keep Entrance",
 					"mwids": [
 						3235824300
 					]
@@ -2270,6 +2571,7 @@
 		"jungle-city.interior.faction-guard-1": {
 			"chests": {
 				"1128": {
+					"name": "Basin Keep - Police HQ (Gold)",
 					"mwids": [
 						3235824301
 					]
@@ -2279,6 +2581,7 @@
 		"jungle-city.interior.questhub-01": {
 			"chests": {
 				"533": {
+					"name": "Basin Keep - Seeker Hub GF (Silver)",
 					"mwids": [
 						3235824302
 					]
@@ -2288,37 +2591,25 @@
 				"576": [
 					{
 						"mwids": [
-							3235824377
+							3235824375
 						],
 						"path": ".settings.npcStates.0.event.quest.11"
 					}
 				]
 			}
 		},
-		"rhombus-dng.room-1-6": {
+		"rhombus-sqr.arena-1": {
 			"chests": {
-				"183": {
+				"298": {
+					"name": "Rhombus Square - Arena Plaza East (Bronze)",
 					"mwids": [
 						3235824303
 					]
 				},
-				"184": {
+				"299": {
+					"name": "Rhombus Square - Arena Plaza West (Silver)",
 					"mwids": [
 						3235824304
-					]
-				}
-			}
-		},
-		"rhombus-sqr.arena-1": {
-			"chests": {
-				"298": {
-					"mwids": [
-						3235824305
-					]
-				},
-				"299": {
-					"mwids": [
-						3235824306
 					]
 				}
 			}
@@ -2326,13 +2617,15 @@
 		"rhombus-sqr.center-e": {
 			"chests": {
 				"271": {
+					"name": "Rhombus Square - Garden Boulevard North (Bronze)",
 					"mwids": [
-						3235824307
+						3235824305
 					]
 				},
 				"272": {
+					"name": "Rhombus Square - Garden Boulevard South (Silver)",
 					"mwids": [
-						3235824308
+						3235824306
 					]
 				}
 			}
@@ -2340,8 +2633,9 @@
 		"rhombus-sqr.center-s": {
 			"chests": {
 				"235": {
+					"name": "Rhombus Square - South Arch (Gold)",
 					"mwids": [
-						3235824309
+						3235824307
 					]
 				}
 			}
@@ -2349,8 +2643,9 @@
 		"rhombus-sqr.center-se": {
 			"chests": {
 				"1209": {
+					"name": "Rhombus Square - Lloyd Passage (Silver)",
 					"mwids": [
-						3235824310
+						3235824308
 					]
 				}
 			}
@@ -2358,13 +2653,15 @@
 		"rhombus-sqr.residential-s1": {
 			"chests": {
 				"333": {
+					"name": "Rhombus Square - Residential District North (Gold)",
 					"mwids": [
-						3235824311
+						3235824309
 					]
 				},
 				"852": {
+					"name": "Rhombus Square - Residential District South",
 					"mwids": [
-						3235824312
+						3235824310
 					]
 				}
 			}
@@ -2372,8 +2669,9 @@
 		"rookie-harbor.center": {
 			"chests": {
 				"165": {
+					"name": "Rookie Harbor - Marketplace",
 					"mwids": [
-						3235824313
+						3235824311
 					]
 				}
 			}
@@ -2381,8 +2679,9 @@
 		"rookie-harbor.east": {
 			"chests": {
 				"157": {
+					"name": "Rookie Harbor - Falling Exit",
 					"mwids": [
-						3235824314
+						3235824312
 					]
 				}
 			}
@@ -2390,8 +2689,9 @@
 		"rookie-harbor.inner-equip-north": {
 			"chests": {
 				"50": {
+					"name": "Rookie Harbor - Weapon & Backer Shop (Silver)",
 					"mwids": [
-						3235824315
+						3235824313
 					]
 				}
 			}
@@ -2399,8 +2699,9 @@
 		"rookie-harbor.inner-old": {
 			"chests": {
 				"72": {
+					"name": "Rookie Harbor - Dusty Storage (Silver)",
 					"mwids": [
-						3235824316
+						3235824314
 					]
 				}
 			}
@@ -2408,8 +2709,9 @@
 		"rookie-harbor.south": {
 			"chests": {
 				"216": {
+					"name": "Rookie Harbor - South Harbor (Gold)",
 					"mwids": [
-						3235824317
+						3235824315
 					]
 				}
 			}
@@ -2417,13 +2719,15 @@
 		"rookie-harbor.teleporter": {
 			"chests": {
 				"389": {
+					"name": "Rookie Harbor - Beginner's Arc Upper",
 					"mwids": [
-						3235824318
+						3235824316
 					]
 				},
 				"402": {
+					"name": "Rookie Harbor - Beginner's Arc Lower",
 					"mwids": [
-						3235824319
+						3235824317
 					]
 				}
 			}
@@ -2431,13 +2735,15 @@
 		"shock-dng.f1.room2": {
 			"chests": {
 				"64": {
+					"name": "Zir'vitar Temple 1F - Moving Transmit Left",
 					"mwids": [
-						3235824320
+						3235824318
 					]
 				},
 				"79": {
+					"name": "Zir'vitar Temple 1F - Moving Transmit Right",
 					"mwids": [
-						3235824321
+						3235824319
 					]
 				}
 			}
@@ -2445,8 +2751,9 @@
 		"shock-dng.f1.room3to4": {
 			"chests": {
 				"23": {
+					"name": "Zir'vitar Temple 1F - Haunted Waves (Bronze)",
 					"mwids": [
-						3235824322
+						3235824320
 					]
 				}
 			}
@@ -2454,8 +2761,9 @@
 		"shock-dng.g.room4to5": {
 			"chests": {
 				"16": {
+					"name": "Zir'vitar Temple GF - Hoodwink",
 					"mwids": [
-						3235824323
+						3235824321
 					]
 				}
 			}
@@ -2463,8 +2771,9 @@
 		"shock-dng.g.room5": {
 			"chests": {
 				"164": {
+					"name": "Zir'vitar Temple GF - Spinning Transmit (Bronze)",
 					"mwids": [
-						3235824324
+						3235824322
 					]
 				}
 			}
@@ -2472,18 +2781,21 @@
 		"tree-dng.f3.branch-east": {
 			"chests": {
 				"166": {
+					"name": "Grand Krys'kajo - East Branch Lower (Gold)",
 					"mwids": [
-						3235824325
+						3235824323
 					]
 				},
 				"167": {
+					"name": "Grand Krys'kajo - East Branch Upper",
 					"mwids": [
-						3235824326
+						3235824324
 					]
 				},
 				"168": {
+					"name": "Grand Krys'kajo - East Branch Right",
 					"mwids": [
-						3235824327
+						3235824325
 					]
 				}
 			}
@@ -2491,13 +2803,15 @@
 		"tree-dng.f3.branch-west": {
 			"chests": {
 				"67": {
+					"name": "Grand Krys'kajo - West Branch Upper",
 					"mwids": [
-						3235824328
+						3235824326
 					]
 				},
 				"68": {
+					"name": "Grand Krys'kajo - West Branch Lower",
 					"mwids": [
-						3235824329
+						3235824327
 					]
 				}
 			}
@@ -2505,8 +2819,9 @@
 		"tree-dng.f3.center-01": {
 			"chests": {
 				"136": {
+					"name": "Grand Krys'kajo - Falling Leaves",
 					"mwids": [
-						3235824330
+						3235824328
 					]
 				}
 			}
@@ -2514,8 +2829,9 @@
 		"tree-dng.f3.east-01": {
 			"chests": {
 				"81": {
+					"name": "Grand Krys'kajo - Branch Conveyance",
 					"mwids": [
-						3235824331
+						3235824329
 					]
 				}
 			}
@@ -2523,13 +2839,15 @@
 		"tree-dng.f3.west-01": {
 			"chests": {
 				"81": {
+					"name": "Grand Krys'kajo - Branch Transmit Right",
 					"mwids": [
-						3235824332
+						3235824330
 					]
 				},
 				"86": {
+					"name": "Grand Krys'kajo - Branch Transmit Left",
 					"mwids": [
-						3235824333
+						3235824331
 					]
 				}
 			}
@@ -2537,8 +2855,9 @@
 		"wave-dng.b1.center-01": {
 			"chests": {
 				"276": {
+					"name": "So'najiz Temple - Principle of Conveyance",
 					"mwids": [
-						3235824334
+						3235824332
 					]
 				}
 			}
@@ -2546,28 +2865,33 @@
 		"wave-dng.b1.center-04-long": {
 			"chests": {
 				"205": {
+					"name": "So'najiz Temple - Trial of Persistence Lower Right",
+					"mwids": [
+						3235824333
+					]
+				},
+				"258": {
+					"name": "So'najiz Temple - Trial of Persistence Upper Right",
+					"mwids": [
+						3235824334
+					]
+				},
+				"329": {
+					"name": "So'najiz Temple - Trial of Persistence Rightmost",
 					"mwids": [
 						3235824335
 					]
 				},
-				"258": {
+				"670": {
+					"name": "So'najiz Temple - Trial of Persistence Upper Left (Silver)",
 					"mwids": [
 						3235824336
 					]
 				},
-				"329": {
+				"671": {
+					"name": "So'najiz Temple - Trial of Persistence Lower Left (Gold)",
 					"mwids": [
 						3235824337
-					]
-				},
-				"670": {
-					"mwids": [
-						3235824338
-					]
-				},
-				"671": {
-					"mwids": [
-						3235824339
 					]
 				}
 			}
@@ -2575,8 +2899,9 @@
 		"wave-dng.b1.north-01": {
 			"chests": {
 				"307": {
+					"name": "So'najiz Temple - Moving Attraction",
 					"mwids": [
-						3235824340
+						3235824338
 					]
 				}
 			}
@@ -2584,8 +2909,9 @@
 		"wave-dng.b1.north-03": {
 			"chests": {
 				"249": {
+					"name": "So'najiz Temple - Slowing Attraction",
 					"mwids": [
-						3235824341
+						3235824339
 					]
 				}
 			}
@@ -2593,8 +2919,9 @@
 		"wave-dng.b1.north-06": {
 			"chests": {
 				"193": {
+					"name": "So'najiz Temple - Standing Attraction",
 					"mwids": [
-						3235824342
+						3235824340
 					]
 				}
 			}
@@ -2602,8 +2929,9 @@
 		"wave-dng.b1.north-08": {
 			"chests": {
 				"221": {
+					"name": "So'najiz Temple - Attracting Conveyance",
 					"mwids": [
-						3235824343
+						3235824341
 					]
 				}
 			}
@@ -2611,8 +2939,9 @@
 		"wave-dng.b1.south-04": {
 			"chests": {
 				"309": {
+					"name": "So'najiz Temple - Fast Conveyance",
 					"mwids": [
-						3235824344
+						3235824342
 					]
 				}
 			}
@@ -2620,8 +2949,9 @@
 		"wave-dng.b1.south-06": {
 			"chests": {
 				"242": {
+					"name": "So'najiz Temple - Flaming Conveyance",
 					"mwids": [
-						3235824345
+						3235824343
 					]
 				}
 			}
@@ -2631,7 +2961,7 @@
 				"316": [
 					{
 						"mwids": [
-							3235824348
+							3235824346
 						],
 						"path": ".settings.npcStates.0.event.quest.2.thenStep.17"
 					}
@@ -2643,7 +2973,7 @@
 				"135": [
 					{
 						"mwids": [
-							3235824349
+							3235824347
 						],
 						"path": ".settings.npcStates.1.event.quest.5"
 					}
@@ -2651,7 +2981,7 @@
 				"160": [
 					{
 						"mwids": [
-							3235824375
+							3235824373
 						],
 						"path": ".settings.npcStates.0.event.quest.14"
 					}
@@ -2663,7 +2993,7 @@
 				"136": [
 					{
 						"mwids": [
-							3235824350
+							3235824348
 						],
 						"path": ".settings.event.20"
 					}
@@ -2675,7 +3005,7 @@
 				"137": [
 					{
 						"mwids": [
-							3235824351
+							3235824349
 						],
 						"path": ".settings.event.19"
 					}
@@ -2687,13 +3017,13 @@
 				"136": [
 					{
 						"mwids": [
-							3235824353
+							3235824351
 						],
 						"path": ".settings.event.20"
 					},
 					{
 						"mwids": [
-							3235824367
+							3235824365
 						],
 						"path": ".settings.event.38"
 					}
@@ -2705,7 +3035,7 @@
 				"31": [
 					{
 						"mwids": [
-							3235824354
+							3235824352
 						],
 						"path": ".settings.npcStates.0.event.4.0.9"
 					}
@@ -2717,7 +3047,7 @@
 				"112": [
 					{
 						"mwids": [
-							3235824355
+							3235824353
 						],
 						"path": ".settings.npcStates.1.event.quest.3.accepted.3"
 					}
@@ -2729,7 +3059,7 @@
 				"136": [
 					{
 						"mwids": [
-							3235824356
+							3235824354
 						],
 						"path": ".settings.event.17"
 					}
@@ -2741,7 +3071,7 @@
 				"136": [
 					{
 						"mwids": [
-							3235824357
+							3235824355
 						],
 						"path": ".settings.event.20"
 					}
@@ -2753,13 +3083,13 @@
 				"60": [
 					{
 						"mwids": [
-							3235824358
+							3235824356
 						],
 						"path": ".settings.event.25"
 					},
 					{
 						"mwids": [
-							3235824368
+							3235824366
 						],
 						"path": ".settings.event.44"
 					}
@@ -2771,7 +3101,7 @@
 				"136": [
 					{
 						"mwids": [
-							3235824359
+							3235824357
 						],
 						"path": ".settings.event.20"
 					}
@@ -2783,13 +3113,13 @@
 				"136": [
 					{
 						"mwids": [
-							3235824360
+							3235824358
 						],
 						"path": ".settings.event.74"
 					},
 					{
 						"mwids": [
-							3235824361
+							3235824359
 						],
 						"path": ".settings.event.90"
 					}
@@ -2797,7 +3127,7 @@
 				"137": [
 					{
 						"mwids": [
-							3235824362
+							3235824360
 						],
 						"path": ".settings.event.36"
 					}
@@ -2805,7 +3135,7 @@
 				"138": [
 					{
 						"mwids": [
-							3235824363
+							3235824361
 						],
 						"path": ".settings.event.35"
 					}
@@ -2813,7 +3143,7 @@
 				"140": [
 					{
 						"mwids": [
-							3235824364
+							3235824362
 						],
 						"path": ".settings.event.36"
 					}
@@ -2821,7 +3151,7 @@
 				"142": [
 					{
 						"mwids": [
-							3235824365
+							3235824363
 						],
 						"path": ".settings.event.14"
 					}
@@ -2829,7 +3159,7 @@
 				"143": [
 					{
 						"mwids": [
-							3235824366
+							3235824364
 						],
 						"path": ".settings.event.14"
 					}
@@ -2841,7 +3171,7 @@
 				"134": [
 					{
 						"mwids": [
-							3235824376
+							3235824374
 						],
 						"path": ".settings.npcStates.0.event.quest.11"
 					}
@@ -2852,7 +3182,7 @@
 			"elements": {
 				"45": {
 					"mwids": [
-						3235824369
+						3235824367
 					]
 				}
 			}
@@ -2861,7 +3191,7 @@
 			"elements": {
 				"78": {
 					"mwids": [
-						3235824370
+						3235824368
 					]
 				}
 			}
@@ -2870,7 +3200,7 @@
 			"elements": {
 				"248": {
 					"mwids": [
-						3235824371
+						3235824369
 					]
 				}
 			}
@@ -2879,7 +3209,7 @@
 			"elements": {
 				"86": {
 					"mwids": [
-						3235824372
+						3235824370
 					]
 				}
 			}
@@ -2888,540 +3218,540 @@
 	"quests": {
 		"daft-frobbit": {
 			"mwids": [
-				3235824373
+				3235824371
 			]
 		},
 		"basin-mush-2": {
 			"mwids": [
-				3235824475
+				3235824473
 			]
 		},
 		"my-first-quest": {
+			"mwids": [
+				3235824376,
+				3235824377
+			]
+		},
+		"my-first-quest_2": {
 			"mwids": [
 				3235824378,
 				3235824379
 			]
 		},
-		"my-first-quest_2": {
-			"mwids": [
-				3235824380,
-				3235824381
-			]
-		},
 		"trailblaze-autumn": {
 			"mwids": [
-				3235824382
+				3235824380
 			]
 		},
 		"trailblaze-autumn-1": {
 			"mwids": [
-				3235824383
+				3235824381
 			]
 		},
 		"trailblaze-autumn-2": {
 			"mwids": [
-				3235824384
+				3235824382
 			]
 		},
 		"trailblaze-autumn-3": {
 			"mwids": [
-				3235824385
+				3235824383
 			]
 		},
 		"trailblaze-autumn-4": {
 			"mwids": [
-				3235824386
+				3235824384
 			]
 		},
 		"round-and-round": {
 			"mwids": [
-				3235824387,
-				3235824388,
-				3235824389
+				3235824385,
+				3235824386,
+				3235824387
 			]
 		},
 		"botanics": {
 			"mwids": [
-				3235824390
+				3235824388
 			]
 		},
 		"observatory": {
 			"mwids": [
-				3235824391
+				3235824389
 			]
 		},
 		"trailblaze-bergen": {
 			"mwids": [
-				3235824392
+				3235824390
 			]
 		},
 		"trailblaze-bergen-1": {
 			"mwids": [
-				3235824393
+				3235824391
 			]
 		},
 		"trailblaze-bergen-2": {
 			"mwids": [
-				3235824394
+				3235824392
 			]
 		},
 		"trailblaze-bergen-3": {
 			"mwids": [
-				3235824395
+				3235824393
 			]
 		},
 		"trailblaze-bergen-4": {
 			"mwids": [
-				3235824396
+				3235824394
 			]
 		},
 		"you-got-mail": {
 			"mwids": [
-				3235824397,
-				3235824398
+				3235824395,
+				3235824396
 			]
 		},
 		"legend-bunny": {
 			"mwids": [
-				3235824399
+				3235824397
 			]
 		},
 		"round-and-round-2": {
 			"mwids": [
-				3235824400,
-				3235824401,
-				3235824402
+				3235824398,
+				3235824399,
+				3235824400
 			]
 		},
 		"bergen-mining_tools": {
 			"mwids": [
-				3235824403
+				3235824401
 			]
 		},
 		"miners-1-dirtbunnies": {
+			"mwids": [
+				3235824402,
+				3235824403
+			]
+		},
+		"miners-2-mine_bombing_1": {
 			"mwids": [
 				3235824404,
 				3235824405
 			]
 		},
-		"miners-2-mine_bombing_1": {
+		"miners-2-mine_challenge-1": {
 			"mwids": [
 				3235824406,
 				3235824407
 			]
 		},
-		"miners-2-mine_challenge-1": {
+		"bg-1-lost_pet": {
 			"mwids": [
 				3235824408,
 				3235824409
 			]
 		},
-		"bg-1-lost_pet": {
+		"bg-2-goat_cave_1": {
 			"mwids": [
 				3235824410,
 				3235824411
 			]
 		},
-		"bg-2-goat_cave_1": {
+		"bergen-fancy-tophat": {
 			"mwids": [
 				3235824412,
 				3235824413
 			]
 		},
-		"bergen-fancy-tophat": {
-			"mwids": [
-				3235824414,
-				3235824415
-			]
-		},
 		"bergtraders-2-hermit_materials": {
 			"mwids": [
-				3235824416,
-				3235824417,
-				3235824418
+				3235824414,
+				3235824415,
+				3235824416
 			]
 		},
 		"monks-1-jump_challenge": {
 			"mwids": [
-				3235824419,
-				3235824420
+				3235824417,
+				3235824418
 			]
 		},
 		"monks-2-jump_challenge_2": {
 			"mwids": [
-				3235824421,
-				3235824422,
-				3235824423
+				3235824419,
+				3235824420,
+				3235824421
 			]
 		},
 		"monks-jump_1_bonus": {
 			"mwids": [
-				3235824424
+				3235824422
 			]
 		},
 		"monks-jump_1_time": {
 			"mwids": [
-				3235824425
+				3235824423
 			]
 		},
 		"monks-jump_1_noShield": {
 			"mwids": [
-				3235824426
+				3235824424
 			]
 		},
 		"monks-jump_2_bonus": {
 			"mwids": [
-				3235824427
+				3235824425
 			]
 		},
 		"monks-jump_2_time": {
 			"mwids": [
-				3235824428
+				3235824426
 			]
 		},
 		"monks-jump_2_frosty": {
 			"mwids": [
-				3235824429
+				3235824427
 			]
 		},
 		"omni-1": {
 			"mwids": [
-				3235824430
+				3235824428
 			]
 		},
 		"omni-2": {
 			"mwids": [
-				3235824431
+				3235824429
 			]
 		},
 		"unkown-warrior-2": {
 			"mwids": [
-				3235824432
+				3235824430
 			]
 		},
 		"trailblaze-forest": {
 			"mwids": [
-				3235824433
+				3235824431
 			]
 		},
 		"wervyn-quest": {
 			"mwids": [
-				3235824434
+				3235824432
 			]
 		},
 		"dekay-quest": {
 			"mwids": [
-				3235824435
+				3235824433
 			]
 		},
 		"trailblaze-maroon": {
 			"mwids": [
-				3235824436
+				3235824434
 			]
 		},
 		"trailblaze-maroon-1": {
 			"mwids": [
-				3235824437
+				3235824435
 			]
 		},
 		"trailblaze-maroon-2": {
 			"mwids": [
-				3235824438
+				3235824436
 			]
 		},
 		"trailblaze-maroon-3": {
 			"mwids": [
-				3235824439
+				3235824437
 			]
 		},
 		"trailblaze-maroon-4": {
 			"mwids": [
-				3235824440
+				3235824438
 			]
 		},
 		"maroon-tree-defend": {
 			"mwids": [
-				3235824441
+				3235824439
 			]
 		},
 		"nomadAdv-1-turtle_bombing_1": {
 			"mwids": [
-				3235824442,
-				3235824443
+				3235824440,
+				3235824441
 			]
 		},
 		"nomadAdv-2-tomb_raiding_2": {
 			"mwids": [
-				3235824444
+				3235824442
 			]
 		},
 		"nomadAdv-3-sandman_tomb_1": {
+			"mwids": [
+				3235824443,
+				3235824444
+			]
+		},
+		"bakiGuard-1-basar_thief_1": {
 			"mwids": [
 				3235824445,
 				3235824446
 			]
 		},
-		"bakiGuard-1-basar_thief_1": {
+		"bakiGuard-2-evil_guard": {
 			"mwids": [
 				3235824447,
 				3235824448
 			]
 		},
-		"bakiGuard-2-evil_guard": {
+		"bakiTrader-1-crate_defense_1": {
 			"mwids": [
 				3235824449,
 				3235824450
 			]
 		},
-		"bakiTrader-1-crate_defense_1": {
-			"mwids": [
-				3235824451,
-				3235824452
-			]
-		},
 		"bakiTrader-2-brewing_fun_1": {
 			"mwids": [
-				3235824453
+				3235824451
 			]
 		},
 		"bakiTrader-2-brewing_challenge_1": {
 			"mwids": [
-				3235824454
+				3235824452
 			]
 		},
 		"unknown-warrior-3": {
 			"mwids": [
-				3235824455
+				3235824453
 			]
 		},
 		"jungleAdv-1-turret_defense_1": {
+			"mwids": [
+				3235824454,
+				3235824455
+			]
+		},
+		"jungleAdv-2-turret_defense_2": {
 			"mwids": [
 				3235824456,
 				3235824457
 			]
 		},
-		"jungleAdv-2-turret_defense_2": {
+		"jungleGuard-1-hostage_1": {
 			"mwids": [
 				3235824458,
 				3235824459
 			]
 		},
-		"jungleGuard-1-hostage_1": {
+		"jungleGuard-2-crate_rooftop_1": {
 			"mwids": [
 				3235824460,
 				3235824461
 			]
 		},
-		"jungleGuard-2-crate_rooftop_1": {
-			"mwids": [
-				3235824462,
-				3235824463
-			]
-		},
 		"jungleTrader-1-snowman_thief_1": {
 			"mwids": [
-				3235824464,
-				3235824465,
-				3235824466
+				3235824462,
+				3235824463,
+				3235824464
 			]
 		},
 		"jungleTrader-2-snowman_thief_2": {
 			"mwids": [
-				3235824467
+				3235824465
 			]
 		},
 		"jungleGreens-1-escort_1": {
 			"mwids": [
-				3235824468,
-				3235824469,
-				3235824470
+				3235824466,
+				3235824467,
+				3235824468
 			]
 		},
 		"jungleGreens-2-plantSearch_1": {
 			"mwids": [
-				3235824471,
-				3235824472,
-				3235824473
+				3235824469,
+				3235824470,
+				3235824471
 			]
 		},
 		"basin-mush-1": {
 			"mwids": [
-				3235824474
+				3235824472
 			]
 		},
 		"halloween": {
 			"mwids": [
-				3235824476
+				3235824474
 			]
 		},
 		"unknown-warrior-4": {
 			"mwids": [
-				3235824477
+				3235824475
 			]
 		},
 		"trailblaze-jungle": {
 			"mwids": [
-				3235824478
+				3235824476
 			]
 		},
 		"trailblaze-jungle-1": {
 			"mwids": [
-				3235824479
+				3235824477
 			]
 		},
 		"trailblaze-jungle-2": {
 			"mwids": [
-				3235824480
+				3235824478
 			]
 		},
 		"trailblaze-jungle-3": {
 			"mwids": [
-				3235824481
+				3235824479
 			]
 		},
 		"trailblaze-jungle-4": {
 			"mwids": [
-				3235824482
+				3235824480
 			]
 		},
 		"jungleAdv-turret_defense_challenge-1": {
 			"mwids": [
-				3235824483
+				3235824481
 			]
 		},
 		"jungleAdv-turret_defense_challenge-2": {
 			"mwids": [
-				3235824484
+				3235824482
 			]
 		},
 		"unknown-warrior-5": {
 			"mwids": [
-				3235824485
+				3235824483
 			]
 		},
 		"railing-rider-1": {
 			"mwids": [
-				3235824486
+				3235824484
 			]
 		},
 		"ice-cream-hype": {
 			"mwids": [
-				3235824487
+				3235824485
 			]
 		},
 		"training-tutorial": {
 			"mwids": [
-				3235824488
+				3235824486
 			]
 		},
 		"training-balls": {
 			"mwids": [
-				3235824489
+				3235824487
 			]
 		},
 		"training-close": {
 			"mwids": [
-				3235824490
+				3235824488
 			]
 		},
 		"faction-tutorial": {
 			"mwids": [
-				3235824491
+				3235824489
 			]
 		},
 		"wa-1-digging": {
 			"mwids": [
-				3235824492
+				3235824490
 			]
 		},
 		"fd-2-meerkat-cave": {
+			"mwids": [
+				3235824491,
+				3235824492
+			]
+		},
+		"fd-3-ball_egg_1": {
 			"mwids": [
 				3235824493,
 				3235824494
 			]
 		},
-		"fd-3-ball_egg_1": {
+		"rhg-1-pickpocket": {
 			"mwids": [
 				3235824495,
 				3235824496
 			]
 		},
-		"rhg-1-pickpocket": {
+		"rhg-2-crate_smuggle": {
 			"mwids": [
 				3235824497,
 				3235824498
 			]
 		},
-		"rhg-2-crate_smuggle": {
+		"rhg-3-maritime_smuggle": {
 			"mwids": [
 				3235824499,
 				3235824500
 			]
 		},
-		"rhg-3-maritime_smuggle": {
+		"rftc-1-collect_trade": {
 			"mwids": [
 				3235824501,
 				3235824502
 			]
 		},
-		"rftc-1-collect_trade": {
-			"mwids": [
-				3235824503,
-				3235824504
-			]
-		},
 		"bull-arena-1": {
 			"mwids": [
-				3235824505,
+				3235824503,
+				3235824504,
+				3235824505
+			]
+		},
+		"rftc-3-metalstuff": {
+			"mwids": [
 				3235824506,
 				3235824507
 			]
 		},
-		"rftc-3-metalstuff": {
+		"foa-1-treedoc": {
 			"mwids": [
 				3235824508,
 				3235824509
 			]
 		},
-		"foa-1-treedoc": {
-			"mwids": [
-				3235824510,
-				3235824511
-			]
-		},
 		"foa-2-tree_defense": {
 			"mwids": [
-				3235824512,
-				3235824513,
-				3235824514
+				3235824510,
+				3235824511,
+				3235824512
 			]
 		},
 		"foa-3-buffel_cave": {
 			"mwids": [
-				3235824515,
-				3235824516,
-				3235824517
+				3235824513,
+				3235824514,
+				3235824515
 			]
 		},
 		"unknown-warrior-1": {
 			"mwids": [
-				3235824518
+				3235824516
 			]
 		},
 		"steaks_1": {
 			"mwids": [
-				3235824519,
-				3235824520
+				3235824517,
+				3235824518
 			]
 		},
 		"steaks_2": {
 			"mwids": [
-				3235824521
+				3235824519
 			]
 		},
 		"steaks_3": {
 			"mwids": [
-				3235824522
+				3235824520
 			]
 		}
 	}
