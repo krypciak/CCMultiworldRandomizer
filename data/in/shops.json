@@ -1,295 +1,461 @@
-[
-	{
-		"location": "rookieHarborItems",
-		"region": {
-			"linear": "3",
-			"open": "open0"
+{
+	"shops": {
+		"Rookie Harbor Items": {
+			"location": {
+				"shop": "rookieHarborItems"
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"slots": [
+				"Sandwich",
+				"Hi-Sandwich",
+				"Green Leaf Tea",
+				"Just Water",
+				"Spicy Bun",
+				"Fruit Drink",
+				"Rice Cracker",
+				"Veggie Sticks"
+			]
 		},
-		"reward": [
-			[ "item", "Sandwich" ],
-			[ "item", "Hi-Sandwich" ],
-			[ "item", "Green Leaf Tea" ],
-			[ "item", "Just Water" ],
-			[ "item", "Kebab Roll" ],
-			[ "item", "Meaty Risotto" ],
-			[ "item", "Spicy Bun" ],
-			[ "item", "Fruit Drink" ],
-			[ "item", "Rice Cracker" ],
-			[ "item", "Veggie Sticks" ],
-			[ "item", "Bergen Ice Cream" ],
-			[ "item", "Sweet Lemonjuice" ],
-			[ "item", "Salted Peanuts" ],
-			[ "item", "Cup o' Coffee" ],
-			[ "item", "Snack Mix" ]
-		]
-	},
-	{
-		"location": "rookieHarborWeapons",
-		"region": {
-			"linear": "3",
-			"open": "open0"
+		"Rookie Harbor Items (Post-Blue Ice)": {
+			"location": {
+				"shop": "rookieHarborItems"
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"condition": [
+				[ "item", "Blue Ice Shade" ]
+			],
+			"slots": [
+				"Kebab Roll",
+				"Meaty Risotto"
+			]
 		},
-		"reward": [
-			[ "item", "Bronze Goggles" ],
-			[ "item", "Bronze Edge" ],
-			[ "item", "Bronze Mail" ],
-			[ "item", "Bronze Boots" ],
-			[ "item", "Iron Goggles" ],
-			[ "item", "Iron Edge" ],
-			[ "item", "Iron Mail" ],
-			[ "item", "Iron Boots" ],
-			[ "item", "Silver Goggles" ],
-			[ "item", "Silver Edge" ],
-			[ "item", "Silver Mail" ],
-			[ "item", "Silver Boots" ]
-		]
-	},
-	{
-		"location": "rookieHarborWeaponsNorth",
-		"region": {
-			"linear": "19",
-			"open": "open0"
+		"Rookie Harbor Items (Post-Red Flame)": {
+			"location": {
+				"shop": "rookieHarborItems"
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"condition": [
+				[ "item", "Red Flame Shade" ]
+			],
+			"slots": [
+				"Bergen Ice Cream",
+				"Sweet Lemonjuice"
+			]
 		},
-		"reward": [
-			[ "item", "Steel Goggles" ],
-			[ "item", "Steel Edge" ],
-			[ "item", "Steel Mail" ],
-			[ "item", "Steel Boots" ],
-			[ "item", "Silver Goggles" ],
-			[ "item", "Silver Edge" ],
-			[ "item", "Silver Mail" ],
-			[ "item", "Silver Boots" ]
-		]
-	},
-	{
-		"location": "rookieHarborTara",
-		"region": {
-			"linear": "3",
-			"open": "open0"
+		"Rookie Harbor Items (Post-Green Seed)": {
+			"location": {
+				"shop": "rookieHarborItems"
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"condition": [
+				[ "item", "Green Seed Shade" ]
+			],
+			"slots": [
+				"Salted Peanuts",
+				"Cup o' Coffee",
+				"Snack Mix"
+			]
 		},
-		"reward": [
-			[ "item", "Sandwich" ]
-		]
-	},
-	{
-		"location": "rookieBacker",
-		"region": {
-			"linear": "19",
-			"open": "open0"
+		"Rookie Harbor Weapons": {
+			"location": {
+				"shop": "rookieHarborWeapons"
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"slots": [
+				"Bronze Goggles",
+				"Bronze Edge",
+				"Bronze Mail",
+				"Bronze Boots",
+				"Iron Goggles",
+				"Iron Edge",
+				"Iron Mail",
+				"Iron Boots"
+			]
 		},
-		"reward": [
-			[ "item", "Rising Super Star" ],
-			[ "item", "Dk Pepper" ],
-			[ "item", "Cheese Spaetzle" ],
-			[ "item", "Maultasche" ],
-			[ "item", "Durian" ],
-			[ "item", "PengoPop" ],
-			[ "item", "Spicy Beat-0-Type" ],
-			[ "item", "Werewolf Stick" ],
-			[ "item", "Mooncake" ],
-			[ "item", "Guacamole Toast" ],
-			[ "item", "Willis Waldmahl" ],
-			[ "item", "Pumpkin Spice Cof." ]
-		]
-	},
-	{
-		"location": "bergenVillageItems",
-		"region": {
-			"linear": "3",
-			"open": "open0"
+		"Rookie Harbor Weapons (Post-Red Flame)": {
+			"location": {
+				"shop": "rookieHarborWeapons"
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"condition": [
+				[ "item", "Red Flame Shade" ]
+			],
+			"slots": [
+				"Silver Goggles",
+				"Silver Edge",
+				"Silver Mail",
+				"Silver Boots"
+			]
 		},
-		"reward": [
-			[ "item", "Sandwich" ],
-			[ "item", "Hi-Sandwich" ],
-			[ "item", "Green Leaf Tea" ],
-			[ "item", "Just Water" ],
-			[ "item", "Kebab Roll" ],
-			[ "item", "Meaty Risotto" ],
-			[ "item", "Spicy Bun" ],
-			[ "item", "Fruit Drink" ],
-			[ "item", "Rice Cracker" ],
-			[ "item", "Veggie Sticks" ],
-			[ "item", "Bergen Ice Cream" ],
-			[ "item", "Sweet Lemonjuice" ],
-			[ "item", "Salted Peanuts" ],
-			[ "item", "Cup o' Coffee" ],
-			[ "item", "Snack Mix" ]
-		]
-	},
-	{
-		"location": "bergenVillageWeapons",
-		"region": {
-			"linear": "3",
-			"open": "open0"
+		"Rookie Harbor North Weapons": {
+			"location": {
+				"shop": "rookieHarborWeaponsNorth"
+			},
+			"region": {
+				"linear": "19",
+				"open": "open8"
+			},
+			"slots": [
+				"Steel Goggles",
+				"Steel Edge",
+				"Steel Mail",
+				"Steel Boots",
+				"Silver Goggles",
+				"Silver Edge",
+				"Silver Mail",
+				"Silver Boots"
+			]
 		},
-		"reward": [
-			[ "item", "Iron Goggles" ],
-			[ "item", "Iron Edge" ],
-			[ "item", "Iron Mail" ],
-			[ "item", "Iron Boots" ]
-		]
-	},
-	{
-		"location": "bergenHermit",
-		"region": {
-			"linear": "3",
-			"open": "open0"
+		"Tara's Shop": {
+			"location": {
+				"shop": "rookieHarborTara"
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"slots": [
+				"Sandwich"
+			]
 		},
-		"reward": []
-	},
-	{
-		"location": "bakiItems",
-		"region": {
-			"linear": "11",
-			"open": "open0"
+		"Rookie Harbor Backer Items": {
+			"location": {
+				"shop": "rookieBacker"
+			},
+			"region": {
+				"linear": "19",
+				"open": "open8"
+			},
+			"slots": [
+				"Rising Super Star",
+				"Dk Pepper",
+				"Cheese Spaetzle",
+				"Maultasche",
+				"Durian",
+				"PengoPop",
+				"Spicy Beat-0-Type",
+				"Werewolf Stick",
+				"Mooncake",
+				"Guacamole Toast",
+				"Willis Waldmahl",
+				"Pumpkin Spice Cof."
+			]
 		},
-		"reward": [
-			[ "item", "Sandwich" ],
-			[ "item", "Hi-Sandwich" ],
-			[ "item", "Green Leaf Tea" ],
-			[ "item", "Just Water" ],
-			[ "item", "Kebab Roll" ],
-			[ "item", "Meaty Risotto" ],
-			[ "item", "Spicy Bun" ],
-			[ "item", "Fruit Drink" ],
-			[ "item", "Rice Cracker" ],
-			[ "item", "Veggie Sticks" ],
-			[ "item", "Bergen Ice Cream" ],
-			[ "item", "Sweet Lemonjuice" ],
-			[ "item", "Salted Peanuts" ],
-			[ "item", "Cup o' Coffee" ],
-			[ "item", "Snack Mix" ]
-		]
-	},
-	{
-		"location": "bakiWeapons",
-		"region": {
-			"linear": "11",
-			"open": "open0"
+		"Bergen Village Items": {
+			"location": {
+				"shop": "bergenVillageItems"
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"slots": [
+				"Sandwich",
+				"Hi-Sandwich",
+				"Green Leaf Tea",
+				"Just Water",
+				"Spicy Bun",
+				"Fruit Drink",
+				"Rice Cracker",
+				"Veggie Sticks"
+			]
 		},
-		"reward": [
-			[ "item", "Iron Goggles" ],
-			[ "item", "Iron Edge" ],
-			[ "item", "Iron Mail" ],
-			[ "item", "Iron Boots" ],
-			[ "item", "Steel Goggles" ],
-			[ "item", "Steel Edge" ],
-			[ "item", "Steel Mail" ],
-			[ "item", "Steel Boots" ]
-		]
-	},
-	{
-		"location": "basinVendingMachines",
-		"region": {
-			"linear": "21",
-			"open": "open0"
+		"Bergen Village Items (Post-Blue Ice)": {
+			"location": {
+				"shop": "bergenVillageItems"
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"condition": [
+				[ "item", "Blue Ice Shade" ]
+			],
+			"slots": [
+				"Kebab Roll",
+				"Meaty Risotto"
+			]
 		},
-		"reward": [
-			[ "item", "Sandwich" ],
-			[ "item", "Hi-Sandwich" ],
-			[ "item", "Green Leaf Tea" ],
-			[ "item", "Just Water" ],
-			[ "item", "Spicy Bun" ],
-			[ "item", "Fruit Drink" ],
-			[ "item", "Rice Cracker" ],
-			[ "item", "Veggie Sticks" ],
-			[ "item", "Bergen Ice Cream" ],
-			[ "item", "Sweet Lemonjuice" ],
-			[ "item", "Salted Peanuts" ],
-			[ "item", "Cup o' Coffee" ],
-			[ "item", "Snack Mix" ],
-			[ "item", "Kebab Roll" ],
-			[ "item", "Meaty Risotto" ]
-		]
-	},
-	{
-		"location": "basinItems",
-		"region": {
-			"linear": "21",
-			"open": "open0"
+		"Bergen Village Items (Post-Red Flame)": {
+			"location": {
+				"shop": "bergenVillageItems"
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"condition": [
+				[ "item", "Red Flame Shade" ]
+			],
+			"slots": [
+				"Bergen Ice Cream",
+				"Sweet Lemonjuice"
+			]
 		},
-		"reward": [
-			[ "item", "Sandwich" ],
-			[ "item", "Hi-Sandwich" ],
-			[ "item", "Green Leaf Tea" ],
-			[ "item", "Just Water" ],
-			[ "item", "Kebab Roll" ],
-			[ "item", "Meaty Risotto" ],
-			[ "item", "Spicy Bun" ],
-			[ "item", "Fruit Drink" ],
-			[ "item", "Rice Cracker" ],
-			[ "item", "Veggie Sticks" ],
-			[ "item", "Bergen Ice Cream" ],
-			[ "item", "Sweet Lemonjuice" ],
-			[ "item", "Salted Peanuts" ],
-			[ "item", "Cup o' Coffee" ],
-			[ "item", "Snack Mix" ]
-		]
-	},
-	{
-		"location": "basinWeapons",
-		"region": {
-			"linear": "21",
-			"open": "open0"
+		"Bergen Village Items (Post-Green Seed)": {
+			"location": {
+				"shop": "bergenVillageItems"
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"condition": [
+				[ "item", "Green Seed Shade" ]
+			],
+			"slots": [
+				"Salted Peanuts",
+				"Cup o' Coffee",
+				"Snack Mix"
+			]
 		},
-		"reward": [
-			[ "item", "Silver Goggles" ],
-			[ "item", "Silver Edge" ],
-			[ "item", "Silver Mail" ],
-			[ "item", "Silver Boots" ],
-			[ "item", "Titan Goggles" ],
-			[ "item", "Titan Edge" ],
-			[ "item", "Titan Mail" ],
-			[ "item", "Titan Boots" ]
-		]
-	},
-	{
-		"location": "basinMushroom",
-		"region": {
-			"linear": "21",
-			"open": "open0"
+		"Bergen Village Weapons": {
+			"location": {
+				"shop": "bergenVillageWeapons"
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"slots": [
+				"Iron Goggles",
+				"Iron Edge",
+				"Iron Mail",
+				"Iron Boots"
+			]
 		},
-		"reward": []
-	},
-	{
-		"location": "sapphireWeapons",
-		"region": {
-			"linear": "31",
-			"open": "open0"
+		"Hermit's Hut": {
+			"location": {
+				"shop": "bergenHermit"
+			},
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"slots": [
+				"Chili Con Carne",
+				"Sweet Lemonjuice",
+				"Sweet Berry Tea"
+			]
 		},
-		"reward": [
-			[ "item", "Titan Goggles" ],
-			[ "item", "Titan Edge" ],
-			[ "item", "Titan Mail" ],
-			[ "item", "Titan Boots" ],
-			[ "item", "Cobalt Goggles" ],
-			[ "item", "Cobalt Edge" ],
-			[ "item", "Cobalt Mail" ],
-			[ "item", "Cobalt Boots" ]
-		]
-	},
-	{
-		"location": "sapphireItems",
-		"region": {
-			"linear": "31",
-			"open": "open0"
+		"Ba'kii Kum Items": {
+			"location": {
+				"shop": "bakiItems"
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"slots": [
+				"Sandwich",
+				"Hi-Sandwich",
+				"Green Leaf Tea",
+				"Just Water",
+				"Spicy Bun",
+				"Fruit Drink",
+				"Rice Cracker",
+				"Veggie Sticks",
+				"Bergen Ice Cream",
+				"Sweet Lemonjuice"
+			]
 		},
-		"reward": [
-			[ "item", "Sandwich" ],
-			[ "item", "Hi-Sandwich" ],
-			[ "item", "Green Leaf Tea" ],
-			[ "item", "Just Water" ],
-			[ "item", "Kebab Roll" ],
-			[ "item", "Meaty Risotto" ],
-			[ "item", "Spicy Bun" ],
-			[ "item", "Fruit Drink" ],
-			[ "item", "Rice Cracker" ],
-			[ "item", "Veggie Sticks" ],
-			[ "item", "Bergen Ice Cream" ],
-			[ "item", "Sweet Lemonjuice" ],
-			[ "item", "Salted Peanuts" ],
-			[ "item", "Cup o' Coffee" ],
-			[ "item", "Snack Mix" ]
-		]
+		"Ba'kii Kum Items (Post-Blue Ice)": {
+			"location": {
+				"shop": "bakiItems"
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"condition": [
+				[ "item", "Blue Ice Shade" ]
+			],
+			"slots": [
+				"Kebab Roll",
+				"Meaty Risotto"
+			]
+		},
+		"Ba'kii Kum Items (Post-Green Seed)": {
+			"location": {
+				"shop": "bakiItems"
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"slots": [
+				"Salted Peanuts",
+				"Cup o' Coffee",
+				"Snack Mix"
+			]
+		},
+		"Ba'kii Kum Weapons": {
+			"location": {
+				"shop": "bakiWeapons"
+			},
+			"region": {
+				"linear": "11",
+				"open": "open5"
+			},
+			"slots": [
+				"Iron Goggles",
+				"Iron Edge",
+				"Iron Mail",
+				"Iron Boots",
+				"Steel Goggles",
+				"Steel Edge",
+				"Steel Mail",
+				"Steel Boots"
+			]
+		},
+		"Basin Keep Vending Machine": {
+			"location": {
+				"shop": "basinVendingMachines"
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"slots": [
+				"Sandwich",
+				"Hi-Sandwich",
+				"Green Leaf Tea",
+				"Just Water",
+				"Spicy Bun",
+				"Fruit Drink",
+				"Rice Cracker",
+				"Veggie Sticks",
+				"Bergen Ice Cream",
+				"Sweet Lemonjuice",
+				"Salted Peanuts",
+				"Cup o' Coffee",
+				"Snack Mix",
+				"Kebab Roll",
+				"Meaty Risotto"
+			]
+		},
+		"Basin Keep Items": {
+			"location": {
+				"shop": "basinItems"
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"slots": [
+				"Sandwich",
+				"Hi-Sandwich",
+				"Green Leaf Tea",
+				"Just Water",
+				"Kebab Roll",
+				"Meaty Risotto",
+				"Spicy Bun",
+				"Fruit Drink",
+				"Rice Cracker",
+				"Veggie Sticks",
+				"Bergen Ice Cream",
+				"Sweet Lemonjuice",
+				"Salted Peanuts",
+				"Cup o' Coffee",
+				"Snack Mix"
+			]
+		},
+		"Basin Keep Weapons": {
+			"location": {
+				"shop": "basinWeapons"
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10"
+			},
+			"slots": [
+				"Silver Goggles",
+				"Silver Edge",
+				"Silver Mail",
+				"Silver Boots",
+				"Titan Goggles",
+				"Titan Edge",
+				"Titan Mail",
+				"Titan Boots"
+			]
+		},
+		"Calzone Shop": {
+			"location": {
+				"shop": "basinMushroom"
+			},
+			"region": {
+				"linear": "23",
+				"open": "open10" 
+			},
+			"condition": [ 
+				[ "item", "Wave", 1 ]
+			],
+			"slots": [
+				"One Up"
+			]
+		},
+		"Sapphire Ridge Weapons": {
+			"location": {
+				"shop": "sapphireWeapons"
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"slots": [
+				"Titan Goggles",
+				"Titan Edge",
+				"Titan Mail",
+				"Titan Boots",
+				"Cobalt Goggles",
+				"Cobalt Edge",
+				"Cobalt Mail",
+				"Cobalt Boots"
+			]
+		},
+		"Sapphire Ridge Items": {
+			"location": {
+				"shop": "sapphireItems"
+			},
+			"region": {
+				"linear": "31",
+				"open": "open16"
+			},
+			"slots": [
+				"Sandwich",
+				"Hi-Sandwich",
+				"Green Leaf Tea",
+				"Just Water",
+				"Kebab Roll",
+				"Meaty Risotto",
+				"Spicy Bun",
+				"Fruit Drink",
+				"Rice Cracker",
+				"Veggie Sticks",
+				"Bergen Ice Cream",
+				"Sweet Lemonjuice",
+				"Salted Peanuts",
+				"Cup o' Coffee",
+				"Snack Mix"
+			]
+		}
 	}
-]
+}
