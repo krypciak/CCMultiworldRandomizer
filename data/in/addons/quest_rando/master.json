@@ -818,11 +818,6 @@
 				[ "item", "Wave", 1 ]
 			]
 		},
-		"Mushroom Kingdom": {
-			"condition::REPLACE": [ 
-				[ "quest", "Sprouting Business" ]
-			]
-		},
 		"Pumpkin Land Superfun": {
 			"questid": "halloween",
 			"region": {
