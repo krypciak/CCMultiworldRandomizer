@@ -461,7 +461,7 @@ export default class MwRandomizer {
 		});
 
 		let mwIcons = new ig.Font(
-			plugin.baseDirectory.substring(7) + "assets/icons.png",
+			plugin.baseDirectory.substring(7) + "assets/media/font/icons-multiworld.png",
 			16,
 			ig.MultiFont.ICON_START,
 		);
