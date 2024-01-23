@@ -6,7 +6,7 @@ import {applyPatches} from "./patches/index";
 
 export default class MwRandomizer {
 	baseDirectory: string;
-	randoData: WorldData | null = null;
+	randoData: WorldData = null;
 	itemdb: any;
 
 	constructor(mod: {baseDirectory: string}) {
@@ -106,7 +106,8 @@ export default class MwRandomizer {
 		showRewardAnyway: boolean,
 		mwQuest: RawQuest,
 		itemsGui: ig.GuiElementBase,
-		gfx: ig.Image
+		gfx: ig.Image,
+		maxWidth: number
 	) {
 		if (sc.multiworld.client.status != ap.CONNECTION_STATUS.CONNECTED) {
 			return;
@@ -132,6 +133,8 @@ export default class MwRandomizer {
 			sc.multiworld.client.locations.scout(ap.CREATE_AS_HINT_MODE.HINT_ONLY_NEW, ...mwQuest.mwids);
 		}
 
+		let accum = 0;
+
 		for (let i = 0; i < mwQuest.mwids.length; i++) {
 			const mwid: number = mwQuest.mwids[i]
 			const item: ap.NetworkItem = sc.multiworld.locationInfo[mwid];
@@ -145,8 +148,7 @@ export default class MwRandomizer {
 				}
 			}
 
-			const itemGui = new sc.TextGui(this.getGuiString(itemInfo));
-			itemGui.setPos(0, i * 20);
+			const itemGui = new sc.TextGui(this.getGuiString(itemInfo), { "maxWidth": maxWidth });
 			const worldGui = new sc.TextGui(itemInfo.player, { "font": sc.fontsystem.tinyFont });
 
 			if (itemInfo.level > 0) {
@@ -161,12 +163,17 @@ export default class MwRandomizer {
 				});
 			}
 
+			itemGui.setPos(0, accum);
+			accum += itemGui.hook.size.y + 3;
+
 			worldGui.setPos(15, itemGui.hook.size.y - 2);
 			itemsGui.addChildGui(itemGui);
 			itemGui.addChildGui(worldGui);
 			worldGuis.push(worldGui);
 			itemGuis.push(itemGui);
 		}
+
+		itemsGui.setSize(maxWidth, accum + 3);
 	}
 
 	async prestart() {
@@ -177,8 +184,6 @@ export default class MwRandomizer {
 
 		let randoData: WorldData = await readJsonFromFile(this.baseDirectory + "data/out/data.json")
 		this.randoData = randoData;
-
-		let maps = randoData.items;
 
 		let itemdb = await readJsonFromFile("assets/data/item-database.json");
 		this.itemdb = itemdb;

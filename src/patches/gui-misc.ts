@@ -35,6 +35,7 @@ export function patch(plugin: MwRandomizer) {
 			this.versionGui.addChildGui(this.apConnectionStatusGui);
 
 			this.apSettingsButton = new sc.ButtonGui("\\i[ap-logo] Archipelago Settings");
+			this.apSettingsButton.setAlign(ig.GUI_ALIGN.X_RIGHT, ig.GUI_ALIGN.Y_BOTTOM);
 			this.apSettingsButton.setPos(3, 3);
 			this.buttonGroup.addFocusGui(this.apSettingsButton);
 			this.apSettingsButton.onButtonPress = function () {
@@ -44,6 +45,16 @@ export function patch(plugin: MwRandomizer) {
 
 			this.addChildGui(this.apSettingsButton);
 		},
+
+		updateButtons(refocus: boolean) {
+			this.parent(refocus);
+
+			for (const btn of this.buttonGroup.elements[0]) {
+				btn.hook.pos.y += 27;
+			}
+
+			this.buttonGroup.addFocusGui(this.apSettingsButton, 0, this.buttonGroup.largestIndex.y + 1);
+		}
 	});
 
 	sc.APConnectionBox = sc.BaseMenu.extend({
