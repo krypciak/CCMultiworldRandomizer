@@ -1,4 +1,6 @@
+import * as ap from "archipelago.js";
 import type MwRandomizer from "../plugin";
+import type { RawQuest } from "../item-data.model";
 import "../types/multiworld-model.d";
 
 export function patch(plugin: MwRandomizer) {
@@ -28,7 +30,8 @@ export function patch(plugin: MwRandomizer) {
 			mapName: string,
 		) {
 			this.parent(quest, callback, finished, characterName, mapName);
-			this.questBox.hook.pos.y = -13;
+			this.questBox.hook.pos.y = -14;
+			this.buttons.hook.pos.y -= 1;
 
 			if (this.overlay) {
 				this.questBox.removeChildGui(this.overlay);
@@ -80,20 +83,16 @@ export function patch(plugin: MwRandomizer) {
 
 			this.removeChildGui(this.itemsGui);
 
-			this.scrollBox = new sc.ScrollPane(sc.ScrollType.Y_ONLY);
-			this.scrollBox.setSize(146, finished ? 65 : 88);
-			this.scrollBox.showTopBar = false;
-			this.scrollBox.showBottomBar = false;
-			this.scrollBox.setPos(124, finished ? 180 : 157);
+			this.newItemsGui = new sc.MultiWorldQuestItemBox(
+				146,
+				finished ? 65 : 88,
+				quest,
+				mwQuest,
+				!hideRewards
+			);
 
-			this.newItemsGui = new ig.GuiElementBase();
-
-			this.scrollBox.setContent(this.newItemsGui);
-
-			this.addChildGui(this.scrollBox);
-			
-			plugin.makeApItemsGui(quest, !hideRewards, mwQuest, this.newItemsGui, this.gfx, 144);
-			this.scrollBox.recalculateScrollBars();
+			this.newItemsGui.setPos(124, finished ? 180 : 157);
+			this.addChildGui(this.newItemsGui);
 		},
 
 		modelChanged(model: sc.Model, msg: number, data: any) {
@@ -103,17 +102,7 @@ export function patch(plugin: MwRandomizer) {
 				this.mwQuest &&
 				sc.multiworld.locationInfo[this.mwQuest.mwids[0]] === undefined
 			) {
-				plugin.makeApItemsGui(this.quest, this.finished, this.mwQuest, this.newItemsGui, this.gfx, 144);
-			}
-		},
-
-		update() {
-			if (!ig.interact.isBlocked()) {
-				if (sc.control.menuScrollUp()) {
-					this.scrollBox.scrollY(-20, false, 0.05);
-				} else if (sc.control.menuScrollDown()) {
-					this.scrollBox.scrollY(20, false, 0.05);
-				}
+				this.newItemsGui.setQuest(this.mwQuest);
 			}
 		}
 	});
@@ -128,8 +117,19 @@ export function patch(plugin: MwRandomizer) {
 			) {
 				return;
 			}
-			
-			plugin.makeApItemsGui(quest, false, mwQuest, this.itemsGui, this.gfx, 145);
+
+			this.removeChildGui(this.itemsGui);
+
+			this.newItemsGui = new sc.MultiWorldQuestItemBox(
+				146,
+				finished ? 65 : 88,
+				quest,
+				mwQuest,
+				!hideRewards
+			);
+
+			this.newItemsGui.setPos(124, finished ? 180 : 157);
+			this.addChildGui(this.newItemsGui);
 		}
 	});
 
@@ -151,6 +151,103 @@ export function patch(plugin: MwRandomizer) {
 
 			buttonGroup.removeFocusGui(0, 1);
 			buttonGroup.addFocusGui(this.declineButton, 1, 0);
+		}
+	});
+
+	sc.MultiWorldQuestItemBox = ig.GuiElementBase.extend({
+		gfx: new ig.Image("media/gui/menu.png"),
+		scrollBox: null,
+		content: null,
+		init(
+			width: number,
+			height: number,
+			quest: sc.Quest,
+			mwQuest: RawQuest,
+			showRewardAnyway: boolean,
+		) {
+			this.parent();
+
+			if (sc.multiworld.client.status != ap.CONNECTION_STATUS.CONNECTED) {
+				return;
+			}
+			this.setSize(width, height);
+
+			this.scrollBox = new sc.ScrollPane(sc.ScrollType.Y_ONLY);
+			this.scrollBox.showTopBar = false;
+			this.scrollBox.showBottomBar = false;
+			this.scrollBox.setSize(width, height);
+			this.addChildGui(this.scrollBox);
+			this.content = new ig.GuiElementBase();
+			this.scrollBox.setContent(this.content);
+
+			const hiddenQuestRewardMode = sc.multiworld.options.hiddenQuestRewardMode;
+			let hideRewards = quest.hideRewards;
+			if (hiddenQuestRewardMode == "show_all") {
+				hideRewards = false;
+			} else if (hiddenQuestRewardMode == "hide_all") {
+				hideRewards = true;
+			}
+
+			this.hideRewards = hideRewards && !showRewardAnyway;
+
+			this.setQuest(mwQuest);
+		},
+
+		update() {
+			if (!ig.interact.isBlocked()) {
+				if (sc.control.menuScrollUp()) {
+					this.scrollBox.scrollY(-20, false, 0.05);
+				} else if (sc.control.menuScrollDown()) {
+					this.scrollBox.scrollY(20, false, 0.05);
+				}
+			}
+		},
+
+		setQuest(mwQuest: RawQuest) {
+			if (sc.multiworld.options.questDialogHints && !this.hideRewards) {
+				sc.multiworld.client.locations.scout(ap.CREATE_AS_HINT_MODE.HINT_ONLY_NEW, ...mwQuest.mwids);
+			}
+
+			let accum = 0;
+
+			for (let i = 0; i < mwQuest.mwids.length; i++) {
+				const mwid: number = mwQuest.mwids[i]
+				const item: ap.NetworkItem = sc.multiworld.locationInfo[mwid];
+
+				const itemInfo = plugin.getItemInfo(item);
+
+				if (this.hideRewards) {
+					itemInfo.label = "?????????????";
+					if (sc.multiworld.questSettings.hidePlayer) {
+						itemInfo.player =  "?????????????";
+					}
+				}
+
+				const itemGui = new sc.TextGui(plugin.getGuiString(itemInfo), { "maxWidth": this.hook.size.x - 3 });
+				const worldGui = new sc.TextGui(itemInfo.player, { "font": sc.fontsystem.tinyFont });
+
+				if (itemInfo.level > 0) {
+					itemGui.setDrawCallback(function (width: number, height: number) {
+						sc.MenuHelper.drawLevel(
+							itemInfo.level,
+							width,
+							height,
+							this.gfx,
+							itemInfo.isScalable
+						);
+					}.bind(this));
+				}
+
+				itemGui.setPos(0, accum);
+				accum += itemGui.hook.size.y + 3;
+
+				worldGui.setPos(15, itemGui.hook.size.y - 2);
+				this.content.addChildGui(itemGui);
+				itemGui.addChildGui(worldGui);
+			}
+
+			this.content.setSize(this.hook.size.x, accum + 3);
+			this.scrollBox.recalculateScrollBars();
 		}
 	});
 }
