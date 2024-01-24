@@ -1,6 +1,7 @@
 import * as ap from "archipelago.js";
 import type MwRandomizer from "../plugin";
 import type { RawQuest } from "../item-data.model";
+import { getElementIconString } from "../utils";
 import "../types/multiworld-model.d";
 
 export function patch(plugin: MwRandomizer) {
@@ -88,7 +89,8 @@ export function patch(plugin: MwRandomizer) {
 				finished ? 65 : 88,
 				quest,
 				mwQuest,
-				!hideRewards
+				!hideRewards,
+				false
 			);
 
 			this.newItemsGui.setPos(124, finished ? 180 : 157);
@@ -119,16 +121,23 @@ export function patch(plugin: MwRandomizer) {
 			}
 
 			this.removeChildGui(this.itemsGui);
+			this.expGui.setText("");
+			this.moneyGui.setText("");
+			this.cpGui.setText("");
+			this.atCurLevelGui.doStateTransition("HIDDEN", true);
+
+			window.qdv = this;
 
 			this.newItemsGui = new sc.MultiWorldQuestItemBox(
-				146,
-				finished ? 65 : 88,
+				152,
+				110,
 				quest,
 				mwQuest,
-				!hideRewards
+				!quest.hideRewards,
+				true
 			);
 
-			this.newItemsGui.setPos(124, finished ? 180 : 157);
+			this.newItemsGui.setPos(23, 154);
 			this.addChildGui(this.newItemsGui);
 		}
 	});
@@ -164,6 +173,7 @@ export function patch(plugin: MwRandomizer) {
 			quest: sc.Quest,
 			mwQuest: RawQuest,
 			showRewardAnyway: boolean,
+			includeAllRewards: boolean,
 		) {
 			this.parent();
 
@@ -189,8 +199,9 @@ export function patch(plugin: MwRandomizer) {
 			}
 
 			this.hideRewards = hideRewards && !showRewardAnyway;
+			this.includeAllRewards = includeAllRewards;
 
-			this.setQuest(mwQuest);
+			this.setQuest(mwQuest, quest);
 		},
 
 		update() {
@@ -203,12 +214,42 @@ export function patch(plugin: MwRandomizer) {
 			}
 		},
 
-		setQuest(mwQuest: RawQuest) {
+		setQuest(mwQuest: RawQuest, quest: sc.Quest) {
 			if (sc.multiworld.options.questDialogHints && !this.hideRewards) {
 				sc.multiworld.client.locations.scout(ap.CREATE_AS_HINT_MODE.HINT_ONLY_NEW, ...mwQuest.mwids);
 			}
 
+			this.content.removeAllChildren();
+
 			let accum = 0;
+
+			if (this.includeAllRewards) {
+				if (quest.rewards.exp) {
+					let label = this.hideRewards ? "????" : quest.rewards.exp.exp;
+					let expGui = new sc.TextGui(`\\i[exp]${label}`);
+					expGui.setPos(0, accum);
+					this.content.addChildGui(expGui);
+					accum += 16;
+				}
+
+				if (quest.rewards.money) {
+					let label = this.hideRewards ? "????????" : quest.rewards.money;
+					let creditGui = new sc.TextGui(`\\i[credit]${label}`);
+					creditGui.setPos(0, accum);
+					this.content.addChildGui(creditGui);
+					accum += 16;
+				}
+
+				if (quest.rewards.cp) {
+					let label = this.hideRewards
+						? "????????" 
+						: getElementIconString(quest.rewards.cp.element) + " x" + quest.rewards.cp.amount;
+					let cpGui = new sc.TextGui(`\\i[cp]${label}`);
+					cpGui.setPos(0, accum);
+					this.content.addChildGui(cpGui);
+					accum += 16;
+				}
+			}
 
 			for (let i = 0; i < mwQuest.mwids.length; i++) {
 				const mwid: number = mwQuest.mwids[i]

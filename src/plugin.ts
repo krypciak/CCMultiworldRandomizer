@@ -6,7 +6,7 @@ import {applyPatches} from "./patches/index";
 
 export default class MwRandomizer {
 	baseDirectory: string;
-	randoData: WorldData = null;
+	randoData: WorldData;
 	itemdb: any;
 
 	constructor(mod: {baseDirectory: string}) {
