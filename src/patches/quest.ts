@@ -129,7 +129,7 @@ export function patch(plugin: MwRandomizer) {
 			window.qdv = this;
 
 			this.newItemsGui = new sc.MultiWorldQuestItemBox(
-				152,
+				150,
 				110,
 				quest,
 				mwQuest,
@@ -137,7 +137,7 @@ export function patch(plugin: MwRandomizer) {
 				true
 			);
 
-			this.newItemsGui.setPos(23, 154);
+			this.newItemsGui.setPos(25, 154);
 			this.addChildGui(this.newItemsGui);
 		}
 	});
@@ -211,6 +211,12 @@ export function patch(plugin: MwRandomizer) {
 				} else if (sc.control.menuScrollDown()) {
 					this.scrollBox.scrollY(20, false, 0.05);
 				}
+
+				if (sc.control.downDown()) {
+					this.scrollBox.scrollY(200 * ig.system.tick)
+				} else if (sc.control.upDown()) {
+					this.scrollBox.scrollY(-200 * ig.system.tick);
+				}
 			}
 		},
 
@@ -264,7 +270,11 @@ export function patch(plugin: MwRandomizer) {
 					}
 				}
 
-				const itemGui = new sc.TextGui(plugin.getGuiString(itemInfo), { "maxWidth": this.hook.size.x - 3 });
+				const labelGui = new sc.TextGui(`\\i[${itemInfo.icon}]`);
+				const itemGui = new sc.TextGui(itemInfo.label, {
+					maxWidth: this.hook.size.x - 20,
+					linePadding: -4,
+				});
 				const worldGui = new sc.TextGui(itemInfo.player, { "font": sc.fontsystem.tinyFont });
 
 				if (itemInfo.level > 0) {
@@ -279,10 +289,12 @@ export function patch(plugin: MwRandomizer) {
 					}.bind(this));
 				}
 
-				itemGui.setPos(0, accum);
+				itemGui.setPos(15, accum);
 				accum += itemGui.hook.size.y + 3;
+				labelGui.setPos(-15, 0);
+				itemGui.addChildGui(labelGui);
 
-				worldGui.setPos(15, itemGui.hook.size.y - 2);
+				worldGui.setPos(2, itemGui.hook.size.y - 2);
 				this.content.addChildGui(itemGui);
 				itemGui.addChildGui(worldGui);
 			}
