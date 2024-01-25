@@ -1,4 +1,5 @@
 {
+	"_comment": "Quests that are always randomized, even if quest rando is off.",
 	"quests": {
 		"Chase the Hologram Frobbit": {
 			"questid": "daft-frobbit",
