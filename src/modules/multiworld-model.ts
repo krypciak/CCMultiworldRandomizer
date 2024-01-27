@@ -131,7 +131,7 @@ ig.module("mw-rando.multiworld-model")
 						sc.model.player.setCore(elementConstant, true);
 					}
 				} else if (itemInfo.item < this.baseNormalItemId) {
-					switch (this.datapackage.item_id_to_name[itemInfo.item]) {
+					switch (this.gamepackage.item_id_to_name[itemInfo.item]) {
 						case "SP Upgrade":
 							sc.model.player.setSpLevel(Number(sc.model.player.spLevel) + 1);
 							sc.party.currentParty.forEach((name: string) => {
@@ -257,7 +257,7 @@ ig.module("mw-rando.multiworld-model")
 					return;
 				}
 
-				this.datapackage = this.client.data.package.get("CrossCode");
+				this.gamepackage = this.client.data.package.get("CrossCode");
 
 				this.client.addListener('ReceivedItems', (packet: ap.ReceivedItemsPacket) => {
 					let index = packet.index;
