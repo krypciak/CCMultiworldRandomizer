@@ -86,6 +86,10 @@ ig.module("mw-rando.multiworld-model")
 					this.localCheckedLocations = [];
 				}
 
+				if (sc.model.isTitle() || ig.game.mapName == "newgame") {
+					return;
+				}
+
 				for (let i = this.lastIndexSeen + 1; i < this.client.items.received.length; i++) {
 					let item = this.client.items.received[i];
 					this.addMultiworldItem(item, i);
@@ -260,6 +264,9 @@ ig.module("mw-rando.multiworld-model")
 				this.gamepackage = this.client.data.package.get("CrossCode");
 
 				this.client.addListener('ReceivedItems', (packet: ap.ReceivedItemsPacket) => {
+					if (!ig.game.mapName || ig.game.mapName == "newgame") {
+						return;
+					}
 					let index = packet.index;
 					for (const [offset, itemInfo] of packet.items.entries()) {
 						this.addMultiworldItem(itemInfo, index + offset);
@@ -286,13 +293,13 @@ ig.module("mw-rando.multiworld-model")
 
 				let checkedSet = new Set(this.client.locations.checked);
 
+				sc.multiworld.onLevelLoaded();
+
 				for (const location of this.localCheckedLocations) {
 					if (!checkedSet.has(location)) {
 						this.reallyCheckLocation(location);
 					}
 				}
-
-				sc.multiworld.onLevelLoaded();
 			},
 		});
 
