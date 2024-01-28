@@ -86,6 +86,9 @@ export function patch(plugin: MwRandomizer) {
 		init: function () {
 			this.parent();
 
+			this.boundExitCallback = function () {
+			}.bind(this);
+
 			this.hook.zIndex = 9999999;
 			this.hook.localAlpha = 0.0;
 			this.hook.pauseGui = true;
@@ -234,12 +237,12 @@ export function patch(plugin: MwRandomizer) {
 			this.doStateTransition("DEFAULT");
 		},
 
-		hideMenu: function () {
+		exitMenu: function () {
 			this.parent();
 			ig.interact.setBlockDelay(0.1);
 			this.removeObservers();
-			this.msgBox.doStateTransition("HIDDEN");
 			this.doStateTransition("HIDDEN", false);
+
 		},
 
 		onBackButtonPress: function () {
@@ -249,14 +252,26 @@ export function patch(plugin: MwRandomizer) {
 
 		addObservers: function () {
 			sc.Model.addObserver(sc.model, this);
+			sc.Model.addObserver(sc.multiworld, this);
 		},
 
 		removeObservers: function () {
 			sc.Model.removeObserver(sc.model, this);
+			sc.Model.removeObserver(sc.multiworld, this);
 		},
 
 		modelChanged: function(model: any, msg: number, data: any) {
-			if (model == sc.multiworld && msg == sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED) {
+			if (model == sc.multiworld && msg == sc.MULTIWORLD_MSG.OPTIONS_PRESENT) {
+				// if we launched from the title screen that means we are in a context
+				// where we want to put in our login info and start the game.
+				// so we wait for options to be present and when they are, we exit the menu.
+				// exiting the menu automatically activates a bit of code
+				// set by the new game mode select callback.
+				// if connection details are available, it starts the game.
+				if (sc.model.isTitle()) {
+					sc.newgame.setActive(true);
+					sc.model.enterRunning();
+				}
 			}
 		},
 
