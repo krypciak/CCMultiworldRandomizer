@@ -90,6 +90,22 @@ ig.module("mw-rando.multiworld-model")
 					let item = this.client.items.received[i];
 					this.addMultiworldItem(item, i);
 				}
+
+				let area = ig.game.mapName.split(".")[0];
+				new ap.Client().send([
+					{
+						cmd: "Set",
+						key: "area",
+						default: "rookie-harbor",
+						want_reply: false,
+						operations: [
+							{
+								operation: "replace",
+								value: area,
+							}
+						]
+					}
+				]);
 			},
 
 			notifyItemsSent(items: ap.NetworkItem[]) {
