@@ -762,6 +762,9 @@
 				"linear": "23",
 				"open": "open10" 
 			},
+			"condition": [
+				[ "item", "Heat" ]
+			],
 			"reward": [
 				[ "item", "Moon Fruit", 5 ], [ "item", "Huge Nut", 3 ], [ "item", "Lazy Claw", 2 ]
 			]
@@ -1001,9 +1004,6 @@
 				"linear": "2",
 				"open": "open2" 
 			},
-			"condition": [
-				[ "item", "Disc of Insight" ]
-			],
 			"reward":
 			[
 				[ "item", "Edge o' All", 1 ]
@@ -1015,9 +1015,6 @@
 				"linear": "3",
 				"open": "open3" 
 			},
-			"condition": [
-				[ "item", "Disc of Insight" ]
-			],
 			"reward": [
 				[ "item", "Bronze Edge", 1 ]
 			]
@@ -1058,9 +1055,6 @@
 				"linear": "3",
 				"open": "open3" 
 			},
-			"condition": [
-				[ "item", "Disc of Insight" ]
-			],
 			"reward": [
 				[ "item", "Hi-Sandwich", 3 ], [ "item", "Just Water", 3 ]
 			]
@@ -1086,7 +1080,6 @@
 			},
 			"condition": [
 				[ "item", "Blue Ice Shade", 1 ],
-				[ "item", "Red Flame Shade", 1 ],
 				[ "item", "Heat", 1 ],
 				[ "item", "Cold", 1 ],
 				[ "quest", "Smuggle Trouble" ]
@@ -1101,9 +1094,6 @@
 				"linear": "3",
 				"open": "open3" 
 			},
-			"condition": [
-				[ "item", "Disc of Insight", 1 ]
-			],
 			"reward": [
 				[ "item", "Gold Beetle", 5 ], [ "item", "Veggie Wraps", 3 ]
 			]
@@ -1144,9 +1134,6 @@
 				"linear": "3",
 				"open": "open3" 
 			},
-			"condition": [
-				[ "item", "Disc of Insight", 1 ]
-			],
 			"reward": [
 				[ "item", "Season Apples", 4 ], [ "item", "Fruit Salad", 3 ]
 			]
