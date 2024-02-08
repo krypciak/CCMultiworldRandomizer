@@ -100,6 +100,7 @@ ig.module("mw-rando.multiworld-model")
 				}
 
 				let area = ig.game.mapName.split(".")[0];
+
 				new ap.Client().send([
 					{
 						cmd: "Set",
@@ -305,13 +306,13 @@ ig.module("mw-rando.multiworld-model")
 					hideIcon: obfuscationLevel == "hide_all"
 				};
 
+				sc.multiworld.onLevelLoaded();
+
 				sc.Model.notifyObserver(sc.multiworld, sc.MULTIWORLD_MSG.OPTIONS_PRESENT);
 
 				this.storeAllLocationInfo();
 
 				let checkedSet = new Set(this.client.locations.checked);
-
-				sc.multiworld.onLevelLoaded();
 
 				for (const location of this.localCheckedLocations) {
 					if (!checkedSet.has(location)) {
