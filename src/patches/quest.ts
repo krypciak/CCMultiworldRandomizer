@@ -89,7 +89,7 @@ export function patch(plugin: MwRandomizer) {
 				finished ? 65 : 88,
 				quest,
 				mwQuest,
-				!hideRewards,
+				finished,
 				false
 			);
 
@@ -121,6 +121,9 @@ export function patch(plugin: MwRandomizer) {
 			}
 
 			this.removeChildGui(this.itemsGui);
+			if (this.newItemsGui) {
+				this.removeChildGui(this.newItemsGui);
+			}
 			this.expGui.setText("");
 			this.moneyGui.setText("");
 			this.cpGui.setText("");
@@ -133,7 +136,7 @@ export function patch(plugin: MwRandomizer) {
 				110,
 				quest,
 				mwQuest,
-				!quest.hideRewards,
+				false,
 				true
 			);
 
@@ -267,6 +270,10 @@ export function patch(plugin: MwRandomizer) {
 					itemInfo.label = "?????????????";
 					if (sc.multiworld.questSettings.hidePlayer) {
 						itemInfo.player =  "?????????????";
+					}
+
+					if (sc.multiworld.questSettings.hideIcon) {
+						itemInfo.icon = "ap-logo";
 					}
 				}
 
