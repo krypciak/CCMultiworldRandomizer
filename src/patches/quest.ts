@@ -163,6 +163,12 @@ export function patch(plugin: MwRandomizer) {
 
 			buttonGroup.removeFocusGui(0, 1);
 			buttonGroup.addFocusGui(this.declineButton, 1, 0);
+		},
+
+		setAcceptMode(buttonGroup: sc.ButtonGroup) {
+			this.parent(buttonGroup);
+
+			this.hook.size.x = 142;
 		}
 	});
 
