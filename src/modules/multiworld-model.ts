@@ -86,6 +86,14 @@ ig.module("mw-rando.multiworld-model")
 					this.localCheckedLocations = [];
 				}
 
+				if (sc.model.isTitle() || ig.game.mapName == "newgame") {
+					return;
+				}
+
+				if (this.client.status == ap.CLIENT_STATUS.CONNECTED) {
+					this.client.updateStatus(ap.CLIENT_STATUS.PLAYING);
+				}
+
 				for (let i = this.lastIndexSeen + 1; i < this.client.items.received.length; i++) {
 					let item = this.client.items.received[i];
 					this.addMultiworldItem(item, i);
@@ -147,7 +155,7 @@ ig.module("mw-rando.multiworld-model")
 						sc.model.player.setCore(elementConstant, true);
 					}
 				} else if (itemInfo.item < this.baseNormalItemId) {
-					switch (this.datapackage.item_id_to_name[itemInfo.item]) {
+					switch (this.gamepackage.item_id_to_name[itemInfo.item]) {
 						case "SP Upgrade":
 							sc.model.player.setSpLevel(Number(sc.model.player.spLevel) + 1);
 							sc.party.currentParty.forEach((name: string) => {
@@ -273,9 +281,12 @@ ig.module("mw-rando.multiworld-model")
 					return;
 				}
 
-				this.datapackage = this.client.data.package.get("CrossCode");
+				this.gamepackage = this.client.data.package.get("CrossCode");
 
 				this.client.addListener('ReceivedItems', (packet: ap.ReceivedItemsPacket) => {
+					if (!ig.game.mapName || ig.game.mapName == "newgame") {
+						return;
+					}
 					let index = packet.index;
 					for (const [offset, itemInfo] of packet.items.entries()) {
 						this.addMultiworldItem(itemInfo, index + offset);
@@ -296,19 +307,17 @@ ig.module("mw-rando.multiworld-model")
 
 				sc.Model.notifyObserver(sc.multiworld, sc.MULTIWORLD_MSG.OPTIONS_PRESENT);
 
-				this.client.updateStatus(ap.CLIENT_STATUS.PLAYING);
-
 				this.storeAllLocationInfo();
 
 				let checkedSet = new Set(this.client.locations.checked);
+
+				sc.multiworld.onLevelLoaded();
 
 				for (const location of this.localCheckedLocations) {
 					if (!checkedSet.has(location)) {
 						this.reallyCheckLocation(location);
 					}
 				}
-
-				sc.multiworld.onLevelLoaded();
 			},
 		});
 
