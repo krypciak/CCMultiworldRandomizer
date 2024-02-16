@@ -86,10 +86,35 @@ ig.module("mw-rando.multiworld-model")
 					this.localCheckedLocations = [];
 				}
 
+				if (sc.model.isTitle() || ig.game.mapName == "newgame") {
+					return;
+				}
+
+				if (this.client.status == ap.CLIENT_STATUS.CONNECTED) {
+					this.client.updateStatus(ap.CLIENT_STATUS.PLAYING);
+				}
+
 				for (let i = this.lastIndexSeen + 1; i < this.client.items.received.length; i++) {
 					let item = this.client.items.received[i];
 					this.addMultiworldItem(item, i);
 				}
+
+				let area = ig.game.mapName.split(".")[0];
+
+				new ap.Client().send([
+					{
+						cmd: "Set",
+						key: "area",
+						default: "rookie-harbor",
+						want_reply: false,
+						operations: [
+							{
+								operation: "replace",
+								value: area,
+							}
+						]
+					}
+				]);
 			},
 
 			notifyItemsSent(items: ap.NetworkItem[]) {
@@ -131,7 +156,7 @@ ig.module("mw-rando.multiworld-model")
 						sc.model.player.setCore(elementConstant, true);
 					}
 				} else if (itemInfo.item < this.baseNormalItemId) {
-					switch (this.datapackage.item_id_to_name[itemInfo.item]) {
+					switch (this.gamepackage.item_id_to_name[itemInfo.item]) {
 						case "SP Upgrade":
 							sc.model.player.setSpLevel(Number(sc.model.player.spLevel) + 1);
 							sc.party.currentParty.forEach((name: string) => {
@@ -257,9 +282,12 @@ ig.module("mw-rando.multiworld-model")
 					return;
 				}
 
-				this.datapackage = this.client.data.package.get("CrossCode");
+				this.gamepackage = this.client.data.package.get("CrossCode");
 
 				this.client.addListener('ReceivedItems', (packet: ap.ReceivedItemsPacket) => {
+					if (!ig.game.mapName || ig.game.mapName == "newgame") {
+						return;
+					}
 					let index = packet.index;
 					for (const [offset, itemInfo] of packet.items.entries()) {
 						this.addMultiworldItem(itemInfo, index + offset);
@@ -278,9 +306,9 @@ ig.module("mw-rando.multiworld-model")
 					hideIcon: obfuscationLevel == "hide_all"
 				};
 
-				sc.Model.notifyObserver(sc.multiworld, sc.MULTIWORLD_MSG.OPTIONS_PRESENT);
+				sc.multiworld.onLevelLoaded();
 
-				this.client.updateStatus(ap.CLIENT_STATUS.PLAYING);
+				sc.Model.notifyObserver(sc.multiworld, sc.MULTIWORLD_MSG.OPTIONS_PRESENT);
 
 				this.storeAllLocationInfo();
 
@@ -291,8 +319,6 @@ ig.module("mw-rando.multiworld-model")
 						this.reallyCheckLocation(location);
 					}
 				}
-
-				sc.multiworld.onLevelLoaded();
 			},
 		});
 

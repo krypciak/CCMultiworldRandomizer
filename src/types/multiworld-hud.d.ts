@@ -31,4 +31,27 @@ declare namespace sc {
 	}
 
 	var MultiWorldHudBox: sc.MultiWorldHudBoxConstructor;
+
+	interface MultiWorldQuestItemBox extends ig.GuiElementBase {
+		gfx: ig.Image;
+		scrollBox: sc.ScrollPane;
+		content: ig.GuiElementBase;
+		hideRewards: boolean;
+		includeAllRewards: boolean;
+
+		setQuest(this: this, mwQuest: RawQuest, quest: sc.Quest);
+	}
+
+	interface MultiWorldQuestItemBoxConstructor extends ImpactClass<MultiWorldQuestItemBox> {
+		new(
+			width: number,
+			height: number,
+			quest: sc.Quest,
+			mwQuest: RawQuest,
+			showRewardAnyway: boolean,
+			includeAllRewards: boolean,
+		): MultiWorldQuestItemBox;
+	}
+
+	var MultiWorldQuestItemBox: sc.MultiWorldQuestItemBoxConstructor;
 }

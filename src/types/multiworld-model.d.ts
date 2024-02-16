@@ -37,7 +37,7 @@ declare namespace sc {
 		baseId: number;
 		baseNormalItemId: number;
 		numItems: number;
-		datapackage: ap.GamePackage;
+		gamepackage: ap.GamePackage;
 
 		questSettings: {
 			hidePlayer: boolean;

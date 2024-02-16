@@ -485,7 +485,14 @@
 					"to": "open14.4",
 					"condition": [
 						[ "item", "So'najiz Key", 4 ],
-						[ "item", "Shock", 1 ]
+						[ "item", "Radiant Key", 1 ]
+					]
+				},
+				{
+					"from": "open14.4",
+					"to": "open14.5",
+					"condition": [
+						[ "item", "Shock" ]
 					]
 				},
 				{

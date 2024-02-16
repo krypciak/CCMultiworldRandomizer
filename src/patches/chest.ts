@@ -30,6 +30,11 @@ export function patch(plugin: MwRandomizer) {
 
 			let newOffY = 0;
 			this.rawChest = sc.multiworld.locationInfo[this.mwCheck.mwids[0]];
+
+			if (this.rawChest == undefined) {
+				return;
+			}
+
 			let flags = this.rawChest.flags;
 			if (flags & (ap.ITEM_FLAGS.NEVER_EXCLUDE | ap.ITEM_FLAGS.TRAP)) {
 				// USEFUL and TRAP items get a blue chest
@@ -66,7 +71,7 @@ export function patch(plugin: MwRandomizer) {
 
 		getQuickMenuSettings() {
 			let disabled = this.isOpen || (this.hideManager && this.hideManager.hidden);
-			if (this.mwCheck) {
+			if (this.mwCheck && this.rawChest) {
 				return {
 					type: "Chest",
 					disabled: disabled,
