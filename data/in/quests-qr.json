@@ -1,20 +1,9 @@
 {
 	"_comment": "Quests that are only randomized if quest rando is on.",
-	"_patch": {
-		"cutscenes::FIND": {
-			"query": {},
-			"amount": 0,
-			"mode": "merge",
-			"content": {
-				"questRandoOnly": true
-			}
-		},
-		"quests::FIND": {
-			"query": {},
-			"amount": 0,
-			"mode": "merge",
-			"content": {
-				"questRandoOnly": true
+	"_global": {
+		"/cutscenes|quests/": {
+			"//": {
+				"flags": [ "QUEST_RANDO_ONLY" ]
 			}
 		}
 	},
