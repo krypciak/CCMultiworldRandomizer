@@ -1438,9 +1438,12 @@
 			},
 			"clearance": "Bronze",
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"linear": "4",
+				"open": "open4.1"
 			},
+			"condition": [
+				[ "item", "Heat" ]
+			],
 			"reward": [
 				[
 					"item",
