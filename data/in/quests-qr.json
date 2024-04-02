@@ -2,8 +2,10 @@
 	"_comment": "Quests that are only randomized if quest rando is on.",
 	"_global": {
 		"/cutscenes|quests/": {
-			"//": {
-				"flags": [ "QUEST_RANDO_ONLY" ]
+			"*": {
+				"metadata": {
+					"questRandoOnly": true
+				}
 			}
 		}
 	},
