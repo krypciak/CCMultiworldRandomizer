@@ -7,6 +7,26 @@
 		"Krys'kajo Key"
 	],
 	"items": {
+		"Heat": {
+			"reserved": true,
+			"id": 0
+		},
+		"Cold": {
+			"reserved": true,
+			"id": 1
+		},
+		"Shock": {
+			"reserved": true,
+			"id": 2
+		},
+		"Wave": {
+			"reserved": true,
+			"id": 3
+		},
+		"SP Upgrade": {
+			"reserved": true,
+			"id": 4
+		},
 		"Golden Triangle": {
 			"id": 0
 		},
