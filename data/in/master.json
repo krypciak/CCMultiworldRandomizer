@@ -8,7 +8,7 @@
 		"quests-qr.json",
 		"items.json",
 		"vars.json",
-		"item-pools.json"
+		"item-pools/master.json"
 	],
 	"version": "5",
 	"modes": [ "linear", "open" ],

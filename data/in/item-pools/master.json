@@ -2,6 +2,10 @@
 	"_includes": [
 		"required.json",
 		"equip.json",
-		"common.json"
+		"common.json",
+		"rare.json",
+		"epic.json",
+		"legendary.json",
+		"pets.json"
 	]
 }
