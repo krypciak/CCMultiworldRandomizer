@@ -1,7 +1,7 @@
 {
 	"_comment": "Quests that are only randomized if quest rando is on.",
 	"_global": {
-		"/cutscenes|quests/": {
+		"/cutscenes|chests|quests/": {
 			"*": {
 				"metadata": {
 					"questRandoOnly": true
@@ -60,6 +60,26 @@
 			],
 			"reward": [
 				[ "item", "Strawberry Hat", 1 ]
+			]
+		}
+	},
+	"chests": {
+		"Bergen Village South - Storage Room": {
+			"location": {
+				"map": "bergen.storage",
+				"mapId": 71
+			},
+			"clearance": "Default",
+			"region": {
+				"linear": "3",
+				"open": "open3"
+			},
+			"reward": [
+				[
+					"item",
+					"Just Water",
+					6
+				]
 			]
 		}
 	},
