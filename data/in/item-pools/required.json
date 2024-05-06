@@ -90,55 +90,20 @@
 				"quantity": 5
 			},
 			{
-				"item": ["item", "Mine Key"],
-				"quantity": -4,
-				"metadata": {
-					"keyrings": true
-				}
-			},
-			{
 				"item": ["item", "Faj'ro Key"],
 				"quantity": 9
 			},
 			{
-				"item": ["item", "Faj'ro Key"],
-				"quantity": -8,
-				"metadata": {
-					"keyrings": true
-				}
-			},
-			{
 				"item": ["item", "Zir'vitar Key"],
 				"quantity": 2
-			},
-			{
-				"item": ["item", "Zir'vitar Key"],
-				"quantity": -1,
-				"metadata": {
-					"keyrings": true
-				}
 			},
 			{
 				"item": ["item", "So'najiz Key"],
 				"quantity": 4
 			},
 			{
-				"item": ["item", "So'najiz Key"],
-				"quantity": -3,
-				"metadata": {
-					"keyrings": true
-				}
-			},
-			{
 				"item": ["item", "Krys'kajo Key"],
 				"quantity": 2
-			},
-			{
-				"item": ["item", "Krys'kajo Key"],
-				"quantity": -1,
-				"metadata": {
-					"keyrings": true
-				}
 			},
 			{
 				"item": ["item", "Thief's Key"],
