@@ -30,7 +30,7 @@ You will also need the following dependency mods:
 
 Open CrossCode and start a new save file. I recommend New Game+ with the Skip Beginning option. Also consider using Get on My Level, especially if you are using open mode logic. You will start in the last stretch of the Rookie Dungeon. **The chests in the rookie dungeon are not in logic.**
 
-Until further notice, you **must** associate an archipelago connection before collecting any chests beyond the Rookie Dungeon due to some latent bugs.
+You **must** associate an Archipelago connection before collecting any chests in the pause menu, otherwise your game will crash.
 
 You will know if the mod is working when you get to space for the first time and you don't recieve the Disc of Insight and Green Leaf Shade as expected.
 
