@@ -10,7 +10,7 @@ This is still under heavy development, though it works and will, for the most pa
 
 ## How to generate your own multiworld with crosscode seeds
 
-Download the APWorld file from the [releases page of the CrossCode development branch](https://github.com/CodeTriangle/Archipelago/releases/latest) and put it into `lib/worlds` in your Archipelago folder. **This integration requires Archipelago 0.4.2 to roll the seed**.
+Download the APWorld file from the [releases page of this repository](https://github.com/CodeTriangle/CCMultiworldRandomizer/releases/latest) and put it into `lib/worlds` in your Archipelago folder. **This integration requires Archipelago 0.4.2 to roll the seed**.
 
 Then put your yamls in the `Players` directory and run the `Generate` program. If you need a yaml to build off of, we have some in the discord.
 
