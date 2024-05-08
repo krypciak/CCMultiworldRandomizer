@@ -1224,7 +1224,8 @@
 				"open": "open9"
 			},
 			"condition": [
-				[ "quest", "Intensive Tree Care" ]
+				[ "quest", "Intensive Tree Care" ],
+				[ "item", "Heat" ]
 			],
 			"reward": [
 				[ "item", "Ginger Tom. Salad", 4 ],
