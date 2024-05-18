@@ -1,6 +1,7 @@
 import { defineVarProperty } from "../utils";
 import * as ap from "archipelago.js";
 import {ig, sc} from "ultimate-crosscode-typedefs";
+import { MultiworldOptions } from "../types/multiworld-model";
 
 ig.module("mw-rando.multiworld-model")
 	.requires("impact.feature.storage.storage")
@@ -33,6 +34,7 @@ ig.module("mw-rando.multiworld-model")
 				defineVarProperty(this, "localCheckedLocations", "mw.checkedLocations");
 				defineVarProperty(this, "mode", "mw.mode");
 				defineVarProperty(this, "options", "mw.options");
+				defineVarProperty(this, "progressiveChainProgress", "mw.progressiveChainProgress");
 
 				window.setInterval(this.updateConnectionStatus.bind(this), 300);
 			},
@@ -83,6 +85,10 @@ ig.module("mw-rando.multiworld-model")
 
 				if (!this.localCheckedLocations) {
 					this.localCheckedLocations = [];
+				}
+
+				if (!this.progressiveChainProgress) {
+					this.progressiveChainProgress = {};
 				}
 
 				if (sc.model.isTitle() || ig.game.mapName == "newgame") {
@@ -142,6 +148,8 @@ ig.module("mw-rando.multiworld-model")
 
 				const foreign = itemInfo.player != this.client.data.slot;
 
+				let displayMessage = foreign || itemInfo.item < this.baseNormalItemId;
+
 				if (itemInfo.item < this.baseId + 4) {
 					if (!sc.model.player.getCore(sc.PLAYER_CORE.ELEMENT_CHANGE)) {
 						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_CHANGE, true);
@@ -154,6 +162,16 @@ ig.module("mw-rando.multiworld-model")
 					if (elementConstant != null) {
 						sc.model.player.setCore(elementConstant, true);
 					}
+				} else if (this.options.progressiveChains[itemInfo.item]) {
+					if (!this.progressiveChainProgress[itemInfo.item]) {
+						this.progressiveChainProgress[itemInfo.item] = 0;
+					}
+					const chain = this.options.progressiveChains[itemInfo.item];
+					const itemIdToGive = chain[this.progressiveChainProgress[itemInfo.item]++];
+					const copiedItem = {...itemInfo};
+					copiedItem.item = itemIdToGive;
+					this.addMultiworldItem(copiedItem, index);
+					displayMessage = false;
 				} else if (itemInfo.item < this.baseNormalItemId) {
 					switch (this.gamepackage.item_id_to_name[itemInfo.item]) {
 						case "SP Upgrade":
@@ -172,7 +190,7 @@ ig.module("mw-rando.multiworld-model")
 					sc.model.player.addItem(Number(itemId), quantity, foreign);
 				}
 
-				if (foreign || itemInfo.item < this.baseNormalItemId) {
+				if (displayMessage) {
 					sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.ITEM_RECEIVED, itemInfo);
 				}
 
@@ -302,9 +320,9 @@ ig.module("mw-rando.multiworld-model")
 
 				// this is always going to be a string
 				this.mode = this.client.data.slotData.mode as unknown as string;
-				this.options = this.client.data.slotData.options;
+				this.options = this.client.data.slotData.options as unknown as MultiworldOptions;
 
-				const obfuscationLevel: string = this.options.hiddenQuestObfuscationLevel;
+				const obfuscationLevel = this.options.hiddenQuestObfuscationLevel;
 
 				this.questSettings = {
 					hidePlayer: obfuscationLevel == "hide_text" || obfuscationLevel == "hide_all",

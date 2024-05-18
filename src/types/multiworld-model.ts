@@ -1,6 +1,18 @@
 import type {WorldData} from "../item-data.model";
 import type * as ap from "archipelago.js";
 
+export type MultiworldOptions = {
+	vtShadeLock: boolean | number,
+	meteorPassage: boolean,
+	vtSkip: boolean,
+	keyrings: number[],
+	questRando: boolean,
+	hiddenQuestRewardMode: string,
+	hiddenQuestObfuscationLevel: string,
+	questDialogHints: boolean,
+	progressiveChains: Record<string, number[]>
+};
+
 declare global {
 	namespace ig {
 		namespace EVENT_STEP {
@@ -54,7 +66,8 @@ declare global {
 			connectionInfo: ap.ConnectionInformation;
 			localCheckedLocations: number[];
 			mode: string;
-			options: any;
+			options: MultiworldOptions;
+			progressiveChainProgress: Record<number, number>;
 
 			getElementConstantFromComboId(this: this, comboId: number): number | null;
 			getItemDataFromComboId(this: this, comboId: number): [itemId: number, quantity: number];
