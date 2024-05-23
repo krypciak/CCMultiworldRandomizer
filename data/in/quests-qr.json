@@ -1004,10 +1004,7 @@
 				"open": "open2"
 			},
 			"condition": [
-				[ "item", "Blue Ice Shade", 1 ],
-				[ "item", "Red Flame Shade", 1 ],
-				[ "item", "Heat", 1 ],
-				[ "item", "Cold", 1 ]
+				[ "item", "Red Flame Shade", 1 ]
 			]
 		},
 		"Training: VPI": {
@@ -1017,10 +1014,8 @@
 				"open": "open2"
 			},
 			"condition": [
-				[ "item", "Blue Ice Shade", 1 ],
-				[ "item", "Red Flame Shade", 1 ],
-				[ "item", "Heat", 1 ],
-				[ "item", "Cold", 1 ]
+				[ "item", "Red Flame Shade", 1 ]
+
 			]
 		},
 		"Faction Introduction": {
