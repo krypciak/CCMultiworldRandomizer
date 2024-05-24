@@ -1959,7 +1959,7 @@
 		"heat-dng.g.room-13": {
 			"chests": {
 				"2": {
-					"name": "Faj'ro Temple GF - Test of Memory 2",
+					"name": "Faj'ro Temple GF - Test of Memory Left",
 					"mwids": [
 						3235824226
 					]
@@ -1969,7 +1969,7 @@
 		"heat-dng.g.room-14": {
 			"chests": {
 				"2": {
-					"name": "Faj'ro Temple GF - Test of Memory 1",
+					"name": "Faj'ro Temple GF - Test of Memory Right",
 					"mwids": [
 						3235824227
 					]
