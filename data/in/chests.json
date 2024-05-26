@@ -1424,8 +1424,12 @@
 				"open": "open4.1"
 			},
 			"condition": [
-				[ "item", "Heat" ]
+				[ "or", [ "item", "Heat" ], [ "item", "Mine Key", 1 ] ],
+				[ "quest","The Legendary Bunny" ]
 			],
+			"metadata": {
+				"questRandoOnly": true
+			},
 			"reward": [
 				[
 					"item",
@@ -4336,7 +4340,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple GF - Test of Memory 2": {
+		"Faj'ro Temple GF - Test of Memory Left": {
 			"location": {
 				"map": "heat-dng.g.room-13",
 				"mapId": 2
@@ -4354,7 +4358,7 @@
 				]
 			]
 		},
-		"Faj'ro Temple GF - Test of Memory 1": {
+		"Faj'ro Temple GF - Test of Memory Right": {
 			"location": {
 				"map": "heat-dng.g.room-14",
 				"mapId": 2
@@ -4771,8 +4775,20 @@
 			"clearance": "Bronze",
 			"region": {
 				"linear": "28",
-				"open": "open15.1"
+				"open": "open10"
 			},
+			"condition": [
+				[
+					"item",
+					"Azure Drop Shade",
+					1
+				],
+				[
+					"item",
+					"Purple Bolt Shade",
+					1
+				]
+			],
 			"reward": [
 				[
 					"item",
@@ -4796,13 +4812,6 @@
 					"item",
 					"Golden Bars",
 					2
-				]
-			],
-			"condition": [
-				[
-					"item",
-					"Wave",
-					1
 				]
 			]
 		},
