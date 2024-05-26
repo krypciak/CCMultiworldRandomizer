@@ -1,4 +1,11 @@
 {
+	"_global": {
+		"progressiveChains": {
+			"*": {
+				"multi": true
+			}
+		}
+	},
 	"progressiveChains": {
 		"legsAllPurpose": {
 			"displayName": "All-Purpose Legs",
@@ -453,7 +460,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
-						"chest": false
+						"chest": false,
 						"quest": false
 					},
 					"content": [

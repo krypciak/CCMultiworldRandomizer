@@ -1,4 +1,11 @@
 {
+	"_global": {
+		"progressiveChains": {
+			"*": {
+				"multi": true
+			}
+		}
+	},
 	"progressiveChains": {
 		"armsAllPurpose": {
 			"displayName": "All-Purpose Arms",
@@ -13,7 +20,7 @@
 						"quest": true
 					},
 					"content": [
-						{ "item": ["item", "Edge O' All", 1] },
+						{ "item": ["item", "Edge o' All", 1] },
 						{ "item": ["item", "Bronze Edge", 1] },
 						{ "item": ["item", "Core Drill", 1] },
 						{ "item": ["item", "Iron Edge", 1] },
@@ -35,7 +42,7 @@
 						"quest": true
 					},
 					"content": [
-						{ "item": ["item", "Edge O' All", 1] },
+						{ "item": ["item", "Edge o' All", 1] },
 						{ "item": ["item", "Bronze Edge", 1] },
 						{ "item": ["item", "Iron Edge", 1] },
 						{ "item": ["item", "Steel Edge", 1] },
@@ -53,7 +60,7 @@
 						"quest": true
 					},
 					"content": [
-						{ "item": ["item", "Edge O' All", 1] },
+						{ "item": ["item", "Edge o' All", 1] },
 						{ "item": ["item", "Bronze Edge", 1] },
 						{ "item": ["item", "Core Drill", 1] },
 						{ "item": ["item", "Iron Edge", 1] },
@@ -729,7 +736,7 @@
 						"quest": true
 					},
 					"content": [
-						{ "item": ["item", "Edge O' All", 1] },
+						{ "item": ["item", "Edge o' All", 1] },
 						{ "item": ["item", "Core Drill", 1] },
 						{ "item": ["item", "Swiftspike", 1] },
 						{ "item": ["item", "Climbing Pick", 1] },
@@ -801,7 +808,7 @@
 						"quest": true
 					},
 					"content": [
-						{ "item": ["item", "Edge O' All", 1] },
+						{ "item": ["item", "Edge o' All", 1] },
 						{ "item": ["item", "Swiftspike", 1] },
 						{ "item": ["item", "Rocksplitter", 1] },
 						{ "item": ["item", "Prickly Bracer", 1] },
@@ -839,7 +846,7 @@
 						"quest": true
 					},
 					"content": [
-						{ "item": ["item", "Edge O' All", 1] },
+						{ "item": ["item", "Edge o' All", 1] },
 						{ "item": ["item", "Core Drill", 1] },
 						{ "item": ["item", "Swiftspike", 1] },
 						{ "item": ["item", "Climbing Pick", 1] },
@@ -1046,7 +1053,7 @@
 						"quest": true
 					},
 					"content": [
-						{ "item": ["item", "Edge O' All", 1] },
+						{ "item": ["item", "Edge o' All", 1] },
 						{ "item": ["item", "Bronze Edge", 1] },
 						{ "item": ["item", "Swiftspike", 1] },
 						{ "item": ["item", "Battered Fist", 1] },
@@ -1069,7 +1076,7 @@
 						"quest": true
 					},
 					"content": [
-						{ "item": ["item", "Edge O' All", 1] },
+						{ "item": ["item", "Edge o' All", 1] },
 						{ "item": ["item", "Swiftspike", 1] },
 						{ "item": ["item", "Battered Fist", 1] },
 						{ "item": ["item", "Disciple Gloves", 1] },
