@@ -1428,7 +1428,7 @@
 				[ "quest","The Legendary Bunny" ]
 			],
 			"metadata": {
-				"questRandoOnly": true
+				"quest": true
 			},
 			"reward": [
 				[

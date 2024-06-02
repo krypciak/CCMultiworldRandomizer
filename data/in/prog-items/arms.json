@@ -20,7 +20,7 @@
 						"quest": true
 					},
 					"content": [
-						{ "item": ["item", "Edge o' All", 1] },
+						{ "item": ["item", "Edge o' All", 2] },
 						{ "item": ["item", "Bronze Edge", 1] },
 						{ "item": ["item", "Core Drill", 1] },
 						{ "item": ["item", "Iron Edge", 1] },
@@ -42,7 +42,7 @@
 						"quest": true
 					},
 					"content": [
-						{ "item": ["item", "Edge o' All", 1] },
+						{ "item": ["item", "Edge o' All", 2] },
 						{ "item": ["item", "Bronze Edge", 1] },
 						{ "item": ["item", "Iron Edge", 1] },
 						{ "item": ["item", "Steel Edge", 1] },
@@ -60,7 +60,7 @@
 						"quest": true
 					},
 					"content": [
-						{ "item": ["item", "Edge o' All", 1] },
+						{ "item": ["item", "Edge o' All", 2] },
 						{ "item": ["item", "Bronze Edge", 1] },
 						{ "item": ["item", "Core Drill", 1] },
 						{ "item": ["item", "Iron Edge", 1] },
@@ -519,7 +519,7 @@
 						{ "item": ["item", "Copper Gull", 1] },
 						{ "item": ["item", "Gunner's Trigger", 1] },
 						{ "item": ["item", "Hunter's Bolt", 1] },
-						{ "item": ["item", "Rough Branch", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
 						{ "item": ["item", "Silver Hawk", 1] },
 						{ "item": ["item", "Golden Revolver", 1] },
 						{ "item": ["item", "Bigger Stick", 1] },
@@ -541,7 +541,7 @@
 						{ "item": ["item", "Copper Gull", 1] },
 						{ "item": ["item", "Gunner's Trigger", 1] },
 						{ "item": ["item", "Hunter's Bolt", 1] },
-						{ "item": ["item", "Rough Branch", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
 						{ "item": ["item", "Silver Hawk", 1] },
 						{ "item": ["item", "Golden Revolver", 1] },
 						{ "item": ["item", "Bigger Stick", 1] },
@@ -584,7 +584,7 @@
 						{ "item": ["item", "Copper Gull", 1] },
 						{ "item": ["item", "Gunner's Trigger", 1] },
 						{ "item": ["item", "Hunter's Bolt", 1] },
-						{ "item": ["item", "Rough Branch", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
 						{ "item": ["item", "Silver Hawk", 1] },
 						{ "item": ["item", "Golden Revolver", 1] },
 						{ "item": ["item", "Bigger Stick", 1] },
@@ -627,7 +627,7 @@
 						{ "item": ["item", "Copper Gull", 1] },
 						{ "item": ["item", "Gunner's Trigger", 1] },
 						{ "item": ["item", "Hunter's Bolt", 1] },
-						{ "item": ["item", "Rough Branch", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
 						{ "item": ["item", "Silver Hawk", 1] },
 						{ "item": ["item", "Golden Revolver", 1] },
 						{ "item": ["item", "Bigger Stick", 1] },
@@ -736,7 +736,7 @@
 						"quest": true
 					},
 					"content": [
-						{ "item": ["item", "Edge o' All", 1] },
+						{ "item": ["item", "Edge o' All", 2] },
 						{ "item": ["item", "Core Drill", 1] },
 						{ "item": ["item", "Swiftspike", 1] },
 						{ "item": ["item", "Climbing Pick", 1] },
@@ -808,7 +808,7 @@
 						"quest": true
 					},
 					"content": [
-						{ "item": ["item", "Edge o' All", 1] },
+						{ "item": ["item", "Edge o' All", 2] },
 						{ "item": ["item", "Swiftspike", 1] },
 						{ "item": ["item", "Rocksplitter", 1] },
 						{ "item": ["item", "Prickly Bracer", 1] },
@@ -846,7 +846,7 @@
 						"quest": true
 					},
 					"content": [
-						{ "item": ["item", "Edge o' All", 1] },
+						{ "item": ["item", "Edge o' All", 2] },
 						{ "item": ["item", "Core Drill", 1] },
 						{ "item": ["item", "Swiftspike", 1] },
 						{ "item": ["item", "Climbing Pick", 1] },
@@ -979,7 +979,7 @@
 						{ "item": ["item", "Hunter's Bolt", 1] },
 						{ "item": ["item", "Sunset Claw", 1] },
 						{ "item": ["item", "Adept Gloves", 1] },
-						{ "item": ["item", "Rough Branch", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
 						{ "item": ["item", "Aehre", 1] }
 					]
 				},
@@ -1000,7 +1000,7 @@
 						{ "item": ["item", "Hunter's Bolt", 1] },
 						{ "item": ["item", "Sunset Claw", 1] },
 						{ "item": ["item", "Adept Gloves", 1] },
-						{ "item": ["item", "Rough Branch", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
 						{ "item": ["item", "Aehre", 1] }
 					]
 				},
@@ -1017,7 +1017,7 @@
 						{ "item": ["item", "Winterclaw", 1] },
 						{ "item": ["item", "Humming Razor", 1] },
 						{ "item": ["item", "Sunset Claw", 1] },
-						{ "item": ["item", "Rough Branch", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
 						{ "item": ["item", "Aehre", 1] }
 					]
 				},
@@ -1034,7 +1034,7 @@
 						{ "item": ["item", "Winterclaw", 1] },
 						{ "item": ["item", "Humming Razor", 1] },
 						{ "item": ["item", "Sunset Claw", 1] },
-						{ "item": ["item", "Rough Branch", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
 						{ "item": ["item", "Aehre", 1] }
 					]
 				}
@@ -1053,7 +1053,7 @@
 						"quest": true
 					},
 					"content": [
-						{ "item": ["item", "Edge o' All", 1] },
+						{ "item": ["item", "Edge o' All", 2] },
 						{ "item": ["item", "Bronze Edge", 1] },
 						{ "item": ["item", "Swiftspike", 1] },
 						{ "item": ["item", "Battered Fist", 1] },
@@ -1076,7 +1076,7 @@
 						"quest": true
 					},
 					"content": [
-						{ "item": ["item", "Edge o' All", 1] },
+						{ "item": ["item", "Edge o' All", 2] },
 						{ "item": ["item", "Swiftspike", 1] },
 						{ "item": ["item", "Battered Fist", 1] },
 						{ "item": ["item", "Disciple Gloves", 1] },
