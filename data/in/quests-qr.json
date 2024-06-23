@@ -64,21 +64,28 @@
 		}
 	},
 	"chests": {
-		"Bergen Village South - Storage Room": {
+		"Bergen Village - Omni Gilders Basement Left (Bronze)": {
 			"location": {
-				"map": "bergen.storage",
-				"mapId": 71
+				"map": "bergen.interior.guild-basement",
+				"mapId": 42
 			},
-			"clearance": "Default",
+			"clearance": "Bronze",
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"linear": "4",
+				"open": "open4.1"
+			},
+			"condition": [
+				[ "or", [ "item", "Heat" ], [ "item", "Mine Key", 1 ] ],
+				[ "quest","The Legendary Bunny" ]
+			],
+			"metadata": {
+				"questRandoOnly": true
 			},
 			"reward": [
 				[
 					"item",
-					"Just Water",
-					6
+					"Prickly Bracer",
+					1
 				]
 			]
 		}
