@@ -37,12 +37,10 @@ declare global {
 
 		interface MultiWorldQuestItemBox extends ig.GuiElementBase {
 			gfx: ig.Image;
-			scrollBox: sc.ScrollPane;
-			content: ig.GuiElementBase;
 			hideRewards: boolean;
 			includeAllRewards: boolean;
 
-			setQuest(this: this, mwQuest: RawQuest, quest: sc.Quest): void;
+			setQuest(this: this, mwQuest: RawQuest): void;
 		}
 
 		interface MultiWorldQuestItemBoxConstructor extends ImpactClass<MultiWorldQuestItemBox> {

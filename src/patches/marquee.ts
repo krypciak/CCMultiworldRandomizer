@@ -147,9 +147,11 @@ export function patch(plugin: MwRandomizer) {
 
 			this.itemInfo = itemInfo;
 
-			const worldGui = new sc.TextGui(itemInfo.player, { "font": sc.fontsystem.tinyFont });
-			worldGui.setPos(2, this.iconGui.hook.size.y - 2);
-			this.addChildGui(worldGui);
+			this.worldGui = new sc.TextGui(itemInfo.player, { "font": sc.fontsystem.tinyFont });
+			this.worldGui.setPos(2, this.iconGui.hook.size.y - 2);
+			this.addChildGui(this.worldGui);
+
+			this.hook.size.y += 4;
 		}
 	});
 }
