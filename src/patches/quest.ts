@@ -313,15 +313,10 @@ export function patch(plugin: MwRandomizer) {
 					}
 				}
 
-				const labelGui = new sc.TextGui(`\\i[${itemInfo.icon}]`);
-				const itemGui = new sc.TextGui(itemInfo.label, {
-					maxWidth: this.hook.size.x - 20,
-					linePadding: -4,
-				});
-				const worldGui = new sc.TextGui(itemInfo.player, { "font": sc.fontsystem.tinyFont });
+				const marqueeGui = new sc.MultiWorldItemMarqueeGui(itemInfo, this.hook.size.x);
 
 				if (itemInfo.level > 0) {
-					labelGui.setDrawCallback((width: number, height: number) => {
+					marqueeGui.iconGui.setDrawCallback((width: number, height: number) => {
 						sc.MenuHelper.drawLevel(
 							itemInfo.level,
 							width,
@@ -332,14 +327,10 @@ export function patch(plugin: MwRandomizer) {
 					});
 				}
 
-				itemGui.setPos(15, accum);
-				accum += itemGui.hook.size.y + 3;
-				labelGui.setPos(-15, 0);
-				itemGui.addChildGui(labelGui);
+				marqueeGui.setPos(0, accum);
+				accum += marqueeGui.hook.size.y + 3;
 
-				worldGui.setPos(2, itemGui.hook.size.y - 2);
-				this.content.addChildGui(itemGui);
-				itemGui.addChildGui(worldGui);
+				this.content.addChildGui(marqueeGui);
 			}
 
 			this.content.setSize(this.hook.size.x, accum + 3);
