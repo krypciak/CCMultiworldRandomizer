@@ -1,12 +1,9 @@
 import { defineVarProperty } from "../utils";
 import * as ap from "archipelago.js";
-import {ig, sc} from "ultimate-crosscode-typedefs";
 import { MultiworldOptions } from "../types/multiworld-model";
+import MwRandomizer from "../plugin";
 
-ig.module("mw-rando.multiworld-model")
-	.requires("impact.feature.storage.storage")
-	.defines(() => {
-
+export function patch(plugin: MwRandomizer) {
 		sc.MULTIWORLD_MSG = {
 			CONNECTION_STATUS_CHANGED: 0,
 			ITEM_SENT: 1,
@@ -348,4 +345,4 @@ ig.module("mw-rando.multiworld-model")
 		ig.addGameAddon(() => {
 			return (sc.multiworld = new sc.MultiWorldModel());
 		});
-	});
+}

@@ -1,5 +1,6 @@
 import type MwRandomizer from "../plugin";
 
+import { patch as patchMwModel } from "./multiworld-model";
 import { patch as patchChest } from "./chest";
 import { patch as patchEntities } from "./entity";
 import { patch as patchEvent } from "./event";
@@ -9,6 +10,7 @@ import { patch as patchQuest } from "./quest";
 import { patch as patchNewGame } from "./new-game";
 
 export function applyPatches(plugin: MwRandomizer) {
+	patchMwModel(plugin);
 	patchChest(plugin);
 	patchEntities(plugin);
 	patchEvent(plugin);
