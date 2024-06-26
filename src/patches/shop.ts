@@ -13,8 +13,11 @@ export function patch(plugin: MwRandomizer) {
 			}
 
 			const shopData = sc.randoData.shops[shopID];
+
+			let accum = 0;
 			for (const entry of this.list.getChildren()) {
 				const gui = (entry as unknown as ig.GuiHook).gui;
+				gui.hook.pos.y += accum;
 
 				const itemId: number = gui.data.id;
 				const mwid: number = shopData[itemId];
@@ -26,8 +29,18 @@ export function patch(plugin: MwRandomizer) {
 
 				button.textChild = new sc.ItemMarqueeGui(itemInfo.icon, itemInfo.label, button.hook.size.x - 10);
 				button.textChild.hook.pos.x = 5;
+				button.hook.align.y = ig.GUI_ALIGN.Y_CENTER;
 				button.addChildGui(button.textChild);
+
+				const worldGui = new sc.TextGui(itemInfo.player, { "font": sc.fontsystem.tinyFont });
+				worldGui.hook.pos.x = 22;
+				worldGui.hook.pos.y = button.hook.size.y;
+				accum += worldGui.hook.size.y;
+				button.addChildGui(worldGui);
 			}
+
+			this.list.list.contentPane.hook.size.y += accum;
+			this.list.list.recalculateScrollBars();
 		},
 	})
 }
