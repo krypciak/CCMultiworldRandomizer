@@ -38,6 +38,10 @@
 				"quantity": 1
 			},
 			{
+				"item": ["item", "Rough Branch", 2],
+				"quantity": 1
+			},
+			{
 				"item": ["item", "Aehre"],
 				"quantity": 1
 			},
@@ -62,11 +66,27 @@
 				"quantity": 1
 			},
 			{
+				"item": ["item", "Furry Cap"],
+				"quantity": 1
+			},
+			{
 				"item": ["item", "Mighty Strand"],
 				"quantity": 1
 			},
 			{
-				"item": ["item", "Furry Cap"],
+				"item": ["item", "Thief's Band"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Dented Crown"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Tengu Mask"],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Burglar's Rope"],
 				"quantity": 1
 			},
 			{
@@ -112,8 +132,12 @@
 		],
 		"equipQuests": [
 			{
-				"item": ["item", "Edge o' All"],
-				"quantity": 2
+				"item": ["item", "Edge o' All", 2],
+				"quantity": 1
+			},
+			{
+				"item": ["item", "Swiftspike"],
+				"quantity": 1
 			},
 			{
 				"item": ["item", "Bronze Edge"],
