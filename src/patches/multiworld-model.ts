@@ -165,9 +165,12 @@ export function patch(plugin: MwRandomizer) {
 					}
 					const chain = this.options.progressiveChains[itemInfo.item];
 					const itemIdToGive = chain[this.progressiveChainProgress[itemInfo.item]++];
-					const copiedItem = {...itemInfo};
-					copiedItem.item = itemIdToGive;
-					this.addMultiworldItem(copiedItem, index);
+					if (itemIdToGive != undefined) {
+						const copiedItem = {...itemInfo};
+						copiedItem.item = itemIdToGive;
+						this.addMultiworldItem(copiedItem, index);
+					}
+
 					displayMessage = false;
 				} else if (itemInfo.item < this.baseNormalItemId) {
 					switch (this.gamepackage.item_id_to_name[itemInfo.item]) {
