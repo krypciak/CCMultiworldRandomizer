@@ -151,7 +151,7 @@ export function patch(plugin: MwRandomizer) {
 				true
 			);
 
-			let y = 154;
+			let y = 160;
 			if (quest.rewards.exp) {
 				y += 16;
 			}
@@ -162,7 +162,7 @@ export function patch(plugin: MwRandomizer) {
 				y += 16;
 			}
 
-			this.newItemsGui.setPos(20, y);
+			this.newItemsGui.setPos(21, y);
 			this.addChildGui(this.newItemsGui);
 		}
 	});
