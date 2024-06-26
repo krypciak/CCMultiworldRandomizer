@@ -78,9 +78,6 @@
 				[ "or", [ "item", "Heat" ], [ "item", "Mine Key", 1 ] ],
 				[ "quest","The Legendary Bunny" ]
 			],
-			"metadata": {
-				"questRandoOnly": true
-			},
 			"reward": [
 				[
 					"item",
