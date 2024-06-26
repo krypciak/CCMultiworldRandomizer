@@ -14,10 +14,6 @@ declare global {
 			newItemsGui: sc.MultiWorldQuestItemBox;
 		}
 	}
-	interface Window {
-		qdv: sc.QuestDetailsView;
-	}
-	var qdv: sc.QuestDetailsView;
 }
 
 export function patch(plugin: MwRandomizer) {
@@ -145,8 +141,6 @@ export function patch(plugin: MwRandomizer) {
 				this.removeChildGui(this.newItemsGui);
 			}
 			this.atCurLevelGui.doStateTransition("HIDDEN", true);
-
-			window.qdv = this;
 
 			this.newItemsGui = new sc.MultiWorldQuestItemBox(
 				150,
