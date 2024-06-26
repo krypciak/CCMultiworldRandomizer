@@ -103,8 +103,8 @@ export function patch(plugin: MwRandomizer) {
 
 				let area = ig.game.mapName.split(".")[0];
 
-				new ap.Client().send(
-					{
+				if (this.client.status == ap.CONNECTION_STATUS.CONNECTED) {
+					this.client.send({
 						cmd: "Set",
 						key: "area",
 						default: "rookie-harbor",
@@ -115,8 +115,8 @@ export function patch(plugin: MwRandomizer) {
 								value: area,
 							}
 						]
-					}
-				);
+					});
+				}
 			},
 
 			notifyItemsSent(items: ap.NetworkItem[]) {
