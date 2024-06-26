@@ -8,6 +8,7 @@
 		"quests-qr.json",
 		"items.json",
 		"shops.json",
+		"progressive-items.json",
 		"vars.json",
 		"item-pools/master.json"
 	],

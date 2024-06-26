@@ -64,21 +64,25 @@
 		}
 	},
 	"chests": {
-		"Bergen Village South - Storage Room": {
+		"Bergen Village - Omni Gilders Basement Left (Bronze)": {
 			"location": {
-				"map": "bergen.storage",
-				"mapId": 71
+				"map": "bergen.interior.guild-basement",
+				"mapId": 42
 			},
-			"clearance": "Default",
+			"clearance": "Bronze",
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"linear": "4",
+				"open": "open4.1"
 			},
+			"condition": [
+				[ "or", [ "item", "Heat" ], [ "item", "Mine Key", 1 ] ],
+				[ "quest","The Legendary Bunny" ]
+			],
 			"reward": [
 				[
 					"item",
-					"Just Water",
-					6
+					"Prickly Bracer",
+					1
 				]
 			]
 		}
@@ -214,30 +218,21 @@
 			"region": {
 				"linear": "3",
 				"open": "open3"
-			},
-			"condition": [
-				[ "quest", "Autumn's Rise Trailblazing" ]
-			]
+			}
 		},
 		"Bergen Trailblazing Defeat": {
 			"questid": "trailblaze-bergen-2",
 			"region": {
 				"linear": "3",
 				"open": "open3"
-			},
-			"condition": [
-				[ "quest", "Autumn's Rise Trailblazing" ]
-			]
+			}
 		},
 		"Bergen Trailblazing Landmarks": {
 			"questid": "trailblaze-bergen-3",
 			"region": {
 				"linear": "3",
 				"open": "open3"
-			},
-			"condition": [
-				[ "quest", "Autumn's Rise Trailblazing" ]
-			]
+			}
 		},
 		"Bergen Trailblazing Data Probe": {
 			"questid": "trailblaze-bergen-4",
@@ -247,7 +242,6 @@
 				"open": "open3"
 			},
 			"condition": [
-				[ "quest", "Autumn's Rise Trailblazing" ],
 				[ "item", "Heat" ]
 			]
 		},
@@ -516,7 +510,6 @@
 				"open": "open3"
 			},
 			"condition": [
-				[ "quest", "A Promise is a Promise" ],
 				[ "item", "Broken Shield", 1 ]
 			]
 		},
@@ -527,6 +520,9 @@
 				"open": "open9"
 			},
 			"condition": [
+				[ "quest", "Autumn's Rise Trailblazing" ],
+				[ "quest", "Bergen Trailblazing" ],
+				[ "quest", "Maroon Valley Trailblazing" ],
 				[ "quest", "Gaia's Garden Trailblazing" ]
 			],
 			"reward": [
@@ -578,40 +574,28 @@
 			"region": {
 				"linear": "11",
 				"open": "open5"
-			},
-			"condition": [
-				[ "quest", "Bergen Trailblazing" ]
-			]
+			}
 		},
 		"Maroon Valley Defeat": {
 			"questid": "trailblaze-maroon-2",
 			"region": {
 				"linear": "11",
 				"open": "open5"
-			},
-			"condition": [
-				[ "quest", "Bergen Trailblazing" ]
-			]
+			}
 		},
 		"Maroon Valley Landmarks": {
 			"questid": "trailblaze-maroon-3",
 			"region": {
 				"linear": "11",
 				"open": "open5"
-			},
-			"condition": [
-				[ "quest", "Bergen Trailblazing" ]
-			]
+			}
 		},
 		"Maroon Valley Data Probe": {
 			"questid": "trailblaze-maroon-4",
 			"region": {
 				"linear": "11",
 				"open": "open5"
-			},
-			"condition": [
-				[ "quest", "Bergen Trailblazing" ]
-			]
+			}
 		},
 		"Maroon Tree Defender": {
 			"questid": "maroon-tree-defend",
@@ -647,6 +631,7 @@
 			"condition": [
 				[ "quest", "Blasting Shells" ],
 				[ "item", "Red Flame Shade", 1 ],
+				[ "item", "Cold" ],
 				[ "item", "Heat", 1 ]
 			],
 			"reward": [
@@ -743,7 +728,6 @@
 				"open": "open5"
 			},
 			"condition": [
-				[ "quest", "A Promise is a Promise 2" ],
 				[ "item", "Broken Sword", 1 ],
 				[ "item", "Cursed Coin", 1 ],
 				[ "item", "White Key", 1 ],
@@ -816,6 +800,7 @@
 				"open": "open10"
 			},
 			"condition": [
+				[ "item", "Cold" ],
 				[ "item", "Heat" ]
 			],
 			"reward": [
@@ -897,7 +882,6 @@
 				"open": "open10"
 			},
 			"condition": [
-				[ "quest", "A Promise is a Promise 3" ],
 				[ "item", "Broken Deck", 1 ]
 			]
 		},
@@ -919,30 +903,21 @@
 			"region": {
 				"linear": "23",
 				"open": "open10"
-			},
-			"condition": [
-				[ "quest", "Maroon Valley Trailblazing" ]
-			]
+			}
 		},
 		"Gaia's Garden Defeat": {
 			"questid": "trailblaze-jungle-2",
 			"region": {
 				"linear": "23",
 				"open": "open10"
-			},
-			"condition": [
-				[ "quest", "Maroon Valley Trailblazing" ]
-			]
+			}
 		},
 		"Gaia's Garden Landmarks": {
 			"questid": "trailblaze-jungle-3",
 			"region": {
 				"linear": "23",
 				"open": "open10"
-			},
-			"condition": [
-				[ "quest", "Maroon Valley Trailblazing" ]
-			]
+			}
 		},
 		"Gaia's Garden Data Probe": {
 			"questid": "trailblaze-jungle-4",
@@ -951,7 +926,6 @@
 				"open": "open10"
 			},
 			"condition": [
-				[ "quest", "Maroon Valley Trailblazing" ],
 				[ "item", "Wave", 1 ]
 			]
 		},
@@ -989,6 +963,9 @@
 			},
 			"condition": [
 				[ "item", "Broken Chakrams" ],
+				[ "quest", "A Promise is a Promise" ],
+				[ "quest", "A Promise is a Promise 2" ],
+				[ "quest", "A Promise is a Promise 3" ],
 				[ "quest", "A Promise is a Promise 4" ]
 			]
 		},
@@ -1033,10 +1010,7 @@
 				"open": "open2"
 			},
 			"condition": [
-				[ "item", "Blue Ice Shade", 1 ],
-				[ "item", "Red Flame Shade", 1 ],
-				[ "item", "Heat", 1 ],
-				[ "item", "Cold", 1 ]
+				[ "item", "Red Flame Shade", 1 ]
 			]
 		},
 		"Training: VPI": {
@@ -1046,10 +1020,8 @@
 				"open": "open2"
 			},
 			"condition": [
-				[ "item", "Blue Ice Shade", 1 ],
-				[ "item", "Red Flame Shade", 1 ],
-				[ "item", "Heat", 1 ],
-				[ "item", "Cold", 1 ]
+				[ "item", "Red Flame Shade", 1 ]
+
 			]
 		},
 		"Faction Introduction": {
@@ -1224,7 +1196,8 @@
 				"open": "open9"
 			},
 			"condition": [
-				[ "quest", "Intensive Tree Care" ]
+				[ "quest", "Intensive Tree Care" ],
+				[ "item", "Heat" ]
 			],
 			"reward": [
 				[ "item", "Ginger Tom. Salad", 4 ],

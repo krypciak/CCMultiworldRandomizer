@@ -562,6 +562,16 @@
 				}
 			}
 		},
+		"bergen.storage": {
+			"chests": {
+				"71": {
+					"name": "Bergen Village South - Storage Room",
+					"mwids": [
+						3235824076
+					]
+				}
+			}
+		},
 		"bergen.bergen": {
 			"chests": {
 				"868": {
@@ -640,16 +650,6 @@
 					"name": "Bergen Village - Seeker Hub Cellar Right (Bronze)",
 					"mwids": [
 						3235824075
-					]
-				}
-			}
-		},
-		"bergen.interior.guild-basement": {
-			"chests": {
-				"42": {
-					"name": "Bergen Village - Omni Gilders Basement Left (Bronze)",
-					"mwids": [
-						3235824077
 					]
 				}
 			}
@@ -1959,7 +1959,7 @@
 		"heat-dng.g.room-13": {
 			"chests": {
 				"2": {
-					"name": "Faj'ro Temple GF - Test of Memory 2",
+					"name": "Faj'ro Temple GF - Test of Memory Left",
 					"mwids": [
 						3235824226
 					]
@@ -1969,7 +1969,7 @@
 		"heat-dng.g.room-14": {
 			"chests": {
 				"2": {
-					"name": "Faj'ro Temple GF - Test of Memory 1",
+					"name": "Faj'ro Temple GF - Test of Memory Right",
 					"mwids": [
 						3235824227
 					]
@@ -2956,12 +2956,12 @@
 				}
 			}
 		},
-		"bergen.storage": {
+		"bergen.interior.guild-basement": {
 			"chests": {
-				"71": {
-					"name": "Bergen Village South - Storage Room",
+				"42": {
+					"name": "Bergen Village - Omni Gilders Basement Left (Bronze)",
 					"mwids": [
-						3235824076
+						3235824077
 					]
 				}
 			}

@@ -2,7 +2,19 @@ import * as ap from "archipelago.js";
 import type MwRandomizer from "../plugin";
 import type { RawQuest } from "../item-data.model";
 import { getElementIconString } from "../utils";
-import "../types/multiworld-model.d";
+
+declare global {
+	namespace sc {
+		interface QuestDialog extends sc.Model.Observer {
+			finished: boolean;
+			mwQuest: RawQuest;
+			newItemsGui: sc.MultiWorldQuestItemBox;
+		}
+		interface QuestDetailsView {
+			newItemsGui: sc.MultiWorldQuestItemBox;
+		}
+	}
+}
 
 export function patch(plugin: MwRandomizer) {
 	let quests = plugin.randoData?.quests;
@@ -25,18 +37,21 @@ export function patch(plugin: MwRandomizer) {
 	sc.QuestDialogWrapper.inject({
 		init(
 			quest: sc.Quest,
-			callback: CallableFunction,
-			finished: bool,
-			characterName: string,
-			mapName: string,
+			callback,
+			finished,
+			characterName,
+			mapName,
 		) {
 			this.parent(quest, callback, finished, characterName, mapName);
-			this.questBox.hook.pos.y = -14;
-			this.buttons.hook.pos.y -= 1;
+
+			this.buttons.hook.pos.y = finished ? 22 : 23;
+			this.questBox.hook.align.y = ig.GUI_ALIGN.Y_TOP;
+			this.questBox.hook.pos.y = 23;
+			this.questBox.hook.size.y += 10;
 
 			if (this.overlay) {
 				this.questBox.removeChildGui(this.overlay);
-				this.overlay = new ig.BoxGui(281, 246, false, this.questBox.ninepatch);
+				this.overlay = new ig.BoxGui(281, this.questBox.hook.pos.y, false, this.questBox.ninepatch);
 				this.overlay.hook.transitions = {
 					DEFAULT: { state: {}, time: 0.2, timeFunction: KEY_SPLINES.LINEAR },
 					HIDDEN: {
@@ -64,9 +79,6 @@ export function patch(plugin: MwRandomizer) {
 			this.parent(quest, finished);
 
 			this.finished = finished;
-
-			this.hook.align.x = ig.GUI_ALIGN.Y_TOP;
-			this.hook.size.y = 246;
 		},
 
 		setQuestRewards(quest: sc.Quest, hideRewards: boolean, finished: boolean) {
@@ -83,9 +95,12 @@ export function patch(plugin: MwRandomizer) {
 			}
 
 			this.removeChildGui(this.itemsGui);
+			if (this.newItemsGui) {
+				this.removeChildGui(this.newItemsGui);
+			}
 
 			this.newItemsGui = new sc.MultiWorldQuestItemBox(
-				146,
+				142,
 				finished ? 65 : 88,
 				quest,
 				mwQuest,
@@ -93,7 +108,7 @@ export function patch(plugin: MwRandomizer) {
 				false
 			);
 
-			this.newItemsGui.setPos(124, finished ? 180 : 157);
+			this.newItemsGui.setPos(124, finished ? 181 : 158);
 			this.addChildGui(this.newItemsGui);
 		},
 
@@ -112,6 +127,7 @@ export function patch(plugin: MwRandomizer) {
 	sc.QuestDetailsView.inject({
 		_setQuest(quest: sc.Quest) {
 			this.parent(quest);
+
 			let mwQuest = plugin.randoData.quests[quest.id]
 			if (
 				mwQuest === undefined ||
@@ -124,12 +140,7 @@ export function patch(plugin: MwRandomizer) {
 			if (this.newItemsGui) {
 				this.removeChildGui(this.newItemsGui);
 			}
-			this.expGui.setText("");
-			this.moneyGui.setText("");
-			this.cpGui.setText("");
 			this.atCurLevelGui.doStateTransition("HIDDEN", true);
-
-			window.qdv = this;
 
 			this.newItemsGui = new sc.MultiWorldQuestItemBox(
 				150,
@@ -140,42 +151,24 @@ export function patch(plugin: MwRandomizer) {
 				true
 			);
 
-			this.newItemsGui.setPos(25, 154);
+			let y = 160;
+			if (quest.rewards.exp) {
+				y += 16;
+			}
+			if (quest.rewards.money) {
+				y += 16;
+			}
+			if (quest.rewards.cp) {
+				y += 16;
+			}
+
+			this.newItemsGui.setPos(21, y);
 			this.addChildGui(this.newItemsGui);
-		}
-	});
-
-	// Move the quest decline button to the right of the quest accept button.
-	// This is needed so that we can increase the height of the quest dialog.
-	sc.QuestStartDialogButtonBox.inject({
-		init(
-			buttonGroup: sc.ButtonGroup,
-			finished: boolean,
-			mandatory: boolean,
-			parentQuest: boolean,
-		) {
-			this.parent(buttonGroup, finished, mandatory, parentQuest);
-			this.setSize(
-				(finished || mandatory) ? 142 : 281,
-				25
-			);
-			this.declineButton.setPos(142, 3);
-
-			buttonGroup.removeFocusGui(0, 1);
-			buttonGroup.addFocusGui(this.declineButton, 1, 0);
-		},
-
-		setAcceptMode(buttonGroup: sc.ButtonGroup) {
-			this.parent(buttonGroup);
-
-			this.hook.size.x = 142;
 		}
 	});
 
 	sc.MultiWorldQuestItemBox = ig.GuiElementBase.extend({
 		gfx: new ig.Image("media/gui/menu.png"),
-		scrollBox: null,
-		content: null,
 		init(
 			width: number,
 			height: number,
@@ -191,14 +184,6 @@ export function patch(plugin: MwRandomizer) {
 			}
 			this.setSize(width, height);
 
-			this.scrollBox = new sc.ScrollPane(sc.ScrollType.Y_ONLY);
-			this.scrollBox.showTopBar = false;
-			this.scrollBox.showBottomBar = false;
-			this.scrollBox.setSize(width, height);
-			this.addChildGui(this.scrollBox);
-			this.content = new ig.GuiElementBase();
-			this.scrollBox.setContent(this.content);
-
 			const hiddenQuestRewardMode = sc.multiworld.options.hiddenQuestRewardMode;
 			let hideRewards = quest.hideRewards;
 			if (hiddenQuestRewardMode == "show_all") {
@@ -210,61 +195,18 @@ export function patch(plugin: MwRandomizer) {
 			this.hideRewards = hideRewards && !showRewardAnyway;
 			this.includeAllRewards = includeAllRewards;
 
-			this.setQuest(mwQuest, quest);
+			this.setQuest(mwQuest);
 		},
 
-		update() {
-			if (!ig.interact.isBlocked()) {
-				if (sc.control.menuScrollUp()) {
-					this.scrollBox.scrollY(-20, false, 0.05);
-				} else if (sc.control.menuScrollDown()) {
-					this.scrollBox.scrollY(20, false, 0.05);
-				}
-
-				if (sc.control.downDown()) {
-					this.scrollBox.scrollY(200 * ig.system.tick)
-				} else if (sc.control.upDown()) {
-					this.scrollBox.scrollY(-200 * ig.system.tick);
-				}
-			}
-		},
-
-		setQuest(mwQuest: RawQuest, quest: sc.Quest) {
+		setQuest(mwQuest: RawQuest) {
 			if (sc.multiworld.options.questDialogHints && !this.hideRewards) {
+				// @ts-ignore
 				sc.multiworld.client.locations.scout(ap.CREATE_AS_HINT_MODE.HINT_ONLY_NEW, ...mwQuest.mwids);
 			}
 
-			this.content.removeAllChildren();
+			this.removeAllChildren();
 
 			let accum = 0;
-
-			if (this.includeAllRewards) {
-				if (quest.rewards.exp) {
-					let label = this.hideRewards ? "????" : quest.rewards.exp.exp;
-					let expGui = new sc.TextGui(`\\i[exp]${label}`);
-					expGui.setPos(0, accum);
-					this.content.addChildGui(expGui);
-					accum += 16;
-				}
-
-				if (quest.rewards.money) {
-					let label = this.hideRewards ? "????????" : quest.rewards.money;
-					let creditGui = new sc.TextGui(`\\i[credit]${label}`);
-					creditGui.setPos(0, accum);
-					this.content.addChildGui(creditGui);
-					accum += 16;
-				}
-
-				if (quest.rewards.cp) {
-					let label = this.hideRewards
-						? "????????" 
-						: getElementIconString(quest.rewards.cp.element) + " x" + quest.rewards.cp.amount;
-					let cpGui = new sc.TextGui(`\\i[cp]${label}`);
-					cpGui.setPos(0, accum);
-					this.content.addChildGui(cpGui);
-					accum += 16;
-				}
-			}
 
 			for (let i = 0; i < mwQuest.mwids.length; i++) {
 				const mwid: number = mwQuest.mwids[i]
@@ -275,7 +217,7 @@ export function patch(plugin: MwRandomizer) {
 				if (this.hideRewards) {
 					itemInfo.label = "?????????????";
 					if (sc.multiworld.questSettings.hidePlayer) {
-						itemInfo.player =  "?????????????";
+						itemInfo.player = "?????????????";
 					}
 
 					if (sc.multiworld.questSettings.hideIcon) {
@@ -283,15 +225,10 @@ export function patch(plugin: MwRandomizer) {
 					}
 				}
 
-				const labelGui = new sc.TextGui(`\\i[${itemInfo.icon}]`);
-				const itemGui = new sc.TextGui(itemInfo.label, {
-					maxWidth: this.hook.size.x - 20,
-					linePadding: -4,
-				});
-				const worldGui = new sc.TextGui(itemInfo.player, { "font": sc.fontsystem.tinyFont });
+				const marqueeGui = new sc.MultiWorldItemMarqueeGui(itemInfo, this.hook.size.x);
 
 				if (itemInfo.level > 0) {
-					itemGui.setDrawCallback(function (width: number, height: number) {
+					marqueeGui.iconGui.setDrawCallback((width: number, height: number) => {
 						sc.MenuHelper.drawLevel(
 							itemInfo.level,
 							width,
@@ -299,21 +236,14 @@ export function patch(plugin: MwRandomizer) {
 							this.gfx,
 							itemInfo.isScalable
 						);
-					}.bind(this));
+					});
 				}
 
-				itemGui.setPos(15, accum);
-				accum += itemGui.hook.size.y + 3;
-				labelGui.setPos(-15, 0);
-				itemGui.addChildGui(labelGui);
+				marqueeGui.setPos(0, accum);
+				accum += marqueeGui.hook.size.y;
 
-				worldGui.setPos(2, itemGui.hook.size.y - 2);
-				this.content.addChildGui(itemGui);
-				itemGui.addChildGui(worldGui);
+				this.addChildGui(marqueeGui);
 			}
-
-			this.content.setSize(this.hook.size.x, accum + 3);
-			this.scrollBox.recalculateScrollBars();
 		}
 	});
 }

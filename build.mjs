@@ -22,14 +22,3 @@ esbuild.build({
 	}) ],
 	"entryPoints": ["src/plugin.ts"],
 });
-
-esbuild.build({
-	"target": "es2018",
-	"format": "esm",
-	"platform": "node",
-	"bundle": true,
-	"sourcemap": "inline",
-	"outfile": "mw-rando/multiworld-model.js",
-	"entryPoints": ["src/modules/multiworld-model.ts"],
-	"format": "iife"
-});
