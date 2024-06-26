@@ -1,6 +1,7 @@
 export interface WorldData {
 	items: RawItems;
 	quests: RawQuests;
+	shops: RawShops;
 }
 
 export type RawItems = { [mapName: string]: RawMapItems };
@@ -36,6 +37,10 @@ export type RawQuests = { [questName: string]: RawQuest };
 export interface RawQuest {
 	mwids: number[];
 }
+
+export type RawShops = { [shopName: string]: RawShop };
+
+export type RawShop = Record<number, number>;
 
 export interface ItemInfo {
 	icon: string;
