@@ -1,7 +1,5 @@
 import * as ap from "archipelago.js";
 import type MwRandomizer from "../plugin";
-import type { RawQuest } from "../item-data.model";
-import { getElementIconString } from "../utils";
 
 export function patch(plugin: MwRandomizer) {
 	sc.ShopListMenu.inject({
@@ -27,7 +25,14 @@ export function patch(plugin: MwRandomizer) {
 				const item: ap.NetworkItem = sc.multiworld.locationInfo[mwid];
 				const itemInfo = plugin.getItemInfo(item);
 
-				button.textChild = new sc.ItemMarqueeGui(itemInfo.icon, itemInfo.label, button.hook.size.x - 10);
+				const marqueeGui = new sc.ItemMarqueeGui(
+					itemInfo.icon,
+					itemInfo.label,
+					button.hook.size.x - 10,
+					{ autoScroll: false, holdOnReset: false }
+				);
+
+				button.textChild =  marqueeGui;
 				button.textChild.hook.pos.x = 5;
 				button.hook.align.y = ig.GUI_ALIGN.Y_CENTER;
 				button.addChildGui(button.textChild);
@@ -42,5 +47,16 @@ export function patch(plugin: MwRandomizer) {
 			this.list.list.contentPane.hook.size.y += accum;
 			this.list.list.recalculateScrollBars();
 		},
-	})
+	});
+
+	sc.ShopItemButton.inject({
+		focusGained() {
+			this.button.textChild.labelGui?.activate();
+		},
+
+		focusLost() {
+			this.button.textChild.labelGui?.deactivate();
+			this.button.textChild.labelGui?.reset();
+		}
+	});
 }
