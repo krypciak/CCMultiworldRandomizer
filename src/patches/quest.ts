@@ -206,6 +206,8 @@ export function patch(plugin: MwRandomizer) {
 
 			this.removeAllChildren();
 
+			const marqueeGroup = new sc.MarqueeGroup(true);
+
 			let accum = 0;
 
 			for (let i = 0; i < mwQuest.mwids.length; i++) {
@@ -238,6 +240,8 @@ export function patch(plugin: MwRandomizer) {
 						);
 					});
 				}
+
+				marqueeGui.addToGroup(marqueeGroup);
 
 				marqueeGui.setPos(0, accum);
 				accum += marqueeGui.hook.size.y;
