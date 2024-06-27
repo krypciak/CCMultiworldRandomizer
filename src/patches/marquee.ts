@@ -124,11 +124,12 @@ export function patch(plugin: MwRandomizer) {
 
 		reset() {
 			this.currentPosition = 0;
-			this.direction = -1;
 			if (this.holdOnReset) {
 				this.timer = this.holdTime;
+				this.direction = 1;
 			} else {
 				this.timer = 0;
+				this.direction = -1;
 			}
 			this.textGui.hook.pos.x = 0;
 		},
