@@ -1010,6 +1010,8 @@
 				"open": "open2"
 			},
 			"condition": [
+				[ "item", "Heat" ],
+				[ "item", "Cold" ],
 				[ "item", "Red Flame Shade", 1 ]
 			]
 		},
@@ -1020,6 +1022,8 @@
 				"open": "open2"
 			},
 			"condition": [
+				[ "item", "Heat" ],
+				[ "item", "Cold" ],
 				[ "item", "Red Flame Shade", 1 ]
 
 			]
