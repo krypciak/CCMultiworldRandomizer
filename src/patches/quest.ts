@@ -45,13 +45,12 @@ export function patch(plugin: MwRandomizer) {
 			this.parent(quest, callback, finished, characterName, mapName);
 
 			this.buttons.hook.pos.y = finished ? 22 : 23;
-			this.questBox.hook.align.y = ig.GUI_ALIGN.Y_TOP;
-			this.questBox.hook.pos.y = 23;
+			this.questBox.hook.pos.y -= 1;
 			this.questBox.hook.size.y += 10;
 
 			if (this.overlay) {
 				this.questBox.removeChildGui(this.overlay);
-				this.overlay = new ig.BoxGui(281, this.questBox.hook.pos.y, false, this.questBox.ninepatch);
+				this.overlay = new ig.BoxGui(281, this.questBox.hook.size.y, false, this.questBox.ninepatch);
 				this.overlay.hook.transitions = {
 					DEFAULT: { state: {}, time: 0.2, timeFunction: KEY_SPLINES.LINEAR },
 					HIDDEN: {
