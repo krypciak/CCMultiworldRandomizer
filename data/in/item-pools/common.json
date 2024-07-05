@@ -3,7 +3,7 @@
 		"fillerCommonCons": [
 			{
 				"item": ["item", "Sandwich", 3], 
-				"quantity": 50
+				"quantity": 40
 			},
 			{
 				"item": ["item", "Hi-Sandwich", 3], 
