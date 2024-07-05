@@ -316,7 +316,7 @@
 				[ "item", "Blue Orb", 2 ]
 			]
 		},
-		"Preemptive Mining": {
+		"Preemptive Debugging": {
 			"questid": "miners-2-mine_challenge-1",
 			"region": {
 				"linear": "3",
