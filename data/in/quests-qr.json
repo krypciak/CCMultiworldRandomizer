@@ -64,7 +64,7 @@
 		}
 	},
 	"chests": {
-		"Bergen Village - Omni Gilders Basement Left (Bronze)": {
+		"Bergen Village - Omni Gilders Basement Left": {
 			"location": {
 				"map": "bergen.interior.guild-basement",
 				"mapId": 42
@@ -316,7 +316,7 @@
 				[ "item", "Blue Orb", 2 ]
 			]
 		},
-		"Preemptive Mining": {
+		"Preemptive Debugging": {
 			"questid": "miners-2-mine_challenge-1",
 			"region": {
 				"linear": "3",
@@ -1010,6 +1010,8 @@
 				"open": "open2"
 			},
 			"condition": [
+				[ "item", "Heat" ],
+				[ "item", "Cold" ],
 				[ "item", "Red Flame Shade", 1 ]
 			]
 		},
@@ -1020,6 +1022,8 @@
 				"open": "open2"
 			},
 			"condition": [
+				[ "item", "Heat" ],
+				[ "item", "Cold" ],
 				[ "item", "Red Flame Shade", 1 ]
 
 			]

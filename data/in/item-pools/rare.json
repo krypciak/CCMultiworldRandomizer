@@ -7,7 +7,7 @@
 			},
 			{
 				"item": ["item", "Mega-Sandwich", 2 ],
-				"quantity": 30
+				"quantity": 35
 			},
 			{
 				"item": ["item", "Sweet Berry Tea", 2 ],
@@ -15,7 +15,7 @@
 			},
 			{
 				"item": ["item", "Flaming Bun", 3 ],
-				"quantity": 35
+				"quantity": 30
 			},
 			{
 				"item": ["item", "Steak, rare", 3 ],

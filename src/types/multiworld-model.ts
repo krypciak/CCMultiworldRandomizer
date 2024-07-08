@@ -11,6 +11,7 @@ export type MultiworldOptions = {
 	hiddenQuestObfuscationLevel: string,
 	questDialogHints: boolean,
 	progressiveChains: Record<string, number[]>
+	chestClearanceLevels: Record<number, string>
 };
 
 declare global {

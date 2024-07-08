@@ -70,6 +70,12 @@ export function patch(plugin: MwRandomizer) {
 				return;
 			}
 
+			const clearance =  sc.multiworld.options.chestClearanceLevels[this.mwCheck.mwids[0]];
+
+			if (clearance != undefined) {
+				this.chestType = sc.CHEST_TYPE[clearance];
+			}
+
 			const anims = this.animSheet.anims as unknown as {
 				idleKey: ig.MultiDirAnimationSet
 				idleMasterKey: ig.MultiDirAnimationSet
