@@ -64,7 +64,7 @@
 		}
 	},
 	"chests": {
-		"Bergen Village - Omni Gilders Basement Left (Bronze)": {
+		"Bergen Village - Omni Gilders Basement Left": {
 			"location": {
 				"map": "bergen.interior.guild-basement",
 				"mapId": 42
