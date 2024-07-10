@@ -737,6 +737,7 @@
 					},
 					"content": [
 						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 1] },
 						{ "item": ["item", "Core Drill", 1] },
 						{ "item": ["item", "Swiftspike", 1] },
 						{ "item": ["item", "Climbing Pick", 1] },
@@ -809,6 +810,7 @@
 					},
 					"content": [
 						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 1] },
 						{ "item": ["item", "Swiftspike", 1] },
 						{ "item": ["item", "Rocksplitter", 1] },
 						{ "item": ["item", "Prickly Bracer", 1] },
@@ -847,6 +849,7 @@
 					},
 					"content": [
 						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 1] },
 						{ "item": ["item", "Core Drill", 1] },
 						{ "item": ["item", "Swiftspike", 1] },
 						{ "item": ["item", "Climbing Pick", 1] },
@@ -1077,6 +1080,7 @@
 					},
 					"content": [
 						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 1] },
 						{ "item": ["item", "Swiftspike", 1] },
 						{ "item": ["item", "Battered Fist", 1] },
 						{ "item": ["item", "Disciple Gloves", 1] },
