@@ -38,8 +38,8 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
-						"quest": true,
-						"chest": false
+						"chest": false,
+						"quest": true
 					},
 					"content": [
 						{ "item": ["item", "Second Hide", 1] },
@@ -57,8 +57,8 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
-						"quest": false,
-						"chest": true
+						"chest": true,
+						"quest": false
 					},
 					"content": [
 						{ "item": ["item", "Bronze Mail", 1] },
@@ -78,8 +78,8 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
-						"quest": false,
-						"chest": false
+						"chest": false,
+						"quest": false
 					},
 					"content": [
 						{ "item": ["item", "Bronze Mail", 1] },
