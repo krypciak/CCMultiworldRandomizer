@@ -11,6 +11,8 @@ export type MultiworldOptions = {
 	hiddenQuestObfuscationLevel: string,
 	questDialogHints: boolean,
 	progressiveChains: Record<string, number[]>
+	shopSendMode: string,
+	shopReceiveMode: string,
 	chestClearanceLevels: Record<number, string>
 };
 
@@ -53,6 +55,8 @@ declare global {
 
 			baseId: number;
 			baseNormalItemId: number;
+			dynamicItemAreaOffset: number;
+			baseDynamicItemId: number;
 			numItems: number;
 			gamepackage: ap.GamePackage;
 			randoData: WorldData;
@@ -69,6 +73,10 @@ declare global {
 			mode: string;
 			options: MultiworldOptions;
 			progressiveChainProgress: Record<number, number>;
+
+			receivedItemMap: Record<number, number>;
+
+			getShopLabelsFromItemData(item: ap.NetworkItem): sc.ListBoxButton.Data;
 
 			getElementConstantFromComboId(this: this, comboId: number): number | null;
 			getItemDataFromComboId(this: this, comboId: number): [itemId: number, quantity: number];

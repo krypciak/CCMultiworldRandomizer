@@ -38,9 +38,21 @@ export interface RawQuest {
 	mwids: number[];
 }
 
-export type RawShops = { [shopName: string]: RawShop };
+export interface RawShopLocations {
+	global: Record<number, number>;
+	perShop: Record<string, Record<number, number>>;
+}
 
-export type RawShop = Record<number, number>;
+export interface RawShopUnlocks {
+	byId: Record<number, number>;
+	byShop: Record<string, number>;
+	byShopAndId: Record<string, Record<number, number>>;
+}
+
+export type RawShops = {
+	locations: RawShopLocations;
+	unlocks: RawShopUnlocks;
+}
 
 export interface ItemInfo {
 	icon: string;
@@ -48,4 +60,5 @@ export interface ItemInfo {
 	player: string;
 	level: number;
 	isScalable: boolean;
+	shops: RawShops;
 }
