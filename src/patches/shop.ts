@@ -10,6 +10,7 @@ declare global {
 		}
 
 		interface ShopListMenu {
+			menuGfx: ig.Image;
 			shopData: Record<number, number> | undefined;
 		}
 
@@ -59,6 +60,7 @@ export function patch(plugin: MwRandomizer) {
 	});
 
 	sc.ShopListMenu.inject({
+		menuGfx: new ig.Image("media/gui/menu.png"),
 		scrapBuyList(shopItems) {
 			this.parent(shopItems);
 			const shopID = sc.menu.shopID;
@@ -92,6 +94,18 @@ export function patch(plugin: MwRandomizer) {
 					button.hook.size.x - 10,
 					{ autoScroll: false, holdOnReset: false }
 				);
+
+				if (itemInfo.level > 0) {
+					marqueeGui.iconGui.setDrawCallback((width: number, height: number) => {
+						sc.MenuHelper.drawLevel(
+							itemInfo.level,
+							width,
+							height,
+							this.menuGfx,
+							itemInfo.isScalable
+						);
+					});
+				}
 
 				button.textChild = marqueeGui;
 				button.text = itemInfo.label;
