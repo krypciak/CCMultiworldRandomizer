@@ -70,7 +70,7 @@ export function patch(plugin: MwRandomizer) {
 				return;
 			}
 
-			const clearance =  sc.multiworld.options.chestClearanceLevels[this.mwCheck.mwids[0]];
+			const clearance =  sc.multiworld.options.chestClearanceLevels?.[this.mwCheck.mwids[0]];
 
 			if (clearance != undefined) {
 				this.chestType = sc.CHEST_TYPE[clearance];
