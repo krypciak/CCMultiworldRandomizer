@@ -70,7 +70,7 @@ export function patch(plugin: MwRandomizer) {
 				return;
 			}
 
-			const clearance =  sc.multiworld.options.chestClearanceLevels[this.mwCheck.mwids[0]];
+			const clearance =  sc.multiworld.options.chestClearanceLevels?.[this.mwCheck.mwids[0]];
 
 			if (clearance != undefined) {
 				this.chestType = sc.CHEST_TYPE[clearance];
@@ -254,6 +254,17 @@ export function patch(plugin: MwRandomizer) {
 
 			let [area, location] = chest.mwCheck.name.split(" - ");
 			let level = null;
+
+			if (chest.chestType == sc.CHEST_TYPE.Bronze) {
+				level = "Bronze";
+			}
+			if (chest.chestType == sc.CHEST_TYPE.Silver) {
+				level = "Silver";
+			}
+			if (chest.chestType == sc.CHEST_TYPE.Gold) {
+				level = "Gold";
+			}
+
 			const match = RegExp("(.+) \\((.+)\\)").exec(location);
 			if (match) {
 				location = match[1];

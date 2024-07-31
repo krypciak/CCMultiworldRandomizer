@@ -13,7 +13,7 @@ export type MultiworldOptions = {
 	progressiveChains: Record<string, number[]>
 	shopSendMode: string,
 	shopReceiveMode: string,
-	chestClearanceLevels: Record<number, string>
+	chestClearanceLevels?: Record<number, string>
 };
 
 declare global {
