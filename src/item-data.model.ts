@@ -60,5 +60,5 @@ export interface ItemInfo {
 	player: string;
 	level: number;
 	isScalable: boolean;
-	shops: RawShops;
+	shops?: RawShops;
 }

@@ -48,7 +48,7 @@ export function patch(plugin: MwRandomizer) {
 
 			for (const entry of sc.menu.shopCart) {
 				let mwid = this.shopList.shopData[entry.id as number];
-				if (mwid == undefined) {
+				if (mwid == undefined || sc.multiworld.locationInfo[mwid] == undefined) {
 					continue;
 				}
 
@@ -64,7 +64,7 @@ export function patch(plugin: MwRandomizer) {
 		scrapBuyList(shopItems) {
 			this.parent(shopItems);
 			const shopID = sc.menu.shopID;
-			if (!shopID) {
+			if (shopID == undefined || sc.randoData.shops == undefined) {
 				return;
 			}
 
@@ -81,8 +81,13 @@ export function patch(plugin: MwRandomizer) {
 				const mwid: number = this.shopData[itemId];
 				const button: sc.ButtonGui = gui.button;
 
+				const item = sc.multiworld.locationInfo[mwid];
+				if (item == undefined) {
+					continue;
+				}
+
 				button.removeChildGui(button.textChild);
-				const item: ap.NetworkItem = sc.multiworld.locationInfo[mwid];
+
 				const itemInfo = plugin.getItemInfo(item);
 
 				gui.apItem = item;
