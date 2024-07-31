@@ -16,6 +16,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -38,6 +39,7 @@
 					"metadata": {
 						"trade": false,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -56,6 +58,30 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 2] },
+						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Iron Edge", 1] },
+						{ "item": ["item", "Steel Edge", 1] },
+						{ "item": ["item", "Giga Spiral Drill", 1] },
+						{ "item": ["item", "Silver Edge", 1] },
+						{ "item": ["item", "Titan Edge", 1] },
+						{ "item": ["item", "Cobalt Edge", 1] },
+						{ "item": ["item", "Galaxy Spiral Drill", 1] },
+						{ "item": ["item", "Laser Edge", 1] },
+						{ "item": ["item", "Infinity Spiral Drill", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": true,
 						"chest": false,
 						"quest": true
 					},
@@ -78,6 +104,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": false
 					},
@@ -99,6 +126,26 @@
 					"metadata": {
 						"trade": false,
 						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 2] },
+						{ "item": ["item", "Iron Edge", 1] },
+						{ "item": ["item", "Steel Edge", 1] },
+						{ "item": ["item", "Silver Edge", 1] },
+						{ "item": ["item", "Titan Edge", 1] },
+						{ "item": ["item", "Cobalt Edge", 1] },
+						{ "item": ["item", "Laser Edge", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": false
 					},
@@ -116,6 +163,52 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 2] },
+						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Iron Edge", 1] },
+						{ "item": ["item", "Steel Edge", 1] },
+						{ "item": ["item", "Giga Spiral Drill", 1] },
+						{ "item": ["item", "Silver Edge", 1] },
+						{ "item": ["item", "Titan Edge", 1] },
+						{ "item": ["item", "Cobalt Edge", 1] },
+						{ "item": ["item", "Galaxy Spiral Drill", 1] },
+						{ "item": ["item", "Laser Edge", 1] },
+						{ "item": ["item", "Infinity Spiral Drill", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Iron Edge", 1] },
+						{ "item": ["item", "Steel Edge", 1] },
+						{ "item": ["item", "Giga Spiral Drill", 1] },
+						{ "item": ["item", "Silver Edge", 1] },
+						{ "item": ["item", "Titan Edge", 1] },
+						{ "item": ["item", "Cobalt Edge", 1] },
+						{ "item": ["item", "Galaxy Spiral Drill", 1] },
+						{ "item": ["item", "Laser Edge", 1] },
+						{ "item": ["item", "Infinity Spiral Drill", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": true,
 						"chest": false,
 						"quest": false
 					},
@@ -137,7 +230,8 @@
 					"metadata": {
 						"trade": false,
 						"shop": true,
-						"chest": false,
+						"arena": false,
+						"chest": true,
 						"quest": false
 					},
 					"content": [
@@ -148,6 +242,28 @@
 						{ "item": ["item", "Titan Edge", 1] },
 						{ "item": ["item", "Cobalt Edge", 1] },
 						{ "item": ["item", "Laser Edge", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Iron Edge", 1] },
+						{ "item": ["item", "Steel Edge", 1] },
+						{ "item": ["item", "Giga Spiral Drill", 1] },
+						{ "item": ["item", "Silver Edge", 1] },
+						{ "item": ["item", "Titan Edge", 1] },
+						{ "item": ["item", "Cobalt Edge", 1] },
+						{ "item": ["item", "Galaxy Spiral Drill", 1] },
+						{ "item": ["item", "Laser Edge", 1] },
+						{ "item": ["item", "Infinity Spiral Drill", 1] }
 					]
 				}
 			]
@@ -161,6 +277,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -184,6 +301,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -207,6 +325,30 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 2] },
+						{ "item": ["item", "Battered Fist", 2] },
+						{ "item": ["item", "Disciple Gloves", 1] },
+						{ "item": ["item", "Rapier Carrot", 1] },
+						{ "item": ["item", "Western Starfist", 1] },
+						{ "item": ["item", "Adept Gloves", 1] },
+						{ "item": ["item", "Aehre", 2] },
+						{ "item": ["item", "Lawkeeper's Fist", 1] },
+						{ "item": ["item", "Panzer Fist", 1] },
+						{ "item": ["item", "Unbreaking Fist", 1] },
+						{ "item": ["item", "Brostick of Force", 1] },
+						{ "item": ["item", "Meister Gloves", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": true,
 						"chest": false,
 						"quest": true
 					},
@@ -230,6 +372,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": false
 					},
@@ -251,6 +394,30 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 2] },
+						{ "item": ["item", "Battered Fist", 2] },
+						{ "item": ["item", "Disciple Gloves", 1] },
+						{ "item": ["item", "Rapier Carrot", 1] },
+						{ "item": ["item", "Western Starfist", 1] },
+						{ "item": ["item", "Adept Gloves", 1] },
+						{ "item": ["item", "Aehre", 2] },
+						{ "item": ["item", "Lawkeeper's Fist", 1] },
+						{ "item": ["item", "Panzer Fist", 1] },
+						{ "item": ["item", "Unbreaking Fist", 1] },
+						{ "item": ["item", "Brostick of Force", 1] },
+						{ "item": ["item", "Meister Gloves", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": true,
 						"chest": false,
 						"quest": true
 					},
@@ -274,6 +441,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": true,
 						"chest": true,
 						"quest": false
 					},
@@ -295,6 +463,51 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 1] },
+						{ "item": ["item", "Battered Fist", 2] },
+						{ "item": ["item", "Disciple Gloves", 1] },
+						{ "item": ["item", "Rapier Carrot", 1] },
+						{ "item": ["item", "Western Starfist", 1] },
+						{ "item": ["item", "Adept Gloves", 1] },
+						{ "item": ["item", "Aehre", 1] },
+						{ "item": ["item", "Lawkeeper's Fist", 1] },
+						{ "item": ["item", "Panzer Fist", 1] },
+						{ "item": ["item", "Unbreaking Fist", 1] },
+						{ "item": ["item", "Brostick of Force", 1] },
+						{ "item": ["item", "Meister Gloves", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 2] },
+						{ "item": ["item", "Battered Fist", 1] },
+						{ "item": ["item", "Rapier Carrot", 1] },
+						{ "item": ["item", "Western Starfist", 1] },
+						{ "item": ["item", "Aehre", 2] },
+						{ "item": ["item", "Lawkeeper's Fist", 1] },
+						{ "item": ["item", "Panzer Fist", 1] },
+						{ "item": ["item", "Unbreaking Fist", 1] },
+						{ "item": ["item", "Brostick of Force", 1] },
+						{ "item": ["item", "Meister Gloves", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": true,
 						"chest": false,
 						"quest": false
 					},
@@ -316,6 +529,51 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 1] },
+						{ "item": ["item", "Battered Fist", 2] },
+						{ "item": ["item", "Disciple Gloves", 1] },
+						{ "item": ["item", "Rapier Carrot", 1] },
+						{ "item": ["item", "Western Starfist", 1] },
+						{ "item": ["item", "Adept Gloves", 1] },
+						{ "item": ["item", "Aehre", 1] },
+						{ "item": ["item", "Lawkeeper's Fist", 1] },
+						{ "item": ["item", "Panzer Fist", 1] },
+						{ "item": ["item", "Unbreaking Fist", 1] },
+						{ "item": ["item", "Brostick of Force", 1] },
+						{ "item": ["item", "Meister Gloves", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 2] },
+						{ "item": ["item", "Battered Fist", 1] },
+						{ "item": ["item", "Rapier Carrot", 1] },
+						{ "item": ["item", "Western Starfist", 1] },
+						{ "item": ["item", "Aehre", 2] },
+						{ "item": ["item", "Lawkeeper's Fist", 1] },
+						{ "item": ["item", "Panzer Fist", 1] },
+						{ "item": ["item", "Unbreaking Fist", 1] },
+						{ "item": ["item", "Brostick of Force", 1] },
+						{ "item": ["item", "Meister Gloves", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": true,
 						"chest": false,
 						"quest": false
 					},
@@ -330,6 +588,48 @@
 						{ "item": ["item", "Unbreaking Fist", 1] },
 						{ "item": ["item", "Brostick of Force", 1] },
 						{ "item": ["item", "Eternal Salami", 1] },
+						{ "item": ["item", "Meister Gloves", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 1] },
+						{ "item": ["item", "Battered Fist", 1] },
+						{ "item": ["item", "Rapier Carrot", 1] },
+						{ "item": ["item", "Western Starfist", 1] },
+						{ "item": ["item", "Aehre", 1] },
+						{ "item": ["item", "Lawkeeper's Fist", 1] },
+						{ "item": ["item", "Panzer Fist", 1] },
+						{ "item": ["item", "Unbreaking Fist", 1] },
+						{ "item": ["item", "Brostick of Force", 1] },
+						{ "item": ["item", "Meister Gloves", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": false,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 1] },
+						{ "item": ["item", "Battered Fist", 1] },
+						{ "item": ["item", "Rapier Carrot", 1] },
+						{ "item": ["item", "Western Starfist", 1] },
+						{ "item": ["item", "Aehre", 1] },
+						{ "item": ["item", "Lawkeeper's Fist", 1] },
+						{ "item": ["item", "Panzer Fist", 1] },
+						{ "item": ["item", "Unbreaking Fist", 1] },
+						{ "item": ["item", "Brostick of Force", 1] },
 						{ "item": ["item", "Meister Gloves", 1] }
 					]
 				}
@@ -344,6 +644,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -365,6 +666,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -386,6 +688,29 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Mugger's Blade", 1] },
+						{ "item": ["item", "Hardwood Stave", 1] },
+						{ "item": ["item", "Winterclaw", 1] },
+						{ "item": ["item", "Maverick Edge", 1] },
+						{ "item": ["item", "Humming Razor", 1] },
+						{ "item": ["item", "Sunset Claw", 2] },
+						{ "item": ["item", "Twitching Slicer", 1] },
+						{ "item": ["item", "Survivor's Blade", 1] },
+						{ "item": ["item", "Shuddering Cleaver", 1] },
+						{ "item": ["item", "Hydra Fang", 1] },
+						{ "item": ["item", "Skirmisher", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": true,
 						"chest": false,
 						"quest": true
 					},
@@ -405,6 +730,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": false
 					},
@@ -426,6 +752,29 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Mugger's Blade", 1] },
+						{ "item": ["item", "Hardwood Stave", 1] },
+						{ "item": ["item", "Winterclaw", 1] },
+						{ "item": ["item", "Maverick Edge", 1] },
+						{ "item": ["item", "Humming Razor", 1] },
+						{ "item": ["item", "Sunset Claw", 2] },
+						{ "item": ["item", "Twitching Slicer", 1] },
+						{ "item": ["item", "Survivor's Blade", 1] },
+						{ "item": ["item", "Shuddering Cleaver", 1] },
+						{ "item": ["item", "Hydra Fang", 1] },
+						{ "item": ["item", "Skirmisher", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": true,
 						"chest": false,
 						"quest": true
 					},
@@ -445,6 +794,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": true,
 						"chest": true,
 						"quest": false
 					},
@@ -466,6 +816,49 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Mugger's Blade", 1] },
+						{ "item": ["item", "Hardwood Stave", 1] },
+						{ "item": ["item", "Maverick Edge", 1] },
+						{ "item": ["item", "Sunset Claw", 1] },
+						{ "item": ["item", "Twitching Slicer", 1] },
+						{ "item": ["item", "Survivor's Blade", 1] },
+						{ "item": ["item", "Shuddering Cleaver", 1] },
+						{ "item": ["item", "Hydra Fang", 1] },
+						{ "item": ["item", "Skirmisher", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Mugger's Blade", 1] },
+						{ "item": ["item", "Hardwood Stave", 1] },
+						{ "item": ["item", "Winterclaw", 1] },
+						{ "item": ["item", "Maverick Edge", 1] },
+						{ "item": ["item", "Humming Razor", 1] },
+						{ "item": ["item", "Sunset Claw", 2] },
+						{ "item": ["item", "Twitching Slicer", 1] },
+						{ "item": ["item", "Survivor's Blade", 1] },
+						{ "item": ["item", "Shuddering Cleaver", 1] },
+						{ "item": ["item", "Hydra Fang", 1] },
+						{ "item": ["item", "Skirmisher", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": true,
 						"chest": false,
 						"quest": false
 					},
@@ -485,6 +878,89 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Mugger's Blade", 1] },
+						{ "item": ["item", "Hardwood Stave", 1] },
+						{ "item": ["item", "Maverick Edge", 1] },
+						{ "item": ["item", "Sunset Claw", 1] },
+						{ "item": ["item", "Twitching Slicer", 1] },
+						{ "item": ["item", "Survivor's Blade", 1] },
+						{ "item": ["item", "Shuddering Cleaver", 1] },
+						{ "item": ["item", "Hydra Fang", 1] },
+						{ "item": ["item", "Skirmisher", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Mugger's Blade", 1] },
+						{ "item": ["item", "Hardwood Stave", 1] },
+						{ "item": ["item", "Winterclaw", 1] },
+						{ "item": ["item", "Maverick Edge", 1] },
+						{ "item": ["item", "Humming Razor", 1] },
+						{ "item": ["item", "Sunset Claw", 2] },
+						{ "item": ["item", "Twitching Slicer", 1] },
+						{ "item": ["item", "Survivor's Blade", 1] },
+						{ "item": ["item", "Shuddering Cleaver", 1] },
+						{ "item": ["item", "Hydra Fang", 1] },
+						{ "item": ["item", "Skirmisher", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": true,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Mugger's Blade", 1] },
+						{ "item": ["item", "Hardwood Stave", 1] },
+						{ "item": ["item", "Maverick Edge", 1] },
+						{ "item": ["item", "Sunset Claw", 1] },
+						{ "item": ["item", "Twitching Slicer", 1] },
+						{ "item": ["item", "Survivor's Blade", 1] },
+						{ "item": ["item", "Shuddering Cleaver", 1] },
+						{ "item": ["item", "Hydra Fang", 1] },
+						{ "item": ["item", "Skirmisher", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Mugger's Blade", 1] },
+						{ "item": ["item", "Hardwood Stave", 1] },
+						{ "item": ["item", "Maverick Edge", 1] },
+						{ "item": ["item", "Sunset Claw", 1] },
+						{ "item": ["item", "Twitching Slicer", 1] },
+						{ "item": ["item", "Survivor's Blade", 1] },
+						{ "item": ["item", "Shuddering Cleaver", 1] },
+						{ "item": ["item", "Hydra Fang", 1] },
+						{ "item": ["item", "Skirmisher", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": false,
 						"chest": false,
 						"quest": false
 					},
@@ -511,6 +987,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -533,6 +1010,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -555,6 +1033,28 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Civilian Trigger", 1] },
+						{ "item": ["item", "Copper Gull", 2] },
+						{ "item": ["item", "Gunner's Trigger", 1] },
+						{ "item": ["item", "Hunter's Bolt", 2] },
+						{ "item": ["item", "Rough Branch", 2] },
+						{ "item": ["item", "Silver Hawk", 1] },
+						{ "item": ["item", "Golden Revolver", 1] },
+						{ "item": ["item", "Bigger Stick", 1] },
+						{ "item": ["item", "Marksmen Trigger", 1] },
+						{ "item": ["item", "Golden Falcon", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": true,
 						"chest": false,
 						"quest": true
 					},
@@ -576,6 +1076,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": false
 					},
@@ -598,6 +1099,28 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Civilian Trigger", 1] },
+						{ "item": ["item", "Copper Gull", 2] },
+						{ "item": ["item", "Gunner's Trigger", 1] },
+						{ "item": ["item", "Hunter's Bolt", 2] },
+						{ "item": ["item", "Rough Branch", 2] },
+						{ "item": ["item", "Silver Hawk", 1] },
+						{ "item": ["item", "Golden Revolver", 1] },
+						{ "item": ["item", "Bigger Stick", 1] },
+						{ "item": ["item", "Marksmen Trigger", 1] },
+						{ "item": ["item", "Golden Falcon", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": true,
 						"chest": false,
 						"quest": true
 					},
@@ -619,6 +1142,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": true,
 						"chest": true,
 						"quest": false
 					},
@@ -641,6 +1165,48 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Civilian Trigger", 1] },
+						{ "item": ["item", "Copper Gull", 1] },
+						{ "item": ["item", "Gunner's Trigger", 1] },
+						{ "item": ["item", "Hunter's Bolt", 2] },
+						{ "item": ["item", "Silver Hawk", 1] },
+						{ "item": ["item", "Golden Revolver", 1] },
+						{ "item": ["item", "Bigger Stick", 1] },
+						{ "item": ["item", "Marksmen Trigger", 1] },
+						{ "item": ["item", "Golden Falcon", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Civilian Trigger", 1] },
+						{ "item": ["item", "Copper Gull", 2] },
+						{ "item": ["item", "Gunner's Trigger", 1] },
+						{ "item": ["item", "Hunter's Bolt", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
+						{ "item": ["item", "Silver Hawk", 1] },
+						{ "item": ["item", "Golden Revolver", 1] },
+						{ "item": ["item", "Bigger Stick", 1] },
+						{ "item": ["item", "Marksmen Trigger", 1] },
+						{ "item": ["item", "Golden Falcon", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": true,
 						"chest": false,
 						"quest": false
 					},
@@ -662,6 +1228,48 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Civilian Trigger", 1] },
+						{ "item": ["item", "Copper Gull", 1] },
+						{ "item": ["item", "Gunner's Trigger", 1] },
+						{ "item": ["item", "Hunter's Bolt", 2] },
+						{ "item": ["item", "Silver Hawk", 1] },
+						{ "item": ["item", "Golden Revolver", 1] },
+						{ "item": ["item", "Bigger Stick", 1] },
+						{ "item": ["item", "Marksmen Trigger", 1] },
+						{ "item": ["item", "Golden Falcon", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Civilian Trigger", 1] },
+						{ "item": ["item", "Copper Gull", 2] },
+						{ "item": ["item", "Gunner's Trigger", 1] },
+						{ "item": ["item", "Hunter's Bolt", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
+						{ "item": ["item", "Silver Hawk", 1] },
+						{ "item": ["item", "Golden Revolver", 1] },
+						{ "item": ["item", "Bigger Stick", 1] },
+						{ "item": ["item", "Marksmen Trigger", 1] },
+						{ "item": ["item", "Golden Falcon", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": true,
 						"chest": false,
 						"quest": false
 					},
@@ -677,6 +1285,46 @@
 						{ "item": ["item", "Golden Falcon", 1] },
 						{ "item": ["item", "Knocking One", 1] },
 						{ "item": ["item", "Pendulum Striker", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Civilian Trigger", 1] },
+						{ "item": ["item", "Copper Gull", 1] },
+						{ "item": ["item", "Gunner's Trigger", 1] },
+						{ "item": ["item", "Hunter's Bolt", 1] },
+						{ "item": ["item", "Silver Hawk", 1] },
+						{ "item": ["item", "Golden Revolver", 1] },
+						{ "item": ["item", "Bigger Stick", 1] },
+						{ "item": ["item", "Marksmen Trigger", 1] },
+						{ "item": ["item", "Golden Falcon", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": false,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Civilian Trigger", 1] },
+						{ "item": ["item", "Copper Gull", 1] },
+						{ "item": ["item", "Gunner's Trigger", 1] },
+						{ "item": ["item", "Hunter's Bolt", 1] },
+						{ "item": ["item", "Silver Hawk", 1] },
+						{ "item": ["item", "Golden Revolver", 1] },
+						{ "item": ["item", "Bigger Stick", 1] },
+						{ "item": ["item", "Marksmen Trigger", 1] },
+						{ "item": ["item", "Golden Falcon", 1] }
 					]
 				}
 			]
@@ -690,6 +1338,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -713,6 +1362,7 @@
 					"metadata": {
 						"trade": false,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -732,6 +1382,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -761,6 +1412,31 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Swiftspike", 2] },
+						{ "item": ["item", "Climbing Pick", 1] },
+						{ "item": ["item", "Rocksplitter", 2] },
+						{ "item": ["item", "Prickly Bracer", 2] },
+						{ "item": ["item", "Hidden Blade", 2] },
+						{ "item": ["item", "Bright Bracer", 2] },
+						{ "item": ["item", "Sneaky Shiv", 2] },
+						{ "item": ["item", "Sparkling Bracer", 1] },
+						{ "item": ["item", "Sonic Spike", 1] },
+						{ "item": ["item", "Shining Bracer", 2] },
+						{ "item": ["item", "Warkeeper", 1] },
+						{ "item": ["item", "Mantis Whip", 1] },
+						{ "item": ["item", "Radiant Bracer", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": true,
 						"chest": false,
 						"quest": true
 					},
@@ -782,6 +1458,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": false
 					},
@@ -805,6 +1482,7 @@
 					"metadata": {
 						"trade": false,
 						"shop": false,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -826,6 +1504,27 @@
 					"metadata": {
 						"trade": false,
 						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sonic Spike", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Warkeeper", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": false
 					},
@@ -844,6 +1543,37 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Swiftspike", 2] },
+						{ "item": ["item", "Climbing Pick", 1] },
+						{ "item": ["item", "Rocksplitter", 2] },
+						{ "item": ["item", "Prickly Bracer", 2] },
+						{ "item": ["item", "Hidden Blade", 2] },
+						{ "item": ["item", "Giga Spiral Drill", 1] },
+						{ "item": ["item", "Bright Bracer", 2] },
+						{ "item": ["item", "Sneaky Shiv", 2] },
+						{ "item": ["item", "Sparkling Bracer", 1] },
+						{ "item": ["item", "Galaxy Spiral Drill", 1] },
+						{ "item": ["item", "Sonic Spike", 1] },
+						{ "item": ["item", "Shining Bracer", 2] },
+						{ "item": ["item", "Warkeeper", 1] },
+						{ "item": ["item", "Mantis Whip", 1] },
+						{ "item": ["item", "Infinity Spiral Drill", 1] },
+						{ "item": ["item", "Radiant Bracer", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": true,
 						"chest": false,
 						"quest": true
 					},
@@ -871,6 +1601,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": true,
 						"chest": true,
 						"quest": false
 					},
@@ -898,6 +1629,53 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Swiftspike", 2] },
+						{ "item": ["item", "Climbing Pick", 1] },
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sparkling Bracer", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Mantis Whip", 1] },
+						{ "item": ["item", "Radiant Bracer", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Climbing Pick", 1] },
+						{ "item": ["item", "Rocksplitter", 2] },
+						{ "item": ["item", "Prickly Bracer", 2] },
+						{ "item": ["item", "Hidden Blade", 2] },
+						{ "item": ["item", "Bright Bracer", 2] },
+						{ "item": ["item", "Sneaky Shiv", 2] },
+						{ "item": ["item", "Sparkling Bracer", 1] },
+						{ "item": ["item", "Sonic Spike", 1] },
+						{ "item": ["item", "Shining Bracer", 2] },
+						{ "item": ["item", "Warkeeper", 1] },
+						{ "item": ["item", "Mantis Whip", 1] },
+						{ "item": ["item", "Radiant Bracer", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": true,
 						"chest": false,
 						"quest": false
 					},
@@ -919,6 +1697,48 @@
 					"metadata": {
 						"trade": false,
 						"shop": false,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sonic Spike", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Warkeeper", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": false,
+						"arena": true,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sonic Spike", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Warkeeper", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"arena": false,
 						"chest": true,
 						"quest": false
 					},
@@ -937,6 +1757,130 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Swiftspike", 2] },
+						{ "item": ["item", "Climbing Pick", 1] },
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Giga Spiral Drill", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sparkling Bracer", 1] },
+						{ "item": ["item", "Galaxy Spiral Drill", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Mantis Whip", 1] },
+						{ "item": ["item", "Infinity Spiral Drill", 1] },
+						{ "item": ["item", "Radiant Bracer", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Climbing Pick", 1] },
+						{ "item": ["item", "Rocksplitter", 2] },
+						{ "item": ["item", "Prickly Bracer", 2] },
+						{ "item": ["item", "Hidden Blade", 2] },
+						{ "item": ["item", "Giga Spiral Drill", 1] },
+						{ "item": ["item", "Bright Bracer", 2] },
+						{ "item": ["item", "Sneaky Shiv", 2] },
+						{ "item": ["item", "Sparkling Bracer", 1] },
+						{ "item": ["item", "Galaxy Spiral Drill", 1] },
+						{ "item": ["item", "Sonic Spike", 1] },
+						{ "item": ["item", "Shining Bracer", 2] },
+						{ "item": ["item", "Warkeeper", 1] },
+						{ "item": ["item", "Mantis Whip", 1] },
+						{ "item": ["item", "Infinity Spiral Drill", 1] },
+						{ "item": ["item", "Radiant Bracer", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": true,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Core Drill", 1] },
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Climbing Pick", 1] },
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Giga Spiral Drill", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sparkling Bracer", 1] },
+						{ "item": ["item", "Galaxy Spiral Drill", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Mantis Whip", 1] },
+						{ "item": ["item", "Infinity Spiral Drill", 1] },
+						{ "item": ["item", "Radiant Bracer", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Climbing Pick", 1] },
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sparkling Bracer", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Mantis Whip", 1] },
+						{ "item": ["item", "Radiant Bracer", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": false,
+						"arena": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sonic Spike", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Warkeeper", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": false,
 						"chest": false,
 						"quest": false
 					},
@@ -969,6 +1913,7 @@
 					"metadata": {
 						"trade": false,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -983,13 +1928,42 @@
 						{ "item": ["item", "Sunset Claw", 1] },
 						{ "item": ["item", "Adept Gloves", 1] },
 						{ "item": ["item", "Rough Branch", 2] },
-						{ "item": ["item", "Aehre", 1] }
+						{ "item": ["item", "Aehre", 1] },
+						{ "item": ["item", "Eternal Salami", 1] },
+						{ "item": ["item", "Knocking One", 1] },
+						{ "item": ["item", "Pendulum Striker", 1] }
 					]
 				},
 				{
 					"metadata": {
 						"trade": false,
 						"shop": false,
+						"arena": true,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 1] },
+						{ "item": ["item", "Battered Fist", 1] },
+						{ "item": ["item", "Disciple Gloves", 1] },
+						{ "item": ["item", "Copper Gull", 1] },
+						{ "item": ["item", "Winterclaw", 1] },
+						{ "item": ["item", "Humming Razor", 1] },
+						{ "item": ["item", "Hunter's Bolt", 1] },
+						{ "item": ["item", "Sunset Claw", 1] },
+						{ "item": ["item", "Adept Gloves", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
+						{ "item": ["item", "Aehre", 1] },
+						{ "item": ["item", "Eternal Salami", 1] },
+						{ "item": ["item", "Knocking One", 1] },
+						{ "item": ["item", "Pendulum Striker", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"arena": false,
 						"chest": true,
 						"quest": true
 					},
@@ -1011,6 +1985,71 @@
 					"metadata": {
 						"trade": false,
 						"shop": true,
+						"arena": true,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 1] },
+						{ "item": ["item", "Copper Gull", 1] },
+						{ "item": ["item", "Winterclaw", 1] },
+						{ "item": ["item", "Humming Razor", 1] },
+						{ "item": ["item", "Sunset Claw", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
+						{ "item": ["item", "Aehre", 1] },
+						{ "item": ["item", "Eternal Salami", 1] },
+						{ "item": ["item", "Knocking One", 1] },
+						{ "item": ["item", "Pendulum Striker", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": false,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 1] },
+						{ "item": ["item", "Battered Fist", 1] },
+						{ "item": ["item", "Disciple Gloves", 1] },
+						{ "item": ["item", "Copper Gull", 1] },
+						{ "item": ["item", "Winterclaw", 1] },
+						{ "item": ["item", "Humming Razor", 1] },
+						{ "item": ["item", "Hunter's Bolt", 1] },
+						{ "item": ["item", "Sunset Claw", 1] },
+						{ "item": ["item", "Adept Gloves", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
+						{ "item": ["item", "Aehre", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": false,
+						"arena": true,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 1] },
+						{ "item": ["item", "Copper Gull", 1] },
+						{ "item": ["item", "Winterclaw", 1] },
+						{ "item": ["item", "Humming Razor", 1] },
+						{ "item": ["item", "Sunset Claw", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
+						{ "item": ["item", "Aehre", 1] },
+						{ "item": ["item", "Knocking One", 1] },
+						{ "item": ["item", "Pendulum Striker", 1] },
+						{ "item": ["item", "Eternal Salami", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"arena": false,
 						"chest": true,
 						"quest": false
 					},
@@ -1028,6 +2067,7 @@
 					"metadata": {
 						"trade": false,
 						"shop": false,
+						"arena": false,
 						"chest": true,
 						"quest": false
 					},
@@ -1052,6 +2092,55 @@
 					"metadata": {
 						"trade": false,
 						"shop": true,
+						"arena": true,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 2] },
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Battered Fist", 1] },
+						{ "item": ["item", "Iron Edge", 1] },
+						{ "item": ["item", "Disciple Gloves", 1] },
+						{ "item": ["item", "Steel Edge", 1] },
+						{ "item": ["item", "Silver Edge", 1] },
+						{ "item": ["item", "Hunter's Bolt", 1] },
+						{ "item": ["item", "Adept Gloves", 1] },
+						{ "item": ["item", "Titan Edge", 1] },
+						{ "item": ["item", "Cobalt Edge", 1] },
+						{ "item": ["item", "Laser Edge", 1] },
+						{ "item": ["item", "Knocking One", 1] },
+						{ "item": ["item", "Pendulum Striker", 1] },
+						{ "item": ["item", "Eternal Salami", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": false,
+						"arena": true,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Edge o' All", 2] },
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Swiftspike", 1] },
+						{ "item": ["item", "Battered Fist", 1] },
+						{ "item": ["item", "Disciple Gloves", 1] },
+						{ "item": ["item", "Hunter's Bolt", 1] },
+						{ "item": ["item", "Adept Gloves", 1] },
+						{ "item": ["item", "Knocking One", 1] },
+						{ "item": ["item", "Pendulum Striker", 1] },
+						{ "item": ["item", "Eternal Salami", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"arena": false,
 						"chest": false,
 						"quest": true
 					},
@@ -1074,7 +2163,29 @@
 				{
 					"metadata": {
 						"trade": false,
+						"shop": true,
+						"arena": true,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Iron Edge", 1] },
+						{ "item": ["item", "Steel Edge", 1] },
+						{ "item": ["item", "Silver Edge", 1] },
+						{ "item": ["item", "Titan Edge", 1] },
+						{ "item": ["item", "Cobalt Edge", 1] },
+						{ "item": ["item", "Laser Edge", 1] },
+						{ "item": ["item", "Eternal Salami", 1] },
+						{ "item": ["item", "Knocking One", 1] },
+						{ "item": ["item", "Pendulum Striker", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
 						"shop": false,
+						"arena": false,
 						"chest": false,
 						"quest": true
 					},
@@ -1086,6 +2197,38 @@
 						{ "item": ["item", "Disciple Gloves", 1] },
 						{ "item": ["item", "Hunter's Bolt", 1] },
 						{ "item": ["item", "Adept Gloves", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": false,
+						"arena": true,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Eternal Salami", 1] },
+						{ "item": ["item", "Knocking One", 1] },
+						{ "item": ["item", "Pendulum Striker", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"arena": false,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Bronze Edge", 1] },
+						{ "item": ["item", "Iron Edge", 1] },
+						{ "item": ["item", "Steel Edge", 1] },
+						{ "item": ["item", "Silver Edge", 1] },
+						{ "item": ["item", "Titan Edge", 1] },
+						{ "item": ["item", "Cobalt Edge", 1] },
+						{ "item": ["item", "Laser Edge", 1] }
 					]
 				}
 			]

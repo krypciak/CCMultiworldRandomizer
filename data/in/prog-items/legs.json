@@ -16,6 +16,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -38,6 +39,30 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Grasswalkers", 1] },
+						{ "item": ["item", "Bronze Boots", 1] },
+						{ "item": ["item", "Iron Boots", 1] },
+						{ "item": ["item", "Steel Boots", 1] },
+						{ "item": ["item", "Silver Boots", 1] },
+						{ "item": ["item", "Titan Boots", 1] },
+						{ "item": ["item", "Urban Sneakers", 1] },
+						{ "item": ["item", "Cobalt Boots", 1] },
+						{ "item": ["item", "Lead Boots", 1] },
+						{ "item": ["item", "Laser Boots", 1] },
+						{ "item": ["item", "Unicorn Greaves", 1] },
+						{ "item": ["item", "Old Geta", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": true,
 						"chest": false,
 						"quest": true
 					},
@@ -59,6 +84,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": false
 					},
@@ -80,6 +106,72 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Grasswalkers", 1] },
+						{ "item": ["item", "Bronze Boots", 1] },
+						{ "item": ["item", "Iron Boots", 1] },
+						{ "item": ["item", "Steel Boots", 1] },
+						{ "item": ["item", "Silver Boots", 1] },
+						{ "item": ["item", "Titan Boots", 1] },
+						{ "item": ["item", "Urban Sneakers", 1] },
+						{ "item": ["item", "Cobalt Boots", 1] },
+						{ "item": ["item", "Laser Boots", 1] },
+						{ "item": ["item", "Unicorn Greaves", 1] },
+						{ "item": ["item", "Old Geta", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Bronze Boots", 1] },
+						{ "item": ["item", "Iron Boots", 1] },
+						{ "item": ["item", "Steel Boots", 1] },
+						{ "item": ["item", "Silver Boots", 1] },
+						{ "item": ["item", "Titan Boots", 1] },
+						{ "item": ["item", "Urban Sneakers", 1] },
+						{ "item": ["item", "Cobalt Boots", 1] },
+						{ "item": ["item", "Lead Boots", 1] },
+						{ "item": ["item", "Laser Boots", 1] },
+						{ "item": ["item", "Unicorn Greaves", 1] },
+						{ "item": ["item", "Old Geta", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": true,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Bronze Boots", 1] },
+						{ "item": ["item", "Iron Boots", 1] },
+						{ "item": ["item", "Steel Boots", 1] },
+						{ "item": ["item", "Silver Boots", 1] },
+						{ "item": ["item", "Titan Boots", 1] },
+						{ "item": ["item", "Urban Sneakers", 1] },
+						{ "item": ["item", "Cobalt Boots", 1] },
+						{ "item": ["item", "Laser Boots", 1] },
+						{ "item": ["item", "Unicorn Greaves", 1] },
+						{ "item": ["item", "Old Geta", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
 						"chest": false,
 						"quest": false
 					},
@@ -107,6 +199,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -132,6 +225,33 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": true,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Rusty Anchors", 1] },
+						{ "item": ["item", "Bull Stompers", 1] },
+						{ "item": ["item", "Icewalkers", 1] },
+						{ "item": ["item", "Wooly Socks", 1] },
+						{ "item": ["item", "Ancient Sandals", 1] },
+						{ "item": ["item", "Curly Slippers", 1] },
+						{ "item": ["item", "Lavish Anchors", 1] },
+						{ "item": ["item", "Stable Footguard", 1] },
+						{ "item": ["item", "Pathfinders", 1] },
+						{ "item": ["item", "Hydraulic Anchors", 1] },
+						{ "item": ["item", "Bamboots", 1] },
+						{ "item": ["item", "Brave Anchors", 1] },
+						{ "item": ["item", "Praetorian Anchors", 1] },
+						{ "item": ["item", "Mistwalkers", 1] },
+						{ "item": ["item", "Paedalos", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
 						"chest": true,
 						"quest": true
 					},
@@ -156,6 +276,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": false,
 						"quest": true
 					},
@@ -180,6 +301,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": false
 					},
@@ -204,6 +326,82 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Rusty Anchors", 1] },
+						{ "item": ["item", "Bull Stompers", 1] },
+						{ "item": ["item", "Icewalkers", 1] },
+						{ "item": ["item", "Wooly Socks", 1] },
+						{ "item": ["item", "Ancient Sandals", 1] },
+						{ "item": ["item", "Curly Slippers", 1] },
+						{ "item": ["item", "Lavish Anchors", 1] },
+						{ "item": ["item", "Stable Footguard", 1] },
+						{ "item": ["item", "Pathfinders", 1] },
+						{ "item": ["item", "Hydraulic Anchors", 1] },
+						{ "item": ["item", "Bamboots", 1] },
+						{ "item": ["item", "Brave Anchors", 1] },
+						{ "item": ["item", "Praetorian Anchors", 1] },
+						{ "item": ["item", "Mistwalkers", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": true,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Rusty Anchors", 1] },
+						{ "item": ["item", "Bull Stompers", 1] },
+						{ "item": ["item", "Icewalkers", 1] },
+						{ "item": ["item", "Wooly Socks", 1] },
+						{ "item": ["item", "Curly Slippers", 1] },
+						{ "item": ["item", "Lavish Anchors", 1] },
+						{ "item": ["item", "Stable Footguard", 1] },
+						{ "item": ["item", "Pathfinders", 1] },
+						{ "item": ["item", "Hydraulic Anchors", 1] },
+						{ "item": ["item", "Bamboots", 1] },
+						{ "item": ["item", "Brave Anchors", 1] },
+						{ "item": ["item", "Praetorian Anchors", 1] },
+						{ "item": ["item", "Mistwalkers", 1] },
+						{ "item": ["item", "Paedalos", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": true,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Rusty Anchors", 1] },
+						{ "item": ["item", "Bull Stompers", 1] },
+						{ "item": ["item", "Icewalkers", 1] },
+						{ "item": ["item", "Ancient Sandals", 1] },
+						{ "item": ["item", "Curly Slippers", 1] },
+						{ "item": ["item", "Lavish Anchors", 1] },
+						{ "item": ["item", "Stable Footguard", 1] },
+						{ "item": ["item", "Pathfinders", 1] },
+						{ "item": ["item", "Hydraulic Anchors", 1] },
+						{ "item": ["item", "Bamboots", 1] },
+						{ "item": ["item", "Brave Anchors", 1] },
+						{ "item": ["item", "Praetorian Anchors", 1] },
+						{ "item": ["item", "Mistwalkers", 1] },
+						{ "item": ["item", "Paedalos", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
 						"chest": false,
 						"quest": true
 					},
@@ -226,7 +424,8 @@
 				{
 					"metadata": {
 						"trade": true,
-						"shop": false,
+						"shop": true,
+						"arena": false,
 						"chest": true,
 						"quest": false
 					},
@@ -250,6 +449,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": false,
 						"quest": false
 					},
@@ -273,6 +473,102 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Rusty Anchors", 1] },
+						{ "item": ["item", "Bull Stompers", 1] },
+						{ "item": ["item", "Icewalkers", 1] },
+						{ "item": ["item", "Wooly Socks", 1] },
+						{ "item": ["item", "Curly Slippers", 1] },
+						{ "item": ["item", "Lavish Anchors", 1] },
+						{ "item": ["item", "Stable Footguard", 1] },
+						{ "item": ["item", "Pathfinders", 1] },
+						{ "item": ["item", "Hydraulic Anchors", 1] },
+						{ "item": ["item", "Bamboots", 1] },
+						{ "item": ["item", "Brave Anchors", 1] },
+						{ "item": ["item", "Praetorian Anchors", 1] },
+						{ "item": ["item", "Mistwalkers", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Rusty Anchors", 1] },
+						{ "item": ["item", "Bull Stompers", 1] },
+						{ "item": ["item", "Icewalkers", 1] },
+						{ "item": ["item", "Ancient Sandals", 1] },
+						{ "item": ["item", "Curly Slippers", 1] },
+						{ "item": ["item", "Lavish Anchors", 1] },
+						{ "item": ["item", "Stable Footguard", 1] },
+						{ "item": ["item", "Pathfinders", 1] },
+						{ "item": ["item", "Hydraulic Anchors", 1] },
+						{ "item": ["item", "Bamboots", 1] },
+						{ "item": ["item", "Brave Anchors", 1] },
+						{ "item": ["item", "Praetorian Anchors", 1] },
+						{ "item": ["item", "Mistwalkers", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": true,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Rusty Anchors", 1] },
+						{ "item": ["item", "Bull Stompers", 1] },
+						{ "item": ["item", "Icewalkers", 1] },
+						{ "item": ["item", "Curly Slippers", 1] },
+						{ "item": ["item", "Lavish Anchors", 1] },
+						{ "item": ["item", "Stable Footguard", 1] },
+						{ "item": ["item", "Pathfinders", 1] },
+						{ "item": ["item", "Hydraulic Anchors", 1] },
+						{ "item": ["item", "Bamboots", 1] },
+						{ "item": ["item", "Brave Anchors", 1] },
+						{ "item": ["item", "Praetorian Anchors", 1] },
+						{ "item": ["item", "Mistwalkers", 1] },
+						{ "item": ["item", "Paedalos", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Rusty Anchors", 1] },
+						{ "item": ["item", "Bull Stompers", 1] },
+						{ "item": ["item", "Icewalkers", 1] },
+						{ "item": ["item", "Curly Slippers", 1] },
+						{ "item": ["item", "Lavish Anchors", 1] },
+						{ "item": ["item", "Stable Footguard", 1] },
+						{ "item": ["item", "Pathfinders", 1] },
+						{ "item": ["item", "Hydraulic Anchors", 1] },
+						{ "item": ["item", "Bamboots", 1] },
+						{ "item": ["item", "Brave Anchors", 1] },
+						{ "item": ["item", "Praetorian Anchors", 1] },
+						{ "item": ["item", "Mistwalkers", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": false,
 						"chest": false,
 						"quest": false
 					},
@@ -302,6 +598,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -324,6 +621,101 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": true,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Grasswalkers", 1] },
+						{ "item": ["item", "Fleety Sandals", 1] },
+						{ "item": ["item", "Feline Paws", 1] },
+						{ "item": ["item", "Desert Sandals", 1] },
+						{ "item": ["item", "Weird Skates", 1] },
+						{ "item": ["item", "Carpet Runners", 1] },
+						{ "item": ["item", "Shinkickers", 1] },
+						{ "item": ["item", "Boom Walkers", 1] },
+						{ "item": ["item", "Urban Sneakers", 1] },
+						{ "item": ["item", "Trench Boots", 1] },
+						{ "item": ["item", "Lead Boots", 1] },
+						{ "item": ["item", "Lunatic Paws", 1] },
+						{ "item": ["item", "Unicorn Greaves", 1] },
+						{ "item": ["item", "Old Geta", 1] },
+						{ "item": ["item", "Deadly Dancers", 1] },
+						{ "item": ["item", "Combat Skates", 1] },
+						{ "item": ["item", "Artillery Boots", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Fleety Sandals", 1] },
+						{ "item": ["item", "Feline Paws", 1] },
+						{ "item": ["item", "Desert Sandals", 1] },
+						{ "item": ["item", "Weird Skates", 1] },
+						{ "item": ["item", "Carpet Runners", 1] },
+						{ "item": ["item", "Shinkickers", 1] },
+						{ "item": ["item", "Boom Walkers", 1] },
+						{ "item": ["item", "Trench Boots", 1] },
+						{ "item": ["item", "Lunatic Paws", 1] },
+						{ "item": ["item", "Deadly Dancers", 1] },
+						{ "item": ["item", "Artillery Boots", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": true,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Fleety Sandals", 1] },
+						{ "item": ["item", "Feline Paws", 1] },
+						{ "item": ["item", "Desert Sandals", 1] },
+						{ "item": ["item", "Weird Skates", 1] },
+						{ "item": ["item", "Carpet Runners", 1] },
+						{ "item": ["item", "Shinkickers", 1] },
+						{ "item": ["item", "Boom Walkers", 1] },
+						{ "item": ["item", "Trench Boots", 1] },
+						{ "item": ["item", "Lunatic Paws", 1] },
+						{ "item": ["item", "Deadly Dancers", 1] },
+						{ "item": ["item", "Combat Skates", 1] },
+						{ "item": ["item", "Artillery Boots", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": true,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Fleety Sandals", 1] },
+						{ "item": ["item", "Feline Paws", 1] },
+						{ "item": ["item", "Desert Sandals", 1] },
+						{ "item": ["item", "Carpet Runners", 1] },
+						{ "item": ["item", "Shinkickers", 1] },
+						{ "item": ["item", "Boom Walkers", 1] },
+						{ "item": ["item", "Trench Boots", 1] },
+						{ "item": ["item", "Deadly Dancers", 1] },
+						{ "item": ["item", "Combat Skates", 1] },
+						{ "item": ["item", "Artillery Boots", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": false,
 						"chest": true,
 						"quest": true
 					},
@@ -349,7 +741,60 @@
 				{
 					"metadata": {
 						"trade": true,
+						"shop": false,
+						"arena": true,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Grasswalkers", 1] },
+						{ "item": ["item", "Fleety Sandals", 1] },
+						{ "item": ["item", "Feline Paws", 1] },
+						{ "item": ["item", "Desert Sandals", 1] },
+						{ "item": ["item", "Weird Skates", 1] },
+						{ "item": ["item", "Carpet Runners", 1] },
+						{ "item": ["item", "Shinkickers", 1] },
+						{ "item": ["item", "Boom Walkers", 1] },
+						{ "item": ["item", "Urban Sneakers", 1] },
+						{ "item": ["item", "Trench Boots", 1] },
+						{ "item": ["item", "Lunatic Paws", 1] },
+						{ "item": ["item", "Unicorn Greaves", 1] },
+						{ "item": ["item", "Old Geta", 1] },
+						{ "item": ["item", "Deadly Dancers", 1] },
+						{ "item": ["item", "Combat Skates", 1] },
+						{ "item": ["item", "Artillery Boots", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": true,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Fleety Sandals", 1] },
+						{ "item": ["item", "Feline Paws", 1] },
+						{ "item": ["item", "Desert Sandals", 1] },
+						{ "item": ["item", "Carpet Runners", 1] },
+						{ "item": ["item", "Shinkickers", 1] },
+						{ "item": ["item", "Boom Walkers", 1] },
+						{ "item": ["item", "Urban Sneakers", 1] },
+						{ "item": ["item", "Trench Boots", 1] },
+						{ "item": ["item", "Lead Boots", 1] },
+						{ "item": ["item", "Unicorn Greaves", 1] },
+						{ "item": ["item", "Old Geta", 1] },
+						{ "item": ["item", "Deadly Dancers", 1] },
+						{ "item": ["item", "Combat Skates", 1] },
+						{ "item": ["item", "Artillery Boots", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
 						"shop": true,
+						"arena": false,
 						"chest": false,
 						"quest": true
 					},
@@ -364,7 +809,6 @@
 						{ "item": ["item", "Trench Boots", 1] },
 						{ "item": ["item", "Lunatic Paws", 1] },
 						{ "item": ["item", "Deadly Dancers", 1] },
-						{ "item": ["item", "Combat Skates", 1] },
 						{ "item": ["item", "Artillery Boots", 1] }
 					]
 				},
@@ -372,7 +816,28 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": false,
 						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Fleety Sandals", 1] },
+						{ "item": ["item", "Feline Paws", 1] },
+						{ "item": ["item", "Desert Sandals", 1] },
+						{ "item": ["item", "Carpet Runners", 1] },
+						{ "item": ["item", "Shinkickers", 1] },
+						{ "item": ["item", "Boom Walkers", 1] },
+						{ "item": ["item", "Trench Boots", 1] },
+						{ "item": ["item", "Deadly Dancers", 1] },
+						{ "item": ["item", "Artillery Boots", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": true,
+						"chest": false,
 						"quest": false
 					},
 					"content": [
@@ -390,8 +855,21 @@
 				},
 				{
 					"metadata": {
+						"trade": false,
+						"shop": false,
+						"arena": true,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Combat Skates", 1] }
+					]
+				},
+				{
+					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": false,
 						"chest": false,
 						"quest": true
 					},
@@ -417,6 +895,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": false,
 						"chest": true,
 						"quest": false
 					},
@@ -439,7 +918,32 @@
 				{
 					"metadata": {
 						"trade": true,
+						"shop": false,
+						"arena": true,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Fleety Sandals", 1] },
+						{ "item": ["item", "Feline Paws", 1] },
+						{ "item": ["item", "Desert Sandals", 1] },
+						{ "item": ["item", "Carpet Runners", 1] },
+						{ "item": ["item", "Shinkickers", 1] },
+						{ "item": ["item", "Boom Walkers", 1] },
+						{ "item": ["item", "Urban Sneakers", 1] },
+						{ "item": ["item", "Trench Boots", 1] },
+						{ "item": ["item", "Unicorn Greaves", 1] },
+						{ "item": ["item", "Old Geta", 1] },
+						{ "item": ["item", "Deadly Dancers", 1] },
+						{ "item": ["item", "Combat Skates", 1] },
+						{ "item": ["item", "Artillery Boots", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
 						"shop": true,
+						"arena": false,
 						"chest": false,
 						"quest": false
 					},
@@ -452,7 +956,6 @@
 						{ "item": ["item", "Boom Walkers", 1] },
 						{ "item": ["item", "Trench Boots", 1] },
 						{ "item": ["item", "Deadly Dancers", 1] },
-						{ "item": ["item", "Combat Skates", 1] },
 						{ "item": ["item", "Artillery Boots", 1] }
 					]
 				},
@@ -460,6 +963,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": false,
 						"chest": false,
 						"quest": false
 					},
@@ -489,6 +993,7 @@
 					"metadata": {
 						"trade": false,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -514,6 +1019,7 @@
 					"metadata": {
 						"trade": false,
 						"shop": false,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -523,6 +1029,32 @@
 						{ "item": ["item", "Ancient Sandals", 1] },
 						{ "item": ["item", "Weird Skates", 1] },
 						{ "item": ["item", "Lead Boots", 1] },
+						{ "item": ["item", "Lunatic Paws", 1] },
+						{ "item": ["item", "Combat Skates", 1] },
+						{ "item": ["item", "Paedalos", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Grasswalkers", 1] },
+						{ "item": ["item", "Bronze Boots", 1] },
+						{ "item": ["item", "Iron Boots", 1] },
+						{ "item": ["item", "Wooly Socks", 1] },
+						{ "item": ["item", "Ancient Sandals", 1] },
+						{ "item": ["item", "Weird Skates", 1] },
+						{ "item": ["item", "Steel Boots", 1] },
+						{ "item": ["item", "Silver Boots", 1] },
+						{ "item": ["item", "Titan Boots", 1] },
+						{ "item": ["item", "Cobalt Boots", 1] },
+						{ "item": ["item", "Lead Boots", 1] },
+						{ "item": ["item", "Laser Boots", 1] },
 						{ "item": ["item", "Lunatic Paws", 1] }
 					]
 				},
@@ -530,6 +1062,7 @@
 					"metadata": {
 						"trade": false,
 						"shop": true,
+						"arena": true,
 						"chest": false,
 						"quest": true
 					},
@@ -553,6 +1086,7 @@
 					"metadata": {
 						"trade": false,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": false
 					},
@@ -574,6 +1108,117 @@
 					"metadata": {
 						"trade": false,
 						"shop": false,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Grasswalkers", 1] },
+						{ "item": ["item", "Wooly Socks", 1] },
+						{ "item": ["item", "Ancient Sandals", 1] },
+						{ "item": ["item", "Weird Skates", 1] },
+						{ "item": ["item", "Lead Boots", 1] },
+						{ "item": ["item", "Lunatic Paws", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": false,
+						"arena": true,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Grasswalkers", 1] },
+						{ "item": ["item", "Wooly Socks", 1] },
+						{ "item": ["item", "Weird Skates", 1] },
+						{ "item": ["item", "Lunatic Paws", 1] },
+						{ "item": ["item", "Combat Skates", 1] },
+						{ "item": ["item", "Paedalos", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": false,
+						"arena": true,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Ancient Sandals", 1] },
+						{ "item": ["item", "Lead Boots", 1] },
+						{ "item": ["item", "Paedalos", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"arena": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Grasswalkers", 1] },
+						{ "item": ["item", "Bronze Boots", 1] },
+						{ "item": ["item", "Iron Boots", 1] },
+						{ "item": ["item", "Wooly Socks", 1] },
+						{ "item": ["item", "Weird Skates", 1] },
+						{ "item": ["item", "Steel Boots", 1] },
+						{ "item": ["item", "Silver Boots", 1] },
+						{ "item": ["item", "Titan Boots", 1] },
+						{ "item": ["item", "Cobalt Boots", 1] },
+						{ "item": ["item", "Laser Boots", 1] },
+						{ "item": ["item", "Lunatic Paws", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Bronze Boots", 1] },
+						{ "item": ["item", "Iron Boots", 1] },
+						{ "item": ["item", "Ancient Sandals", 1] },
+						{ "item": ["item", "Steel Boots", 1] },
+						{ "item": ["item", "Silver Boots", 1] },
+						{ "item": ["item", "Titan Boots", 1] },
+						{ "item": ["item", "Cobalt Boots", 1] },
+						{ "item": ["item", "Lead Boots", 1] },
+						{ "item": ["item", "Laser Boots", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"arena": true,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Bronze Boots", 1] },
+						{ "item": ["item", "Iron Boots", 1] },
+						{ "item": ["item", "Steel Boots", 1] },
+						{ "item": ["item", "Silver Boots", 1] },
+						{ "item": ["item", "Titan Boots", 1] },
+						{ "item": ["item", "Cobalt Boots", 1] },
+						{ "item": ["item", "Laser Boots", 1] },
+						{ "item": ["item", "Combat Skates", 1] },
+						{ "item": ["item", "Paedalos", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": false,
+						"arena": false,
 						"chest": false,
 						"quest": true
 					},
@@ -588,6 +1233,7 @@
 					"metadata": {
 						"trade": false,
 						"shop": false,
+						"arena": false,
 						"chest": true,
 						"quest": false
 					},
@@ -599,7 +1245,21 @@
 				{
 					"metadata": {
 						"trade": false,
+						"shop": false,
+						"arena": true,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Combat Skates", 1] },
+						{ "item": ["item", "Paedalos", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
 						"shop": true,
+						"arena": false,
 						"chest": false,
 						"quest": false
 					},
@@ -610,9 +1270,7 @@
 						{ "item": ["item", "Silver Boots", 1] },
 						{ "item": ["item", "Titan Boots", 1] },
 						{ "item": ["item", "Cobalt Boots", 1] },
-						{ "item": ["item", "Laser Boots", 1] },
-						{ "item": ["item", "Combat Skates", 1] },
-						{ "item": ["item", "Paedalos", 1] }
+						{ "item": ["item", "Laser Boots", 1] }
 					]
 				}
 			]

@@ -16,6 +16,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -45,6 +46,7 @@
 					"metadata": {
 						"trade": false,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -68,6 +70,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -90,6 +93,37 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Explorer's Cap", 1] },
+						{ "item": ["item", "Bronze Goggles", 1] },
+						{ "item": ["item", "Iron Goggles", 1] },
+						{ "item": ["item", "Thief's Band", 1] },
+						{ "item": ["item", "Mighty Strand", 1] },
+						{ "item": ["item", "Strawhat", 1] },
+						{ "item": ["item", "Steel Goggles", 1] },
+						{ "item": ["item", "Silver Goggles", 1] },
+						{ "item": ["item", "Dried Grass Hat", 1] },
+						{ "item": ["item", "Titan Goggles", 1] },
+						{ "item": ["item", "Scarecrown", 1] },
+						{ "item": ["item", "Strawberry Hat", 1] },
+						{ "item": ["item", "Bandit's Scarf", 1] },
+						{ "item": ["item", "Cobalt Goggles", 1] },
+						{ "item": ["item", "Tengu Mask", 1] },
+						{ "item": ["item", "Burglar's Rope", 1] },
+						{ "item": ["item", "Laser Goggles", 1] },
+						{ "item": ["item", "The Last Strawhat", 1] },
+						{ "item": ["item", "Gorgon Veil", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": true,
 						"chest": false,
 						"quest": true
 					},
@@ -115,6 +149,104 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Bronze Goggles", 1] },
+						{ "item": ["item", "Iron Goggles", 1] },
+						{ "item": ["item", "Thief's Band", 1] },
+						{ "item": ["item", "Mighty Strand", 1] },
+						{ "item": ["item", "Steel Goggles", 1] },
+						{ "item": ["item", "Silver Goggles", 1] },
+						{ "item": ["item", "Titan Goggles", 1] },
+						{ "item": ["item", "Bandit's Scarf", 1] },
+						{ "item": ["item", "Cobalt Goggles", 1] },
+						{ "item": ["item", "Tengu Mask", 1] },
+						{ "item": ["item", "Burglar's Rope", 1] },
+						{ "item": ["item", "Laser Goggles", 1] },
+						{ "item": ["item", "Gorgon Veil", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Explorer's Cap", 1] },
+						{ "item": ["item", "Bronze Goggles", 1] },
+						{ "item": ["item", "Iron Goggles", 1] },
+						{ "item": ["item", "Thief's Band", 1] },
+						{ "item": ["item", "Mighty Strand", 1] },
+						{ "item": ["item", "Steel Goggles", 1] },
+						{ "item": ["item", "Silver Goggles", 1] },
+						{ "item": ["item", "Titan Goggles", 1] },
+						{ "item": ["item", "Scarecrown", 1] },
+						{ "item": ["item", "Cobalt Goggles", 1] },
+						{ "item": ["item", "Tengu Mask", 1] },
+						{ "item": ["item", "Burglar's Rope", 1] },
+						{ "item": ["item", "Laser Goggles", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Explorer's Cap", 1] },
+						{ "item": ["item", "Thief's Band", 1] },
+						{ "item": ["item", "Mighty Strand", 1] },
+						{ "item": ["item", "Strawhat", 1] },
+						{ "item": ["item", "Dried Grass Hat", 1] },
+						{ "item": ["item", "Scarecrown", 1] },
+						{ "item": ["item", "Strawberry Hat", 1] },
+						{ "item": ["item", "Bandit's Scarf", 1] },
+						{ "item": ["item", "Tengu Mask", 1] },
+						{ "item": ["item", "Burglar's Rope", 1] },
+						{ "item": ["item", "The Last Strawhat", 1] },
+						{ "item": ["item", "Gorgon Veil", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Explorer's Cap", 1] },
+						{ "item": ["item", "Bronze Goggles", 1] },
+						{ "item": ["item", "Iron Goggles", 1] },
+						{ "item": ["item", "Strawhat", 1] },
+						{ "item": ["item", "Steel Goggles", 1] },
+						{ "item": ["item", "Silver Goggles", 1] },
+						{ "item": ["item", "Dried Grass Hat", 1] },
+						{ "item": ["item", "Titan Goggles", 1] },
+						{ "item": ["item", "Scarecrown", 1] },
+						{ "item": ["item", "Strawberry Hat", 1] },
+						{ "item": ["item", "Bandit's Scarf", 1] },
+						{ "item": ["item", "Cobalt Goggles", 1] },
+						{ "item": ["item", "Laser Goggles", 1] },
+						{ "item": ["item", "The Last Strawhat", 1] },
+						{ "item": ["item", "Gorgon Veil", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
 						"chest": true,
 						"quest": false
 					},
@@ -138,6 +270,27 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Bronze Goggles", 1] },
+						{ "item": ["item", "Iron Goggles", 1] },
+						{ "item": ["item", "Steel Goggles", 1] },
+						{ "item": ["item", "Silver Goggles", 1] },
+						{ "item": ["item", "Titan Goggles", 1] },
+						{ "item": ["item", "Bandit's Scarf", 1] },
+						{ "item": ["item", "Cobalt Goggles", 1] },
+						{ "item": ["item", "Laser Goggles", 1] },
+						{ "item": ["item", "Gorgon Veil", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
 						"chest": false,
 						"quest": false
 					},
@@ -164,6 +317,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -171,6 +325,7 @@
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Student's Bandana", 1] },
 						{ "item": ["item", "Furry Cap", 1] },
+						{ "item": ["item", "Proper Tophat", 1] },
 						{ "item": ["item", "Miner's Helmet", 1] },
 						{ "item": ["item", "Chilling Veil", 1] },
 						{ "item": ["item", "Dented Crown", 1] },
@@ -187,6 +342,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -194,6 +350,32 @@
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Student's Bandana", 1] },
 						{ "item": ["item", "Furry Cap", 1] },
+						{ "item": ["item", "Proper Tophat", 1] },
+						{ "item": ["item", "Miner's Helmet", 1] },
+						{ "item": ["item", "Chilling Veil", 1] },
+						{ "item": ["item", "Dented Crown", 1] },
+						{ "item": ["item", "Red Bandana", 1] },
+						{ "item": ["item", "Electrician's Cap", 1] },
+						{ "item": ["item", "Climate Cowl", 1] },
+						{ "item": ["item", "Hardhead Hat", 1] },
+						{ "item": ["item", "Serene Bubble", 1] },
+						{ "item": ["item", "Dragon's Bandana", 1] },
+						{ "item": ["item", "Tranquil Earmuffs", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Cooling Veil", 1] },
+						{ "item": ["item", "Student's Bandana", 1] },
+						{ "item": ["item", "Furry Cap", 1] },
+						{ "item": ["item", "Proper Tophat", 1] },
 						{ "item": ["item", "Miner's Helmet", 1] },
 						{ "item": ["item", "Chilling Veil", 1] },
 						{ "item": ["item", "Dented Crown", 1] },
@@ -208,6 +390,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": false,
 						"quest": true
 					},
@@ -215,6 +398,7 @@
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Student's Bandana", 1] },
 						{ "item": ["item", "Furry Cap", 1] },
+						{ "item": ["item", "Proper Tophat", 1] },
 						{ "item": ["item", "Miner's Helmet", 1] },
 						{ "item": ["item", "Chilling Veil", 1] },
 						{ "item": ["item", "Red Bandana", 1] },
@@ -230,6 +414,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": false
 					},
@@ -252,6 +437,30 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Cooling Veil", 1] },
+						{ "item": ["item", "Student's Bandana", 1] },
+						{ "item": ["item", "Furry Cap", 1] },
+						{ "item": ["item", "Proper Tophat", 1] },
+						{ "item": ["item", "Miner's Helmet", 1] },
+						{ "item": ["item", "Chilling Veil", 1] },
+						{ "item": ["item", "Dented Crown", 1] },
+						{ "item": ["item", "Red Bandana", 1] },
+						{ "item": ["item", "Electrician's Cap", 1] },
+						{ "item": ["item", "Climate Cowl", 1] },
+						{ "item": ["item", "Hardhead Hat", 1] },
+						{ "item": ["item", "Serene Bubble", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": true,
 						"chest": false,
 						"quest": true
 					},
@@ -259,6 +468,126 @@
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Student's Bandana", 1] },
 						{ "item": ["item", "Furry Cap", 1] },
+						{ "item": ["item", "Proper Tophat", 1] },
+						{ "item": ["item", "Strawhat", 1] },
+						{ "item": ["item", "Miner's Helmet", 1] },
+						{ "item": ["item", "Chilling Veil", 1] },
+						{ "item": ["item", "Red Bandana", 1] },
+						{ "item": ["item", "Scarecrown", 1] },
+						{ "item": ["item", "Electrician's Cap", 1] },
+						{ "item": ["item", "Bandit's Scarf", 1] },
+						{ "item": ["item", "Climate Cowl", 1] },
+						{ "item": ["item", "Hardhead Hat", 1] },
+						{ "item": ["item", "Gorgon Veil", 1] },
+						{ "item": ["item", "Serene Bubble", 1] },
+						{ "item": ["item", "Dragon's Bandana", 1] },
+						{ "item": ["item", "Tranquil Earmuffs", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": true,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Cooling Veil", 1] },
+						{ "item": ["item", "Student's Bandana", 1] },
+						{ "item": ["item", "Furry Cap", 1] },
+						{ "item": ["item", "Mighty Strand", 1] },
+						{ "item": ["item", "Miner's Helmet", 1] },
+						{ "item": ["item", "Chilling Veil", 1] },
+						{ "item": ["item", "Dented Crown", 1] },
+						{ "item": ["item", "Red Bandana", 1] },
+						{ "item": ["item", "Electrician's Cap", 1] },
+						{ "item": ["item", "Tengu Mask", 1] },
+						{ "item": ["item", "Hardhead Hat", 1] },
+						{ "item": ["item", "Gorgon Veil", 1] },
+						{ "item": ["item", "Serene Bubble", 1] },
+						{ "item": ["item", "Dragon's Bandana", 1] },
+						{ "item": ["item", "Tranquil Earmuffs", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Cooling Veil", 1] },
+						{ "item": ["item", "Student's Bandana", 1] },
+						{ "item": ["item", "Furry Cap", 1] },
+						{ "item": ["item", "Proper Tophat", 1] },
+						{ "item": ["item", "Miner's Helmet", 1] },
+						{ "item": ["item", "Chilling Veil", 1] },
+						{ "item": ["item", "Red Bandana", 1] },
+						{ "item": ["item", "Electrician's Cap", 1] },
+						{ "item": ["item", "Climate Cowl", 1] },
+						{ "item": ["item", "Hardhead Hat", 1] },
+						{ "item": ["item", "Serene Bubble", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Cooling Veil", 1] },
+						{ "item": ["item", "Student's Bandana", 1] },
+						{ "item": ["item", "Furry Cap", 1] },
+						{ "item": ["item", "Miner's Helmet", 1] },
+						{ "item": ["item", "Chilling Veil", 1] },
+						{ "item": ["item", "Dented Crown", 1] },
+						{ "item": ["item", "Red Bandana", 1] },
+						{ "item": ["item", "Electrician's Cap", 1] },
+						{ "item": ["item", "Hardhead Hat", 1] },
+						{ "item": ["item", "Serene Bubble", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": true,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Cooling Veil", 1] },
+						{ "item": ["item", "Student's Bandana", 1] },
+						{ "item": ["item", "Furry Cap", 1] },
+						{ "item": ["item", "Miner's Helmet", 1] },
+						{ "item": ["item", "Chilling Veil", 1] },
+						{ "item": ["item", "Red Bandana", 1] },
+						{ "item": ["item", "Electrician's Cap", 1] },
+						{ "item": ["item", "Hardhead Hat", 1] },
+						{ "item": ["item", "Serene Bubble", 1] },
+						{ "item": ["item", "Dragon's Bandana", 1] },
+						{ "item": ["item", "Tranquil Earmuffs", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Cooling Veil", 1] },
+						{ "item": ["item", "Student's Bandana", 1] },
+						{ "item": ["item", "Furry Cap", 1] },
+						{ "item": ["item", "Proper Tophat", 1] },
 						{ "item": ["item", "Strawhat", 1] },
 						{ "item": ["item", "Miner's Helmet", 1] },
 						{ "item": ["item", "Chilling Veil", 1] },
@@ -276,6 +605,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": false,
 						"chest": true,
 						"quest": false
 					},
@@ -298,7 +628,32 @@
 				{
 					"metadata": {
 						"trade": true,
+						"shop": false,
+						"arena": true,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Cooling Veil", 1] },
+						{ "item": ["item", "Student's Bandana", 1] },
+						{ "item": ["item", "Furry Cap", 1] },
+						{ "item": ["item", "Miner's Helmet", 1] },
+						{ "item": ["item", "Chilling Veil", 1] },
+						{ "item": ["item", "Red Bandana", 1] },
+						{ "item": ["item", "Electrician's Cap", 1] },
+						{ "item": ["item", "Bandit's Scarf", 1] },
+						{ "item": ["item", "Hardhead Hat", 1] },
+						{ "item": ["item", "Gorgon Veil", 1] },
+						{ "item": ["item", "Serene Bubble", 1] },
+						{ "item": ["item", "Dragon's Bandana", 1] },
+						{ "item": ["item", "Tranquil Earmuffs", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
 						"shop": true,
+						"arena": false,
 						"chest": false,
 						"quest": false
 					},
@@ -311,15 +666,14 @@
 						{ "item": ["item", "Red Bandana", 1] },
 						{ "item": ["item", "Electrician's Cap", 1] },
 						{ "item": ["item", "Hardhead Hat", 1] },
-						{ "item": ["item", "Serene Bubble", 1] },
-						{ "item": ["item", "Dragon's Bandana", 1] },
-						{ "item": ["item", "Tranquil Earmuffs", 1] }
+						{ "item": ["item", "Serene Bubble", 1] }
 					]
 				},
 				{
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": false,
 						"chest": false,
 						"quest": false
 					},
@@ -348,6 +702,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -371,6 +726,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -394,6 +750,31 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Recruit's Scope", 1] },
+						{ "item": ["item", "Shady Monocle", 1] },
+						{ "item": ["item", "Edgy Headphones", 1] },
+						{ "item": ["item", "Longears", 1] },
+						{ "item": ["item", "Fin Cap", 1] },
+						{ "item": ["item", "Nomadic Turban", 1] },
+						{ "item": ["item", "Shiny Glasses", 1] },
+						{ "item": ["item", "Nifty Grey Shades", 1] },
+						{ "item": ["item", "Faedora", 1] },
+						{ "item": ["item", "Mystic Mohawk", 1] },
+						{ "item": ["item", "Scouting Visor", 1] },
+						{ "item": ["item", "Furious Hothead", 1] },
+						{ "item": ["item", "Trackwalker Visor", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": true,
 						"chest": false,
 						"quest": true
 					},
@@ -417,6 +798,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": false
 					},
@@ -440,6 +822,31 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Recruit's Scope", 1] },
+						{ "item": ["item", "Shady Monocle", 1] },
+						{ "item": ["item", "Edgy Headphones", 1] },
+						{ "item": ["item", "Longears", 1] },
+						{ "item": ["item", "Fin Cap", 1] },
+						{ "item": ["item", "Nomadic Turban", 1] },
+						{ "item": ["item", "Shiny Glasses", 1] },
+						{ "item": ["item", "Nifty Grey Shades", 1] },
+						{ "item": ["item", "Faedora", 1] },
+						{ "item": ["item", "Mystic Mohawk", 1] },
+						{ "item": ["item", "Scouting Visor", 1] },
+						{ "item": ["item", "Furious Hothead", 1] },
+						{ "item": ["item", "Trackwalker Visor", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": true,
 						"chest": false,
 						"quest": true
 					},
@@ -467,6 +874,7 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": true,
 						"chest": true,
 						"quest": false
 					},
@@ -493,6 +901,55 @@
 					"metadata": {
 						"trade": true,
 						"shop": true,
+						"arena": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Recruit's Scope", 1] },
+						{ "item": ["item", "Shady Monocle", 1] },
+						{ "item": ["item", "Edgy Headphones", 1] },
+						{ "item": ["item", "Longears", 1] },
+						{ "item": ["item", "Fin Cap", 1] },
+						{ "item": ["item", "Nomadic Turban", 1] },
+						{ "item": ["item", "Shiny Glasses", 1] },
+						{ "item": ["item", "Nifty Grey Shades", 1] },
+						{ "item": ["item", "Faedora", 1] },
+						{ "item": ["item", "Mystic Mohawk", 1] },
+						{ "item": ["item", "Scouting Visor", 1] },
+						{ "item": ["item", "Furious Hothead", 1] },
+						{ "item": ["item", "Trackwalker Visor", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Recruit's Scope", 1] },
+						{ "item": ["item", "Shady Monocle", 1] },
+						{ "item": ["item", "Edgy Headphones", 1] },
+						{ "item": ["item", "Longears", 1] },
+						{ "item": ["item", "Fin Cap", 1] },
+						{ "item": ["item", "Nomadic Turban", 1] },
+						{ "item": ["item", "Shiny Glasses", 1] },
+						{ "item": ["item", "Nifty Grey Shades", 1] },
+						{ "item": ["item", "Faedora", 1] },
+						{ "item": ["item", "Mystic Mohawk", 1] },
+						{ "item": ["item", "Scouting Visor", 1] },
+						{ "item": ["item", "Furious Hothead", 1] },
+						{ "item": ["item", "Trackwalker Visor", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": true,
 						"chest": false,
 						"quest": false
 					},
@@ -516,6 +973,110 @@
 					"metadata": {
 						"trade": true,
 						"shop": false,
+						"arena": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Explorer's Cap", 1] },
+						{ "item": ["item", "Recruit's Scope", 1] },
+						{ "item": ["item", "Shady Monocle", 1] },
+						{ "item": ["item", "Edgy Headphones", 1] },
+						{ "item": ["item", "Longears", 1] },
+						{ "item": ["item", "Fin Cap", 1] },
+						{ "item": ["item", "Nomadic Turban", 1] },
+						{ "item": ["item", "Shiny Glasses", 1] },
+						{ "item": ["item", "Dried Grass Hat", 1] },
+						{ "item": ["item", "Nifty Grey Shades", 1] },
+						{ "item": ["item", "Strawberry Hat", 1] },
+						{ "item": ["item", "Faedora", 1] },
+						{ "item": ["item", "Mystic Mohawk", 1] },
+						{ "item": ["item", "Scouting Visor", 1] },
+						{ "item": ["item", "The Last Strawhat", 1] },
+						{ "item": ["item", "Furious Hothead", 1] },
+						{ "item": ["item", "Trackwalker Visor", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Recruit's Scope", 1] },
+						{ "item": ["item", "Shady Monocle", 1] },
+						{ "item": ["item", "Edgy Headphones", 1] },
+						{ "item": ["item", "Longears", 1] },
+						{ "item": ["item", "Fin Cap", 1] },
+						{ "item": ["item", "Thief's Band", 1] },
+						{ "item": ["item", "Nomadic Turban", 1] },
+						{ "item": ["item", "Shiny Glasses", 1] },
+						{ "item": ["item", "Nifty Grey Shades", 1] },
+						{ "item": ["item", "Faedora", 1] },
+						{ "item": ["item", "Mystic Mohawk", 1] },
+						{ "item": ["item", "Bandit's Scarf", 1] },
+						{ "item": ["item", "Scouting Visor", 1] },
+						{ "item": ["item", "Burglar's Rope", 1] },
+						{ "item": ["item", "Furious Hothead", 1] },
+						{ "item": ["item", "Trackwalker Visor", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": true,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Recruit's Scope", 1] },
+						{ "item": ["item", "Shady Monocle", 1] },
+						{ "item": ["item", "Edgy Headphones", 1] },
+						{ "item": ["item", "Longears", 1] },
+						{ "item": ["item", "Fin Cap", 1] },
+						{ "item": ["item", "Nomadic Turban", 1] },
+						{ "item": ["item", "Shiny Glasses", 1] },
+						{ "item": ["item", "Nifty Grey Shades", 1] },
+						{ "item": ["item", "Faedora", 1] },
+						{ "item": ["item", "Mystic Mohawk", 1] },
+						{ "item": ["item", "Scouting Visor", 1] },
+						{ "item": ["item", "Furious Hothead", 1] },
+						{ "item": ["item", "Trackwalker Visor", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": true,
+						"arena": false,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Recruit's Scope", 1] },
+						{ "item": ["item", "Shady Monocle", 1] },
+						{ "item": ["item", "Edgy Headphones", 1] },
+						{ "item": ["item", "Longears", 1] },
+						{ "item": ["item", "Fin Cap", 1] },
+						{ "item": ["item", "Nomadic Turban", 1] },
+						{ "item": ["item", "Shiny Glasses", 1] },
+						{ "item": ["item", "Nifty Grey Shades", 1] },
+						{ "item": ["item", "Faedora", 1] },
+						{ "item": ["item", "Mystic Mohawk", 1] },
+						{ "item": ["item", "Scouting Visor", 1] },
+						{ "item": ["item", "Furious Hothead", 1] },
+						{ "item": ["item", "Trackwalker Visor", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": true,
+						"shop": false,
+						"arena": false,
 						"chest": false,
 						"quest": false
 					},
@@ -546,12 +1107,14 @@
 					"metadata": {
 						"trade": false,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
 					"content": [
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Furry Cap", 1] },
+						{ "item": ["item", "Proper Tophat", 1] },
 						{ "item": ["item", "Strawhat", 1] },
 						{ "item": ["item", "Miner's Helmet", 1] },
 						{ "item": ["item", "Dried Grass Hat", 1] },
@@ -561,6 +1124,27 @@
 						{ "item": ["item", "The Last Strawhat", 1] },
 						{ "item": ["item", "Dragon's Bandana", 1] },
 						{ "item": ["item", "Tranquil Earmuffs", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Cooling Veil", 1] },
+						{ "item": ["item", "Furry Cap", 1] },
+						{ "item": ["item", "Proper Tophat", 1] },
+						{ "item": ["item", "Strawhat", 1] },
+						{ "item": ["item", "Miner's Helmet", 1] },
+						{ "item": ["item", "Dried Grass Hat", 1] },
+						{ "item": ["item", "Dented Crown", 1] },
+						{ "item": ["item", "Strawberry Hat", 1] },
+						{ "item": ["item", "Climate Cowl", 1] },
+						{ "item": ["item", "The Last Strawhat", 1] }
 					]
 				}
 			]
@@ -574,6 +1158,7 @@
 					"metadata": {
 						"trade": false,
 						"shop": false,
+						"arena": true,
 						"chest": true,
 						"quest": true
 					},
@@ -581,6 +1166,7 @@
 						{ "item": ["item", "Explorer's Cap", 1] },
 						{ "item": ["item", "Cooling Veil", 1] },
 						{ "item": ["item", "Furry Cap", 1] },
+						{ "item": ["item", "Proper Tophat", 1] },
 						{ "item": ["item", "Thief's Band", 1] },
 						{ "item": ["item", "Mighty Strand", 1] },
 						{ "item": ["item", "Miner's Helmet", 1] },
@@ -592,13 +1178,16 @@
 						{ "item": ["item", "Climate Cowl", 1] },
 						{ "item": ["item", "Tengu Mask", 1] },
 						{ "item": ["item", "Burglar's Rope", 1] },
-						{ "item": ["item", "The Last Strawhat", 1] }
+						{ "item": ["item", "The Last Strawhat", 1] },
+						{ "item": ["item", "Dragon's Bandana", 1] },
+						{ "item": ["item", "Tranquil Earmuffs", 1] }
 					]
 				},
 				{
 					"metadata": {
 						"trade": false,
 						"shop": true,
+						"arena": true,
 						"chest": false,
 						"quest": true
 					},
@@ -606,6 +1195,7 @@
 						{ "item": ["item", "Explorer's Cap", 1] },
 						{ "item": ["item", "Bronze Goggles", 1] },
 						{ "item": ["item", "Iron Goggles", 1] },
+						{ "item": ["item", "Proper Tophat", 1] },
 						{ "item": ["item", "Miner's Helmet", 1] },
 						{ "item": ["item", "Strawhat", 1] },
 						{ "item": ["item", "Steel Goggles", 1] },
@@ -626,6 +1216,7 @@
 					"metadata": {
 						"trade": false,
 						"shop": true,
+						"arena": true,
 						"chest": true,
 						"quest": false
 					},
@@ -652,11 +1243,154 @@
 					"metadata": {
 						"trade": false,
 						"shop": false,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Explorer's Cap", 1] },
+						{ "item": ["item", "Cooling Veil", 1] },
+						{ "item": ["item", "Furry Cap", 1] },
+						{ "item": ["item", "Proper Tophat", 1] },
+						{ "item": ["item", "Thief's Band", 1] },
+						{ "item": ["item", "Mighty Strand", 1] },
+						{ "item": ["item", "Miner's Helmet", 1] },
+						{ "item": ["item", "Strawhat", 1] },
+						{ "item": ["item", "Dented Crown", 1] },
+						{ "item": ["item", "Dried Grass Hat", 1] },
+						{ "item": ["item", "Scarecrown", 1] },
+						{ "item": ["item", "Strawberry Hat", 1] },
+						{ "item": ["item", "Climate Cowl", 1] },
+						{ "item": ["item", "Tengu Mask", 1] },
+						{ "item": ["item", "Burglar's Rope", 1] },
+						{ "item": ["item", "The Last Strawhat", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": false,
+						"arena": true,
 						"chest": false,
 						"quest": true
 					},
 					"content": [
 						{ "item": ["item", "Explorer's Cap", 1] },
+						{ "item": ["item", "Proper Tophat", 1] },
+						{ "item": ["item", "Miner's Helmet", 1] },
+						{ "item": ["item", "Strawhat", 1] },
+						{ "item": ["item", "Dried Grass Hat", 1] },
+						{ "item": ["item", "Scarecrown", 1] },
+						{ "item": ["item", "Strawberry Hat", 1] },
+						{ "item": ["item", "Climate Cowl", 1] },
+						{ "item": ["item", "The Last Strawhat", 1] },
+						{ "item": ["item", "Dragon's Bandana", 1] },
+						{ "item": ["item", "Tranquil Earmuffs", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": false,
+						"arena": true,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Cooling Veil", 1] },
+						{ "item": ["item", "Furry Cap", 1] },
+						{ "item": ["item", "Thief's Band", 1] },
+						{ "item": ["item", "Mighty Strand", 1] },
+						{ "item": ["item", "Dented Crown", 1] },
+						{ "item": ["item", "Tengu Mask", 1] },
+						{ "item": ["item", "Burglar's Rope", 1] },
+						{ "item": ["item", "Dragon's Bandana", 1] },
+						{ "item": ["item", "Tranquil Earmuffs", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"arena": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Explorer's Cap", 1] },
+						{ "item": ["item", "Bronze Goggles", 1] },
+						{ "item": ["item", "Iron Goggles", 1] },
+						{ "item": ["item", "Proper Tophat", 1] },
+						{ "item": ["item", "Miner's Helmet", 1] },
+						{ "item": ["item", "Strawhat", 1] },
+						{ "item": ["item", "Steel Goggles", 1] },
+						{ "item": ["item", "Silver Goggles", 1] },
+						{ "item": ["item", "Dried Grass Hat", 1] },
+						{ "item": ["item", "Titan Goggles", 1] },
+						{ "item": ["item", "Scarecrown", 1] },
+						{ "item": ["item", "Strawberry Hat", 1] },
+						{ "item": ["item", "Climate Cowl", 1] },
+						{ "item": ["item", "Cobalt Goggles", 1] },
+						{ "item": ["item", "Laser Goggles", 1] },
+						{ "item": ["item", "The Last Strawhat", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Bronze Goggles", 1] },
+						{ "item": ["item", "Cooling Veil", 1] },
+						{ "item": ["item", "Iron Goggles", 1] },
+						{ "item": ["item", "Furry Cap", 1] },
+						{ "item": ["item", "Thief's Band", 1] },
+						{ "item": ["item", "Mighty Strand", 1] },
+						{ "item": ["item", "Steel Goggles", 1] },
+						{ "item": ["item", "Silver Goggles", 1] },
+						{ "item": ["item", "Dented Crown", 1] },
+						{ "item": ["item", "Titan Goggles", 1] },
+						{ "item": ["item", "Cobalt Goggles", 1] },
+						{ "item": ["item", "Tengu Mask", 1] },
+						{ "item": ["item", "Burglar's Rope", 1] },
+						{ "item": ["item", "Laser Goggles", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"arena": true,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Bronze Goggles", 1] },
+						{ "item": ["item", "Iron Goggles", 1] },
+						{ "item": ["item", "Steel Goggles", 1] },
+						{ "item": ["item", "Silver Goggles", 1] },
+						{ "item": ["item", "Titan Goggles", 1] },
+						{ "item": ["item", "Cobalt Goggles", 1] },
+						{ "item": ["item", "Laser Goggles", 1] },
+						{ "item": ["item", "Dragon's Bandana", 1] },
+						{ "item": ["item", "Tranquil Earmuffs", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": false,
+						"arena": false,
+						"chest": false,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Explorer's Cap", 1] },
+						{ "item": ["item", "Proper Tophat", 1] },
 						{ "item": ["item", "Miner's Helmet", 1] },
 						{ "item": ["item", "Strawhat", 1] },
 						{ "item": ["item", "Dried Grass Hat", 1] },
@@ -670,6 +1404,7 @@
 					"metadata": {
 						"trade": false,
 						"shop": false,
+						"arena": false,
 						"chest": true,
 						"quest": false
 					},
@@ -686,7 +1421,21 @@
 				{
 					"metadata": {
 						"trade": false,
+						"shop": false,
+						"arena": true,
+						"chest": false,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Dragon's Bandana", 1] },
+						{ "item": ["item", "Tranquil Earmuffs", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
 						"shop": true,
+						"arena": false,
 						"chest": false,
 						"quest": false
 					},
@@ -697,9 +1446,7 @@
 						{ "item": ["item", "Silver Goggles", 1] },
 						{ "item": ["item", "Titan Goggles", 1] },
 						{ "item": ["item", "Cobalt Goggles", 1] },
-						{ "item": ["item", "Laser Goggles", 1] },
-						{ "item": ["item", "Dragon's Bandana", 1] },
-						{ "item": ["item", "Tranquil Earmuffs", 1] }
+						{ "item": ["item", "Laser Goggles", 1] }
 					]
 				}
 			]
