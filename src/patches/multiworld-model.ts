@@ -81,6 +81,13 @@ export function patch(plugin: MwRandomizer) {
 						}
 					}
 
+					if (sc.randoData.descriptions[item.item] != undefined) {
+						return {
+							id: 0,
+							description: ig.LangLabel.getText(sc.randoData.descriptions[item.item]),
+						}
+					}
+
 					return {
 						id: 0,
 						description: "An unknown CrossCode item. " + rarityString,

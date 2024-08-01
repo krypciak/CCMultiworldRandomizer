@@ -60,7 +60,6 @@ declare global {
 			baseDynamicItemId: number;
 			numItems: number;
 			gamepackage: ap.GamePackage;
-			randoData: WorldData;
 
 			questSettings: {
 				hidePlayer: boolean;

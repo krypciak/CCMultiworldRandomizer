@@ -3767,7 +3767,7 @@
 	},
 	"shops": {
 		"locations": {
-			"global": {
+			"perItemType": {
 				"1": 3235824731,
 				"27": 3235824732,
 				"2": 3235824733,
@@ -4277,6 +4277,707 @@
 					"331": 3235924224
 				}
 			}
+		}
+	},
+	"descriptions": {
+		"3235824000": {
+			"en_US": "The element of fire, associated with the Attack stat and Melee combat."
+		},
+		"3235824001": {
+			"en_US": "The element of ice, associated with the Defense stat and Guarding."
+		},
+		"3235824002": {
+			"en_US": "The element of electricity, associated with the Focus stat and Dashing."
+		},
+		"3235824003": {
+			"en_US": "The element of ice, associated with Hit Points and Ranged combat."
+		},
+		"3235824004": {
+			"en_US": "Boosts your combat capabilities, allowing you to perform more arts."
+		},
+		"3235924000": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Rookie's Best\\c[0]."
+		},
+		"3235924001": {
+			"en_US": "Unlocks the slot selling \\c[3]Sandwich\\c[0] in \\c[3]Rookie's Best\\c[0]."
+		},
+		"3235924002": {
+			"en_US": "Unlocks slots selling \\c[3]Sandwich\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924003": {
+			"en_US": "Unlocks the slot selling \\c[3]Hi-Sandwich\\c[0] in \\c[3]Rookie's Best\\c[0]."
+		},
+		"3235924004": {
+			"en_US": "Unlocks slots selling \\c[3]Hi-Sandwich\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924005": {
+			"en_US": "Unlocks the slot selling \\c[3]Green Leaf Tea\\c[0] in \\c[3]Rookie's Best\\c[0]."
+		},
+		"3235924006": {
+			"en_US": "Unlocks slots selling \\c[3]Green Leaf Tea\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924007": {
+			"en_US": "Unlocks the slot selling \\c[3]Just Water\\c[0] in \\c[3]Rookie's Best\\c[0]."
+		},
+		"3235924008": {
+			"en_US": "Unlocks slots selling \\c[3]Just Water\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924009": {
+			"en_US": "Unlocks the slot selling \\c[3]Spicy Bun\\c[0] in \\c[3]Rookie's Best\\c[0]."
+		},
+		"3235924010": {
+			"en_US": "Unlocks slots selling \\c[3]Spicy Bun\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924011": {
+			"en_US": "Unlocks the slot selling \\c[3]Fruit Drink\\c[0] in \\c[3]Rookie's Best\\c[0]."
+		},
+		"3235924012": {
+			"en_US": "Unlocks slots selling \\c[3]Fruit Drink\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924013": {
+			"en_US": "Unlocks the slot selling \\c[3]Rice Cracker\\c[0] in \\c[3]Rookie's Best\\c[0]."
+		},
+		"3235924014": {
+			"en_US": "Unlocks slots selling \\c[3]Rice Cracker\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924015": {
+			"en_US": "Unlocks the slot selling \\c[3]Veggie Sticks\\c[0] in \\c[3]Rookie's Best\\c[0]."
+		},
+		"3235924016": {
+			"en_US": "Unlocks slots selling \\c[3]Veggie Sticks\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924017": {
+			"en_US": "Unlocks the slot selling \\c[3]Kebab Roll\\c[0] in \\c[3]Rookie's Best\\c[0]."
+		},
+		"3235924018": {
+			"en_US": "Unlocks slots selling \\c[3]Kebab Roll\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924019": {
+			"en_US": "Unlocks the slot selling \\c[3]Meaty Risotto\\c[0] in \\c[3]Rookie's Best\\c[0]."
+		},
+		"3235924020": {
+			"en_US": "Unlocks slots selling \\c[3]Meaty Risotto\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924021": {
+			"en_US": "Unlocks the slot selling \\c[3]Bergen Ice Cream\\c[0] in \\c[3]Rookie's Best\\c[0]."
+		},
+		"3235924022": {
+			"en_US": "Unlocks slots selling \\c[3]Bergen Ice Cream\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924023": {
+			"en_US": "Unlocks the slot selling \\c[3]Sweet Lemonjuice\\c[0] in \\c[3]Rookie's Best\\c[0]."
+		},
+		"3235924024": {
+			"en_US": "Unlocks slots selling \\c[3]Sweet Lemonjuice\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924025": {
+			"en_US": "Unlocks the slot selling \\c[3]Salted Peanuts\\c[0] in \\c[3]Rookie's Best\\c[0]."
+		},
+		"3235924026": {
+			"en_US": "Unlocks slots selling \\c[3]Salted Peanuts\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924027": {
+			"en_US": "Unlocks the slot selling \\c[3]Cup o' Coffee\\c[0] in \\c[3]Rookie's Best\\c[0]."
+		},
+		"3235924028": {
+			"en_US": "Unlocks slots selling \\c[3]Cup o' Coffee\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924029": {
+			"en_US": "Unlocks the slot selling \\c[3]Snack Mix\\c[0] in \\c[3]Rookie's Best\\c[0]."
+		},
+		"3235924030": {
+			"en_US": "Unlocks slots selling \\c[3]Snack Mix\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924031": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Rookie's Starter\\c[0]."
+		},
+		"3235924032": {
+			"en_US": "Unlocks the slot selling \\c[3]Bronze Goggles\\c[0] in \\c[3]Rookie's Starter\\c[0]."
+		},
+		"3235924033": {
+			"en_US": "Unlocks slots selling \\c[3]Bronze Goggles\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924034": {
+			"en_US": "Unlocks the slot selling \\c[3]Bronze Edge\\c[0] in \\c[3]Rookie's Starter\\c[0]."
+		},
+		"3235924035": {
+			"en_US": "Unlocks slots selling \\c[3]Bronze Edge\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924036": {
+			"en_US": "Unlocks the slot selling \\c[3]Bronze Mail\\c[0] in \\c[3]Rookie's Starter\\c[0]."
+		},
+		"3235924037": {
+			"en_US": "Unlocks slots selling \\c[3]Bronze Mail\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924038": {
+			"en_US": "Unlocks the slot selling \\c[3]Bronze Boots\\c[0] in \\c[3]Rookie's Starter\\c[0]."
+		},
+		"3235924039": {
+			"en_US": "Unlocks slots selling \\c[3]Bronze Boots\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924040": {
+			"en_US": "Unlocks the slot selling \\c[3]Iron Goggles\\c[0] in \\c[3]Rookie's Starter\\c[0]."
+		},
+		"3235924041": {
+			"en_US": "Unlocks slots selling \\c[3]Iron Goggles\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924042": {
+			"en_US": "Unlocks the slot selling \\c[3]Iron Edge\\c[0] in \\c[3]Rookie's Starter\\c[0]."
+		},
+		"3235924043": {
+			"en_US": "Unlocks slots selling \\c[3]Iron Edge\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924044": {
+			"en_US": "Unlocks the slot selling \\c[3]Iron Mail\\c[0] in \\c[3]Rookie's Starter\\c[0]."
+		},
+		"3235924045": {
+			"en_US": "Unlocks slots selling \\c[3]Iron Mail\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924046": {
+			"en_US": "Unlocks the slot selling \\c[3]Iron Boots\\c[0] in \\c[3]Rookie's Starter\\c[0]."
+		},
+		"3235924047": {
+			"en_US": "Unlocks slots selling \\c[3]Iron Boots\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924048": {
+			"en_US": "Unlocks the slot selling \\c[3]Silver Goggles\\c[0] in \\c[3]Rookie's Starter\\c[0]."
+		},
+		"3235924049": {
+			"en_US": "Unlocks slots selling \\c[3]Silver Goggles\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924050": {
+			"en_US": "Unlocks the slot selling \\c[3]Silver Edge\\c[0] in \\c[3]Rookie's Starter\\c[0]."
+		},
+		"3235924051": {
+			"en_US": "Unlocks slots selling \\c[3]Silver Edge\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924052": {
+			"en_US": "Unlocks the slot selling \\c[3]Silver Mail\\c[0] in \\c[3]Rookie's Starter\\c[0]."
+		},
+		"3235924053": {
+			"en_US": "Unlocks slots selling \\c[3]Silver Mail\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924054": {
+			"en_US": "Unlocks the slot selling \\c[3]Silver Boots\\c[0] in \\c[3]Rookie's Starter\\c[0]."
+		},
+		"3235924055": {
+			"en_US": "Unlocks slots selling \\c[3]Silver Boots\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924056": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Rookie's Advanced\\c[0]."
+		},
+		"3235924057": {
+			"en_US": "Unlocks the slot selling \\c[3]Steel Goggles\\c[0] in \\c[3]Rookie's Advanced\\c[0]."
+		},
+		"3235924058": {
+			"en_US": "Unlocks slots selling \\c[3]Steel Goggles\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924059": {
+			"en_US": "Unlocks the slot selling \\c[3]Steel Edge\\c[0] in \\c[3]Rookie's Advanced\\c[0]."
+		},
+		"3235924060": {
+			"en_US": "Unlocks slots selling \\c[3]Steel Edge\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924061": {
+			"en_US": "Unlocks the slot selling \\c[3]Steel Mail\\c[0] in \\c[3]Rookie's Advanced\\c[0]."
+		},
+		"3235924062": {
+			"en_US": "Unlocks slots selling \\c[3]Steel Mail\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924063": {
+			"en_US": "Unlocks the slot selling \\c[3]Steel Boots\\c[0] in \\c[3]Rookie's Advanced\\c[0]."
+		},
+		"3235924064": {
+			"en_US": "Unlocks slots selling \\c[3]Steel Boots\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924065": {
+			"en_US": "Unlocks the slot selling \\c[3]Silver Goggles\\c[0] in \\c[3]Rookie's Advanced\\c[0]."
+		},
+		"3235924066": {
+			"en_US": "Unlocks the slot selling \\c[3]Silver Edge\\c[0] in \\c[3]Rookie's Advanced\\c[0]."
+		},
+		"3235924067": {
+			"en_US": "Unlocks the slot selling \\c[3]Silver Mail\\c[0] in \\c[3]Rookie's Advanced\\c[0]."
+		},
+		"3235924068": {
+			"en_US": "Unlocks the slot selling \\c[3]Silver Boots\\c[0] in \\c[3]Rookie's Advanced\\c[0]."
+		},
+		"3235924069": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Tara's Shop\\c[0]."
+		},
+		"3235924070": {
+			"en_US": "Unlocks the slot selling \\c[3]Sandwich\\c[0] in \\c[3]Tara's Shop\\c[0]."
+		},
+		"3235924071": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924072": {
+			"en_US": "Unlocks the slot selling \\c[3]Rising Super Star\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924073": {
+			"en_US": "Unlocks slots selling \\c[3]Rising Super Star\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924074": {
+			"en_US": "Unlocks the slot selling \\c[3]Dk Pepper\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924075": {
+			"en_US": "Unlocks slots selling \\c[3]Dk Pepper\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924076": {
+			"en_US": "Unlocks the slot selling \\c[3]Cheese Spaetzle\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924077": {
+			"en_US": "Unlocks slots selling \\c[3]Cheese Spaetzle\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924078": {
+			"en_US": "Unlocks the slot selling \\c[3]Maultasche\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924079": {
+			"en_US": "Unlocks slots selling \\c[3]Maultasche\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924080": {
+			"en_US": "Unlocks the slot selling \\c[3]Durian\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924081": {
+			"en_US": "Unlocks slots selling \\c[3]Durian\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924082": {
+			"en_US": "Unlocks the slot selling \\c[3]PengoPop\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924083": {
+			"en_US": "Unlocks slots selling \\c[3]PengoPop\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924084": {
+			"en_US": "Unlocks the slot selling \\c[3]Spicy Beat-0-Type\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924085": {
+			"en_US": "Unlocks slots selling \\c[3]Spicy Beat-0-Type\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924086": {
+			"en_US": "Unlocks the slot selling \\c[3]Werewolf Stick\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924087": {
+			"en_US": "Unlocks slots selling \\c[3]Werewolf Stick\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924088": {
+			"en_US": "Unlocks the slot selling \\c[3]Mooncake\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924089": {
+			"en_US": "Unlocks slots selling \\c[3]Mooncake\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924090": {
+			"en_US": "Unlocks the slot selling \\c[3]Guacamole Toast\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924091": {
+			"en_US": "Unlocks slots selling \\c[3]Guacamole Toast\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924092": {
+			"en_US": "Unlocks the slot selling \\c[3]Willis Waldmahl\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924093": {
+			"en_US": "Unlocks slots selling \\c[3]Willis Waldmahl\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924094": {
+			"en_US": "Unlocks the slot selling \\c[3]Pumpkin Spice Cof.\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924095": {
+			"en_US": "Unlocks slots selling \\c[3]Pumpkin Spice Cof.\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924096": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Bergen Provisions\\c[0]."
+		},
+		"3235924097": {
+			"en_US": "Unlocks the slot selling \\c[3]Sandwich\\c[0] in \\c[3]Bergen Provisions\\c[0]."
+		},
+		"3235924098": {
+			"en_US": "Unlocks the slot selling \\c[3]Hi-Sandwich\\c[0] in \\c[3]Bergen Provisions\\c[0]."
+		},
+		"3235924099": {
+			"en_US": "Unlocks the slot selling \\c[3]Green Leaf Tea\\c[0] in \\c[3]Bergen Provisions\\c[0]."
+		},
+		"3235924100": {
+			"en_US": "Unlocks the slot selling \\c[3]Just Water\\c[0] in \\c[3]Bergen Provisions\\c[0]."
+		},
+		"3235924101": {
+			"en_US": "Unlocks the slot selling \\c[3]Spicy Bun\\c[0] in \\c[3]Bergen Provisions\\c[0]."
+		},
+		"3235924102": {
+			"en_US": "Unlocks the slot selling \\c[3]Fruit Drink\\c[0] in \\c[3]Bergen Provisions\\c[0]."
+		},
+		"3235924103": {
+			"en_US": "Unlocks the slot selling \\c[3]Rice Cracker\\c[0] in \\c[3]Bergen Provisions\\c[0]."
+		},
+		"3235924104": {
+			"en_US": "Unlocks the slot selling \\c[3]Veggie Sticks\\c[0] in \\c[3]Bergen Provisions\\c[0]."
+		},
+		"3235924105": {
+			"en_US": "Unlocks the slot selling \\c[3]Kebab Roll\\c[0] in \\c[3]Bergen Provisions\\c[0]."
+		},
+		"3235924106": {
+			"en_US": "Unlocks the slot selling \\c[3]Meaty Risotto\\c[0] in \\c[3]Bergen Provisions\\c[0]."
+		},
+		"3235924107": {
+			"en_US": "Unlocks the slot selling \\c[3]Bergen Ice Cream\\c[0] in \\c[3]Bergen Provisions\\c[0]."
+		},
+		"3235924108": {
+			"en_US": "Unlocks the slot selling \\c[3]Sweet Lemonjuice\\c[0] in \\c[3]Bergen Provisions\\c[0]."
+		},
+		"3235924109": {
+			"en_US": "Unlocks the slot selling \\c[3]Salted Peanuts\\c[0] in \\c[3]Bergen Provisions\\c[0]."
+		},
+		"3235924110": {
+			"en_US": "Unlocks the slot selling \\c[3]Cup o' Coffee\\c[0] in \\c[3]Bergen Provisions\\c[0]."
+		},
+		"3235924111": {
+			"en_US": "Unlocks the slot selling \\c[3]Snack Mix\\c[0] in \\c[3]Bergen Provisions\\c[0]."
+		},
+		"3235924112": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Bergen Weaponry\\c[0]."
+		},
+		"3235924113": {
+			"en_US": "Unlocks the slot selling \\c[3]Iron Goggles\\c[0] in \\c[3]Bergen Weaponry\\c[0]."
+		},
+		"3235924114": {
+			"en_US": "Unlocks the slot selling \\c[3]Iron Edge\\c[0] in \\c[3]Bergen Weaponry\\c[0]."
+		},
+		"3235924115": {
+			"en_US": "Unlocks the slot selling \\c[3]Iron Mail\\c[0] in \\c[3]Bergen Weaponry\\c[0]."
+		},
+		"3235924116": {
+			"en_US": "Unlocks the slot selling \\c[3]Iron Boots\\c[0] in \\c[3]Bergen Weaponry\\c[0]."
+		},
+		"3235924117": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Hermit's House\\c[0]."
+		},
+		"3235924118": {
+			"en_US": "Unlocks the slot selling \\c[3]Chili Con Carne\\c[0] in \\c[3]Hermit's House\\c[0]."
+		},
+		"3235924119": {
+			"en_US": "Unlocks slots selling \\c[3]Chili Con Carne\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924120": {
+			"en_US": "Unlocks the slot selling \\c[3]Sweet Lemonjuice\\c[0] in \\c[3]Hermit's House\\c[0]."
+		},
+		"3235924121": {
+			"en_US": "Unlocks the slot selling \\c[3]Sweet Berry Tea\\c[0] in \\c[3]Hermit's House\\c[0]."
+		},
+		"3235924122": {
+			"en_US": "Unlocks slots selling \\c[3]Sweet Berry Tea\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924123": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Ba'kii Oasis\\c[0]."
+		},
+		"3235924124": {
+			"en_US": "Unlocks the slot selling \\c[3]Sandwich\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
+		},
+		"3235924125": {
+			"en_US": "Unlocks the slot selling \\c[3]Hi-Sandwich\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
+		},
+		"3235924126": {
+			"en_US": "Unlocks the slot selling \\c[3]Green Leaf Tea\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
+		},
+		"3235924127": {
+			"en_US": "Unlocks the slot selling \\c[3]Just Water\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
+		},
+		"3235924128": {
+			"en_US": "Unlocks the slot selling \\c[3]Spicy Bun\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
+		},
+		"3235924129": {
+			"en_US": "Unlocks the slot selling \\c[3]Fruit Drink\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
+		},
+		"3235924130": {
+			"en_US": "Unlocks the slot selling \\c[3]Rice Cracker\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
+		},
+		"3235924131": {
+			"en_US": "Unlocks the slot selling \\c[3]Veggie Sticks\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
+		},
+		"3235924132": {
+			"en_US": "Unlocks the slot selling \\c[3]Bergen Ice Cream\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
+		},
+		"3235924133": {
+			"en_US": "Unlocks the slot selling \\c[3]Sweet Lemonjuice\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
+		},
+		"3235924134": {
+			"en_US": "Unlocks the slot selling \\c[3]Kebab Roll\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
+		},
+		"3235924135": {
+			"en_US": "Unlocks the slot selling \\c[3]Meaty Risotto\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
+		},
+		"3235924136": {
+			"en_US": "Unlocks the slot selling \\c[3]Salted Peanuts\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
+		},
+		"3235924137": {
+			"en_US": "Unlocks the slot selling \\c[3]Cup o' Coffee\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
+		},
+		"3235924138": {
+			"en_US": "Unlocks the slot selling \\c[3]Snack Mix\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
+		},
+		"3235924139": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Ba'kii Arsenal\\c[0]."
+		},
+		"3235924140": {
+			"en_US": "Unlocks the slot selling \\c[3]Iron Goggles\\c[0] in \\c[3]Ba'kii Arsenal\\c[0]."
+		},
+		"3235924141": {
+			"en_US": "Unlocks the slot selling \\c[3]Iron Edge\\c[0] in \\c[3]Ba'kii Arsenal\\c[0]."
+		},
+		"3235924142": {
+			"en_US": "Unlocks the slot selling \\c[3]Iron Mail\\c[0] in \\c[3]Ba'kii Arsenal\\c[0]."
+		},
+		"3235924143": {
+			"en_US": "Unlocks the slot selling \\c[3]Iron Boots\\c[0] in \\c[3]Ba'kii Arsenal\\c[0]."
+		},
+		"3235924144": {
+			"en_US": "Unlocks the slot selling \\c[3]Steel Goggles\\c[0] in \\c[3]Ba'kii Arsenal\\c[0]."
+		},
+		"3235924145": {
+			"en_US": "Unlocks the slot selling \\c[3]Steel Edge\\c[0] in \\c[3]Ba'kii Arsenal\\c[0]."
+		},
+		"3235924146": {
+			"en_US": "Unlocks the slot selling \\c[3]Steel Mail\\c[0] in \\c[3]Ba'kii Arsenal\\c[0]."
+		},
+		"3235924147": {
+			"en_US": "Unlocks the slot selling \\c[3]Steel Boots\\c[0] in \\c[3]Ba'kii Arsenal\\c[0]."
+		},
+		"3235924148": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Vending Machine\\c[0]."
+		},
+		"3235924149": {
+			"en_US": "Unlocks the slot selling \\c[3]Sandwich\\c[0] in \\c[3]Vending Machine\\c[0]."
+		},
+		"3235924150": {
+			"en_US": "Unlocks the slot selling \\c[3]Hi-Sandwich\\c[0] in \\c[3]Vending Machine\\c[0]."
+		},
+		"3235924151": {
+			"en_US": "Unlocks the slot selling \\c[3]Green Leaf Tea\\c[0] in \\c[3]Vending Machine\\c[0]."
+		},
+		"3235924152": {
+			"en_US": "Unlocks the slot selling \\c[3]Just Water\\c[0] in \\c[3]Vending Machine\\c[0]."
+		},
+		"3235924153": {
+			"en_US": "Unlocks the slot selling \\c[3]Spicy Bun\\c[0] in \\c[3]Vending Machine\\c[0]."
+		},
+		"3235924154": {
+			"en_US": "Unlocks the slot selling \\c[3]Fruit Drink\\c[0] in \\c[3]Vending Machine\\c[0]."
+		},
+		"3235924155": {
+			"en_US": "Unlocks the slot selling \\c[3]Rice Cracker\\c[0] in \\c[3]Vending Machine\\c[0]."
+		},
+		"3235924156": {
+			"en_US": "Unlocks the slot selling \\c[3]Veggie Sticks\\c[0] in \\c[3]Vending Machine\\c[0]."
+		},
+		"3235924157": {
+			"en_US": "Unlocks the slot selling \\c[3]Bergen Ice Cream\\c[0] in \\c[3]Vending Machine\\c[0]."
+		},
+		"3235924158": {
+			"en_US": "Unlocks the slot selling \\c[3]Sweet Lemonjuice\\c[0] in \\c[3]Vending Machine\\c[0]."
+		},
+		"3235924159": {
+			"en_US": "Unlocks the slot selling \\c[3]Salted Peanuts\\c[0] in \\c[3]Vending Machine\\c[0]."
+		},
+		"3235924160": {
+			"en_US": "Unlocks the slot selling \\c[3]Cup o' Coffee\\c[0] in \\c[3]Vending Machine\\c[0]."
+		},
+		"3235924161": {
+			"en_US": "Unlocks the slot selling \\c[3]Snack Mix\\c[0] in \\c[3]Vending Machine\\c[0]."
+		},
+		"3235924162": {
+			"en_US": "Unlocks the slot selling \\c[3]Kebab Roll\\c[0] in \\c[3]Vending Machine\\c[0]."
+		},
+		"3235924163": {
+			"en_US": "Unlocks the slot selling \\c[3]Meaty Risotto\\c[0] in \\c[3]Vending Machine\\c[0]."
+		},
+		"3235924164": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Items N' Goods\\c[0]."
+		},
+		"3235924165": {
+			"en_US": "Unlocks the slot selling \\c[3]Sandwich\\c[0] in \\c[3]Items N' Goods\\c[0]."
+		},
+		"3235924166": {
+			"en_US": "Unlocks the slot selling \\c[3]Hi-Sandwich\\c[0] in \\c[3]Items N' Goods\\c[0]."
+		},
+		"3235924167": {
+			"en_US": "Unlocks the slot selling \\c[3]Green Leaf Tea\\c[0] in \\c[3]Items N' Goods\\c[0]."
+		},
+		"3235924168": {
+			"en_US": "Unlocks the slot selling \\c[3]Just Water\\c[0] in \\c[3]Items N' Goods\\c[0]."
+		},
+		"3235924169": {
+			"en_US": "Unlocks the slot selling \\c[3]Kebab Roll\\c[0] in \\c[3]Items N' Goods\\c[0]."
+		},
+		"3235924170": {
+			"en_US": "Unlocks the slot selling \\c[3]Meaty Risotto\\c[0] in \\c[3]Items N' Goods\\c[0]."
+		},
+		"3235924171": {
+			"en_US": "Unlocks the slot selling \\c[3]Spicy Bun\\c[0] in \\c[3]Items N' Goods\\c[0]."
+		},
+		"3235924172": {
+			"en_US": "Unlocks the slot selling \\c[3]Fruit Drink\\c[0] in \\c[3]Items N' Goods\\c[0]."
+		},
+		"3235924173": {
+			"en_US": "Unlocks the slot selling \\c[3]Rice Cracker\\c[0] in \\c[3]Items N' Goods\\c[0]."
+		},
+		"3235924174": {
+			"en_US": "Unlocks the slot selling \\c[3]Veggie Sticks\\c[0] in \\c[3]Items N' Goods\\c[0]."
+		},
+		"3235924175": {
+			"en_US": "Unlocks the slot selling \\c[3]Bergen Ice Cream\\c[0] in \\c[3]Items N' Goods\\c[0]."
+		},
+		"3235924176": {
+			"en_US": "Unlocks the slot selling \\c[3]Sweet Lemonjuice\\c[0] in \\c[3]Items N' Goods\\c[0]."
+		},
+		"3235924177": {
+			"en_US": "Unlocks the slot selling \\c[3]Salted Peanuts\\c[0] in \\c[3]Items N' Goods\\c[0]."
+		},
+		"3235924178": {
+			"en_US": "Unlocks the slot selling \\c[3]Cup o' Coffee\\c[0] in \\c[3]Items N' Goods\\c[0]."
+		},
+		"3235924179": {
+			"en_US": "Unlocks the slot selling \\c[3]Snack Mix\\c[0] in \\c[3]Items N' Goods\\c[0]."
+		},
+		"3235924180": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Basin Arsenal\\c[0]."
+		},
+		"3235924181": {
+			"en_US": "Unlocks the slot selling \\c[3]Silver Goggles\\c[0] in \\c[3]Basin Arsenal\\c[0]."
+		},
+		"3235924182": {
+			"en_US": "Unlocks the slot selling \\c[3]Silver Edge\\c[0] in \\c[3]Basin Arsenal\\c[0]."
+		},
+		"3235924183": {
+			"en_US": "Unlocks the slot selling \\c[3]Silver Mail\\c[0] in \\c[3]Basin Arsenal\\c[0]."
+		},
+		"3235924184": {
+			"en_US": "Unlocks the slot selling \\c[3]Silver Boots\\c[0] in \\c[3]Basin Arsenal\\c[0]."
+		},
+		"3235924185": {
+			"en_US": "Unlocks the slot selling \\c[3]Titan Goggles\\c[0] in \\c[3]Basin Arsenal\\c[0]."
+		},
+		"3235924186": {
+			"en_US": "Unlocks slots selling \\c[3]Titan Goggles\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924187": {
+			"en_US": "Unlocks the slot selling \\c[3]Titan Edge\\c[0] in \\c[3]Basin Arsenal\\c[0]."
+		},
+		"3235924188": {
+			"en_US": "Unlocks slots selling \\c[3]Titan Edge\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924189": {
+			"en_US": "Unlocks the slot selling \\c[3]Titan Mail\\c[0] in \\c[3]Basin Arsenal\\c[0]."
+		},
+		"3235924190": {
+			"en_US": "Unlocks slots selling \\c[3]Titan Mail\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924191": {
+			"en_US": "Unlocks the slot selling \\c[3]Titan Boots\\c[0] in \\c[3]Basin Arsenal\\c[0]."
+		},
+		"3235924192": {
+			"en_US": "Unlocks slots selling \\c[3]Titan Boots\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924193": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Calzone Shop\\c[0]."
+		},
+		"3235924194": {
+			"en_US": "Unlocks the slot selling \\c[3]One Up\\c[0] in \\c[3]Calzone Shop\\c[0]."
+		},
+		"3235924195": {
+			"en_US": "Unlocks slots selling \\c[3]One Up\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924196": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Sapphire Arsenal\\c[0]."
+		},
+		"3235924197": {
+			"en_US": "Unlocks the slot selling \\c[3]Titan Goggles\\c[0] in \\c[3]Sapphire Arsenal\\c[0]."
+		},
+		"3235924198": {
+			"en_US": "Unlocks the slot selling \\c[3]Titan Edge\\c[0] in \\c[3]Sapphire Arsenal\\c[0]."
+		},
+		"3235924199": {
+			"en_US": "Unlocks the slot selling \\c[3]Titan Mail\\c[0] in \\c[3]Sapphire Arsenal\\c[0]."
+		},
+		"3235924200": {
+			"en_US": "Unlocks the slot selling \\c[3]Titan Boots\\c[0] in \\c[3]Sapphire Arsenal\\c[0]."
+		},
+		"3235924201": {
+			"en_US": "Unlocks the slot selling \\c[3]Cobalt Goggles\\c[0] in \\c[3]Sapphire Arsenal\\c[0]."
+		},
+		"3235924202": {
+			"en_US": "Unlocks slots selling \\c[3]Cobalt Goggles\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924203": {
+			"en_US": "Unlocks the slot selling \\c[3]Cobalt Edge\\c[0] in \\c[3]Sapphire Arsenal\\c[0]."
+		},
+		"3235924204": {
+			"en_US": "Unlocks slots selling \\c[3]Cobalt Edge\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924205": {
+			"en_US": "Unlocks the slot selling \\c[3]Cobalt Mail\\c[0] in \\c[3]Sapphire Arsenal\\c[0]."
+		},
+		"3235924206": {
+			"en_US": "Unlocks slots selling \\c[3]Cobalt Mail\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924207": {
+			"en_US": "Unlocks the slot selling \\c[3]Cobalt Boots\\c[0] in \\c[3]Sapphire Arsenal\\c[0]."
+		},
+		"3235924208": {
+			"en_US": "Unlocks slots selling \\c[3]Cobalt Boots\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924209": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Good Items\\c[0]."
+		},
+		"3235924210": {
+			"en_US": "Unlocks the slot selling \\c[3]Sandwich\\c[0] in \\c[3]Good Items\\c[0]."
+		},
+		"3235924211": {
+			"en_US": "Unlocks the slot selling \\c[3]Hi-Sandwich\\c[0] in \\c[3]Good Items\\c[0]."
+		},
+		"3235924212": {
+			"en_US": "Unlocks the slot selling \\c[3]Green Leaf Tea\\c[0] in \\c[3]Good Items\\c[0]."
+		},
+		"3235924213": {
+			"en_US": "Unlocks the slot selling \\c[3]Just Water\\c[0] in \\c[3]Good Items\\c[0]."
+		},
+		"3235924214": {
+			"en_US": "Unlocks the slot selling \\c[3]Kebab Roll\\c[0] in \\c[3]Good Items\\c[0]."
+		},
+		"3235924215": {
+			"en_US": "Unlocks the slot selling \\c[3]Meaty Risotto\\c[0] in \\c[3]Good Items\\c[0]."
+		},
+		"3235924216": {
+			"en_US": "Unlocks the slot selling \\c[3]Spicy Bun\\c[0] in \\c[3]Good Items\\c[0]."
+		},
+		"3235924217": {
+			"en_US": "Unlocks the slot selling \\c[3]Fruit Drink\\c[0] in \\c[3]Good Items\\c[0]."
+		},
+		"3235924218": {
+			"en_US": "Unlocks the slot selling \\c[3]Rice Cracker\\c[0] in \\c[3]Good Items\\c[0]."
+		},
+		"3235924219": {
+			"en_US": "Unlocks the slot selling \\c[3]Veggie Sticks\\c[0] in \\c[3]Good Items\\c[0]."
+		},
+		"3235924220": {
+			"en_US": "Unlocks the slot selling \\c[3]Bergen Ice Cream\\c[0] in \\c[3]Good Items\\c[0]."
+		},
+		"3235924221": {
+			"en_US": "Unlocks the slot selling \\c[3]Sweet Lemonjuice\\c[0] in \\c[3]Good Items\\c[0]."
+		},
+		"3235924222": {
+			"en_US": "Unlocks the slot selling \\c[3]Salted Peanuts\\c[0] in \\c[3]Good Items\\c[0]."
+		},
+		"3235924223": {
+			"en_US": "Unlocks the slot selling \\c[3]Cup o' Coffee\\c[0] in \\c[3]Good Items\\c[0]."
+		},
+		"3235924224": {
+			"en_US": "Unlocks the slot selling \\c[3]Snack Mix\\c[0] in \\c[3]Good Items\\c[0]."
+		},
+		"3235824050": {
+			"en_US": "Unlocks the next dungeon or overworld area in story order."
+		},
+		"3235824051": {
+			"en_US": "Unlocks the next overworld area in story order."
+		},
+		"3235824052": {
+			"en_US": "Unlocks the next dungeon in story order."
 		}
 	}
 }

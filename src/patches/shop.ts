@@ -72,17 +72,7 @@ export function patch(plugin: MwRandomizer) {
 				sc.randoData.shops.locations.global :
 				sc.randoData.shops.locations.perShop[shopID];
 
-			if (sc.multiworld.options.questDialogHints && sc.multiworld.options.shopDialogHints) {
-				const toHint = Object.values(this.shopData).filter(mwid =>
-					sc.multiworld.locationInfo[mwid] != undefined &&
-					sc.multiworld.locationInfo[mwid].flags & ap.ITEM_FLAGS.PROGRESSION
-				);
-
-				if (toHint.length > 0) {
-					// @ts-ignore
-					sc.multiworld.client.locations.scout(ap.CREATE_AS_HINT_MODE.HINT_ONLY_NEW, ...toHint);
-				}
-			}
+			const toHint = [];
 
 			let accum = 0;
 			for (const entry of this.list.getChildren()) {
@@ -112,6 +102,13 @@ export function patch(plugin: MwRandomizer) {
 					{ autoScroll: false, holdOnReset: false }
 				);
 
+				if (
+					sc.multiworld.locationInfo[mwid] != undefined &&
+					sc.multiworld.locationInfo[mwid].flags & ap.ITEM_FLAGS.PROGRESSION
+				) {
+					toHint.push(mwid);
+				}
+
 				if (itemInfo.level > 0) {
 					marqueeGui.iconGui.setDrawCallback((width: number, height: number) => {
 						sc.MenuHelper.drawLevel(
@@ -135,6 +132,11 @@ export function patch(plugin: MwRandomizer) {
 				worldGui.hook.pos.y = button.hook.size.y;
 				accum += worldGui.hook.size.y;
 				button.addChildGui(worldGui);
+			}
+
+			if (sc.multiworld.options.questDialogHints && sc.multiworld.options.shopDialogHints && toHint.length > 0) {
+				// @ts-ignore
+				sc.multiworld.client.locations.scout(ap.CREATE_AS_HINT_MODE.HINT_ONLY_NEW, ...toHint);
 			}
 
 			this.list.list.contentPane.hook.size.y += accum;
