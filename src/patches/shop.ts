@@ -72,6 +72,18 @@ export function patch(plugin: MwRandomizer) {
 				sc.randoData.shops.locations.global :
 				sc.randoData.shops.locations.perShop[shopID];
 
+			if (sc.multiworld.options.questDialogHints && sc.multiworld.options.shopDialogHints) {
+				const toHint = Object.values(this.shopData).filter(mwid =>
+					sc.multiworld.locationInfo[mwid] != undefined &&
+					sc.multiworld.locationInfo[mwid].flags & ap.ITEM_FLAGS.PROGRESSION
+				);
+
+				if (toHint.length > 0) {
+					// @ts-ignore
+					sc.multiworld.client.locations.scout(ap.CREATE_AS_HINT_MODE.HINT_ONLY_NEW, ...toHint);
+				}
+			}
+
 			let accum = 0;
 			for (const entry of this.list.getChildren()) {
 				const gui = entry.gui as unknown as sc.ShopItemButton;

@@ -39,6 +39,7 @@ declare global {
 			gfx: ig.Image;
 			hideRewards: boolean;
 			includeAllRewards: boolean;
+			quest: sc.Quest;
 
 			setQuest(this: this, mwQuest: RawQuest): void;
 		}

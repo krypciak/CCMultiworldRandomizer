@@ -11,8 +11,9 @@ export type MultiworldOptions = {
 	hiddenQuestObfuscationLevel: string,
 	questDialogHints: boolean,
 	progressiveChains: Record<string, number[]>
-	shopSendMode: string,
-	shopReceiveMode: string,
+	shopSendMode?: string,
+	shopReceiveMode?: string,
+	shopDialogHints?: boolean,
 	chestClearanceLevels?: Record<number, string>
 };
 
