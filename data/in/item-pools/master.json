@@ -1,7 +1,6 @@
 {
 	"_includes": [
 		"required.json",
-		"equip.json",
 		"common.json",
 		"rare.json",
 		"epic.json",
