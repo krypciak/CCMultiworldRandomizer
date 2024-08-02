@@ -56,7 +56,7 @@ export default class MwRandomizer {
 			let level = 0;
 			let icon = "item-default";
 			let isScalable = false;
-			if (comboId >= sc.multiworld.baseNormalItemId) {
+			if (comboId >= sc.multiworld.baseNormalItemId && comboId < sc.multiworld.baseDynamicItemId) {
 				const [itemId, _] = sc.multiworld.getItemDataFromComboId(item.item);
 				const dbEntry = sc.inventory.getItem(itemId);
 				if (dbEntry) {

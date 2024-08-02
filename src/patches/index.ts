@@ -8,6 +8,7 @@ import { patch as patchMarquee } from "./marquee";
 import { patch as patchGui } from "./gui-misc";
 import { patch as patchMWHud } from "./multiworld-hud";
 import { patch as patchQuest } from "./quest";
+import { patch as patchShop } from "./shop";
 import { patch as patchNewGame } from "./new-game";
 
 export function applyPatches(plugin: MwRandomizer) {
@@ -19,5 +20,6 @@ export function applyPatches(plugin: MwRandomizer) {
 	patchGui(plugin);
 	patchMWHud(plugin);
 	patchQuest(plugin);
+	patchShop(plugin);
 	patchNewGame(plugin);
 }

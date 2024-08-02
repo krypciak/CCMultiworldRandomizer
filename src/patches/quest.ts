@@ -214,13 +214,22 @@ export function patch(plugin: MwRandomizer) {
 			this.hideRewards = hideRewards && !showRewardAnyway;
 			this.includeAllRewards = includeAllRewards;
 
+			this.quest = quest;
+
 			this.setQuest(mwQuest);
 		},
 
 		setQuest(mwQuest: RawQuest) {
 			if (sc.multiworld.options.questDialogHints && !this.hideRewards) {
-				// @ts-ignore
-				sc.multiworld.client.locations.scout(ap.CREATE_AS_HINT_MODE.HINT_ONLY_NEW, ...mwQuest.mwids);
+				const toHint = mwQuest.mwids.filter(mwid =>
+					sc.multiworld.locationInfo[mwid] != undefined &&
+					sc.multiworld.locationInfo[mwid].flags & ap.ITEM_FLAGS.PROGRESSION
+				);
+
+				if (toHint.length > 0) {
+					// @ts-ignore
+					sc.multiworld.client.locations.scout(ap.CREATE_AS_HINT_MODE.HINT_ONLY_NEW, ...toHint);
+				}
 			}
 
 			this.removeAllChildren();

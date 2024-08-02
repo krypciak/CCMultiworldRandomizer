@@ -18,6 +18,8 @@ export function patch(plugin: MwRandomizer) {
 
 			baseId: 3235824000,
 			baseNormalItemId: 3235824100,
+			dynamicItemAreaOffset: 100000,
+			baseDynamicItemId: 3235924000,
 			numItems: 0,
 
 			init() {
@@ -32,6 +34,7 @@ export function patch(plugin: MwRandomizer) {
 				defineVarProperty(this, "mode", "mw.mode");
 				defineVarProperty(this, "options", "mw.options");
 				defineVarProperty(this, "progressiveChainProgress", "mw.progressiveChainProgress");
+				defineVarProperty(this, "receivedItemMap", "mw.received");
 
 				window.setInterval(this.updateConnectionStatus.bind(this), 300);
 			},
@@ -49,6 +52,52 @@ export function patch(plugin: MwRandomizer) {
 					default:
 						return null;
 				}
+			},
+
+			getShopLabelsFromItemData(item: ap.NetworkItem): sc.ListBoxButton.Data {
+				let rarityString = "Looks like junk...";
+
+				if (item.flags & ap.ITEM_FLAGS.NEVER_EXCLUDE) {
+					rarityString = "\\c[2]Looks helpful\\c[0].";
+				}
+
+				if (item.flags & ap.ITEM_FLAGS.PROGRESSION) {
+					rarityString = "\\c[3]Looks important\\c[0]!";
+				}
+
+				if (item.flags & ap.ITEM_FLAGS.TRAP) {
+					rarityString = "\\c[1]Looks dangerous\\c[0].";
+				}
+
+				if (sc.multiworld.client.players.get(item.player)?.game == "CrossCode") {
+					if (item.item >= sc.multiworld.baseNormalItemId && item.item < sc.multiworld.baseDynamicItemId) {
+						const [internalItem, internalQty] =  sc.multiworld.getItemDataFromComboId(item.item);
+						const internalData = sc.inventory.getItem(internalItem);
+						if (internalData != undefined) {
+							return {
+								id: internalItem,
+								description: ig.LangLabel.getText(internalData.description),
+							};
+						}
+					}
+
+					if (sc.randoData.descriptions[item.item] != undefined) {
+						return {
+							id: 0,
+							description: ig.LangLabel.getText(sc.randoData.descriptions[item.item]),
+						}
+					}
+
+					return {
+						id: 0,
+						description: "An unknown CrossCode item. " + rarityString,
+					};
+				} 
+
+				return {
+					id: 0,
+					description: "An item for another world. " + rarityString,
+				};
 			},
 
 			getItemDataFromComboId(comboId: number): [itemId: number, quantity: number] {
@@ -86,6 +135,10 @@ export function patch(plugin: MwRandomizer) {
 
 				if (!this.progressiveChainProgress) {
 					this.progressiveChainProgress = {};
+				}
+
+				if (!this.receivedItemMap) {
+					this.receivedItemMap = {};
 				}
 
 				if (sc.model.isTitle() || ig.game.mapName == "newgame") {
@@ -147,6 +200,12 @@ export function patch(plugin: MwRandomizer) {
 
 				let displayMessage = foreign || itemInfo.item < this.baseNormalItemId;
 
+				if (this.receivedItemMap[itemInfo.item]) {
+					this.receivedItemMap[itemInfo.item] += 1;
+				} else {
+					this.receivedItemMap[itemInfo.item] = 1;
+				}
+
 				if (itemInfo.item < this.baseId + 4) {
 					if (!sc.model.player.getCore(sc.PLAYER_CORE.ELEMENT_CHANGE)) {
 						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_CHANGE, true);
@@ -182,12 +241,14 @@ export function patch(plugin: MwRandomizer) {
 
 							break;
 					}
-				} else {
+				} else if (itemInfo.item < this.baseDynamicItemId) {
 					let [itemId, quantity] = this.getItemDataFromComboId(itemInfo.item);
 					if (this.options.keyrings && this.options.keyrings.includes(itemId)) {
 						quantity = 99;
 					}
 					sc.model.player.addItem(Number(itemId), quantity, foreign);
+				} else {
+					displayMessage = true;
 				}
 
 				if (displayMessage) {

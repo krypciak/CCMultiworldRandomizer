@@ -10,27 +10,42 @@
 		"Heat": {
 			"reserved": true,
 			"id": 0,
-			"classification": "progression"
+			"classification": "progression",
+			"description": {
+				"en_US": "The element of fire, associated with the Attack stat and Melee combat."
+			}
 		},
 		"Cold": {
 			"reserved": true,
 			"id": 1,
-			"classification": "progression"
+			"classification": "progression",
+			"description": {
+				"en_US": "The element of ice, associated with the Defense stat and Guarding."
+			}
 		},
 		"Shock": {
 			"reserved": true,
 			"id": 2,
-			"classification": "progression"
+			"classification": "progression",
+			"description": {
+				"en_US": "The element of electricity, associated with the Focus stat and Dashing."
+			}
 		},
 		"Wave": {
 			"reserved": true,
 			"id": 3,
-			"classification": "progression"
+			"classification": "progression",
+			"description": {
+				"en_US": "The element of ice, associated with Hit Points and Ranged combat."
+			}
 		},
 		"SP Upgrade": {
 			"reserved": true,
 			"id": 4,
-			"classification": "progression"
+			"classification": "progression",
+			"description": {
+				"en_US": "Boosts your combat capabilities, allowing you to perform more arts."
+			}
 		},
 		"Golden Triangle": {
 			"id": 0

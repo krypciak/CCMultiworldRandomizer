@@ -1,6 +1,8 @@
 export interface WorldData {
 	items: RawItems;
 	quests: RawQuests;
+	shops: RawShops;
+	descriptions: { [itemId: number]: { [locale: string]: string }
 }
 
 export type RawItems = { [mapName: string]: RawMapItems };
@@ -37,10 +39,27 @@ export interface RawQuest {
 	mwids: number[];
 }
 
+export interface RawShopLocations {
+	global: Record<number, number>;
+	perShop: Record<string, Record<number, number>>;
+}
+
+export interface RawShopUnlocks {
+	byId: Record<number, number>;
+	byShop: Record<string, number>;
+	byShopAndId: Record<string, Record<number, number>>;
+}
+
+export type RawShops = {
+	locations: RawShopLocations;
+	unlocks: RawShopUnlocks;
+}
+
 export interface ItemInfo {
 	icon: string;
 	label: string;
 	player: string;
 	level: number;
 	isScalable: boolean;
+	shops?: RawShops;
 }
