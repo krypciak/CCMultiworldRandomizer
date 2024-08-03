@@ -9,6 +9,7 @@
 	"progressiveChains": {
 		"headsAllPurpose": {
 			"displayName": "All-Purpose Heads",
+			"description": "Provides upgraded headgear that's great for any situation.",
 			"id": 60,
 			"classification": "progression",
 			"items": [
@@ -310,6 +311,7 @@
 		},
 		"headsDefensive": {
 			"displayName": "Defensive Heads",
+			"description": "Provides upgraded headgear for guarding, status-resist and counterplay combat.",
 			"id": 61,
 			"classification": "progression",
 			"items": [
@@ -334,6 +336,29 @@
 						{ "item": ["item", "Climate Cowl", 1] },
 						{ "item": ["item", "Hardhead Hat", 1] },
 						{ "item": ["item", "Serene Bubble", 1] },
+						{ "item": ["item", "Dragon's Bandana", 1] },
+						{ "item": ["item", "Tranquil Earmuffs", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"arena": true,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Cooling Veil", 1] },
+						{ "item": ["item", "Furry Cap", 1] },
+						{ "item": ["item", "Proper Tophat", 1] },
+						{ "item": ["item", "Strawhat", 1] },
+						{ "item": ["item", "Miner's Helmet", 1] },
+						{ "item": ["item", "Dried Grass Hat", 1] },
+						{ "item": ["item", "Dented Crown", 1] },
+						{ "item": ["item", "Strawberry Hat", 1] },
+						{ "item": ["item", "Climate Cowl", 1] },
+						{ "item": ["item", "The Last Strawhat", 1] },
 						{ "item": ["item", "Dragon's Bandana", 1] },
 						{ "item": ["item", "Tranquil Earmuffs", 1] }
 					]
@@ -431,6 +456,27 @@
 						{ "item": ["item", "Serene Bubble", 1] },
 						{ "item": ["item", "Dragon's Bandana", 1] },
 						{ "item": ["item", "Tranquil Earmuffs", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": true,
+						"arena": false,
+						"chest": true,
+						"quest": true
+					},
+					"content": [
+						{ "item": ["item", "Cooling Veil", 1] },
+						{ "item": ["item", "Furry Cap", 1] },
+						{ "item": ["item", "Proper Tophat", 1] },
+						{ "item": ["item", "Strawhat", 1] },
+						{ "item": ["item", "Miner's Helmet", 1] },
+						{ "item": ["item", "Dried Grass Hat", 1] },
+						{ "item": ["item", "Dented Crown", 1] },
+						{ "item": ["item", "Strawberry Hat", 1] },
+						{ "item": ["item", "Climate Cowl", 1] },
+						{ "item": ["item", "The Last Strawhat", 1] }
 					]
 				},
 				{
@@ -695,6 +741,7 @@
 		},
 		"headsOffensive": {
 			"displayName": "Offensive Heads",
+			"description": "Provides upgraded headgear for melee, ranged and crit-based combat.",
 			"id": 62,
 			"classification": "progression",
 			"items": [
@@ -1098,59 +1145,9 @@
 				}
 			]
 		},
-		"headsSpecial": {
-			"displayName": "Special Heads",
-			"id": 63,
-			"classification": "progression",
-			"items": [
-				{
-					"metadata": {
-						"trade": false,
-						"shop": true,
-						"arena": true,
-						"chest": true,
-						"quest": true
-					},
-					"content": [
-						{ "item": ["item", "Cooling Veil", 1] },
-						{ "item": ["item", "Furry Cap", 1] },
-						{ "item": ["item", "Proper Tophat", 1] },
-						{ "item": ["item", "Strawhat", 1] },
-						{ "item": ["item", "Miner's Helmet", 1] },
-						{ "item": ["item", "Dried Grass Hat", 1] },
-						{ "item": ["item", "Dented Crown", 1] },
-						{ "item": ["item", "Strawberry Hat", 1] },
-						{ "item": ["item", "Climate Cowl", 1] },
-						{ "item": ["item", "The Last Strawhat", 1] },
-						{ "item": ["item", "Dragon's Bandana", 1] },
-						{ "item": ["item", "Tranquil Earmuffs", 1] }
-					]
-				},
-				{
-					"metadata": {
-						"trade": false,
-						"shop": true,
-						"arena": false,
-						"chest": true,
-						"quest": true
-					},
-					"content": [
-						{ "item": ["item", "Cooling Veil", 1] },
-						{ "item": ["item", "Furry Cap", 1] },
-						{ "item": ["item", "Proper Tophat", 1] },
-						{ "item": ["item", "Strawhat", 1] },
-						{ "item": ["item", "Miner's Helmet", 1] },
-						{ "item": ["item", "Dried Grass Hat", 1] },
-						{ "item": ["item", "Dented Crown", 1] },
-						{ "item": ["item", "Strawberry Hat", 1] },
-						{ "item": ["item", "Climate Cowl", 1] },
-						{ "item": ["item", "The Last Strawhat", 1] }
-					]
-				}
-			]
-		},
 		"heads": {
 			"displayName": "Heads",
+			"description": "Provides upgraded headgear.",
 			"id": 64,
 			"classification": "progression",
 			"items": [

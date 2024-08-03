@@ -9,6 +9,7 @@
 	"progressiveChains": {
 		"legsAllPurpose": {
 			"displayName": "All-Purpose Legs",
+			"description": "Provides upgraded footwear that's great for any situation.",
 			"id": 90,
 			"classification": "progression",
 			"items": [
@@ -192,6 +193,7 @@
 		},
 		"legsDefensive": {
 			"displayName": "Defensive Legs",
+			"description": "Provides upgraded footwear with regenerative, status-resist and defensive properties.",
 			"id": 91,
 			"classification": "progression",
 			"items": [
@@ -591,6 +593,7 @@
 		},
 		"legsOffensive": {
 			"displayName": "Offensive Legs",
+			"description": "Provides upgraded footwear for melee and ranged combat.",
 			"id": 92,
 			"classification": "progression",
 			"items": [
@@ -986,6 +989,7 @@
 		},
 		"legs": {
 			"displayName": "Legs",
+			"description": "Provides upgraded footwear.",
 			"id": 93,
 			"classification": "progression",
 			"items": [

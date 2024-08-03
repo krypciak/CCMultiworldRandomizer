@@ -9,6 +9,7 @@
 	"progressiveChains": {
 		"torsosAllPurpose": {
 			"displayName": "All-Purpose Torsos",
+			"description": "Provides upgraded attire that's great for any situation.",
 			"id": 80,
 			"classification": "progression",
 			"items": [
@@ -196,6 +197,7 @@
 		},
 		"torsosDefensive": {
 			"displayName": "Defensive Torsos",
+			"description": "Provides upgraded attire for guarding and counterplay combat.",
 			"id": 81,
 			"classification": "progression",
 			"items": [
@@ -459,6 +461,7 @@
 		},
 		"torsosMixed": {
 			"displayName": "Mixed Torsos",
+			"description": "Provides upgraded attire with regenerative and status-resistant properties.",
 			"id": 82,
 			"classification": "progression",
 			"items": [
@@ -833,6 +836,7 @@
 		},
 		"torsosOffensive": {
 			"displayName": "Offensive Torsos",
+			"description": "Provides upgraded attire for offensive and crit-based combat.",
 			"id": 83,
 			"classification": "progression",
 			"items": [
@@ -1080,6 +1084,7 @@
 		},
 		"torsos": {
 			"displayName": "Torsos",
+			"description": "Provides upgraded attire.",
 			"id": 84,
 			"classification": "progression",
 			"items": [
@@ -1396,6 +1401,7 @@
 		},
 		"torsosClassBased": {
 			"displayName": "Class-Based Torsos",
+			"description": "Provides upgraded attire for both offensive and defensive combat.",
 			"id": 85,
 			"classification": "progression",
 			"items": [
