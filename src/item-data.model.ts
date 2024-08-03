@@ -40,7 +40,7 @@ export interface RawQuest {
 }
 
 export interface RawShopLocations {
-	global: Record<number, number>;
+	perItemType: Record<number, number>;
 	perShop: Record<string, Record<number, number>>;
 }
 

@@ -17,6 +17,8 @@ declare global {
 		interface ShopItemButton {
 			apItem: ap.NetworkItem | undefined;
 			itemId: number | undefined;
+			worldGui: sc.TextGui | undefined;
+			slot: string | undefined;
 		}
 	}
 }
@@ -69,7 +71,7 @@ export function patch(plugin: MwRandomizer) {
 			}
 
 			this.shopData = sc.multiworld.options.shopSendMode == "itemType" ?
-				sc.randoData.shops.locations.global :
+				sc.randoData.shops.locations.perItemType :
 				sc.randoData.shops.locations.perShop[shopID];
 
 			const toHint = [];
@@ -93,6 +95,7 @@ export function patch(plugin: MwRandomizer) {
 				const itemInfo = plugin.getItemInfo(item);
 
 				gui.apItem = item;
+				gui.slot = itemInfo.player;
 				gui.itemId = itemId;
 
 				const marqueeGui = new sc.ItemMarqueeGui(
@@ -124,13 +127,16 @@ export function patch(plugin: MwRandomizer) {
 				button.textChild = marqueeGui;
 				button.text = itemInfo.label;
 				button.textChild.hook.pos.x = 5;
-				button.hook.align.y = ig.GUI_ALIGN.Y_CENTER;
 				button.addChildGui(button.textChild);
 
 				const worldGui = new sc.TextGui(itemInfo.player, { "font": sc.fontsystem.tinyFont });
 				worldGui.hook.pos.x = 22;
 				worldGui.hook.pos.y = button.hook.size.y;
 				accum += worldGui.hook.size.y;
+
+				gui.hook.size.y += 8;
+
+				gui.worldGui = worldGui;
 				button.addChildGui(worldGui);
 			}
 
@@ -193,12 +199,20 @@ export function patch(plugin: MwRandomizer) {
 		focusGained() {
 			this.parent();
 			this.button.textChild.labelGui?.activate();
+
+			if (this.worldGui != undefined && this.slot != undefined) {
+				this.worldGui.setText(`\\c[3]${this.slot}`);
+			}
 		},
 
 		focusLost() {
 			this.parent();
 			this.button.textChild.labelGui?.deactivate();
 			this.button.textChild.labelGui?.reset();
+
+			if (this.worldGui != undefined && this.slot != undefined) {
+				this.worldGui.setText(this.slot);
+			}
 		}
 	});
 }
