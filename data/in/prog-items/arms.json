@@ -9,6 +9,9 @@
 	"progressiveChains": {
 		"armsAllPurpose": {
 			"displayName": "All-Purpose Arms",
+			"description": {
+				"en_US": "Provides upgraded weaponry that's great for any situation."
+			},
 			"id": 70,
 			"classification": "progression",
 			"items": [
@@ -270,6 +273,9 @@
 		},
 		"armsDefensive": {
 			"displayName": "Defensive Arms",
+			"description": {
+				"en_US": "Provides upgraded weaponry for guarding and counterplay combat."
+			},
 			"id": 71,
 			"classification": "progression",
 			"items": [
@@ -637,6 +643,9 @@
 		},
 		"armsMelee": {
 			"displayName": "Melee Arms",
+			"description": {
+				"en_US": "Provides upgraded weaponry for offensive up-close and personal combat."
+			},
 			"id": 72,
 			"classification": "progression",
 			"items": [
@@ -980,6 +989,9 @@
 		},
 		"armsRanged": {
 			"displayName": "Ranged Arms",
+			"description": {
+				"en_US": "Provides upgraded weaponry for long-range projectile combat."
+			},
 			"id": 73,
 			"classification": "progression",
 			"items": [
@@ -1331,6 +1343,9 @@
 		},
 		"armsSpecial": {
 			"displayName": "Special Arms",
+			"description": {
+				"en_US": "Provides upgraded weaponry for crits, status effects, and other unique combat styles."
+			},
 			"id": 74,
 			"classification": "progression",
 			"items": [
@@ -1906,6 +1921,9 @@
 		},
 		"armsClassBased": {
 			"displayName": "Class-Based Arms",
+			"description": {
+				"en_US": "Provides upgraded weaponry for both offensive and defensive combat."
+			},
 			"id": 75,
 			"classification": "progression",
 			"items": [
@@ -2085,6 +2103,9 @@
 		},
 		"arms": {
 			"displayName": "Arms",
+			"description": {
+				"en_US": "Provides upgraded weaponry."
+			},
 			"id": 76,
 			"classification": "progression",
 			"items": [

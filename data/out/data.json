@@ -4998,6 +4998,69 @@
 		},
 		"3235824052": {
 			"en_US": "Unlocks the next dungeon in story order."
+		},
+		"3235824060": {
+			"en_US": "Provides upgraded headgear that's great for any situation."
+		},
+		"3235824061": {
+			"en_US": "Provides upgraded headgear for guarding, status-resist and counterplay combat."
+		},
+		"3235824062": {
+			"en_US": "Provides upgraded headgear for melee, ranged and crit-based combat."
+		},
+		"3235824064": {
+			"en_US": "Provides upgraded headgear."
+		},
+		"3235824070": {
+			"en_US": "Provides upgraded weaponry that's great for any situation."
+		},
+		"3235824071": {
+			"en_US": "Provides upgraded weaponry for guarding and counterplay combat."
+		},
+		"3235824072": {
+			"en_US": "Provides upgraded weaponry for offensive up-close and personal combat."
+		},
+		"3235824073": {
+			"en_US": "Provides upgraded weaponry for long-range projectile combat."
+		},
+		"3235824074": {
+			"en_US": "Provides upgraded weaponry for crits, status effects, and other unique combat styles."
+		},
+		"3235824075": {
+			"en_US": "Provides upgraded weaponry for both offensive and defensive combat."
+		},
+		"3235824076": {
+			"en_US": "Provides upgraded weaponry."
+		},
+		"3235824080": {
+			"en_US": "Provides upgraded attire that's great for any situation."
+		},
+		"3235824081": {
+			"en_US": "Provides upgraded attire for guarding and counterplay combat."
+		},
+		"3235824082": {
+			"en_US": "Provides upgraded attire with regenerative and status-resistant properties."
+		},
+		"3235824083": {
+			"en_US": "Provides upgraded attire for offensive and crit-based combat."
+		},
+		"3235824084": {
+			"en_US": "Provides upgraded attire."
+		},
+		"3235824085": {
+			"en_US": "Provides upgraded attire for both offensive and defensive combat."
+		},
+		"3235824090": {
+			"en_US": "Provides upgraded footwear that's great for any situation."
+		},
+		"3235824091": {
+			"en_US": "Provides upgraded footwear with regenerative, status-resist and defensive properties."
+		},
+		"3235824092": {
+			"en_US": "Provides upgraded footwear for melee and ranged combat."
+		},
+		"3235824093": {
+			"en_US": "Provides upgraded footwear."
 		}
 	}
 }
