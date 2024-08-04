@@ -64,7 +64,7 @@
 		}
 	},
 	"chests": {
-		"Bergen Village - Omni Gilders Basement Left": {
+		"Bergen: Omni Gilders Basement Left": {
 			"location": {
 				"map": "bergen.interior.guild-basement",
 				"mapId": 42
@@ -86,7 +86,7 @@
 				]
 			]
 		},
-		"Bergen Trail - Horncave": {
+		"Trail: Horncave": {
 			"location": {
 				"map": "bergen-trail.cave.cave-7-1-1-goat2",
 				"mapId": 142
@@ -103,7 +103,7 @@
 				[ "item", "Vanilla Ice Cream", 2 ]
 			]
 		},
-		"Gaia's Garden - Chilled Den": {
+		"Garden: Chilled Den": {
 			"location": {
 				"map": "jungle.caves.questcave-snowman-1",
 				"mapId": 247

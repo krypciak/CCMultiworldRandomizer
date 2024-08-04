@@ -1,6 +1,6 @@
 {
 	"shops": {
-		"Rookie Harbor Items": {
+		"Harbor Items": {
 			"location": {
 				"shop": "rookieHarborItems"
 			},
@@ -19,7 +19,7 @@
 				"Veggie Sticks"
 			]
 		},
-		"Rookie Harbor Items (Post-Blue Ice)": {
+		"Harbor Items + Blue Ice": {
 			"location": {
 				"shop": "rookieHarborItems"
 			},
@@ -35,7 +35,7 @@
 				"Meaty Risotto"
 			]
 		},
-		"Rookie Harbor Items (Post-Red Flame)": {
+		"Harbor Items + Red Flame": {
 			"location": {
 				"shop": "rookieHarborItems"
 			},
@@ -51,7 +51,7 @@
 				"Sweet Lemonjuice"
 			]
 		},
-		"Rookie Harbor Items (Post-Green Seed)": {
+		"Harbor Items + Green Seed": {
 			"location": {
 				"shop": "rookieHarborItems"
 			},
@@ -68,7 +68,7 @@
 				"Snack Mix"
 			]
 		},
-		"Rookie Harbor Weapons": {
+		"Harbor Weapons": {
 			"location": {
 				"shop": "rookieHarborWeapons"
 			},
@@ -87,7 +87,7 @@
 				"Iron Boots"
 			]
 		},
-		"Rookie Harbor Weapons (Post-Red Flame)": {
+		"Harbor Weapons + Red Flame": {
 			"location": {
 				"shop": "rookieHarborWeapons"
 			},
@@ -105,7 +105,7 @@
 				"Silver Boots"
 			]
 		},
-		"Rookie Harbor North Weapons": {
+		"Harbor North Weapons": {
 			"location": {
 				"shop": "rookieHarborWeaponsNorth"
 			},
@@ -136,7 +136,7 @@
 				"Sandwich"
 			]
 		},
-		"Rookie Harbor Backer Items": {
+		"Harbor Backer Items": {
 			"location": {
 				"shop": "rookieBacker"
 			},
@@ -159,7 +159,7 @@
 				"Pumpkin Spice Cof."
 			]
 		},
-		"Bergen Village Items": {
+		"Bergen Items": {
 			"location": {
 				"shop": "bergenVillageItems"
 			},
@@ -178,7 +178,7 @@
 				"Veggie Sticks"
 			]
 		},
-		"Bergen Village Items (Post-Blue Ice)": {
+		"Bergen Items + Blue Ice": {
 			"location": {
 				"shop": "bergenVillageItems"
 			},
@@ -194,7 +194,7 @@
 				"Meaty Risotto"
 			]
 		},
-		"Bergen Village Items (Post-Red Flame)": {
+		"Bergen Items + Red Flame": {
 			"location": {
 				"shop": "bergenVillageItems"
 			},
@@ -210,7 +210,7 @@
 				"Sweet Lemonjuice"
 			]
 		},
-		"Bergen Village Items (Post-Green Seed)": {
+		"Bergen Items + Green Seed": {
 			"location": {
 				"shop": "bergenVillageItems"
 			},
@@ -227,7 +227,7 @@
 				"Snack Mix"
 			]
 		},
-		"Bergen Village Weapons": {
+		"Bergen Weapons": {
 			"location": {
 				"shop": "bergenVillageWeapons"
 			},
@@ -256,7 +256,7 @@
 				"Sweet Berry Tea"
 			]
 		},
-		"Ba'kii Kum Items": {
+		"Ba'kii Items": {
 			"location": {
 				"shop": "bakiItems"
 			},
@@ -277,7 +277,7 @@
 				"Sweet Lemonjuice"
 			]
 		},
-		"Ba'kii Kum Items (Post-Blue Ice)": {
+		"Ba'kii Items + Blue Ice": {
 			"location": {
 				"shop": "bakiItems"
 			},
@@ -293,7 +293,7 @@
 				"Meaty Risotto"
 			]
 		},
-		"Ba'kii Kum Items (Post-Green Seed)": {
+		"Ba'kii Items + Green Seed": {
 			"location": {
 				"shop": "bakiItems"
 			},
@@ -307,7 +307,7 @@
 				"Snack Mix"
 			]
 		},
-		"Ba'kii Kum Weapons": {
+		"Ba'kii Weapons": {
 			"location": {
 				"shop": "bakiWeapons"
 			},
@@ -326,7 +326,7 @@
 				"Steel Boots"
 			]
 		},
-		"Basin Keep Vending Machine": {
+		"Basin Vending Machine": {
 			"location": {
 				"shop": "basinVendingMachines"
 			},
@@ -352,7 +352,7 @@
 				"Meaty Risotto"
 			]
 		},
-		"Basin Keep Items": {
+		"Basin Items": {
 			"location": {
 				"shop": "basinItems"
 			},
@@ -378,7 +378,7 @@
 				"Snack Mix"
 			]
 		},
-		"Basin Keep Weapons": {
+		"Basin Weapons": {
 			"location": {
 				"shop": "basinWeapons"
 			},
@@ -412,7 +412,7 @@
 				"One Up"
 			]
 		},
-		"Sapphire Ridge Weapons": {
+		"Ridge Weapons": {
 			"location": {
 				"shop": "sapphireWeapons"
 			},
@@ -431,7 +431,7 @@
 				"Cobalt Boots"
 			]
 		},
-		"Sapphire Ridge Items": {
+		"Ridge Items": {
 			"location": {
 				"shop": "sapphireItems"
 			},

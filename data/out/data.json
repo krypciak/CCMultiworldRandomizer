@@ -3,13 +3,13 @@
 		"arid.cliff-1": {
 			"chests": {
 				"467": {
-					"name": "Vermillion Wasteland - Spiral Cliff Center",
+					"name": "Wasteland: Spiral Cliff Center",
 					"mwids": [
 						3235824000
 					]
 				},
 				"468": {
-					"name": "Vermillion Wasteland - Spiral Cliff Upper",
+					"name": "Wasteland: Spiral Cliff Upper",
 					"mwids": [
 						3235824001
 					]
@@ -19,7 +19,7 @@
 		"arid.interior.stealth-2": {
 			"chests": {
 				"94": {
-					"name": "Vermillion Wasteland - Storage Basement",
+					"name": "Wasteland: Storage Basement",
 					"mwids": [
 						3235824002
 					]
@@ -29,13 +29,13 @@
 		"arid.lake-1": {
 			"chests": {
 				"646": {
-					"name": "Vermillion Wasteland - Crimson Lake Upper",
+					"name": "Wasteland: Crimson Lake Upper",
 					"mwids": [
 						3235824003
 					]
 				},
 				"647": {
-					"name": "Vermillion Wasteland - Crimson Lake Lower",
+					"name": "Wasteland: Crimson Lake Lower",
 					"mwids": [
 						3235824004
 					]
@@ -45,19 +45,19 @@
 		"arid.town-1": {
 			"chests": {
 				"334": {
-					"name": "Vermillion Wasteland - East Town Left",
+					"name": "Wasteland: East Town Left",
 					"mwids": [
 						3235824005
 					]
 				},
 				"335": {
-					"name": "Vermillion Wasteland - East Town Center",
+					"name": "Wasteland: East Town Center",
 					"mwids": [
 						3235824006
 					]
 				},
 				"336": {
-					"name": "Vermillion Wasteland - East Town Lower",
+					"name": "Wasteland: East Town Lower",
 					"mwids": [
 						3235824007
 					]
@@ -67,19 +67,19 @@
 		"arid.town-2": {
 			"chests": {
 				"485": {
-					"name": "Vermillion Wasteland - West Town Upper Right",
+					"name": "Wasteland: West Town Upper Right",
 					"mwids": [
 						3235824008
 					]
 				},
 				"486": {
-					"name": "Vermillion Wasteland - West Town Upper Left",
+					"name": "Wasteland: West Town Upper Left",
 					"mwids": [
 						3235824009
 					]
 				},
 				"487": {
-					"name": "Vermillion Wasteland - West Town Lower",
+					"name": "Wasteland: West Town Lower",
 					"mwids": [
 						3235824010
 					]
@@ -89,7 +89,7 @@
 		"autumn.caves.cave-3-to-6": {
 			"chests": {
 				"2": {
-					"name": "Autumn's Rise - Drippy Den",
+					"name": "Rise: Drippy Den",
 					"mwids": [
 						3235824011
 					]
@@ -99,13 +99,13 @@
 		"autumn.cubaum": {
 			"chests": {
 				"200": {
-					"name": "Autumn's Rise - Normal Clearing Lower",
+					"name": "Rise: Normal Clearing Lower",
 					"mwids": [
 						3235824012
 					]
 				},
 				"201": {
-					"name": "Autumn's Rise - Normal Clearing Left",
+					"name": "Rise: Normal Clearing Left",
 					"mwids": [
 						3235824013
 					]
@@ -115,7 +115,7 @@
 		"autumn.entrance": {
 			"chests": {
 				"112": {
-					"name": "Autumn's Rise - Entrance",
+					"name": "Rise: Entrance",
 					"mwids": [
 						3235824014
 					]
@@ -125,7 +125,7 @@
 		"autumn.lake-observatory": {
 			"chests": {
 				"329": {
-					"name": "Autumn's Rise - Old Observatory",
+					"name": "Rise: Old Observatory",
 					"mwids": [
 						3235824015
 					]
@@ -135,7 +135,7 @@
 		"autumn.path-1-1": {
 			"chests": {
 				"378": {
-					"name": "Autumn's Rise - Quiet Passage 1",
+					"name": "Rise: Quiet Passage 1",
 					"mwids": [
 						3235824016
 					]
@@ -145,7 +145,7 @@
 		"autumn.path-1-2": {
 			"chests": {
 				"346": {
-					"name": "Autumn's Rise - Quiet Passage 2",
+					"name": "Rise: Quiet Passage 2",
 					"mwids": [
 						3235824017
 					]
@@ -155,7 +155,7 @@
 		"autumn.path-1-3": {
 			"chests": {
 				"322": {
-					"name": "Autumn's Rise - Hedgehag's Den",
+					"name": "Rise: Hedgehag's Den",
 					"mwids": [
 						3235824018
 					]
@@ -165,7 +165,7 @@
 		"autumn.path-1": {
 			"chests": {
 				"137": {
-					"name": "Autumn's Rise - Pathway 1",
+					"name": "Rise: Pathway 1",
 					"mwids": [
 						3235824019
 					]
@@ -175,7 +175,7 @@
 		"autumn.path-2": {
 			"chests": {
 				"268": {
-					"name": "Autumn's Rise - Pathway 2",
+					"name": "Rise: Pathway 2",
 					"mwids": [
 						3235824020
 					]
@@ -185,7 +185,7 @@
 		"autumn.path-3-1": {
 			"chests": {
 				"291": {
-					"name": "Autumn's Rise - Pathway 3 Upper",
+					"name": "Rise: Pathway 3 Upper",
 					"mwids": [
 						3235824021
 					]
@@ -205,7 +205,7 @@
 		"autumn.path-3-2": {
 			"chests": {
 				"305": {
-					"name": "Autumn's Rise - Off Road 1 Right",
+					"name": "Rise: Off Road 1 Right",
 					"mwids": [
 						3235824022
 					]
@@ -215,7 +215,7 @@
 		"autumn.path-3-4": {
 			"chests": {
 				"265": {
-					"name": "Autumn's Rise - Off Road 2",
+					"name": "Rise: Off Road 2",
 					"mwids": [
 						3235824023
 					]
@@ -225,19 +225,19 @@
 		"autumn.path-7-1": {
 			"chests": {
 				"283": {
-					"name": "Autumn's Rise - Pathway 6 Left",
+					"name": "Rise: Pathway 6 Left",
 					"mwids": [
 						3235824024
 					]
 				},
 				"284": {
-					"name": "Autumn's Rise - Pathway 6 Right",
+					"name": "Rise: Pathway 6 Right",
 					"mwids": [
 						3235824025
 					]
 				},
 				"1128": {
-					"name": "Autumn's Rise - Pathway 6 Center",
+					"name": "Rise: Pathway 6 Center",
 					"mwids": [
 						3235824026
 					]
@@ -247,13 +247,13 @@
 		"autumn.path-7-2": {
 			"chests": {
 				"1115": {
-					"name": "Autumn's Rise - Pathway 7 Left",
+					"name": "Rise: Pathway 7 Left",
 					"mwids": [
 						3235824027
 					]
 				},
 				"1142": {
-					"name": "Autumn's Rise - Pathway 7 Upper",
+					"name": "Rise: Pathway 7 Upper",
 					"mwids": [
 						3235824028
 					]
@@ -263,7 +263,7 @@
 		"autumn.path-8": {
 			"chests": {
 				"12": {
-					"name": "Autumn's Rise - Ending Pathway Lower",
+					"name": "Rise: Ending Pathway Lower",
 					"mwids": [
 						3235824029
 					]
@@ -283,13 +283,13 @@
 		"autumn.path4": {
 			"chests": {
 				"22": {
-					"name": "Autumn's Rise - Obelisk Lake Upper",
+					"name": "Rise: Obelisk Lake Upper",
 					"mwids": [
 						3235824030
 					]
 				},
 				"98": {
-					"name": "Autumn's Rise - Obelisk Lake Lower",
+					"name": "Rise: Obelisk Lake Lower",
 					"mwids": [
 						3235824031
 					]
@@ -299,19 +299,19 @@
 		"autumn.path5": {
 			"chests": {
 				"2": {
-					"name": "Autumn's Rise - Pathway 4 Upper",
+					"name": "Rise: Pathway 4 Upper",
 					"mwids": [
 						3235824032
 					]
 				},
 				"3": {
-					"name": "Autumn's Rise - Pathway 4 Center",
+					"name": "Rise: Pathway 4 Center",
 					"mwids": [
 						3235824033
 					]
 				},
 				"4": {
-					"name": "Autumn's Rise - Pathway 4 Lower",
+					"name": "Rise: Pathway 4 Lower",
 					"mwids": [
 						3235824034
 					]
@@ -321,13 +321,13 @@
 		"autumn.path6": {
 			"chests": {
 				"13": {
-					"name": "Autumn's Rise - Pathway 5 Upper",
+					"name": "Rise: Pathway 5 Upper",
 					"mwids": [
 						3235824035
 					]
 				},
 				"15": {
-					"name": "Autumn's Rise - Pathway 5 Lower",
+					"name": "Rise: Pathway 5 Lower",
 					"mwids": [
 						3235824036
 					]
@@ -337,7 +337,7 @@
 		"autumn-fall.caves.path-03-exit": {
 			"chests": {
 				"29": {
-					"name": "Autumn's Fall - Ruby Tunnel",
+					"name": "Fall: Ruby Tunnel",
 					"mwids": [
 						3235824037
 					]
@@ -347,7 +347,7 @@
 		"autumn-fall.caves.path-04-cave-01": {
 			"chests": {
 				"51": {
-					"name": "Autumn's Fall - Lake Cave 1",
+					"name": "Fall: Lake Cave 1",
 					"mwids": [
 						3235824038
 					]
@@ -357,7 +357,7 @@
 		"autumn-fall.caves.path-04-cave-02": {
 			"chests": {
 				"92": {
-					"name": "Autumn's Fall - Lake Cave 2",
+					"name": "Fall: Lake Cave 2",
 					"mwids": [
 						3235824039
 					]
@@ -367,7 +367,7 @@
 		"autumn-fall.caves.path-04-cave-03": {
 			"chests": {
 				"157": {
-					"name": "Autumn's Fall - Lake Cave 3",
+					"name": "Fall: Lake Cave 3",
 					"mwids": [
 						3235824040
 					]
@@ -377,7 +377,7 @@
 		"autumn-fall.caves.path-04-cave-04": {
 			"chests": {
 				"109": {
-					"name": "Autumn's Fall - Lake Cave 4",
+					"name": "Fall: Lake Cave 4",
 					"mwids": [
 						3235824041
 					]
@@ -387,19 +387,19 @@
 		"autumn-fall.path-01": {
 			"chests": {
 				"458": {
-					"name": "Autumn's Fall - Southern Exit Center",
+					"name": "Fall: Southern Exit Center",
 					"mwids": [
 						3235824042
 					]
 				},
 				"492": {
-					"name": "Autumn's Fall - Southern Exit Upper",
+					"name": "Fall: Southern Exit Upper",
 					"mwids": [
 						3235824043
 					]
 				},
 				"493": {
-					"name": "Autumn's Fall - Southern Exit Lower",
+					"name": "Fall: Southern Exit Lower",
 					"mwids": [
 						3235824044
 					]
@@ -409,13 +409,13 @@
 		"autumn-fall.path-02": {
 			"chests": {
 				"85": {
-					"name": "Autumn's Fall - Ruined Path Upper",
+					"name": "Fall: Ruined Path Upper",
 					"mwids": [
 						3235824045
 					]
 				},
 				"98": {
-					"name": "Autumn's Fall - Ruined Path Lower",
+					"name": "Fall: Ruined Path Lower",
 					"mwids": [
 						3235824046
 					]
@@ -425,13 +425,13 @@
 		"autumn-fall.path-03": {
 			"chests": {
 				"48": {
-					"name": "Autumn's Fall - Eastern Exit Center",
+					"name": "Fall: Eastern Exit Center",
 					"mwids": [
 						3235824047
 					]
 				},
 				"494": {
-					"name": "Autumn's Fall - Eastern Exit Right",
+					"name": "Fall: Eastern Exit Right",
 					"mwids": [
 						3235824048
 					]
@@ -441,13 +441,13 @@
 		"autumn-fall.path-04": {
 			"chests": {
 				"14": {
-					"name": "Autumn's Fall - Ancient Center Upper",
+					"name": "Fall: Ancient Center Upper",
 					"mwids": [
 						3235824049
 					]
 				},
 				"81": {
-					"name": "Autumn's Fall - Ancient Center Left",
+					"name": "Fall: Ancient Center Left",
 					"mwids": [
 						3235824050
 					]
@@ -457,13 +457,13 @@
 		"autumn-fall.path-05": {
 			"chests": {
 				"123": {
-					"name": "Autumn's Fall - Northern Exit Lower",
+					"name": "Fall: Northern Exit Lower",
 					"mwids": [
 						3235824051
 					]
 				},
 				"124": {
-					"name": "Autumn's Fall - Northern Exit Upper",
+					"name": "Fall: Northern Exit Upper",
 					"mwids": [
 						3235824052
 					]
@@ -473,19 +473,19 @@
 		"autumn-fall.path-06": {
 			"chests": {
 				"39": {
-					"name": "Autumn's Fall - Pillar Isle Upper",
+					"name": "Fall: Pillar Isle Upper",
 					"mwids": [
 						3235824053
 					]
 				},
 				"40": {
-					"name": "Autumn's Fall - Pillar Isle Right",
+					"name": "Fall: Pillar Isle Right",
 					"mwids": [
 						3235824054
 					]
 				},
 				"740": {
-					"name": "Autumn's Fall - Pillar Isle Left",
+					"name": "Fall: Pillar Isle Left",
 					"mwids": [
 						3235824055
 					]
@@ -495,19 +495,19 @@
 		"autumn-fall.path-07": {
 			"chests": {
 				"79": {
-					"name": "Autumn's Fall - Village Remains Left",
+					"name": "Fall: Village Remains Left",
 					"mwids": [
 						3235824056
 					]
 				},
 				"85": {
-					"name": "Autumn's Fall - Village Remains Upper",
+					"name": "Fall: Village Remains Upper",
 					"mwids": [
 						3235824057
 					]
 				},
 				"128": {
-					"name": "Autumn's Fall - Village Remains Right",
+					"name": "Fall: Village Remains Right",
 					"mwids": [
 						3235824058
 					]
@@ -517,19 +517,19 @@
 		"autumn-fall.path-08": {
 			"chests": {
 				"527": {
-					"name": "Autumn's Fall - Secluded Path Upper",
+					"name": "Fall: Secluded Path Upper",
 					"mwids": [
 						3235824059
 					]
 				},
 				"528": {
-					"name": "Autumn's Fall - Secluded Path Left",
+					"name": "Fall: Secluded Path Left",
 					"mwids": [
 						3235824060
 					]
 				},
 				"818": {
-					"name": "Autumn's Fall - Secluded Path Right",
+					"name": "Fall: Secluded Path Right",
 					"mwids": [
 						3235824061
 					]
@@ -539,13 +539,13 @@
 		"autumn-fall.path-10": {
 			"chests": {
 				"68": {
-					"name": "Autumn's Fall - Villa of Terror Right",
+					"name": "Fall: Villa of Terror Right",
 					"mwids": [
 						3235824062
 					]
 				},
 				"82": {
-					"name": "Autumn's Fall - Villa of Terror Left",
+					"name": "Fall: Villa of Terror Left",
 					"mwids": [
 						3235824063
 					]
@@ -555,7 +555,7 @@
 		"autumn-fall.raid.raid-01": {
 			"chests": {
 				"375": {
-					"name": "Autumn's Fall - Para Island 1",
+					"name": "Fall: Para Island 1",
 					"mwids": [
 						3235824064
 					]
@@ -565,7 +565,7 @@
 		"bergen.storage": {
 			"chests": {
 				"71": {
-					"name": "Bergen Village South - Storage Room",
+					"name": "Bergen South: Storage Room",
 					"mwids": [
 						3235824076
 					]
@@ -575,25 +575,25 @@
 		"bergen.bergen": {
 			"chests": {
 				"868": {
-					"name": "Bergen Village South - On Top Of Bergen Bar",
+					"name": "Bergen South: On Top Of Bergen Bar",
 					"mwids": [
 						3235824065
 					]
 				},
 				"1258": {
-					"name": "Bergen Village South - Behind Ice In East",
+					"name": "Bergen South: Behind Ice In East",
 					"mwids": [
 						3235824066
 					]
 				},
 				"1265": {
-					"name": "Bergen Village South - Behind Ice In South",
+					"name": "Bergen South: Behind Ice In South",
 					"mwids": [
 						3235824067
 					]
 				},
 				"1952": {
-					"name": "Bergen Village South - Top West Roof",
+					"name": "Bergen South: Top West Roof",
 					"mwids": [
 						3235824068
 					]
@@ -603,25 +603,25 @@
 		"bergen.bergen2": {
 			"chests": {
 				"2003": {
-					"name": "Bergen Village North - On Ledge Near Trader Den",
+					"name": "Bergen North: On Ledge Near Trader Den",
 					"mwids": [
 						3235824069
 					]
 				},
 				"2012": {
-					"name": "Bergen Village North - Hidden Cave In West",
+					"name": "Bergen North: Hidden Cave In West",
 					"mwids": [
 						3235824070
 					]
 				},
 				"2021": {
-					"name": "Bergen Village North - On Ledge In Lower East",
+					"name": "Bergen North: On Ledge In Lower East",
 					"mwids": [
 						3235824071
 					]
 				},
 				"2889": {
-					"name": "Bergen Village North - Roof Of Eastern Archway",
+					"name": "Bergen North: Roof Of Eastern Archway",
 					"mwids": [
 						3235824072
 					]
@@ -631,7 +631,7 @@
 		"bergen.elevator": {
 			"chests": {
 				"35": {
-					"name": "Bergen Village - Diving Railway",
+					"name": "Bergen: Diving Railway",
 					"mwids": [
 						3235824073
 					]
@@ -641,13 +641,13 @@
 		"bergen.inner-questhub-0": {
 			"chests": {
 				"130": {
-					"name": "Bergen Village - Seeker Hub Cellar Left",
+					"name": "Bergen: Seeker Hub Cellar Left",
 					"mwids": [
 						3235824074
 					]
 				},
 				"136": {
-					"name": "Bergen Village - Seeker Hub Cellar Right",
+					"name": "Bergen: Seeker Hub Cellar Right",
 					"mwids": [
 						3235824075
 					]
@@ -657,7 +657,7 @@
 		"bergen-trail.cave.cave-08-smith": {
 			"chests": {
 				"33": {
-					"name": "Bergen Trail - Abandoned Cave",
+					"name": "Trail: Abandoned Cave",
 					"mwids": [
 						3235824078
 					]
@@ -667,7 +667,7 @@
 		"bergen-trail.cave.cave-4-1-1": {
 			"chests": {
 				"20": {
-					"name": "Bergen Trail - Frozen Cave",
+					"name": "Trail: Frozen Cave",
 					"mwids": [
 						3235824079
 					]
@@ -677,7 +677,7 @@
 		"bergen-trail.cave.cave-6-1": {
 			"chests": {
 				"416": {
-					"name": "Bergen Trail - Abandoned Ground",
+					"name": "Trail: Abandoned Ground",
 					"mwids": [
 						3235824080
 					]
@@ -687,7 +687,7 @@
 		"bergen-trail.cave.cave-6-3": {
 			"chests": {
 				"24": {
-					"name": "Bergen Trail - Pengpeng Den",
+					"name": "Trail: Pengpeng Den",
 					"mwids": [
 						3235824081
 					]
@@ -697,13 +697,13 @@
 		"bergen-trail.path-1-entrance": {
 			"chests": {
 				"531": {
-					"name": "Bergen Trail - Entrance Left",
+					"name": "Trail: Entrance Left",
 					"mwids": [
 						3235824082
 					]
 				},
 				"532": {
-					"name": "Bergen Trail - Entrance Right",
+					"name": "Trail: Entrance Right",
 					"mwids": [
 						3235824083
 					]
@@ -713,7 +713,7 @@
 		"bergen-trail.path-2": {
 			"chests": {
 				"67": {
-					"name": "Bergen Trail - Rising Path 1",
+					"name": "Trail: Rising Path 1",
 					"mwids": [
 						3235824084
 					]
@@ -723,13 +723,13 @@
 		"bergen-trail.path-3-1": {
 			"chests": {
 				"432": {
-					"name": "Bergen Trail - Off Road 1 Lower",
+					"name": "Trail: Off Road 1 Lower",
 					"mwids": [
 						3235824085
 					]
 				},
 				"454": {
-					"name": "Bergen Trail - Off Road 1 Upper",
+					"name": "Trail: Off Road 1 Upper",
 					"mwids": [
 						3235824086
 					]
@@ -739,19 +739,19 @@
 		"bergen-trail.path-3-2": {
 			"chests": {
 				"373": {
-					"name": "Bergen Trail - Off Road 2 Center",
+					"name": "Trail: Off Road 2 Center",
 					"mwids": [
 						3235824087
 					]
 				},
 				"399": {
-					"name": "Bergen Trail - Off Road 2 Lower",
+					"name": "Trail: Off Road 2 Lower",
 					"mwids": [
 						3235824088
 					]
 				},
 				"451": {
-					"name": "Bergen Trail - Off Road 2 Upper",
+					"name": "Trail: Off Road 2 Upper",
 					"mwids": [
 						3235824089
 					]
@@ -761,13 +761,13 @@
 		"bergen-trail.path-3-3": {
 			"chests": {
 				"32": {
-					"name": "Bergen Trail - Off Road 3 Upper",
+					"name": "Trail: Off Road 3 Upper",
 					"mwids": [
 						3235824090
 					]
 				},
 				"126": {
-					"name": "Bergen Trail - Off Road 3 Lower",
+					"name": "Trail: Off Road 3 Lower",
 					"mwids": [
 						3235824091
 					]
@@ -777,7 +777,7 @@
 		"bergen-trail.path-4-1-1": {
 			"chests": {
 				"1015": {
-					"name": "Bergen Trail - Old Plateau",
+					"name": "Trail: Old Plateau",
 					"mwids": [
 						3235824092
 					]
@@ -787,7 +787,7 @@
 		"bergen-trail.path-4-1": {
 			"chests": {
 				"288": {
-					"name": "Bergen Trail - Rising Path 2",
+					"name": "Trail: Rising Path 2",
 					"mwids": [
 						3235824093
 					]
@@ -797,13 +797,13 @@
 		"bergen-trail.path-4-2": {
 			"chests": {
 				"269": {
-					"name": "Bergen Trail - Rising Path 3 Left",
+					"name": "Trail: Rising Path 3 Left",
 					"mwids": [
 						3235824094
 					]
 				},
 				"643": {
-					"name": "Bergen Trail - Rising Path 3 Right",
+					"name": "Trail: Rising Path 3 Right",
 					"mwids": [
 						3235824095
 					]
@@ -813,13 +813,13 @@
 		"bergen-trail.path-5": {
 			"chests": {
 				"572": {
-					"name": "Bergen Trail - Spike Heights Upper",
+					"name": "Trail: Spike Heights Upper",
 					"mwids": [
 						3235824096
 					]
 				},
 				"1337": {
-					"name": "Bergen Trail - Spike Heights Lower",
+					"name": "Trail: Spike Heights Lower",
 					"mwids": [
 						3235824097
 					]
@@ -829,7 +829,7 @@
 		"bergen-trail.path-6-1": {
 			"chests": {
 				"26": {
-					"name": "Bergen Trail - Icy Cauldron",
+					"name": "Trail: Icy Cauldron",
 					"mwids": [
 						3235824098
 					]
@@ -839,7 +839,7 @@
 		"bergen-trail.path-6": {
 			"chests": {
 				"493": {
-					"name": "Bergen Trail - Bergen Waterfalls",
+					"name": "Trail: Bergen Waterfalls",
 					"mwids": [
 						3235824099
 					]
@@ -849,13 +849,13 @@
 		"bergen-trail.path-7-1": {
 			"chests": {
 				"994": {
-					"name": "Bergen Trail - Rising Path 4 Upper",
+					"name": "Trail: Rising Path 4 Upper",
 					"mwids": [
 						3235824100
 					]
 				},
 				"995": {
-					"name": "Bergen Trail - Rising Path 4 Lower",
+					"name": "Trail: Rising Path 4 Lower",
 					"mwids": [
 						3235824101
 					]
@@ -865,7 +865,7 @@
 		"bergen-trail.path-7-2-1": {
 			"chests": {
 				"28": {
-					"name": "Bergen Trail - Lofty Heights",
+					"name": "Trail: Lofty Heights",
 					"mwids": [
 						3235824102
 					]
@@ -875,7 +875,7 @@
 		"bergen-trail.path-7-2": {
 			"chests": {
 				"1027": {
-					"name": "Bergen Trail - Windy Climb",
+					"name": "Trail: Windy Climb",
 					"mwids": [
 						3235824103
 					]
@@ -885,7 +885,7 @@
 		"bergen-trail.path-8": {
 			"chests": {
 				"36": {
-					"name": "Bergen Trail - Rising Path 5",
+					"name": "Trail: Rising Path 5",
 					"mwids": [
 						3235824104
 					]
@@ -895,7 +895,7 @@
 		"cold-dng.b1.center": {
 			"chests": {
 				"223": {
-					"name": "Temple Mine U1 - Elevator",
+					"name": "Mine U1: Elevator",
 					"mwids": [
 						3235824105
 					]
@@ -905,7 +905,7 @@
 		"cold-dng.b1.room1": {
 			"chests": {
 				"48": {
-					"name": "Temple Mine U1 - Crossing Funnel",
+					"name": "Mine U1: Crossing Funnel",
 					"mwids": [
 						3235824106
 					]
@@ -915,7 +915,7 @@
 		"cold-dng.b1.room2": {
 			"chests": {
 				"29": {
-					"name": "Temple Mine U1 - Old Shaft 1",
+					"name": "Mine U1: Old Shaft 1",
 					"mwids": [
 						3235824107
 					]
@@ -925,7 +925,7 @@
 		"cold-dng.b1.room3": {
 			"chests": {
 				"26": {
-					"name": "Temple Mine U1 - Old Shaft 2",
+					"name": "Mine U1: Old Shaft 2",
 					"mwids": [
 						3235824108
 					]
@@ -935,7 +935,7 @@
 		"cold-dng.b1.room4": {
 			"chests": {
 				"3": {
-					"name": "Temple Mine U1 - Testing Chamber",
+					"name": "Mine U1: Testing Chamber",
 					"mwids": [
 						3235824109
 					]
@@ -945,7 +945,7 @@
 		"cold-dng.b1.room6": {
 			"chests": {
 				"3": {
-					"name": "Temple Mine U1 - Old Chamber",
+					"name": "Mine U1: Old Chamber",
 					"mwids": [
 						3235824110
 					]
@@ -955,7 +955,7 @@
 		"cold-dng.b2.room1": {
 			"chests": {
 				"32": {
-					"name": "Temple Mine U2 - Storage Room 1",
+					"name": "Mine U2: Storage Room 1",
 					"mwids": [
 						3235824111
 					]
@@ -965,7 +965,7 @@
 		"cold-dng.b2.room2": {
 			"chests": {
 				"40": {
-					"name": "Temple Mine U2 - Frozen Chamber 1",
+					"name": "Mine U2: Frozen Chamber 1",
 					"mwids": [
 						3235824112
 					]
@@ -975,13 +975,13 @@
 		"cold-dng.b2.room5": {
 			"chests": {
 				"21": {
-					"name": "Temple Mine U2 - Frozen Chamber 2 Left",
+					"name": "Mine U2: Frozen Chamber 2 Left",
 					"mwids": [
 						3235824113
 					]
 				},
 				"66": {
-					"name": "Temple Mine U2 - Frozen Chamber 2 Right",
+					"name": "Mine U2: Frozen Chamber 2 Right",
 					"mwids": [
 						3235824114
 					]
@@ -991,7 +991,7 @@
 		"cold-dng.b3.room1": {
 			"chests": {
 				"30": {
-					"name": "Temple Mine U3 - Frozen Shaft 1",
+					"name": "Mine U3: Frozen Shaft 1",
 					"mwids": [
 						3235824115
 					]
@@ -1001,7 +1001,7 @@
 		"cold-dng.b3.room2": {
 			"chests": {
 				"55": {
-					"name": "Temple Mine U3 - Frozen Shaft 2",
+					"name": "Mine U3: Frozen Shaft 2",
 					"mwids": [
 						3235824116
 					]
@@ -1011,13 +1011,13 @@
 		"cold-dng.b3.room3": {
 			"chests": {
 				"11": {
-					"name": "Temple Mine U3 - Frozen Shaft 3 Right",
+					"name": "Mine U3: Frozen Shaft 3 Right",
 					"mwids": [
 						3235824117
 					]
 				},
 				"22": {
-					"name": "Temple Mine U3 - Frozen Shaft 3 Left",
+					"name": "Mine U3: Frozen Shaft 3 Left",
 					"mwids": [
 						3235824118
 					]
@@ -1027,13 +1027,13 @@
 		"cold-dng.b3.room6": {
 			"chests": {
 				"36": {
-					"name": "Temple Mine U3 - Overrun Chamber Upper",
+					"name": "Mine U3: Overrun Chamber Upper",
 					"mwids": [
 						3235824119
 					]
 				},
 				"68": {
-					"name": "Temple Mine U3 - Overrun Chamber Lower",
+					"name": "Mine U3: Overrun Chamber Lower",
 					"mwids": [
 						3235824120
 					]
@@ -1043,7 +1043,7 @@
 		"cold-dng.b4.center": {
 			"chests": {
 				"298": {
-					"name": "Temple Mine U4 - Elevator",
+					"name": "Mine U4: Elevator",
 					"mwids": [
 						3235824121
 					]
@@ -1053,7 +1053,7 @@
 		"cold-dng.b4.room10": {
 			"chests": {
 				"94": {
-					"name": "Temple Mine U4 - Infested Chamber",
+					"name": "Mine U4: Infested Chamber",
 					"mwids": [
 						3235824122
 					]
@@ -1063,7 +1063,7 @@
 		"cold-dng.b4.room4": {
 			"chests": {
 				"25": {
-					"name": "Temple Mine U4 - Forgotten Shaft 1",
+					"name": "Mine U4: Forgotten Shaft 1",
 					"mwids": [
 						3235824123
 					]
@@ -1073,7 +1073,7 @@
 		"cold-dng.b4.room5": {
 			"chests": {
 				"18": {
-					"name": "Temple Mine U4 - Forgotten Shaft 2",
+					"name": "Mine U4: Forgotten Shaft 2",
 					"mwids": [
 						3235824124
 					]
@@ -1083,7 +1083,7 @@
 		"cold-dng.b4.room6": {
 			"chests": {
 				"16": {
-					"name": "Temple Mine U4 - Forgotten Shaft 3",
+					"name": "Mine U4: Forgotten Shaft 3",
 					"mwids": [
 						3235824125
 					]
@@ -1093,7 +1093,7 @@
 		"cold-dng.b4.room7": {
 			"chests": {
 				"44": {
-					"name": "Temple Mine U4 - Forgotten Shaft 4",
+					"name": "Mine U4: Forgotten Shaft 4",
 					"mwids": [
 						3235824126
 					]
@@ -1103,7 +1103,7 @@
 		"cold-dng.b4.room8": {
 			"chests": {
 				"16": {
-					"name": "Temple Mine U4 - Forgotten Shaft 5",
+					"name": "Mine U4: Forgotten Shaft 5",
 					"mwids": [
 						3235824127
 					]
@@ -1113,7 +1113,7 @@
 		"cold-dng.g.center": {
 			"chests": {
 				"249": {
-					"name": "Temple Mine GF - Elevator",
+					"name": "Mine GF: Elevator",
 					"mwids": [
 						3235824128
 					]
@@ -1123,7 +1123,7 @@
 		"cold-dng.g.room2": {
 			"chests": {
 				"3": {
-					"name": "Temple Mine GF - Temple Chamber 2",
+					"name": "Mine GF: Temple Chamber 2",
 					"mwids": [
 						3235824129
 					]
@@ -1133,7 +1133,7 @@
 		"forest.caves.cave-013-pandza-01": {
 			"chests": {
 				"385": {
-					"name": "Sapphire Ridge - The Barracks",
+					"name": "Ridge: The Barracks",
 					"mwids": [
 						3235824130
 					]
@@ -1143,7 +1143,7 @@
 		"forest.caves.cave-013-pandza-02": {
 			"chests": {
 				"133": {
-					"name": "Sapphire Ridge - The Bellow",
+					"name": "Ridge: The Bellow",
 					"mwids": [
 						3235824131
 					]
@@ -1153,7 +1153,7 @@
 		"forest.caves.path-01-entrance": {
 			"chests": {
 				"23": {
-					"name": "Sapphire Ridge - Sapphire Tunnel",
+					"name": "Ridge: Sapphire Tunnel",
 					"mwids": [
 						3235824132
 					]
@@ -1163,13 +1163,13 @@
 		"forest.caves.path-02-to-08": {
 			"chests": {
 				"1": {
-					"name": "Sapphire Ridge - Eroded Passage Lower",
+					"name": "Ridge: Eroded Passage Lower",
 					"mwids": [
 						3235824133
 					]
 				},
 				"30": {
-					"name": "Sapphire Ridge - Eroded Passage Upper",
+					"name": "Ridge: Eroded Passage Upper",
 					"mwids": [
 						3235824134
 					]
@@ -1179,13 +1179,13 @@
 		"forest.caves.path-06-chasm": {
 			"chests": {
 				"40": {
-					"name": "Sapphire Ridge - Spider Chasm Lower",
+					"name": "Ridge: Spider Chasm Lower",
 					"mwids": [
 						3235824135
 					]
 				},
 				"63": {
-					"name": "Sapphire Ridge - Spider Chasm Upper",
+					"name": "Ridge: Spider Chasm Upper",
 					"mwids": [
 						3235824136
 					]
@@ -1195,13 +1195,13 @@
 		"forest.caves.path-07-to-08": {
 			"chests": {
 				"5": {
-					"name": "Sapphire Ridge - Narrow Passage Left",
+					"name": "Ridge: Narrow Passage Left",
 					"mwids": [
 						3235824137
 					]
 				},
 				"13": {
-					"name": "Sapphire Ridge - Narrow Passage Right",
+					"name": "Ridge: Narrow Passage Right",
 					"mwids": [
 						3235824138
 					]
@@ -1211,13 +1211,13 @@
 		"forest.caves.path-08-to-10": {
 			"chests": {
 				"29": {
-					"name": "Sapphire Ridge - Wheel Passage Lower",
+					"name": "Ridge: Wheel Passage Lower",
 					"mwids": [
 						3235824139
 					]
 				},
 				"32": {
-					"name": "Sapphire Ridge - Wheel Passage Upper",
+					"name": "Ridge: Wheel Passage Upper",
 					"mwids": [
 						3235824140
 					]
@@ -1227,7 +1227,7 @@
 		"forest.interior.inn-og-01": {
 			"chests": {
 				"128": {
-					"name": "Sapphire Ridge - Cave Inn Interior 1F",
+					"name": "Ridge: Cave Inn Interior 1F",
 					"mwids": [
 						3235824141
 					]
@@ -1237,7 +1237,7 @@
 		"forest.interior.inn-storage": {
 			"chests": {
 				"87": {
-					"name": "Sapphire Ridge - Cave Inn Interior Storage",
+					"name": "Ridge: Cave Inn Interior Storage",
 					"mwids": [
 						3235824142
 					]
@@ -1247,13 +1247,13 @@
 		"forest.path-01-entrance": {
 			"chests": {
 				"72": {
-					"name": "Sapphire Ridge - Western Exit Upper",
+					"name": "Ridge: Western Exit Upper",
 					"mwids": [
 						3235824143
 					]
 				},
 				"109": {
-					"name": "Sapphire Ridge - Western Exit Lower",
+					"name": "Ridge: Western Exit Lower",
 					"mwids": [
 						3235824144
 					]
@@ -1263,13 +1263,13 @@
 		"forest.path-02": {
 			"chests": {
 				"157": {
-					"name": "Sapphire Ridge - North West Path Lower",
+					"name": "Ridge: North West Path Lower",
 					"mwids": [
 						3235824145
 					]
 				},
 				"160": {
-					"name": "Sapphire Ridge - North West Path Upper",
+					"name": "Ridge: North West Path Upper",
 					"mwids": [
 						3235824146
 					]
@@ -1279,19 +1279,19 @@
 		"forest.path-03": {
 			"chests": {
 				"11": {
-					"name": "Sapphire Ridge - River Road Upper",
+					"name": "Ridge: River Road Upper",
 					"mwids": [
 						3235824147
 					]
 				},
 				"53": {
-					"name": "Sapphire Ridge - River Road Center",
+					"name": "Ridge: River Road Center",
 					"mwids": [
 						3235824148
 					]
 				},
 				"145": {
-					"name": "Sapphire Ridge - River Road Lower",
+					"name": "Ridge: River Road Lower",
 					"mwids": [
 						3235824149
 					]
@@ -1301,13 +1301,13 @@
 		"forest.path-04-hostel": {
 			"chests": {
 				"52": {
-					"name": "Sapphire Ridge - Cave Inn Exterior Upper",
+					"name": "Ridge: Cave Inn Exterior Upper",
 					"mwids": [
 						3235824150
 					]
 				},
 				"184": {
-					"name": "Sapphire Ridge - Cave Inn Exterior Lower",
+					"name": "Ridge: Cave Inn Exterior Lower",
 					"mwids": [
 						3235824151
 					]
@@ -1317,13 +1317,13 @@
 		"forest.path-04-vaga": {
 			"chests": {
 				"5": {
-					"name": "Sapphire Ridge - Tranquil Bamboo Lower",
+					"name": "Ridge: Tranquil Bamboo Lower",
 					"mwids": [
 						3235824152
 					]
 				},
 				"6": {
-					"name": "Sapphire Ridge - Tranquil Bamboo Upper",
+					"name": "Ridge: Tranquil Bamboo Upper",
 					"mwids": [
 						3235824153
 					]
@@ -1343,13 +1343,13 @@
 		"forest.path-05": {
 			"chests": {
 				"4": {
-					"name": "Sapphire Ridge - Bamboo Thicket Upper",
+					"name": "Ridge: Bamboo Thicket Upper",
 					"mwids": [
 						3235824154
 					]
 				},
 				"9": {
-					"name": "Sapphire Ridge - Bamboo Thicket Center",
+					"name": "Ridge: Bamboo Thicket Center",
 					"mwids": [
 						3235824155
 					]
@@ -1359,13 +1359,13 @@
 		"forest.path-06": {
 			"chests": {
 				"33": {
-					"name": "Sapphire Ridge - North East Path Upper",
+					"name": "Ridge: North East Path Upper",
 					"mwids": [
 						3235824156
 					]
 				},
 				"53": {
-					"name": "Sapphire Ridge - North East Path Lower",
+					"name": "Ridge: North East Path Lower",
 					"mwids": [
 						3235824157
 					]
@@ -1375,13 +1375,13 @@
 		"forest.path-07": {
 			"chests": {
 				"6": {
-					"name": "Sapphire Ridge - Flower Lake Left",
+					"name": "Ridge: Flower Lake Left",
 					"mwids": [
 						3235824158
 					]
 				},
 				"44": {
-					"name": "Sapphire Ridge - Flower Lake Right",
+					"name": "Ridge: Flower Lake Right",
 					"mwids": [
 						3235824159
 					]
@@ -1391,19 +1391,19 @@
 		"forest.path-08": {
 			"chests": {
 				"68": {
-					"name": "Sapphire Ridge - Carved Pathway Center",
+					"name": "Ridge: Carved Pathway Center",
 					"mwids": [
 						3235824160
 					]
 				},
 				"82": {
-					"name": "Sapphire Ridge - Carved Pathway Lower",
+					"name": "Ridge: Carved Pathway Lower",
 					"mwids": [
 						3235824161
 					]
 				},
 				"90": {
-					"name": "Sapphire Ridge - Carved Pathway Upper",
+					"name": "Ridge: Carved Pathway Upper",
 					"mwids": [
 						3235824162
 					]
@@ -1413,13 +1413,13 @@
 		"forest.path-09": {
 			"chests": {
 				"24": {
-					"name": "Sapphire Ridge - High Ground Lower",
+					"name": "Ridge: High Ground Lower",
 					"mwids": [
 						3235824163
 					]
 				},
 				"100": {
-					"name": "Sapphire Ridge - High Ground Upper",
+					"name": "Ridge: High Ground Upper",
 					"mwids": [
 						3235824164
 					]
@@ -1429,19 +1429,19 @@
 		"forest.path-10": {
 			"chests": {
 				"78": {
-					"name": "Sapphire Ridge - Old Dojo Lower",
+					"name": "Ridge: Old Dojo Lower",
 					"mwids": [
 						3235824165
 					]
 				},
 				"167": {
-					"name": "Sapphire Ridge - Old Dojo Left",
+					"name": "Ridge: Old Dojo Left",
 					"mwids": [
 						3235824166
 					]
 				},
 				"904": {
-					"name": "Sapphire Ridge - Old Dojo Upper",
+					"name": "Ridge: Old Dojo Upper",
 					"mwids": [
 						3235824167
 					]
@@ -1451,7 +1451,7 @@
 		"forest.path-11-behind-maze": {
 			"chests": {
 				"59": {
-					"name": "Sapphire Ridge - Dream Pond",
+					"name": "Ridge: Dream Pond",
 					"mwids": [
 						3235824168
 					]
@@ -1461,19 +1461,19 @@
 		"forest.path-12": {
 			"chests": {
 				"298": {
-					"name": "Sapphire Ridge - Ascension Temple Upper Left",
+					"name": "Ridge: Ascension Temple Upper Left",
 					"mwids": [
 						3235824169
 					]
 				},
 				"301": {
-					"name": "Sapphire Ridge - Ascension Temple Upper Right",
+					"name": "Ridge: Ascension Temple Upper Right",
 					"mwids": [
 						3235824170
 					]
 				},
 				"302": {
-					"name": "Sapphire Ridge - Ascension Temple Lower",
+					"name": "Ridge: Ascension Temple Lower",
 					"mwids": [
 						3235824171
 					]
@@ -1483,7 +1483,7 @@
 		"forest.path-13": {
 			"chests": {
 				"814": {
-					"name": "Sapphire Ridge - Baton Pond",
+					"name": "Ridge: Baton Pond",
 					"mwids": [
 						3235824172
 					]
@@ -1493,13 +1493,13 @@
 		"heat.caves.cliff-cave-01": {
 			"chests": {
 				"42": {
-					"name": "Maroon Valley - Mystery Cave Lower",
+					"name": "Maroon: Mystery Cave Lower",
 					"mwids": [
 						3235824173
 					]
 				},
 				"43": {
-					"name": "Maroon Valley - Mystery Cave Upper",
+					"name": "Maroon: Mystery Cave Upper",
 					"mwids": [
 						3235824174
 					]
@@ -1509,13 +1509,13 @@
 		"heat.caves.cliffs-temple-02": {
 			"chests": {
 				"48": {
-					"name": "Maroon Valley - Cursed Temple Upper",
+					"name": "Maroon: Cursed Temple Upper",
 					"mwids": [
 						3235824175
 					]
 				},
 				"86": {
-					"name": "Maroon Valley - Cursed Temple Lower",
+					"name": "Maroon: Cursed Temple Lower",
 					"mwids": [
 						3235824176
 					]
@@ -1525,7 +1525,7 @@
 		"heat.caves.cliffs-temple-03": {
 			"chests": {
 				"107": {
-					"name": "Maroon Valley - Cursed Temple Treasure Room",
+					"name": "Maroon: Cursed Temple Treasure Room",
 					"mwids": [
 						3235824177
 					]
@@ -1535,7 +1535,7 @@
 		"heat.caves.maroon-cave-01": {
 			"chests": {
 				"404": {
-					"name": "Maroon Valley - Maroon Cave 1",
+					"name": "Maroon: Maroon Cave 1",
 					"mwids": [
 						3235824178
 					]
@@ -1545,13 +1545,13 @@
 		"heat.cliffs.cliffs-path-01": {
 			"chests": {
 				"105": {
-					"name": "Maroon Valley - River Cliff Right",
+					"name": "Maroon: River Cliff Right",
 					"mwids": [
 						3235824179
 					]
 				},
 				"197": {
-					"name": "Maroon Valley - River Cliff Left",
+					"name": "Maroon: River Cliff Left",
 					"mwids": [
 						3235824180
 					]
@@ -1561,19 +1561,19 @@
 		"heat.cliffs.cliffs-path-02": {
 			"chests": {
 				"29": {
-					"name": "Maroon Valley - Endless Pit Center",
+					"name": "Maroon: Endless Pit Center",
 					"mwids": [
 						3235824181
 					]
 				},
 				"30": {
-					"name": "Maroon Valley - Endless Pit Right",
+					"name": "Maroon: Endless Pit Right",
 					"mwids": [
 						3235824182
 					]
 				},
 				"32": {
-					"name": "Maroon Valley - Endless Pit Left",
+					"name": "Maroon: Endless Pit Left",
 					"mwids": [
 						3235824183
 					]
@@ -1583,13 +1583,13 @@
 		"heat.oasis.oasis-path-01": {
 			"chests": {
 				"8": {
-					"name": "Maroon Valley - Vivid Path Lower",
+					"name": "Maroon: Vivid Path Lower",
 					"mwids": [
 						3235824184
 					]
 				},
 				"9": {
-					"name": "Maroon Valley - Vivid Path Upper",
+					"name": "Maroon: Vivid Path Upper",
 					"mwids": [
 						3235824185
 					]
@@ -1599,13 +1599,13 @@
 		"heat.oasis.oasis-path-02": {
 			"chests": {
 				"80": {
-					"name": "Maroon Valley - Maroon Oasis Center",
+					"name": "Maroon: Maroon Oasis Center",
 					"mwids": [
 						3235824186
 					]
 				},
 				"97": {
-					"name": "Maroon Valley - Maroon Oasis Upper",
+					"name": "Maroon: Maroon Oasis Upper",
 					"mwids": [
 						3235824187
 					]
@@ -1615,7 +1615,7 @@
 		"heat.oasis.oasis-path-03": {
 			"chests": {
 				"34": {
-					"name": "Maroon Valley - Bright Path",
+					"name": "Maroon: Bright Path",
 					"mwids": [
 						3235824188
 					]
@@ -1625,7 +1625,7 @@
 		"heat.path-00": {
 			"chests": {
 				"6": {
-					"name": "Maroon Valley - Rising Railway",
+					"name": "Maroon: Rising Railway",
 					"mwids": [
 						3235824189
 					]
@@ -1635,7 +1635,7 @@
 		"heat.path-01-entrance": {
 			"chests": {
 				"55": {
-					"name": "Maroon Valley - East Entrance",
+					"name": "Maroon: East Entrance",
 					"mwids": [
 						3235824190
 					]
@@ -1645,13 +1645,13 @@
 		"heat.path-02": {
 			"chests": {
 				"7": {
-					"name": "Maroon Valley - Dusty Path Center",
+					"name": "Maroon: Dusty Path Center",
 					"mwids": [
 						3235824191
 					]
 				},
 				"14": {
-					"name": "Maroon Valley - Dusty Path Upper",
+					"name": "Maroon: Dusty Path Upper",
 					"mwids": [
 						3235824192
 					]
@@ -1661,13 +1661,13 @@
 		"heat.path-03": {
 			"chests": {
 				"23": {
-					"name": "Maroon Valley - Crossroad Center",
+					"name": "Maroon: Crossroad Center",
 					"mwids": [
 						3235824193
 					]
 				},
 				"25": {
-					"name": "Maroon Valley - Crossroad Left",
+					"name": "Maroon: Crossroad Left",
 					"mwids": [
 						3235824194
 					]
@@ -1677,7 +1677,7 @@
 		"heat.path-04": {
 			"chests": {
 				"34": {
-					"name": "Maroon Valley - Long Piece",
+					"name": "Maroon: Long Piece",
 					"mwids": [
 						3235824195
 					]
@@ -1687,13 +1687,13 @@
 		"heat.path-05": {
 			"chests": {
 				"2": {
-					"name": "Maroon Valley - Barren Arcs Center",
+					"name": "Maroon: Barren Arcs Center",
 					"mwids": [
 						3235824196
 					]
 				},
 				"14": {
-					"name": "Maroon Valley - Barren Arcs Left",
+					"name": "Maroon: Barren Arcs Left",
 					"mwids": [
 						3235824197
 					]
@@ -1703,7 +1703,7 @@
 		"heat.path-06": {
 			"chests": {
 				"16": {
-					"name": "Maroon Valley - Barren Land",
+					"name": "Maroon: Barren Land",
 					"mwids": [
 						3235824198
 					]
@@ -1713,13 +1713,13 @@
 		"heat.path-07": {
 			"chests": {
 				"7": {
-					"name": "Maroon Valley - Overpass Upper",
+					"name": "Maroon: Overpass Upper",
 					"mwids": [
 						3235824199
 					]
 				},
 				"78": {
-					"name": "Maroon Valley - Overpass Left",
+					"name": "Maroon: Overpass Left",
 					"mwids": [
 						3235824200
 					]
@@ -1729,13 +1729,13 @@
 		"heat.path-08": {
 			"chests": {
 				"1": {
-					"name": "Maroon Valley - Paw Cliffs Lower",
+					"name": "Maroon: Paw Cliffs Lower",
 					"mwids": [
 						3235824201
 					]
 				},
 				"4": {
-					"name": "Maroon Valley - Paw Cliffs Upper",
+					"name": "Maroon: Paw Cliffs Upper",
 					"mwids": [
 						3235824202
 					]
@@ -1745,13 +1745,13 @@
 		"heat.path-09": {
 			"chests": {
 				"8": {
-					"name": "Maroon Valley - Torn Road Center",
+					"name": "Maroon: Torn Road Center",
 					"mwids": [
 						3235824203
 					]
 				},
 				"41": {
-					"name": "Maroon Valley - Torn Road Right",
+					"name": "Maroon: Torn Road Right",
 					"mwids": [
 						3235824204
 					]
@@ -1761,7 +1761,7 @@
 		"heat.path-11": {
 			"chests": {
 				"19": {
-					"name": "Maroon Valley - West Entrance",
+					"name": "Maroon: West Entrance",
 					"mwids": [
 						3235824205
 					]
@@ -1771,13 +1771,13 @@
 		"heat.shortcut-02-09": {
 			"chests": {
 				"17": {
-					"name": "Maroon Valley - Fractured Path Upper",
+					"name": "Maroon: Fractured Path Upper",
 					"mwids": [
 						3235824206
 					]
 				},
 				"19": {
-					"name": "Maroon Valley - Fractured Path Right",
+					"name": "Maroon: Fractured Path Right",
 					"mwids": [
 						3235824207
 					]
@@ -1787,7 +1787,7 @@
 		"heat-dng.f1.room-03": {
 			"chests": {
 				"33": {
-					"name": "Faj'ro Temple 1F - Right Chamber 1",
+					"name": "Faj'ro 1F: Right Chamber 1",
 					"mwids": [
 						3235824208
 					]
@@ -1797,7 +1797,7 @@
 		"heat-dng.f3.room-02": {
 			"chests": {
 				"31": {
-					"name": "Faj'ro Temple 3F - Bottom Chamber",
+					"name": "Faj'ro 3F: Bottom Chamber",
 					"mwids": [
 						3235824209
 					]
@@ -1807,13 +1807,13 @@
 		"heat-dng.f3.room-05": {
 			"chests": {
 				"69": {
-					"name": "Faj'ro Temple 3F - Large Fire Chamber Left",
+					"name": "Faj'ro 3F: Large Fire Chamber Left",
 					"mwids": [
 						3235824210
 					]
 				},
 				"79": {
-					"name": "Faj'ro Temple 3F - Large Fire Chamber Right",
+					"name": "Faj'ro 3F: Large Fire Chamber Right",
 					"mwids": [
 						3235824211
 					]
@@ -1823,7 +1823,7 @@
 		"heat-dng.f3.room-07": {
 			"chests": {
 				"19": {
-					"name": "Faj'ro Temple 3F - Test of Wisdom",
+					"name": "Faj'ro 3F: Test of Wisdom",
 					"mwids": [
 						3235824212
 					]
@@ -1833,7 +1833,7 @@
 		"heat-dng.f4.room-02": {
 			"chests": {
 				"38": {
-					"name": "Faj'ro Temple 4F - West Pathway",
+					"name": "Faj'ro 4F: West Pathway",
 					"mwids": [
 						3235824213
 					]
@@ -1843,7 +1843,7 @@
 		"heat-dng.f4.room-03": {
 			"chests": {
 				"21": {
-					"name": "Faj'ro Temple 4F - Test of Surprise",
+					"name": "Faj'ro 4F: Test of Surprise",
 					"mwids": [
 						3235824214
 					]
@@ -1853,7 +1853,7 @@
 		"heat-dng.f4.room-05": {
 			"chests": {
 				"56": {
-					"name": "Faj'ro Temple 4F - West Chamber 1",
+					"name": "Faj'ro 4F: West Chamber 1",
 					"mwids": [
 						3235824215
 					]
@@ -1863,7 +1863,7 @@
 		"heat-dng.f4.room-09": {
 			"chests": {
 				"92": {
-					"name": "Faj'ro Temple 4F - East Chamber 1",
+					"name": "Faj'ro 4F: East Chamber 1",
 					"mwids": [
 						3235824216
 					]
@@ -1873,7 +1873,7 @@
 		"heat-dng.f4.room-10": {
 			"chests": {
 				"78": {
-					"name": "Faj'ro Temple 4F - East Pathway",
+					"name": "Faj'ro 4F: East Pathway",
 					"mwids": [
 						3235824217
 					]
@@ -1883,7 +1883,7 @@
 		"heat-dng.f4.room-11": {
 			"chests": {
 				"27": {
-					"name": "Faj'ro Temple 4F - Test of Memory",
+					"name": "Faj'ro 4F: Test of Memory",
 					"mwids": [
 						3235824218
 					]
@@ -1893,7 +1893,7 @@
 		"heat-dng.f4.room-12": {
 			"chests": {
 				"85": {
-					"name": "Faj'ro Temple 4F - Chamber of Prosperity",
+					"name": "Faj'ro 4F: Chamber of Prosperity",
 					"mwids": [
 						3235824219
 					]
@@ -1903,7 +1903,7 @@
 		"heat-dng.g.room-03": {
 			"chests": {
 				"71": {
-					"name": "Faj'ro Temple GF - Left Chamber 1",
+					"name": "Faj'ro GF: Left Chamber 1",
 					"mwids": [
 						3235824220
 					]
@@ -1913,7 +1913,7 @@
 		"heat-dng.g.room-07": {
 			"chests": {
 				"28": {
-					"name": "Faj'ro Temple GF - Fire and Sand 2",
+					"name": "Faj'ro GF: Fire and Sand 2",
 					"mwids": [
 						3235824221
 					]
@@ -1923,13 +1923,13 @@
 		"heat-dng.g.room-09": {
 			"chests": {
 				"85": {
-					"name": "Faj'ro Temple GF - Balance Room 2 Right",
+					"name": "Faj'ro GF: Balance Room 2 Right",
 					"mwids": [
 						3235824222
 					]
 				},
 				"86": {
-					"name": "Faj'ro Temple GF - Balance Room 2 Left",
+					"name": "Faj'ro GF: Balance Room 2 Left",
 					"mwids": [
 						3235824223
 					]
@@ -1939,7 +1939,7 @@
 		"heat-dng.g.room-10": {
 			"chests": {
 				"16": {
-					"name": "Faj'ro Temple GF - Right Chamber 1",
+					"name": "Faj'ro GF: Right Chamber 1",
 					"mwids": [
 						3235824224
 					]
@@ -1949,7 +1949,7 @@
 		"heat-dng.g.room-12": {
 			"chests": {
 				"110": {
-					"name": "Faj'ro Temple GF - Right Chamber 2",
+					"name": "Faj'ro GF: Right Chamber 2",
 					"mwids": [
 						3235824225
 					]
@@ -1959,7 +1959,7 @@
 		"heat-dng.g.room-13": {
 			"chests": {
 				"2": {
-					"name": "Faj'ro Temple GF - Test of Memory Left",
+					"name": "Faj'ro GF: Test of Memory Left",
 					"mwids": [
 						3235824226
 					]
@@ -1969,7 +1969,7 @@
 		"heat-dng.g.room-14": {
 			"chests": {
 				"2": {
-					"name": "Faj'ro Temple GF - Test of Memory Right",
+					"name": "Faj'ro GF: Test of Memory Right",
 					"mwids": [
 						3235824227
 					]
@@ -1979,13 +1979,13 @@
 		"heat-village.baki-1": {
 			"chests": {
 				"99": {
-					"name": "Ba'kii Kum - Solar Farm Upper",
+					"name": "Ba'kii: Solar Farm Upper",
 					"mwids": [
 						3235824228
 					]
 				},
 				"737": {
-					"name": "Ba'kii Kum - Solar Farm Lower",
+					"name": "Ba'kii: Solar Farm Lower",
 					"mwids": [
 						3235824229
 					]
@@ -1995,13 +1995,13 @@
 		"heat-village.baki-2": {
 			"chests": {
 				"259": {
-					"name": "Ba'kii Kum - Market East",
+					"name": "Ba'kii: Market East",
 					"mwids": [
 						3235824230
 					]
 				},
 				"1227": {
-					"name": "Ba'kii Kum - Market West",
+					"name": "Ba'kii: Market West",
 					"mwids": [
 						3235824231
 					]
@@ -2011,7 +2011,7 @@
 		"heat-village.interior.tradebuilding-eg": {
 			"chests": {
 				"131": {
-					"name": "Ba'kii Kum - Bazaar House",
+					"name": "Ba'kii: Bazaar House",
 					"mwids": [
 						3235824232
 					]
@@ -2021,7 +2021,7 @@
 		"jungle.caves.grove-cave-01": {
 			"chests": {
 				"3": {
-					"name": "Gaia's Garden - Dripping Cave",
+					"name": "Garden: Dripping Cave",
 					"mwids": [
 						3235824233
 					]
@@ -2031,7 +2031,7 @@
 		"jungle.caves.grove-cave-02": {
 			"chests": {
 				"1": {
-					"name": "Gaia's Garden - Tranquility Pond",
+					"name": "Garden: Tranquility Pond",
 					"mwids": [
 						3235824234
 					]
@@ -2041,13 +2041,13 @@
 		"jungle.caves.smuggle-route-2": {
 			"chests": {
 				"55": {
-					"name": "Gaia's Garden - Infested Cavern Left",
+					"name": "Garden: Infested Cavern Left",
 					"mwids": [
 						3235824235
 					]
 				},
 				"60": {
-					"name": "Gaia's Garden - Infested Cavern Right",
+					"name": "Garden: Infested Cavern Right",
 					"mwids": [
 						3235824236
 					]
@@ -2057,19 +2057,19 @@
 		"jungle.clearing.clear-path-01": {
 			"chests": {
 				"5": {
-					"name": "Gaia's Garden - V'rda Vil West Lower Left",
+					"name": "Garden: V'rda Vil West Lower Left",
 					"mwids": [
 						3235824237
 					]
 				},
 				"6": {
-					"name": "Gaia's Garden - V'rda Vil West Upper",
+					"name": "Garden: V'rda Vil West Upper",
 					"mwids": [
 						3235824238
 					]
 				},
 				"125": {
-					"name": "Gaia's Garden - V'rda Vil West Lower Right",
+					"name": "Garden: V'rda Vil West Lower Right",
 					"mwids": [
 						3235824239
 					]
@@ -2079,13 +2079,13 @@
 		"jungle.clearing.clear-path-02": {
 			"chests": {
 				"311": {
-					"name": "Gaia's Garden - V'rda Vil East Right",
+					"name": "Garden: V'rda Vil East Right",
 					"mwids": [
 						3235824240
 					]
 				},
 				"351": {
-					"name": "Gaia's Garden - V'rda Vil East Lower",
+					"name": "Garden: V'rda Vil East Lower",
 					"mwids": [
 						3235824241
 					]
@@ -2095,13 +2095,13 @@
 		"jungle.clearing.clear-path-03": {
 			"chests": {
 				"31": {
-					"name": "Gaia's Garden - V'rda Vil North Right",
+					"name": "Garden: V'rda Vil North Right",
 					"mwids": [
 						3235824242
 					]
 				},
 				"33": {
-					"name": "Gaia's Garden - V'rda Vil North Left",
+					"name": "Garden: V'rda Vil North Left",
 					"mwids": [
 						3235824243
 					]
@@ -2111,19 +2111,19 @@
 		"jungle.clearing.clear-path-04": {
 			"chests": {
 				"27": {
-					"name": "Gaia's Garden - Chief's Den Center",
+					"name": "Garden: Chief's Den Center",
 					"mwids": [
 						3235824244
 					]
 				},
 				"91": {
-					"name": "Gaia's Garden - Chief's Den Upper",
+					"name": "Garden: Chief's Den Upper",
 					"mwids": [
 						3235824245
 					]
 				},
 				"135": {
-					"name": "Gaia's Garden - Chief's Den Lower",
+					"name": "Garden: Chief's Den Lower",
 					"mwids": [
 						3235824246
 					]
@@ -2133,7 +2133,7 @@
 		"jungle.dng.tree-exterior": {
 			"chests": {
 				"432": {
-					"name": "Gaia's Garden - Grand Krys'kajo Entrance",
+					"name": "Garden: Grand Krys'kajo Entrance",
 					"mwids": [
 						3235824247
 					]
@@ -2143,7 +2143,7 @@
 		"jungle.dng.wave-exterior": {
 			"chests": {
 				"521": {
-					"name": "Gaia's Garden - So'najiz Temple Entrance",
+					"name": "Garden: So'najiz Temple Entrance",
 					"mwids": [
 						3235824248
 					]
@@ -2153,13 +2153,13 @@
 		"jungle.grove.grove-path-01": {
 			"chests": {
 				"4": {
-					"name": "Gaia's Garden - Covert Path Lower",
+					"name": "Garden: Covert Path Lower",
 					"mwids": [
 						3235824249
 					]
 				},
 				"5": {
-					"name": "Gaia's Garden - Covert Path Upper",
+					"name": "Garden: Covert Path Upper",
 					"mwids": [
 						3235824250
 					]
@@ -2169,25 +2169,25 @@
 		"jungle.grove.grove-path-02": {
 			"chests": {
 				"67": {
-					"name": "Gaia's Garden - Royal Grove Lower Right",
+					"name": "Garden: Royal Grove Lower Right",
 					"mwids": [
 						3235824251
 					]
 				},
 				"68": {
-					"name": "Gaia's Garden - Royal Grove Lower Left",
+					"name": "Garden: Royal Grove Lower Left",
 					"mwids": [
 						3235824252
 					]
 				},
 				"69": {
-					"name": "Gaia's Garden - Royal Grove Upper Right",
+					"name": "Garden: Royal Grove Upper Right",
 					"mwids": [
 						3235824253
 					]
 				},
 				"80": {
-					"name": "Gaia's Garden - Royal Grove Upper Left",
+					"name": "Garden: Royal Grove Upper Left",
 					"mwids": [
 						3235824254
 					]
@@ -2197,13 +2197,13 @@
 		"jungle.grove.grove-path-03": {
 			"chests": {
 				"41": {
-					"name": "Gaia's Garden - Calm Backyard Left",
+					"name": "Garden: Calm Backyard Left",
 					"mwids": [
 						3235824255
 					]
 				},
 				"42": {
-					"name": "Gaia's Garden - Calm Backyard Right",
+					"name": "Garden: Calm Backyard Right",
 					"mwids": [
 						3235824256
 					]
@@ -2213,7 +2213,7 @@
 		"jungle.grove.lost-shrine-02": {
 			"chests": {
 				"158": {
-					"name": "Gaia's Garden - Lost Shrine GF",
+					"name": "Garden: Lost Shrine GF",
 					"mwids": [
 						3235824257
 					]
@@ -2223,7 +2223,7 @@
 		"jungle.grove.lost-shrine-03": {
 			"chests": {
 				"289": {
-					"name": "Gaia's Garden - Lost Shrine B1",
+					"name": "Garden: Lost Shrine B1",
 					"mwids": [
 						3235824258
 					]
@@ -2233,7 +2233,7 @@
 		"jungle.grove.lost-shrine-04": {
 			"chests": {
 				"363": {
-					"name": "Gaia's Garden - Lost Shrine B2",
+					"name": "Garden: Lost Shrine B2",
 					"mwids": [
 						3235824259
 					]
@@ -2243,19 +2243,19 @@
 		"jungle.infested.infested-path-01": {
 			"chests": {
 				"22": {
-					"name": "Gaia's Garden - Lost Lookout Center",
+					"name": "Garden: Lost Lookout Center",
 					"mwids": [
 						3235824260
 					]
 				},
 				"63": {
-					"name": "Gaia's Garden - Lost Lookout Lower",
+					"name": "Garden: Lost Lookout Lower",
 					"mwids": [
 						3235824261
 					]
 				},
 				"170": {
-					"name": "Gaia's Garden - Lost Lookout Upper",
+					"name": "Garden: Lost Lookout Upper",
 					"mwids": [
 						3235824262
 					]
@@ -2265,13 +2265,13 @@
 		"jungle.infested.infested-path-02": {
 			"chests": {
 				"6": {
-					"name": "Gaia's Garden - Seared Lake Right",
+					"name": "Garden: Seared Lake Right",
 					"mwids": [
 						3235824263
 					]
 				},
 				"32": {
-					"name": "Gaia's Garden - Seared Lake Left",
+					"name": "Garden: Seared Lake Left",
 					"mwids": [
 						3235824264
 					]
@@ -2281,25 +2281,25 @@
 		"jungle.infested.infested-path-03": {
 			"chests": {
 				"18": {
-					"name": "Gaia's Garden - Infested Marshes South Lower Left",
+					"name": "Garden: Infested Marshes South Lower Left",
 					"mwids": [
 						3235824265
 					]
 				},
 				"70": {
-					"name": "Gaia's Garden - Infested Marshes South Lower Right",
+					"name": "Garden: Infested Marshes South Lower Right",
 					"mwids": [
 						3235824266
 					]
 				},
 				"90": {
-					"name": "Gaia's Garden - Infested Marshes South Upper Left",
+					"name": "Garden: Infested Marshes South Upper Left",
 					"mwids": [
 						3235824267
 					]
 				},
 				"97": {
-					"name": "Gaia's Garden - Infested Marshes South Upper Right",
+					"name": "Garden: Infested Marshes South Upper Right",
 					"mwids": [
 						3235824268
 					]
@@ -2309,25 +2309,25 @@
 		"jungle.infested.infested-path-04": {
 			"chests": {
 				"24": {
-					"name": "Gaia's Garden - Infested Marshes North Lower Left",
+					"name": "Garden: Infested Marshes North Lower Left",
 					"mwids": [
 						3235824269
 					]
 				},
 				"58": {
-					"name": "Gaia's Garden - Infested Marshes North Upper Center",
+					"name": "Garden: Infested Marshes North Upper Center",
 					"mwids": [
 						3235824270
 					]
 				},
 				"82": {
-					"name": "Gaia's Garden - Infested Marshes North Lower Right",
+					"name": "Garden: Infested Marshes North Lower Right",
 					"mwids": [
 						3235824271
 					]
 				},
 				"949": {
-					"name": "Gaia's Garden - Infested Marshes North Upper Right",
+					"name": "Garden: Infested Marshes North Upper Right",
 					"mwids": [
 						3235824272
 					]
@@ -2337,13 +2337,13 @@
 		"jungle.left.path-left-01": {
 			"chests": {
 				"74": {
-					"name": "Gaia's Garden - Overgrown Path Left",
+					"name": "Garden: Overgrown Path Left",
 					"mwids": [
 						3235824273
 					]
 				},
 				"75": {
-					"name": "Gaia's Garden - Overgrown Path Right",
+					"name": "Garden: Overgrown Path Right",
 					"mwids": [
 						3235824274
 					]
@@ -2353,19 +2353,19 @@
 		"jungle.left.path-left-02": {
 			"chests": {
 				"2": {
-					"name": "Gaia's Garden - Drizzle Bosk Right",
+					"name": "Garden: Drizzle Bosk Right",
 					"mwids": [
 						3235824275
 					]
 				},
 				"8": {
-					"name": "Gaia's Garden - Drizzle Bosk Lower",
+					"name": "Garden: Drizzle Bosk Lower",
 					"mwids": [
 						3235824276
 					]
 				},
 				"12": {
-					"name": "Gaia's Garden - Drizzle Bosk Center",
+					"name": "Garden: Drizzle Bosk Center",
 					"mwids": [
 						3235824277
 					]
@@ -2375,13 +2375,13 @@
 		"jungle.left.path-left-03": {
 			"chests": {
 				"32": {
-					"name": "Gaia's Garden - Wet Passage Lower",
+					"name": "Garden: Wet Passage Lower",
 					"mwids": [
 						3235824278
 					]
 				},
 				"33": {
-					"name": "Gaia's Garden - Wet Passage Upper",
+					"name": "Garden: Wet Passage Upper",
 					"mwids": [
 						3235824279
 					]
@@ -2391,13 +2391,13 @@
 		"jungle.left.path-left-04": {
 			"chests": {
 				"38": {
-					"name": "Gaia's Garden - River's Bed Right",
+					"name": "Garden: River's Bed Right",
 					"mwids": [
 						3235824280
 					]
 				},
 				"39": {
-					"name": "Gaia's Garden - River's Bed Left",
+					"name": "Garden: River's Bed Left",
 					"mwids": [
 						3235824281
 					]
@@ -2407,13 +2407,13 @@
 		"jungle.path-01-entrance": {
 			"chests": {
 				"12": {
-					"name": "Gaia's Garden - Jungle Entrance Left",
+					"name": "Garden: Jungle Entrance Left",
 					"mwids": [
 						3235824282
 					]
 				},
 				"13": {
-					"name": "Gaia's Garden - Jungle Entrance Lower",
+					"name": "Garden: Jungle Entrance Lower",
 					"mwids": [
 						3235824283
 					]
@@ -2423,13 +2423,13 @@
 		"jungle.path-02-crossroads": {
 			"chests": {
 				"13": {
-					"name": "Gaia's Garden - Crossroad Left",
+					"name": "Garden: Crossroad Left",
 					"mwids": [
 						3235824284
 					]
 				},
 				"14": {
-					"name": "Gaia's Garden - Crossroad Right",
+					"name": "Garden: Crossroad Right",
 					"mwids": [
 						3235824285
 					]
@@ -2439,13 +2439,13 @@
 		"jungle.path-03-sync": {
 			"chests": {
 				"21": {
-					"name": "Gaia's Garden - Tying Greens Lower",
+					"name": "Garden: Tying Greens Lower",
 					"mwids": [
 						3235824286
 					]
 				},
 				"22": {
-					"name": "Gaia's Garden - Tying Greens Upper",
+					"name": "Garden: Tying Greens Upper",
 					"mwids": [
 						3235824287
 					]
@@ -2455,13 +2455,13 @@
 		"jungle.path-04-end": {
 			"chests": {
 				"6": {
-					"name": "Gaia's Garden - Peridot Approach Lower",
+					"name": "Garden: Peridot Approach Lower",
 					"mwids": [
 						3235824288
 					]
 				},
 				"58": {
-					"name": "Gaia's Garden - Peridot Approach Upper",
+					"name": "Garden: Peridot Approach Upper",
 					"mwids": [
 						3235824289
 					]
@@ -2471,13 +2471,13 @@
 		"jungle.right.right-path-01": {
 			"chests": {
 				"40": {
-					"name": "Gaia's Garden - Splitting Stumps Upper",
+					"name": "Garden: Splitting Stumps Upper",
 					"mwids": [
 						3235824290
 					]
 				},
 				"105": {
-					"name": "Gaia's Garden - Splitting Stumps Lower",
+					"name": "Garden: Splitting Stumps Lower",
 					"mwids": [
 						3235824291
 					]
@@ -2487,13 +2487,13 @@
 		"jungle.right.right-path-02": {
 			"chests": {
 				"12": {
-					"name": "Gaia's Garden - Clinging River Right",
+					"name": "Garden: Clinging River Right",
 					"mwids": [
 						3235824292
 					]
 				},
 				"13": {
-					"name": "Gaia's Garden - Clinging River Left",
+					"name": "Garden: Clinging River Left",
 					"mwids": [
 						3235824293
 					]
@@ -2503,13 +2503,13 @@
 		"jungle.right.right-path-03": {
 			"chests": {
 				"13": {
-					"name": "Gaia's Garden - Ringing River Lower",
+					"name": "Garden: Ringing River Lower",
 					"mwids": [
 						3235824294
 					]
 				},
 				"14": {
-					"name": "Gaia's Garden - Ringing River Upper",
+					"name": "Garden: Ringing River Upper",
 					"mwids": [
 						3235824295
 					]
@@ -2519,7 +2519,7 @@
 		"jungle.right.right-path-04": {
 			"chests": {
 				"30": {
-					"name": "Gaia's Garden - Old Timber",
+					"name": "Garden: Old Timber",
 					"mwids": [
 						3235824296
 					]
@@ -2529,7 +2529,7 @@
 		"jungle-city.center": {
 			"chests": {
 				"774": {
-					"name": "Basin Keep - Centrum",
+					"name": "Basin: Centrum",
 					"mwids": [
 						3235824297
 					]
@@ -2539,19 +2539,19 @@
 		"jungle-city.east": {
 			"chests": {
 				"158": {
-					"name": "Basin Keep - Pond Slums Lower",
+					"name": "Basin: Pond Slums Lower",
 					"mwids": [
 						3235824298
 					]
 				},
 				"322": {
-					"name": "Basin Keep - Pond Slums Center",
+					"name": "Basin: Pond Slums Center",
 					"mwids": [
 						3235824299
 					]
 				},
 				"537": {
-					"name": "Basin Keep - Pond Slums Upper",
+					"name": "Basin: Pond Slums Upper",
 					"mwids": [
 						3235824300
 					]
@@ -2561,7 +2561,7 @@
 		"jungle-city.entrance": {
 			"chests": {
 				"423": {
-					"name": "Gaia's Garden - Basin Keep Entrance",
+					"name": "Garden: Basin Keep Entrance",
 					"mwids": [
 						3235824301
 					]
@@ -2571,7 +2571,7 @@
 		"jungle-city.interior.faction-guard-1": {
 			"chests": {
 				"1128": {
-					"name": "Basin Keep - Police HQ",
+					"name": "Basin: Police HQ",
 					"mwids": [
 						3235824302
 					]
@@ -2581,7 +2581,7 @@
 		"jungle-city.interior.questhub-01": {
 			"chests": {
 				"533": {
-					"name": "Basin Keep - Seeker Hub GF",
+					"name": "Basin: Seeker Hub GF",
 					"mwids": [
 						3235824303
 					]
@@ -2601,13 +2601,13 @@
 		"rhombus-sqr.arena-1": {
 			"chests": {
 				"298": {
-					"name": "Rhombus Square - Arena Plaza East",
+					"name": "Rhombus: Arena Plaza East",
 					"mwids": [
 						3235824304
 					]
 				},
 				"299": {
-					"name": "Rhombus Square - Arena Plaza West",
+					"name": "Rhombus: Arena Plaza West",
 					"mwids": [
 						3235824305
 					]
@@ -2617,13 +2617,13 @@
 		"rhombus-sqr.center-e": {
 			"chests": {
 				"271": {
-					"name": "Rhombus Square - Garden Boulevard North",
+					"name": "Rhombus: Garden Boulevard North",
 					"mwids": [
 						3235824306
 					]
 				},
 				"272": {
-					"name": "Rhombus Square - Garden Boulevard South",
+					"name": "Rhombus: Garden Boulevard South",
 					"mwids": [
 						3235824307
 					]
@@ -2633,7 +2633,7 @@
 		"rhombus-sqr.center-s": {
 			"chests": {
 				"235": {
-					"name": "Rhombus Square - South Arch",
+					"name": "Rhombus: South Arch",
 					"mwids": [
 						3235824308
 					]
@@ -2643,7 +2643,7 @@
 		"rhombus-sqr.center-se": {
 			"chests": {
 				"1209": {
-					"name": "Rhombus Square - Lloyd Passage",
+					"name": "Rhombus: Lloyd Passage",
 					"mwids": [
 						3235824309
 					]
@@ -2653,13 +2653,13 @@
 		"rhombus-sqr.residential-s1": {
 			"chests": {
 				"333": {
-					"name": "Rhombus Square - Residential District North",
+					"name": "Rhombus: Residential District North",
 					"mwids": [
 						3235824310
 					]
 				},
 				"852": {
-					"name": "Rhombus Square - Residential District South",
+					"name": "Rhombus: Residential District South",
 					"mwids": [
 						3235824311
 					]
@@ -2669,7 +2669,7 @@
 		"rookie-harbor.center": {
 			"chests": {
 				"165": {
-					"name": "Rookie Harbor - Marketplace",
+					"name": "Harbor: Marketplace",
 					"mwids": [
 						3235824312
 					]
@@ -2679,7 +2679,7 @@
 		"rookie-harbor.east": {
 			"chests": {
 				"157": {
-					"name": "Rookie Harbor - Falling Exit",
+					"name": "Harbor: Falling Exit",
 					"mwids": [
 						3235824313
 					]
@@ -2689,7 +2689,7 @@
 		"rookie-harbor.inner-equip-north": {
 			"chests": {
 				"50": {
-					"name": "Rookie Harbor - Weapon & Backer Shop",
+					"name": "Harbor: Weapon & Backer Shop",
 					"mwids": [
 						3235824314
 					]
@@ -2699,7 +2699,7 @@
 		"rookie-harbor.inner-old": {
 			"chests": {
 				"72": {
-					"name": "Rookie Harbor - Dusty Storage",
+					"name": "Harbor: Dusty Storage",
 					"mwids": [
 						3235824315
 					]
@@ -2709,7 +2709,7 @@
 		"rookie-harbor.south": {
 			"chests": {
 				"216": {
-					"name": "Rookie Harbor - South Harbor",
+					"name": "Harbor: South Harbor",
 					"mwids": [
 						3235824316
 					]
@@ -2719,13 +2719,13 @@
 		"rookie-harbor.teleporter": {
 			"chests": {
 				"389": {
-					"name": "Rookie Harbor - Beginner's Arc Upper",
+					"name": "Harbor: Beginner's Arc Upper",
 					"mwids": [
 						3235824317
 					]
 				},
 				"402": {
-					"name": "Rookie Harbor - Beginner's Arc Lower",
+					"name": "Harbor: Beginner's Arc Lower",
 					"mwids": [
 						3235824318
 					]
@@ -2735,13 +2735,13 @@
 		"shock-dng.f1.room2": {
 			"chests": {
 				"64": {
-					"name": "Zir'vitar Temple 1F - Moving Transmit Left",
+					"name": "Zir'vitar 1F: Moving Transmit Left",
 					"mwids": [
 						3235824319
 					]
 				},
 				"79": {
-					"name": "Zir'vitar Temple 1F - Moving Transmit Right",
+					"name": "Zir'vitar 1F: Moving Transmit Right",
 					"mwids": [
 						3235824320
 					]
@@ -2751,7 +2751,7 @@
 		"shock-dng.f1.room3to4": {
 			"chests": {
 				"23": {
-					"name": "Zir'vitar Temple 1F - Haunted Waves",
+					"name": "Zir'vitar 1F: Haunted Waves",
 					"mwids": [
 						3235824321
 					]
@@ -2761,7 +2761,7 @@
 		"shock-dng.g.room4to5": {
 			"chests": {
 				"16": {
-					"name": "Zir'vitar Temple GF - Hoodwink",
+					"name": "Zir'vitar GF: Hoodwink",
 					"mwids": [
 						3235824322
 					]
@@ -2771,7 +2771,7 @@
 		"shock-dng.g.room5": {
 			"chests": {
 				"164": {
-					"name": "Zir'vitar Temple GF - Spinning Transmit",
+					"name": "Zir'vitar GF: Spinning Transmit",
 					"mwids": [
 						3235824323
 					]
@@ -2781,19 +2781,19 @@
 		"tree-dng.f3.branch-east": {
 			"chests": {
 				"166": {
-					"name": "Grand Krys'kajo - East Branch Lower",
+					"name": "Kajo 3F: East Branch Lower",
 					"mwids": [
 						3235824324
 					]
 				},
 				"167": {
-					"name": "Grand Krys'kajo - East Branch Upper",
+					"name": "Kajo 3F: East Branch Upper",
 					"mwids": [
 						3235824325
 					]
 				},
 				"168": {
-					"name": "Grand Krys'kajo - East Branch Right",
+					"name": "Kajo 3F: East Branch Right",
 					"mwids": [
 						3235824326
 					]
@@ -2803,13 +2803,13 @@
 		"tree-dng.f3.branch-west": {
 			"chests": {
 				"67": {
-					"name": "Grand Krys'kajo - West Branch Upper",
+					"name": "Kajo 3F: West Branch Upper",
 					"mwids": [
 						3235824327
 					]
 				},
 				"68": {
-					"name": "Grand Krys'kajo - West Branch Lower",
+					"name": "Kajo 3F: West Branch Lower",
 					"mwids": [
 						3235824328
 					]
@@ -2819,7 +2819,7 @@
 		"tree-dng.f3.center-01": {
 			"chests": {
 				"136": {
-					"name": "Grand Krys'kajo - Falling Leaves",
+					"name": "Kajo 3F: Falling Leaves",
 					"mwids": [
 						3235824329
 					]
@@ -2829,7 +2829,7 @@
 		"tree-dng.f3.east-01": {
 			"chests": {
 				"81": {
-					"name": "Grand Krys'kajo - Branch Conveyance",
+					"name": "Kajo 3F: Branch Conveyance",
 					"mwids": [
 						3235824330
 					]
@@ -2839,13 +2839,13 @@
 		"tree-dng.f3.west-01": {
 			"chests": {
 				"81": {
-					"name": "Grand Krys'kajo - Branch Transmit Right",
+					"name": "Kajo 3F: Branch Transmit Right",
 					"mwids": [
 						3235824331
 					]
 				},
 				"86": {
-					"name": "Grand Krys'kajo - Branch Transmit Left",
+					"name": "Kajo 3F: Branch Transmit Left",
 					"mwids": [
 						3235824332
 					]
@@ -2855,7 +2855,7 @@
 		"wave-dng.b1.center-01": {
 			"chests": {
 				"276": {
-					"name": "So'najiz Temple - Principle of Conveyance",
+					"name": "So'najiz U1: Principle of Conveyance",
 					"mwids": [
 						3235824333
 					]
@@ -2865,31 +2865,31 @@
 		"wave-dng.b1.center-04-long": {
 			"chests": {
 				"205": {
-					"name": "So'najiz Temple - Trial of Persistence Lower Right",
+					"name": "So'najiz U1: Trial of Persistence Lower Right",
 					"mwids": [
 						3235824334
 					]
 				},
 				"258": {
-					"name": "So'najiz Temple - Trial of Persistence Upper Right",
+					"name": "So'najiz U1: Trial of Persistence Upper Right",
 					"mwids": [
 						3235824335
 					]
 				},
 				"329": {
-					"name": "So'najiz Temple - Trial of Persistence Rightmost",
+					"name": "So'najiz U1: Trial of Persistence Rightmost",
 					"mwids": [
 						3235824336
 					]
 				},
 				"670": {
-					"name": "So'najiz Temple - Trial of Persistence Upper Left",
+					"name": "So'najiz U1: Trial of Persistence Upper Left",
 					"mwids": [
 						3235824337
 					]
 				},
 				"671": {
-					"name": "So'najiz Temple - Trial of Persistence Lower Left",
+					"name": "So'najiz U1: Trial of Persistence Lower Left",
 					"mwids": [
 						3235824338
 					]
@@ -2899,7 +2899,7 @@
 		"wave-dng.b1.north-01": {
 			"chests": {
 				"307": {
-					"name": "So'najiz Temple - Moving Attraction",
+					"name": "So'najiz U1: Moving Attraction",
 					"mwids": [
 						3235824339
 					]
@@ -2909,7 +2909,7 @@
 		"wave-dng.b1.north-03": {
 			"chests": {
 				"249": {
-					"name": "So'najiz Temple - Slowing Attraction",
+					"name": "So'najiz U1: Slowing Attraction",
 					"mwids": [
 						3235824340
 					]
@@ -2919,7 +2919,7 @@
 		"wave-dng.b1.north-06": {
 			"chests": {
 				"193": {
-					"name": "So'najiz Temple - Standing Attraction",
+					"name": "So'najiz U1: Standing Attraction",
 					"mwids": [
 						3235824341
 					]
@@ -2929,7 +2929,7 @@
 		"wave-dng.b1.north-08": {
 			"chests": {
 				"221": {
-					"name": "So'najiz Temple - Attracting Conveyance",
+					"name": "So'najiz U1: Attracting Conveyance",
 					"mwids": [
 						3235824342
 					]
@@ -2939,7 +2939,7 @@
 		"wave-dng.b1.south-04": {
 			"chests": {
 				"309": {
-					"name": "So'najiz Temple - Fast Conveyance",
+					"name": "So'najiz U1: Fast Conveyance",
 					"mwids": [
 						3235824343
 					]
@@ -2949,7 +2949,7 @@
 		"wave-dng.b1.south-06": {
 			"chests": {
 				"242": {
-					"name": "So'najiz Temple - Flaming Conveyance",
+					"name": "So'najiz U1: Flaming Conveyance",
 					"mwids": [
 						3235824344
 					]
@@ -2959,7 +2959,7 @@
 		"bergen.interior.guild-basement": {
 			"chests": {
 				"42": {
-					"name": "Bergen Village - Omni Gilders Basement Left",
+					"name": "Bergen: Omni Gilders Basement Left",
 					"mwids": [
 						3235824077
 					]
@@ -2969,9 +2969,9 @@
 		"bergen-trail.cave.cave-7-1-1-goat2": {
 			"chests": {
 				"142": {
-					"name": "Bergen Trail - Horncave",
+					"name": "Trail: Horncave",
 					"mwids": [
-						3235824785
+						3235824522
 					]
 				}
 			}
@@ -2979,9 +2979,9 @@
 		"jungle.caves.questcave-snowman-1": {
 			"chests": {
 				"247": {
-					"name": "Gaia's Garden - Chilled Den",
+					"name": "Garden: Chilled Den",
 					"mwids": [
-						3235824786
+						3235824523
 					]
 				}
 			}
@@ -3788,513 +3788,513 @@
 	"shops": {
 		"locations": {
 			"perItemType": {
-				"1": 3235824731,
-				"27": 3235824732,
-				"2": 3235824733,
-				"366": 3235824734,
-				"64": 3235824735,
-				"70": 3235824736,
-				"73": 3235824737,
-				"67": 3235824738,
-				"353": 3235824739,
-				"355": 3235824740,
-				"110": 3235824741,
-				"165": 3235824742,
-				"290": 3235824743,
-				"291": 3235824744,
-				"331": 3235824745,
-				"31": 3235824746,
-				"29": 3235824747,
-				"30": 3235824748,
-				"32": 3235824749,
-				"118": 3235824750,
-				"113": 3235824751,
-				"122": 3235824752,
-				"121": 3235824753,
-				"264": 3235824754,
-				"266": 3235824755,
-				"268": 3235824756,
-				"270": 3235824757,
-				"204": 3235824758,
-				"205": 3235824759,
-				"206": 3235824760,
-				"207": 3235824761,
-				"382": 3235824762,
-				"490": 3235824763,
-				"491": 3235824764,
-				"315": 3235824765,
-				"493": 3235824766,
-				"494": 3235824767,
-				"495": 3235824768,
-				"316": 3235824769,
-				"516": 3235824770,
-				"496": 3235824771,
-				"551": 3235824772,
-				"637": 3235824773,
-				"77": 3235824774,
-				"3": 3235824775,
-				"265": 3235824776,
-				"267": 3235824777,
-				"269": 3235824778,
-				"271": 3235824779,
-				"346": 3235824780,
-				"393": 3235824781,
-				"394": 3235824782,
-				"395": 3235824783,
-				"396": 3235824784
+				"1": 3235824525,
+				"27": 3235824527,
+				"2": 3235824529,
+				"366": 3235824531,
+				"64": 3235824533,
+				"70": 3235824535,
+				"73": 3235824537,
+				"67": 3235824539,
+				"353": 3235824541,
+				"355": 3235824543,
+				"110": 3235824545,
+				"165": 3235824547,
+				"290": 3235824549,
+				"291": 3235824551,
+				"331": 3235824553,
+				"31": 3235824555,
+				"29": 3235824557,
+				"30": 3235824559,
+				"32": 3235824561,
+				"118": 3235824563,
+				"113": 3235824565,
+				"122": 3235824567,
+				"121": 3235824569,
+				"264": 3235824571,
+				"266": 3235824573,
+				"268": 3235824575,
+				"270": 3235824577,
+				"204": 3235824579,
+				"205": 3235824581,
+				"206": 3235824583,
+				"207": 3235824585,
+				"382": 3235824592,
+				"490": 3235824594,
+				"491": 3235824596,
+				"315": 3235824598,
+				"493": 3235824600,
+				"494": 3235824602,
+				"495": 3235824604,
+				"316": 3235824606,
+				"516": 3235824608,
+				"496": 3235824610,
+				"551": 3235824612,
+				"637": 3235824614,
+				"77": 3235824635,
+				"3": 3235824638,
+				"265": 3235824697,
+				"267": 3235824699,
+				"269": 3235824701,
+				"271": 3235824703,
+				"346": 3235824705,
+				"393": 3235824711,
+				"394": 3235824713,
+				"395": 3235824715,
+				"396": 3235824717
 			},
 			"perShop": {
 				"rookieHarborItems": {
-					"1": 3235824522,
-					"27": 3235824524,
-					"2": 3235824526,
-					"366": 3235824528,
-					"64": 3235824530,
-					"70": 3235824532,
-					"73": 3235824534,
-					"67": 3235824536,
-					"353": 3235824538,
-					"355": 3235824540,
-					"110": 3235824542,
-					"165": 3235824544,
-					"290": 3235824546,
-					"291": 3235824548,
-					"331": 3235824550
+					"1": 3235824524,
+					"27": 3235824526,
+					"2": 3235824528,
+					"366": 3235824530,
+					"64": 3235824532,
+					"70": 3235824534,
+					"73": 3235824536,
+					"67": 3235824538,
+					"353": 3235824540,
+					"355": 3235824542,
+					"110": 3235824544,
+					"165": 3235824546,
+					"290": 3235824548,
+					"291": 3235824550,
+					"331": 3235824552
 				},
 				"rookieHarborWeapons": {
-					"31": 3235824552,
-					"29": 3235824554,
-					"30": 3235824556,
-					"32": 3235824558,
-					"118": 3235824560,
-					"113": 3235824562,
-					"122": 3235824564,
-					"121": 3235824566,
-					"264": 3235824568,
-					"266": 3235824570,
-					"268": 3235824572,
-					"270": 3235824574
+					"31": 3235824554,
+					"29": 3235824556,
+					"30": 3235824558,
+					"32": 3235824560,
+					"118": 3235824562,
+					"113": 3235824564,
+					"122": 3235824566,
+					"121": 3235824568,
+					"264": 3235824570,
+					"266": 3235824572,
+					"268": 3235824574,
+					"270": 3235824576
 				},
 				"rookieHarborWeaponsNorth": {
-					"204": 3235824576,
-					"205": 3235824578,
-					"206": 3235824580,
-					"207": 3235824582,
-					"264": 3235824584,
-					"266": 3235824585,
-					"268": 3235824586,
-					"270": 3235824587
+					"204": 3235824578,
+					"205": 3235824580,
+					"206": 3235824582,
+					"207": 3235824584,
+					"264": 3235824586,
+					"266": 3235824587,
+					"268": 3235824588,
+					"270": 3235824589
 				},
 				"rookieHarborTara": {
-					"1": 3235824588
+					"1": 3235824590
 				},
 				"rookieBacker": {
-					"382": 3235824589,
-					"490": 3235824591,
-					"491": 3235824593,
-					"315": 3235824595,
-					"493": 3235824597,
-					"494": 3235824599,
-					"495": 3235824601,
-					"316": 3235824603,
-					"516": 3235824605,
-					"496": 3235824607,
-					"551": 3235824609,
-					"637": 3235824611
+					"382": 3235824591,
+					"490": 3235824593,
+					"491": 3235824595,
+					"315": 3235824597,
+					"493": 3235824599,
+					"494": 3235824601,
+					"495": 3235824603,
+					"316": 3235824605,
+					"516": 3235824607,
+					"496": 3235824609,
+					"551": 3235824611,
+					"637": 3235824613
 				},
 				"bergenVillageItems": {
-					"1": 3235824613,
-					"27": 3235824614,
-					"2": 3235824615,
-					"366": 3235824616,
-					"64": 3235824617,
-					"70": 3235824618,
-					"73": 3235824619,
-					"67": 3235824620,
-					"353": 3235824621,
-					"355": 3235824622,
-					"110": 3235824623,
-					"165": 3235824624,
-					"290": 3235824625,
-					"291": 3235824626,
-					"331": 3235824627
+					"1": 3235824615,
+					"27": 3235824616,
+					"2": 3235824617,
+					"366": 3235824618,
+					"64": 3235824619,
+					"70": 3235824620,
+					"73": 3235824621,
+					"67": 3235824622,
+					"353": 3235824623,
+					"355": 3235824624,
+					"110": 3235824625,
+					"165": 3235824626,
+					"290": 3235824627,
+					"291": 3235824628,
+					"331": 3235824629
 				},
 				"bergenVillageWeapons": {
-					"118": 3235824628,
-					"113": 3235824629,
-					"122": 3235824630,
-					"121": 3235824631
+					"118": 3235824630,
+					"113": 3235824631,
+					"122": 3235824632,
+					"121": 3235824633
 				},
 				"bergenHermit": {
-					"77": 3235824632,
-					"165": 3235824634,
-					"3": 3235824635
+					"77": 3235824634,
+					"165": 3235824636,
+					"3": 3235824637
 				},
 				"bakiItems": {
-					"1": 3235824637,
-					"27": 3235824638,
-					"2": 3235824639,
-					"366": 3235824640,
-					"64": 3235824641,
-					"70": 3235824642,
-					"73": 3235824643,
-					"67": 3235824644,
-					"110": 3235824645,
-					"165": 3235824646,
-					"353": 3235824647,
-					"355": 3235824648,
-					"290": 3235824649,
-					"291": 3235824650,
-					"331": 3235824651
+					"1": 3235824639,
+					"27": 3235824640,
+					"2": 3235824641,
+					"366": 3235824642,
+					"64": 3235824643,
+					"70": 3235824644,
+					"73": 3235824645,
+					"67": 3235824646,
+					"110": 3235824647,
+					"165": 3235824648,
+					"353": 3235824649,
+					"355": 3235824650,
+					"290": 3235824651,
+					"291": 3235824652,
+					"331": 3235824653
 				},
 				"bakiWeapons": {
-					"118": 3235824652,
-					"113": 3235824653,
-					"122": 3235824654,
-					"121": 3235824655,
-					"204": 3235824656,
-					"205": 3235824657,
-					"206": 3235824658,
-					"207": 3235824659
+					"118": 3235824654,
+					"113": 3235824655,
+					"122": 3235824656,
+					"121": 3235824657,
+					"204": 3235824658,
+					"205": 3235824659,
+					"206": 3235824660,
+					"207": 3235824661
 				},
 				"basinVendingMachines": {
-					"1": 3235824660,
-					"27": 3235824661,
-					"2": 3235824662,
-					"366": 3235824663,
-					"64": 3235824664,
-					"70": 3235824665,
-					"73": 3235824666,
-					"67": 3235824667,
-					"110": 3235824668,
-					"165": 3235824669,
-					"290": 3235824670,
-					"291": 3235824671,
-					"331": 3235824672,
-					"353": 3235824673,
-					"355": 3235824674
+					"1": 3235824662,
+					"27": 3235824663,
+					"2": 3235824664,
+					"366": 3235824665,
+					"64": 3235824666,
+					"70": 3235824667,
+					"73": 3235824668,
+					"67": 3235824669,
+					"110": 3235824670,
+					"165": 3235824671,
+					"290": 3235824672,
+					"291": 3235824673,
+					"331": 3235824674,
+					"353": 3235824675,
+					"355": 3235824676
 				},
 				"basinItems": {
-					"1": 3235824675,
-					"27": 3235824676,
-					"2": 3235824677,
-					"366": 3235824678,
-					"353": 3235824679,
-					"355": 3235824680,
-					"64": 3235824681,
-					"70": 3235824682,
-					"73": 3235824683,
-					"67": 3235824684,
-					"110": 3235824685,
-					"165": 3235824686,
-					"290": 3235824687,
-					"291": 3235824688,
-					"331": 3235824689
+					"1": 3235824677,
+					"27": 3235824678,
+					"2": 3235824679,
+					"366": 3235824680,
+					"353": 3235824681,
+					"355": 3235824682,
+					"64": 3235824683,
+					"70": 3235824684,
+					"73": 3235824685,
+					"67": 3235824686,
+					"110": 3235824687,
+					"165": 3235824688,
+					"290": 3235824689,
+					"291": 3235824690,
+					"331": 3235824691
 				},
 				"basinWeapons": {
-					"264": 3235824690,
-					"266": 3235824691,
-					"268": 3235824692,
-					"270": 3235824693,
-					"265": 3235824694,
-					"267": 3235824696,
-					"269": 3235824698,
-					"271": 3235824700
+					"264": 3235824692,
+					"266": 3235824693,
+					"268": 3235824694,
+					"270": 3235824695,
+					"265": 3235824696,
+					"267": 3235824698,
+					"269": 3235824700,
+					"271": 3235824702
 				},
 				"basinMushroom": {
-					"346": 3235824702
+					"346": 3235824704
 				},
 				"sapphireWeapons": {
-					"265": 3235824704,
-					"267": 3235824705,
-					"269": 3235824706,
-					"271": 3235824707,
-					"393": 3235824708,
-					"394": 3235824710,
-					"395": 3235824712,
-					"396": 3235824714
+					"265": 3235824706,
+					"267": 3235824707,
+					"269": 3235824708,
+					"271": 3235824709,
+					"393": 3235824710,
+					"394": 3235824712,
+					"395": 3235824714,
+					"396": 3235824716
 				},
 				"sapphireItems": {
-					"1": 3235824716,
-					"27": 3235824717,
-					"2": 3235824718,
-					"366": 3235824719,
-					"353": 3235824720,
-					"355": 3235824721,
-					"64": 3235824722,
-					"70": 3235824723,
-					"73": 3235824724,
-					"67": 3235824725,
-					"110": 3235824726,
-					"165": 3235824727,
-					"290": 3235824728,
-					"291": 3235824729,
-					"331": 3235824730
+					"1": 3235824718,
+					"27": 3235824719,
+					"2": 3235824720,
+					"366": 3235824721,
+					"353": 3235824722,
+					"355": 3235824723,
+					"64": 3235824724,
+					"70": 3235824725,
+					"73": 3235824726,
+					"67": 3235824727,
+					"110": 3235824728,
+					"165": 3235824729,
+					"290": 3235824730,
+					"291": 3235824731,
+					"331": 3235824732
 				}
 			}
 		},
 		"unlocks": {
 			"byId": {
-				"1": 3235924002,
-				"27": 3235924004,
-				"2": 3235924006,
-				"366": 3235924008,
-				"64": 3235924010,
-				"70": 3235924012,
-				"73": 3235924014,
-				"67": 3235924016,
-				"353": 3235924018,
-				"355": 3235924020,
-				"110": 3235924022,
-				"165": 3235924024,
-				"290": 3235924026,
-				"291": 3235924028,
-				"331": 3235924030,
-				"31": 3235924033,
-				"29": 3235924035,
-				"30": 3235924037,
-				"32": 3235924039,
-				"118": 3235924041,
-				"113": 3235924043,
-				"122": 3235924045,
-				"121": 3235924047,
-				"264": 3235924049,
-				"266": 3235924051,
-				"268": 3235924053,
-				"270": 3235924055,
-				"204": 3235924058,
-				"205": 3235924060,
-				"206": 3235924062,
-				"207": 3235924064,
-				"382": 3235924073,
-				"490": 3235924075,
-				"491": 3235924077,
-				"315": 3235924079,
-				"493": 3235924081,
-				"494": 3235924083,
-				"495": 3235924085,
-				"316": 3235924087,
-				"516": 3235924089,
-				"496": 3235924091,
-				"551": 3235924093,
-				"637": 3235924095,
-				"77": 3235924119,
-				"3": 3235924122,
-				"265": 3235924186,
-				"267": 3235924188,
-				"269": 3235924190,
-				"271": 3235924192,
-				"346": 3235924195,
-				"393": 3235924202,
-				"394": 3235924204,
-				"395": 3235924206,
-				"396": 3235924208
+				"1": 3235924227,
+				"27": 3235924229,
+				"2": 3235924231,
+				"366": 3235924233,
+				"64": 3235924235,
+				"70": 3235924237,
+				"73": 3235924239,
+				"67": 3235924241,
+				"353": 3235924243,
+				"355": 3235924245,
+				"110": 3235924247,
+				"165": 3235924249,
+				"290": 3235924251,
+				"291": 3235924253,
+				"331": 3235924255,
+				"31": 3235924258,
+				"29": 3235924260,
+				"30": 3235924262,
+				"32": 3235924264,
+				"118": 3235924266,
+				"113": 3235924268,
+				"122": 3235924270,
+				"121": 3235924272,
+				"264": 3235924274,
+				"266": 3235924276,
+				"268": 3235924278,
+				"270": 3235924280,
+				"204": 3235924283,
+				"205": 3235924285,
+				"206": 3235924287,
+				"207": 3235924289,
+				"382": 3235924298,
+				"490": 3235924300,
+				"491": 3235924302,
+				"315": 3235924304,
+				"493": 3235924306,
+				"494": 3235924308,
+				"495": 3235924310,
+				"316": 3235924312,
+				"516": 3235924314,
+				"496": 3235924316,
+				"551": 3235924318,
+				"637": 3235924320,
+				"77": 3235924344,
+				"3": 3235924347,
+				"265": 3235924411,
+				"267": 3235924413,
+				"269": 3235924415,
+				"271": 3235924417,
+				"346": 3235924420,
+				"393": 3235924427,
+				"394": 3235924429,
+				"395": 3235924431,
+				"396": 3235924433
 			},
 			"byShop": {
-				"rookieHarborItems": 3235924000,
-				"rookieHarborWeapons": 3235924031,
-				"rookieHarborWeaponsNorth": 3235924056,
-				"rookieHarborTara": 3235924069,
-				"rookieBacker": 3235924071,
-				"bergenVillageItems": 3235924096,
-				"bergenVillageWeapons": 3235924112,
-				"bergenHermit": 3235924117,
-				"bakiItems": 3235924123,
-				"bakiWeapons": 3235924139,
-				"basinVendingMachines": 3235924148,
-				"basinItems": 3235924164,
-				"basinWeapons": 3235924180,
-				"basinMushroom": 3235924193,
-				"sapphireWeapons": 3235924196,
-				"sapphireItems": 3235924209
+				"rookieHarborItems": 3235924225,
+				"rookieHarborWeapons": 3235924256,
+				"rookieHarborWeaponsNorth": 3235924281,
+				"rookieHarborTara": 3235924294,
+				"rookieBacker": 3235924296,
+				"bergenVillageItems": 3235924321,
+				"bergenVillageWeapons": 3235924337,
+				"bergenHermit": 3235924342,
+				"bakiItems": 3235924348,
+				"bakiWeapons": 3235924364,
+				"basinVendingMachines": 3235924373,
+				"basinItems": 3235924389,
+				"basinWeapons": 3235924405,
+				"basinMushroom": 3235924418,
+				"sapphireWeapons": 3235924421,
+				"sapphireItems": 3235924434
 			},
 			"byShopAndId": {
 				"rookieHarborItems": {
-					"1": 3235924001,
-					"27": 3235924003,
-					"2": 3235924005,
-					"366": 3235924007,
-					"64": 3235924009,
-					"70": 3235924011,
-					"73": 3235924013,
-					"67": 3235924015,
-					"353": 3235924017,
-					"355": 3235924019,
-					"110": 3235924021,
-					"165": 3235924023,
-					"290": 3235924025,
-					"291": 3235924027,
-					"331": 3235924029
+					"1": 3235924226,
+					"27": 3235924228,
+					"2": 3235924230,
+					"366": 3235924232,
+					"64": 3235924234,
+					"70": 3235924236,
+					"73": 3235924238,
+					"67": 3235924240,
+					"353": 3235924242,
+					"355": 3235924244,
+					"110": 3235924246,
+					"165": 3235924248,
+					"290": 3235924250,
+					"291": 3235924252,
+					"331": 3235924254
 				},
 				"rookieHarborWeapons": {
-					"31": 3235924032,
-					"29": 3235924034,
-					"30": 3235924036,
-					"32": 3235924038,
-					"118": 3235924040,
-					"113": 3235924042,
-					"122": 3235924044,
-					"121": 3235924046,
-					"264": 3235924048,
-					"266": 3235924050,
-					"268": 3235924052,
-					"270": 3235924054
+					"31": 3235924257,
+					"29": 3235924259,
+					"30": 3235924261,
+					"32": 3235924263,
+					"118": 3235924265,
+					"113": 3235924267,
+					"122": 3235924269,
+					"121": 3235924271,
+					"264": 3235924273,
+					"266": 3235924275,
+					"268": 3235924277,
+					"270": 3235924279
 				},
 				"rookieHarborWeaponsNorth": {
-					"204": 3235924057,
-					"205": 3235924059,
-					"206": 3235924061,
-					"207": 3235924063,
-					"264": 3235924065,
-					"266": 3235924066,
-					"268": 3235924067,
-					"270": 3235924068
+					"204": 3235924282,
+					"205": 3235924284,
+					"206": 3235924286,
+					"207": 3235924288,
+					"264": 3235924290,
+					"266": 3235924291,
+					"268": 3235924292,
+					"270": 3235924293
 				},
 				"rookieHarborTara": {
-					"1": 3235924070
+					"1": 3235924295
 				},
 				"rookieBacker": {
-					"382": 3235924072,
-					"490": 3235924074,
-					"491": 3235924076,
-					"315": 3235924078,
-					"493": 3235924080,
-					"494": 3235924082,
-					"495": 3235924084,
-					"316": 3235924086,
-					"516": 3235924088,
-					"496": 3235924090,
-					"551": 3235924092,
-					"637": 3235924094
+					"382": 3235924297,
+					"490": 3235924299,
+					"491": 3235924301,
+					"315": 3235924303,
+					"493": 3235924305,
+					"494": 3235924307,
+					"495": 3235924309,
+					"316": 3235924311,
+					"516": 3235924313,
+					"496": 3235924315,
+					"551": 3235924317,
+					"637": 3235924319
 				},
 				"bergenVillageItems": {
-					"1": 3235924097,
-					"27": 3235924098,
-					"2": 3235924099,
-					"366": 3235924100,
-					"64": 3235924101,
-					"70": 3235924102,
-					"73": 3235924103,
-					"67": 3235924104,
-					"353": 3235924105,
-					"355": 3235924106,
-					"110": 3235924107,
-					"165": 3235924108,
-					"290": 3235924109,
-					"291": 3235924110,
-					"331": 3235924111
+					"1": 3235924322,
+					"27": 3235924323,
+					"2": 3235924324,
+					"366": 3235924325,
+					"64": 3235924326,
+					"70": 3235924327,
+					"73": 3235924328,
+					"67": 3235924329,
+					"353": 3235924330,
+					"355": 3235924331,
+					"110": 3235924332,
+					"165": 3235924333,
+					"290": 3235924334,
+					"291": 3235924335,
+					"331": 3235924336
 				},
 				"bergenVillageWeapons": {
-					"118": 3235924113,
-					"113": 3235924114,
-					"122": 3235924115,
-					"121": 3235924116
+					"118": 3235924338,
+					"113": 3235924339,
+					"122": 3235924340,
+					"121": 3235924341
 				},
 				"bergenHermit": {
-					"77": 3235924118,
-					"165": 3235924120,
-					"3": 3235924121
+					"77": 3235924343,
+					"165": 3235924345,
+					"3": 3235924346
 				},
 				"bakiItems": {
-					"1": 3235924124,
-					"27": 3235924125,
-					"2": 3235924126,
-					"366": 3235924127,
-					"64": 3235924128,
-					"70": 3235924129,
-					"73": 3235924130,
-					"67": 3235924131,
-					"110": 3235924132,
-					"165": 3235924133,
-					"353": 3235924134,
-					"355": 3235924135,
-					"290": 3235924136,
-					"291": 3235924137,
-					"331": 3235924138
+					"1": 3235924349,
+					"27": 3235924350,
+					"2": 3235924351,
+					"366": 3235924352,
+					"64": 3235924353,
+					"70": 3235924354,
+					"73": 3235924355,
+					"67": 3235924356,
+					"110": 3235924357,
+					"165": 3235924358,
+					"353": 3235924359,
+					"355": 3235924360,
+					"290": 3235924361,
+					"291": 3235924362,
+					"331": 3235924363
 				},
 				"bakiWeapons": {
-					"118": 3235924140,
-					"113": 3235924141,
-					"122": 3235924142,
-					"121": 3235924143,
-					"204": 3235924144,
-					"205": 3235924145,
-					"206": 3235924146,
-					"207": 3235924147
+					"118": 3235924365,
+					"113": 3235924366,
+					"122": 3235924367,
+					"121": 3235924368,
+					"204": 3235924369,
+					"205": 3235924370,
+					"206": 3235924371,
+					"207": 3235924372
 				},
 				"basinVendingMachines": {
-					"1": 3235924149,
-					"27": 3235924150,
-					"2": 3235924151,
-					"366": 3235924152,
-					"64": 3235924153,
-					"70": 3235924154,
-					"73": 3235924155,
-					"67": 3235924156,
-					"110": 3235924157,
-					"165": 3235924158,
-					"290": 3235924159,
-					"291": 3235924160,
-					"331": 3235924161,
-					"353": 3235924162,
-					"355": 3235924163
+					"1": 3235924374,
+					"27": 3235924375,
+					"2": 3235924376,
+					"366": 3235924377,
+					"64": 3235924378,
+					"70": 3235924379,
+					"73": 3235924380,
+					"67": 3235924381,
+					"110": 3235924382,
+					"165": 3235924383,
+					"290": 3235924384,
+					"291": 3235924385,
+					"331": 3235924386,
+					"353": 3235924387,
+					"355": 3235924388
 				},
 				"basinItems": {
-					"1": 3235924165,
-					"27": 3235924166,
-					"2": 3235924167,
-					"366": 3235924168,
-					"353": 3235924169,
-					"355": 3235924170,
-					"64": 3235924171,
-					"70": 3235924172,
-					"73": 3235924173,
-					"67": 3235924174,
-					"110": 3235924175,
-					"165": 3235924176,
-					"290": 3235924177,
-					"291": 3235924178,
-					"331": 3235924179
+					"1": 3235924390,
+					"27": 3235924391,
+					"2": 3235924392,
+					"366": 3235924393,
+					"353": 3235924394,
+					"355": 3235924395,
+					"64": 3235924396,
+					"70": 3235924397,
+					"73": 3235924398,
+					"67": 3235924399,
+					"110": 3235924400,
+					"165": 3235924401,
+					"290": 3235924402,
+					"291": 3235924403,
+					"331": 3235924404
 				},
 				"basinWeapons": {
-					"264": 3235924181,
-					"266": 3235924182,
-					"268": 3235924183,
-					"270": 3235924184,
-					"265": 3235924185,
-					"267": 3235924187,
-					"269": 3235924189,
-					"271": 3235924191
+					"264": 3235924406,
+					"266": 3235924407,
+					"268": 3235924408,
+					"270": 3235924409,
+					"265": 3235924410,
+					"267": 3235924412,
+					"269": 3235924414,
+					"271": 3235924416
 				},
 				"basinMushroom": {
-					"346": 3235924194
+					"346": 3235924419
 				},
 				"sapphireWeapons": {
-					"265": 3235924197,
-					"267": 3235924198,
-					"269": 3235924199,
-					"271": 3235924200,
-					"393": 3235924201,
-					"394": 3235924203,
-					"395": 3235924205,
-					"396": 3235924207
+					"265": 3235924422,
+					"267": 3235924423,
+					"269": 3235924424,
+					"271": 3235924425,
+					"393": 3235924426,
+					"394": 3235924428,
+					"395": 3235924430,
+					"396": 3235924432
 				},
 				"sapphireItems": {
-					"1": 3235924210,
-					"27": 3235924211,
-					"2": 3235924212,
-					"366": 3235924213,
-					"353": 3235924214,
-					"355": 3235924215,
-					"64": 3235924216,
-					"70": 3235924217,
-					"73": 3235924218,
-					"67": 3235924219,
-					"110": 3235924220,
-					"165": 3235924221,
-					"290": 3235924222,
-					"291": 3235924223,
-					"331": 3235924224
+					"1": 3235924435,
+					"27": 3235924436,
+					"2": 3235924437,
+					"366": 3235924438,
+					"353": 3235924439,
+					"355": 3235924440,
+					"64": 3235924441,
+					"70": 3235924442,
+					"73": 3235924443,
+					"67": 3235924444,
+					"110": 3235924445,
+					"165": 3235924446,
+					"290": 3235924447,
+					"291": 3235924448,
+					"331": 3235924449
 				}
 			}
 		}
@@ -4315,679 +4315,679 @@
 		"3235824004": {
 			"en_US": "Boosts your combat capabilities, allowing you to perform more arts."
 		},
-		"3235924000": {
+		"3235924225": {
 			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Rookie's Best\\c[0]."
 		},
-		"3235924001": {
+		"3235924226": {
 			"en_US": "Unlocks the slot selling \\c[3]Sandwich\\c[0] in \\c[3]Rookie's Best\\c[0]."
 		},
-		"3235924002": {
+		"3235924227": {
 			"en_US": "Unlocks slots selling \\c[3]Sandwich\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924003": {
+		"3235924228": {
 			"en_US": "Unlocks the slot selling \\c[3]Hi-Sandwich\\c[0] in \\c[3]Rookie's Best\\c[0]."
 		},
-		"3235924004": {
+		"3235924229": {
 			"en_US": "Unlocks slots selling \\c[3]Hi-Sandwich\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924005": {
+		"3235924230": {
 			"en_US": "Unlocks the slot selling \\c[3]Green Leaf Tea\\c[0] in \\c[3]Rookie's Best\\c[0]."
 		},
-		"3235924006": {
+		"3235924231": {
 			"en_US": "Unlocks slots selling \\c[3]Green Leaf Tea\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924007": {
+		"3235924232": {
 			"en_US": "Unlocks the slot selling \\c[3]Just Water\\c[0] in \\c[3]Rookie's Best\\c[0]."
 		},
-		"3235924008": {
+		"3235924233": {
 			"en_US": "Unlocks slots selling \\c[3]Just Water\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924009": {
+		"3235924234": {
 			"en_US": "Unlocks the slot selling \\c[3]Spicy Bun\\c[0] in \\c[3]Rookie's Best\\c[0]."
 		},
-		"3235924010": {
+		"3235924235": {
 			"en_US": "Unlocks slots selling \\c[3]Spicy Bun\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924011": {
+		"3235924236": {
 			"en_US": "Unlocks the slot selling \\c[3]Fruit Drink\\c[0] in \\c[3]Rookie's Best\\c[0]."
 		},
-		"3235924012": {
+		"3235924237": {
 			"en_US": "Unlocks slots selling \\c[3]Fruit Drink\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924013": {
+		"3235924238": {
 			"en_US": "Unlocks the slot selling \\c[3]Rice Cracker\\c[0] in \\c[3]Rookie's Best\\c[0]."
 		},
-		"3235924014": {
+		"3235924239": {
 			"en_US": "Unlocks slots selling \\c[3]Rice Cracker\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924015": {
+		"3235924240": {
 			"en_US": "Unlocks the slot selling \\c[3]Veggie Sticks\\c[0] in \\c[3]Rookie's Best\\c[0]."
 		},
-		"3235924016": {
+		"3235924241": {
 			"en_US": "Unlocks slots selling \\c[3]Veggie Sticks\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924017": {
+		"3235924242": {
 			"en_US": "Unlocks the slot selling \\c[3]Kebab Roll\\c[0] in \\c[3]Rookie's Best\\c[0]."
 		},
-		"3235924018": {
+		"3235924243": {
 			"en_US": "Unlocks slots selling \\c[3]Kebab Roll\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924019": {
+		"3235924244": {
 			"en_US": "Unlocks the slot selling \\c[3]Meaty Risotto\\c[0] in \\c[3]Rookie's Best\\c[0]."
 		},
-		"3235924020": {
+		"3235924245": {
 			"en_US": "Unlocks slots selling \\c[3]Meaty Risotto\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924021": {
+		"3235924246": {
 			"en_US": "Unlocks the slot selling \\c[3]Bergen Ice Cream\\c[0] in \\c[3]Rookie's Best\\c[0]."
 		},
-		"3235924022": {
+		"3235924247": {
 			"en_US": "Unlocks slots selling \\c[3]Bergen Ice Cream\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924023": {
+		"3235924248": {
 			"en_US": "Unlocks the slot selling \\c[3]Sweet Lemonjuice\\c[0] in \\c[3]Rookie's Best\\c[0]."
 		},
-		"3235924024": {
+		"3235924249": {
 			"en_US": "Unlocks slots selling \\c[3]Sweet Lemonjuice\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924025": {
+		"3235924250": {
 			"en_US": "Unlocks the slot selling \\c[3]Salted Peanuts\\c[0] in \\c[3]Rookie's Best\\c[0]."
 		},
-		"3235924026": {
+		"3235924251": {
 			"en_US": "Unlocks slots selling \\c[3]Salted Peanuts\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924027": {
+		"3235924252": {
 			"en_US": "Unlocks the slot selling \\c[3]Cup o' Coffee\\c[0] in \\c[3]Rookie's Best\\c[0]."
 		},
-		"3235924028": {
+		"3235924253": {
 			"en_US": "Unlocks slots selling \\c[3]Cup o' Coffee\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924029": {
+		"3235924254": {
 			"en_US": "Unlocks the slot selling \\c[3]Snack Mix\\c[0] in \\c[3]Rookie's Best\\c[0]."
 		},
-		"3235924030": {
+		"3235924255": {
 			"en_US": "Unlocks slots selling \\c[3]Snack Mix\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924031": {
+		"3235924256": {
 			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Rookie's Starter\\c[0]."
 		},
-		"3235924032": {
+		"3235924257": {
 			"en_US": "Unlocks the slot selling \\c[3]Bronze Goggles\\c[0] in \\c[3]Rookie's Starter\\c[0]."
 		},
-		"3235924033": {
+		"3235924258": {
 			"en_US": "Unlocks slots selling \\c[3]Bronze Goggles\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924034": {
+		"3235924259": {
 			"en_US": "Unlocks the slot selling \\c[3]Bronze Edge\\c[0] in \\c[3]Rookie's Starter\\c[0]."
 		},
-		"3235924035": {
+		"3235924260": {
 			"en_US": "Unlocks slots selling \\c[3]Bronze Edge\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924036": {
+		"3235924261": {
 			"en_US": "Unlocks the slot selling \\c[3]Bronze Mail\\c[0] in \\c[3]Rookie's Starter\\c[0]."
 		},
-		"3235924037": {
+		"3235924262": {
 			"en_US": "Unlocks slots selling \\c[3]Bronze Mail\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924038": {
+		"3235924263": {
 			"en_US": "Unlocks the slot selling \\c[3]Bronze Boots\\c[0] in \\c[3]Rookie's Starter\\c[0]."
 		},
-		"3235924039": {
+		"3235924264": {
 			"en_US": "Unlocks slots selling \\c[3]Bronze Boots\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924040": {
+		"3235924265": {
 			"en_US": "Unlocks the slot selling \\c[3]Iron Goggles\\c[0] in \\c[3]Rookie's Starter\\c[0]."
 		},
-		"3235924041": {
+		"3235924266": {
 			"en_US": "Unlocks slots selling \\c[3]Iron Goggles\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924042": {
+		"3235924267": {
 			"en_US": "Unlocks the slot selling \\c[3]Iron Edge\\c[0] in \\c[3]Rookie's Starter\\c[0]."
 		},
-		"3235924043": {
+		"3235924268": {
 			"en_US": "Unlocks slots selling \\c[3]Iron Edge\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924044": {
+		"3235924269": {
 			"en_US": "Unlocks the slot selling \\c[3]Iron Mail\\c[0] in \\c[3]Rookie's Starter\\c[0]."
 		},
-		"3235924045": {
+		"3235924270": {
 			"en_US": "Unlocks slots selling \\c[3]Iron Mail\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924046": {
+		"3235924271": {
 			"en_US": "Unlocks the slot selling \\c[3]Iron Boots\\c[0] in \\c[3]Rookie's Starter\\c[0]."
 		},
-		"3235924047": {
+		"3235924272": {
 			"en_US": "Unlocks slots selling \\c[3]Iron Boots\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924048": {
+		"3235924273": {
 			"en_US": "Unlocks the slot selling \\c[3]Silver Goggles\\c[0] in \\c[3]Rookie's Starter\\c[0]."
 		},
-		"3235924049": {
+		"3235924274": {
 			"en_US": "Unlocks slots selling \\c[3]Silver Goggles\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924050": {
+		"3235924275": {
 			"en_US": "Unlocks the slot selling \\c[3]Silver Edge\\c[0] in \\c[3]Rookie's Starter\\c[0]."
 		},
-		"3235924051": {
+		"3235924276": {
 			"en_US": "Unlocks slots selling \\c[3]Silver Edge\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924052": {
+		"3235924277": {
 			"en_US": "Unlocks the slot selling \\c[3]Silver Mail\\c[0] in \\c[3]Rookie's Starter\\c[0]."
 		},
-		"3235924053": {
+		"3235924278": {
 			"en_US": "Unlocks slots selling \\c[3]Silver Mail\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924054": {
+		"3235924279": {
 			"en_US": "Unlocks the slot selling \\c[3]Silver Boots\\c[0] in \\c[3]Rookie's Starter\\c[0]."
 		},
-		"3235924055": {
+		"3235924280": {
 			"en_US": "Unlocks slots selling \\c[3]Silver Boots\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924056": {
+		"3235924281": {
 			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Rookie's Advanced\\c[0]."
 		},
-		"3235924057": {
+		"3235924282": {
 			"en_US": "Unlocks the slot selling \\c[3]Steel Goggles\\c[0] in \\c[3]Rookie's Advanced\\c[0]."
 		},
-		"3235924058": {
+		"3235924283": {
 			"en_US": "Unlocks slots selling \\c[3]Steel Goggles\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924059": {
+		"3235924284": {
 			"en_US": "Unlocks the slot selling \\c[3]Steel Edge\\c[0] in \\c[3]Rookie's Advanced\\c[0]."
 		},
-		"3235924060": {
+		"3235924285": {
 			"en_US": "Unlocks slots selling \\c[3]Steel Edge\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924061": {
+		"3235924286": {
 			"en_US": "Unlocks the slot selling \\c[3]Steel Mail\\c[0] in \\c[3]Rookie's Advanced\\c[0]."
 		},
-		"3235924062": {
+		"3235924287": {
 			"en_US": "Unlocks slots selling \\c[3]Steel Mail\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924063": {
+		"3235924288": {
 			"en_US": "Unlocks the slot selling \\c[3]Steel Boots\\c[0] in \\c[3]Rookie's Advanced\\c[0]."
 		},
-		"3235924064": {
+		"3235924289": {
 			"en_US": "Unlocks slots selling \\c[3]Steel Boots\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924065": {
+		"3235924290": {
 			"en_US": "Unlocks the slot selling \\c[3]Silver Goggles\\c[0] in \\c[3]Rookie's Advanced\\c[0]."
 		},
-		"3235924066": {
+		"3235924291": {
 			"en_US": "Unlocks the slot selling \\c[3]Silver Edge\\c[0] in \\c[3]Rookie's Advanced\\c[0]."
 		},
-		"3235924067": {
+		"3235924292": {
 			"en_US": "Unlocks the slot selling \\c[3]Silver Mail\\c[0] in \\c[3]Rookie's Advanced\\c[0]."
 		},
-		"3235924068": {
+		"3235924293": {
 			"en_US": "Unlocks the slot selling \\c[3]Silver Boots\\c[0] in \\c[3]Rookie's Advanced\\c[0]."
 		},
-		"3235924069": {
+		"3235924294": {
 			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Tara's Shop\\c[0]."
 		},
-		"3235924070": {
+		"3235924295": {
 			"en_US": "Unlocks the slot selling \\c[3]Sandwich\\c[0] in \\c[3]Tara's Shop\\c[0]."
 		},
-		"3235924071": {
+		"3235924296": {
 			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Chef Backer Goods\\c[0]."
 		},
-		"3235924072": {
+		"3235924297": {
 			"en_US": "Unlocks the slot selling \\c[3]Rising Super Star\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
 		},
-		"3235924073": {
+		"3235924298": {
 			"en_US": "Unlocks slots selling \\c[3]Rising Super Star\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924074": {
+		"3235924299": {
 			"en_US": "Unlocks the slot selling \\c[3]Dk Pepper\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
 		},
-		"3235924075": {
+		"3235924300": {
 			"en_US": "Unlocks slots selling \\c[3]Dk Pepper\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924076": {
+		"3235924301": {
 			"en_US": "Unlocks the slot selling \\c[3]Cheese Spaetzle\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
 		},
-		"3235924077": {
+		"3235924302": {
 			"en_US": "Unlocks slots selling \\c[3]Cheese Spaetzle\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924078": {
+		"3235924303": {
 			"en_US": "Unlocks the slot selling \\c[3]Maultasche\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
 		},
-		"3235924079": {
+		"3235924304": {
 			"en_US": "Unlocks slots selling \\c[3]Maultasche\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924080": {
+		"3235924305": {
 			"en_US": "Unlocks the slot selling \\c[3]Durian\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
 		},
-		"3235924081": {
+		"3235924306": {
 			"en_US": "Unlocks slots selling \\c[3]Durian\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924082": {
+		"3235924307": {
 			"en_US": "Unlocks the slot selling \\c[3]PengoPop\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
 		},
-		"3235924083": {
+		"3235924308": {
 			"en_US": "Unlocks slots selling \\c[3]PengoPop\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924084": {
+		"3235924309": {
 			"en_US": "Unlocks the slot selling \\c[3]Spicy Beat-0-Type\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
 		},
-		"3235924085": {
+		"3235924310": {
 			"en_US": "Unlocks slots selling \\c[3]Spicy Beat-0-Type\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924086": {
+		"3235924311": {
 			"en_US": "Unlocks the slot selling \\c[3]Werewolf Stick\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
 		},
-		"3235924087": {
+		"3235924312": {
 			"en_US": "Unlocks slots selling \\c[3]Werewolf Stick\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924088": {
+		"3235924313": {
 			"en_US": "Unlocks the slot selling \\c[3]Mooncake\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
 		},
-		"3235924089": {
+		"3235924314": {
 			"en_US": "Unlocks slots selling \\c[3]Mooncake\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924090": {
+		"3235924315": {
 			"en_US": "Unlocks the slot selling \\c[3]Guacamole Toast\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
 		},
-		"3235924091": {
+		"3235924316": {
 			"en_US": "Unlocks slots selling \\c[3]Guacamole Toast\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924092": {
+		"3235924317": {
 			"en_US": "Unlocks the slot selling \\c[3]Willis Waldmahl\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
 		},
-		"3235924093": {
+		"3235924318": {
 			"en_US": "Unlocks slots selling \\c[3]Willis Waldmahl\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924094": {
+		"3235924319": {
 			"en_US": "Unlocks the slot selling \\c[3]Pumpkin Spice Cof.\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
 		},
-		"3235924095": {
+		"3235924320": {
 			"en_US": "Unlocks slots selling \\c[3]Pumpkin Spice Cof.\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924096": {
+		"3235924321": {
 			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Bergen Provisions\\c[0]."
 		},
-		"3235924097": {
+		"3235924322": {
 			"en_US": "Unlocks the slot selling \\c[3]Sandwich\\c[0] in \\c[3]Bergen Provisions\\c[0]."
 		},
-		"3235924098": {
+		"3235924323": {
 			"en_US": "Unlocks the slot selling \\c[3]Hi-Sandwich\\c[0] in \\c[3]Bergen Provisions\\c[0]."
 		},
-		"3235924099": {
+		"3235924324": {
 			"en_US": "Unlocks the slot selling \\c[3]Green Leaf Tea\\c[0] in \\c[3]Bergen Provisions\\c[0]."
 		},
-		"3235924100": {
+		"3235924325": {
 			"en_US": "Unlocks the slot selling \\c[3]Just Water\\c[0] in \\c[3]Bergen Provisions\\c[0]."
 		},
-		"3235924101": {
+		"3235924326": {
 			"en_US": "Unlocks the slot selling \\c[3]Spicy Bun\\c[0] in \\c[3]Bergen Provisions\\c[0]."
 		},
-		"3235924102": {
+		"3235924327": {
 			"en_US": "Unlocks the slot selling \\c[3]Fruit Drink\\c[0] in \\c[3]Bergen Provisions\\c[0]."
 		},
-		"3235924103": {
+		"3235924328": {
 			"en_US": "Unlocks the slot selling \\c[3]Rice Cracker\\c[0] in \\c[3]Bergen Provisions\\c[0]."
 		},
-		"3235924104": {
+		"3235924329": {
 			"en_US": "Unlocks the slot selling \\c[3]Veggie Sticks\\c[0] in \\c[3]Bergen Provisions\\c[0]."
 		},
-		"3235924105": {
+		"3235924330": {
 			"en_US": "Unlocks the slot selling \\c[3]Kebab Roll\\c[0] in \\c[3]Bergen Provisions\\c[0]."
 		},
-		"3235924106": {
+		"3235924331": {
 			"en_US": "Unlocks the slot selling \\c[3]Meaty Risotto\\c[0] in \\c[3]Bergen Provisions\\c[0]."
 		},
-		"3235924107": {
+		"3235924332": {
 			"en_US": "Unlocks the slot selling \\c[3]Bergen Ice Cream\\c[0] in \\c[3]Bergen Provisions\\c[0]."
 		},
-		"3235924108": {
+		"3235924333": {
 			"en_US": "Unlocks the slot selling \\c[3]Sweet Lemonjuice\\c[0] in \\c[3]Bergen Provisions\\c[0]."
 		},
-		"3235924109": {
+		"3235924334": {
 			"en_US": "Unlocks the slot selling \\c[3]Salted Peanuts\\c[0] in \\c[3]Bergen Provisions\\c[0]."
 		},
-		"3235924110": {
+		"3235924335": {
 			"en_US": "Unlocks the slot selling \\c[3]Cup o' Coffee\\c[0] in \\c[3]Bergen Provisions\\c[0]."
 		},
-		"3235924111": {
+		"3235924336": {
 			"en_US": "Unlocks the slot selling \\c[3]Snack Mix\\c[0] in \\c[3]Bergen Provisions\\c[0]."
 		},
-		"3235924112": {
+		"3235924337": {
 			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Bergen Weaponry\\c[0]."
 		},
-		"3235924113": {
+		"3235924338": {
 			"en_US": "Unlocks the slot selling \\c[3]Iron Goggles\\c[0] in \\c[3]Bergen Weaponry\\c[0]."
 		},
-		"3235924114": {
+		"3235924339": {
 			"en_US": "Unlocks the slot selling \\c[3]Iron Edge\\c[0] in \\c[3]Bergen Weaponry\\c[0]."
 		},
-		"3235924115": {
+		"3235924340": {
 			"en_US": "Unlocks the slot selling \\c[3]Iron Mail\\c[0] in \\c[3]Bergen Weaponry\\c[0]."
 		},
-		"3235924116": {
+		"3235924341": {
 			"en_US": "Unlocks the slot selling \\c[3]Iron Boots\\c[0] in \\c[3]Bergen Weaponry\\c[0]."
 		},
-		"3235924117": {
+		"3235924342": {
 			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Hermit's House\\c[0]."
 		},
-		"3235924118": {
+		"3235924343": {
 			"en_US": "Unlocks the slot selling \\c[3]Chili Con Carne\\c[0] in \\c[3]Hermit's House\\c[0]."
 		},
-		"3235924119": {
+		"3235924344": {
 			"en_US": "Unlocks slots selling \\c[3]Chili Con Carne\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924120": {
+		"3235924345": {
 			"en_US": "Unlocks the slot selling \\c[3]Sweet Lemonjuice\\c[0] in \\c[3]Hermit's House\\c[0]."
 		},
-		"3235924121": {
+		"3235924346": {
 			"en_US": "Unlocks the slot selling \\c[3]Sweet Berry Tea\\c[0] in \\c[3]Hermit's House\\c[0]."
 		},
-		"3235924122": {
+		"3235924347": {
 			"en_US": "Unlocks slots selling \\c[3]Sweet Berry Tea\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924123": {
+		"3235924348": {
 			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Ba'kii Oasis\\c[0]."
 		},
-		"3235924124": {
+		"3235924349": {
 			"en_US": "Unlocks the slot selling \\c[3]Sandwich\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
 		},
-		"3235924125": {
+		"3235924350": {
 			"en_US": "Unlocks the slot selling \\c[3]Hi-Sandwich\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
 		},
-		"3235924126": {
+		"3235924351": {
 			"en_US": "Unlocks the slot selling \\c[3]Green Leaf Tea\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
 		},
-		"3235924127": {
+		"3235924352": {
 			"en_US": "Unlocks the slot selling \\c[3]Just Water\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
 		},
-		"3235924128": {
+		"3235924353": {
 			"en_US": "Unlocks the slot selling \\c[3]Spicy Bun\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
 		},
-		"3235924129": {
+		"3235924354": {
 			"en_US": "Unlocks the slot selling \\c[3]Fruit Drink\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
 		},
-		"3235924130": {
+		"3235924355": {
 			"en_US": "Unlocks the slot selling \\c[3]Rice Cracker\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
 		},
-		"3235924131": {
+		"3235924356": {
 			"en_US": "Unlocks the slot selling \\c[3]Veggie Sticks\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
 		},
-		"3235924132": {
+		"3235924357": {
 			"en_US": "Unlocks the slot selling \\c[3]Bergen Ice Cream\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
 		},
-		"3235924133": {
+		"3235924358": {
 			"en_US": "Unlocks the slot selling \\c[3]Sweet Lemonjuice\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
 		},
-		"3235924134": {
+		"3235924359": {
 			"en_US": "Unlocks the slot selling \\c[3]Kebab Roll\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
 		},
-		"3235924135": {
+		"3235924360": {
 			"en_US": "Unlocks the slot selling \\c[3]Meaty Risotto\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
 		},
-		"3235924136": {
+		"3235924361": {
 			"en_US": "Unlocks the slot selling \\c[3]Salted Peanuts\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
 		},
-		"3235924137": {
+		"3235924362": {
 			"en_US": "Unlocks the slot selling \\c[3]Cup o' Coffee\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
 		},
-		"3235924138": {
+		"3235924363": {
 			"en_US": "Unlocks the slot selling \\c[3]Snack Mix\\c[0] in \\c[3]Ba'kii Oasis\\c[0]."
 		},
-		"3235924139": {
+		"3235924364": {
 			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Ba'kii Arsenal\\c[0]."
 		},
-		"3235924140": {
+		"3235924365": {
 			"en_US": "Unlocks the slot selling \\c[3]Iron Goggles\\c[0] in \\c[3]Ba'kii Arsenal\\c[0]."
 		},
-		"3235924141": {
+		"3235924366": {
 			"en_US": "Unlocks the slot selling \\c[3]Iron Edge\\c[0] in \\c[3]Ba'kii Arsenal\\c[0]."
 		},
-		"3235924142": {
+		"3235924367": {
 			"en_US": "Unlocks the slot selling \\c[3]Iron Mail\\c[0] in \\c[3]Ba'kii Arsenal\\c[0]."
 		},
-		"3235924143": {
+		"3235924368": {
 			"en_US": "Unlocks the slot selling \\c[3]Iron Boots\\c[0] in \\c[3]Ba'kii Arsenal\\c[0]."
 		},
-		"3235924144": {
+		"3235924369": {
 			"en_US": "Unlocks the slot selling \\c[3]Steel Goggles\\c[0] in \\c[3]Ba'kii Arsenal\\c[0]."
 		},
-		"3235924145": {
+		"3235924370": {
 			"en_US": "Unlocks the slot selling \\c[3]Steel Edge\\c[0] in \\c[3]Ba'kii Arsenal\\c[0]."
 		},
-		"3235924146": {
+		"3235924371": {
 			"en_US": "Unlocks the slot selling \\c[3]Steel Mail\\c[0] in \\c[3]Ba'kii Arsenal\\c[0]."
 		},
-		"3235924147": {
+		"3235924372": {
 			"en_US": "Unlocks the slot selling \\c[3]Steel Boots\\c[0] in \\c[3]Ba'kii Arsenal\\c[0]."
 		},
-		"3235924148": {
+		"3235924373": {
 			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Vending Machine\\c[0]."
 		},
-		"3235924149": {
+		"3235924374": {
 			"en_US": "Unlocks the slot selling \\c[3]Sandwich\\c[0] in \\c[3]Vending Machine\\c[0]."
 		},
-		"3235924150": {
+		"3235924375": {
 			"en_US": "Unlocks the slot selling \\c[3]Hi-Sandwich\\c[0] in \\c[3]Vending Machine\\c[0]."
 		},
-		"3235924151": {
+		"3235924376": {
 			"en_US": "Unlocks the slot selling \\c[3]Green Leaf Tea\\c[0] in \\c[3]Vending Machine\\c[0]."
 		},
-		"3235924152": {
+		"3235924377": {
 			"en_US": "Unlocks the slot selling \\c[3]Just Water\\c[0] in \\c[3]Vending Machine\\c[0]."
 		},
-		"3235924153": {
+		"3235924378": {
 			"en_US": "Unlocks the slot selling \\c[3]Spicy Bun\\c[0] in \\c[3]Vending Machine\\c[0]."
 		},
-		"3235924154": {
+		"3235924379": {
 			"en_US": "Unlocks the slot selling \\c[3]Fruit Drink\\c[0] in \\c[3]Vending Machine\\c[0]."
 		},
-		"3235924155": {
+		"3235924380": {
 			"en_US": "Unlocks the slot selling \\c[3]Rice Cracker\\c[0] in \\c[3]Vending Machine\\c[0]."
 		},
-		"3235924156": {
+		"3235924381": {
 			"en_US": "Unlocks the slot selling \\c[3]Veggie Sticks\\c[0] in \\c[3]Vending Machine\\c[0]."
 		},
-		"3235924157": {
+		"3235924382": {
 			"en_US": "Unlocks the slot selling \\c[3]Bergen Ice Cream\\c[0] in \\c[3]Vending Machine\\c[0]."
 		},
-		"3235924158": {
+		"3235924383": {
 			"en_US": "Unlocks the slot selling \\c[3]Sweet Lemonjuice\\c[0] in \\c[3]Vending Machine\\c[0]."
 		},
-		"3235924159": {
+		"3235924384": {
 			"en_US": "Unlocks the slot selling \\c[3]Salted Peanuts\\c[0] in \\c[3]Vending Machine\\c[0]."
 		},
-		"3235924160": {
+		"3235924385": {
 			"en_US": "Unlocks the slot selling \\c[3]Cup o' Coffee\\c[0] in \\c[3]Vending Machine\\c[0]."
 		},
-		"3235924161": {
+		"3235924386": {
 			"en_US": "Unlocks the slot selling \\c[3]Snack Mix\\c[0] in \\c[3]Vending Machine\\c[0]."
 		},
-		"3235924162": {
+		"3235924387": {
 			"en_US": "Unlocks the slot selling \\c[3]Kebab Roll\\c[0] in \\c[3]Vending Machine\\c[0]."
 		},
-		"3235924163": {
+		"3235924388": {
 			"en_US": "Unlocks the slot selling \\c[3]Meaty Risotto\\c[0] in \\c[3]Vending Machine\\c[0]."
 		},
-		"3235924164": {
+		"3235924389": {
 			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Items N' Goods\\c[0]."
 		},
-		"3235924165": {
+		"3235924390": {
 			"en_US": "Unlocks the slot selling \\c[3]Sandwich\\c[0] in \\c[3]Items N' Goods\\c[0]."
 		},
-		"3235924166": {
+		"3235924391": {
 			"en_US": "Unlocks the slot selling \\c[3]Hi-Sandwich\\c[0] in \\c[3]Items N' Goods\\c[0]."
 		},
-		"3235924167": {
+		"3235924392": {
 			"en_US": "Unlocks the slot selling \\c[3]Green Leaf Tea\\c[0] in \\c[3]Items N' Goods\\c[0]."
 		},
-		"3235924168": {
+		"3235924393": {
 			"en_US": "Unlocks the slot selling \\c[3]Just Water\\c[0] in \\c[3]Items N' Goods\\c[0]."
 		},
-		"3235924169": {
+		"3235924394": {
 			"en_US": "Unlocks the slot selling \\c[3]Kebab Roll\\c[0] in \\c[3]Items N' Goods\\c[0]."
 		},
-		"3235924170": {
+		"3235924395": {
 			"en_US": "Unlocks the slot selling \\c[3]Meaty Risotto\\c[0] in \\c[3]Items N' Goods\\c[0]."
 		},
-		"3235924171": {
+		"3235924396": {
 			"en_US": "Unlocks the slot selling \\c[3]Spicy Bun\\c[0] in \\c[3]Items N' Goods\\c[0]."
 		},
-		"3235924172": {
+		"3235924397": {
 			"en_US": "Unlocks the slot selling \\c[3]Fruit Drink\\c[0] in \\c[3]Items N' Goods\\c[0]."
 		},
-		"3235924173": {
+		"3235924398": {
 			"en_US": "Unlocks the slot selling \\c[3]Rice Cracker\\c[0] in \\c[3]Items N' Goods\\c[0]."
 		},
-		"3235924174": {
+		"3235924399": {
 			"en_US": "Unlocks the slot selling \\c[3]Veggie Sticks\\c[0] in \\c[3]Items N' Goods\\c[0]."
 		},
-		"3235924175": {
+		"3235924400": {
 			"en_US": "Unlocks the slot selling \\c[3]Bergen Ice Cream\\c[0] in \\c[3]Items N' Goods\\c[0]."
 		},
-		"3235924176": {
+		"3235924401": {
 			"en_US": "Unlocks the slot selling \\c[3]Sweet Lemonjuice\\c[0] in \\c[3]Items N' Goods\\c[0]."
 		},
-		"3235924177": {
+		"3235924402": {
 			"en_US": "Unlocks the slot selling \\c[3]Salted Peanuts\\c[0] in \\c[3]Items N' Goods\\c[0]."
 		},
-		"3235924178": {
+		"3235924403": {
 			"en_US": "Unlocks the slot selling \\c[3]Cup o' Coffee\\c[0] in \\c[3]Items N' Goods\\c[0]."
 		},
-		"3235924179": {
+		"3235924404": {
 			"en_US": "Unlocks the slot selling \\c[3]Snack Mix\\c[0] in \\c[3]Items N' Goods\\c[0]."
 		},
-		"3235924180": {
+		"3235924405": {
 			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Basin Arsenal\\c[0]."
 		},
-		"3235924181": {
+		"3235924406": {
 			"en_US": "Unlocks the slot selling \\c[3]Silver Goggles\\c[0] in \\c[3]Basin Arsenal\\c[0]."
 		},
-		"3235924182": {
+		"3235924407": {
 			"en_US": "Unlocks the slot selling \\c[3]Silver Edge\\c[0] in \\c[3]Basin Arsenal\\c[0]."
 		},
-		"3235924183": {
+		"3235924408": {
 			"en_US": "Unlocks the slot selling \\c[3]Silver Mail\\c[0] in \\c[3]Basin Arsenal\\c[0]."
 		},
-		"3235924184": {
+		"3235924409": {
 			"en_US": "Unlocks the slot selling \\c[3]Silver Boots\\c[0] in \\c[3]Basin Arsenal\\c[0]."
 		},
-		"3235924185": {
+		"3235924410": {
 			"en_US": "Unlocks the slot selling \\c[3]Titan Goggles\\c[0] in \\c[3]Basin Arsenal\\c[0]."
 		},
-		"3235924186": {
+		"3235924411": {
 			"en_US": "Unlocks slots selling \\c[3]Titan Goggles\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924187": {
+		"3235924412": {
 			"en_US": "Unlocks the slot selling \\c[3]Titan Edge\\c[0] in \\c[3]Basin Arsenal\\c[0]."
 		},
-		"3235924188": {
+		"3235924413": {
 			"en_US": "Unlocks slots selling \\c[3]Titan Edge\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924189": {
+		"3235924414": {
 			"en_US": "Unlocks the slot selling \\c[3]Titan Mail\\c[0] in \\c[3]Basin Arsenal\\c[0]."
 		},
-		"3235924190": {
+		"3235924415": {
 			"en_US": "Unlocks slots selling \\c[3]Titan Mail\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924191": {
+		"3235924416": {
 			"en_US": "Unlocks the slot selling \\c[3]Titan Boots\\c[0] in \\c[3]Basin Arsenal\\c[0]."
 		},
-		"3235924192": {
+		"3235924417": {
 			"en_US": "Unlocks slots selling \\c[3]Titan Boots\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924193": {
+		"3235924418": {
 			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Calzone Shop\\c[0]."
 		},
-		"3235924194": {
+		"3235924419": {
 			"en_US": "Unlocks the slot selling \\c[3]One Up\\c[0] in \\c[3]Calzone Shop\\c[0]."
 		},
-		"3235924195": {
+		"3235924420": {
 			"en_US": "Unlocks slots selling \\c[3]One Up\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924196": {
+		"3235924421": {
 			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Sapphire Arsenal\\c[0]."
 		},
-		"3235924197": {
+		"3235924422": {
 			"en_US": "Unlocks the slot selling \\c[3]Titan Goggles\\c[0] in \\c[3]Sapphire Arsenal\\c[0]."
 		},
-		"3235924198": {
+		"3235924423": {
 			"en_US": "Unlocks the slot selling \\c[3]Titan Edge\\c[0] in \\c[3]Sapphire Arsenal\\c[0]."
 		},
-		"3235924199": {
+		"3235924424": {
 			"en_US": "Unlocks the slot selling \\c[3]Titan Mail\\c[0] in \\c[3]Sapphire Arsenal\\c[0]."
 		},
-		"3235924200": {
+		"3235924425": {
 			"en_US": "Unlocks the slot selling \\c[3]Titan Boots\\c[0] in \\c[3]Sapphire Arsenal\\c[0]."
 		},
-		"3235924201": {
+		"3235924426": {
 			"en_US": "Unlocks the slot selling \\c[3]Cobalt Goggles\\c[0] in \\c[3]Sapphire Arsenal\\c[0]."
 		},
-		"3235924202": {
+		"3235924427": {
 			"en_US": "Unlocks slots selling \\c[3]Cobalt Goggles\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924203": {
+		"3235924428": {
 			"en_US": "Unlocks the slot selling \\c[3]Cobalt Edge\\c[0] in \\c[3]Sapphire Arsenal\\c[0]."
 		},
-		"3235924204": {
+		"3235924429": {
 			"en_US": "Unlocks slots selling \\c[3]Cobalt Edge\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924205": {
+		"3235924430": {
 			"en_US": "Unlocks the slot selling \\c[3]Cobalt Mail\\c[0] in \\c[3]Sapphire Arsenal\\c[0]."
 		},
-		"3235924206": {
+		"3235924431": {
 			"en_US": "Unlocks slots selling \\c[3]Cobalt Mail\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924207": {
+		"3235924432": {
 			"en_US": "Unlocks the slot selling \\c[3]Cobalt Boots\\c[0] in \\c[3]Sapphire Arsenal\\c[0]."
 		},
-		"3235924208": {
+		"3235924433": {
 			"en_US": "Unlocks slots selling \\c[3]Cobalt Boots\\c[0] in \\c[3]all shops\\c[0]."
 		},
-		"3235924209": {
+		"3235924434": {
 			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Good Items\\c[0]."
 		},
-		"3235924210": {
+		"3235924435": {
 			"en_US": "Unlocks the slot selling \\c[3]Sandwich\\c[0] in \\c[3]Good Items\\c[0]."
 		},
-		"3235924211": {
+		"3235924436": {
 			"en_US": "Unlocks the slot selling \\c[3]Hi-Sandwich\\c[0] in \\c[3]Good Items\\c[0]."
 		},
-		"3235924212": {
+		"3235924437": {
 			"en_US": "Unlocks the slot selling \\c[3]Green Leaf Tea\\c[0] in \\c[3]Good Items\\c[0]."
 		},
-		"3235924213": {
+		"3235924438": {
 			"en_US": "Unlocks the slot selling \\c[3]Just Water\\c[0] in \\c[3]Good Items\\c[0]."
 		},
-		"3235924214": {
+		"3235924439": {
 			"en_US": "Unlocks the slot selling \\c[3]Kebab Roll\\c[0] in \\c[3]Good Items\\c[0]."
 		},
-		"3235924215": {
+		"3235924440": {
 			"en_US": "Unlocks the slot selling \\c[3]Meaty Risotto\\c[0] in \\c[3]Good Items\\c[0]."
 		},
-		"3235924216": {
+		"3235924441": {
 			"en_US": "Unlocks the slot selling \\c[3]Spicy Bun\\c[0] in \\c[3]Good Items\\c[0]."
 		},
-		"3235924217": {
+		"3235924442": {
 			"en_US": "Unlocks the slot selling \\c[3]Fruit Drink\\c[0] in \\c[3]Good Items\\c[0]."
 		},
-		"3235924218": {
+		"3235924443": {
 			"en_US": "Unlocks the slot selling \\c[3]Rice Cracker\\c[0] in \\c[3]Good Items\\c[0]."
 		},
-		"3235924219": {
+		"3235924444": {
 			"en_US": "Unlocks the slot selling \\c[3]Veggie Sticks\\c[0] in \\c[3]Good Items\\c[0]."
 		},
-		"3235924220": {
+		"3235924445": {
 			"en_US": "Unlocks the slot selling \\c[3]Bergen Ice Cream\\c[0] in \\c[3]Good Items\\c[0]."
 		},
-		"3235924221": {
+		"3235924446": {
 			"en_US": "Unlocks the slot selling \\c[3]Sweet Lemonjuice\\c[0] in \\c[3]Good Items\\c[0]."
 		},
-		"3235924222": {
+		"3235924447": {
 			"en_US": "Unlocks the slot selling \\c[3]Salted Peanuts\\c[0] in \\c[3]Good Items\\c[0]."
 		},
-		"3235924223": {
+		"3235924448": {
 			"en_US": "Unlocks the slot selling \\c[3]Cup o' Coffee\\c[0] in \\c[3]Good Items\\c[0]."
 		},
-		"3235924224": {
+		"3235924449": {
 			"en_US": "Unlocks the slot selling \\c[3]Snack Mix\\c[0] in \\c[3]Good Items\\c[0]."
 		},
 		"3235824050": {
