@@ -256,7 +256,9 @@ export function patch(plugin: MwRandomizer) {
 				return false;
 			}
 
-			let [area, location] = chest.mwCheck.name.split(" - ");
+			const area = ig.LangLabel.getText(sc.map.areas[sc.map.currentArea.cacheKey].name);
+			const [shortArea, location] = chest.mwCheck.name.split(": ", 2);
+
 			let level = null;
 
 			if (chest.chestType == sc.CHEST_TYPE.Bronze) {
@@ -269,13 +271,7 @@ export function patch(plugin: MwRandomizer) {
 				level = "Gold";
 			}
 
-			const match = RegExp("(.+) \\((.+)\\)").exec(location);
-			if (match) {
-				location = match[1];
-				level = match[2];
-			}
-
-			this.areaGui.setText(`\\c[4]${area}\\c[0]`);
+			this.areaGui.setText(`\\c[4]${shortArea}\\c[0]`);
 			this.locationGui.setText(location);
 			if (level) {
 				this.clearance.setText(`\\c[3]${level}\\c[0]`);
