@@ -50,7 +50,11 @@ export function patch(plugin: MwRandomizer) {
 
 			for (const entry of sc.menu.shopCart) {
 				let mwid = this.shopList.shopData[entry.id as number];
-				if (mwid == undefined || sc.multiworld.locationInfo[mwid] == undefined) {
+				if (
+					mwid == undefined ||
+					sc.multiworld.locationInfo[mwid] == undefined || 
+					sc.multiworld.localCheckedLocations.includes(mwid)
+				) {
 					continue;
 				}
 
@@ -83,6 +87,11 @@ export function patch(plugin: MwRandomizer) {
 
 				const itemId: number = gui.data.id;
 				const mwid: number = this.shopData[itemId];
+
+				if (sc.multiworld.localCheckedLocations.includes(mwid)) {
+					continue;
+				}
+
 				const button: sc.ButtonGui = gui.button;
 
 				const item = sc.multiworld.locationInfo[mwid];
