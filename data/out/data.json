@@ -3841,7 +3841,12 @@
 				"393": 3235824711,
 				"394": 3235824713,
 				"395": 3235824715,
-				"396": 3235824717
+				"396": 3235824717,
+				"397": 3235824734,
+				"398": 3235824736,
+				"399": 3235824738,
+				"400": 3235824740,
+				"501": 3235824757
 			},
 			"perShop": {
 				"rookieHarborItems": {
@@ -4030,6 +4035,46 @@
 					"290": 3235824730,
 					"291": 3235824731,
 					"331": 3235824732
+				},
+				"rhombusWeapons1": {
+					"397": 3235824733,
+					"398": 3235824735,
+					"399": 3235824737,
+					"400": 3235824739
+				},
+				"rhombusItems1": {
+					"1": 3235824741,
+					"27": 3235824742,
+					"2": 3235824743,
+					"366": 3235824744,
+					"353": 3235824745,
+					"355": 3235824746,
+					"64": 3235824747,
+					"70": 3235824748,
+					"73": 3235824749,
+					"67": 3235824750,
+					"110": 3235824751,
+					"165": 3235824752,
+					"290": 3235824753,
+					"291": 3235824754,
+					"331": 3235824755
+				},
+				"rhombusCurios": {
+					"501": 3235824756
+				},
+				"rhombusBacker": {
+					"382": 3235824758,
+					"490": 3235824759,
+					"491": 3235824760,
+					"315": 3235824761,
+					"493": 3235824762,
+					"494": 3235824763,
+					"495": 3235824764,
+					"316": 3235824765,
+					"516": 3235824766,
+					"496": 3235824767,
+					"551": 3235824768,
+					"637": 3235824769
 				}
 			}
 		},
@@ -4088,7 +4133,12 @@
 				"393": 3235924427,
 				"394": 3235924429,
 				"395": 3235924431,
-				"396": 3235924433
+				"396": 3235924433,
+				"397": 3235924452,
+				"398": 3235924454,
+				"399": 3235924456,
+				"400": 3235924458,
+				"501": 3235924477
 			},
 			"byShop": {
 				"rookieHarborItems": 3235924225,
@@ -4106,7 +4156,11 @@
 				"basinWeapons": 3235924405,
 				"basinMushroom": 3235924418,
 				"sapphireWeapons": 3235924421,
-				"sapphireItems": 3235924434
+				"sapphireItems": 3235924434,
+				"rhombusWeapons1": 3235924450,
+				"rhombusItems1": 3235924459,
+				"rhombusCurios": 3235924475,
+				"rhombusBacker": 3235924478
 			},
 			"byShopAndId": {
 				"rookieHarborItems": {
@@ -4295,6 +4349,46 @@
 					"290": 3235924447,
 					"291": 3235924448,
 					"331": 3235924449
+				},
+				"rhombusWeapons1": {
+					"397": 3235924451,
+					"398": 3235924453,
+					"399": 3235924455,
+					"400": 3235924457
+				},
+				"rhombusItems1": {
+					"1": 3235924460,
+					"27": 3235924461,
+					"2": 3235924462,
+					"366": 3235924463,
+					"353": 3235924464,
+					"355": 3235924465,
+					"64": 3235924466,
+					"70": 3235924467,
+					"73": 3235924468,
+					"67": 3235924469,
+					"110": 3235924470,
+					"165": 3235924471,
+					"290": 3235924472,
+					"291": 3235924473,
+					"331": 3235924474
+				},
+				"rhombusCurios": {
+					"501": 3235924476
+				},
+				"rhombusBacker": {
+					"382": 3235924479,
+					"490": 3235924480,
+					"491": 3235924481,
+					"315": 3235924482,
+					"493": 3235924483,
+					"494": 3235924484,
+					"495": 3235924485,
+					"316": 3235924486,
+					"516": 3235924487,
+					"496": 3235924488,
+					"551": 3235924489,
+					"637": 3235924490
 				}
 			}
 		}
@@ -4989,6 +5083,129 @@
 		},
 		"3235924449": {
 			"en_US": "Unlocks the slot selling \\c[3]Snack Mix\\c[0] in \\c[3]Good Items\\c[0]."
+		},
+		"3235924450": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Rhombus Arsenal\\c[0]."
+		},
+		"3235924451": {
+			"en_US": "Unlocks the slot selling \\c[3]Laser Goggles\\c[0] in \\c[3]Rhombus Arsenal\\c[0]."
+		},
+		"3235924452": {
+			"en_US": "Unlocks slots selling \\c[3]Laser Goggles\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924453": {
+			"en_US": "Unlocks the slot selling \\c[3]Laser Edge\\c[0] in \\c[3]Rhombus Arsenal\\c[0]."
+		},
+		"3235924454": {
+			"en_US": "Unlocks slots selling \\c[3]Laser Edge\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924455": {
+			"en_US": "Unlocks the slot selling \\c[3]Laser Mail\\c[0] in \\c[3]Rhombus Arsenal\\c[0]."
+		},
+		"3235924456": {
+			"en_US": "Unlocks slots selling \\c[3]Laser Mail\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924457": {
+			"en_US": "Unlocks the slot selling \\c[3]Laser Boots\\c[0] in \\c[3]Rhombus Arsenal\\c[0]."
+		},
+		"3235924458": {
+			"en_US": "Unlocks slots selling \\c[3]Laser Boots\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924459": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Rhombus Items\\c[0]."
+		},
+		"3235924460": {
+			"en_US": "Unlocks the slot selling \\c[3]Sandwich\\c[0] in \\c[3]Rhombus Items\\c[0]."
+		},
+		"3235924461": {
+			"en_US": "Unlocks the slot selling \\c[3]Hi-Sandwich\\c[0] in \\c[3]Rhombus Items\\c[0]."
+		},
+		"3235924462": {
+			"en_US": "Unlocks the slot selling \\c[3]Green Leaf Tea\\c[0] in \\c[3]Rhombus Items\\c[0]."
+		},
+		"3235924463": {
+			"en_US": "Unlocks the slot selling \\c[3]Just Water\\c[0] in \\c[3]Rhombus Items\\c[0]."
+		},
+		"3235924464": {
+			"en_US": "Unlocks the slot selling \\c[3]Kebab Roll\\c[0] in \\c[3]Rhombus Items\\c[0]."
+		},
+		"3235924465": {
+			"en_US": "Unlocks the slot selling \\c[3]Meaty Risotto\\c[0] in \\c[3]Rhombus Items\\c[0]."
+		},
+		"3235924466": {
+			"en_US": "Unlocks the slot selling \\c[3]Spicy Bun\\c[0] in \\c[3]Rhombus Items\\c[0]."
+		},
+		"3235924467": {
+			"en_US": "Unlocks the slot selling \\c[3]Fruit Drink\\c[0] in \\c[3]Rhombus Items\\c[0]."
+		},
+		"3235924468": {
+			"en_US": "Unlocks the slot selling \\c[3]Rice Cracker\\c[0] in \\c[3]Rhombus Items\\c[0]."
+		},
+		"3235924469": {
+			"en_US": "Unlocks the slot selling \\c[3]Veggie Sticks\\c[0] in \\c[3]Rhombus Items\\c[0]."
+		},
+		"3235924470": {
+			"en_US": "Unlocks the slot selling \\c[3]Bergen Ice Cream\\c[0] in \\c[3]Rhombus Items\\c[0]."
+		},
+		"3235924471": {
+			"en_US": "Unlocks the slot selling \\c[3]Sweet Lemonjuice\\c[0] in \\c[3]Rhombus Items\\c[0]."
+		},
+		"3235924472": {
+			"en_US": "Unlocks the slot selling \\c[3]Salted Peanuts\\c[0] in \\c[3]Rhombus Items\\c[0]."
+		},
+		"3235924473": {
+			"en_US": "Unlocks the slot selling \\c[3]Cup o' Coffee\\c[0] in \\c[3]Rhombus Items\\c[0]."
+		},
+		"3235924474": {
+			"en_US": "Unlocks the slot selling \\c[3]Snack Mix\\c[0] in \\c[3]Rhombus Items\\c[0]."
+		},
+		"3235924475": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Curios & More\\c[0]."
+		},
+		"3235924476": {
+			"en_US": "Unlocks the slot selling \\c[3]Chest Detector\\c[0] in \\c[3]Curios & More\\c[0]."
+		},
+		"3235924477": {
+			"en_US": "Unlocks slots selling \\c[3]Chest Detector\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924478": {
+			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924479": {
+			"en_US": "Unlocks the slot selling \\c[3]Rising Super Star\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924480": {
+			"en_US": "Unlocks the slot selling \\c[3]Dk Pepper\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924481": {
+			"en_US": "Unlocks the slot selling \\c[3]Cheese Spaetzle\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924482": {
+			"en_US": "Unlocks the slot selling \\c[3]Maultasche\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924483": {
+			"en_US": "Unlocks the slot selling \\c[3]Durian\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924484": {
+			"en_US": "Unlocks the slot selling \\c[3]PengoPop\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924485": {
+			"en_US": "Unlocks the slot selling \\c[3]Spicy Beat-0-Type\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924486": {
+			"en_US": "Unlocks the slot selling \\c[3]Werewolf Stick\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924487": {
+			"en_US": "Unlocks the slot selling \\c[3]Mooncake\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924488": {
+			"en_US": "Unlocks the slot selling \\c[3]Guacamole Toast\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924489": {
+			"en_US": "Unlocks the slot selling \\c[3]Willis Waldmahl\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
+		},
+		"3235924490": {
+			"en_US": "Unlocks the slot selling \\c[3]Pumpkin Spice Cof.\\c[0] in \\c[3]Chef Backer Goods\\c[0]."
 		},
 		"3235824050": {
 			"en_US": "Unlocks the next dungeon or overworld area in story order."
