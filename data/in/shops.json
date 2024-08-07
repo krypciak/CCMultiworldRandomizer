@@ -469,6 +469,91 @@
 				"Cup o' Coffee",
 				"Snack Mix"
 			]
+		},
+		"Rhombus Weapons": {
+			"location": {
+				"shop": "rhombusWeapons1"
+			},
+			"region": {
+				"linear": "33",
+				"open": "open16"
+			},
+			"condition": [
+				[ "var", "canGrind" ]
+			],
+			"slots": [
+				"Laser Goggles",
+				"Laser Edge",
+				"Laser Mail",
+				"Laser Boots"
+			]
+		},
+		"Rhombus Items": {
+			"location": {
+				"shop": "rhombusItems1"
+			},
+			"region": {
+				"linear": "33",
+				"open": "open16"
+			},
+			"condition": [
+				[ "var", "canGrind" ]
+			],
+			"slots": [
+				"Sandwich",
+				"Hi-Sandwich",
+				"Green Leaf Tea",
+				"Just Water",
+				"Kebab Roll",
+				"Meaty Risotto",
+				"Spicy Bun",
+				"Fruit Drink",
+				"Rice Cracker",
+				"Veggie Sticks",
+				"Bergen Ice Cream",
+				"Sweet Lemonjuice",
+				"Salted Peanuts",
+				"Cup o' Coffee",
+				"Snack Mix"
+			]
+		},
+		"Rhombus Curios": {
+			"location": {
+				"shop": "rhombusCurios"
+			},
+			"region": {
+				"linear": "33",
+				"open": "open16"
+			},
+			"condition": [
+				[ "var", "canGrind" ]
+			],
+			"slots": [
+				"Chest Detector"
+			]
+		},
+		"Rhombus Backer Items": {
+			"location": {
+				"shop": "rhombusBacker"
+			},
+			"region": {
+				"linear": "33",
+				"open": "open16"
+			},
+			"slots": [
+				"Rising Super Star",
+				"Dk Pepper",
+				"Cheese Spaetzle",
+				"Maultasche",
+				"Durian",
+				"PengoPop",
+				"Spicy Beat-0-Type",
+				"Werewolf Stick",
+				"Mooncake",
+				"Guacamole Toast",
+				"Willis Waldmahl",
+				"Pumpkin Spice Cof."
+			]
 		}
 	}
 }
