@@ -18,6 +18,14 @@
 			"meteor": [
 				[ "item", "Meteor Shade"]
 			]
+		},
+		"canGrind": {
+			"noShadeWarp": [
+				[ "or",
+					[ "item", "Green Leaf Shade" ],
+					[ "item", "Red Flame Shade" ]
+				]
+			]
 		}
 	}
 }

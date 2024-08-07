@@ -5,9 +5,12 @@
 				"shop": "rookieHarborItems"
 			},
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"linear": "2",
+				"open": "open2"
 			},
+			"condition": [
+				[ "var", "canGrind" ]
+			],
 			"slots": [
 				"Sandwich",
 				"Hi-Sandwich",
@@ -24,10 +27,11 @@
 				"shop": "rookieHarborItems"
 			},
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"linear": "2",
+				"open": "open2"
 			},
 			"condition": [
+				[ "var", "canGrind" ],
 				[ "item", "Blue Ice Shade" ]
 			],
 			"slots": [
@@ -40,10 +44,11 @@
 				"shop": "rookieHarborItems"
 			},
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"linear": "2",
+				"open": "open2"
 			},
 			"condition": [
+				[ "var", "canGrind" ],
 				[ "item", "Red Flame Shade" ]
 			],
 			"slots": [
@@ -56,10 +61,11 @@
 				"shop": "rookieHarborItems"
 			},
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"linear": "2",
+				"open": "open2"
 			},
 			"condition": [
+				[ "var", "canGrind" ],
 				[ "item", "Green Seed Shade" ]
 			],
 			"slots": [
@@ -73,9 +79,12 @@
 				"shop": "rookieHarborWeapons"
 			},
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"linear": "2",
+				"open": "open2"
 			},
+			"condition": [
+				[ "var", "canGrind" ]
+			],
 			"slots": [
 				"Bronze Goggles",
 				"Bronze Edge",
@@ -92,10 +101,11 @@
 				"shop": "rookieHarborWeapons"
 			},
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"linear": "2",
+				"open": "open2"
 			},
 			"condition": [
+				[ "var", "canGrind" ],
 				[ "item", "Red Flame Shade" ]
 			],
 			"slots": [
@@ -129,9 +139,12 @@
 				"shop": "rookieHarborTara"
 			},
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"linear": "2",
+				"open": "open2"
 			},
+			"condition": [
+				[ "var", "canGrind" ]
+			],
 			"slots": [
 				"Sandwich"
 			]
