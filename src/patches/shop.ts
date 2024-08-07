@@ -78,6 +78,10 @@ export function patch(plugin: MwRandomizer) {
 				sc.randoData.shops.locations.perItemType :
 				sc.randoData.shops.locations.perShop[shopID];
 
+			if (this.shopData == undefined) {
+				return;
+			}
+
 			const toHint = [];
 
 			let accum = 0;
