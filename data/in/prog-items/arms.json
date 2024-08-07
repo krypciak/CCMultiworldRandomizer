@@ -1874,25 +1874,6 @@
 				},
 				{
 					"metadata": {
-						"trade": false,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
-					"content": [
-						{ "item": ["item", "Rocksplitter", 1] },
-						{ "item": ["item", "Prickly Bracer", 1] },
-						{ "item": ["item", "Hidden Blade", 1] },
-						{ "item": ["item", "Bright Bracer", 1] },
-						{ "item": ["item", "Sneaky Shiv", 1] },
-						{ "item": ["item", "Sonic Spike", 1] },
-						{ "item": ["item", "Shining Bracer", 1] },
-						{ "item": ["item", "Warkeeper", 1] }
-					]
-				},
-				{
-					"metadata": {
 						"trade": true,
 						"shop": false,
 						"arena": false,
@@ -2080,24 +2061,6 @@
 						{ "item": ["item", "Rough Branch", 2] },
 						{ "item": ["item", "Aehre", 1] }
 					]
-				},
-				{
-					"metadata": {
-						"trade": false,
-						"shop": false,
-						"arena": false,
-						"chest": true,
-						"quest": false
-					},
-					"content": [
-						{ "item": ["item", "Daikon", 1] },
-						{ "item": ["item", "Copper Gull", 1] },
-						{ "item": ["item", "Winterclaw", 1] },
-						{ "item": ["item", "Humming Razor", 1] },
-						{ "item": ["item", "Sunset Claw", 1] },
-						{ "item": ["item", "Rough Branch", 2] },
-						{ "item": ["item", "Aehre", 1] }
-					]
 				}
 			]
 		},
@@ -2218,6 +2181,32 @@
 						{ "item": ["item", "Disciple Gloves", 1] },
 						{ "item": ["item", "Hunter's Bolt", 1] },
 						{ "item": ["item", "Adept Gloves", 1] }
+					]
+				},
+				{
+					"metadata": {
+						"trade": false,
+						"shop": false,
+						"arena": false,
+						"chest": true,
+						"quest": false
+					},
+					"content": [
+						{ "item": ["item", "Daikon", 1] },
+						{ "item": ["item", "Copper Gull", 1] },
+						{ "item": ["item", "Rocksplitter", 1] },
+						{ "item": ["item", "Prickly Bracer", 1] },
+						{ "item": ["item", "Winterclaw", 1] },
+						{ "item": ["item", "Hidden Blade", 1] },
+						{ "item": ["item", "Bright Bracer", 1] },
+						{ "item": ["item", "Humming Razor", 1] },
+						{ "item": ["item", "Sunset Claw", 1] },
+						{ "item": ["item", "Rough Branch", 2] },
+						{ "item": ["item", "Aehre", 1] },
+						{ "item": ["item", "Sneaky Shiv", 1] },
+						{ "item": ["item", "Sonic Spike", 1] },
+						{ "item": ["item", "Shining Bracer", 1] },
+						{ "item": ["item", "Warkeeper", 1] }
 					]
 				},
 				{
