@@ -1,0 +1,3 @@
+[submodule "extern/apjs"]
+	path = extern/apjs
+	url = git@github.com:CodeTriangle/archipelago.js
