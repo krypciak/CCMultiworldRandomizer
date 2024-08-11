@@ -145,10 +145,6 @@ export function patch(plugin: MwRandomizer) {
 					return;
 				}
 
-				if (this.client.status == ap.CONNECTION_STATUS.CONNECTED) {
-					this.client.updateStatus(ap.CLIENT_STATUS.PLAYING);
-				}
-
 				for (let i = this.lastIndexSeen + 1; i < this.client.items.received.length; i++) {
 					let item = this.client.items.received[i];
 					this.addMultiworldItem(item, i);
