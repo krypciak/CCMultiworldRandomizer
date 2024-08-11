@@ -76,4 +76,28 @@ export function patch(plugin: MwRandomizer) {
 			}
 		}
 	});
+
+	sc.NewGamePlusModel.inject({
+		options: { "rhombus-start": true },
+		onReset() {
+			this.options = { "rhombus-start": true },
+			this.active = false;
+		}
+	});
+
+	sc.NewGameToggleSet.inject({
+		updateActiveState(
+			totalPoints: number,
+			newGameCost: number,
+			remainingCredits: number,
+		) {
+			this.parent(totalPoints, newGameCost, remainingCredits);
+
+			for (const button of this.buttons) {
+				if (button.data.id == "rhombus-start") {
+					button.setActive(false);
+				}
+			}
+		}
+	});
 }
