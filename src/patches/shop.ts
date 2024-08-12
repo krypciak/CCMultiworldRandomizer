@@ -167,6 +167,8 @@ export function patch(plugin: MwRandomizer) {
 		updateListEntries(resetCounters: boolean | undefined | null) {
 			this.parent(resetCounters);
 
+			let coinBalance = sc.menu.shopCoinMode ? sc.arena.getTotalArenaCoins() : sc.model.player.credit;
+
 			const shopID = sc.menu.shopID!;
 
 			if (this.shopData == undefined) {
@@ -187,6 +189,8 @@ export function patch(plugin: MwRandomizer) {
 					if (owned) {
 						gui.setActive(false);
 						continue;
+					} else {
+						gui.setActive(coinBalance - sc.menu.getTotalCost() >= gui.price);
 					}
 				}
 
