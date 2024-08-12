@@ -205,6 +205,26 @@ export function patch(plugin: MwRandomizer) {
 					}
 				}
 			}
+		},
+
+		changeCount(direction: 1 | -1) {
+			const gui = this.getActiveElement();
+
+			if (!gui) {
+				return this.parent(direction);
+			}
+
+			if (gui.itemId == undefined) {
+				return this.parent(direction);
+			}
+
+			const quantity = sc.menu.getItemQuantity(gui.itemId, gui.price);
+			if ((quantity == 0 && direction == 1) || (quantity == 1 && direction == -1)) {
+				this.playSound(direction, true);
+				sc.menu.updateCart(gui.itemId, quantity + direction, gui.price);
+				gui.setCountNumber(quantity + direction, quantity == 0);
+				this.updateListEntries();
+			}
 		}
 	});
 
