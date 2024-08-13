@@ -221,6 +221,11 @@ export function patch(plugin: MwRandomizer) {
 					icon = itemInfo.icon;
 				}
 
+				if (icon.startsWith("ap-")) {
+					apIconX -= 1;
+				}
+
+				// console.log(icon);
 				const apIcon = new sc.TextGui(`\\i[${icon}]`);
 				apIcon.setPos(apIconX, 10);
 				this.rewards.addChildGui(apIcon);
