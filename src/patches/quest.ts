@@ -192,7 +192,9 @@ export function patch(plugin: MwRandomizer) {
 				let currentIcon = rewardIcons[i].gui;
 				if ('font' in currentIcon) {
 					this.rewards.hook.removeChildHookByIndex(i);
+				// @ts-ignore
 				} else if (currentIcon.offsetX) {
+					// @ts-ignore
 					switch (currentIcon.offsetX) {
 						case 472: // Experience
 							apIconX += 17;
@@ -207,6 +209,7 @@ export function patch(plugin: MwRandomizer) {
 				}
 			}
 
+			// @ts-ignore
 			let quest = sc.quests.getStaticQuest(questId);
 			let mwQuest = getRawQuestFromQuestId(questId);
 			if (mwQuest == undefined) return;
@@ -275,7 +278,6 @@ export function patch(plugin: MwRandomizer) {
 				);
 
 				if (toHint.length > 0) {
-					// @ts-ignore
 					sc.multiworld.client.locations.scout(ap.CREATE_AS_HINT_MODE.HINT_ONLY_NEW, ...toHint);
 				}
 			}
