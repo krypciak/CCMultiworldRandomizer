@@ -186,6 +186,64 @@ export function patch(plugin: MwRandomizer) {
 		}
 	});
 
+	sc.QuestHubListEntry.inject({
+		init(questName: string, tabIndex: number) {
+			this.parent(questName, tabIndex);
+
+			let rewardIcons = this.rewards.hook.children;
+			let x = 10;
+			for (let i = rewardIcons.length - 1; i >= 1; i--) {
+				let icon = rewardIcons[i].gui;
+				// Remove any vanilla item reward
+				if ('font' in icon) {
+					this.rewards.hook.removeChildHookByIndex(i);
+				} else if (icon.offsetX) {
+					// Offset x by icon margins
+					switch (icon.offsetX) {
+						case 472: // Experience
+							x += 17;
+							break;
+						case 593: // Circuit Points
+							x += 13;
+							break;
+						case 488: // Credits
+							x += 15;
+							break;
+					}
+				}
+			}
+
+			let quest = sc.quests.getStaticQuest(questName);
+			// FIXME: Wet code
+			let mwQuest = quests[questName];
+			if (
+				mwQuest === undefined ||
+				mwQuest.mwids === undefined ||
+				mwQuest.mwids.length === 0 ||
+				sc.multiworld.locationInfo[mwQuest.mwids[0]] === undefined
+			) {
+				return;
+			}
+
+			for (let i = 0; i < mwQuest.mwids.length; i++) {
+				const mwid: number = mwQuest.mwids[i]
+				const item: ap.NetworkItem = sc.multiworld.locationInfo[mwid];
+
+				let icon = "ap-logo";
+				if (sc.multiworld.options.hiddenQuestRewardMode == "show_all" || (!quest.hideRewards)) {
+					const itemInfo = plugin.getItemInfo(item);
+					icon = itemInfo.icon;
+				}
+
+				const apIcon = new sc.TextGui(`\\i[${icon}]`);
+				apIcon.setPos(x, 10);
+				this.rewards.addChildGui(apIcon);
+				x += 16
+			}
+
+		}
+	});
+
 	sc.MultiWorldQuestItemBox = ig.GuiElementBase.extend({
 		gfx: new ig.Image("media/gui/menu.png"),
 		init(
