@@ -219,7 +219,22 @@ export function patch(plugin: MwRandomizer) {
 				const item: ap.NetworkItem = sc.multiworld.locationInfo[mwid];
 
 				let icon = "ap-logo";
-				if (sc.multiworld.options.hiddenQuestRewardMode == "show_all" || !quest.hideRewards) {
+				let useGenericIcon = true;
+				const hiddenQuestRewardMode = sc.multiworld.options.hiddenQuestRewardMode;
+				if (hiddenQuestRewardMode == "show_all") {
+					useGenericIcon = false;
+				} else if (
+					hiddenQuestRewardMode == "hide_all" ||
+					(hiddenQuestRewardMode == "vanilla" && quest.hideRewards)
+				) {
+					if (sc.multiworld.options.hiddenQuestObfuscationLevel == "hide_all") {
+						useGenericIcon = true;
+					}
+				} else {
+					useGenericIcon = false;
+				}
+
+				if (!useGenericIcon) {
 					const itemInfo = plugin.getItemInfo(item);
 					icon = itemInfo.icon;
 				}
