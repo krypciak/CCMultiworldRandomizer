@@ -85,6 +85,13 @@ export function patch(plugin: MwRandomizer) {
 		}
 	});
 
+	sc.NewGamePlusMenu.inject({
+		init() {
+			this.parent();
+			this.button.setActive(sc.newgame.hasAnyOptions());
+		},
+	});
+
 	sc.NewGameToggleSet.inject({
 		updateActiveState(
 			totalPoints: number,
