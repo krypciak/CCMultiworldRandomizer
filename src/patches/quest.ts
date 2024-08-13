@@ -1,6 +1,6 @@
 import * as ap from "archipelago.js";
 import type MwRandomizer from "../plugin";
-import type { RawQuest } from "../item-data.model";
+import { RawQuest, RawQuests } from "../item-data.model";
 import { getElementIconString } from "../utils";
 
 declare global {
@@ -17,7 +17,21 @@ declare global {
 }
 
 export function patch(plugin: MwRandomizer) {
-	let quests = plugin.randoData?.quests;
+	let mwQuests: RawQuests = plugin.randoData?.quests;
+
+	function getRawQuestFromQuestId(questId: string) {
+		let mwQuest = mwQuests[questId];
+		if (
+			mwQuest === undefined ||
+			mwQuest.mwids === undefined ||
+			mwQuest.mwids.length === 0 ||
+			sc.multiworld.locationInfo[mwQuest.mwids[0]] === undefined
+		) {
+			return undefined;
+		}
+		return mwQuest;
+	}
+
 	sc.QuestModel.inject({
 		_collectRewards(quest: sc.Quest) {
 			const previousItemAmounts: Record<sc.ItemID, number> = {};
@@ -40,15 +54,8 @@ export function patch(plugin: MwRandomizer) {
 				}
 			}
 
-			const check = quests?.[quest.id];
-			if (
-				check == undefined ||
-				check.mwids == undefined ||
-				check.mwids.length == 0 ||
-				sc.multiworld.locationInfo[check.mwids[0]] === undefined
-			) {
-				return this.parent(quest);
-			}
+			const check = getRawQuestFromQuestId(quest.id);
+			if (check == undefined) return this.parent(quest);
 
 			sc.multiworld.reallyCheckLocations(check.mwids);
 		},
@@ -102,16 +109,8 @@ export function patch(plugin: MwRandomizer) {
 
 		setQuestRewards(quest: sc.Quest, hideRewards: boolean, finished: boolean) {
 			this.parent(quest, hideRewards, finished);
-			let mwQuest = plugin.randoData?.quests[quest.id];
-			this.mwQuest = mwQuest;
-			if (
-				mwQuest === undefined ||
-				mwQuest.mwids === undefined ||
-				mwQuest.mwids.length === 0 ||
-				sc.multiworld.locationInfo[mwQuest.mwids[0]] === undefined
-			) {
-				return;
-			}
+			let mwQuest = getRawQuestFromQuestId(quest.id);
+			if (mwQuest == undefined) return;
 
 			this.removeChildGui(this.itemsGui);
 			if (this.newItemsGui) {
@@ -147,13 +146,8 @@ export function patch(plugin: MwRandomizer) {
 		_setQuest(quest: sc.Quest) {
 			this.parent(quest);
 
-			let mwQuest = plugin.randoData.quests[quest.id]
-			if (
-				mwQuest === undefined ||
-				sc.multiworld.locationInfo[mwQuest.mwids[0]] === undefined
-			) {
-				return;
-			}
+			let mwQuest = getRawQuestFromQuestId(quest.id);
+			if (mwQuest == undefined) return;
 
 			this.removeChildGui(this.itemsGui);
 			if (this.newItemsGui) {
@@ -187,60 +181,51 @@ export function patch(plugin: MwRandomizer) {
 	});
 
 	sc.QuestHubListEntry.inject({
-		init(questName: string, tabIndex: number) {
-			this.parent(questName, tabIndex);
+		init(questId: string, tabIndex: number) {
+			this.parent(questId, tabIndex);
 
+			// Remove vanilla text icons from the rewards hook, and
+			// offset AP icons' X position with the image icons we're keeping
 			let rewardIcons = this.rewards.hook.children;
-			let x = 10;
+			let apIconX = 10;
 			for (let i = rewardIcons.length - 1; i >= 1; i--) {
-				let icon = rewardIcons[i].gui;
-				// Remove any vanilla item reward
-				if ('font' in icon) {
+				let currentIcon = rewardIcons[i].gui;
+				if ('font' in currentIcon) {
 					this.rewards.hook.removeChildHookByIndex(i);
-				} else if (icon.offsetX) {
-					// Offset x by icon margins
-					switch (icon.offsetX) {
+				} else if (currentIcon.offsetX) {
+					switch (currentIcon.offsetX) {
 						case 472: // Experience
-							x += 17;
+							apIconX += 17;
 							break;
 						case 593: // Circuit Points
-							x += 13;
+							apIconX += 13;
 							break;
 						case 488: // Credits
-							x += 15;
+							apIconX += 15;
 							break;
 					}
 				}
 			}
 
-			let quest = sc.quests.getStaticQuest(questName);
-			// FIXME: Wet code
-			let mwQuest = quests[questName];
-			if (
-				mwQuest === undefined ||
-				mwQuest.mwids === undefined ||
-				mwQuest.mwids.length === 0 ||
-				sc.multiworld.locationInfo[mwQuest.mwids[0]] === undefined
-			) {
-				return;
-			}
+			let quest = sc.quests.getStaticQuest(questId);
+			let mwQuest = getRawQuestFromQuestId(questId);
+			if (mwQuest == undefined) return;
 
 			for (let i = 0; i < mwQuest.mwids.length; i++) {
-				const mwid: number = mwQuest.mwids[i]
+				const mwid: number = mwQuest.mwids[i];
 				const item: ap.NetworkItem = sc.multiworld.locationInfo[mwid];
 
 				let icon = "ap-logo";
-				if (sc.multiworld.options.hiddenQuestRewardMode == "show_all" || (!quest.hideRewards)) {
+				if (sc.multiworld.options.hiddenQuestRewardMode == "show_all" || !quest.hideRewards) {
 					const itemInfo = plugin.getItemInfo(item);
 					icon = itemInfo.icon;
 				}
 
 				const apIcon = new sc.TextGui(`\\i[${icon}]`);
-				apIcon.setPos(x, 10);
+				apIcon.setPos(apIconX, 10);
 				this.rewards.addChildGui(apIcon);
-				x += 16
+				apIconX += 16;
 			}
-
 		}
 	});
 
