@@ -316,6 +316,7 @@ export function patch(plugin: MwRandomizer) {
 
 					if (sc.multiworld.questSettings.hideIcon) {
 						itemInfo.icon = "ap-logo";
+						itemInfo.level = 0;
 					}
 				}
 
