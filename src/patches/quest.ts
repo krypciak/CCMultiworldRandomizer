@@ -218,6 +218,8 @@ export function patch(plugin: MwRandomizer) {
 				const mwid: number = mwQuest.mwids[i];
 				const item: ap.NetworkItem = sc.multiworld.locationInfo[mwid];
 
+				const itemInfo = plugin.getItemInfo(item);
+
 				let icon = "ap-logo";
 				let useGenericIcon = true;
 				const hiddenQuestRewardMode = sc.multiworld.options.hiddenQuestRewardMode;
@@ -227,15 +229,12 @@ export function patch(plugin: MwRandomizer) {
 					hiddenQuestRewardMode == "hide_all" ||
 					(hiddenQuestRewardMode == "vanilla" && quest.hideRewards)
 				) {
-					if (sc.multiworld.options.hiddenQuestObfuscationLevel == "hide_all") {
-						useGenericIcon = true;
-					}
+					useGenericIcon = sc.multiworld.options.hiddenQuestObfuscationLevel == "hide_all";
 				} else {
 					useGenericIcon = false;
 				}
 
 				if (!useGenericIcon) {
-					const itemInfo = plugin.getItemInfo(item);
 					icon = itemInfo.icon;
 				}
 
@@ -244,6 +243,18 @@ export function patch(plugin: MwRandomizer) {
 				}
 
 				const apIcon = new sc.TextGui(`\\i[${icon}]`);
+
+				if (itemInfo.level > 0) {
+					apIcon.setDrawCallback((width: number, height: number) => {
+						sc.MenuHelper.drawLevel(
+							itemInfo.level,
+							width,
+							height,
+							this.gfx,
+							itemInfo.isScalable
+						);
+					});
+				}
 				apIcon.setPos(apIconX, 10);
 				this.rewards.addChildGui(apIcon);
 				apIconX += 16;
