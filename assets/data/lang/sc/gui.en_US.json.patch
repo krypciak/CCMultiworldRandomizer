@@ -1,8 +1,12 @@
 {
 	"labels": {
+		"pause-screen": {
+			"archipelago": "\\i[ap-logo]Archipelago"
+		},
 		"menu": {
 			"menu-titles": {
-				"apConnection": "Archipelago"
+				"apConnection": "Connection Info",
+				"apTextClient": "AP Text Client"
 			}
 		}
 	}

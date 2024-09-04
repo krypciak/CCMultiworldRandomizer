@@ -85,21 +85,36 @@ export function patch(plugin: MwRandomizer) {
 			this.parent(...args);
 
 			this.apConnectionStatusGui = new sc.APConnectionStatusGui();
+			this.apConnectionStatusGui.setPos(3, 3);
 
 			this.apConnectionStatusGui.setAlign(this.versionGui.hook.align.x, this.versionGui.hook.align.y);
 			this.apConnectionStatusGui.setPos(0, this.versionGui.hook.size.y * 2);
 
 			this.versionGui.addChildGui(this.apConnectionStatusGui);
 
-			this.apSettingsButton = new sc.ButtonGui("\\i[ap-logo] Archipelago Settings");
+			this.apSettingsButton = new sc.ButtonGui(ig.lang.get("sc.gui.pause-screen.archipelago"), sc.BUTTON_DEFAULT_WIDTH);
+			this.apSettingsButton.setAlign(ig.GUI_ALIGN.X_RIGHT, ig.GUI_ALIGN.Y_BOTTOM);
 			this.apSettingsButton.setPos(3, 3);
 			this.buttonGroup.addFocusGui(this.apSettingsButton, 1000, 1000 /* makes it unfocusable by gamepad */);
 			this.apSettingsButton.onButtonPress = function () {
-				sc.menu.setDirectMode(true, sc.MENU_SUBMENU.AP_CONNECTION);
+				sc.menu.setDirectMode(true, sc.MENU_SUBMENU.AP_TEXT_CLIENT);
 				sc.model.enterMenu(true);
 			}.bind(this);
 
 			this.addChildGui(this.apSettingsButton);
+		},
+
+		updateButtons(refocus) {
+			this.parent(refocus);
+
+			this.resumeButton.hook.pos.y += 27;
+			this.skipButton.hook.pos.y += 27;
+			this.cancelButton.hook.pos.y += 27;
+			this.toTitleButton.hook.pos.y += 27;
+			this.saveGameButton.hook.pos.y += 27;
+			this.optionsButton.hook.pos.y += 27;
+
+			this.buttonGroup.addFocusGui(this.apSettingsButton, 0, this.buttonGroup.largestIndex.y + 1);
 		},
 	});
 
@@ -298,12 +313,17 @@ export function patch(plugin: MwRandomizer) {
 			this.doStateTransition("DEFAULT");
 		},
 
+		hideMenu() {
+			this.removeObservers();
+			this.exitMenu();
+		},
+
 		exitMenu: function () {
 			this.parent();
 			ig.interact.setBlockDelay(0.1);
-			this.removeObservers();
 			this.doStateTransition("HIDDEN", false);
 
+			sc.menu.buttonInteract.removeButtonGroup(this.buttongroup);
 		},
 
 		onBackButtonPress: function () {

@@ -64,16 +64,33 @@ declare global {
 			}
 		}
 
-		interface APTextClientMenu extends sc.BaseMenu {
-			boxGuiNinepatch: ig.NinePatch;
-			buttongroup: sc.ButtonGroup;
-			boxGui: ig.BoxGui;
+		interface APConsole extends ig.BoxGui {
+			ninepatch: ig.NinePatch;
 			scrollBox: sc.ScrollPane;
 			list: sc.APMessageList;
+		}
+
+		interface APConsoleConstructor extends ImpactClass<APConsole> {
+			new (width: number, height: number, list: sc.APMessageList): APConsole;
+		}
+
+		var APConsole: APConsoleConstructor;
+
+		interface APTextClientMenu extends sc.BaseMenu {
+			list: sc.APMessageList;
+			console: sc.APConsole;
+
+			buttonGroup: sc.ButtonGroup;
+			buttons: {
+				connection: sc.ButtonGui;
+				newGamePlus: sc.ButtonGui;
+			};
 
 			scroll(this: this, amount: number): void;
 			onBackButtonPress(): void;
 			modelChanged(this: this, model: any, message: any, data: any): void;
+
+			_createButton(this: this, menuName: string, index: number, menu: sc.MENU_SUBMENU): sc.ButtonGui;
 		}
 
 		interface APTextClientMenuConstructor extends ImpactClass<sc.APTextClientMenu> {
@@ -128,7 +145,6 @@ export function patch(plugin: MwRandomizer) {
 
 		modelChanged(model, message, data) {
 			if (model == sc.multiworld && message == sc.MULTIWORLD_MSG.PRINT_JSON) {
-				console.log(data);
 				this.addMessage(data);
 			}
 		},
@@ -207,7 +223,7 @@ export function patch(plugin: MwRandomizer) {
 						break;
 					}
 					case "location_id": {
-						let game = sc.multiworld.client.data.games[el.player];
+						let game = sc.multiworld.client.data.players[el.player].game;
 						let locationName = sc.multiworld.client.data.package.get(game)?.location_id_to_name[Number(el.text)];
 						if (locationName == undefined) {
 							locationName = "\\C[dark-red]Unknown\\c[0]";
@@ -233,7 +249,7 @@ export function patch(plugin: MwRandomizer) {
 				formattedText,
 				{ 
 					maxWidth: this.hook.size.x - 8,
-					linePadding: -2,
+					linePadding: -1,
 				}
 			);
 			let msgSize = textBlock.size.y + textBlock.linePadding;
@@ -332,8 +348,21 @@ export function patch(plugin: MwRandomizer) {
 		},
 	});
 
-	sc.APTextClientMenu = sc.BaseMenu.extend({
-		boxGuiNinepatch: new ig.NinePatch("media/gui/menu.png", {
+	sc.APConsole = ig.BoxGui.extend({
+		transitions: {
+			DEFAULT: {
+				state: {},
+				time: 0.2,
+				timeFunction: KEY_SPLINES.EASE,
+			},
+			HIDDEN: {
+				state: { alpha: 0, scaleX: 0.25 },
+				time: 0.2,
+				timeFunction: KEY_SPLINES.LINEAR,
+			}
+		},
+
+		ninepatch: new ig.NinePatch("media/gui/menu.png", {
 			// this is the same as the tasks list gui from the quest details view
 			// i think it works really well here
 			width: 4,
@@ -349,6 +378,24 @@ export function patch(plugin: MwRandomizer) {
 			},
 		}),
 
+		init(width, height, list) {
+			this.parent(width, height, false, this.ninepatch);
+
+			this.list = list;
+
+			this.scrollBox = new sc.ScrollPane(sc.ScrollType.Y_ONLY);
+			this.scrollBox.setSize(width - 2, height);
+			this.scrollBox.hook.align.x = ig.GUI_ALIGN.X_CENTER;
+			this.scrollBox.hook.align.y = ig.GUI_ALIGN.Y_CENTER;
+			this.scrollBox.showTopBar = false;
+			this.scrollBox.showBottomBar = false;
+			this.scrollBox.setContent(this.list);
+
+			this.addChildGui(this.scrollBox);
+		}
+	});
+
+	sc.APTextClientMenu = sc.BaseMenu.extend({
 		init() {
 			window.apmenu = this;
 			this.parent();
@@ -359,32 +406,37 @@ export function patch(plugin: MwRandomizer) {
 			this.hook.size.x = ig.system.width;
 			this.hook.size.y = ig.system.height;
 
-			this.buttongroup = new sc.ButtonGroup();
-			sc.menu.buttonInteract.pushButtonGroup(this.buttongroup);
+			this.buttonGroup = new sc.ButtonGroup();
+			sc.menu.buttonInteract.pushButtonGroup(this.buttonGroup);
 
-			this.buttongroup.addPressCallback(() => {});
+			this.buttonGroup.addPressCallback(() => {});
 
 			sc.menu.pushBackCallback(this.onBackButtonPress.bind(this));
 
-			this.boxGui = new ig.BoxGui(400, 260, false, this.boxGuiNinepatch);
-			this.boxGui.hook.align.x = ig.GUI_ALIGN.X_CENTER;
-			this.boxGui.hook.align.y = ig.GUI_ALIGN.Y_CENTER;
-			this.boxGui.hook.pos.x = -70;
-
-			this.addChildGui(this.boxGui);
-
-			this.scrollBox = new sc.ScrollPane(sc.ScrollType.Y_ONLY);
-			this.scrollBox.setSize(398, 260);
-			this.scrollBox.hook.align.x = ig.GUI_ALIGN.X_CENTER;
-			this.scrollBox.hook.align.y = ig.GUI_ALIGN.Y_CENTER;
-			this.scrollBox.showTopBar = false;
-			this.scrollBox.showBottomBar = false;
-
 			this.list = new sc.APMessageList(398, 258, 40);
-			this.scrollBox.setContent(this.list);
 
-			this.boxGui.addChildGui(this.scrollBox);
+			this.console = new sc.APConsole(400, 260, this.list);
+			this.console.hook.pos.x = 15;
+			this.console.hook.pos.y = 30;
+			this.addChildGui(this.console);
 
+			this.console.doStateTransition("HIDDEN", true);
+			this.doStateTransition("DEFAULT", true);
+
+			this.buttons = {
+				connection: this._createButton("apConnection", 0, sc.MENU_SUBMENU.AP_CONNECTION),
+				newGamePlus: this._createButton("new-game", 1, sc.MENU_SUBMENU.NEW_GAME),
+			};
+
+			this.addChildGui(this.buttons.connection);
+			this.addChildGui(this.buttons.newGamePlus);
+		},
+
+		addObservers() {
+			sc.Model.addObserver(sc.multiworld, this);
+		},
+
+		removeObservers() {
 			sc.Model.addObserver(sc.multiworld, this);
 		},
 
@@ -394,21 +446,27 @@ export function patch(plugin: MwRandomizer) {
 			for (let i = this.list.allMessages.length; i < sc.model.textClient.allMessages.length; i++) {
 				this.list.addMessage(sc.model.textClient.allMessages[i]);
 			}
-			ig.interact.setBlockDelay(0.1);
-			// this.addObservers();
-			this.doStateTransition("DEFAULT");
+			ig.interact.setBlockDelay(0.2);
+			this.console.doStateTransition("DEFAULT");
+			this.buttons.connection.doStateTransition("DEFAULT");
+			this.buttons.newGamePlus.doStateTransition("DEFAULT");
+		},
+
+		hideMenu() {
+			this.removeObservers();
+			this.exitMenu();
 		},
 
 		exitMenu() {
 			this.parent();
-			this.removeObservers();
-			ig.interact.setBlockDelay(0.1);
-			// this.removeObservers();
-			this.doStateTransition("HIDDEN", false);
+			ig.interact.setBlockDelay(0.2);
+			this.console.doStateTransition("HIDDEN");
+			this.buttons.connection.doStateTransition("HIDDEN");
+			this.buttons.newGamePlus.doStateTransition("HIDDEN");
 		},
 
 		scroll(amount) {
-			this.scrollBox.scrollY(amount);
+			this.console.scrollBox.scrollY(amount);
 			this.list.scroll(amount);
 		},
 
@@ -429,8 +487,34 @@ export function patch(plugin: MwRandomizer) {
 		modelChanged(model, message, data) {
 			if (model == sc.multiworld && message == sc.MULTIWORLD_MSG.PRINT_JSON) {
 				this.list.addMessage(data);
-				this.scrollBox.recalculateScrollBars();
+				this.console.scrollBox.recalculateScrollBars();
 			}
+		},
+
+		_createButton(menuName, index, menu) {
+			let button = new sc.ButtonGui(ig.lang.get("sc.gui.menu.menu-titles." + menuName), sc.BUTTON_MENU_WIDTH);
+			this.buttonGroup.addFocusGui(button, 0, index);
+			button.onButtonPress = () => {
+				sc.menu.pushMenu(menu);
+			};
+			button.setAlign(ig.GUI_ALIGN.X_RIGHT, ig.GUI_ALIGN.Y_TOP);
+			button.setPos(15, 30 + index * 26);
+			button.transitions = {
+				DEFAULT: {
+					state: {},
+					time: 0.16 * index,
+					timeFunction: KEY_SPLINES.EASE_OUT,
+				},
+				HIDDEN: {
+					state: { offsetX: - sc.BUTTON_MENU_WIDTH - 10, },
+					time: 0.2,
+					timeFunction: KEY_SPLINES.LINEAR,
+				}
+			};
+
+			button.doStateTransition("HIDDEN", true);
+
+			return button;
 		},
 	});
 
