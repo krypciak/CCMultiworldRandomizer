@@ -54,6 +54,12 @@ declare global {
 
 
 export function patch(plugin: MwRandomizer) {
+	sc.QuickMenuAnalysis.inject({
+		limitCursorPos() {
+			sc.quickmodel.cursor.x = sc.quickmodel.cursor.x.limit(0, ig.system.width);
+			sc.quickmodel.cursor.y = sc.quickmodel.cursor.y.limit(0, ig.system.height);
+		}
+	});
 
 	sc.APConnectionStatusGui = sc.TextGui.extend({
 		init: function () {

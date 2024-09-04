@@ -19,6 +19,10 @@ declare global {
 			itemId: number | undefined;
 			worldGui: sc.TextGui | undefined;
 			slot: string | undefined;
+			lockedGui: sc.TextGui;
+			unlockItem?: number | null;
+
+			showLockedMessage(this: this): void;
 		}
 	}
 }
@@ -67,6 +71,17 @@ export function patch(plugin: MwRandomizer) {
 
 	sc.ShopListMenu.inject({
 		menuGfx: new ig.Image("media/gui/menu.png"),
+
+		init() {
+			this.parent();
+			this.buttongroup?.addPressCallback((rawButton) => {
+				let button = rawButton as unknown as sc.ShopItemButton;
+				if (!button.active) {
+					button.showLockedMessage();
+				}
+			});
+		},
+
 		scrapBuyList(shopItems) {
 			this.parent(shopItems);
 			const shopID = sc.menu.shopID;
@@ -142,6 +157,11 @@ export function patch(plugin: MwRandomizer) {
 				button.textChild.hook.pos.x = 5;
 				button.addChildGui(button.textChild);
 
+				gui.lockedGui = new sc.TextGui("\\i[ap-locked]");
+				gui.lockedGui.hook.align.x = ig.GUI_ALIGN.X_RIGHT;
+				gui.lockedGui.setPos(28, 1);
+				gui.addChildGui(gui.lockedGui);
+
 				const worldGui = new sc.TextGui(itemInfo.player, { "font": sc.fontsystem.tinyFont });
 				worldGui.hook.pos.x = 22;
 				worldGui.hook.pos.y = button.hook.size.y;
@@ -167,6 +187,8 @@ export function patch(plugin: MwRandomizer) {
 		updateListEntries(resetCounters: boolean | undefined | null) {
 			this.parent(resetCounters);
 
+			let coinBalance = sc.menu.shopCoinMode ? sc.arena.getTotalArenaCoins() : sc.model.player.credit;
+
 			const shopID = sc.menu.shopID!;
 
 			if (this.shopData == undefined) {
@@ -187,10 +209,12 @@ export function patch(plugin: MwRandomizer) {
 					if (owned) {
 						gui.setActive(false);
 						continue;
+					} else {
+						gui.setActive(coinBalance - sc.menu.getTotalCost() >= gui.price);
 					}
 				}
 
-				if (gui.active && gui.itemId != undefined) {
+				if (gui.itemId != undefined) {
 					let unlockItem: number | null = null;
 					if (sc.multiworld.options.shopReceiveMode == "itemType") {
 						unlockItem = sc.randoData.shops.unlocks.byId[gui.itemId];
@@ -200,10 +224,41 @@ export function patch(plugin: MwRandomizer) {
 						unlockItem = sc.randoData.shops.unlocks.byShopAndId[shopID][gui.itemId];
 					}
 
+					gui.unlockItem = unlockItem;
+
 					if (unlockItem != null) {
-						gui.setActive(sc.multiworld.receivedItemMap[unlockItem] != undefined);
+						let hasUnlockItem = sc.multiworld.receivedItemMap[unlockItem] != undefined;
+						if (hasUnlockItem) {
+							gui.lockedGui.setText("");
+						}
+						gui.setActive(gui.active && hasUnlockItem);
 					}
 				}
+			}
+		},
+
+		changeCount(direction: 1 | -1) {
+			const gui = this.getActiveElement();
+
+			if (!gui) {
+				return this.parent(direction);
+			}
+
+			if (gui.itemId == undefined) {
+				return this.parent(direction);
+			}
+
+			if (!gui.active) {
+				gui.showLockedMessage();
+				return;
+			}
+
+			const quantity = sc.menu.getItemQuantity(gui.itemId, gui.price);
+			if ((quantity == 0 && direction == 1) || (quantity == 1 && direction == -1)) {
+				this.playSound(direction, true);
+				sc.menu.updateCart(gui.itemId, quantity + direction, gui.price);
+				gui.setCountNumber(quantity + direction, quantity == 0);
+				this.updateListEntries();
 			}
 		}
 	});
@@ -225,6 +280,14 @@ export function patch(plugin: MwRandomizer) {
 
 			if (this.worldGui != undefined && this.slot != undefined) {
 				this.worldGui.setText(this.slot);
+			}
+		},
+
+		showLockedMessage() {
+			if (this.unlockItem != null && sc.multiworld.receivedItemMap[this.unlockItem] == undefined) {
+				let itemName = sc.multiworld.gamepackage.item_id_to_name[this.unlockItem];
+				sc.menu.setInfoText(`Collect \\c[3]${itemName}\\c[0] to unlock this slot.`);
+				sc.menu.setBuffText("");
 			}
 		}
 	});
