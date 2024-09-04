@@ -9,6 +9,7 @@ export function patch(plugin: MwRandomizer) {
 			ITEM_SENT: 1,
 			ITEM_RECEIVED: 2,
 			OPTIONS_PRESENT: 3,
+			PRINT_JSON: 4,
 		};
 
 		sc.MultiWorldModel = ig.GameAddon.extend({
@@ -375,6 +376,10 @@ export function patch(plugin: MwRandomizer) {
 					for (const [offset, itemInfo] of packet.items.entries()) {
 						this.addMultiworldItem(itemInfo, index + offset);
 					}
+				});
+
+				this.client.addListener("PrintJSON", (packet) => {
+					sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.PRINT_JSON, packet);
 				});
 
 				this.connectionInfo = info;

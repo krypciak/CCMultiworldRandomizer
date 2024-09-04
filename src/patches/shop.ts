@@ -214,7 +214,7 @@ export function patch(plugin: MwRandomizer) {
 			this.button.textChild.labelGui?.activate();
 
 			if (this.worldGui != undefined && this.slot != undefined) {
-				this.worldGui.setText(`\\c[3]${this.slot}`);
+				this.worldGui.setText(`\\C[orange]${this.slot}`);
 			}
 		},
 

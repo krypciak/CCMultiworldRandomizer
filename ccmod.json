@@ -12,6 +12,7 @@
 		},
 		"dependencies": {
 			"open-world": ">=0.3.2",
-			"nax-ccuilib": ">=1.2.4"
+			"nax-ccuilib": ">=1.2.4",
+			"font-utils": ">=1.2.0"
 		}
 }

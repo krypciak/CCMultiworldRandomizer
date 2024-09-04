@@ -48,6 +48,7 @@ declare global {
 			ITEM_SENT,
 			ITEM_RECEIVED,
 			OPTIONS_PRESENT,
+			PRINT_JSON,
 		}
 
 		interface MultiWorldModel extends ig.GameAddon, sc.Model, ig.Storage.Listener {

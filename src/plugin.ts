@@ -33,7 +33,9 @@ export default class MwRandomizer {
 		}
 	}
 
-	getItemInfo(item: ap.NetworkItem): ItemInfo {
+	getItemInfo(
+		item: { item: number, player: number, flags: ap.ItemFlags | number }
+	): ItemInfo {
 		let gameName: string = sc.multiworld.client.data.players[item.player].game;
 		let gameInfo: ap.GamePackage = sc.multiworld.client.data.package.get(gameName)!;
 		if (gameInfo == undefined || gameInfo.item_id_to_name[item.item] == undefined) {
