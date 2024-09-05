@@ -172,11 +172,8 @@ export function patch(plugin: MwRandomizer) {
 			this.hook.size.y = ig.system.height;
 
 			this.buttongroup = new sc.ButtonGroup();
-			sc.menu.buttonInteract.pushButtonGroup(this.buttongroup);
 
 			this.buttongroup.addPressCallback(() => {});
-
-			sc.menu.pushBackCallback(this.onBackButtonPress.bind(this));
 
 			this.inputList = new ig.GuiElementBase();
 
@@ -309,6 +306,10 @@ export function patch(plugin: MwRandomizer) {
 			this.parent();
 			ig.interact.setBlockDelay(0.1);
 			this.addObservers();
+
+			sc.menu.buttonInteract.pushButtonGroup(this.buttongroup);
+			sc.menu.pushBackCallback(this.onBackButtonPress.bind(this));
+
 			this.msgBox.doStateTransition("DEFAULT");
 			this.doStateTransition("DEFAULT");
 		},

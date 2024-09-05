@@ -407,11 +407,8 @@ export function patch(plugin: MwRandomizer) {
 			this.hook.size.y = ig.system.height;
 
 			this.buttonGroup = new sc.ButtonGroup();
-			sc.menu.buttonInteract.pushButtonGroup(this.buttonGroup);
 
 			this.buttonGroup.addPressCallback(() => {});
-
-			sc.menu.pushBackCallback(this.onBackButtonPress.bind(this));
 
 			this.list = new sc.APMessageList(398, 258, 40);
 
@@ -446,6 +443,12 @@ export function patch(plugin: MwRandomizer) {
 			for (let i = this.list.allMessages.length; i < sc.model.textClient.allMessages.length; i++) {
 				this.list.addMessage(sc.model.textClient.allMessages[i]);
 			}
+
+			if (sc.menu.previousMenu == null) {
+				sc.menu.pushBackCallback(this.onBackButtonPress.bind(this));
+			}
+			sc.menu.buttonInteract.pushButtonGroup(this.buttonGroup);
+
 			ig.interact.setBlockDelay(0.2);
 			this.console.doStateTransition("DEFAULT");
 			this.buttons.connection.doStateTransition("DEFAULT");
@@ -499,14 +502,14 @@ export function patch(plugin: MwRandomizer) {
 			};
 			button.setAlign(ig.GUI_ALIGN.X_RIGHT, ig.GUI_ALIGN.Y_TOP);
 			button.setPos(15, 30 + index * 26);
-			button.transitions = {
+			button.hook.transitions = {
 				DEFAULT: {
 					state: {},
-					time: 0.16 * index,
+					time: 0.16 + 0.04 * index,
 					timeFunction: KEY_SPLINES.EASE_OUT,
 				},
 				HIDDEN: {
-					state: { offsetX: - sc.BUTTON_MENU_WIDTH - 10, },
+					state: { offsetX: - sc.BUTTON_MENU_WIDTH - 15, },
 					time: 0.2,
 					timeFunction: KEY_SPLINES.LINEAR,
 				}
