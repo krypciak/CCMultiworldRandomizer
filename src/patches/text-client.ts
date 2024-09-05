@@ -41,7 +41,9 @@ declare global {
 			getRenderWindowTop(this: this): number;
 			getRenderWindowBottom(this: this): number;
 
-			addMessage(this: this, message: ap.PrintJSONPacket): number;
+			isFollowing(this: this): boolean;
+
+			addMessage(this: this, message: ap.PrintJSONPacket): sc.APMessageList.MessageEntry;
 			scroll(this: this, amount: number): void;
 
 			recalculateRenderWindow(this: this, direction?: number, startIndex?: number): void;
@@ -68,6 +70,8 @@ declare global {
 			ninepatch: ig.NinePatch;
 			scrollBox: sc.ScrollPane;
 			list: sc.APMessageList;
+
+			addMessage(this: this, message: ap.PrintJSONPacket): sc.APMessageList.MessageEntry;
 		}
 
 		interface APConsoleConstructor extends ImpactClass<APConsole> {
@@ -162,7 +166,7 @@ export function patch(plugin: MwRandomizer) {
 			let contentHeight = 0;
 			if (this.allMessages.length > 0) {
 				let message = this.allMessages[this.allMessages.length - 1];
-				contentHeight = message.endPosition + message.textBlock.linePadding;
+				contentHeight = message.endPosition + message.textBlock.linePadding + 5;
 			}
 			this.setSize(width, contentHeight);
 			this.visibleMessages = [];
@@ -176,6 +180,10 @@ export function patch(plugin: MwRandomizer) {
 
 		getRenderWindowBottom() {
 			return this.viewportPos + this.viewportHeight + this.margin;
+		},
+
+		isFollowing() {
+			return this.viewportPos >= this.hook.size.y - this.viewportHeight - 10;
 		},
 
 		addMessage(message) {
@@ -272,7 +280,7 @@ export function patch(plugin: MwRandomizer) {
 					this.visibleMessages.push(entry);
 				}
 
-				return msgSize;
+				return entry;
 			}
 
 			let position = previous.position + previous.textBlock.size.y + previous.textBlock.linePadding;
@@ -286,10 +294,10 @@ export function patch(plugin: MwRandomizer) {
 				this.visibleMessages.push(entry);
 			}
 
-			this.hook.size.y += msgSize;
+			this.hook.size.y = endPosition + textBlock.linePadding + 5;
 
-			// return the amount to scroll.
-			return msgSize;
+			// return the entry.
+			return entry;
 		},
 
 		scroll(amount) {
@@ -392,7 +400,21 @@ export function patch(plugin: MwRandomizer) {
 			this.scrollBox.setContent(this.list);
 
 			this.addChildGui(this.scrollBox);
-		}
+		},
+
+		addMessage(message) {
+			let following = this.list.isFollowing();
+			let entry: sc.APMessageList.MessageEntry = this.list.addMessage(message);
+			this.scrollBox.recalculateScrollBars();
+			if (following) {
+				this.list.scroll(entry.textBlock.size.y);
+				// cannot scroll with textBlock height.
+				// this is because it will not have moved at all, and the scroll function seems to use the current position,
+				// not the destination position.
+				this.scrollBox.setScrollY(this.list.hook.size.y - this.list.viewportHeight);
+			}
+			return entry;
+		},
 	});
 
 	sc.APTextClientMenu = sc.BaseMenu.extend({
@@ -410,7 +432,7 @@ export function patch(plugin: MwRandomizer) {
 
 			this.buttonGroup.addPressCallback(() => {});
 
-			this.list = new sc.APMessageList(398, 258, 40);
+			this.list = new sc.APMessageList(398, 258, 100);
 
 			this.console = new sc.APConsole(400, 260, this.list);
 			this.console.hook.pos.x = 15;
@@ -425,6 +447,11 @@ export function patch(plugin: MwRandomizer) {
 				newGamePlus: this._createButton("new-game", 1, sc.MENU_SUBMENU.NEW_GAME),
 			};
 
+			this.buttons.newGamePlus.onButtonPress = () => {
+				sc.menu.newGameViewMode = true;
+				sc.menu.pushMenu(sc.MENU_SUBMENU.NEW_GAME);
+			};
+
 			this.addChildGui(this.buttons.connection);
 			this.addChildGui(this.buttons.newGamePlus);
 		},
@@ -434,15 +461,16 @@ export function patch(plugin: MwRandomizer) {
 		},
 
 		removeObservers() {
-			sc.Model.addObserver(sc.multiworld, this);
+			sc.Model.removeObserver(sc.multiworld, this);
 		},
 
 		showMenu() {
 			this.parent();
-			this.addObservers();
 			for (let i = this.list.allMessages.length; i < sc.model.textClient.allMessages.length; i++) {
-				this.list.addMessage(sc.model.textClient.allMessages[i]);
+				this.console.addMessage(sc.model.textClient.allMessages[i]);
 			}
+
+			this.addObservers();
 
 			if (sc.menu.previousMenu == null) {
 				sc.menu.pushBackCallback(this.onBackButtonPress.bind(this));
@@ -476,9 +504,14 @@ export function patch(plugin: MwRandomizer) {
 		update() {
 			if (sc.control.menuScrollUp()) {
 				this.scroll(-20);
-			}
-			if (sc.control.menuScrollDown()) {
+			} else if (sc.control.menuScrollDown()) {
 				this.scroll(20);
+			}
+
+			if (sc.control.arenaScrollUp()) {
+				this.scroll(-200 * ig.system.tick);
+			} else if (sc.control.arenaScrollDown()) {
+				this.scroll(200 * ig.system.tick);
 			}
 		},
 
@@ -489,8 +522,7 @@ export function patch(plugin: MwRandomizer) {
 
 		modelChanged(model, message, data) {
 			if (model == sc.multiworld && message == sc.MULTIWORLD_MSG.PRINT_JSON) {
-				this.list.addMessage(data);
-				this.console.scrollBox.recalculateScrollBars();
+				this.console.addMessage(data);
 			}
 		},
 

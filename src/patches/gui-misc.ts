@@ -253,6 +253,10 @@ export function patch(plugin: MwRandomizer) {
 			this.content.addChildGui(this.buttonHolder);
 			this.content.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_CENTER);
 
+			if (sc.multiworld.client.status != ap.CONNECTION_STATUS.DISCONNECTED) {
+				this.connect.setActive(false);
+			}
+
 			this.content.setSize(
 				Math.max(
 					this.msgBoxBox.hook.size.x,
@@ -343,6 +347,10 @@ export function patch(plugin: MwRandomizer) {
 		},
 
 		modelChanged: function(model: any, msg: number, data: any) {
+			if (model == sc.multiworld && msg == sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED) {
+				this.connect.setActive(data == ap.CONNECTION_STATUS.DISCONNECTED);
+			}
+
 			if (model == sc.multiworld && msg == sc.MULTIWORLD_MSG.OPTIONS_PRESENT) {
 				// if we launched from the title screen that means we are in a context
 				// where we want to put in our login info and start the game.
