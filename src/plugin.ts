@@ -136,6 +136,11 @@ export default class MwRandomizer {
 				this.parent();
 				sc.multiWorldHud = new sc.MultiWorldHudBox();
 				sc.gui.rightHudPanel.addHudBox(sc.multiWorldHud);
+
+				ig.input.bind(ig.KEY.PAGE_DOWN, "pgdn");
+				ig.input.bind(ig.KEY.PAGE_UP, "pgup");
+				ig.input.bind(ig.KEY.HOME, "home");
+				ig.input.bind(ig.KEY.END, "end");
 			},
 
 			gotoTitle(...args) {

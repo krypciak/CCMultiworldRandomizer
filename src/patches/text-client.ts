@@ -71,6 +71,10 @@ declare global {
 			scrollBox: sc.ScrollPane;
 			list: sc.APMessageList;
 
+			scroll(this: this, amount: number): void;
+			scrollToBottom(this: this): void;
+			scrollToTop(this: this): void;
+
 			addMessage(this: this, message: ap.PrintJSONPacket): sc.APMessageList.MessageEntry;
 		}
 
@@ -90,7 +94,6 @@ declare global {
 				newGamePlus: sc.ButtonGui;
 			};
 
-			scroll(this: this, amount: number): void;
 			onBackButtonPress(): void;
 			modelChanged(this: this, model: any, message: any, data: any): void;
 
@@ -183,7 +186,7 @@ export function patch(plugin: MwRandomizer) {
 		},
 
 		isFollowing() {
-			return this.viewportPos >= this.hook.size.y - this.viewportHeight - 10;
+			return this.viewportPos >= this.hook.size.y - this.viewportHeight;
 		},
 
 		addMessage(message) {
@@ -386,6 +389,24 @@ export function patch(plugin: MwRandomizer) {
 			},
 		}),
 
+		scroll(amount) {
+			this.scrollBox.scrollY(amount);
+			this.list.scroll(amount);
+		},
+
+		scrollToBottom() {
+			let target = this.list.hook.size.y - this.list.viewportHeight;
+			this.scrollBox.setScrollY(target);
+			this.list.viewportPos = target;
+			this.list.recalculateRenderWindow(-1);
+		},
+
+		scrollToTop() {
+			this.scrollBox.setScrollY(0);
+			this.list.viewportPos = 0;
+			this.list.recalculateRenderWindow(1);
+		},
+
 		init(width, height, list) {
 			this.parent(width, height, false, this.ninepatch);
 
@@ -496,22 +517,27 @@ export function patch(plugin: MwRandomizer) {
 			this.buttons.newGamePlus.doStateTransition("HIDDEN");
 		},
 
-		scroll(amount) {
-			this.console.scrollBox.scrollY(amount);
-			this.list.scroll(amount);
-		},
-
 		update() {
-			if (sc.control.menuScrollUp()) {
-				this.scroll(-20);
-			} else if (sc.control.menuScrollDown()) {
-				this.scroll(20);
+			// usually this is done by binding, but there's no reason these need to be bound at all
+			if (ig.input.pressed("pgup")) {
+				this.console.scroll(-this.list.viewportHeight + 10);
+			} else if (ig.input.pressed("pgdn")) {
+				this.console.scroll(this.list.viewportHeight - 10);
+			} else if (ig.input.pressed("home")) {
+				this.console.scrollToTop();
+			} else if (ig.input.pressed("end")) {
+				this.console.scrollToBottom();
 			}
 
-			if (sc.control.arenaScrollUp()) {
-				this.scroll(-200 * ig.system.tick);
-			} else if (sc.control.arenaScrollDown()) {
-				this.scroll(200 * ig.system.tick);
+			if (sc.control.menuScrollUp()) {
+				this.console.scroll(-40);
+			} else if (sc.control.menuScrollDown()) {
+				this.console.scroll(40);
+			}
+
+			let axes = ig.gamepad.getAxesValue(ig.AXES.RIGHT_STICK_Y, true)
+			if (Math.abs(axes) != 0) {
+				this.console.scroll(600 * axes * ig.system.tick);
 			}
 		},
 
