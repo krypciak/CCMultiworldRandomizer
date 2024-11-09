@@ -113,6 +113,10 @@
 				"linear": "10",
 				"open": "open10"
 			},
+			"condition": [
+				[ "item", "Heat" ],
+				[ "item", "Cold" ]
+			],
 			"reward": [
 				[ "item", "Perforated Tophat", 5 ]
 			]
@@ -213,7 +217,8 @@
 				[ "region", "open", "open5" ],
 				[ "region", "open", "open9" ],
 				[ "region", "open", "open10" ],
-				[ "region", "open", "open16" ]
+				[ "region", "open", "open16" ],
+				[ "region", "open", "open20" ]
 			],
 			"reward": [
 				[ "item", "The Last Strawhat", 1 ]
@@ -594,6 +599,7 @@
 				"open": "open5"
 			},
 			"condition": [
+				[ "item", "Meteor Shade" ],
 				[ "quest", "Maroon Valley Collect" ],
 				[ "quest", "Maroon Valley Defeat" ],
 				[ "quest", "Maroon Valley Landmarks" ],
@@ -612,7 +618,10 @@
 			"region": {
 				"linear": "11",
 				"open": "open5"
-			}
+			},
+			"condition": [
+				[ "item", "Heat"]
+			]
 		},
 		"Maroon Valley Landmarks": {
 			"questid": "trailblaze-maroon-3",

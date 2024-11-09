@@ -314,6 +314,9 @@
 				"linear": "11",
 				"open": "open5"
 			},
+			"condition": [
+				[ "item", "Green Seed Shade" ]
+			],
 			"slots": [
 				"Salted Peanuts",
 				"Cup o' Coffee",

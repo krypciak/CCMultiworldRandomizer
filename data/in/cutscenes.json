@@ -233,7 +233,7 @@
 				[ "item", "Disc of Insight", 1 ]
 			]
 		},
-		"Rookie Harbor Post Mine": {
+		"Mine Circuit Override": {
 			"location": {
 				"map": "rookie-harbor.expo-space",
 				"mapId": 137,
@@ -247,7 +247,7 @@
 				[ "item", "Circuit Override", 1 ]
 			]
 		},
-		"Rookie Harbor Post Faj'ro": {
+		"Faj'ro Circuit Override": {
 			"location": {
 				"map": "rookie-harbor.expo-space",
 				"mapId": 138,
@@ -261,7 +261,7 @@
 				[ "item", "Circuit Override", 1 ]
 			]
 		},
-		"Rookie Harbor Post Krys'kajo": {
+		"Krys'kajo Circuit Override": {
 			"location": {
 				"map": "rookie-harbor.expo-space",
 				"mapId": 140,
@@ -275,7 +275,7 @@
 				[ "item", "Circuit Override", 2 ]
 			]
 		},
-		"Rookie Harbor Post So'najiz": {
+		"So'najiz Circuit Override": {
 			"location": {
 				"map": "rookie-harbor.expo-space",
 				"mapId": 142,
@@ -289,7 +289,7 @@
 				[ "item", "Circuit Override", 1 ]
 			]
 		},
-		"Rookie Harbor Post Zir'vitar": {
+		"Zir'vitar Circuit Override": {
 			"location": {
 				"map": "rookie-harbor.expo-space",
 				"mapId": 143,
