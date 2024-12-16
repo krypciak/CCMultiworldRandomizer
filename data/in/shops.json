@@ -479,7 +479,7 @@
 			},
 			"region": {
 				"linear": "33",
-				"open": "open16"
+				"open": "open20"
 			},
 			"condition": [
 				[ "var", "canGrind" ]
@@ -501,7 +501,7 @@
 			},
 			"region": {
 				"linear": "33",
-				"open": "open16"
+				"open": "open20"
 			},
 			"condition": [
 				[ "var", "canGrind" ]
@@ -530,7 +530,7 @@
 			},
 			"region": {
 				"linear": "33",
-				"open": "open16"
+				"open": "open20"
 			},
 			"condition": [
 				[ "var", "canGrind" ]
@@ -545,7 +545,7 @@
 			},
 			"region": {
 				"linear": "33",
-				"open": "open16"
+				"open": "open20"
 			},
 			"slots": [
 				"Rising Super Star",
