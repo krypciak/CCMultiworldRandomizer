@@ -4037,6 +4037,10 @@
 					"331": 3235824732
 				},
 				"rhombusWeapons1": {
+					"393": 3235824786,
+					"394": 3235824787,
+					"395": 3235824788,
+					"396": 3235824789,
 					"397": 3235824733,
 					"398": 3235824735,
 					"399": 3235824737,
@@ -4373,6 +4377,10 @@
 					"331": 3235924449
 				},
 				"rhombusWeapons1": {
+					"393": 3235924509,
+					"394": 3235924510,
+					"395": 3235924511,
+					"396": 3235924512,
 					"397": 3235924451,
 					"398": 3235924453,
 					"399": 3235924455,
@@ -5128,6 +5136,18 @@
 		},
 		"3235924450": {
 			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Rhombus Arsenal\\c[0]."
+		},
+		"3235924509": {
+			"en_US": "Unlocks the slot selling \\c[3]Cobalt Goggles\\c[0] in \\c[3]Rhombus Arsenal\\c[0]."
+		},
+		"3235924510": {
+			"en_US": "Unlocks the slot selling \\c[3]Cobalt Edge\\c[0] in \\c[3]Rhombus Arsenal\\c[0]."
+		},
+		"3235924511": {
+			"en_US": "Unlocks the slot selling \\c[3]Cobalt Mail\\c[0] in \\c[3]Rhombus Arsenal\\c[0]."
+		},
+		"3235924512": {
+			"en_US": "Unlocks the slot selling \\c[3]Cobalt Boots\\c[0] in \\c[3]Rhombus Arsenal\\c[0]."
 		},
 		"3235924451": {
 			"en_US": "Unlocks the slot selling \\c[3]Laser Goggles\\c[0] in \\c[3]Rhombus Arsenal\\c[0]."
