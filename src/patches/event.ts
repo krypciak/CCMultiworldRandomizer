@@ -63,7 +63,7 @@ export function patch(plugin: MwRandomizer) {
 			this.goal = settings.goal;
 		},
 		start() {
-			sc.multiworld.client.updateStatus(ap.CLIENT_STATUS.GOAL);
+			sc.multiworld.client.goal();
 		}
 	});
 }

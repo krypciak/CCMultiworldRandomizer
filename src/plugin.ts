@@ -23,69 +23,13 @@ export default class MwRandomizer {
 
 	getColoredStatus(status: string) {
 		switch (status.toLowerCase()) {
-			case ap.CONNECTION_STATUS.CONNECTED.toLowerCase():
+			case sc.MULTIWORLD_CONNECTION_STATUS.CONNECTED.toLowerCase():
 				return `\\c[2]${status}\\c[0]`;
-			case ap.CONNECTION_STATUS.DISCONNECTED.toLowerCase():
+			case sc.MULTIWORLD_CONNECTION_STATUS.DISCONNECTED.toLowerCase():
 				return `\\c[1]${status}\\c[0]`;
-			case ap.CONNECTION_STATUS.WAITING_FOR_AUTH.toLowerCase():
-			case ap.CONNECTION_STATUS.CONNECTING.toLowerCase():
+			case sc.MULTIWORLD_CONNECTION_STATUS.CONNECTING.toLowerCase():
 				return `\\c[3]${status}\\c[0]`;
 		}
-	}
-
-	getItemInfo(
-		item: { item: number, player: number, flags: ap.ItemFlags | number }
-	): ItemInfo {
-		let gameName: string = sc.multiworld.client.data.players[item.player].game;
-		let gameInfo: ap.GamePackage = sc.multiworld.client.data.package.get(gameName)!;
-		if (gameInfo == undefined || gameInfo.item_id_to_name[item.item] == undefined) {
-			gameInfo = sc.multiworld.gamepackage;
-			gameName = "CrossCode";
-		}
-
-		if (gameInfo.item_id_to_name[item.item] == undefined) {
-			return {icon: "ap-item-default", label: "Unknown", player: "Archipelago", level: 0, isScalable: false};
-		}
-
-		const playerId = sc.multiworld.client.players.get(item.player);
-		const playerName = playerId?.alias ?? playerId?.name;
-
-		let label = gameInfo.item_id_to_name[item.item];
-		let player = playerName ? playerName : "Archipelago";
-
-		if (gameName == "CrossCode") {
-			const comboId: number = item.item;
-			let level = 0;
-			let icon = "item-default";
-			let isScalable = false;
-			if (comboId >= sc.multiworld.baseNormalItemId && comboId < sc.multiworld.baseDynamicItemId) {
-				const [itemId, _] = sc.multiworld.getItemDataFromComboId(item.item);
-				const dbEntry = sc.inventory.getItem(itemId);
-				if (dbEntry) {
-					icon = dbEntry.icon + sc.inventory.getRaritySuffix(dbEntry.rarity);
-					isScalable = dbEntry.isScalable || false;
-					if (dbEntry.type == sc.ITEMS_TYPES.EQUIP) {
-						level = dbEntry.level;
-					}
-				}
-			}
-
-			return {icon, label, player, level, isScalable};
-		}
-
-		let cls = "unknown";
-		if (item.flags & ap.ITEM_FLAGS.PROGRESSION) {
-			cls = "prog";
-		} else if (item.flags & ap.ITEM_FLAGS.NEVER_EXCLUDE) {
-			cls = "useful";
-		} else if (item.flags & ap.ITEM_FLAGS.TRAP) {
-			cls = "trap";
-		} else if (item.flags == 0) {
-			cls = "filler";
-		}
-
-		let icon = `ap-item-${cls}`;
-		return {icon, label, player, level: 0, isScalable: false};
 	}
 
 	getGuiString(item: {icon: string; label: string}): string {
@@ -141,14 +85,6 @@ export default class MwRandomizer {
 				ig.input.bind(ig.KEY.PAGE_UP, "pgup");
 				ig.input.bind(ig.KEY.HOME, "home");
 				ig.input.bind(ig.KEY.END, "end");
-			},
-
-			gotoTitle(...args) {
-				if (sc.multiworld.client.status == ap.CONNECTION_STATUS.CONNECTED) {
-					sc.multiworld.client.disconnect();
-					// sc.multiworld.updateConnectionStatus();
-				}
-				this.parent(...args);
 			},
 		});
 	}

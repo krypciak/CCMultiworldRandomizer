@@ -6,7 +6,7 @@ import type * as _ from 'nax-ccuilib/src/headers/nax/input-field.d.ts'
 declare global {
 	namespace sc {
 		interface APConnectionStatusGui extends sc.TextGui, sc.Model.Observer {
-			updateText(this: this): void;
+			updateText(this: this, status: string): void;
 		}
 		interface APConnectionStatusGuiConstructor extends ImpactClass<APConnectionStatusGui> {
 			new (): APConnectionStatusGui;
@@ -64,18 +64,18 @@ export function patch(plugin: MwRandomizer) {
 	sc.APConnectionStatusGui = sc.TextGui.extend({
 		init: function () {
 			this.parent("", {font: sc.fontsystem.tinyFont});
-			this.updateText();
+			this.updateText(sc.multiworld.status);
 
 			sc.Model.addObserver(sc.multiworld, this);
 		},
 
-		updateText: function () {
-			this.setText(`AP: ${plugin.getColoredStatus(sc.multiworld.client.status.toUpperCase())}`);
+		updateText: function (status: string) {
+			this.setText(`AP: ${plugin.getColoredStatus(status)}`);
 		},
 
 		modelChanged(model: any, msg: number, data: any) {
 			if (model == sc.multiworld && msg == sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED) {
-				this.updateText();
+				this.updateText(data);
 			}
 		},
 	});

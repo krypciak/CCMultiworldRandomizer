@@ -4,12 +4,18 @@ import {RawChest} from "../item-data.model";
 
 declare global {
 	namespace ig.ENTITY {
-		interface Chest {
+		interface Chest extends ig.Entity.Settings {
 			mwCheck?: RawChest;
 			analyzeColor: sc.ANALYSIS_COLORS;
 			analyzeLabel: string;
-			rawChest: ap.NetworkItem;
+			rawChest: ap.Item | undefined;
 		}
+
+		interface ChestConstructor extends ImpactClass<Chest> {
+			new(...args: any[]): Chest;
+		}
+
+		var Chest: ChestConstructor;
 	}
 	namespace sc {
 		namespace QUICK_MENU_TYPES {
@@ -98,13 +104,13 @@ export function patch(plugin: MwRandomizer) {
 			}
 
 			let flags = this.rawChest.flags;
-			if (flags & (ap.ITEM_FLAGS.NEVER_EXCLUDE | ap.ITEM_FLAGS.TRAP)) {
+			if (this.rawChest.useful || this.rawChest.trap) {
 				// USEFUL and TRAP items get a blue chest
 				newOffY = 80;
 				layerToAdd = keyLayer;
 				this.analyzeColor = sc.ANALYSIS_COLORS.BLUE;
 				this.analyzeLabel = "Useful";
-			} else if (flags & ap.ITEM_FLAGS.PROGRESSION) {
+			} else if (this.rawChest.progression) {
 				// PROGRESSION items get a green chest
 				newOffY = 136;
 				layerToAdd = masterKeyLayer;
@@ -133,7 +139,7 @@ export function patch(plugin: MwRandomizer) {
 
 		getQuickMenuSettings() {
 			let disabled = this.isOpen || (this.hideManager && this.hideManager.hidden);
-			if (this.mwCheck && this.rawChest) {
+			if (this.rawChest == undefined) {
 				return {
 					type: "Chest",
 					disabled: disabled,
@@ -153,12 +159,7 @@ export function patch(plugin: MwRandomizer) {
 		},
 
 		_reallyOpenUp() {
-			if (
-				this.mwCheck === undefined ||
-				this.mwCheck.mwids === undefined ||
-				this.mwCheck.mwids.length == 0 ||
-				sc.multiworld.locationInfo[this.mwCheck.mwids[0]] === undefined
-			) {
+			if (this.rawChest == undefined) {
 				console.warn("Chest not in logic");
 				return this.parent();
 			}

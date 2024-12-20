@@ -120,7 +120,7 @@ export function patch(plugin: MwRandomizer) {
 
 				button.removeChildGui(button.textChild);
 
-				const itemInfo = plugin.getItemInfo(item);
+				const itemInfo = sc.multiworld.getItemInfo(item);
 
 				gui.apItem = item;
 				gui.slot = itemInfo.player;
@@ -133,10 +133,7 @@ export function patch(plugin: MwRandomizer) {
 					{ autoScroll: false, holdOnReset: false }
 				);
 
-				if (
-					sc.multiworld.locationInfo[mwid] != undefined &&
-					sc.multiworld.locationInfo[mwid].flags & ap.ITEM_FLAGS.PROGRESSION
-				) {
+				if (item.progression) {
 					toHint.push(mwid);
 				}
 

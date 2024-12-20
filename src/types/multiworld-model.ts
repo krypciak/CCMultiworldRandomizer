@@ -1,21 +1,5 @@
-import type {WorldData} from "../item-data.model";
 import type * as ap from "archipelago.js";
-
-export type MultiworldOptions = {
-	vtShadeLock: boolean | number,
-	meteorPassage: boolean,
-	vtSkip: boolean,
-	keyrings: number[],
-	questRando: boolean,
-	hiddenQuestRewardMode: string,
-	hiddenQuestObfuscationLevel: string,
-	questDialogHints: boolean,
-	progressiveChains: Record<string, number[]>
-	shopSendMode?: string,
-	shopReceiveMode?: string,
-	shopDialogHints?: boolean,
-	chestClearanceLevels?: Record<number, string>
-};
+import { ItemInfo } from "../item-data.model";
 
 declare global {
 	namespace ig {
@@ -51,51 +35,109 @@ declare global {
 			PRINT_JSON,
 		}
 
+		var MULTIWORLD_CONNECTION_STATUS: {
+			CONNECTED: string,
+			CONNECTING: string,
+			DISCONNECTED: string,
+		}
+
+		namespace MultiWorldModel {
+			interface ConnectionInformation {
+				url: string;
+				name: string;
+				options: ap.ConnectionOptions;
+			}
+
+			interface LegacyConnectionInformation {
+				hostname: string;
+				port: number;
+				name: string;
+			}
+
+			interface LocalInternalItem {
+				item: number;
+				player: number;
+				flags: number;
+			}
+
+			interface LoginListener {
+				onLoginProgress(message: string): void;
+				onLoginError(message: string): void;
+				onLoginSuccess(message: string): void;
+			}
+
+			export type MultiworldOptions = {
+				vtShadeLock: boolean | number,
+				meteorPassage: boolean,
+				vtSkip: boolean,
+				keyrings: number[],
+				questRando: boolean,
+				hiddenQuestRewardMode: string,
+				hiddenQuestObfuscationLevel: string,
+				questDialogHints: boolean,
+				progressiveChains: Record<string, number[]>
+				shopSendMode?: string,
+				shopReceiveMode?: string,
+				shopDialogHints?: boolean,
+				chestClearanceLevels?: Record<number, string>
+			};
+		}
+
 		interface MultiWorldModel extends ig.GameAddon, sc.Model, ig.Storage.Listener {
 			client: ap.Client;
-			previousConnectionStatus: ap.ConnectionStatus;
 
 			baseId: number;
 			baseNormalItemId: number;
 			dynamicItemAreaOffset: number;
 			baseDynamicItemId: number;
 			numItems: number;
-			gamepackage: ap.GamePackage;
+			// gamepackage: ap.GamePackage;
 
 			questSettings: {
 				hidePlayer: boolean;
 				hideIcon: boolean;
 			};
 
+			status: string;
+
 			lastIndexSeen: number;
-			locationInfo: {[idx: number]: ap.NetworkItem};
-			connectionInfo: ap.ConnectionInformation;
+			slimLocationInfo: {[idx: number]: sc.MultiWorldModel.LocalInternalItem};
+			locationInfo: {[idx: number]: ap.Item};
+			connectionInfo: sc.MultiWorldModel.ConnectionInformation;
 			localCheckedLocations: number[];
 			mode: string;
-			options: MultiworldOptions;
+			options: sc.MultiWorldModel.MultiworldOptions;
 			progressiveChainProgress: Record<number, number>;
 
 			receivedItemMap: Record<number, number>;
 
-			getShopLabelsFromItemData(item: ap.NetworkItem): sc.ListBoxButton.Data;
+			createAPItem(this: this, item: sc.MultiWorldModel.LocalInternalItem, locationId: number): ap.Item;
+			getItemInfo(this: this, item: ap.Item): ItemInfo;
+
+			getShopLabelsFromItemData(item: ap.Item): sc.ListBoxButton.Data;
 
 			getElementConstantFromComboId(this: this, comboId: number): number | null;
 			getItemDataFromComboId(this: this, comboId: number): [itemId: number, quantity: number];
 
-			notifyItemsSent(this: this, items: ap.NetworkItem[]): void;
+			notifyItemsSent(this: this, items: ap.Item[]): void;
 			onLevelLoaded(this: this): void;
-			updateConnectionStatus(this: this): void;
-			addMultiworldItem(this: this, itemInfo: ap.NetworkItem, index: number): void;
-			getLocationInfo(
-				this: this,
-				mode: ap.CreateAsHintMode,
-				locations: number[],
-				callback: (info: ap.NetworkItem[]) => void
-			): void;
+			updateConnectionStatus(this: this, status: keyof typeof sc.MULTIWORLD_CONNECTION_STATUS): void;
+			addMultiworldItem(this: this, itemInfo: ap.Item, index: number): void;
+			// getLocationInfo(
+			// 	this: this,
+			// 	mode: ap.CreateAsHintMode,
+			// 	locations: number[],
+			// 	callback: (info: ap.NetworkItem[]) => void
+			// ): void;
 			storeAllLocationInfo(this: this): Promise<void>;
 			reallyCheckLocation(this: this, mwid: number): Promise<void>;
 			reallyCheckLocations(this: this, mwids: number[]): Promise<void>;
-			login(this: this, connectionInfo: ap.ConnectionInformation): Promise<void>;
+			login(
+				this: this,
+				connectionInfo: Optional<sc.MultiWorldModel.ConnectionInformation>,
+				slot: Optional<ig.SaveSlot>,
+				listener: sc.MultiWorldModel.LoginListener,
+			): Promise<void>;
 		}
 
 		interface MultiWorldModelConstructor extends ImpactClass<MultiWorldModel> {

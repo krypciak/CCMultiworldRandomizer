@@ -11,7 +11,7 @@ export function patch(plugin: MwRandomizer) {
 		player: -1,
 		textGui: null,
 		init: function (item: ItemInfo, receive: boolean) {
-			this.parent(this);
+			this.parent();
 			this.timer = 5;
 
 			let verb = receive ? "Received" : "Sent";
