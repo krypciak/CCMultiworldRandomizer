@@ -37,12 +37,12 @@ export function patch(plugin: MwRandomizer) {
 
 				this.status = sc.MULTIWORLD_CONNECTION_STATUS.DISCONNECTED;
 
-				defineVarProperty(this, "connectionInfo", "mw.connectionInfo");
+				// defineVarProperty(this, "connectionInfo", "mw.connectionInfo");
 				defineVarProperty(this, "lastIndexSeen", "mw.lastIndexSeen");
-				defineVarProperty(this, "slimLocationInfo", "mw.locationInfo");
+				// defineVarProperty(this, "slimLocationInfo", "mw.locationInfo");
 				defineVarProperty(this, "localCheckedLocations", "mw.checkedLocations");
-				defineVarProperty(this, "mode", "mw.mode");
-				defineVarProperty(this, "options", "mw.options");
+				// defineVarProperty(this, "mode", "mw.mode");
+				// defineVarProperty(this, "options", "mw.options");
 				defineVarProperty(this, "progressiveChainProgress", "mw.progressiveChainProgress");
 				defineVarProperty(this, "receivedItemMap", "mw.received");
 
@@ -58,6 +58,10 @@ export function patch(plugin: MwRandomizer) {
 
 				this.client.messages.on("message", (text, nodes) => {
 					sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.PRINT_JSON, nodes);
+				});
+
+				this.client.socket.on("disconnected", () => {
+					this.
 				});
 			},
 
@@ -178,56 +182,6 @@ export function patch(plugin: MwRandomizer) {
 				return [comboId % this.numItems, (comboId / this.numItems + 1) | 0];
 			},
 
-			onStoragePostLoad() {
-				if (this.client.authenticated) {
-					if (this.connectionInfo) {
-						console.log("Reading connection info from save file");
-						this.login(this.connectionInfo);
-					} else {
-						sc.Dialogs.showInfoDialog(
-							"This save file has no Archipelago connection associated with it. " +
-								"To play online, open the pause menu and enter the details.",
-							true,
-						);
-					}
-				}
-			},
-
-			onLevelLoaded() {
-				if (this.lastIndexSeen == null) {
-					this.lastIndexSeen = -1;
-				}
-
-				if (!this.localCheckedLocations) {
-					this.localCheckedLocations = [];
-				}
-
-				if (!this.progressiveChainProgress) {
-					this.progressiveChainProgress = {};
-				}
-
-				if (!this.receivedItemMap) {
-					this.receivedItemMap = {};
-				}
-
-				if (sc.model.isTitle() || ig.game.mapName == "newgame") {
-					return;
-				}
-
-				for (let i = this.lastIndexSeen + 1; i < this.client.items.received.length; i++) {
-					let item = this.client.items.received[i];
-					this.addMultiworldItem(item, i);
-				}
-
-				let area = ig.game.mapName.split(".")[0];
-
-				if (this.client.authenticated) {
-					this.client.storage.prepare("area", "rookie-harbor")
-						.replace(area)
-						.commit(false);
-				}
-			},
-
 			notifyItemsSent(items: ap.Item[]) {
 				for (const item of items) {
 					if (item.sender.slot == this.client.players.self.slot) {
@@ -320,59 +274,83 @@ export function patch(plugin: MwRandomizer) {
 				this.lastIndexSeen = index;
 			},
 
-			// getLocationInfo(mode: ap.CreateAsHintMode, locations: number[], callback: (info: ap.NetworkItem[]) => void) {
-			// 	let listener = (packet: ap.LocationInfoPacket) => {
-			// 		let matches = true;
-			// 		for (let i = 0; i < locations.length; i++) {
-			// 			if (packet.locations[i].location != locations[i]) {
-			// 				matches = false;
-			// 				break;
-			// 			}
-			// 		}
-
-			// 		if (!matches) {
-			// 			return;
-			// 		}
-
-			// 		this.client.removeListener("LocationInfo", listener);
-
-			// 		callback(packet.locations);
-			// 	};
-
-			// 	this.client.addListener('LocationInfo', listener);
-
-			// 	// The following function's definition is broken, so I ignore the error.
-			// 	// @ts-ignore
-			// 	this.client.locations.scout(mode, ...locations);
-			// },
-
 			async storeAllLocationInfo() {
-				// In case the file was loaded on a previous version, we need to add the checked locations too.
-				// This might be able to go away once there is version checking.
-				let toScout: number[] = this.client.room.missingLocations
-					.concat(this.client.room.checkedLocations);
+				let toScout: number[] = this.client.room.allLocations;
 
-				if (!this.locationInfo) {
+				if (this.slimLocationInfo) {
 					this.locationInfo = {};
-				} else {
-					toScout = toScout.filter((mwid: number) => !this.locationInfo.hasOwnProperty(mwid));
-
-					if (toScout.length >= 1) {
-						console.warn(`Need to scout following locations:\n${toScout.join('\n')}`);
+					for (const [mwid, internalItem] of Object.entries(this.slimLocationInfo)) {
+						this.locationInfo[Number(mwid)] = this.createAPItem(internalItem, Number(mwid));
 					}
+					return;
+				} else {
+					this.slimLocationInfo = {};
+					this.locationInfo = {};
+					return this.client.scout(toScout)
+						.then((items: ap.Item[]) => {
+							for (const item of items) {
+								let mwid: number = item.locationId;
+								this.locationInfo[mwid] = item;
+								this.slimLocationInfo[mwid] = {
+									item: item.id,
+									player: item.sender.slot,
+									flags: item.flags,
+								};
+							};
+						});
+				}
+			},
+
+			setVars() {
+				if (this.lastIndexSeen == null) {
+					this.lastIndexSeen = -1;
 				}
 
-				this.client.scout(toScout)
-					.then((items: ap.Item[]) => {
-						for (const item of items) {
-							let mwid: number = item.locationId;
-							this.slimLocationInfo[mwid] = {
-								item: item.id,
-								player: item.sender.slot,
-								flags: item.flags,
-							};
-						};
-					});
+				if (!this.localCheckedLocations) {
+					this.localCheckedLocations = [];
+				}
+
+				if (!this.progressiveChainProgress) {
+					this.progressiveChainProgress = {};
+				}
+
+				if (!this.receivedItemMap) {
+					this.receivedItemMap = {};
+				}
+
+				if (!this.questSettings) {
+					const obfuscationLevel = this.options.hiddenQuestObfuscationLevel;
+
+					this.questSettings = {
+						hidePlayer: obfuscationLevel == "hide_text" || obfuscationLevel == "hide_all",
+						hideIcon: obfuscationLevel == "hide_all"
+					};
+				}
+
+				ig.vars.setDefault("mode", this.mode);
+				ig.vars.setDefault("options", this.options);
+				ig.vars.setDefault("connectionInfo", this.connectionInfo);
+
+				if (!this.locationInfo || !this.slimLocationInfo) {
+					this.storeAllLocationInfo();
+				}
+
+				for (let i = this.lastIndexSeen + 1; i < this.client.items.received.length; i++) {
+					let item = this.client.items.received[i];
+					this.addMultiworldItem(item, i);
+				}
+
+				let area = ig.game.mapName.split(".")[0];
+
+				if (this.client.authenticated) {
+					this.client.storage.prepare("area", "rookie-harbor")
+						.replace(area)
+						.commit(false);
+				}
+			},
+
+			onLevelLoadStart() {
+				this.setVars();
 			},
 
 			async reallyCheckLocation(mwid: number) {
@@ -444,12 +422,12 @@ export function patch(plugin: MwRandomizer) {
 				// listen for room info for data package fetching purposes
 				let roomInfoPromise = this.client.socket.wait("roomInfo");
 
+				let slotData: MultiworldOptions
+
 				// actually try the connection
 				try {
 					listener.onLoginProgress("Connecting to server.");
-					let slotData = await this.client.login<MultiworldOptions>(info.url, info.name, "CrossCode", info.options);
-					this.mode =  slotData.mode;
-					this.options = slotData.options;
+					slotData = await this.client.login<MultiworldOptions>(info.url, info.name, "CrossCode", info.options);
 
 					listener.onLoginProgress("Checking local game package cache.");
 
@@ -477,25 +455,25 @@ export function patch(plugin: MwRandomizer) {
 				} catch (e: any) {
 					console.error(e);
 					listener.onLoginError(e.message);
+
+					// these assignments are not allowed by the typing system
+					// but accessing these values is not allowed outside of this range anyway
+					// paradoxically, i think this is the best way to prevent that from happening
+
+					// @ts-ignore
+					this.mode = undefined;
+					// @ts-ignore
+					this.options = {};
 					return;
 				}
 
 				// if we got through all of that, then we are officially connected
 
+				this.mode = slotData.mode;
+				this.options = slotData.options;
 				this.connectionInfo = info;
 
-				const obfuscationLevel = this.options.hiddenQuestObfuscationLevel;
-
-				this.questSettings = {
-					hidePlayer: obfuscationLevel == "hide_text" || obfuscationLevel == "hide_all",
-					hideIcon: obfuscationLevel == "hide_all"
-				};
-
-				sc.multiworld.onLevelLoaded();
-
-				sc.Model.notifyObserver(sc.multiworld, sc.MULTIWORLD_MSG.OPTIONS_PRESENT);
-
-				this.storeAllLocationInfo();
+				sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.OPTIONS_PRESENT, this.options);
 
 				let checkedSet = new Set(this.client.room.checkedLocations);
 

@@ -1,4 +1,5 @@
-import * as fs from "node:fs";
+// import * as fs from "node:fs";
+const fs = require("fs");
 import * as ap from "archipelago.js";
 
 const CACHE_DIR = ".apcache";

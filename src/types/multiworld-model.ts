@@ -120,7 +120,6 @@ declare global {
 			getItemDataFromComboId(this: this, comboId: number): [itemId: number, quantity: number];
 
 			notifyItemsSent(this: this, items: ap.Item[]): void;
-			onLevelLoaded(this: this): void;
 			updateConnectionStatus(this: this, status: keyof typeof sc.MULTIWORLD_CONNECTION_STATUS): void;
 			addMultiworldItem(this: this, itemInfo: ap.Item, index: number): void;
 			// getLocationInfo(
@@ -130,6 +129,7 @@ declare global {
 			// 	callback: (info: ap.NetworkItem[]) => void
 			// ): void;
 			storeAllLocationInfo(this: this): Promise<void>;
+			setVars(this: this): void;
 			reallyCheckLocation(this: this, mwid: number): Promise<void>;
 			reallyCheckLocations(this: this, mwids: number[]): Promise<void>;
 			login(
