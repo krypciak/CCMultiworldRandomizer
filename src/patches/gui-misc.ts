@@ -22,7 +22,7 @@ declare global {
 		}
 
 		interface APConnectionBox extends sc.BaseMenu, sc.Model.Observer {
-			fields: {key: string; label: string}[];
+			fields: {key: string; label: string, obscure?: boolean}[];
 			textGuis: sc.TextGui[];
 			inputGuis: nax.ccuilib.InputField[];
 			boundExitCallback: () => void;
@@ -118,6 +118,11 @@ export function patch(plugin: MwRandomizer) {
 			{
 				key: "name",
 				label: "Slot Name",
+			},
+			{
+				key: "password",
+				label: "Password",
+				obscure: true,
 			}
 		],
 
@@ -172,7 +177,12 @@ export function patch(plugin: MwRandomizer) {
 				this.inputList.addChildGui(textGui);
 				this.textGuis.push(textGui);
 
-				let inputGui = new nax.ccuilib.InputField(200, textGui.hook.size.y);
+				let inputGui = new nax.ccuilib.InputField(
+					200,
+					textGui.hook.size.y,
+					nax.ccuilib.INPUT_FIELD_TYPE.DEFAULT,
+					this.fields[i].obscure ?? false
+				);
 				this.buttongroup.addFocusGui(inputGui, 0, i);
 				inputGui.hook.pos.y = (textGui.hook.size.y + this.vSpacer) * i;
 				
@@ -180,7 +190,7 @@ export function patch(plugin: MwRandomizer) {
 					//@ts-ignore
 					let prefill = "" + sc.multiworld.connectionInfo[this.fields[i].key];
 					inputGui.value = prefill.split("");
-					inputGui.textChild.setText(prefill);
+					inputGui.setObscure(this.fields[i].obscure ?? false);
 					inputGui.cursorPos = prefill.length;
 					inputGui.cursor.hook.pos.x = inputGui.calculateCursorPos();
 				}
@@ -284,6 +294,7 @@ export function patch(plugin: MwRandomizer) {
 			sc.multiworld.login({
 				game: 'CrossCode',
 				hostname: options.hostname,
+				password: options.password,
 				port: portNumber,
 				items_handling: ap.ITEMS_HANDLING_FLAGS.REMOTE_ALL,
 				name: options.name,
