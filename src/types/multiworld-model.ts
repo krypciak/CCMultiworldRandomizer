@@ -45,7 +45,7 @@ declare global {
 			interface ConnectionInformation {
 				url: string;
 				name: string;
-				options: ap.ConnectionOptions;
+				password: string;
 			}
 
 			interface LegacyConnectionInformation {
@@ -61,9 +61,9 @@ declare global {
 			}
 
 			interface LoginListener {
-				onLoginProgress(message: string): void;
-				onLoginError(message: string): void;
-				onLoginSuccess(message: string): void;
+				onLoginProgress(this: this, message: string): void;
+				onLoginError(this: this, message: string): void;
+				onLoginSuccess(this: this): void;
 			}
 
 			export type MultiworldOptions = {
@@ -80,6 +80,22 @@ declare global {
 				shopReceiveMode?: string,
 				shopDialogHints?: boolean,
 				chestClearanceLevels?: Record<number, string>
+			};
+
+			export type MultiworldVars = {
+				connectionInfo: ConnectionInformation | LegacyConnectionInformation;
+				mode: "open" | "linear";
+				options: MultiworldOptions;
+				lastIndexSeen: number;
+				checkedLocations: number[];
+				progressiveChainProgress: Record<number, number>;
+				locationInfo: Record<number, LocalInternalItem>;
+				dataPackageChecksums: Record<string, string>;
+			};
+
+			export type SlotData = {
+				mode: "open" | "linear";
+				options: MultiworldOptions;
 			};
 		}
 
@@ -135,7 +151,7 @@ declare global {
 			login(
 				this: this,
 				connectionInfo: Optional<sc.MultiWorldModel.ConnectionInformation>,
-				slot: Optional<ig.SaveSlot>,
+				mw: Optional<sc.MultiWorldModel.MultiworldVars>,
 				listener: sc.MultiWorldModel.LoginListener,
 			): Promise<void>;
 		}

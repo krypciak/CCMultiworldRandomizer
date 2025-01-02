@@ -1,7 +1,6 @@
 import { defineVarProperty } from "../utils";
 import { loadDataPackage } from "../package-utils";
 import * as ap from "archipelago.js";
-import { MultiworldOptions } from "../types/multiworld-model";
 import MwRandomizer from "../plugin";
 import { ItemInfo } from "../item-data.model";
 
@@ -61,7 +60,6 @@ export function patch(plugin: MwRandomizer) {
 				});
 
 				this.client.socket.on("disconnected", () => {
-					this.
 				});
 			},
 
@@ -377,15 +375,10 @@ export function patch(plugin: MwRandomizer) {
 				}
 			},
 
-			async login(info, slot, listener) {
-				if (slot && slot.data.vars.storage.mw == undefined) {
-					listener.onLoginError("Refusing to load slot with no previous Archipelago save data.");
-					return;
-				}
-
+			async login(info, mw, listener) {
 				// if no connectionInfo is specified, assume we need to deduce it from the save slot
 				if (!info) {
-					let tmpInfo = slot?.data.vars.storage.mw.connectionInfo;
+					let tmpInfo = mw?.connectionInfo;
 					if (tmpInfo && tmpInfo.hasOwnProperty("hostname")) {
 						listener.onLoginProgress("Migrating save file.");
 
@@ -394,11 +387,9 @@ export function patch(plugin: MwRandomizer) {
 						info = {
 							url: `${legacyInfo.hostname}:${legacyInfo.port}`,
 							name: legacyInfo.name,
-							options: {
-								items: ap.itemsHandlingFlags.all,
-							}
+							password: "",
 						};
-					} else if (info) {
+					} else if (tmpInfo && info) {
 						// if info is defined but does not have "hostname" we assume that it is in the current format
 						info = tmpInfo;
 						listener.onLoginProgress("Using cached connection info.");
@@ -413,7 +404,7 @@ export function patch(plugin: MwRandomizer) {
 
 				// list of expected checksums, loaded from save file
 				// return empty object instead of undefined if slot is null or dataPackage doesn't exist
-				let checksums: Record<string, string> = slot?.data.vars.storage.mw.dataPackageChecksums ?? {};
+				let checksums: Record<string, string> = mw?.dataPackageChecksums ?? {};
 
 				// start loading known data packages in the background
 				// this may constitute wasted effort if connection fails for other reasons
@@ -422,12 +413,20 @@ export function patch(plugin: MwRandomizer) {
 				// listen for room info for data package fetching purposes
 				let roomInfoPromise = this.client.socket.wait("roomInfo");
 
-				let slotData: MultiworldOptions
+				let slotData: sc.MultiWorldModel.SlotData;
 
 				// actually try the connection
 				try {
 					listener.onLoginProgress("Connecting to server.");
-					slotData = await this.client.login<MultiworldOptions>(info.url, info.name, "CrossCode", info.options);
+					slotData = await this.client.login<sc.MultiWorldModel.SlotData>(
+						info.url,
+						info.name,
+						"CrossCode",
+						{
+							items: ap.API.itemsHandlingFlags.all,
+							password: info.password,
+						}
+					);
 
 					listener.onLoginProgress("Checking local game package cache.");
 
@@ -482,6 +481,8 @@ export function patch(plugin: MwRandomizer) {
 						this.reallyCheckLocation(location);
 					}
 				}
+
+				listener.onLoginSuccess();
 			},
 		});
 
