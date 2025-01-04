@@ -378,29 +378,28 @@ export function patch(plugin: MwRandomizer) {
 			async login(info, mw, listener) {
 				// if no connectionInfo is specified, assume we need to deduce it from the save slot
 				if (!info) {
-					let tmpInfo = mw?.connectionInfo;
-					if (tmpInfo && tmpInfo.hasOwnProperty("hostname")) {
-						listener.onLoginProgress("Migrating save file.");
-
-						// the "hostname" property is part of the deprecated format so we use it as an indicator
-						let legacyInfo: sc.MultiWorldModel.LegacyConnectionInformation = tmpInfo;
-						info = {
-							url: `${legacyInfo.hostname}:${legacyInfo.port}`,
-							name: legacyInfo.name,
-							password: "",
-						};
-					} else if (tmpInfo && info) {
-						// if info is defined but does not have "hostname" we assume that it is in the current format
-						info = tmpInfo;
-						listener.onLoginProgress("Using cached connection info.");
-					} else {
+					info = mw?.connectionInfo;
+					if (!info) {
 						// if info is not defined, assume that the data is malformed. report error and return
 						listener.onLoginError("No connection information or slot provided.");
 						return;
 					}
 				}
 
-				info = info!;
+				if (info.hasOwnProperty("hostname")) {
+					listener.onLoginProgress("Migrating save file.");
+
+					// the "hostname" property is part of the deprecated format so we use it as an indicator
+					let legacyInfo = info as sc.MultiWorldModel.LegacyConnectionInformation;
+
+					info = {
+						url: `${legacyInfo.hostname}:${legacyInfo.port}`,
+						name: legacyInfo.name,
+						password: "",
+					};
+				}
+
+				info = info as sc.MultiWorldModel.ConnectionInformation;
 
 				// list of expected checksums, loaded from save file
 				// return empty object instead of undefined if slot is null or dataPackage doesn't exist

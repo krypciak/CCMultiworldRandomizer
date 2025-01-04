@@ -54,6 +54,8 @@ declare global {
 				name: string;
 			}
 
+			type AnyConnectionInformation = ConnectionInformation | LegacyConnectionInformation;
+
 			interface LocalInternalItem {
 				item: number;
 				player: number;
@@ -83,7 +85,7 @@ declare global {
 			};
 
 			export type MultiworldVars = {
-				connectionInfo: ConnectionInformation | LegacyConnectionInformation;
+				connectionInfo: AnyConnectionInformation;
 				mode: "open" | "linear";
 				options: MultiworldOptions;
 				lastIndexSeen: number;
@@ -150,7 +152,7 @@ declare global {
 			reallyCheckLocations(this: this, mwids: number[]): Promise<void>;
 			login(
 				this: this,
-				connectionInfo: Optional<sc.MultiWorldModel.ConnectionInformation>,
+				connectionInfo: Optional<sc.MultiWorldModel.AnyConnectionInformation>,
 				mw: Optional<sc.MultiWorldModel.MultiworldVars>,
 				listener: sc.MultiWorldModel.LoginListener,
 			): Promise<void>;
