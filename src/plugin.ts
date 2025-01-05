@@ -5,6 +5,14 @@ import {applyPatches} from "./patches/index";
 
 import type * as _ from 'nax-module-cache/src/headers/nax/moduleCache.d.ts'
 
+// install a bunch of polyfills for archipelago.js
+require('iterator-polyfill');
+require('array.prototype.tosorted').shim(); // this one imported 87 packages >_>
+import structuredClone from "@ungap/structured-clone";
+if (!("structuredClone" in globalThis)) {
+  globalThis.structuredClone = structuredClone;
+}
+
 declare global {
 	namespace sc {
 		var randoData: WorldData;

@@ -30,8 +30,20 @@ export async function loadGamePackage(game: string, checksum: string): Promise<a
 		});
 }
 
-export async function loadDataPackage(checksums: Record<string, string>): Promise<(ap.GamePackage | null)[]> {
-	return Promise.all(
-		Object.entries(checksums).map(([game, checksum]) => loadGamePackage(game, checksum))
+export async function loadDataPackage(checksums: Record<string, string>): Promise<Record<string, ap.GamePackage>> {
+	let result: Record<string, ap.GamePackage> = {};
+
+	await Promise.all(
+		Object.entries(checksums)
+			.map(async ([game, checksum]) => {
+				return loadGamePackage(game, checksum)
+					.then(pkg => {
+						if (pkg != null) {
+							result[game] = pkg;
+						}
+					});
+			})
 	);
+
+	return result;
 }

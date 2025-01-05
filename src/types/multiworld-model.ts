@@ -127,6 +127,8 @@ declare global {
 			options: sc.MultiWorldModel.MultiworldOptions;
 			progressiveChainProgress: Record<number, number>;
 
+			roomInfo: ap.RoomInfoPacket;
+
 			receivedItemMap: Record<number, number>;
 
 			createAPItem(this: this, item: sc.MultiWorldModel.LocalInternalItem, locationId: number): ap.Item;
@@ -148,6 +150,7 @@ declare global {
 			// ): void;
 			storeAllLocationInfo(this: this): Promise<void>;
 			setVars(this: this): void;
+			unsetVars(this: this): void;
 			reallyCheckLocation(this: this, mwid: number): Promise<void>;
 			reallyCheckLocations(this: this, mwids: number[]): Promise<void>;
 			login(

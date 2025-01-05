@@ -1,5 +1,5 @@
 import { defineVarProperty } from "../utils";
-import { loadDataPackage } from "../package-utils";
+import { saveDataPackage, loadDataPackage } from "../package-utils";
 import * as ap from "archipelago.js";
 import MwRandomizer from "../plugin";
 import { ItemInfo } from "../item-data.model";
@@ -46,7 +46,7 @@ export function patch(plugin: MwRandomizer) {
 				defineVarProperty(this, "receivedItemMap", "mw.received");
 
 				this.client.items.on("itemsReceived", (items: ap.Item[], index: number) => {
-					if (!ig.game.mapName || ig.game.mapName == "newgame") {
+					if (!ig.game.mapName || ig.game.mapName == "newgame" || !this.receivedItemMap) {
 						return;
 					}
 
@@ -325,9 +325,10 @@ export function patch(plugin: MwRandomizer) {
 					};
 				}
 
-				ig.vars.setDefault("mode", this.mode);
-				ig.vars.setDefault("options", this.options);
-				ig.vars.setDefault("connectionInfo", this.connectionInfo);
+				ig.vars.setDefault("mw.mode", this.mode);
+				ig.vars.setDefault("mw.options", this.options);
+				ig.vars.setDefault("mw.connectionInfo", this.connectionInfo);
+				ig.vars.setDefault("mw.dataPackageChecksums", this.roomInfo.datapackage_checksums);
 
 				if (!this.locationInfo || !this.slimLocationInfo) {
 					this.storeAllLocationInfo();
@@ -345,6 +346,22 @@ export function patch(plugin: MwRandomizer) {
 						.replace(area)
 						.commit(false);
 				}
+			},
+
+			unsetVars() {
+				// Lots of errors here, sorry
+
+				// Unset all variables that aren't bound to properties already
+				this.slimLocationInfo = null;
+				this.locationInfo = null;
+				this.connectionInfo = null;
+				this.mode = null;
+				this.options = null;
+
+				this.roomInfo = null;
+
+				this.questSettings = null;
+				this.receivedItemMap = null;
 			},
 
 			onLevelLoadStart() {
@@ -401,13 +418,9 @@ export function patch(plugin: MwRandomizer) {
 
 				info = info as sc.MultiWorldModel.ConnectionInformation;
 
-				// list of expected checksums, loaded from save file
-				// return empty object instead of undefined if slot is null or dataPackage doesn't exist
-				let checksums: Record<string, string> = mw?.dataPackageChecksums ?? {};
-
 				// start loading known data packages in the background
 				// this may constitute wasted effort if connection fails for other reasons
-				let dataPackagePromise = loadDataPackage(checksums);
+				let dataPackagePromise = loadDataPackage(mw?.dataPackageChecksums ?? {});
 
 				// listen for room info for data package fetching purposes
 				let roomInfoPromise = this.client.socket.wait("roomInfo");
@@ -434,9 +447,14 @@ export function patch(plugin: MwRandomizer) {
 					// in either case, we'll need all of that information for the next phase
 					// possibly the room info promise idles forever but there's no way that happens, right?
 					let [gamePackages, roomInfo] = await Promise.all([dataPackagePromise, roomInfoPromise]);
+					this.roomInfo = roomInfo[0];
 					let remoteChecksums = roomInfo[0].datapackage_checksums;
 
-					if (!ig.equal(checksums, remoteChecksums)) {
+					// list of expected checksums, loaded from save file
+					// return empty object instead of undefined if slot is null or dataPackage doesn't exist
+					let checksums: Optional<Record<string, string>> = mw?.dataPackageChecksums;
+
+					if (checksums != undefined && !ig.equal(checksums, remoteChecksums)) {
 						listener.onLoginError("Some game checksums do not match.");
 						return;
 					}
@@ -445,11 +463,13 @@ export function patch(plugin: MwRandomizer) {
 
 					// filter out nulls, but tsserver doesn't understand what i'm doing
 					// @ts-ignore
-					this.client.package.importPackage({ games: gamePackages.filter(pkg => pkg != null) })
+					this.client.package.importPackage({ games: gamePackages })
 
 					// now, get the rest of the game packages from the server
 					// no effort is wasted because ap.js filters out redundant work
-					this.client.package.fetchPackage();
+					await this.client.package.fetchPackage();
+
+					saveDataPackage(this.client.package.exportPackage());
 				} catch (e: any) {
 					console.error(e);
 					listener.onLoginError(e.message);
@@ -473,13 +493,13 @@ export function patch(plugin: MwRandomizer) {
 
 				sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.OPTIONS_PRESENT, this.options);
 
-				let checkedSet = new Set(this.client.room.checkedLocations);
+				// let checkedSet = new Set(this.client.room.checkedLocations);
 
-				for (const location of this.localCheckedLocations) {
-					if (!checkedSet.has(location)) {
-						this.reallyCheckLocation(location);
-					}
-				}
+				// for (const location of this.localCheckedLocations) {
+				// 	if (!checkedSet.has(location)) {
+				// 		this.reallyCheckLocation(location);
+				// 	}
+				// }
 
 				listener.onLoginSuccess();
 			},

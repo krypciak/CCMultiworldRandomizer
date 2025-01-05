@@ -18,7 +18,10 @@
     "ultimate-crosscode-typedefs": "github:krypciak/ultimate-crosscode-typedefs"
   },
   "dependencies": {
+    "@ungap/structured-clone": "^1.2.1",
     "archipelago.js": "2",
-    "esbuild-plugin-polyfill-node": "^0.3.0"
+    "array.prototype.tosorted": "^1.1.4",
+    "esbuild-plugin-polyfill-node": "^0.3.0",
+    "iterator-polyfill": "^1.0.9"
   }
 }

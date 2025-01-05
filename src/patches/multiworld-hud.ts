@@ -122,12 +122,12 @@ export function patch(plugin: MwRandomizer) {
 					msg == sc.MULTIWORLD_MSG.ITEM_SENT &&
 					sc.options.get("show-items")
 				) {
-					this.addEntry(plugin.getItemInfo(data), false);
+					this.addEntry(sc.multiworld.getItemInfo(data), false);
 				} else if (
 					msg == sc.MULTIWORLD_MSG.ITEM_RECEIVED &&
 					sc.options.get("show-items")
 				) {
-					this.addEntry(plugin.getItemInfo(data), true);
+					this.addEntry(sc.multiworld.getItemInfo(data), true);
 				}
 			} else if (model == sc.model) {
 				if (sc.model.isReset()) {
