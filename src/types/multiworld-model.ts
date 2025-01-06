@@ -65,7 +65,7 @@ declare global {
 			interface LoginListener {
 				onLoginProgress(this: this, message: string): void;
 				onLoginError(this: this, message: string): void;
-				onLoginSuccess(this: this): void;
+				onLoginSuccess(this: this, message: string): void;
 			}
 
 			export type MultiworldOptions = {

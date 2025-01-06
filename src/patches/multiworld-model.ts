@@ -429,7 +429,7 @@ export function patch(plugin: MwRandomizer) {
 
 				// actually try the connection
 				try {
-					listener.onLoginProgress("Connecting to server.");
+					listener.onLoginProgress(`Connecting to ${info.url}.`);
 					slotData = await this.client.login<sc.MultiWorldModel.SlotData>(
 						info.url,
 						info.name,
@@ -501,7 +501,7 @@ export function patch(plugin: MwRandomizer) {
 				// 	}
 				// }
 
-				listener.onLoginSuccess();
+				listener.onLoginSuccess(`Connected to ${info.url}.`);
 			},
 		});
 

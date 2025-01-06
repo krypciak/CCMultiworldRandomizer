@@ -71,7 +71,7 @@ export function patch(plugin: MwRandomizer) {
 			this.buttonInteract.addGlobalButton(this.backButton, sc.control.menuBack);
 			this.content.addChildGui(this.backButton);
 
-			this.textChild = new sc.TextGui("Logging in...", { maxWidth: 240 });
+			this.textChild = new sc.TextGui("Logging in.", { maxWidth: 240 });
 			this.content.addChildGui(this.textChild);
 
 			this.msgBox = new sc.CenterBoxGui(this.content);
@@ -118,7 +118,8 @@ export function patch(plugin: MwRandomizer) {
 			this.textChild.setText(`\\c[1]${message}`);
 		},
 
-		onLoginSuccess() {
+		onLoginSuccess(message) {
+			this.textChild.setText(`\\c[2]${message}`);
 			this.hide(true);
 			this.callback();
 		},
@@ -140,6 +141,18 @@ export function patch(plugin: MwRandomizer) {
 				let mw = slot.data.vars.storage.mw;
 				listenerGui.startLogin(mw?.connectionInfo, mw);
 			};
+		}
+	});
+
+	sc.SaveList.inject({
+		onSlotLoadPressed(button: sc.SaveSlotButton) {
+			let callback = this.parent;
+			let listenerGui = new sc.MultiworldLoginListenerGui(() => { callback(button); });
+			ig.gui.addGuiElement(listenerGui);
+			listenerGui.show();
+			let slot: ig.SaveSlot = ig.storage.getSlot(button.slot == -2 ? -1 : button.slot);
+			let mw = slot.data.vars.storage.mw;
+			listenerGui.startLogin(mw?.connectionInfo, mw);
 		}
 	});
 }
