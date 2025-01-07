@@ -10,7 +10,7 @@ import { patch as patchMWHud } from "./multiworld-hud";
 // import { patch as patchQuest } from "./quest";
 // import { patch as patchShop } from "./shop";
 // import { patch as patchNewGame } from "./new-game";
-// import { patch as patchTextClient } from "./text-client";
+import { patch as patchTextClient } from "./text-client";
 import { patch as patchLogin } from "./login";
 
 export function applyPatches(plugin: MwRandomizer) {
@@ -24,6 +24,6 @@ export function applyPatches(plugin: MwRandomizer) {
 	// patchQuest(plugin);
 	// patchShop(plugin);
 	// patchNewGame(plugin);
-	// patchTextClient(plugin);
+	patchTextClient(plugin);
 	patchLogin(plugin);
 }

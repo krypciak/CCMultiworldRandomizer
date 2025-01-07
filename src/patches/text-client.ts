@@ -12,14 +12,14 @@ declare global {
 		var AP_COLOR_MAPPING: Record<ap.ValidJSONColorType, string>;
 
 		enum MENU_SUBMENU {
-			AP_TEXT_CLIENT,
+			AP_TEXT_CLIENT = 300001,
 		}
 
 		interface APTextClientModel extends ig.GameAddon, sc.Model {
-			allMessages: ap.PrintJSONPacket[];
+			allMessages: ap.MessageNode[][];
 			messageTextBlocks: Record<number, sc.APMessageList.MessageEntry[]>;
 
-			addMessage(this: this, message: ap.PrintJSONPacket): void;
+			addMessage(this: this, message: ap.MessageNode[]): void;
 			getMessageTextBlocks(this: this, width: number): sc.APMessageList.MessageEntry[];
 			modelChanged(this: this, model: any, message: any, data: any): void;
 		}
@@ -43,7 +43,7 @@ declare global {
 
 			isFollowing(this: this): boolean;
 
-			addMessage(this: this, message: ap.PrintJSONPacket): sc.APMessageList.MessageEntry;
+			addMessage(this: this, message: ap.MessageNode[]): sc.APMessageList.MessageEntry;
 			scroll(this: this, amount: number): void;
 
 			recalculateRenderWindow(this: this, direction?: number, startIndex?: number): void;
@@ -59,7 +59,7 @@ declare global {
 
 		namespace APMessageList {
 			interface MessageEntry {
-				packet: ap.PrintJSONPacket;
+				packet: ap.MessageNode[];
 				textBlock: ig.TextBlock;
 				position: number;
 				endPosition: number;
@@ -75,7 +75,7 @@ declare global {
 			scrollToBottom(this: this): void;
 			scrollToTop(this: this): void;
 
-			addMessage(this: this, message: ap.PrintJSONPacket): sc.APMessageList.MessageEntry;
+			addMessage(this: this, message: ap.MessageNode[]): sc.APMessageList.MessageEntry;
 		}
 
 		interface APConsoleConstructor extends ImpactClass<APConsole> {
@@ -134,7 +134,9 @@ export function patch(plugin: MwRandomizer) {
 		init() {
 			this.allMessages = [];
 			this.messageTextBlocks = {};
-			sc.Model.addObserver(sc.multiworld, this);
+			sc.multiworld.client.messages.on("message", (_, message) => {
+				this.addMessage(message);
+			});
 		},
 
 		getMessageTextBlocks(width) {
@@ -148,12 +150,6 @@ export function patch(plugin: MwRandomizer) {
 
 		addMessage(message) {
 			this.allMessages.push(message);
-		},
-
-		modelChanged(model, message, data) {
-			if (model == sc.multiworld && message == sc.MULTIWORLD_MSG.PRINT_JSON) {
-				this.addMessage(data);
-			}
 		},
 	});
 
@@ -191,63 +187,25 @@ export function patch(plugin: MwRandomizer) {
 
 		addMessage(message) {
 			let formattedText = "";
-			for (const el of message.data) {
+			for (const el of message) {
 				switch (el.type) {
 					case undefined:
 					case "text":
 						formattedText += el.text;
 						break;
-					case "player_id": {
-						let playerName = sc.multiworld.client.players.get(Number(el.text))?.name;
-						if (playerName == undefined) {
-							playerName = "\\C[dark-red]Unknown\\c[0]";
-						}
-						formattedText += `\\C[pink]${playerName}\\c[0]`;
+					case "player": {
+						formattedText += `\\C[fuchsia]${el.text}\\c[0]`;
 						break;
 					}
-					case "player_name":
-						formattedText += `\\C[pink]${el.text}\\c[0]`;
-						break;
-					case "item_id": {
-						let itemInfo = plugin.getItemInfo({
-							item: Number(el.text),
-							flags: el.flags,
-							player: el.player,
-						});
-
-						formattedText += `\\c[3]${plugin.getGuiString(itemInfo)}\\c[0]`;
+					case "item": {
+						let itemInfo = sc.multiworld.getItemInfo(el.item);
+						formattedText += `\\C[yellow]${plugin.getGuiString(itemInfo)}\\c[0]`;
 						break;
 					}
-					case "item_name": {
-						let game = sc.multiworld.client.data.games[el.player];
-						let itemId = sc.multiworld.client.data.package.get(game)?.item_name_to_id[el.text];
-						if (itemId == undefined) {
-							itemId = 0;
-						}
-						let itemInfo = plugin.getItemInfo({
-							item: itemId,
-							flags: el.flags,
-							player: el.player,
-						});
-
-						formattedText += `\\c[3]${plugin.getGuiString(itemInfo)}\\c[0]`;
-						break;
-					}
-					case "location_id": {
-						let game = sc.multiworld.client.data.players[el.player].game;
-						let locationName = sc.multiworld.client.data.package.get(game)?.location_id_to_name[Number(el.text)];
-						if (locationName == undefined) {
-							locationName = "\\C[dark-red]Unknown\\c[0]";
-						}
-						formattedText += `\\C[olive]${locationName}\\c[0]`;
-						break;
-					}
-					case "location_name":
+					case "location": {
 						formattedText += `\\C[olive]${el.text}\\c[0]`;
 						break;
-					case "entrance_name":
-						formattedText += el.text;
-						break;
+					}
 					case "color": {
 						formattedText += `\\C[${sc.AP_COLOR_MAPPING[el.color]}]${el.text}\\c[0]`;
 						break;

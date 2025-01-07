@@ -36,6 +36,8 @@ export function patch(plugin: MwRandomizer) {
 
 				this.status = sc.MULTIWORLD_CONNECTION_STATUS.DISCONNECTED;
 
+				sc.Model.addObserver(sc.model, this);
+
 				// defineVarProperty(this, "connectionInfo", "mw.connectionInfo");
 				defineVarProperty(this, "lastIndexSeen", "mw.lastIndexSeen");
 				// defineVarProperty(this, "slimLocationInfo", "mw.locationInfo");
@@ -61,6 +63,16 @@ export function patch(plugin: MwRandomizer) {
 
 				this.client.socket.on("disconnected", () => {
 				});
+			},
+
+			modelChanged(model, message, data) {
+				if (
+					model == sc.model &&
+					message == sc.GAME_MODEL_MSG.STATE_CHANGED &&
+					sc.model.currentState == sc.GAME_MODEL_STATE.TITLE
+				) {
+					this.disconnect();
+				}
 			},
 
 			getElementConstantFromComboId(comboId: number): number | null {
@@ -393,6 +405,7 @@ export function patch(plugin: MwRandomizer) {
 			},
 
 			async login(info, mw, listener) {
+				this.updateConnectionStatus(sc.MULTIWORLD_CONNECTION_STATUS.CONNECTING);
 				// if no connectionInfo is specified, assume we need to deduce it from the save slot
 				if (!info) {
 					info = mw?.connectionInfo;
@@ -501,8 +514,15 @@ export function patch(plugin: MwRandomizer) {
 				// 	}
 				// }
 
+				this.updateConnectionStatus(sc.MULTIWORLD_CONNECTION_STATUS.CONNECTED);
 				listener.onLoginSuccess(`Connected to ${info.url}.`);
 			},
+
+			disconnect() {
+				this.client.socket.disconnect();
+				this.unsetVars();
+				this.updateConnectionStatus(sc.MULTIWORLD_CONNECTION_STATUS.DISCONNECTED);
+			}
 		});
 
 		ig.addGameAddon(() => {

@@ -123,12 +123,8 @@ export function patch(plugin: MwRandomizer) {
 
 		fields: [
 			{
-				key: "hostname",
-				label: "Hostname",
-			},
-			{
-				key: "port",
-				label: "Port",
+				key: "url",
+				label: "URL",
 			},
 			{
 				key: "name",
@@ -248,7 +244,7 @@ export function patch(plugin: MwRandomizer) {
 			this.buttongroup.addFocusGui(this.connect, 0, this.fields.length);
 
 			this.disconnect = new sc.ButtonGui("Disconnect", sc.BUTTON_MENU_WIDTH);
-			this.disconnect.onButtonPress = () => { sc.multiworld.client.disconnect() };
+			this.disconnect.onButtonPress = () => { sc.multiworld.disconnect() };
 			this.disconnect.setPos(sc.BUTTON_MENU_WIDTH + this.hSpacer);
 			this.buttongroup.addFocusGui(this.disconnect, 1, this.fields.length);
 
@@ -263,7 +259,7 @@ export function patch(plugin: MwRandomizer) {
 			this.content.addChildGui(this.buttonHolder);
 			this.content.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_CENTER);
 
-			if (sc.multiworld.client.status != ap.CONNECTION_STATUS.DISCONNECTED) {
+			if (sc.multiworld.status != sc.MULTIWORLD_CONNECTION_STATUS.DISCONNECTED) {
 				this.connect.setActive(false);
 			}
 
@@ -290,31 +286,14 @@ export function patch(plugin: MwRandomizer) {
 
 		connectFromInput() {
 			let options = this.getOptions();
-			if (isNaN(options.port as unknown as number)) {
-				sc.Dialogs.showErrorDialog(
-					"Port is not a number",
-					true,
-				);
-				return;
-			}
-			let portNumber = Number(options.port);
+			let listenerGui = new sc.MultiworldLoginListenerGui(() => {});
+			ig.gui.addGuiElement(listenerGui);
+			listenerGui.show();
 
-			if (portNumber > 65535 || portNumber < 1) {
-				sc.Dialogs.showErrorDialog(
-					"Port must be between 1 and 65535",
-					true
-				);
-				return;
-			}
-
-			sc.multiworld.login({
-				game: 'CrossCode',
-				hostname: options.hostname,
-				password: options.password,
-				port: portNumber,
-				items_handling: ap.ITEMS_HANDLING_FLAGS.REMOTE_ALL,
-				name: options.name,
-			});
+			listenerGui.startLogin(
+				options,
+				ig.vars.get("mw")
+			);
 		},
 
 		showMenu: function () {
@@ -359,7 +338,7 @@ export function patch(plugin: MwRandomizer) {
 
 		modelChanged: function(model: any, msg: number, data: any) {
 			if (model == sc.multiworld && msg == sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED) {
-				this.connect.setActive(data == ap.CONNECTION_STATUS.DISCONNECTED);
+				this.connect.setActive(data == sc.MULTIWORLD_CONNECTION_STATUS.DISCONNECTED);
 			}
 
 			if (model == sc.multiworld && msg == sc.MULTIWORLD_MSG.OPTIONS_PRESENT) {

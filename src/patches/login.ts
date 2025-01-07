@@ -55,6 +55,8 @@ export function patch(plugin: MwRandomizer) {
 			this.setSize(ig.system.width, ig.system.height);
 			this.hook.zIndex = 99999999;
 			this.hook.localAlpha = 0.8;
+			this.hook.temporary = true;
+			this.hook.pauseGui = true;
 
 			this.buttonGroup = new sc.ButtonGroup();
 			this.buttonInteract = new ig.ButtonInteractEntry();
@@ -86,6 +88,7 @@ export function patch(plugin: MwRandomizer) {
 
 		show() {
 			ig.interact.addEntry(this.buttonInteract);
+			ig.interact.setBlockDelay(0.2);
 			this.doStateTransition("DEFAULT");
 		},
 
@@ -94,7 +97,7 @@ export function patch(plugin: MwRandomizer) {
 				sc.multiworld.client.socket.disconnect();
 			}
 			ig.interact.removeEntry(this.buttonInteract);
-
+			ig.interact.setBlockDelay(0.2);
 			this.doStateTransition("HIDDEN", false, true);
 		},
 
@@ -125,22 +128,41 @@ export function patch(plugin: MwRandomizer) {
 		},
 	});
 
+	sc.TitleScreenButtonGui.actuallyCheckClearSaveFile = sc.TitleScreenButtonGui.checkClearSaveFile
+
 	sc.TitleScreenButtonGui.inject({
 		init() {
 			this.parent();
 
 			let continueButton: sc.ButtonGui = this.namedButtons["continue"];
 
-			let oldCallback = continueButton.onButtonPress;
+			let oldContinueCallback = continueButton.onButtonPress;
 
 			continueButton.onButtonPress = () => {
-				let listenerGui = new sc.MultiworldLoginListenerGui(oldCallback);
+				let listenerGui = new sc.MultiworldLoginListenerGui(oldContinueCallback);
 				ig.gui.addGuiElement(listenerGui);
 				listenerGui.show();
 				let slot: ig.SaveSlot = ig.storage.getSlot(ig.storage.lastUsedSlot);
 				let mw = slot.data.vars.storage.mw;
 				listenerGui.startLogin(mw?.connectionInfo, mw);
 			};
+
+			// let newGameButton: sc.ButtonGui = this.namedButtons["start"];
+
+			// let oldNewGameCallback = newGameButton.onButtonPress;
+
+			// newGameButton.onButtonPress = () => {
+			// 	let listenerGui = new sc.MultiworldLoginListenerGui(oldContinueCallback);
+			// 	ig.gui.addGuiElement(listenerGui);
+			// 	listenerGui.show();
+			// 	let slot: ig.SaveSlot = ig.storage.getSlot(ig.storage.lastUsedSlot);
+			// 	let mw = slot.data.vars.storage.mw;
+			// 	listenerGui.startLogin(mw?.connectionInfo, mw);
+			// }
+		},
+
+		checkClearSaveFile() {
+			return true;
 		}
 	});
 
@@ -154,5 +176,37 @@ export function patch(plugin: MwRandomizer) {
 			let mw = slot.data.vars.storage.mw;
 			listenerGui.startLogin(mw?.connectionInfo, mw);
 		}
+	});
+
+	sc.NewGameModeSelectDialog.inject({
+		init(callback) {
+			this.parent(callback);
+			let oldCallback = this.buttongroup.pressCallbacks[0];
+
+			this.buttongroup.pressCallbacks[0] = (button) => {
+				this.hide();
+				sc.menu.setDirectMode(true, sc.MENU_SUBMENU.AP_TEXT_CLIENT);
+				sc.menu.exitCallback = () => {
+					// if (sc.multiworld.
+					button.data = 0;
+					oldCallback(button);
+				};
+				sc.model.enterMenu(true);
+			};
+			// 	oldCallback(button);
+			// 	if (button.data == 1) {
+			// 		sc.menu.setDirectMode(true, sc.MENU_SUBMENU.AP_TEXT_CLIENT);
+			// 	}
+			// };
+		}
+	});
+
+	sc.CrossCode.inject({
+		start(startMode, transitionTime) {
+			if (startMode == undefined || startMode == sc.START_MODE.STORY) {
+				startMode = sc.START_MODE.NEW_GAME_PLUS;
+			}
+			this.parent(startMode, transitionTime);
+		},
 	});
 }

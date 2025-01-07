@@ -35,10 +35,10 @@ declare global {
 			PRINT_JSON,
 		}
 
-		var MULTIWORLD_CONNECTION_STATUS: {
-			CONNECTED: string,
-			CONNECTING: string,
-			DISCONNECTED: string,
+		enum MULTIWORLD_CONNECTION_STATUS {
+			CONNECTED = "CONNECTED",
+			CONNECTING = "CONNECTING",
+			DISCONNECTED = "DISCONNECTED",
 		}
 
 		namespace MultiWorldModel {
@@ -101,7 +101,7 @@ declare global {
 			};
 		}
 
-		interface MultiWorldModel extends ig.GameAddon, sc.Model, ig.Storage.Listener {
+		interface MultiWorldModel extends ig.GameAddon, sc.Model, ig.Storage.Listener, sc.Model.Observer {
 			client: ap.Client;
 
 			baseId: number;
@@ -140,7 +140,7 @@ declare global {
 			getItemDataFromComboId(this: this, comboId: number): [itemId: number, quantity: number];
 
 			notifyItemsSent(this: this, items: ap.Item[]): void;
-			updateConnectionStatus(this: this, status: keyof typeof sc.MULTIWORLD_CONNECTION_STATUS): void;
+			updateConnectionStatus(this: this, status: sc.MULTIWORLD_CONNECTION_STATUS): void;
 			addMultiworldItem(this: this, itemInfo: ap.Item, index: number): void;
 			// getLocationInfo(
 			// 	this: this,
@@ -159,6 +159,7 @@ declare global {
 				mw: Optional<sc.MultiWorldModel.MultiworldVars>,
 				listener: sc.MultiWorldModel.LoginListener,
 			): Promise<void>;
+			disconnect(this: this): void;
 		}
 
 		interface MultiWorldModelConstructor extends ImpactClass<MultiWorldModel> {
