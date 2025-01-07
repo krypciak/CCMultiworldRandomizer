@@ -340,19 +340,6 @@ export function patch(plugin: MwRandomizer) {
 			if (model == sc.multiworld && msg == sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED) {
 				this.connect.setActive(data == sc.MULTIWORLD_CONNECTION_STATUS.DISCONNECTED);
 			}
-
-			if (model == sc.multiworld && msg == sc.MULTIWORLD_MSG.OPTIONS_PRESENT) {
-				// if we launched from the title screen that means we are in a context
-				// where we want to put in our login info and start the game.
-				// so we wait for options to be present and when they are, we exit the menu.
-				// exiting the menu automatically activates a bit of code
-				// set by the new game mode select callback.
-				// if connection details are available, it starts the game.
-				if (sc.model.isTitle()) {
-					this.doStateTransition("HIDDEN");
-					sc.menu.pushMenu(sc.MENU_SUBMENU.NEW_GAME);
-				}
-			}
 		},
 
 		onDetach: function () {},

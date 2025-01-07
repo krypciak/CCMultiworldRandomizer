@@ -14,9 +14,9 @@ export function patch(plugin: MwRandomizer) {
 		};
 
 		sc.MULTIWORLD_CONNECTION_STATUS = {
-			CONNECTED: "connected",
-			CONNECTING: "connecting",
-			DISCONNECTED: "disconnected",
+			CONNECTED: "CONNECTED",
+			CONNECTING: "CONNECTING",
+			DISCONNECTED: "DISCONNECTED",
 		};
 
 		sc.MultiWorldModel = ig.GameAddon.extend({
@@ -342,10 +342,6 @@ export function patch(plugin: MwRandomizer) {
 				ig.vars.setDefault("mw.connectionInfo", this.connectionInfo);
 				ig.vars.setDefault("mw.dataPackageChecksums", this.roomInfo.datapackage_checksums);
 
-				if (!this.locationInfo || !this.slimLocationInfo) {
-					this.storeAllLocationInfo();
-				}
-
 				for (let i = this.lastIndexSeen + 1; i < this.client.items.received.length; i++) {
 					let item = this.client.items.received[i];
 					this.addMultiworldItem(item, i);
@@ -405,13 +401,18 @@ export function patch(plugin: MwRandomizer) {
 			},
 
 			async login(info, mw, listener) {
+				const fatalError = (message: string) => {
+					listener.onLoginError(message);
+					this.updateConnectionStatus(sc.MULTIWORLD_CONNECTION_STATUS.DISCONNECTED);
+				}
+
 				this.updateConnectionStatus(sc.MULTIWORLD_CONNECTION_STATUS.CONNECTING);
 				// if no connectionInfo is specified, assume we need to deduce it from the save slot
 				if (!info) {
 					info = mw?.connectionInfo;
 					if (!info) {
 						// if info is not defined, assume that the data is malformed. report error and return
-						listener.onLoginError("No connection information or slot provided.");
+						fatalError("No connection information or slot provided.");
 						return;
 					}
 				}
@@ -468,7 +469,7 @@ export function patch(plugin: MwRandomizer) {
 					let checksums: Optional<Record<string, string>> = mw?.dataPackageChecksums;
 
 					if (checksums != undefined && !ig.equal(checksums, remoteChecksums)) {
-						listener.onLoginError("Some game checksums do not match.");
+						fatalError("Some game checksums do not match.");
 						return;
 					}
 
@@ -484,8 +485,7 @@ export function patch(plugin: MwRandomizer) {
 
 					saveDataPackage(this.client.package.exportPackage());
 				} catch (e: any) {
-					console.error(e);
-					listener.onLoginError(e.message);
+					fatalError(e.message);
 
 					// these assignments are not allowed by the typing system
 					// but accessing these values is not allowed outside of this range anyway
@@ -503,6 +503,12 @@ export function patch(plugin: MwRandomizer) {
 				this.mode = slotData.mode;
 				this.options = slotData.options;
 				this.connectionInfo = info;
+
+				if (mw?.locationInfo) {
+					this.slimLocationInfo = mw?.locationInfo;
+				}
+
+				await this.storeAllLocationInfo();
 
 				sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.OPTIONS_PRESENT, this.options);
 

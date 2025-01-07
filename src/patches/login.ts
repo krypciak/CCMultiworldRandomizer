@@ -128,8 +128,6 @@ export function patch(plugin: MwRandomizer) {
 		},
 	});
 
-	sc.TitleScreenButtonGui.actuallyCheckClearSaveFile = sc.TitleScreenButtonGui.checkClearSaveFile
-
 	sc.TitleScreenButtonGui.inject({
 		init() {
 			this.parent();
@@ -147,23 +145,27 @@ export function patch(plugin: MwRandomizer) {
 				listenerGui.startLogin(mw?.connectionInfo, mw);
 			};
 
-			// let newGameButton: sc.ButtonGui = this.namedButtons["start"];
+			let newGameButton: sc.ButtonGui = this.namedButtons["start"];
 
-			// let oldNewGameCallback = newGameButton.onButtonPress;
+			let oldNewGameCallback = newGameButton.onButtonPress.bind(newGameButton);
 
-			// newGameButton.onButtonPress = () => {
-			// 	let listenerGui = new sc.MultiworldLoginListenerGui(oldContinueCallback);
-			// 	ig.gui.addGuiElement(listenerGui);
-			// 	listenerGui.show();
-			// 	let slot: ig.SaveSlot = ig.storage.getSlot(ig.storage.lastUsedSlot);
-			// 	let mw = slot.data.vars.storage.mw;
-			// 	listenerGui.startLogin(mw?.connectionInfo, mw);
-			// }
+			newGameButton.onButtonPress = () => {
+				sc.menu.setDirectMode(true, sc.MENU_SUBMENU.AP_TEXT_CLIENT);
+				sc.menu.exitCallback = () => {
+					if (sc.multiworld.client.authenticated) {
+						// unset New Game Plus to get the behavior I want from the callback.
+						let oldNGP = this._newGamePlus;
+						this._newGamePlus = false;
+						oldNewGameCallback();
+						this._newGamePlus = oldNGP;
+					}
+				};
+				sc.model.enterMenu(true);
+				if (!this._newGamePlus) {
+					sc.Dialogs.showDialog(ig.lang.get("sc.gui.mw.warnings.no-new-game-plus"), sc.DIALOG_INFO_ICON.WARNING);
+				}
+			}
 		},
-
-		checkClearSaveFile() {
-			return true;
-		}
 	});
 
 	sc.SaveList.inject({
@@ -187,17 +189,13 @@ export function patch(plugin: MwRandomizer) {
 				this.hide();
 				sc.menu.setDirectMode(true, sc.MENU_SUBMENU.AP_TEXT_CLIENT);
 				sc.menu.exitCallback = () => {
-					// if (sc.multiworld.
-					button.data = 0;
-					oldCallback(button);
+					if (sc.multiworld.client.authenticated) {
+						button.data = 0;
+						oldCallback(button);
+					}
 				};
 				sc.model.enterMenu(true);
 			};
-			// 	oldCallback(button);
-			// 	if (button.data == 1) {
-			// 		sc.menu.setDirectMode(true, sc.MENU_SUBMENU.AP_TEXT_CLIENT);
-			// 	}
-			// };
 		}
 	});
 
