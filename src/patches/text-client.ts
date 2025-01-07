@@ -427,7 +427,7 @@ export function patch(plugin: MwRandomizer) {
 			};
 
 			this.buttons.newGamePlus.onButtonPress = () => {
-				sc.menu.newGameViewMode = true;
+				// sc.menu.newGameViewMode = true;
 				sc.menu.pushMenu(sc.MENU_SUBMENU.NEW_GAME);
 			};
 
