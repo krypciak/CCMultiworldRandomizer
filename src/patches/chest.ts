@@ -46,6 +46,7 @@ declare global {
 				active: boolean;
 
 				show(this: this, tooltip: sc.QuickMenuTypesBase): void;
+				hide(this: this): void;
 				setData(this: this, chest: ig.ENTITY.Chest): boolean;
 				alignToBase(this: this, otherHook: ig.GuiHook): void;
 			}
@@ -139,7 +140,7 @@ export function patch(plugin: MwRandomizer) {
 
 		getQuickMenuSettings() {
 			let disabled = this.isOpen || (this.hideManager && this.hideManager.hidden);
-			if (this.rawChest == undefined) {
+			if (this.rawChest != undefined) {
 				return {
 					type: "Chest",
 					disabled: disabled,
