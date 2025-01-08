@@ -534,9 +534,6 @@ export function patch(plugin: MwRandomizer) {
 					this.localCheckedLocations.add(location);
 				}
 
-				this.updateConnectionStatus(sc.MULTIWORLD_CONNECTION_STATUS.CONNECTED);
-				listener.onLoginSuccess(`Connected to ${info.url}.`);
-
 				// if we're in game, then run the level loading code
 				// these functions are intended to complement each other but when login() is called from the title screen,
 				// it needs to wait to be in game before everything can initialize.
@@ -544,6 +541,9 @@ export function patch(plugin: MwRandomizer) {
 				if (sc.model.isGame()) {
 					this.setVars();
 				}
+
+				this.updateConnectionStatus(sc.MULTIWORLD_CONNECTION_STATUS.CONNECTED);
+				listener.onLoginSuccess(`Connected to ${info.url}.`);
 			},
 
 			spawnLoginGui(connectionInfo, mw, callback) {
