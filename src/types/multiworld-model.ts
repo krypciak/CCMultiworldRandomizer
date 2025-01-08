@@ -92,6 +92,7 @@ declare global {
 				checkedLocations: number[];
 				progressiveChainProgress: Record<number, number>;
 				locationInfo: Record<number, LocalInternalItem>;
+				offlineCheckBuffer: number[];
 				dataPackageChecksums: Record<string, string>;
 			};
 
@@ -124,7 +125,8 @@ declare global {
 			slimLocationInfo: {[idx: number]: sc.MultiWorldModel.LocalInternalItem};
 			locationInfo: {[idx: number]: ap.Item};
 			connectionInfo: sc.MultiWorldModel.ConnectionInformation;
-			localCheckedLocations: number[];
+			localCheckedLocations: Set<number>;
+			offlineCheckBuffer: number[];
 			mode: string;
 			options: sc.MultiWorldModel.MultiworldOptions;
 			progressiveChainProgress: Record<number, number>;

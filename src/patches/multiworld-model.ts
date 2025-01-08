@@ -43,11 +43,12 @@ export function patch(plugin: MwRandomizer) {
 				// defineVarProperty(this, "connectionInfo", "mw.connectionInfo");
 				defineVarProperty(this, "lastIndexSeen", "mw.lastIndexSeen");
 				// defineVarProperty(this, "slimLocationInfo", "mw.locationInfo");
-				defineVarProperty(this, "localCheckedLocations", "mw.checkedLocations");
+				// defineVarProperty(this, "localCheckedLocations", "mw.checkedLocations");
 				// defineVarProperty(this, "mode", "mw.mode");
 				// defineVarProperty(this, "options", "mw.options");
 				defineVarProperty(this, "progressiveChainProgress", "mw.progressiveChainProgress");
 				defineVarProperty(this, "receivedItemMap", "mw.received");
+				defineVarProperty(this, "offlineCheckBuffer", "mw.offlineCheckBuffer");
 
 				this.client.items.on("itemsReceived", (items: ap.Item[], index: number) => {
 					if (!ig.game.mapName || ig.game.mapName == "newgame" || !this.receivedItemMap) {
@@ -89,6 +90,7 @@ export function patch(plugin: MwRandomizer) {
 					sc.model.currentState == sc.GAME_MODEL_STATE.TITLE
 				) {
 					this.disconnect();
+					this.unsetVars();
 				}
 			},
 
@@ -333,10 +335,6 @@ export function patch(plugin: MwRandomizer) {
 					this.lastIndexSeen = -1;
 				}
 
-				if (!this.localCheckedLocations) {
-					this.localCheckedLocations = [];
-				}
-
 				if (!this.progressiveChainProgress) {
 					this.progressiveChainProgress = {};
 				}
@@ -354,10 +352,14 @@ export function patch(plugin: MwRandomizer) {
 					};
 				}
 
+				if (!this.offlineCheckBuffer) {
+					this.offlineCheckBuffer = [];
+				}
+
 				ig.vars.setDefault("mw.mode", this.mode);
 				ig.vars.setDefault("mw.options", this.options);
-				ig.vars.setDefault("mw.connectionInfo", this.connectionInfo);
 				ig.vars.setDefault("mw.dataPackageChecksums", this.roomInfo.datapackage_checksums);
+				ig.vars.set("mw.connectionInfo", this.connectionInfo);
 
 				for (let i = this.lastIndexSeen + 1; i < this.client.items.received.length; i++) {
 					let item = this.client.items.received[i];
@@ -367,6 +369,11 @@ export function patch(plugin: MwRandomizer) {
 				let area = ig.game.mapName.split(".")[0];
 
 				if (this.client.authenticated) {
+					if (this.offlineCheckBuffer.length > 0) {
+						this.client.check(...this.offlineCheckBuffer);
+						this.offlineCheckBuffer = [];
+					}
+
 					this.client.storage.prepare("area", "rookie-harbor")
 						.replace(area)
 						.commit(false);
@@ -387,28 +394,28 @@ export function patch(plugin: MwRandomizer) {
 
 				this.questSettings = null;
 				this.receivedItemMap = null;
+				this.offlineCheckBuffer = null;
 			},
 
 			onLevelLoadStart() {
 				this.setVars();
 			},
 
+			onStorageSave(savefile) {
+				savefile.vars.storage.mw.localCheckedLocations = new Array(this.localCheckedLocations.values());
+			},
+
 			async reallyCheckLocation(mwid: number) {
-				this.client.check(mwid);
+				if (this.client.authenticated) {
+					this.client.check(mwid);
+				} else {
+					this.offlineCheckBuffer.push(mwid);
+				}
 
 				let loc = this.locationInfo[mwid];
-				if (loc == undefined) {
-					this.client.scout([mwid])
-						.then(this.notifyItemsSent.bind(this));
-				} else {
-					sc.multiworld.notifyItemsSent([loc]);
-				}
+				sc.multiworld.notifyItemsSent([loc]);
 
-				if (this.localCheckedLocations.indexOf(mwid) >= 0) {
-					return;
-				}
-
-				this.localCheckedLocations.push(mwid);
+				this.localCheckedLocations.add(mwid);
 			},
 
 			async reallyCheckLocations(mwids: number[]) {
@@ -529,16 +536,22 @@ export function patch(plugin: MwRandomizer) {
 
 				sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.OPTIONS_PRESENT, this.options);
 
-				// let checkedSet = new Set(this.client.room.checkedLocations);
+				this.localCheckedLocations = new Set(mw?.checkedLocations);
 
-				// for (const location of this.localCheckedLocations) {
-				// 	if (!checkedSet.has(location)) {
-				// 		this.reallyCheckLocation(location);
-				// 	}
-				// }
+				for (const location of this.client.room.checkedLocations) {
+					this.localCheckedLocations.add(location);
+				}
 
 				this.updateConnectionStatus(sc.MULTIWORLD_CONNECTION_STATUS.CONNECTED);
 				listener.onLoginSuccess(`Connected to ${info.url}.`);
+
+				// if we're in game, then run the level loading code
+				// these functions are intended to complement each other but when login() is called from the title screen,
+				// it needs to wait to be in game before everything can initialize.
+				// but we can also work with this.
+				if (sc.model.isGame()) {
+					this.setVars();
+				}
 			},
 
 			spawnLoginGui(connectionInfo, mw, callback) {
@@ -551,7 +564,6 @@ export function patch(plugin: MwRandomizer) {
 			disconnect(planned) {
 				this.disconnectPlanned = planned ?? true;
 				this.client.socket.disconnect();
-				this.unsetVars();
 			}
 		});
 
