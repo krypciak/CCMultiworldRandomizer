@@ -19,8 +19,8 @@ declare global {
 
 			startLogin(
 				this: this,
-				info: sc.MultiWorldModel.AnyConnectionInformation,
-				mw: sc.MultiWorldModel.MultiworldVars
+				info: Optional<sc.MultiWorldModel.AnyConnectionInformation>,
+				mw: Optional<sc.MultiWorldModel.MultiworldVars>
 			): void;
 
 			onBackButtonPress(this: this): void;
@@ -137,12 +137,9 @@ export function patch(plugin: MwRandomizer) {
 			let oldContinueCallback = continueButton.onButtonPress;
 
 			continueButton.onButtonPress = () => {
-				let listenerGui = new sc.MultiworldLoginListenerGui(oldContinueCallback);
-				ig.gui.addGuiElement(listenerGui);
-				listenerGui.show();
 				let slot: ig.SaveSlot = ig.storage.getSlot(ig.storage.lastUsedSlot);
 				let mw = slot.data.vars.storage.mw;
-				listenerGui.startLogin(mw?.connectionInfo, mw);
+				sc.multiworld.spawnLoginGui(mw?.connectionInfo, mw, oldContinueCallback);
 			};
 
 			let newGameButton: sc.ButtonGui = this.namedButtons["start"];
@@ -171,12 +168,9 @@ export function patch(plugin: MwRandomizer) {
 	sc.SaveList.inject({
 		onSlotLoadPressed(button: sc.SaveSlotButton) {
 			let callback = this.parent;
-			let listenerGui = new sc.MultiworldLoginListenerGui(() => { callback(button); });
-			ig.gui.addGuiElement(listenerGui);
-			listenerGui.show();
 			let slot: ig.SaveSlot = ig.storage.getSlot(button.slot == -2 ? -1 : button.slot);
 			let mw = slot.data.vars.storage.mw;
-			listenerGui.startLogin(mw?.connectionInfo, mw);
+			sc.multiworld.spawnLoginGui(mw?.connectionInfo, mw, () => { callback(button); });
 		}
 	});
 

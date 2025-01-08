@@ -286,14 +286,8 @@ export function patch(plugin: MwRandomizer) {
 
 		connectFromInput() {
 			let options = this.getOptions();
-			let listenerGui = new sc.MultiworldLoginListenerGui(() => {});
-			ig.gui.addGuiElement(listenerGui);
-			listenerGui.show();
 
-			listenerGui.startLogin(
-				options,
-				ig.vars.get("mw")
-			);
+			sc.multiworld.spawnLoginGui(options, ig.vars.get("mw"), () => {});
 		},
 
 		showMenu: function () {

@@ -118,6 +118,8 @@ declare global {
 
 			status: string;
 
+			disconnectPlanned: boolean;
+
 			lastIndexSeen: number;
 			slimLocationInfo: {[idx: number]: sc.MultiWorldModel.LocalInternalItem};
 			locationInfo: {[idx: number]: ap.Item};
@@ -159,7 +161,13 @@ declare global {
 				mw: Optional<sc.MultiWorldModel.MultiworldVars>,
 				listener: sc.MultiWorldModel.LoginListener,
 			): Promise<void>;
-			disconnect(this: this): void;
+			spawnLoginGui(
+				this: this,
+				connectionInfo: Optional<sc.MultiWorldModel.AnyConnectionInformation>,
+				mw: Optional<sc.MultiWorldModel.MultiworldVars>,
+				callback: () => void,
+			): void;
+			disconnect(this: this, planned?: boolean): void;
 		}
 
 		interface MultiWorldModelConstructor extends ImpactClass<MultiWorldModel> {

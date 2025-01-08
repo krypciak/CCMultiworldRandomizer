@@ -34,6 +34,8 @@ export function patch(plugin: MwRandomizer) {
 				ig.storage.register(this);
 				this.numItems = 676;
 
+				this.disconnectPlanned = false;
+
 				this.status = sc.MULTIWORLD_CONNECTION_STATUS.DISCONNECTED;
 
 				sc.Model.addObserver(sc.model, this);
@@ -62,6 +64,21 @@ export function patch(plugin: MwRandomizer) {
 				});
 
 				this.client.socket.on("disconnected", () => {
+					this.updateConnectionStatus(sc.MULTIWORLD_CONNECTION_STATUS.DISCONNECTED);
+
+					if (!this.disconnectPlanned) {
+						sc.Dialogs.showYesNoDialog(
+							ig.lang.get("sc.gui.mw.warnings.unplanned-disconnect"),
+							sc.DIALOG_INFO_ICON.WARNING,
+							(button) => {
+								if (button.data == 0) {
+									this.spawnLoginGui(this.connectionInfo, ig.vars.get("mw"), () => {});
+								}
+							}
+						);
+					}
+
+					this.disconnectPlanned = false;
 				});
 			},
 
@@ -194,7 +211,7 @@ export function patch(plugin: MwRandomizer) {
 
 			notifyItemsSent(items: ap.Item[]) {
 				for (const item of items) {
-					if (item.sender.slot == this.client.players.self.slot) {
+					if (item.receiver.slot == this.client.players.self.slot) {
 						continue;
 					}
 					sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.ITEM_SENT, item);
@@ -524,10 +541,17 @@ export function patch(plugin: MwRandomizer) {
 				listener.onLoginSuccess(`Connected to ${info.url}.`);
 			},
 
-			disconnect() {
+			spawnLoginGui(connectionInfo, mw, callback) {
+				let listenerGui = new sc.MultiworldLoginListenerGui(callback);
+				ig.gui.addGuiElement(listenerGui);
+				listenerGui.show();
+				listenerGui.startLogin(connectionInfo, mw);
+			},
+
+			disconnect(planned) {
+				this.disconnectPlanned = planned ?? true;
 				this.client.socket.disconnect();
 				this.unsetVars();
-				this.updateConnectionStatus(sc.MULTIWORLD_CONNECTION_STATUS.DISCONNECTED);
 			}
 		});
 

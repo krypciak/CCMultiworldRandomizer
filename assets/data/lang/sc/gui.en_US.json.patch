@@ -15,7 +15,9 @@
 		},
 		"mw": {
 			"warnings": {
-				"no-new-game-plus": "It appears that you haven't completed the game before. It is \\c[3]highly recommended\\c[0] to do so before attempting CrossCode randomized. See the CCMultiworldRandomizer setup guide for more information."
+				"no-new-game-plus": "It appears that you haven't completed the game before. It is \\c[3]highly recommended\\c[0] to do so before attempting CrossCode randomized. See the CCMultiworldRandomizer setup guide for more information.",
+				"unplanned-disconnect": "You were unexpectedly disconnected from the server. Would you like to reconnect?"
+
 			}
 		}
 	}
