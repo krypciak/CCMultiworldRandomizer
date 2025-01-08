@@ -431,6 +431,18 @@ export function patch(plugin: MwRandomizer) {
 				sc.menu.pushMenu(sc.MENU_SUBMENU.NEW_GAME);
 			};
 
+			this.buttonGroup.addSelectionCallback(button => {
+				if (button?.description) {
+					sc.menu.setInfoText(button.description);
+					return;
+				}
+				sc.menu.setInfoText("", true);
+			});
+
+			this.buttonGroup.setMouseFocusLostCallback(() => {
+				sc.menu.setInfoText("", true);
+			});
+
 			this.addChildGui(this.buttons.connection);
 			this.addChildGui(this.buttons.newGamePlus);
 		},
@@ -512,6 +524,7 @@ export function patch(plugin: MwRandomizer) {
 
 		_createButton(menuName, index, menu) {
 			let button = new sc.ButtonGui(ig.lang.get("sc.gui.menu.menu-titles." + menuName), sc.BUTTON_MENU_WIDTH);
+			button.description = ig.lang.get("sc.gui.mw.text-client." + menuName);
 			this.buttonGroup.addFocusGui(button, 0, index);
 			button.onButtonPress = () => {
 				sc.menu.pushMenu(menu);

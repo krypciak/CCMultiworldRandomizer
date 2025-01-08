@@ -510,15 +510,7 @@ export function patch(plugin: MwRandomizer) {
 					saveDataPackage(this.client.package.exportPackage());
 				} catch (e: any) {
 					fatalError(e.message);
-
-					// these assignments are not allowed by the typing system
-					// but accessing these values is not allowed outside of this range anyway
-					// paradoxically, i think this is the best way to prevent that from happening
-
-					// @ts-ignore
-					this.mode = undefined;
-					// @ts-ignore
-					this.options = {};
+					this.roomInfo = null;
 					return;
 				}
 

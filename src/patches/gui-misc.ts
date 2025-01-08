@@ -191,6 +191,7 @@ export function patch(plugin: MwRandomizer) {
 					nax.ccuilib.INPUT_FIELD_TYPE.DEFAULT,
 					this.fields[i].obscure ?? false
 				);
+				inputGui.description = ig.lang.get("sc.gui.mw.connection-menu." + this.fields[i].key);
 				this.buttongroup.addFocusGui(inputGui, 0, i);
 				inputGui.hook.pos.y = (textGui.hook.size.y + this.vSpacer) * i;
 				
@@ -241,12 +242,26 @@ export function patch(plugin: MwRandomizer) {
 
 			this.connect = new sc.ButtonGui("Connect", sc.BUTTON_MENU_WIDTH);
 			this.connect.onButtonPress = this.connectFromInput.bind(this);
+			this.connect.description = ig.lang.get("sc.gui.mw.connection-menu.connect");
 			this.buttongroup.addFocusGui(this.connect, 0, this.fields.length);
 
 			this.disconnect = new sc.ButtonGui("Disconnect", sc.BUTTON_MENU_WIDTH);
 			this.disconnect.onButtonPress = () => { sc.multiworld.disconnect() };
 			this.disconnect.setPos(sc.BUTTON_MENU_WIDTH + this.hSpacer);
+			this.disconnect.description = ig.lang.get("sc.gui.mw.connection-menu.disconnect");
 			this.buttongroup.addFocusGui(this.disconnect, 1, this.fields.length);
+
+			this.buttongroup.addSelectionCallback(button => {
+				if (button == undefined) {
+					sc.menu.setInfoText("", true);
+					return;
+				}
+				sc.menu.setInfoText(button.description);
+			});
+
+			this.buttongroup.setMouseFocusLostCallback(() => {
+				sc.menu.setInfoText("", true);
+			});
 
 			this.buttonHolder = new ig.GuiElementBase();
 
