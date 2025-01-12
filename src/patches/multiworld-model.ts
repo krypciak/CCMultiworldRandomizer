@@ -358,7 +358,7 @@ export function patch(plugin: MwRandomizer) {
 
 				ig.vars.setDefault("mw.mode", this.mode);
 				ig.vars.setDefault("mw.options", this.options);
-				ig.vars.setDefault("mw.dataPackageChecksums", this.roomInfo.datapackage_checksums);
+				ig.vars.setDefault("mw.dataPackageChecksums", this.dataPackageChecksums);
 				ig.vars.set("mw.connectionInfo", this.connectionInfo);
 
 				for (let i = this.lastIndexSeen + 1; i < this.client.items.received.length; i++) {
@@ -390,7 +390,7 @@ export function patch(plugin: MwRandomizer) {
 				this.mode = null;
 				this.options = null;
 
-				this.roomInfo = null;
+				this.dataPackageChecksums = null;
 
 				this.questSettings = null;
 				this.receivedItemMap = null;
@@ -485,8 +485,8 @@ export function patch(plugin: MwRandomizer) {
 					// in either case, we'll need all of that information for the next phase
 					// possibly the room info promise idles forever but there's no way that happens, right?
 					let [gamePackages, roomInfo] = await Promise.all([dataPackagePromise, roomInfoPromise]);
-					this.roomInfo = roomInfo[0];
 					let remoteChecksums = roomInfo[0].datapackage_checksums;
+					this.dataPackageChecksums = remoteChecksums;
 
 					// list of expected checksums, loaded from save file
 					// return empty object instead of undefined if slot is null or dataPackage doesn't exist

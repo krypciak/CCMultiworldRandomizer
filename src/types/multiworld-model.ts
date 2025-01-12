@@ -131,8 +131,7 @@ declare global {
 			options: sc.MultiWorldModel.MultiworldOptions;
 			progressiveChainProgress: Record<number, number>;
 
-			roomInfo: ap.RoomInfoPacket;
-
+			dataPackageChecksums: Record<string, string>;
 			receivedItemMap: Record<number, number>;
 
 			createAPItem(this: this, item: sc.MultiWorldModel.LocalInternalItem, locationId: number): ap.Item;
