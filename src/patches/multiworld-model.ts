@@ -123,7 +123,7 @@ export function patch(plugin: MwRandomizer) {
 			getItemInfo(item: ap.Item): ItemInfo {
 				let gameName: string = item.receiver.name;
 				let label = item.name;
-				let player = item.receiver.alias;
+				let player = item.sender.alias;
 
 				if (gameName == "CrossCode") {
 					const comboId: number = item.id;
@@ -546,8 +546,8 @@ export function patch(plugin: MwRandomizer) {
 				listener.onLoginSuccess(`Connected to ${info.url}.`);
 			},
 
-			spawnLoginGui(connectionInfo, mw, callback) {
-				let listenerGui = new sc.MultiworldLoginListenerGui(callback);
+			spawnLoginGui(connectionInfo, mw, successCallback, postEditCallback) {
+				let listenerGui = new sc.MultiworldLoginListenerGui(successCallback, postEditCallback);
 				ig.gui.addGuiElement(listenerGui);
 				listenerGui.show();
 				listenerGui.startLogin(connectionInfo, mw);

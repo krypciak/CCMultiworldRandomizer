@@ -134,6 +134,8 @@ declare global {
 			dataPackageChecksums: Record<string, string>;
 			receivedItemMap: Record<number, number>;
 
+			postEditCallback: Optional<() => void>;
+
 			createAPItem(this: this, item: sc.MultiWorldModel.LocalInternalItem, locationId: number): ap.Item;
 			getItemInfo(this: this, item: ap.Item): ItemInfo;
 
@@ -166,7 +168,8 @@ declare global {
 				this: this,
 				connectionInfo: Optional<sc.MultiWorldModel.AnyConnectionInformation>,
 				mw: Optional<sc.MultiWorldModel.MultiworldVars>,
-				callback: () => void,
+				successCallback: () => void,
+				postEditCallback?: () => void,
 			): void;
 			disconnect(this: this, planned?: boolean): void;
 		}

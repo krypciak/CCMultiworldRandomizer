@@ -307,6 +307,9 @@ export function patch(plugin: MwRandomizer) {
 
 		showMenu: function () {
 			this.parent();
+
+			sc.menu.moveLeaSprite(0, 0, sc.MENU_LEA_STATE.HIDDEN);
+
 			ig.interact.setBlockDelay(0.1);
 			this.addObservers();
 
@@ -324,6 +327,16 @@ export function patch(plugin: MwRandomizer) {
 
 		exitMenu: function () {
 			this.parent();
+
+			if (sc.multiworld.postEditCallback) {
+				sc.multiworld.postEditCallback = null;
+
+				if (!sc.multiworld.client.socket.connected) {
+					// @ts-ignore
+					sc.multiworld.connectionInfo = null;
+				}
+			}
+
 			ig.interact.setBlockDelay(0.1);
 			this.doStateTransition("HIDDEN", false);
 
