@@ -120,10 +120,10 @@ export function patch(plugin: MwRandomizer) {
 				);
 			},
 
-			getItemInfo(item: ap.Item): ItemInfo {
+			getItemInfo(item, nameIsSender): ItemInfo {
 				let gameName: string = item.receiver.name;
 				let label = item.name;
-				let player = item.sender.alias;
+				let player = nameIsSender ? item.sender.alias : item.receiver.alias;
 
 				if (gameName == "CrossCode") {
 					const comboId: number = item.id;

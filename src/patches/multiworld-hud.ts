@@ -127,7 +127,7 @@ export function patch(plugin: MwRandomizer) {
 					msg == sc.MULTIWORLD_MSG.ITEM_RECEIVED &&
 					sc.options.get("show-items")
 				) {
-					this.addEntry(sc.multiworld.getItemInfo(data), true);
+					this.addEntry(sc.multiworld.getItemInfo(data, true), true);
 				}
 			} else if (model == sc.model) {
 				if (sc.model.isReset()) {

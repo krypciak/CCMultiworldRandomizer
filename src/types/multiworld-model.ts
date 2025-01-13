@@ -137,7 +137,7 @@ declare global {
 			postEditCallback: Optional<() => void>;
 
 			createAPItem(this: this, item: sc.MultiWorldModel.LocalInternalItem, locationId: number): ap.Item;
-			getItemInfo(this: this, item: ap.Item): ItemInfo;
+			getItemInfo(this: this, item: ap.Item, nameIsSender?: boolean): ItemInfo;
 
 			getShopLabelsFromItemData(item: ap.Item): sc.ListBoxButton.Data;
 
