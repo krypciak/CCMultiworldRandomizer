@@ -2,6 +2,7 @@
 	"cutscenes": {
 		"Talatu Introductions": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path-8",
 				"mapId": 458,
 				"path": ".settings.event.21.accepted.6" 
@@ -16,6 +17,7 @@
 		},
 		"Schneider Guild Pass": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path-3-1",
 				"mapId": 452,
 				"path": ".settings.npcStates.1.event.10" 
@@ -30,6 +32,7 @@
 		},
 		"Bergen Mine Guard": {
 			"location": {
+				"area": "bergen",
 				"map": "bergen.mine-entrance",
 				"mapId": 316,
 				"path": ".settings.npcStates.0.event.quest.2.thenStep.17" 
@@ -44,6 +47,7 @@
 		},
 		"Bergen Mine Detector": {
 			"location": {
+				"area": "bergen",
 				"map": "bergen.inner-questhub-1",
 				"mapId": 135,
 				"path": ".settings.npcStates.1.event.quest.5"
@@ -58,6 +62,7 @@
 		},
 		"Temple Mine Shade Statue": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.g.expo-space",
 				"mapId": 136,
 				"path": ".settings.event.20" 
@@ -75,6 +80,7 @@
 		},
 		"Old Dojo Shade Statue": {
 			"location": {
+				"area": "forest",
 				"map": "forest.interior.expo-space",
 				"mapId": 137,
 				"path": ".settings.event.19" 
@@ -89,6 +95,7 @@
 		},
 		"Vagabond Dojo Key": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-04-vaga",
 				"mapId": 447,
 				"path": ".settings.npcStates.2.event.quest.12"
@@ -103,6 +110,7 @@
 		},
 		"Faj'ro Shade Statue": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat.dng-expo-space",
 				"mapId": 136,
 				"path": ".settings.event.20" 
@@ -117,6 +125,7 @@
 		},
 		"Ba'kii Kum Cursed Man": {
 			"location": {
+				"area": "heat-village",
 				"map": "heat-village.interior.house-2",
 				"mapId": 31,
 				"path": ".settings.npcStates.0.event.4.0.9" 
@@ -134,6 +143,7 @@
 		},
 		"Ba'kii Eldress": {
 			"location": {
+				"area": "heat-village",
 				"map": "heat-village.interior.quest-hub-og",
 				"mapId": 112,
 				"path": ".settings.npcStates.1.event.quest.3.accepted.3" 
@@ -148,6 +158,7 @@
 		},
 		"Ba'kii Shade Statue": {
 			"location": {
+				"area": "heat-village",
 				"map": "heat-village.special.expo-space",
 				"mapId": 136,
 				"path": ".settings.event.17" 
@@ -162,6 +173,7 @@
 		},
 		"Zir'vitar Shade Statue": {
 			"location": {
+				"area": "shock-dng",
 				"map": "jungle.dng.shock-expo-space",
 				"mapId": 136,
 				"path": ".settings.event.20" 
@@ -179,6 +191,7 @@
 		},
 		"Krys'kajo Shade Statue": {
 			"location": {
+				"area": "tree-dng",
 				"map": "jungle.dng.tree-expo-space",
 				"mapId": 60,
 				"path": ".settings.event.25" 
@@ -193,6 +206,7 @@
 		},
 		"So'najiz Shade Statue": {
 			"location": {
+				"area": "wave-dng",
 				"map": "jungle.dng.wave-expo-space",
 				"mapId": 136,
 				"path": ".settings.event.20" 
@@ -207,6 +221,7 @@
 		},
 		"Rookie Harbor Shade": {
 			"location": {
+				"area": "rookie-harbor",
 				"map": "rookie-harbor.expo-space",
 				"mapId": 136,
 				"path": ".settings.event.74" 
@@ -221,6 +236,7 @@
 		},
 		"Rookie Harbor Disc": {
 			"location": {
+				"area": "rookie-harbor",
 				"map": "rookie-harbor.expo-space",
 				"mapId": 136,
 				"path": ".settings.event.90" 
@@ -235,6 +251,7 @@
 		},
 		"Mine Circuit Override": {
 			"location": {
+				"area": "cold-dng",
 				"map": "rookie-harbor.expo-space",
 				"mapId": 137,
 				"path": ".settings.event.36" 
@@ -249,6 +266,7 @@
 		},
 		"Faj'ro Circuit Override": {
 			"location": {
+				"area": "heat-dng",
 				"map": "rookie-harbor.expo-space",
 				"mapId": 138,
 				"path": ".settings.event.35" 
@@ -263,6 +281,7 @@
 		},
 		"Krys'kajo Circuit Override": {
 			"location": {
+				"area": "tree-dng",
 				"map": "rookie-harbor.expo-space",
 				"mapId": 140,
 				"path": ".settings.event.36" 
@@ -277,6 +296,7 @@
 		},
 		"So'najiz Circuit Override": {
 			"location": {
+				"area": "wave-dng",
 				"map": "rookie-harbor.expo-space",
 				"mapId": 142,
 				"path": ".settings.event.14" 
@@ -291,6 +311,7 @@
 		},
 		"Zir'vitar Circuit Override": {
 			"location": {
+				"area": "shock-dng",
 				"map": "rookie-harbor.expo-space",
 				"mapId": 143,
 				"path": ".settings.event.14" 
@@ -308,6 +329,7 @@
 		} ,
 		"Faj'ro SP Upgrade": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat.dng-expo-space",
 				"mapId": 136,
 				"path": ".settings.event.38" 
@@ -322,6 +344,7 @@
 		},
 		"Krys'kajo SP Upgrade": {
 			"location": {
+				"area": "tree-dng",
 				"map": "jungle.dng.tree-expo-space",
 				"mapId": 60,
 				"path": ".settings.event.44" 

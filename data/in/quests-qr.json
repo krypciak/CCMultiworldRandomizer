@@ -12,6 +12,7 @@
 	"cutscenes": {
 		"Talatu Bergen 25%": {
 			"location": {
+				"area": "bergen",
 				"map": "bergen.inner-questhub-1",
 				"mapId": 160,
 				"path": ".settings.npcStates.0.event.quest.14"
@@ -30,6 +31,7 @@
 		},
 		"Talatu Ba'kii 50%": {
 			"location": {
+				"area": "heat-village",
 				"map": "heat-village.interior.quest-hub-eg",
 				"mapId": 134,
 				"path": ".settings.npcStates.0.event.quest.11"
@@ -47,6 +49,7 @@
 		},
 		"Talatu Basin 75%": {
 			"location": {
+				"area": "jungle-city",
 				"map": "jungle-city.interior.questhub-01",
 				"mapId": 576,
 				"path": ".settings.npcStates.0.event.quest.11"
@@ -66,6 +69,7 @@
 	"chests": {
 		"Bergen: Omni Gilders Basement Left": {
 			"location": {
+				"area": "bergen",
 				"map": "bergen.interior.guild-basement",
 				"mapId": 42
 			},
@@ -88,6 +92,7 @@
 		},
 		"Trail: Horncave": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.cave.cave-7-1-1-goat2",
 				"mapId": 142
 			},
@@ -105,6 +110,7 @@
 		},
 		"Garden: Chilled Den": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.caves.questcave-snowman-1",
 				"mapId": 247
 			},

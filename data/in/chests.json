@@ -2,6 +2,7 @@
 	"chests": {
 		"Wasteland: Spiral Cliff Center": {
 			"location": {
+				"area": "arid",
 				"map": "arid.cliff-1",
 				"mapId": 467
 			},
@@ -32,6 +33,7 @@
 		},
 		"Wasteland: Spiral Cliff Upper": {
 			"location": {
+				"area": "arid",
 				"map": "arid.cliff-1",
 				"mapId": 468
 			},
@@ -62,6 +64,7 @@
 		},
 		"Wasteland: Storage Basement": {
 			"location": {
+				"area": "arid",
 				"map": "arid.interior.stealth-2",
 				"mapId": 94
 			},
@@ -80,6 +83,7 @@
 		},
 		"Wasteland: Crimson Lake Upper": {
 			"location": {
+				"area": "arid",
 				"map": "arid.lake-1",
 				"mapId": 646
 			},
@@ -98,6 +102,7 @@
 		},
 		"Wasteland: Crimson Lake Lower": {
 			"location": {
+				"area": "arid",
 				"map": "arid.lake-1",
 				"mapId": 647
 			},
@@ -116,6 +121,7 @@
 		},
 		"Wasteland: East Town Left": {
 			"location": {
+				"area": "arid",
 				"map": "arid.town-1",
 				"mapId": 334
 			},
@@ -134,6 +140,7 @@
 		},
 		"Wasteland: East Town Center": {
 			"location": {
+				"area": "arid",
 				"map": "arid.town-1",
 				"mapId": 335
 			},
@@ -152,6 +159,7 @@
 		},
 		"Wasteland: East Town Lower": {
 			"location": {
+				"area": "arid",
 				"map": "arid.town-1",
 				"mapId": 336
 			},
@@ -170,6 +178,7 @@
 		},
 		"Wasteland: West Town Upper Right": {
 			"location": {
+				"area": "arid",
 				"map": "arid.town-2",
 				"mapId": 485
 			},
@@ -188,6 +197,7 @@
 		},
 		"Wasteland: West Town Upper Left": {
 			"location": {
+				"area": "arid",
 				"map": "arid.town-2",
 				"mapId": 486
 			},
@@ -206,6 +216,7 @@
 		},
 		"Wasteland: West Town Lower": {
 			"location": {
+				"area": "arid",
 				"map": "arid.town-2",
 				"mapId": 487
 			},
@@ -224,6 +235,7 @@
 		},
 		"Rise: Drippy Den": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.caves.cave-3-to-6",
 				"mapId": 2
 			},
@@ -242,6 +254,7 @@
 		},
 		"Rise: Normal Clearing Lower": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.cubaum",
 				"mapId": 200
 			},
@@ -260,6 +273,7 @@
 		},
 		"Rise: Normal Clearing Left": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.cubaum",
 				"mapId": 201
 			},
@@ -278,6 +292,7 @@
 		},
 		"Rise: Entrance": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.entrance",
 				"mapId": 112
 			},
@@ -296,6 +311,7 @@
 		},
 		"Rise: Old Observatory": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.lake-observatory",
 				"mapId": 329
 			},
@@ -314,6 +330,7 @@
 		},
 		"Rise: Quiet Passage 1": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path-1-1",
 				"mapId": 378
 			},
@@ -332,6 +349,7 @@
 		},
 		"Rise: Quiet Passage 2": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path-1-2",
 				"mapId": 346
 			},
@@ -350,6 +368,7 @@
 		},
 		"Rise: Hedgehag's Den": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path-1-3",
 				"mapId": 322
 			},
@@ -368,6 +387,7 @@
 		},
 		"Rise: Pathway 1": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path-1",
 				"mapId": 137
 			},
@@ -386,6 +406,7 @@
 		},
 		"Rise: Pathway 2": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path-2",
 				"mapId": 268
 			},
@@ -404,6 +425,7 @@
 		},
 		"Rise: Pathway 3 Upper": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path-3-1",
 				"mapId": 291
 			},
@@ -422,6 +444,7 @@
 		},
 		"Rise: Off Road 1 Right": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path-3-2",
 				"mapId": 305
 			},
@@ -440,6 +463,7 @@
 		},
 		"Rise: Off Road 2": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path-3-4",
 				"mapId": 265
 			},
@@ -458,6 +482,7 @@
 		},
 		"Rise: Pathway 6 Left": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path-7-1",
 				"mapId": 283
 			},
@@ -476,6 +501,7 @@
 		},
 		"Rise: Pathway 6 Right": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path-7-1",
 				"mapId": 284
 			},
@@ -494,6 +520,7 @@
 		},
 		"Rise: Pathway 6 Center": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path-7-1",
 				"mapId": 1128
 			},
@@ -512,6 +539,7 @@
 		},
 		"Rise: Pathway 7 Left": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path-7-2",
 				"mapId": 1115
 			},
@@ -530,6 +558,7 @@
 		},
 		"Rise: Pathway 7 Upper": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path-7-2",
 				"mapId": 1142
 			},
@@ -548,6 +577,7 @@
 		},
 		"Rise: Ending Pathway Lower": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path-8",
 				"mapId": 12
 			},
@@ -566,6 +596,7 @@
 		},
 		"Rise: Obelisk Lake Upper": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path4",
 				"mapId": 22
 			},
@@ -584,6 +615,7 @@
 		},
 		"Rise: Obelisk Lake Lower": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path4",
 				"mapId": 98
 			},
@@ -602,6 +634,7 @@
 		},
 		"Rise: Pathway 4 Upper": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path5",
 				"mapId": 2
 			},
@@ -620,6 +653,7 @@
 		},
 		"Rise: Pathway 4 Center": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path5",
 				"mapId": 3
 			},
@@ -638,6 +672,7 @@
 		},
 		"Rise: Pathway 4 Lower": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path5",
 				"mapId": 4
 			},
@@ -656,6 +691,7 @@
 		},
 		"Rise: Pathway 5 Upper": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path6",
 				"mapId": 13
 			},
@@ -674,6 +710,7 @@
 		},
 		"Rise: Pathway 5 Lower": {
 			"location": {
+				"area": "autumn-area",
 				"map": "autumn.path6",
 				"mapId": 15
 			},
@@ -692,6 +729,7 @@
 		},
 		"Fall: Ruby Tunnel": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.caves.path-03-exit",
 				"mapId": 29
 			},
@@ -710,6 +748,7 @@
 		},
 		"Fall: Lake Cave 1": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.caves.path-04-cave-01",
 				"mapId": 51
 			},
@@ -728,6 +767,7 @@
 		},
 		"Fall: Lake Cave 2": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.caves.path-04-cave-02",
 				"mapId": 92
 			},
@@ -746,6 +786,7 @@
 		},
 		"Fall: Lake Cave 3": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.caves.path-04-cave-03",
 				"mapId": 157
 			},
@@ -764,6 +805,7 @@
 		},
 		"Fall: Lake Cave 4": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.caves.path-04-cave-04",
 				"mapId": 109
 			},
@@ -782,6 +824,7 @@
 		},
 		"Fall: Southern Exit Center": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.path-01",
 				"mapId": 458
 			},
@@ -800,6 +843,7 @@
 		},
 		"Fall: Southern Exit Upper": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.path-01",
 				"mapId": 492
 			},
@@ -818,6 +862,7 @@
 		},
 		"Fall: Southern Exit Lower": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.path-01",
 				"mapId": 493
 			},
@@ -836,6 +881,7 @@
 		},
 		"Fall: Ruined Path Upper": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.path-02",
 				"mapId": 85
 			},
@@ -854,6 +900,7 @@
 		},
 		"Fall: Ruined Path Lower": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.path-02",
 				"mapId": 98
 			},
@@ -872,6 +919,7 @@
 		},
 		"Fall: Eastern Exit Center": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.path-03",
 				"mapId": 48
 			},
@@ -890,6 +938,7 @@
 		},
 		"Fall: Eastern Exit Right": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.path-03",
 				"mapId": 494
 			},
@@ -908,6 +957,7 @@
 		},
 		"Fall: Ancient Center Upper": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.path-04",
 				"mapId": 14
 			},
@@ -926,6 +976,7 @@
 		},
 		"Fall: Ancient Center Left": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.path-04",
 				"mapId": 81
 			},
@@ -944,6 +995,7 @@
 		},
 		"Fall: Northern Exit Lower": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.path-05",
 				"mapId": 123
 			},
@@ -962,6 +1014,7 @@
 		},
 		"Fall: Northern Exit Upper": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.path-05",
 				"mapId": 124
 			},
@@ -980,6 +1033,7 @@
 		},
 		"Fall: Pillar Isle Upper": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.path-06",
 				"mapId": 39
 			},
@@ -998,6 +1052,7 @@
 		},
 		"Fall: Pillar Isle Right": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.path-06",
 				"mapId": 40
 			},
@@ -1016,6 +1071,7 @@
 		},
 		"Fall: Pillar Isle Left": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.path-06",
 				"mapId": 740
 			},
@@ -1034,6 +1090,7 @@
 		},
 		"Fall: Village Remains Left": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.path-07",
 				"mapId": 79
 			},
@@ -1052,6 +1109,7 @@
 		},
 		"Fall: Village Remains Upper": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.path-07",
 				"mapId": 85
 			},
@@ -1070,6 +1128,7 @@
 		},
 		"Fall: Village Remains Right": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.path-07",
 				"mapId": 128
 			},
@@ -1088,6 +1147,7 @@
 		},
 		"Fall: Secluded Path Upper": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.path-08",
 				"mapId": 527
 			},
@@ -1106,6 +1166,7 @@
 		},
 		"Fall: Secluded Path Left": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.path-08",
 				"mapId": 528
 			},
@@ -1124,6 +1185,7 @@
 		},
 		"Fall: Secluded Path Right": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.path-08",
 				"mapId": 818
 			},
@@ -1142,6 +1204,7 @@
 		},
 		"Fall: Villa of Terror Right": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.path-10",
 				"mapId": 68
 			},
@@ -1160,6 +1223,7 @@
 		},
 		"Fall: Villa of Terror Left": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.path-10",
 				"mapId": 82
 			},
@@ -1178,6 +1242,7 @@
 		},
 		"Fall: Para Island 1": {
 			"location": {
+				"area": "autumn-fall",
 				"map": "autumn-fall.raid.raid-01",
 				"mapId": 375
 			},
@@ -1196,6 +1261,7 @@
 		},
 		"Bergen South: Storage Room": {
 			"location": {
+				"area": "bergen",
 				"map": "bergen.storage",
 				"mapId": 71
 			},
@@ -1214,6 +1280,7 @@
 		},
 		"Bergen South: On Top Of Bergen Bar": {
 			"location": {
+				"area": "bergen",
 				"map": "bergen.bergen",
 				"mapId": 868
 			},
@@ -1232,6 +1299,7 @@
 		},
 		"Bergen South: Behind Ice In East": {
 			"location": {
+				"area": "bergen",
 				"map": "bergen.bergen",
 				"mapId": 1258
 			},
@@ -1257,6 +1325,7 @@
 		},
 		"Bergen South: Behind Ice In South": {
 			"location": {
+				"area": "bergen",
 				"map": "bergen.bergen",
 				"mapId": 1265
 			},
@@ -1282,6 +1351,7 @@
 		},
 		"Bergen South: Top West Roof": {
 			"location": {
+				"area": "bergen",
 				"map": "bergen.bergen",
 				"mapId": 1952
 			},
@@ -1300,6 +1370,7 @@
 		},
 		"Bergen North: On Ledge Near Trader Den": {
 			"location": {
+				"area": "bergen",
 				"map": "bergen.bergen2",
 				"mapId": 2003
 			},
@@ -1318,6 +1389,7 @@
 		},
 		"Bergen North: Hidden Cave In West": {
 			"location": {
+				"area": "bergen",
 				"map": "bergen.bergen2",
 				"mapId": 2012
 			},
@@ -1343,6 +1415,7 @@
 		},
 		"Bergen North: On Ledge In Lower East": {
 			"location": {
+				"area": "bergen",
 				"map": "bergen.bergen2",
 				"mapId": 2021
 			},
@@ -1361,6 +1434,7 @@
 		},
 		"Bergen North: Roof Of Eastern Archway": {
 			"location": {
+				"area": "bergen",
 				"map": "bergen.bergen2",
 				"mapId": 2889
 			},
@@ -1379,6 +1453,7 @@
 		},
 		"Bergen: Diving Railway": {
 			"location": {
+				"area": "bergen",
 				"map": "bergen.elevator",
 				"mapId": 35
 			},
@@ -1397,6 +1472,7 @@
 		},
 		"Bergen: Seeker Hub Cellar Left": {
 			"location": {
+				"area": "bergen",
 				"map": "bergen.inner-questhub-0",
 				"mapId": 130
 			},
@@ -1415,6 +1491,7 @@
 		},
 		"Bergen: Seeker Hub Cellar Right": {
 			"location": {
+				"area": "bergen",
 				"map": "bergen.inner-questhub-0",
 				"mapId": 136
 			},
@@ -1433,6 +1510,7 @@
 		},
 		"Trail: Abandoned Cave": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.cave.cave-08-smith",
 				"mapId": 33
 			},
@@ -1451,6 +1529,7 @@
 		},
 		"Trail: Frozen Cave": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.cave.cave-4-1-1",
 				"mapId": 20
 			},
@@ -1476,6 +1555,7 @@
 		},
 		"Trail: Abandoned Ground": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.cave.cave-6-1",
 				"mapId": 416
 			},
@@ -1501,6 +1581,7 @@
 		},
 		"Trail: Pengpeng Den": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.cave.cave-6-3",
 				"mapId": 24
 			},
@@ -1526,6 +1607,7 @@
 		},
 		"Trail: Entrance Left": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-1-entrance",
 				"mapId": 531
 			},
@@ -1544,6 +1626,7 @@
 		},
 		"Trail: Entrance Right": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-1-entrance",
 				"mapId": 532
 			},
@@ -1562,6 +1645,7 @@
 		},
 		"Trail: Rising Path 1": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-2",
 				"mapId": 67
 			},
@@ -1580,6 +1664,7 @@
 		},
 		"Trail: Off Road 1 Lower": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-3-1",
 				"mapId": 432
 			},
@@ -1598,6 +1683,7 @@
 		},
 		"Trail: Off Road 1 Upper": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-3-1",
 				"mapId": 454
 			},
@@ -1616,6 +1702,7 @@
 		},
 		"Trail: Off Road 2 Center": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-3-2",
 				"mapId": 373
 			},
@@ -1634,6 +1721,7 @@
 		},
 		"Trail: Off Road 2 Lower": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-3-2",
 				"mapId": 399
 			},
@@ -1652,6 +1740,7 @@
 		},
 		"Trail: Off Road 2 Upper": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-3-2",
 				"mapId": 451
 			},
@@ -1670,6 +1759,7 @@
 		},
 		"Trail: Off Road 3 Upper": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-3-3",
 				"mapId": 32
 			},
@@ -1688,6 +1778,7 @@
 		},
 		"Trail: Off Road 3 Lower": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-3-3",
 				"mapId": 126
 			},
@@ -1706,6 +1797,7 @@
 		},
 		"Trail: Old Plateau": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-4-1-1",
 				"mapId": 1015
 			},
@@ -1724,6 +1816,7 @@
 		},
 		"Trail: Rising Path 2": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-4-1",
 				"mapId": 288
 			},
@@ -1742,6 +1835,7 @@
 		},
 		"Trail: Rising Path 3 Left": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-4-2",
 				"mapId": 269
 			},
@@ -1760,6 +1854,7 @@
 		},
 		"Trail: Rising Path 3 Right": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-4-2",
 				"mapId": 643
 			},
@@ -1778,6 +1873,7 @@
 		},
 		"Trail: Spike Heights Upper": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-5",
 				"mapId": 572
 			},
@@ -1796,6 +1892,7 @@
 		},
 		"Trail: Spike Heights Lower": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-5",
 				"mapId": 1337
 			},
@@ -1821,6 +1918,7 @@
 		},
 		"Trail: Icy Cauldron": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-6-1",
 				"mapId": 26
 			},
@@ -1846,6 +1944,7 @@
 		},
 		"Trail: Bergen Waterfalls": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-6",
 				"mapId": 493
 			},
@@ -1864,6 +1963,7 @@
 		},
 		"Trail: Rising Path 4 Upper": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-7-1",
 				"mapId": 994
 			},
@@ -1882,6 +1982,7 @@
 		},
 		"Trail: Rising Path 4 Lower": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-7-1",
 				"mapId": 995
 			},
@@ -1900,6 +2001,7 @@
 		},
 		"Trail: Lofty Heights": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-7-2-1",
 				"mapId": 28
 			},
@@ -1925,6 +2027,7 @@
 		},
 		"Trail: Windy Climb": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-7-2",
 				"mapId": 1027
 			},
@@ -1943,6 +2046,7 @@
 		},
 		"Trail: Rising Path 5": {
 			"location": {
+				"area": "bergen-trails",
 				"map": "bergen-trail.path-8",
 				"mapId": 36
 			},
@@ -1961,6 +2065,7 @@
 		},
 		"Mine U1: Elevator": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b1.center",
 				"mapId": 223
 			},
@@ -1979,6 +2084,7 @@
 		},
 		"Mine U1: Crossing Funnel": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b1.room1",
 				"mapId": 48
 			},
@@ -2004,6 +2110,7 @@
 		},
 		"Mine U1: Old Shaft 1": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b1.room2",
 				"mapId": 29
 			},
@@ -2029,6 +2136,7 @@
 		},
 		"Mine U1: Old Shaft 2": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b1.room3",
 				"mapId": 26
 			},
@@ -2047,6 +2155,7 @@
 		},
 		"Mine U1: Testing Chamber": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b1.room4",
 				"mapId": 3
 			},
@@ -2065,6 +2174,7 @@
 		},
 		"Mine U1: Old Chamber": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b1.room6",
 				"mapId": 3
 			},
@@ -2083,6 +2193,7 @@
 		},
 		"Mine U2: Storage Room 1": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b2.room1",
 				"mapId": 32
 			},
@@ -2101,6 +2212,7 @@
 		},
 		"Mine U2: Frozen Chamber 1": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b2.room2",
 				"mapId": 40
 			},
@@ -2119,6 +2231,7 @@
 		},
 		"Mine U2: Frozen Chamber 2 Left": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b2.room5",
 				"mapId": 21
 			},
@@ -2137,6 +2250,7 @@
 		},
 		"Mine U2: Frozen Chamber 2 Right": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b2.room5",
 				"mapId": 66
 			},
@@ -2155,6 +2269,7 @@
 		},
 		"Mine U3: Frozen Shaft 1": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b3.room1",
 				"mapId": 30
 			},
@@ -2173,6 +2288,7 @@
 		},
 		"Mine U3: Frozen Shaft 2": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b3.room2",
 				"mapId": 55
 			},
@@ -2191,6 +2307,7 @@
 		},
 		"Mine U3: Frozen Shaft 3 Right": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b3.room3",
 				"mapId": 11
 			},
@@ -2209,6 +2326,7 @@
 		},
 		"Mine U3: Frozen Shaft 3 Left": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b3.room3",
 				"mapId": 22
 			},
@@ -2227,6 +2345,7 @@
 		},
 		"Mine U3: Overrun Chamber Upper": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b3.room6",
 				"mapId": 36
 			},
@@ -2245,6 +2364,7 @@
 		},
 		"Mine U3: Overrun Chamber Lower": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b3.room6",
 				"mapId": 68
 			},
@@ -2263,6 +2383,7 @@
 		},
 		"Mine U4: Elevator": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b4.center",
 				"mapId": 298
 			},
@@ -2288,6 +2409,7 @@
 		},
 		"Mine U4: Infested Chamber": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b4.room10",
 				"mapId": 94
 			},
@@ -2313,6 +2435,7 @@
 		},
 		"Mine U4: Forgotten Shaft 1": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b4.room4",
 				"mapId": 25
 			},
@@ -2338,6 +2461,7 @@
 		},
 		"Mine U4: Forgotten Shaft 2": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b4.room5",
 				"mapId": 18
 			},
@@ -2363,6 +2487,7 @@
 		},
 		"Mine U4: Forgotten Shaft 3": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b4.room6",
 				"mapId": 16
 			},
@@ -2388,6 +2513,7 @@
 		},
 		"Mine U4: Forgotten Shaft 4": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b4.room7",
 				"mapId": 44
 			},
@@ -2413,6 +2539,7 @@
 		},
 		"Mine U4: Forgotten Shaft 5": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b4.room8",
 				"mapId": 16
 			},
@@ -2438,6 +2565,7 @@
 		},
 		"Mine GF: Elevator": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.g.center",
 				"mapId": 249
 			},
@@ -2463,6 +2591,7 @@
 		},
 		"Mine GF: Temple Chamber 2": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.g.room2",
 				"mapId": 3
 			},
@@ -2481,6 +2610,7 @@
 		},
 		"Ridge: The Barracks": {
 			"location": {
+				"area": "forest",
 				"map": "forest.caves.cave-013-pandza-01",
 				"mapId": 385
 			},
@@ -2506,6 +2636,7 @@
 		},
 		"Ridge: The Bellow": {
 			"location": {
+				"area": "forest",
 				"map": "forest.caves.cave-013-pandza-02",
 				"mapId": 133
 			},
@@ -2536,6 +2667,7 @@
 		},
 		"Ridge: Sapphire Tunnel": {
 			"location": {
+				"area": "forest",
 				"map": "forest.caves.path-01-entrance",
 				"mapId": 23
 			},
@@ -2554,6 +2686,7 @@
 		},
 		"Ridge: Eroded Passage Lower": {
 			"location": {
+				"area": "forest",
 				"map": "forest.caves.path-02-to-08",
 				"mapId": 1
 			},
@@ -2572,6 +2705,7 @@
 		},
 		"Ridge: Eroded Passage Upper": {
 			"location": {
+				"area": "forest",
 				"map": "forest.caves.path-02-to-08",
 				"mapId": 30
 			},
@@ -2590,6 +2724,7 @@
 		},
 		"Ridge: Spider Chasm Lower": {
 			"location": {
+				"area": "forest",
 				"map": "forest.caves.path-06-chasm",
 				"mapId": 40
 			},
@@ -2608,6 +2743,7 @@
 		},
 		"Ridge: Spider Chasm Upper": {
 			"location": {
+				"area": "forest",
 				"map": "forest.caves.path-06-chasm",
 				"mapId": 63
 			},
@@ -2626,6 +2762,7 @@
 		},
 		"Ridge: Narrow Passage Left": {
 			"location": {
+				"area": "forest",
 				"map": "forest.caves.path-07-to-08",
 				"mapId": 5
 			},
@@ -2644,6 +2781,7 @@
 		},
 		"Ridge: Narrow Passage Right": {
 			"location": {
+				"area": "forest",
 				"map": "forest.caves.path-07-to-08",
 				"mapId": 13
 			},
@@ -2662,6 +2800,7 @@
 		},
 		"Ridge: Wheel Passage Lower": {
 			"location": {
+				"area": "forest",
 				"map": "forest.caves.path-08-to-10",
 				"mapId": 29
 			},
@@ -2680,6 +2819,7 @@
 		},
 		"Ridge: Wheel Passage Upper": {
 			"location": {
+				"area": "forest",
 				"map": "forest.caves.path-08-to-10",
 				"mapId": 32
 			},
@@ -2698,6 +2838,7 @@
 		},
 		"Ridge: Cave Inn Interior 1F": {
 			"location": {
+				"area": "forest",
 				"map": "forest.interior.inn-og-01",
 				"mapId": 128
 			},
@@ -2716,6 +2857,7 @@
 		},
 		"Ridge: Cave Inn Interior Storage": {
 			"location": {
+				"area": "forest",
 				"map": "forest.interior.inn-storage",
 				"mapId": 87
 			},
@@ -2734,6 +2876,7 @@
 		},
 		"Ridge: Western Exit Upper": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-01-entrance",
 				"mapId": 72
 			},
@@ -2752,6 +2895,7 @@
 		},
 		"Ridge: Western Exit Lower": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-01-entrance",
 				"mapId": 109
 			},
@@ -2770,6 +2914,7 @@
 		},
 		"Ridge: North West Path Lower": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-02",
 				"mapId": 157
 			},
@@ -2788,6 +2933,7 @@
 		},
 		"Ridge: North West Path Upper": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-02",
 				"mapId": 160
 			},
@@ -2806,6 +2952,7 @@
 		},
 		"Ridge: River Road Upper": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-03",
 				"mapId": 11
 			},
@@ -2824,6 +2971,7 @@
 		},
 		"Ridge: River Road Center": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-03",
 				"mapId": 53
 			},
@@ -2842,6 +2990,7 @@
 		},
 		"Ridge: River Road Lower": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-03",
 				"mapId": 145
 			},
@@ -2860,6 +3009,7 @@
 		},
 		"Ridge: Cave Inn Exterior Upper": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-04-hostel",
 				"mapId": 52
 			},
@@ -2878,6 +3028,7 @@
 		},
 		"Ridge: Cave Inn Exterior Lower": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-04-hostel",
 				"mapId": 184
 			},
@@ -2896,6 +3047,7 @@
 		},
 		"Ridge: Tranquil Bamboo Lower": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-04-vaga",
 				"mapId": 5
 			},
@@ -2914,6 +3066,7 @@
 		},
 		"Ridge: Tranquil Bamboo Upper": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-04-vaga",
 				"mapId": 6
 			},
@@ -2932,6 +3085,7 @@
 		},
 		"Ridge: Bamboo Thicket Upper": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-05",
 				"mapId": 4
 			},
@@ -2950,6 +3104,7 @@
 		},
 		"Ridge: Bamboo Thicket Center": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-05",
 				"mapId": 9
 			},
@@ -2968,6 +3123,7 @@
 		},
 		"Ridge: North East Path Upper": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-06",
 				"mapId": 33
 			},
@@ -2986,6 +3142,7 @@
 		},
 		"Ridge: North East Path Lower": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-06",
 				"mapId": 53
 			},
@@ -3004,6 +3161,7 @@
 		},
 		"Ridge: Flower Lake Left": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-07",
 				"mapId": 6
 			},
@@ -3022,6 +3180,7 @@
 		},
 		"Ridge: Flower Lake Right": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-07",
 				"mapId": 44
 			},
@@ -3040,6 +3199,7 @@
 		},
 		"Ridge: Carved Pathway Center": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-08",
 				"mapId": 68
 			},
@@ -3058,6 +3218,7 @@
 		},
 		"Ridge: Carved Pathway Lower": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-08",
 				"mapId": 82
 			},
@@ -3083,6 +3244,7 @@
 		},
 		"Ridge: Carved Pathway Upper": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-08",
 				"mapId": 90
 			},
@@ -3108,6 +3270,7 @@
 		},
 		"Ridge: High Ground Lower": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-09",
 				"mapId": 24
 			},
@@ -3133,6 +3296,7 @@
 		},
 		"Ridge: High Ground Upper": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-09",
 				"mapId": 100
 			},
@@ -3158,6 +3322,7 @@
 		},
 		"Ridge: Old Dojo Lower": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-10",
 				"mapId": 78
 			},
@@ -3176,6 +3341,7 @@
 		},
 		"Ridge: Old Dojo Left": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-10",
 				"mapId": 167
 			},
@@ -3194,6 +3360,7 @@
 		},
 		"Ridge: Old Dojo Upper": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-10",
 				"mapId": 904
 			},
@@ -3212,6 +3379,7 @@
 		},
 		"Ridge: Dream Pond": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-11-behind-maze",
 				"mapId": 59
 			},
@@ -3230,6 +3398,7 @@
 		},
 		"Ridge: Ascension Temple Upper Left": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-12",
 				"mapId": 298
 			},
@@ -3255,6 +3424,7 @@
 		},
 		"Ridge: Ascension Temple Upper Right": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-12",
 				"mapId": 301
 			},
@@ -3280,6 +3450,7 @@
 		},
 		"Ridge: Ascension Temple Lower": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-12",
 				"mapId": 302
 			},
@@ -3305,6 +3476,7 @@
 		},
 		"Ridge: Baton Pond": {
 			"location": {
+				"area": "forest",
 				"map": "forest.path-13",
 				"mapId": 814
 			},
@@ -3323,6 +3495,7 @@
 		},
 		"Maroon: Mystery Cave Lower": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.caves.cliff-cave-01",
 				"mapId": 42
 			},
@@ -3341,6 +3514,7 @@
 		},
 		"Maroon: Mystery Cave Upper": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.caves.cliff-cave-01",
 				"mapId": 43
 			},
@@ -3359,6 +3533,7 @@
 		},
 		"Maroon: Cursed Temple Upper": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.caves.cliffs-temple-02",
 				"mapId": 48
 			},
@@ -3394,6 +3569,7 @@
 		},
 		"Maroon: Cursed Temple Lower": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.caves.cliffs-temple-02",
 				"mapId": 86
 			},
@@ -3429,6 +3605,7 @@
 		},
 		"Maroon: Cursed Temple Treasure Room": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.caves.cliffs-temple-03",
 				"mapId": 107
 			},
@@ -3464,6 +3641,7 @@
 		},
 		"Maroon: Maroon Cave 1": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.caves.maroon-cave-01",
 				"mapId": 404
 			},
@@ -3489,6 +3667,7 @@
 		},
 		"Maroon: River Cliff Right": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.cliffs.cliffs-path-01",
 				"mapId": 105
 			},
@@ -3507,6 +3686,7 @@
 		},
 		"Maroon: River Cliff Left": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.cliffs.cliffs-path-01",
 				"mapId": 197
 			},
@@ -3525,6 +3705,7 @@
 		},
 		"Maroon: Endless Pit Center": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.cliffs.cliffs-path-02",
 				"mapId": 29
 			},
@@ -3543,6 +3724,7 @@
 		},
 		"Maroon: Endless Pit Right": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.cliffs.cliffs-path-02",
 				"mapId": 30
 			},
@@ -3561,6 +3743,7 @@
 		},
 		"Maroon: Endless Pit Left": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.cliffs.cliffs-path-02",
 				"mapId": 32
 			},
@@ -3579,6 +3762,7 @@
 		},
 		"Maroon: Vivid Path Lower": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.oasis.oasis-path-01",
 				"mapId": 8
 			},
@@ -3597,6 +3781,7 @@
 		},
 		"Maroon: Vivid Path Upper": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.oasis.oasis-path-01",
 				"mapId": 9
 			},
@@ -3615,6 +3800,7 @@
 		},
 		"Maroon: Maroon Oasis Center": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.oasis.oasis-path-02",
 				"mapId": 80
 			},
@@ -3633,6 +3819,7 @@
 		},
 		"Maroon: Maroon Oasis Upper": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.oasis.oasis-path-02",
 				"mapId": 97
 			},
@@ -3651,6 +3838,7 @@
 		},
 		"Maroon: Bright Path": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.oasis.oasis-path-03",
 				"mapId": 34
 			},
@@ -3669,6 +3857,7 @@
 		},
 		"Maroon: Rising Railway": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.path-00",
 				"mapId": 6
 			},
@@ -3687,6 +3876,7 @@
 		},
 		"Maroon: East Entrance": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.path-01-entrance",
 				"mapId": 55
 			},
@@ -3705,6 +3895,7 @@
 		},
 		"Maroon: Dusty Path Center": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.path-02",
 				"mapId": 7
 			},
@@ -3723,6 +3914,7 @@
 		},
 		"Maroon: Dusty Path Upper": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.path-02",
 				"mapId": 14
 			},
@@ -3741,6 +3933,7 @@
 		},
 		"Maroon: Crossroad Center": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.path-03",
 				"mapId": 23
 			},
@@ -3759,6 +3952,7 @@
 		},
 		"Maroon: Crossroad Left": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.path-03",
 				"mapId": 25
 			},
@@ -3777,6 +3971,7 @@
 		},
 		"Maroon: Long Piece": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.path-04",
 				"mapId": 34
 			},
@@ -3795,6 +3990,7 @@
 		},
 		"Maroon: Barren Arcs Center": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.path-05",
 				"mapId": 2
 			},
@@ -3813,6 +4009,7 @@
 		},
 		"Maroon: Barren Arcs Left": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.path-05",
 				"mapId": 14
 			},
@@ -3831,6 +4028,7 @@
 		},
 		"Maroon: Barren Land": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.path-06",
 				"mapId": 16
 			},
@@ -3849,6 +4047,7 @@
 		},
 		"Maroon: Overpass Upper": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.path-07",
 				"mapId": 7
 			},
@@ -3867,6 +4066,7 @@
 		},
 		"Maroon: Overpass Left": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.path-07",
 				"mapId": 78
 			},
@@ -3885,6 +4085,7 @@
 		},
 		"Maroon: Paw Cliffs Lower": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.path-08",
 				"mapId": 1
 			},
@@ -3903,6 +4104,7 @@
 		},
 		"Maroon: Paw Cliffs Upper": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.path-08",
 				"mapId": 4
 			},
@@ -3921,6 +4123,7 @@
 		},
 		"Maroon: Torn Road Center": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.path-09",
 				"mapId": 8
 			},
@@ -3939,6 +4142,7 @@
 		},
 		"Maroon: Torn Road Right": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.path-09",
 				"mapId": 41
 			},
@@ -3957,6 +4161,7 @@
 		},
 		"Maroon: West Entrance": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.path-11",
 				"mapId": 19
 			},
@@ -3975,6 +4180,7 @@
 		},
 		"Maroon: Fractured Path Upper": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.shortcut-02-09",
 				"mapId": 17
 			},
@@ -3993,6 +4199,7 @@
 		},
 		"Maroon: Fractured Path Right": {
 			"location": {
+				"area": "heat-area",
 				"map": "heat.shortcut-02-09",
 				"mapId": 19
 			},
@@ -4011,6 +4218,7 @@
 		},
 		"Faj'ro 1F: Right Chamber 1": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat-dng.f1.room-03",
 				"mapId": 33
 			},
@@ -4029,6 +4237,7 @@
 		},
 		"Faj'ro 3F: Bottom Chamber": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat-dng.f3.room-02",
 				"mapId": 31
 			},
@@ -4047,6 +4256,7 @@
 		},
 		"Faj'ro 3F: Large Fire Chamber Left": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat-dng.f3.room-05",
 				"mapId": 69
 			},
@@ -4065,6 +4275,7 @@
 		},
 		"Faj'ro 3F: Large Fire Chamber Right": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat-dng.f3.room-05",
 				"mapId": 79
 			},
@@ -4083,6 +4294,7 @@
 		},
 		"Faj'ro 3F: Test of Wisdom": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat-dng.f3.room-07",
 				"mapId": 19
 			},
@@ -4101,6 +4313,7 @@
 		},
 		"Faj'ro 4F: West Pathway": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat-dng.f4.room-02",
 				"mapId": 38
 			},
@@ -4119,6 +4332,7 @@
 		},
 		"Faj'ro 4F: Test of Surprise": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat-dng.f4.room-03",
 				"mapId": 21
 			},
@@ -4137,6 +4351,7 @@
 		},
 		"Faj'ro 4F: West Chamber 1": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat-dng.f4.room-05",
 				"mapId": 56
 			},
@@ -4155,6 +4370,7 @@
 		},
 		"Faj'ro 4F: East Chamber 1": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat-dng.f4.room-09",
 				"mapId": 92
 			},
@@ -4173,6 +4389,7 @@
 		},
 		"Faj'ro 4F: East Pathway": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat-dng.f4.room-10",
 				"mapId": 78
 			},
@@ -4191,6 +4408,7 @@
 		},
 		"Faj'ro 4F: Test of Memory": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat-dng.f4.room-11",
 				"mapId": 27
 			},
@@ -4209,6 +4427,7 @@
 		},
 		"Faj'ro 4F: Chamber of Prosperity": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat-dng.f4.room-12",
 				"mapId": 85
 			},
@@ -4227,6 +4446,7 @@
 		},
 		"Faj'ro GF: Left Chamber 1": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat-dng.g.room-03",
 				"mapId": 71
 			},
@@ -4245,6 +4465,7 @@
 		},
 		"Faj'ro GF: Fire and Sand 2": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat-dng.g.room-07",
 				"mapId": 28
 			},
@@ -4263,6 +4484,7 @@
 		},
 		"Faj'ro GF: Balance Room 2 Right": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat-dng.g.room-09",
 				"mapId": 85
 			},
@@ -4281,6 +4503,7 @@
 		},
 		"Faj'ro GF: Balance Room 2 Left": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat-dng.g.room-09",
 				"mapId": 86
 			},
@@ -4299,6 +4522,7 @@
 		},
 		"Faj'ro GF: Right Chamber 1": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat-dng.g.room-10",
 				"mapId": 16
 			},
@@ -4317,6 +4541,7 @@
 		},
 		"Faj'ro GF: Right Chamber 2": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat-dng.g.room-12",
 				"mapId": 110
 			},
@@ -4335,6 +4560,7 @@
 		},
 		"Faj'ro GF: Test of Memory Left": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat-dng.g.room-13",
 				"mapId": 2
 			},
@@ -4353,6 +4579,7 @@
 		},
 		"Faj'ro GF: Test of Memory Right": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat-dng.g.room-14",
 				"mapId": 2
 			},
@@ -4371,6 +4598,7 @@
 		},
 		"Ba'kii: Solar Farm Upper": {
 			"location": {
+				"area": "heat-village",
 				"map": "heat-village.baki-1",
 				"mapId": 99
 			},
@@ -4389,6 +4617,7 @@
 		},
 		"Ba'kii: Solar Farm Lower": {
 			"location": {
+				"area": "heat-village",
 				"map": "heat-village.baki-1",
 				"mapId": 737
 			},
@@ -4407,6 +4636,7 @@
 		},
 		"Ba'kii: Market East": {
 			"location": {
+				"area": "heat-village",
 				"map": "heat-village.baki-2",
 				"mapId": 259
 			},
@@ -4425,6 +4655,7 @@
 		},
 		"Ba'kii: Market West": {
 			"location": {
+				"area": "heat-village",
 				"map": "heat-village.baki-2",
 				"mapId": 1227
 			},
@@ -4443,6 +4674,7 @@
 		},
 		"Ba'kii: Bazaar House": {
 			"location": {
+				"area": "heat-village",
 				"map": "heat-village.interior.tradebuilding-eg",
 				"mapId": 131
 			},
@@ -4461,6 +4693,7 @@
 		},
 		"Garden: Dripping Cave": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.caves.grove-cave-01",
 				"mapId": 3
 			},
@@ -4486,6 +4719,7 @@
 		},
 		"Garden: Tranquility Pond": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.caves.grove-cave-02",
 				"mapId": 1
 			},
@@ -4511,6 +4745,7 @@
 		},
 		"Garden: Infested Cavern Left": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.caves.smuggle-route-2",
 				"mapId": 55
 			},
@@ -4536,6 +4771,7 @@
 		},
 		"Garden: Infested Cavern Right": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.caves.smuggle-route-2",
 				"mapId": 60
 			},
@@ -4561,6 +4797,7 @@
 		},
 		"Garden: V'rda Vil West Lower Left": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.clearing.clear-path-01",
 				"mapId": 5
 			},
@@ -4579,6 +4816,7 @@
 		},
 		"Garden: V'rda Vil West Upper": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.clearing.clear-path-01",
 				"mapId": 6
 			},
@@ -4597,6 +4835,7 @@
 		},
 		"Garden: V'rda Vil West Lower Right": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.clearing.clear-path-01",
 				"mapId": 125
 			},
@@ -4615,6 +4854,7 @@
 		},
 		"Garden: V'rda Vil East Right": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.clearing.clear-path-02",
 				"mapId": 311
 			},
@@ -4633,6 +4873,7 @@
 		},
 		"Garden: V'rda Vil East Lower": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.clearing.clear-path-02",
 				"mapId": 351
 			},
@@ -4658,6 +4899,7 @@
 		},
 		"Garden: V'rda Vil North Right": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.clearing.clear-path-03",
 				"mapId": 31
 			},
@@ -4683,6 +4925,7 @@
 		},
 		"Garden: V'rda Vil North Left": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.clearing.clear-path-03",
 				"mapId": 33
 			},
@@ -4701,6 +4944,7 @@
 		},
 		"Garden: Chief's Den Center": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.clearing.clear-path-04",
 				"mapId": 27
 			},
@@ -4719,6 +4963,7 @@
 		},
 		"Garden: Chief's Den Upper": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.clearing.clear-path-04",
 				"mapId": 91
 			},
@@ -4737,6 +4982,7 @@
 		},
 		"Garden: Chief's Den Lower": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.clearing.clear-path-04",
 				"mapId": 135
 			},
@@ -4762,6 +5008,7 @@
 		},
 		"Garden: Grand Krys'kajo Entrance": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.dng.tree-exterior",
 				"mapId": 432
 			},
@@ -4792,6 +5039,7 @@
 		},
 		"Garden: So'najiz Temple Entrance": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.dng.wave-exterior",
 				"mapId": 521
 			},
@@ -4810,6 +5058,7 @@
 		},
 		"Garden: Covert Path Lower": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.grove.grove-path-01",
 				"mapId": 4
 			},
@@ -4828,6 +5077,7 @@
 		},
 		"Garden: Covert Path Upper": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.grove.grove-path-01",
 				"mapId": 5
 			},
@@ -4846,6 +5096,7 @@
 		},
 		"Garden: Royal Grove Lower Right": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.grove.grove-path-02",
 				"mapId": 67
 			},
@@ -4864,6 +5115,7 @@
 		},
 		"Garden: Royal Grove Lower Left": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.grove.grove-path-02",
 				"mapId": 68
 			},
@@ -4882,6 +5134,7 @@
 		},
 		"Garden: Royal Grove Upper Right": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.grove.grove-path-02",
 				"mapId": 69
 			},
@@ -4900,6 +5153,7 @@
 		},
 		"Garden: Royal Grove Upper Left": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.grove.grove-path-02",
 				"mapId": 80
 			},
@@ -4918,6 +5172,7 @@
 		},
 		"Garden: Calm Backyard Left": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.grove.grove-path-03",
 				"mapId": 41
 			},
@@ -4936,6 +5191,7 @@
 		},
 		"Garden: Calm Backyard Right": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.grove.grove-path-03",
 				"mapId": 42
 			},
@@ -4954,6 +5210,7 @@
 		},
 		"Garden: Lost Shrine GF": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.grove.lost-shrine-02",
 				"mapId": 158
 			},
@@ -4984,6 +5241,7 @@
 		},
 		"Garden: Lost Shrine B1": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.grove.lost-shrine-03",
 				"mapId": 289
 			},
@@ -5014,6 +5272,7 @@
 		},
 		"Garden: Lost Shrine B2": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.grove.lost-shrine-04",
 				"mapId": 363
 			},
@@ -5044,6 +5303,7 @@
 		},
 		"Garden: Lost Lookout Center": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.infested.infested-path-01",
 				"mapId": 22
 			},
@@ -5062,6 +5322,7 @@
 		},
 		"Garden: Lost Lookout Lower": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.infested.infested-path-01",
 				"mapId": 63
 			},
@@ -5080,6 +5341,7 @@
 		},
 		"Garden: Lost Lookout Upper": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.infested.infested-path-01",
 				"mapId": 170
 			},
@@ -5105,6 +5367,7 @@
 		},
 		"Garden: Seared Lake Right": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.infested.infested-path-02",
 				"mapId": 6
 			},
@@ -5123,6 +5386,7 @@
 		},
 		"Garden: Seared Lake Left": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.infested.infested-path-02",
 				"mapId": 32
 			},
@@ -5141,6 +5405,7 @@
 		},
 		"Garden: Infested Marshes South Lower Left": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.infested.infested-path-03",
 				"mapId": 18
 			},
@@ -5159,6 +5424,7 @@
 		},
 		"Garden: Infested Marshes South Lower Right": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.infested.infested-path-03",
 				"mapId": 70
 			},
@@ -5184,6 +5450,7 @@
 		},
 		"Garden: Infested Marshes South Upper Left": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.infested.infested-path-03",
 				"mapId": 90
 			},
@@ -5202,6 +5469,7 @@
 		},
 		"Garden: Infested Marshes South Upper Right": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.infested.infested-path-03",
 				"mapId": 97
 			},
@@ -5220,6 +5488,7 @@
 		},
 		"Garden: Infested Marshes North Lower Left": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.infested.infested-path-04",
 				"mapId": 24
 			},
@@ -5238,6 +5507,7 @@
 		},
 		"Garden: Infested Marshes North Upper Center": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.infested.infested-path-04",
 				"mapId": 58
 			},
@@ -5256,6 +5526,7 @@
 		},
 		"Garden: Infested Marshes North Lower Right": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.infested.infested-path-04",
 				"mapId": 82
 			},
@@ -5274,6 +5545,7 @@
 		},
 		"Garden: Infested Marshes North Upper Right": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.infested.infested-path-04",
 				"mapId": 949
 			},
@@ -5292,6 +5564,7 @@
 		},
 		"Garden: Overgrown Path Left": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.left.path-left-01",
 				"mapId": 74
 			},
@@ -5317,6 +5590,7 @@
 		},
 		"Garden: Overgrown Path Right": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.left.path-left-01",
 				"mapId": 75
 			},
@@ -5342,6 +5616,7 @@
 		},
 		"Garden: Drizzle Bosk Right": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.left.path-left-02",
 				"mapId": 2
 			},
@@ -5367,6 +5642,7 @@
 		},
 		"Garden: Drizzle Bosk Lower": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.left.path-left-02",
 				"mapId": 8
 			},
@@ -5385,6 +5661,7 @@
 		},
 		"Garden: Drizzle Bosk Center": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.left.path-left-02",
 				"mapId": 12
 			},
@@ -5403,6 +5680,7 @@
 		},
 		"Garden: Wet Passage Lower": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.left.path-left-03",
 				"mapId": 32
 			},
@@ -5428,6 +5706,7 @@
 		},
 		"Garden: Wet Passage Upper": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.left.path-left-03",
 				"mapId": 33
 			},
@@ -5446,6 +5725,7 @@
 		},
 		"Garden: River's Bed Right": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.left.path-left-04",
 				"mapId": 38
 			},
@@ -5471,6 +5751,7 @@
 		},
 		"Garden: River's Bed Left": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.left.path-left-04",
 				"mapId": 39
 			},
@@ -5489,6 +5770,7 @@
 		},
 		"Garden: Jungle Entrance Left": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.path-01-entrance",
 				"mapId": 12
 			},
@@ -5507,6 +5789,7 @@
 		},
 		"Garden: Jungle Entrance Lower": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.path-01-entrance",
 				"mapId": 13
 			},
@@ -5525,6 +5808,7 @@
 		},
 		"Garden: Crossroad Left": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.path-02-crossroads",
 				"mapId": 13
 			},
@@ -5543,6 +5827,7 @@
 		},
 		"Garden: Crossroad Right": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.path-02-crossroads",
 				"mapId": 14
 			},
@@ -5561,6 +5846,7 @@
 		},
 		"Garden: Tying Greens Lower": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.path-03-sync",
 				"mapId": 21
 			},
@@ -5579,6 +5865,7 @@
 		},
 		"Garden: Tying Greens Upper": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.path-03-sync",
 				"mapId": 22
 			},
@@ -5597,6 +5884,7 @@
 		},
 		"Garden: Peridot Approach Lower": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.path-04-end",
 				"mapId": 6
 			},
@@ -5622,6 +5910,7 @@
 		},
 		"Garden: Peridot Approach Upper": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.path-04-end",
 				"mapId": 58
 			},
@@ -5640,6 +5929,7 @@
 		},
 		"Garden: Splitting Stumps Upper": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.right.right-path-01",
 				"mapId": 40
 			},
@@ -5665,6 +5955,7 @@
 		},
 		"Garden: Splitting Stumps Lower": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.right.right-path-01",
 				"mapId": 105
 			},
@@ -5683,6 +5974,7 @@
 		},
 		"Garden: Clinging River Right": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.right.right-path-02",
 				"mapId": 12
 			},
@@ -5701,6 +5993,7 @@
 		},
 		"Garden: Clinging River Left": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.right.right-path-02",
 				"mapId": 13
 			},
@@ -5722,6 +6015,7 @@
 		},
 		"Garden: Ringing River Lower": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.right.right-path-03",
 				"mapId": 13
 			},
@@ -5740,6 +6034,7 @@
 		},
 		"Garden: Ringing River Upper": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.right.right-path-03",
 				"mapId": 14
 			},
@@ -5758,6 +6053,7 @@
 		},
 		"Garden: Old Timber": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle.right.right-path-04",
 				"mapId": 30
 			},
@@ -5776,6 +6072,7 @@
 		},
 		"Basin: Centrum": {
 			"location": {
+				"area": "jungle-city",
 				"map": "jungle-city.center",
 				"mapId": 774
 			},
@@ -5794,6 +6091,7 @@
 		},
 		"Basin: Pond Slums Lower": {
 			"location": {
+				"area": "jungle-city",
 				"map": "jungle-city.east",
 				"mapId": 158
 			},
@@ -5812,6 +6110,7 @@
 		},
 		"Basin: Pond Slums Center": {
 			"location": {
+				"area": "jungle-city",
 				"map": "jungle-city.east",
 				"mapId": 322
 			},
@@ -5830,6 +6129,7 @@
 		},
 		"Basin: Pond Slums Upper": {
 			"location": {
+				"area": "jungle-city",
 				"map": "jungle-city.east",
 				"mapId": 537
 			},
@@ -5848,6 +6148,7 @@
 		},
 		"Garden: Basin Keep Entrance": {
 			"location": {
+				"area": "jungle",
 				"map": "jungle-city.entrance",
 				"mapId": 423
 			},
@@ -5866,6 +6167,7 @@
 		},
 		"Basin: Police HQ": {
 			"location": {
+				"area": "jungle-city",
 				"map": "jungle-city.interior.faction-guard-1",
 				"mapId": 1128
 			},
@@ -5884,6 +6186,7 @@
 		},
 		"Basin: Seeker Hub GF": {
 			"location": {
+				"area": "jungle-city",
 				"map": "jungle-city.interior.questhub-01",
 				"mapId": 533
 			},
@@ -5902,6 +6205,7 @@
 		},
 		"Rhombus: Arena Plaza East": {
 			"location": {
+				"area": "rhombus-sqr",
 				"map": "rhombus-sqr.arena-1",
 				"mapId": 298
 			},
@@ -5920,6 +6224,7 @@
 		},
 		"Rhombus: Arena Plaza West": {
 			"location": {
+				"area": "rhombus-sqr",
 				"map": "rhombus-sqr.arena-1",
 				"mapId": 299
 			},
@@ -5945,6 +6250,7 @@
 		},
 		"Rhombus: Garden Boulevard North": {
 			"location": {
+				"area": "rhombus-sqr",
 				"map": "rhombus-sqr.center-e",
 				"mapId": 271
 			},
@@ -5963,6 +6269,7 @@
 		},
 		"Rhombus: Garden Boulevard South": {
 			"location": {
+				"area": "rhombus-sqr",
 				"map": "rhombus-sqr.center-e",
 				"mapId": 272
 			},
@@ -5981,6 +6288,7 @@
 		},
 		"Rhombus: South Arch": {
 			"location": {
+				"area": "rhombus-sqr",
 				"map": "rhombus-sqr.center-s",
 				"mapId": 235
 			},
@@ -5999,6 +6307,7 @@
 		},
 		"Rhombus: Lloyd Passage": {
 			"location": {
+				"area": "rhombus-sqr",
 				"map": "rhombus-sqr.center-se",
 				"mapId": 1209
 			},
@@ -6017,6 +6326,7 @@
 		},
 		"Rhombus: Residential District North": {
 			"location": {
+				"area": "rhombus-sqr",
 				"map": "rhombus-sqr.residential-s1",
 				"mapId": 333
 			},
@@ -6035,6 +6345,7 @@
 		},
 		"Rhombus: Residential District South": {
 			"location": {
+				"area": "rhombus-sqr",
 				"map": "rhombus-sqr.residential-s1",
 				"mapId": 852
 			},
@@ -6053,6 +6364,7 @@
 		},
 		"Harbor: Marketplace": {
 			"location": {
+				"area": "rookie-harbor",
 				"map": "rookie-harbor.center",
 				"mapId": 165
 			},
@@ -6071,6 +6383,7 @@
 		},
 		"Harbor: Falling Exit": {
 			"location": {
+				"area": "rookie-harbor",
 				"map": "rookie-harbor.east",
 				"mapId": 157
 			},
@@ -6096,6 +6409,7 @@
 		},
 		"Harbor: Weapon & Backer Shop": {
 			"location": {
+				"area": "rookie-harbor",
 				"map": "rookie-harbor.inner-equip-north",
 				"mapId": 50
 			},
@@ -6114,6 +6428,7 @@
 		},
 		"Harbor: Dusty Storage": {
 			"location": {
+				"area": "rookie-harbor",
 				"map": "rookie-harbor.inner-old",
 				"mapId": 72
 			},
@@ -6132,6 +6447,7 @@
 		},
 		"Harbor: South Harbor": {
 			"location": {
+				"area": "rookie-harbor",
 				"map": "rookie-harbor.south",
 				"mapId": 216
 			},
@@ -6150,6 +6466,7 @@
 		},
 		"Harbor: Beginner's Arc Upper": {
 			"location": {
+				"area": "rookie-harbor",
 				"map": "rookie-harbor.teleporter",
 				"mapId": 389
 			},
@@ -6168,6 +6485,7 @@
 		},
 		"Harbor: Beginner's Arc Lower": {
 			"location": {
+				"area": "rookie-harbor",
 				"map": "rookie-harbor.teleporter",
 				"mapId": 402
 			},
@@ -6186,6 +6504,7 @@
 		},
 		"Zir'vitar 1F: Moving Transmit Left": {
 			"location": {
+				"area": "shock-dng",
 				"map": "shock-dng.f1.room2",
 				"mapId": 64
 			},
@@ -6204,6 +6523,7 @@
 		},
 		"Zir'vitar 1F: Moving Transmit Right": {
 			"location": {
+				"area": "shock-dng",
 				"map": "shock-dng.f1.room2",
 				"mapId": 79
 			},
@@ -6222,6 +6542,7 @@
 		},
 		"Zir'vitar 1F: Haunted Waves": {
 			"location": {
+				"area": "shock-dng",
 				"map": "shock-dng.f1.room3to4",
 				"mapId": 23
 			},
@@ -6247,6 +6568,7 @@
 		},
 		"Zir'vitar GF: Hoodwink": {
 			"location": {
+				"area": "shock-dng",
 				"map": "shock-dng.g.room4to5",
 				"mapId": 16
 			},
@@ -6270,6 +6592,7 @@
 		},
 		"Zir'vitar GF: Spinning Transmit": {
 			"location": {
+				"area": "shock-dng",
 				"map": "shock-dng.g.room5",
 				"mapId": 164
 			},
@@ -6295,6 +6618,7 @@
 		},
 		"Kajo 3F: East Branch Lower": {
 			"location": {
+				"area": "tree-dng",
 				"map": "tree-dng.f3.branch-east",
 				"mapId": 166
 			},
@@ -6313,6 +6637,7 @@
 		},
 		"Kajo 3F: East Branch Upper": {
 			"location": {
+				"area": "tree-dng",
 				"map": "tree-dng.f3.branch-east",
 				"mapId": 167
 			},
@@ -6331,6 +6656,7 @@
 		},
 		"Kajo 3F: East Branch Right": {
 			"location": {
+				"area": "tree-dng",
 				"map": "tree-dng.f3.branch-east",
 				"mapId": 168
 			},
@@ -6349,6 +6675,7 @@
 		},
 		"Kajo 3F: West Branch Upper": {
 			"location": {
+				"area": "tree-dng",
 				"map": "tree-dng.f3.branch-west",
 				"mapId": 67
 			},
@@ -6367,6 +6694,7 @@
 		},
 		"Kajo 3F: West Branch Lower": {
 			"location": {
+				"area": "tree-dng",
 				"map": "tree-dng.f3.branch-west",
 				"mapId": 68
 			},
@@ -6385,6 +6713,7 @@
 		},
 		"Kajo 3F: Falling Leaves": {
 			"location": {
+				"area": "tree-dng",
 				"map": "tree-dng.f3.center-01",
 				"mapId": 136
 			},
@@ -6403,6 +6732,7 @@
 		},
 		"Kajo 3F: Branch Conveyance": {
 			"location": {
+				"area": "tree-dng",
 				"map": "tree-dng.f3.east-01",
 				"mapId": 81
 			},
@@ -6421,6 +6751,7 @@
 		},
 		"Kajo 3F: Branch Transmit Right": {
 			"location": {
+				"area": "tree-dng",
 				"map": "tree-dng.f3.west-01",
 				"mapId": 81
 			},
@@ -6439,6 +6770,7 @@
 		},
 		"Kajo 3F: Branch Transmit Left": {
 			"location": {
+				"area": "tree-dng",
 				"map": "tree-dng.f3.west-01",
 				"mapId": 86
 			},
@@ -6457,6 +6789,7 @@
 		},
 		"So'najiz U1: Principle of Conveyance": {
 			"location": {
+				"area": "wave-dng",
 				"map": "wave-dng.b1.center-01",
 				"mapId": 276
 			},
@@ -6475,6 +6808,7 @@
 		},
 		"So'najiz U1: Trial of Persistence Lower Right": {
 			"location": {
+				"area": "wave-dng",
 				"map": "wave-dng.b1.center-04-long",
 				"mapId": 205
 			},
@@ -6493,6 +6827,7 @@
 		},
 		"So'najiz U1: Trial of Persistence Upper Right": {
 			"location": {
+				"area": "wave-dng",
 				"map": "wave-dng.b1.center-04-long",
 				"mapId": 258
 			},
@@ -6511,6 +6846,7 @@
 		},
 		"So'najiz U1: Trial of Persistence Rightmost": {
 			"location": {
+				"area": "wave-dng",
 				"map": "wave-dng.b1.center-04-long",
 				"mapId": 329
 			},
@@ -6529,6 +6865,7 @@
 		},
 		"So'najiz U1: Trial of Persistence Upper Left": {
 			"location": {
+				"area": "wave-dng",
 				"map": "wave-dng.b1.center-04-long",
 				"mapId": 670
 			},
@@ -6547,6 +6884,7 @@
 		},
 		"So'najiz U1: Trial of Persistence Lower Left": {
 			"location": {
+				"area": "wave-dng",
 				"map": "wave-dng.b1.center-04-long",
 				"mapId": 671
 			},
@@ -6565,6 +6903,7 @@
 		},
 		"So'najiz U1: Moving Attraction": {
 			"location": {
+				"area": "wave-dng",
 				"map": "wave-dng.b1.north-01",
 				"mapId": 307
 			},
@@ -6583,6 +6922,7 @@
 		},
 		"So'najiz U1: Slowing Attraction": {
 			"location": {
+				"area": "wave-dng",
 				"map": "wave-dng.b1.north-03",
 				"mapId": 249
 			},
@@ -6608,6 +6948,7 @@
 		},
 		"So'najiz U1: Standing Attraction": {
 			"location": {
+				"area": "wave-dng",
 				"map": "wave-dng.b1.north-06",
 				"mapId": 193
 			},
@@ -6626,6 +6967,7 @@
 		},
 		"So'najiz U1: Attracting Conveyance": {
 			"location": {
+				"area": "wave-dng",
 				"map": "wave-dng.b1.north-08",
 				"mapId": 221
 			},
@@ -6644,6 +6986,7 @@
 		},
 		"So'najiz U1: Fast Conveyance": {
 			"location": {
+				"area": "wave-dng",
 				"map": "wave-dng.b1.south-04",
 				"mapId": 309
 			},
@@ -6662,6 +7005,7 @@
 		},
 		"So'najiz U1: Flaming Conveyance": {
 			"location": {
+				"area": "wave-dng",
 				"map": "wave-dng.b1.south-06",
 				"mapId": 242
 			},
