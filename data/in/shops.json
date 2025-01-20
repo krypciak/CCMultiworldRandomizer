@@ -314,6 +314,9 @@
 				"linear": "11",
 				"open": "open5"
 			},
+			"condition": [
+				[ "item", "Green Seed Shade" ]
+			],
 			"slots": [
 				"Salted Peanuts",
 				"Cup o' Coffee",
@@ -476,12 +479,16 @@
 			},
 			"region": {
 				"linear": "33",
-				"open": "open16"
+				"open": "open20"
 			},
 			"condition": [
 				[ "var", "canGrind" ]
 			],
 			"slots": [
+				"Cobalt Goggles",
+				"Cobalt Edge",
+				"Cobalt Mail",
+				"Cobalt Boots",
 				"Laser Goggles",
 				"Laser Edge",
 				"Laser Mail",
@@ -494,7 +501,7 @@
 			},
 			"region": {
 				"linear": "33",
-				"open": "open16"
+				"open": "open20"
 			},
 			"condition": [
 				[ "var", "canGrind" ]
@@ -523,7 +530,7 @@
 			},
 			"region": {
 				"linear": "33",
-				"open": "open16"
+				"open": "open20"
 			},
 			"condition": [
 				[ "var", "canGrind" ]
@@ -538,7 +545,7 @@
 			},
 			"region": {
 				"linear": "33",
-				"open": "open16"
+				"open": "open20"
 			},
 			"slots": [
 				"Rising Super Star",

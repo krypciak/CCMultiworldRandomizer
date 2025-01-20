@@ -2,6 +2,7 @@
 	"elements": {
 		"Heat Pedestal": {
 			"location": {
+				"area": "cold-dng",
 				"map": "cold-dng.b3.room7",
 				"mapId": 45
 			},
@@ -15,6 +16,7 @@
 		},
 		"Cold Pedestal": {
 			"location": {
+				"area": "heat-dng",
 				"map": "heat-dng.f2.room-cold",
 				"mapId": 78
 			},
@@ -28,6 +30,7 @@
 		},
 		"Shock Pedestal": {
 			"location": {
+				"area": "wave-dng",
 				"map": "wave-dng.b1.center-05-element",
 				"mapId": 248
 			},
@@ -41,6 +44,7 @@
 		},
 		"Wave Pedestal": {
 			"location": {
+				"area": "shock-dng",
 				"map": "shock-dng.f2.room-element",
 				"mapId": 86
 			},

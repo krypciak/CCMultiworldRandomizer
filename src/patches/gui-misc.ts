@@ -191,7 +191,9 @@ export function patch(plugin: MwRandomizer) {
 					nax.ccuilib.INPUT_FIELD_TYPE.DEFAULT,
 					this.fields[i].obscure ?? false
 				);
+
 				inputGui.description = ig.lang.get("sc.gui.mw.connection-menu." + this.fields[i].key);
+
 				this.buttongroup.addFocusGui(inputGui, 0, i);
 				inputGui.hook.pos.y = (textGui.hook.size.y + this.vSpacer) * i;
 				
