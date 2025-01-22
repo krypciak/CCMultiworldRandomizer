@@ -450,7 +450,7 @@ export function patch(plugin: MwRandomizer) {
 					info = {
 						url: `${legacyInfo.hostname}:${legacyInfo.port}`,
 						name: legacyInfo.name,
-						password: "",
+						password: legacyInfo.password ?? "",
 					};
 				}
 
@@ -519,6 +519,10 @@ export function patch(plugin: MwRandomizer) {
 				this.mode = slotData.mode;
 				this.options = slotData.options;
 				this.connectionInfo = info;
+
+				// workaround for cc-open-world to use
+				ig.vars.setDefault("mw.mode", this.mode);
+				ig.vars.setDefault("mw.options", this.options);
 
 				if (mw?.locationInfo) {
 					this.slimLocationInfo = mw?.locationInfo;

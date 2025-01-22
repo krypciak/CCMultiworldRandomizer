@@ -52,6 +52,7 @@ declare global {
 				hostname: string;
 				port: number;
 				name: string;
+				password?: string;
 			}
 
 			type AnyConnectionInformation = ConnectionInformation | LegacyConnectionInformation;
