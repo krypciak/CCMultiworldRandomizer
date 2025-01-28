@@ -81,6 +81,14 @@ export function patch(plugin: MwRandomizer) {
 
 					this.disconnectPlanned = false;
 				});
+
+				this.client.room.on("locationsChecked", locations => {
+					if (this.client.authenticated) {
+						for (const location of locations) {
+							this.localCheckedLocations.add(location);
+						}
+					}
+				});
 			},
 
 			modelChanged(model, message, data) {

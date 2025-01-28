@@ -8,6 +8,7 @@ declare global {
 			mwCheck?: RawChest;
 			analyzeColor: sc.ANALYSIS_COLORS;
 			analyzeLabel: string;
+			collectedLabel: string;
 			rawChest: ap.Item | undefined;
 		}
 
@@ -39,6 +40,7 @@ declare global {
 			interface Chest extends ig.BoxGui {
 				areaGui: sc.TextGui;
 				locationGui: sc.TextGui;
+				collectedGui: sc.TextGui;
 				line: sc.LineGui;
 				clearance: sc.TextGui;
 				arrow: sc.QuickItemArrow;
@@ -86,52 +88,65 @@ export function patch(plugin: MwRandomizer) {
 			const anims = this.animSheet.anims as unknown as {
 				idleKey: ig.MultiDirAnimationSet
 				idleMasterKey: ig.MultiDirAnimationSet
+				idleGold: ig.MultiDirAnimationSet
+				idleSilver: ig.MultiDirAnimationSet
+				idleBronze: ig.MultiDirAnimationSet
 				idle: ig.MultiDirAnimationSet
 				open: ig.MultiDirAnimationSet
 				end: ig.MultiDirAnimationSet
 			}
-			const keyLayer = anims.idleKey.animations[1];
-			const masterKeyLayer = anims.idleMasterKey.animations[1];
-			let layerToAdd = null;
 
+			// FILLER items get a normal chest with an archipelago logo on it
+			// These are the default values
 			this.analyzeColor = sc.ANALYSIS_COLORS.GREY;
-			this.analyzeLabel = "Filler";
+			this.analyzeLabel = "\\C[blue]Filler";
+			this.collectedLabel = "\\c[3]Not Collected";
+			let sequence = 8;
 
-			let newOffY = 0;
+			let newOffX = 0;
+			let newOffY = 80;
 			this.rawChest = sc.multiworld.locationInfo[this.mwCheck.mwids[0]];
 
 			if (this.rawChest == undefined) {
 				return;
 			}
 
-			let flags = this.rawChest.flags;
 			if (this.rawChest.useful || this.rawChest.trap) {
 				// USEFUL and TRAP items get a blue chest
-				newOffY = 80;
-				layerToAdd = keyLayer;
+				newOffY = 136;
 				this.analyzeColor = sc.ANALYSIS_COLORS.BLUE;
-				this.analyzeLabel = "Useful";
+				this.analyzeLabel = "\\C[dark-blue]Useful";
+				sequence = 7;
 			} else if (this.rawChest.progression) {
 				// PROGRESSION items get a green chest
-				newOffY = 136;
-				layerToAdd = masterKeyLayer;
+				newOffY = 192;
 				this.analyzeColor = sc.ANALYSIS_COLORS.GREEN;
-				this.analyzeLabel = "Progression";
+				this.analyzeLabel = "\\C[green]Progression";
+				sequence = 6;
 			}
+
+			if (sc.multiworld.localCheckedLocations.has(this.mwCheck.mwids[0])) {
+				newOffX = 128;
+				newOffY = 0;
+				this.analyzeColor = sc.ANALYSIS_COLORS.GREY;
+				this.collectedLabel = "\\C[gray]Collected";
+				sequence = 0;
+			} 
 
 			anims.idleKey = anims.idleMasterKey = anims.idle;
-
-			if (newOffY == 0) {
-				return;
-			}
 
 			for (const name of Object.keys(anims) as (keyof typeof anims)[]) {
 				let animations = anims[name].animations;
 
 				if (name.startsWith("idle")) {
 					animations[0].sheet.offY = newOffY;
-					layerToAdd && animations.splice(1, 0, layerToAdd);
+					animations[0].sheet.offX = newOffX;
 				}
+
+				if (name == "idleGold") {
+					animations[1].sequence = [sequence];
+				}
+
 				if (name == "open" || name == "end") {
 					anims[name].animations[0].sheet.offY = newOffY + 24;
 				}
@@ -233,9 +248,14 @@ export function patch(plugin: MwRandomizer) {
 			this.addChildGui(this.arrow);
 
 			this.typeGui = new sc.TextGui("", {font: sc.fontsystem.tinyFont});
-			this.typeGui.setPos(8, 5);
+			this.typeGui.setPos(8, 13);
 			this.typeGui.setAlign(ig.GUI_ALIGN.X_LEFT, ig.GUI_ALIGN.Y_BOTTOM);
 			this.addChildGui(this.typeGui);
+
+			this.collectedGui = new sc.TextGui("", {font: sc.fontsystem.tinyFont});
+			this.collectedGui.setPos(0, 4);
+			this.collectedGui.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_BOTTOM);
+			this.addChildGui(this.collectedGui);
 		},
 
 		show(tooltip) {
@@ -283,9 +303,10 @@ export function patch(plugin: MwRandomizer) {
 				this.line.hook.size.x = 117;
 			}
 
-			this.hook.size.y = 34 + this.locationGui.hook.size.y;
+			this.hook.size.y = 41 + this.locationGui.hook.size.y;
 
-			this.typeGui.setText(`Type: \\c[3]${chest.analyzeLabel}\\c[0]`);
+			this.typeGui.setText(`Type: ${chest.analyzeLabel}\\c[0]`);
+			this.collectedGui.setText(chest.collectedLabel);
 
 			return true;
 		},
