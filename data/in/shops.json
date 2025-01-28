@@ -2,7 +2,8 @@
 	"shops": {
 		"Harbor Items": {
 			"location": {
-				"shop": "rookieHarborItems"
+				"shop": "rookieHarborItems",
+				"area": "rookie-harbor"
 			},
 			"region": {
 				"linear": "2",
@@ -24,7 +25,8 @@
 		},
 		"Harbor Items + Blue Ice": {
 			"location": {
-				"shop": "rookieHarborItems"
+				"shop": "rookieHarborItems",
+				"area": "rookie-harbor"
 			},
 			"region": {
 				"linear": "2",
@@ -41,7 +43,8 @@
 		},
 		"Harbor Items + Red Flame": {
 			"location": {
-				"shop": "rookieHarborItems"
+				"shop": "rookieHarborItems",
+				"area": "rookie-harbor"
 			},
 			"region": {
 				"linear": "2",
@@ -58,7 +61,8 @@
 		},
 		"Harbor Items + Green Seed": {
 			"location": {
-				"shop": "rookieHarborItems"
+				"shop": "rookieHarborItems",
+				"area": "rookie-harbor"
 			},
 			"region": {
 				"linear": "2",
@@ -76,7 +80,8 @@
 		},
 		"Harbor Weapons": {
 			"location": {
-				"shop": "rookieHarborWeapons"
+				"shop": "rookieHarborWeapons",
+				"area": "rookie-harbor"
 			},
 			"region": {
 				"linear": "2",
@@ -98,7 +103,8 @@
 		},
 		"Harbor Weapons + Red Flame": {
 			"location": {
-				"shop": "rookieHarborWeapons"
+				"shop": "rookieHarborWeapons",
+				"area": "rookie-harbor"
 			},
 			"region": {
 				"linear": "2",
@@ -117,7 +123,8 @@
 		},
 		"Harbor North Weapons": {
 			"location": {
-				"shop": "rookieHarborWeaponsNorth"
+				"shop": "rookieHarborWeaponsNorth",
+				"area": "rookie-harbor"
 			},
 			"region": {
 				"linear": "19",
@@ -136,7 +143,8 @@
 		},
 		"Tara's Shop": {
 			"location": {
-				"shop": "rookieHarborTara"
+				"shop": "rookieHarborTara",
+				"area": "rookie-harbor"
 			},
 			"region": {
 				"linear": "2",
@@ -151,7 +159,8 @@
 		},
 		"Harbor Backer Items": {
 			"location": {
-				"shop": "rookieBacker"
+				"shop": "rookieBacker",
+				"area": "rookie-harbor"
 			},
 			"region": {
 				"linear": "19",
@@ -174,7 +183,8 @@
 		},
 		"Bergen Items": {
 			"location": {
-				"shop": "bergenVillageItems"
+				"shop": "bergenVillageItems",
+				"area": "bergen"
 			},
 			"region": {
 				"linear": "3",
@@ -193,7 +203,8 @@
 		},
 		"Bergen Items + Blue Ice": {
 			"location": {
-				"shop": "bergenVillageItems"
+				"shop": "bergenVillageItems",
+				"area": "bergen"
 			},
 			"region": {
 				"linear": "3",
@@ -209,7 +220,8 @@
 		},
 		"Bergen Items + Red Flame": {
 			"location": {
-				"shop": "bergenVillageItems"
+				"shop": "bergenVillageItems",
+				"area": "bergen"
 			},
 			"region": {
 				"linear": "3",
@@ -225,7 +237,8 @@
 		},
 		"Bergen Items + Green Seed": {
 			"location": {
-				"shop": "bergenVillageItems"
+				"shop": "bergenVillageItems",
+				"area": "bergen"
 			},
 			"region": {
 				"linear": "3",
@@ -242,7 +255,8 @@
 		},
 		"Bergen Weapons": {
 			"location": {
-				"shop": "bergenVillageWeapons"
+				"shop": "bergenVillageWeapons",
+				"area": "bergen"
 			},
 			"region": {
 				"linear": "3",
@@ -257,7 +271,8 @@
 		},
 		"Hermit's Hut": {
 			"location": {
-				"shop": "bergenHermit"
+				"shop": "bergenHermit",
+				"area": "bergen-trails"
 			},
 			"region": {
 				"linear": "3",
@@ -271,7 +286,8 @@
 		},
 		"Ba'kii Items": {
 			"location": {
-				"shop": "bakiItems"
+				"shop": "bakiItems",
+				"area": "heat-village"
 			},
 			"region": {
 				"linear": "11",
@@ -292,7 +308,8 @@
 		},
 		"Ba'kii Items + Blue Ice": {
 			"location": {
-				"shop": "bakiItems"
+				"shop": "bakiItems",
+				"area": "heat-village"
 			},
 			"region": {
 				"linear": "11",
@@ -308,7 +325,8 @@
 		},
 		"Ba'kii Items + Green Seed": {
 			"location": {
-				"shop": "bakiItems"
+				"shop": "bakiItems",
+				"area": "heat-village"
 			},
 			"region": {
 				"linear": "11",
@@ -325,7 +343,8 @@
 		},
 		"Ba'kii Weapons": {
 			"location": {
-				"shop": "bakiWeapons"
+				"shop": "bakiWeapons",
+				"area": "heat-village"
 			},
 			"region": {
 				"linear": "11",
@@ -344,7 +363,8 @@
 		},
 		"Basin Vending Machine": {
 			"location": {
-				"shop": "basinVendingMachines"
+				"shop": "basinVendingMachines",
+				"area": "jungle-city"
 			},
 			"region": {
 				"linear": "23",
@@ -370,7 +390,8 @@
 		},
 		"Basin Items": {
 			"location": {
-				"shop": "basinItems"
+				"shop": "basinItems",
+				"area": "jungle-city"
 			},
 			"region": {
 				"linear": "23",
@@ -396,7 +417,8 @@
 		},
 		"Basin Weapons": {
 			"location": {
-				"shop": "basinWeapons"
+				"shop": "basinWeapons",
+				"area": "jungle-city"
 			},
 			"region": {
 				"linear": "23",
@@ -415,13 +437,14 @@
 		},
 		"Calzone Shop": {
 			"location": {
-				"shop": "basinMushroom"
+				"shop": "basinMushroom",
+				"area": "jungle-city"
 			},
 			"region": {
 				"linear": "23",
-				"open": "open10" 
+				"open": "open10"
 			},
-			"condition": [ 
+			"condition": [
 				[ "item", "Wave", 1 ]
 			],
 			"slots": [
@@ -430,7 +453,8 @@
 		},
 		"Ridge Weapons": {
 			"location": {
-				"shop": "sapphireWeapons"
+				"shop": "sapphireWeapons",
+				"area": "forest"
 			},
 			"region": {
 				"linear": "31",
@@ -449,7 +473,8 @@
 		},
 		"Ridge Items": {
 			"location": {
-				"shop": "sapphireItems"
+				"shop": "sapphireItems",
+				"area": "forest"
 			},
 			"region": {
 				"linear": "31",
@@ -475,7 +500,8 @@
 		},
 		"Rhombus Weapons": {
 			"location": {
-				"shop": "rhombusWeapons1"
+				"shop": "rhombusWeapons1",
+				"area": "rhombus-sqr"
 			},
 			"region": {
 				"linear": "33",
@@ -497,7 +523,8 @@
 		},
 		"Rhombus Items": {
 			"location": {
-				"shop": "rhombusItems1"
+				"shop": "rhombusItems1",
+				"area": "rhombus-sqr"
 			},
 			"region": {
 				"linear": "33",
@@ -526,7 +553,8 @@
 		},
 		"Rhombus Curios": {
 			"location": {
-				"shop": "rhombusCurios"
+				"shop": "rhombusCurios",
+				"area": "rhombus-sqr"
 			},
 			"region": {
 				"linear": "33",
@@ -541,7 +569,8 @@
 		},
 		"Rhombus Backer Items": {
 			"location": {
-				"shop": "rhombusBacker"
+				"shop": "rhombusBacker",
+				"area": "rhombus-sqr"
 			},
 			"region": {
 				"linear": "33",
@@ -564,7 +593,8 @@
 		},
 		"Vermillion Weapons": {
 			"location": {
-				"shop": "aridWeapons"
+				"shop": "aridWeapons",
+				"area": "arid"
 			},
 			"region": {
 				"linear": "22",
@@ -583,7 +613,8 @@
 		},
 		"Vermillion Items": {
 			"location": {
-				"shop": "aridItems"
+				"shop": "aridItems",
+				"area": "arid"
 			},
 			"region": {
 				"linear": "22",
