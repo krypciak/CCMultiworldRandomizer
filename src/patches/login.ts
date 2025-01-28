@@ -89,7 +89,6 @@ export function patch(plugin: MwRandomizer) {
 				this.editButton.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_BOTTOM);
 				this.editButton.onButtonPress = this.onEditButtonPress.bind(this);
 				this.buttonGroup.addFocusGui(this.editButton, 0, 0);
-				this.buttonInteract.addGlobalButton(this.editButton, sc.control.menuBack);
 			}
 
 			this.textChild = new sc.TextGui("Logging in.", { maxWidth: 240 });
