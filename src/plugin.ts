@@ -8,14 +8,23 @@ import type * as _ from 'nax-module-cache/src/headers/nax/moduleCache.d.ts'
 // install a bunch of polyfills for archipelago.js
 require('iterator-polyfill');
 
+declare global {
+	namespace sc {
+		var randoData: WorldData;
+		var multiWorldHud: sc.MultiWorldHudBox;
+	}
+}
+
 // BEHOLD... THE UNIFILLS
 // They're not polyfills because they are only guaranteed to work in this one particular environment lol
 // The polyfill for this added 87 (!) dependencies
-Array.prototype.toSorted = function(comparefn?: (a: any, b: any) => number) {
-	let result = [...this];
-	result.sort(comparefn);
-	return result;
-};
+if (!Array.prototype.toSorted) {
+	Array.prototype.toSorted = function(comparefn?: (a: any, b: any) => number) {
+		let result = [...this];
+		result.sort(comparefn);
+		return result;
+	};
+}
 
 // This one would probably be similar but I did not even download it
 Object.fromEntries = function(iterable: Iterable<[key: any, value: any]>) {
@@ -29,13 +38,6 @@ Object.fromEntries = function(iterable: Iterable<[key: any, value: any]>) {
 import structuredClone from "@ungap/structured-clone";
 if (!("structuredClone" in globalThis)) {
   globalThis.structuredClone = structuredClone;
-}
-
-declare global {
-	namespace sc {
-		var randoData: WorldData;
-		var multiWorldHud: sc.MultiWorldHudBox;
-	}
 }
 
 export default class MwRandomizer {
