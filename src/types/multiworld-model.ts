@@ -140,7 +140,7 @@ declare global {
 			createAPItem(this: this, item: sc.MultiWorldModel.LocalInternalItem, locationId: number): ap.Item;
 			getItemInfo(this: this, item: ap.Item, nameIsSender?: boolean): ItemInfo;
 
-			getShopLabelsFromItemData(item: ap.Item): sc.ListBoxButton.Data;
+			getShopLabelsFromItemData(item: ap.Item, forSender?: boolean): sc.ListBoxButton.Data;
 
 			getElementConstantFromComboId(this: this, comboId: number): number | null;
 			getItemDataFromComboId(this: this, comboId: number): [itemId: number, quantity: number];

@@ -177,7 +177,7 @@ export function patch(plugin: MwRandomizer) {
 				sc.multiworld.client.authenticated
 			) {
 				// @ts-ignore
-				sc.multiworld.client.scout(...toHint, 2);
+				sc.multiworld.client.scout(toHint, 2);
 			}
 
 			this.list.list.contentPane.hook.size.y += accum;

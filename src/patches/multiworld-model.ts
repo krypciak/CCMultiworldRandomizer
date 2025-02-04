@@ -168,7 +168,9 @@ export function patch(plugin: MwRandomizer) {
 				return {icon, label, player, level: 0, isScalable: false};
 			},
 
-			getShopLabelsFromItemData(item: ap.Item): sc.ListBoxButton.Data {
+			getShopLabelsFromItemData(item: ap.Item, forSender?: boolean): sc.ListBoxButton.Data {
+				forSender = forSender ?? false;
+
 				let rarityString = "Looks like junk...";
 
 				if (item.useful) {
@@ -179,7 +181,9 @@ export function patch(plugin: MwRandomizer) {
 					rarityString = "\\c[1]Looks dangerous\\c[0].";
 				}
 
-				if (item.sender.game == "CrossCode") {
+				let game = (forSender ? item.sender : item.receiver).game;
+
+				if (game == "CrossCode") {
 					if (item.id >= sc.multiworld.baseNormalItemId && item.id < sc.multiworld.baseDynamicItemId) {
 						const [internalItem, internalQty] =  sc.multiworld.getItemDataFromComboId(item.id);
 						const internalData = sc.inventory.getItem(internalItem);
