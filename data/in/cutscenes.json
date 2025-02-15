@@ -11,6 +11,9 @@
 				"linear": "3",
 				"open": "open3" 
 			},
+			"properties": {
+				"alwaysQuest": true
+			},
 			"reward": [
 				[ "item", "Disc of Flora", 1 ]
 			]
@@ -55,6 +58,9 @@
 			"region": {
 				"linear": "3",
 				"open": "open3"
+			},
+			"properties": {
+				"alwaysQuest": true
 			},
 			"reward": [
 				[ "item", "Mine Detector", 1]
@@ -166,6 +172,9 @@
 			"region": {
 				"linear": "12",
 				"open": "open6" 
+			},
+			"properties": {
+				"alwaysQuest": true
 			},
 			"reward": [
 				[ "item", "Yellow Sand Shade", 1 ]

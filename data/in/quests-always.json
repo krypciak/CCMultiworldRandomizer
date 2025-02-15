@@ -11,6 +11,9 @@
 				[ "item", "Heat" ],
 				[ "item", "Cold" ]
 			],
+			"properties": {
+				"alwaysQuest": true
+			},
 			"reward": [
 				[ "item", "Green Seed Shade", 1 ]
 			]
@@ -24,6 +27,9 @@
 			"condition": [ 
 				[ "item", "Wave", 1 ]
 			],
+			"properties": {
+				"alwaysQuest": true
+			},
 			"reward": [
 				[ "item", "Pond Slums Pass", 1 ]
 			]
