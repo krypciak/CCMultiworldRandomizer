@@ -7,6 +7,10 @@
 				"linear": "20",
 				"open": "open9" 
 			},
+			"condition": [
+				[ "item", "Heat" ],
+				[ "item", "Cold" ]
+			],
 			"reward": [
 				[ "item", "Green Seed Shade", 1 ]
 			]
