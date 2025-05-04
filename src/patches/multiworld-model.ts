@@ -347,6 +347,11 @@ export function patch(plugin: MwRandomizer) {
 
 			async login(info: ap.ConnectionInformation) {
 				try {
+					info.version = {
+						major: 0,
+						minor: 5,
+						build: 0,
+					};
 					await this.client.connect(info);
 				} catch (e) {
 					sc.Dialogs.showErrorDialog(
