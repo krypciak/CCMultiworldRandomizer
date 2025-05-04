@@ -65,9 +65,6 @@ export default class MwRandomizer {
 	}
 
 	async prestart() {
-		window.moduleCache.registerModPrefix("mw-rando", this.baseDirectory.substring(7));
-		ig.lib = this.baseDirectory.substring(7);
-
 		let randoData: WorldData = await readJsonFromFile(this.baseDirectory + "data/out/data.json");
 		this.randoData = randoData;
 		sc.randoData = randoData;
