@@ -565,7 +565,8 @@
 				[ "quest", "Autumn's Rise Trailblazing" ],
 				[ "quest", "Bergen Trailblazing" ],
 				[ "quest", "Maroon Valley Trailblazing" ],
-				[ "quest", "Gaia's Garden Trailblazing" ]
+				[ "quest", "Gaia's Garden Trailblazing" ],
+				[ "element", "Shock" ]
 			],
 			"reward": [
 				[ "item", "Circuit Override", 1 ]
