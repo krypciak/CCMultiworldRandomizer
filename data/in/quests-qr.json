@@ -413,8 +413,8 @@
 		"Heating the Hermit": {
 			"questid": "bergtraders-2-hermit_materials",
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"linear": "3.1",
+				"open": "open4.1"
 			},
 			"condition": [
 				[ "quest", "Fancy Tophat" ],
