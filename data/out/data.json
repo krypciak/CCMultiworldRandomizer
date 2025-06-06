@@ -2038,22 +2038,6 @@
 				}
 			}
 		},
-		"jungle.caves.smuggle-route-2": {
-			"chests": {
-				"55": {
-					"name": "Garden: Infested Cavern Left",
-					"mwids": [
-						3235824235
-					]
-				},
-				"60": {
-					"name": "Garden: Infested Cavern Right",
-					"mwids": [
-						3235824236
-					]
-				}
-			}
-		},
 		"jungle.clearing.clear-path-01": {
 			"chests": {
 				"5": {
@@ -2972,6 +2956,22 @@
 					"name": "Trail: Horncave",
 					"mwids": [
 						3235824522
+					]
+				}
+			}
+		},
+		"jungle.caves.smuggle-route-2": {
+			"chests": {
+				"55": {
+					"name": "Garden: Infested Cavern Left",
+					"mwids": [
+						3235824235
+					]
+				},
+				"60": {
+					"name": "Garden: Infested Cavern Right",
+					"mwids": [
+						3235824236
 					]
 				}
 			}
@@ -8115,28 +8115,6 @@
 			},
 			{
 				"type": "Chest",
-				"level": -1,
-				"x": 397.7,
-				"y": 349.75,
-				"map": "jungle.caves.smuggle-route-2",
-				"mwid": 3235824235,
-				"settings": {
-					"defaultClearance": "Bronze"
-				}
-			},
-			{
-				"type": "Chest",
-				"level": -1,
-				"x": 449.05,
-				"y": 330.85,
-				"map": "jungle.caves.smuggle-route-2",
-				"mwid": 3235824236,
-				"settings": {
-					"defaultClearance": "Silver"
-				}
-			},
-			{
-				"type": "Chest",
 				"level": 0,
 				"x": 413.3818181818182,
 				"y": 721.6,
@@ -8804,6 +8782,28 @@
 				"mwid": 3235824301,
 				"settings": {
 					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 397.7,
+				"y": 349.75,
+				"map": "jungle.caves.smuggle-route-2",
+				"mwid": 3235824235,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 449.05,
+				"y": 330.85,
+				"map": "jungle.caves.smuggle-route-2",
+				"mwid": 3235824236,
+				"settings": {
+					"defaultClearance": "Silver"
 				}
 			},
 			{
