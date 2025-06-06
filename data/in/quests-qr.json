@@ -293,6 +293,13 @@
 				"linear": "3",
 				"open": "open3"
 			},
+			"condition": [
+				[
+					"or",
+					[ "item", "Bronze Mail" ],
+					[ "shop_slot", "rookieHarborWeapons", 30 ]
+				]
+			],
 			"reward": [
 				[ "item", "Pike Wood", 7 ],
 				[ "item", "Frozen Tear", 2 ]
