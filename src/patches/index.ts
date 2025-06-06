@@ -12,6 +12,7 @@ import { patch as patchShop } from "./shop";
 import { patch as patchNewGame } from "./new-game";
 import { patch as patchTextClient } from "./text-client";
 import { patch as patchLogin } from "./login";
+import { patch as patchMap } from "./map";
 
 export function applyPatches(plugin: MwRandomizer) {
 	patchMwModel(plugin);
@@ -26,4 +27,5 @@ export function applyPatches(plugin: MwRandomizer) {
 	patchNewGame(plugin);
 	patchTextClient(plugin);
 	patchLogin(plugin);
+	patchMap(plugin);
 }

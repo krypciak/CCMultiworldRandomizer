@@ -79,6 +79,10 @@ export function patch(plugin: MwRandomizer) {
 				return;
 			}
 
+			if (!this.isOpen) {
+				sc.multiworld.seenChests.add(this.mwCheck.mwids[0]);
+			}
+
 			const clearance =  sc.multiworld.options.chestClearanceLevels?.[this.mwCheck.mwids[0]];
 
 			if (clearance != undefined) {
@@ -126,6 +130,7 @@ export function patch(plugin: MwRandomizer) {
 			}
 
 			if (sc.multiworld.localCheckedLocations.has(this.mwCheck.mwids[0])) {
+				// If the item was checked (i.e. in a divergent play session), make it gray
 				newOffX = 128;
 				newOffY = 0;
 				this.analyzeColor = sc.ANALYSIS_COLORS.GREY;

@@ -2,7 +2,8 @@ export interface WorldData {
 	items: RawItems;
 	quests: RawQuests;
 	shops: RawShops;
-	descriptions: { [itemId: number]: { [locale: string]: string }
+	descriptions: { [itemId: number]: { [locale: string]: string } };
+	markers: { [area: string]: MarkerInfo[] }
 }
 
 export type RawItems = { [mapName: string]: RawMapItems };
@@ -62,4 +63,20 @@ export interface ItemInfo {
 	level: number;
 	isScalable: boolean;
 	shops?: RawShops;
+}
+
+export type MarkerTypeSpecificSettings = {
+	"EventTrigger": {};
+	"NPC": {};
+	"Chest": { defaultClearance: string };
+}
+
+export interface MarkerInfo<Type extends keyof MarkerTypeSpecificSettings> {
+	type: Type;
+	level: number;
+	x: number;
+	y: number;
+	map: string;
+	mwid: number;
+	settings: MarkerTypeSpecificSettings[Type];
 }

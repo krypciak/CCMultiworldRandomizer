@@ -108,6 +108,58 @@
 				[ "item", "Vanilla Ice Cream", 2 ]
 			]
 		},
+		"Garden: Infested Cavern Left": {
+			"location": {
+				"area": "jungle",
+				"map": "jungle.caves.smuggle-route-2",
+				"mapId": 55
+			},
+			"clearance": "Bronze",
+			"region": {
+				"linear": "25",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Golden Ticket",
+					1
+				]
+			],
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
+				]
+			]
+		},
+		"Garden: Infested Cavern Right": {
+			"location": {
+				"area": "jungle",
+				"map": "jungle.caves.smuggle-route-2",
+				"mapId": 60
+			},
+			"clearance": "Silver",
+			"region": {
+				"linear": "25",
+				"open": "open10"
+			},
+			"reward": [
+				[
+					"item",
+					"Stout Backplate",
+					3
+				]
+			],
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
+				]
+			]
+		},
 		"Garden: Chilled Den": {
 			"location": {
 				"area": "jungle",

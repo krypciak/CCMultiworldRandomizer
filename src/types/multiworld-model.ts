@@ -95,6 +95,7 @@ declare global {
 				locationInfo: Record<number, LocalInternalItem>;
 				offlineCheckBuffer: number[];
 				dataPackageChecksums: Record<string, string>;
+				seenChests: number[];
 			};
 
 			export type SlotData = {
@@ -131,6 +132,7 @@ declare global {
 			mode: string;
 			options: sc.MultiWorldModel.MultiworldOptions;
 			progressiveChainProgress: Record<number, number>;
+			seenChests: Set<number>;
 
 			dataPackageChecksums: Record<string, string>;
 			receivedItemMap: Record<number, number>;

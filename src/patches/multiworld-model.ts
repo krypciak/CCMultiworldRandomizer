@@ -368,6 +368,10 @@ export function patch(plugin: MwRandomizer) {
 					this.offlineCheckBuffer = [];
 				}
 
+				if (!this.seenChests) {
+					this.seenChests = new Set();
+				}
+
 				ig.vars.setDefault("mw.mode", this.mode);
 				ig.vars.setDefault("mw.options", this.options);
 				ig.vars.setDefault("mw.dataPackageChecksums", this.dataPackageChecksums);
@@ -407,6 +411,7 @@ export function patch(plugin: MwRandomizer) {
 				this.questSettings = null;
 				this.receivedItemMap = null;
 				this.offlineCheckBuffer = null;
+				this.seenChests = null;
 			},
 
 			onLevelLoadStart() {
@@ -414,7 +419,8 @@ export function patch(plugin: MwRandomizer) {
 			},
 
 			onStorageSave(savefile) {
-				savefile.vars.storage.mw.localCheckedLocations = new Array(this.localCheckedLocations.values());
+				savefile.vars.storage.mw.localCheckedLocations = Array.from(this.localCheckedLocations.values());
+				savefile.vars.storage.mw.seenChests = Array.from(this.seenChests.values());
 			},
 
 			async reallyCheckLocation(mwid: number) {
@@ -549,6 +555,8 @@ export function patch(plugin: MwRandomizer) {
 				for (const location of this.client.room.checkedLocations) {
 					this.localCheckedLocations.add(location);
 				}
+
+				this.seenChests = new Set(mw?.seenChests);
 
 				// if we're in game, then run the level loading code
 				// these functions are intended to complement each other but when login() is called from the title screen,
