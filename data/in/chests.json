@@ -1248,8 +1248,8 @@
 			},
 			"clearance": "Default",
 			"region": {
-				"linear": "21",
-				"open": "open9.1"
+				"linear": "20",
+				"open": "open9"
 			},
 			"reward": [
 				[

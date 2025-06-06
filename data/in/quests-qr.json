@@ -345,6 +345,13 @@
 				"linear": "3",
 				"open": "open3"
 			},
+			"condition": [
+				[
+					"or",
+					[ "item", "Bronze Mail" ],
+					[ "shop_slot", "rookieHarborWeapons", 30 ]
+				]
+			],
 			"reward": [
 				[ "item", "Pike Wood", 7 ],
 				[ "item", "Frozen Tear", 2 ]
@@ -465,8 +472,8 @@
 		"Heating the Hermit": {
 			"questid": "bergtraders-2-hermit_materials",
 			"region": {
-				"linear": "3",
-				"open": "open3"
+				"linear": "3.1",
+				"open": "open4.1"
 			},
 			"condition": [
 				[ "quest", "Fancy Tophat" ],
@@ -617,7 +624,8 @@
 				[ "quest", "Autumn's Rise Trailblazing" ],
 				[ "quest", "Bergen Trailblazing" ],
 				[ "quest", "Maroon Valley Trailblazing" ],
-				[ "quest", "Gaia's Garden Trailblazing" ]
+				[ "quest", "Gaia's Garden Trailblazing" ],
+				[ "item", "Shock" ]
 			],
 			"reward": [
 				[ "item", "Circuit Override", 1 ]
