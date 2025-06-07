@@ -97,7 +97,12 @@ export function patch(plugin: MwRandomizer) {
 			// in the parent function the entire block is wrapped in an if statement
 			// so its purpose i guess is to tell you whether to do anything at all.
 			if (doAnything) {
-				for (const marker of sc.randoData.markers[sc.map.currentArea.path]) {
+				let markers = sc.randoData.markers[sc.map.currentArea.path];
+				if (!markers) {
+					return;
+				}
+
+				for (const marker of markers) {
 					if (sc.multiworld.locationInfo.hasOwnProperty(marker.mwid)) {
 						if (marker.level == floor.floor.level) {
 							floor.addChildGui(new sc.MultiworldChestMarker(marker));
