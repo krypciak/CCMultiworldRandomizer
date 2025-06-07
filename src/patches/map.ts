@@ -99,7 +99,9 @@ export function patch(plugin: MwRandomizer) {
 			if (doAnything) {
 				for (const marker of sc.randoData.markers[sc.map.currentArea.path]) {
 					if (sc.multiworld.locationInfo.hasOwnProperty(marker.mwid)) {
-						floor.addChildGui(new sc.MultiworldChestMarker(marker));
+						if (marker.level == floor.floor.level) {
+							floor.addChildGui(new sc.MultiworldChestMarker(marker));
+						}
 					}
 				}
 			}
