@@ -87,10 +87,6 @@ export function patch(plugin: MwRandomizer) {
 		addMarkerIcon(coords) {
 			this.addChildGui(new ig.ImageGui(this.gfx, 12 * coords[0], 12 * coords[1], 12, 12));
 		},
-
-		onMouseInteract() {
-			console.log(sc.multiworld.locationInfo[this.markerInfo.mwid].name);
-		},
 	});
 
 	sc.MapAreaContainer.inject({
