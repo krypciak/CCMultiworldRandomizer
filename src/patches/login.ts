@@ -129,6 +129,7 @@ export function patch(plugin: MwRandomizer) {
 		startLogin(connectionInfo, mw) {
 			sc.multiworld.login(connectionInfo, mw, this);
 			this.connectionInfo = connectionInfo;
+			this.editButton?.setActive(false);
 		},
 
 		updateDrawables(renderer) {
@@ -168,6 +169,7 @@ export function patch(plugin: MwRandomizer) {
 
 		onLoginError(message) {
 			this.textChild.setText(`\\c[1]${message}`);
+			this.editButton?.setActive(true);
 		},
 
 		onLoginSuccess(message) {
