@@ -181,7 +181,6 @@ export function patch(plugin: MwRandomizer) {
 
 		_reallyOpenUp() {
 			if (this.rawChest == undefined) {
-				console.warn("Chest not in logic");
 				return this.parent();
 			}
 
