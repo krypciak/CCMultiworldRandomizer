@@ -334,7 +334,7 @@ export function patch(plugin: MwRandomizer) {
 								this.locationInfo[mwid] = item;
 								this.slimLocationInfo[mwid] = {
 									item: item.id,
-									player: item.sender.slot,
+									player: item.receiver.slot,
 									flags: item.flags,
 								};
 							};
