@@ -372,6 +372,10 @@ export function patch(plugin: MwRandomizer) {
 					this.seenChests = new Set();
 				}
 
+				if (ig.game.mapName == "newgame") {
+					return;
+				}
+
 				ig.vars.setDefault("mw.mode", this.mode);
 				ig.vars.setDefault("mw.options", this.options);
 				ig.vars.setDefault("mw.dataPackageChecksums", this.dataPackageChecksums);
