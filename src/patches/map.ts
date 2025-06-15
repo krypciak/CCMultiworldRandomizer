@@ -65,7 +65,7 @@ export function patch(plugin: MwRandomizer) {
 				} else {
 					if (loc.progression) {
 						this.addMarkerIcon(sc.MULTIWORLD_MARKER_ICON_COORDS.progression);
-					} else if (loc.useful) {
+					} else if (loc.useful || loc.trap) {
 						this.addMarkerIcon(sc.MULTIWORLD_MARKER_ICON_COORDS.useful);
 					} else {
 						this.addMarkerIcon(sc.MULTIWORLD_MARKER_ICON_COORDS.filler);

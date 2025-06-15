@@ -115,18 +115,18 @@ export function patch(plugin: MwRandomizer) {
 				return;
 			}
 
-			if (this.rawChest.useful || this.rawChest.trap) {
-				// USEFUL and TRAP items get a blue chest
-				newOffY = 136;
-				this.analyzeColor = sc.ANALYSIS_COLORS.BLUE;
-				this.analyzeLabel = "\\C[dark-blue]Useful";
-				sequence = 7;
-			} else if (this.rawChest.progression) {
+			if (this.rawChest.progression) {
 				// PROGRESSION items get a green chest
 				newOffY = 192;
 				this.analyzeColor = sc.ANALYSIS_COLORS.GREEN;
 				this.analyzeLabel = "\\C[green]Progression";
 				sequence = 6;
+			} else if (this.rawChest.useful || this.rawChest.trap) {
+				// USEFUL and TRAP items get a blue chest
+				newOffY = 136;
+				this.analyzeColor = sc.ANALYSIS_COLORS.BLUE;
+				this.analyzeLabel = "\\C[dark-blue]Useful";
+				sequence = 7;
 			}
 
 			if (sc.multiworld.localCheckedLocations.has(this.mwCheck.mwids[0])) {
