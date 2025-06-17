@@ -137,6 +137,8 @@ declare global {
 			dataPackageChecksums: Record<string, string>;
 			receivedItemMap: Record<number, number>;
 
+			loginMenuMultiworldVars: sc.MultiWorldModel.MultiworldVars;
+
 			postEditCallback: Optional<() => void>;
 
 			createAPItem(this: this, item: sc.MultiWorldModel.LocalInternalItem, locationId: number): ap.Item;

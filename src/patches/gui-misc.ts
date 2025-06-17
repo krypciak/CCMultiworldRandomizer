@@ -304,7 +304,12 @@ export function patch(plugin: MwRandomizer) {
 		connectFromInput() {
 			let options = this.getOptions();
 
-			sc.multiworld.spawnLoginGui(options, ig.vars.get("mw"), () => {});
+			let mw = sc.multiworld.loginMenuMultiworldVars;
+			if (!mw) {
+				mw = ig.vars.get("mw");
+			}
+
+			sc.multiworld.spawnLoginGui(options, mw, () => {});
 		},
 
 		showMenu: function () {
@@ -343,6 +348,8 @@ export function patch(plugin: MwRandomizer) {
 			this.doStateTransition("HIDDEN", false);
 
 			sc.menu.buttonInteract.removeButtonGroup(this.buttongroup);
+
+			sc.multiworld.loginMenuMultiworldVars = undefined;
 		},
 
 		onBackButtonPress: function () {

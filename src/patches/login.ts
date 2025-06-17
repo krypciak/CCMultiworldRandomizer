@@ -15,6 +15,8 @@ declare global {
 
 			connectionInfo: Optional<sc.MultiWorldModel.AnyConnectionInformation>;
 
+			mw: Optional<sc.MultiWorldModel.MultiworldVars>;
+
 			successCallback: () => void;
 			postEditCallback: (() => void) | undefined;
 
@@ -127,6 +129,7 @@ export function patch(plugin: MwRandomizer) {
 		},
 
 		startLogin(connectionInfo, mw) {
+			this.mw = mw;
 			sc.multiworld.login(connectionInfo, mw, this);
 			this.connectionInfo = connectionInfo;
 			this.editButton?.setActive(false);
@@ -143,6 +146,10 @@ export function patch(plugin: MwRandomizer) {
 		onEditButtonPress() {
 			if (!sc.model.isMenu()) {
 				sc.menu.setDirectMode(true, sc.MENU_SUBMENU.AP_CONNECTION);
+			}
+
+			if (this.mw) {
+				sc.multiworld.loginMenuMultiworldVars = this.mw;
 			}
 
 			if (this.postEditCallback) {
