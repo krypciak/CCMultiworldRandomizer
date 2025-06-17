@@ -136,9 +136,11 @@ export function patch(plugin: MwRandomizer) {
 				this.analyzeColor = sc.ANALYSIS_COLORS.GREY;
 				this.collectedLabel = "\\C[gray]Collected";
 				sequence = 0;
-			} 
+			}
 
-			anims.idleKey = anims.idleMasterKey = anims.idle;
+			if (this.currentAnim == "idleKey" || this.currentAnim == "idleMasterKey") {
+				this.setCurrentAnim("idle");
+			}
 
 			for (const name of Object.keys(anims) as (keyof typeof anims)[]) {
 				let animations = anims[name].animations;
