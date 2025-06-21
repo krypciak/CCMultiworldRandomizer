@@ -138,10 +138,6 @@ export function patch(plugin: MwRandomizer) {
 				sequence = 0;
 			}
 
-			if (this.currentAnim == "idleKey" || this.currentAnim == "idleMasterKey") {
-				this.setCurrentAnim("idle");
-			}
-
 			for (const name of Object.keys(anims) as (keyof typeof anims)[]) {
 				let animations = anims[name].animations;
 
@@ -157,6 +153,12 @@ export function patch(plugin: MwRandomizer) {
 				if (name == "open" || name == "end") {
 					anims[name].animations[0].sheet.offY = newOffY + 24;
 				}
+			}
+		},
+
+		_initGfx() {
+			if (!this.isOpen && this.chestType.anim) {
+				this.setCurrentAnim(this.chestType.anim, true, null, true);
 			}
 		},
 
