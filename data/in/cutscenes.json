@@ -173,6 +173,9 @@
 				"linear": "12",
 				"open": "open6" 
 			},
+			"condition": [
+				[ "item", "Shiny Orb" ]
+			],
 			"properties": {
 				"alwaysQuest": true
 			},
