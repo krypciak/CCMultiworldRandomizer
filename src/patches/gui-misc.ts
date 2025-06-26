@@ -1,7 +1,6 @@
 import type MwRandomizer from '../plugin';
 
-import type {} from 'nax-ccuilib/src/headers/nax/input-field.d.ts'
-import type {} from 'nax-ccuilib/src/headers/nax/input-field-type.d.ts'
+import type {} from 'ccmodmanager/types/gui/input-field/input-field'
 
 declare global {
 	namespace sc {
@@ -24,7 +23,7 @@ declare global {
 		interface APConnectionBox extends sc.BaseMenu, sc.Model.Observer {
 			fields: {key: string; label: string, obscure?: boolean}[];
 			textGuis: sc.TextGui[];
-			inputGuis: nax.ccuilib.InputField[];
+			inputGuis: modmanager.gui.InputField[];
 			boundExitCallback: () => void;
 			buttongroup: sc.ButtonGroup;
 			inputList: ig.GuiElementBase;
@@ -185,10 +184,10 @@ export function patch(plugin: MwRandomizer) {
 				this.inputList.addChildGui(textGui);
 				this.textGuis.push(textGui);
 
-				let inputGui = new nax.ccuilib.InputField(
+				let inputGui = new modmanager.gui.InputField(
 					200,
 					textGui.hook.size.y,
-					nax.ccuilib.INPUT_FIELD_TYPE.DEFAULT,
+					modmanager.gui.INPUT_FIELD_TYPE.DEFAULT,
 					this.fields[i].obscure ?? false
 				);
 
