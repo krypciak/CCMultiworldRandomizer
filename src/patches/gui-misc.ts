@@ -1,6 +1,7 @@
 import type MwRandomizer from '../plugin';
 
 import type {} from 'ccmodmanager/types/gui/input-field/input-field'
+import type {} from 'nax-ccuilib/src/ui/pause-screen/pause-screen-api'
 
 declare global {
 	namespace sc {
@@ -12,10 +13,6 @@ declare global {
 		}
 		var APConnectionStatusGui: APConnectionStatusGuiConstructor;
 
-		interface PauseScreenGui {
-			apConnectionStatusGui: sc.APConnectionStatusGui;
-			apSettingsButton: sc.ButtonGui;
-		}
 		enum MENU_SUBMENU {
 			AP_CONNECTION,
 		}
@@ -79,43 +76,21 @@ export function patch(plugin: MwRandomizer) {
 		},
 	});
 
-	sc.PauseScreenGui.inject({
-		init(...args) {
-			this.parent(...args);
 
-			this.apConnectionStatusGui = new sc.APConnectionStatusGui();
-			this.apConnectionStatusGui.setPos(3, 3);
-
-			this.apConnectionStatusGui.setAlign(this.versionGui.hook.align.x, this.versionGui.hook.align.y);
-			this.apConnectionStatusGui.setPos(0, this.versionGui.hook.size.y * 2);
-
-			this.versionGui.addChildGui(this.apConnectionStatusGui);
-
-			this.apSettingsButton = new sc.ButtonGui(ig.lang.get("sc.gui.pause-screen.archipelago"), sc.BUTTON_DEFAULT_WIDTH);
-			this.apSettingsButton.setAlign(ig.GUI_ALIGN.X_RIGHT, ig.GUI_ALIGN.Y_BOTTOM);
-			this.apSettingsButton.setPos(3, 3);
-			this.buttonGroup.addFocusGui(this.apSettingsButton, 1000, 1000 /* makes it unfocusable by gamepad */);
-			this.apSettingsButton.onButtonPress = function () {
-				sc.menu.setDirectMode(true, sc.MENU_SUBMENU.AP_TEXT_CLIENT);
-				sc.model.enterMenu(true);
-			}.bind(this);
-
-			this.addChildGui(this.apSettingsButton);
+	nax.ccuilib.pauseScreen.addButton({
+		text: '',
+		onPress() {
+			sc.menu.setDirectMode(true, sc.MENU_SUBMENU.AP_TEXT_CLIENT);
+			sc.model.enterMenu(true);
 		},
-
-		updateButtons(refocus) {
-			this.parent(refocus);
-
-			this.resumeButton.hook.pos.y += 27;
-			this.skipButton.hook.pos.y += 27;
-			this.cancelButton.hook.pos.y += 27;
-			this.toTitleButton.hook.pos.y += 27;
-			this.saveGameButton.hook.pos.y += 27;
-			this.optionsButton.hook.pos.y += 27;
-
-			this.buttonGroup.addFocusGui(this.apSettingsButton, 0, this.buttonGroup.largestIndex.y + 1);
+		onShow(button) {
+			button.setText(ig.lang.get("sc.gui.pause-screen.archipelago"), true)
 		},
-	});
+	})
+
+	nax.ccuilib.pauseScreen.addText({
+		textGui: () => new sc.APConnectionStatusGui()
+	})
 
 	sc.APConnectionBox = sc.BaseMenu.extend({
 		gfx: new ig.Image("media/gui/menu.png"),
