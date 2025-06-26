@@ -5423,7 +5423,7 @@
 			{
 				"type": "Chest",
 				"level": -1,
-				"x": 520.5,
+				"x": 532.35,
 				"y": 198.5,
 				"map": "arid.interior.stealth-2",
 				"mwid": 3235824002,
@@ -5557,7 +5557,7 @@
 			{
 				"type": "Chest",
 				"level": 0,
-				"x": 553.2,
+				"x": 558.05,
 				"y": 392.2,
 				"map": "autumn.entrance",
 				"mwid": 3235824014,
@@ -5830,7 +5830,7 @@
 			{
 				"type": "Chest",
 				"level": 0,
-				"x": 614.775,
+				"x": 623.725,
 				"y": 380.2,
 				"map": "autumn-fall.caves.path-03-exit",
 				"mwid": 3235824037,
@@ -6141,7 +6141,7 @@
 				"type": "Chest",
 				"level": 0,
 				"x": 213.92,
-				"y": 473.06666666666666,
+				"y": 500.1333333333333,
 				"map": "bergen.storage",
 				"mwid": 3235824076,
 				"settings": {
@@ -8066,7 +8066,7 @@
 				"type": "NPC",
 				"level": 0,
 				"x": 126.56,
-				"y": 265.6,
+				"y": 270.4,
 				"map": "heat-village.interior.house-2",
 				"mwid": 3235824353,
 				"settings": {}
@@ -8117,7 +8117,7 @@
 				"type": "Chest",
 				"level": 0,
 				"x": 413.3818181818182,
-				"y": 721.6,
+				"y": 722.9714285714285,
 				"map": "jungle.clearing.clear-path-01",
 				"mwid": 3235824237,
 				"settings": {
@@ -8128,7 +8128,7 @@
 				"type": "Chest",
 				"level": 0,
 				"x": 478.83636363636367,
-				"y": 668.0,
+				"y": 680.8571428571429,
 				"map": "jungle.clearing.clear-path-01",
 				"mwid": 3235824238,
 				"settings": {
@@ -8139,7 +8139,7 @@
 				"type": "Chest",
 				"level": 0,
 				"x": 431.05454545454546,
-				"y": 719.2,
+				"y": 721.0857142857143,
 				"map": "jungle.clearing.clear-path-01",
 				"mwid": 3235824239,
 				"settings": {
@@ -8150,7 +8150,7 @@
 				"type": "Chest",
 				"level": 0,
 				"x": 539.6333333333333,
-				"y": 675.62,
+				"y": 678.2,
 				"map": "jungle.clearing.clear-path-02",
 				"mwid": 3235824240,
 				"settings": {
@@ -8161,7 +8161,7 @@
 				"type": "Chest",
 				"level": 0,
 				"x": 535.6,
-				"y": 693.0,
+				"y": 694.0,
 				"map": "jungle.clearing.clear-path-02",
 				"mwid": 3235824241,
 				"settings": {
@@ -8612,7 +8612,7 @@
 				"type": "Chest",
 				"level": 0,
 				"x": 284.4,
-				"y": 702.4166666666666,
+				"y": 717.0,
 				"map": "jungle.path-01-entrance",
 				"mwid": 3235824282,
 				"settings": {
@@ -8623,7 +8623,7 @@
 				"type": "Chest",
 				"level": 0,
 				"x": 296.8,
-				"y": 716.5833333333334,
+				"y": 727.0,
 				"map": "jungle.path-01-entrance",
 				"mwid": 3235824283,
 				"settings": {
@@ -8833,7 +8833,7 @@
 			{
 				"type": "Chest",
 				"level": 0,
-				"x": 261.3333333333333,
+				"x": 312.1269841269841,
 				"y": 149.1830985915493,
 				"map": "jungle-city.east",
 				"mwid": 3235824298,
@@ -8844,7 +8844,7 @@
 			{
 				"type": "Chest",
 				"level": 0,
-				"x": 250.0,
+				"x": 306.1904761904762,
 				"y": 114.92957746478874,
 				"map": "jungle-city.east",
 				"mwid": 3235824299,
@@ -8855,7 +8855,7 @@
 			{
 				"type": "Chest",
 				"level": 0,
-				"x": 266.66666666666663,
+				"x": 314.92063492063494,
 				"y": 80.0,
 				"map": "jungle-city.east",
 				"mwid": 3235824300,
@@ -9090,7 +9090,7 @@
 			{
 				"type": "Chest",
 				"level": 1,
-				"x": 224.08695652173913,
+				"x": 239.30434782608697,
 				"y": 86.82352941176471,
 				"map": "shock-dng.f1.room3to4",
 				"mwid": 3235824321,
@@ -9101,7 +9101,7 @@
 			{
 				"type": "Chest",
 				"level": 0,
-				"x": 242.17391304347825,
+				"x": 311.6521739130435,
 				"y": 83.6470588235294,
 				"map": "shock-dng.g.room4to5",
 				"mwid": 3235824322,
@@ -9112,7 +9112,7 @@
 			{
 				"type": "Chest",
 				"level": 0,
-				"x": 251.8,
+				"x": 353.0,
 				"y": 91.6,
 				"map": "shock-dng.g.room5",
 				"mwid": 3235824323,
@@ -9123,7 +9123,7 @@
 			{
 				"type": "EventTrigger",
 				"level": 2,
-				"x": 325.6,
+				"x": 349.8,
 				"y": 84.08888888888889,
 				"map": "shock-dng.f2.room-element",
 				"mwid": 3235824371,
@@ -9253,7 +9253,7 @@
 			{
 				"type": "Chest",
 				"level": -1,
-				"x": 383.6,
+				"x": 407.36,
 				"y": 143.77142857142857,
 				"map": "wave-dng.b1.center-01",
 				"mwid": 3235824333,
