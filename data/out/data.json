@@ -2038,22 +2038,6 @@
 				}
 			}
 		},
-		"jungle.caves.smuggle-route-2": {
-			"chests": {
-				"55": {
-					"name": "Garden: Infested Cavern Left",
-					"mwids": [
-						3235824235
-					]
-				},
-				"60": {
-					"name": "Garden: Infested Cavern Right",
-					"mwids": [
-						3235824236
-					]
-				}
-			}
-		},
 		"jungle.clearing.clear-path-01": {
 			"chests": {
 				"5": {
@@ -2972,6 +2956,22 @@
 					"name": "Trail: Horncave",
 					"mwids": [
 						3235824522
+					]
+				}
+			}
+		},
+		"jungle.caves.smuggle-route-2": {
+			"chests": {
+				"55": {
+					"name": "Garden: Infested Cavern Left",
+					"mwids": [
+						3235824235
+					]
+				},
+				"60": {
+					"name": "Garden: Infested Cavern Right",
+					"mwids": [
+						3235824236
 					]
 				}
 			}
@@ -5395,5 +5395,4002 @@
 		"3235824093": {
 			"en_US": "Provides upgraded footwear."
 		}
+	},
+	"markers": {
+		"arid": [
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 103.05,
+				"y": 325.82978723404256,
+				"map": "arid.cliff-1",
+				"mwid": 3235824000,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 101.95,
+				"y": 289.3191489361702,
+				"map": "arid.cliff-1",
+				"mwid": 3235824001,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 532.35,
+				"y": 198.5,
+				"map": "arid.interior.stealth-2",
+				"mwid": 3235824002,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 220.06666666666666,
+				"y": 283.0,
+				"map": "arid.lake-1",
+				"mwid": 3235824003,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 258.6,
+				"y": 345.72340425531917,
+				"map": "arid.lake-1",
+				"mwid": 3235824004,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 435.7,
+				"y": 305.468085106383,
+				"map": "arid.town-1",
+				"mwid": 3235824005,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 502.56666666666666,
+				"y": 313.6595744680851,
+				"map": "arid.town-1",
+				"mwid": 3235824006,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 516.1666666666666,
+				"y": 334.25531914893617,
+				"map": "arid.town-1",
+				"mwid": 3235824007,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 382.65,
+				"y": 248.77142857142857,
+				"map": "arid.town-2",
+				"mwid": 3235824008,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 326.55,
+				"y": 240.27142857142857,
+				"map": "arid.town-2",
+				"mwid": 3235824009,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 381.55,
+				"y": 345.1857142857143,
+				"map": "arid.town-2",
+				"mwid": 3235824010,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			}
+		],
+		"autumn-area": [
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 262.64,
+				"y": 376.25,
+				"map": "autumn.caves.cave-3-to-6",
+				"mwid": 3235824011,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 503.24,
+				"y": 347.0,
+				"map": "autumn.cubaum",
+				"mwid": 3235824012,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 480.14,
+				"y": 339.2,
+				"map": "autumn.cubaum",
+				"mwid": 3235824013,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 558.05,
+				"y": 392.2,
+				"map": "autumn.entrance",
+				"mwid": 3235824014,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 133.13333333333333,
+				"y": 394.2888888888889,
+				"map": "autumn.lake-observatory",
+				"mwid": 3235824015,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 516.45,
+				"y": 458.5,
+				"map": "autumn.path-1-1",
+				"mwid": 3235824016,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 412.9,
+				"y": 433.3333333333333,
+				"map": "autumn.path-1-2",
+				"mwid": 3235824017,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 381.2,
+				"y": 482.8,
+				"map": "autumn.path-1-3",
+				"mwid": 3235824018,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 481.8,
+				"y": 401.9047619047619,
+				"map": "autumn.path-1",
+				"mwid": 3235824019,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 438.1666666666667,
+				"y": 357.675,
+				"map": "autumn.path-2",
+				"mwid": 3235824020,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 344.3168316831683,
+				"y": 311.2,
+				"map": "autumn.path-3-1",
+				"mwid": 3235824021,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 401.28,
+				"y": 387.6,
+				"map": "autumn.path-3-2",
+				"mwid": 3235824022,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 282.4,
+				"y": 381.4,
+				"map": "autumn.path-3-4",
+				"mwid": 3235824023,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 69.96000000000001,
+				"y": 247.75,
+				"map": "autumn.path-7-1",
+				"mwid": 3235824024,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 108.47999999999999,
+				"y": 228.25,
+				"map": "autumn.path-7-1",
+				"mwid": 3235824025,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 86.34,
+				"y": 239.75,
+				"map": "autumn.path-7-1",
+				"mwid": 3235824026,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 55.92,
+				"y": 155.5,
+				"map": "autumn.path-7-2",
+				"mwid": 3235824027,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 100.56,
+				"y": 139.75,
+				"map": "autumn.path-7-2",
+				"mwid": 3235824028,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 31.5,
+				"y": 105.02439024390245,
+				"map": "autumn.path-8",
+				"mwid": 3235824029,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 276.42857142857144,
+				"y": 316.2,
+				"map": "autumn.path4",
+				"mwid": 3235824030,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 310.2857142857143,
+				"y": 357.0,
+				"map": "autumn.path4",
+				"mwid": 3235824031,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 231.8,
+				"y": 302.0833333333333,
+				"map": "autumn.path5",
+				"mwid": 3235824032,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 197.2,
+				"y": 320.5,
+				"map": "autumn.path5",
+				"mwid": 3235824033,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 205.6,
+				"y": 370.55,
+				"map": "autumn.path5",
+				"mwid": 3235824034,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 209.89999999999998,
+				"y": 235.2,
+				"map": "autumn.path6",
+				"mwid": 3235824035,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 215.75,
+				"y": 271.775,
+				"map": "autumn.path6",
+				"mwid": 3235824036,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "EventTrigger",
+				"level": 0,
+				"x": 76.8,
+				"y": 58.34146341463415,
+				"map": "autumn.path-8",
+				"mwid": 3235824345,
+				"settings": {}
+			},
+			{
+				"type": "NPC",
+				"level": 0,
+				"x": 375.2079207920792,
+				"y": 318.0,
+				"map": "autumn.path-3-1",
+				"mwid": 3235824346,
+				"settings": {}
+			}
+		],
+		"autumn-fall": [
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 623.725,
+				"y": 380.2,
+				"map": "autumn-fall.caves.path-03-exit",
+				"mwid": 3235824037,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 249.33333333333334,
+				"y": 333.3333333333333,
+				"map": "autumn-fall.caves.path-04-cave-01",
+				"mwid": 3235824038,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 190.84444444444443,
+				"y": 331.73333333333335,
+				"map": "autumn-fall.caves.path-04-cave-02",
+				"mwid": 3235824039,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 153.95555555555555,
+				"y": 332.1333333333333,
+				"map": "autumn-fall.caves.path-04-cave-03",
+				"mwid": 3235824040,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 162.66666666666666,
+				"y": 293.4,
+				"map": "autumn-fall.caves.path-04-cave-04",
+				"mwid": 3235824041,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 404.1142857142857,
+				"y": 422.1,
+				"map": "autumn-fall.path-01",
+				"mwid": 3235824042,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 455.7714285714286,
+				"y": 410.43333333333334,
+				"map": "autumn-fall.path-01",
+				"mwid": 3235824043,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 435.65714285714284,
+				"y": 469.7,
+				"map": "autumn-fall.path-01",
+				"mwid": 3235824044,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 362.03333333333336,
+				"y": 336.2,
+				"map": "autumn-fall.path-02",
+				"mwid": 3235824045,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 392.3666666666667,
+				"y": 379.0,
+				"map": "autumn-fall.path-02",
+				"mwid": 3235824046,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 509.1,
+				"y": 376.4,
+				"map": "autumn-fall.path-03",
+				"mwid": 3235824047,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 551.8,
+				"y": 381.4,
+				"map": "autumn-fall.path-03",
+				"mwid": 3235824048,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 327.43333333333334,
+				"y": 338.0,
+				"map": "autumn-fall.path-04",
+				"mwid": 3235824049,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 238.76666666666668,
+				"y": 361.6,
+				"map": "autumn-fall.path-04",
+				"mwid": 3235824050,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 303.2,
+				"y": 303.8285714285714,
+				"map": "autumn-fall.path-05",
+				"mwid": 3235824051,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 298.8,
+				"y": 233.42857142857142,
+				"map": "autumn-fall.path-05",
+				"mwid": 3235824052,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 178.26666666666665,
+				"y": 371.65714285714284,
+				"map": "autumn-fall.path-06",
+				"mwid": 3235824053,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 214.66666666666666,
+				"y": 416.0,
+				"map": "autumn-fall.path-06",
+				"mwid": 3235824054,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 115.73333333333333,
+				"y": 415.0857142857143,
+				"map": "autumn-fall.path-06",
+				"mwid": 3235824055,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 108.5,
+				"y": 472.0235294117647,
+				"map": "autumn-fall.path-07",
+				"mwid": 3235824056,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 160.025,
+				"y": 440.25882352941176,
+				"map": "autumn-fall.path-07",
+				"mwid": 3235824057,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 168.8,
+				"y": 463.9764705882353,
+				"map": "autumn-fall.path-07",
+				"mwid": 3235824058,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 558.1,
+				"y": 243.18,
+				"map": "autumn-fall.path-08",
+				"mwid": 3235824059,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 486.1,
+				"y": 332.36,
+				"map": "autumn-fall.path-08",
+				"mwid": 3235824060,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 557.8,
+				"y": 327.68,
+				"map": "autumn-fall.path-08",
+				"mwid": 3235824061,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 90.0,
+				"y": 361.0322580645161,
+				"map": "autumn-fall.path-10",
+				"mwid": 3235824062,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 56.2,
+				"y": 369.16129032258067,
+				"map": "autumn-fall.path-10",
+				"mwid": 3235824063,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 163.32,
+				"y": 290.1714285714286,
+				"map": "autumn-fall.raid.raid-01",
+				"mwid": 3235824064,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			}
+		],
+		"bergen": [
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 213.92,
+				"y": 500.1333333333333,
+				"map": "bergen.storage",
+				"mwid": 3235824076,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 147.92000000000002,
+				"y": 490.8181818181818,
+				"map": "bergen.bergen",
+				"mwid": 3235824065,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 234.68,
+				"y": 464.0,
+				"map": "bergen.bergen",
+				"mwid": 3235824066,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 178.51999999999998,
+				"y": 544.0,
+				"map": "bergen.bergen",
+				"mwid": 3235824067,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 125.6,
+				"y": 419.9090909090909,
+				"map": "bergen.bergen",
+				"mwid": 3235824068,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 147.92000000000002,
+				"y": 261.6333333333333,
+				"map": "bergen.bergen2",
+				"mwid": 3235824069,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 110.84,
+				"y": 259.33333333333337,
+				"map": "bergen.bergen2",
+				"mwid": 3235824070,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 236.48000000000002,
+				"y": 324.1166666666667,
+				"map": "bergen.bergen2",
+				"mwid": 3235824071,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 203.35999999999999,
+				"y": 278.8833333333333,
+				"map": "bergen.bergen2",
+				"mwid": 3235824072,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 69.31764705882352,
+				"y": 176.29090909090908,
+				"map": "bergen.elevator",
+				"mwid": 3235824073,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 161.69230769230768,
+				"y": 147.46666666666667,
+				"map": "bergen.inner-questhub-0",
+				"mwid": 3235824074,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 196.76923076923077,
+				"y": 143.46666666666667,
+				"map": "bergen.inner-questhub-0",
+				"mwid": 3235824075,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 180.0,
+				"y": 299.42857142857144,
+				"map": "bergen.interior.guild-basement",
+				"mwid": 3235824077,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "NPC",
+				"level": 0,
+				"x": 134.31884057971016,
+				"y": 108.16,
+				"map": "bergen.mine-entrance",
+				"mwid": 3235824347,
+				"settings": {}
+			},
+			{
+				"type": "NPC",
+				"level": 0,
+				"x": 183.52,
+				"y": 148.8,
+				"map": "bergen.inner-questhub-1",
+				"mwid": 3235824348,
+				"settings": {}
+			},
+			{
+				"type": "NPC",
+				"level": 0,
+				"x": 180.96,
+				"y": 147.73333333333332,
+				"map": "bergen.inner-questhub-1",
+				"mwid": 3235824374,
+				"settings": {}
+			}
+		],
+		"bergen-trails": [
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 299.6,
+				"y": 52.96,
+				"map": "bergen-trail.cave.cave-08-smith",
+				"mwid": 3235824078,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 402.51428571428573,
+				"y": 328.08,
+				"map": "bergen-trail.cave.cave-4-1-1",
+				"mwid": 3235824079,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 77.86666666666667,
+				"y": 323.2,
+				"map": "bergen-trail.cave.cave-6-1",
+				"mwid": 3235824080,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 71.6,
+				"y": 185.85,
+				"map": "bergen-trail.cave.cave-6-3",
+				"mwid": 3235824081,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 336.4,
+				"y": 463.4,
+				"map": "bergen-trail.path-1-entrance",
+				"mwid": 3235824082,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 370.1714285714286,
+				"y": 464.4,
+				"map": "bergen-trail.path-1-entrance",
+				"mwid": 3235824083,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 309.4,
+				"y": 417.0,
+				"map": "bergen-trail.path-2",
+				"mwid": 3235824084,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 245.78,
+				"y": 408.6666666666667,
+				"map": "bergen-trail.path-3-1",
+				"mwid": 3235824085,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 238.76,
+				"y": 382.3333333333333,
+				"map": "bergen-trail.path-3-1",
+				"mwid": 3235824086,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 197.33333333333334,
+				"y": 379.02702702702703,
+				"map": "bergen-trail.path-3-2",
+				"mwid": 3235824087,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 178.33333333333334,
+				"y": 393.44144144144144,
+				"map": "bergen-trail.path-3-2",
+				"mwid": 3235824088,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 209.33333333333334,
+				"y": 362.01801801801804,
+				"map": "bergen-trail.path-3-2",
+				"mwid": 3235824089,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 209.82857142857142,
+				"y": 271.4,
+				"map": "bergen-trail.path-3-3",
+				"mwid": 3235824090,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 205.8857142857143,
+				"y": 322.4,
+				"map": "bergen-trail.path-3-3",
+				"mwid": 3235824091,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 401.04,
+				"y": 324.8,
+				"map": "bergen-trail.path-4-1-1",
+				"mwid": 3235824092,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 340.1714285714286,
+				"y": 312.61538461538464,
+				"map": "bergen-trail.path-4-1",
+				"mwid": 3235824093,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 320.9,
+				"y": 259.6056338028169,
+				"map": "bergen-trail.path-4-2",
+				"mwid": 3235824094,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 354.05,
+				"y": 264.67605633802816,
+				"map": "bergen-trail.path-4-2",
+				"mwid": 3235824095,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 260.54,
+				"y": 249.15,
+				"map": "bergen-trail.path-5",
+				"mwid": 3235824096,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 279.98,
+				"y": 260.35,
+				"map": "bergen-trail.path-5",
+				"mwid": 3235824097,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 178.6,
+				"y": 177.0,
+				"map": "bergen-trail.path-6-1",
+				"mwid": 3235824098,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 226.85,
+				"y": 169.16923076923075,
+				"map": "bergen-trail.path-6",
+				"mwid": 3235824099,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 354.06666666666666,
+				"y": 126.84,
+				"map": "bergen-trail.path-7-1",
+				"mwid": 3235824100,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 291.73333333333335,
+				"y": 179.76,
+				"map": "bergen-trail.path-7-1",
+				"mwid": 3235824101,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 472.5333333333333,
+				"y": 153.73333333333332,
+				"map": "bergen-trail.path-7-2-1",
+				"mwid": 3235824102,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 384.4,
+				"y": 197.40625,
+				"map": "bergen-trail.path-7-2",
+				"mwid": 3235824103,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 337.6421052631579,
+				"y": 48.42,
+				"map": "bergen-trail.path-8",
+				"mwid": 3235824104,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 389.25714285714287,
+				"y": 109.86666666666666,
+				"map": "bergen-trail.cave.cave-7-1-1-goat2",
+				"mwid": 3235824522,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			}
+		],
+		"cold-dng": [
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 143.86666666666667,
+				"y": 201.6,
+				"map": "cold-dng.b1.center",
+				"mwid": 3235824105,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 180.18,
+				"y": 239.6,
+				"map": "cold-dng.b1.room1",
+				"mwid": 3235824106,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 72.6,
+				"y": 282.28,
+				"map": "cold-dng.b1.room2",
+				"mwid": 3235824107,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 115.73529411764706,
+				"y": 283.05,
+				"map": "cold-dng.b1.room3",
+				"mwid": 3235824108,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 250.89705882352942,
+				"y": 249.9,
+				"map": "cold-dng.b1.room4",
+				"mwid": 3235824109,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 71.52,
+				"y": 194.2,
+				"map": "cold-dng.b1.room6",
+				"mwid": 3235824110,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -2,
+				"x": 148.16666666666666,
+				"y": 247.8,
+				"map": "cold-dng.b2.room1",
+				"mwid": 3235824111,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -2,
+				"x": 188.24,
+				"y": 232.24,
+				"map": "cold-dng.b2.room2",
+				"mwid": 3235824112,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -2,
+				"x": 148.48,
+				"y": 179.67567567567568,
+				"map": "cold-dng.b2.room5",
+				"mwid": 3235824113,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -2,
+				"x": 157.44,
+				"y": 179.45945945945945,
+				"map": "cold-dng.b2.room5",
+				"mwid": 3235824114,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -3,
+				"x": 104.32,
+				"y": 226.4,
+				"map": "cold-dng.b3.room1",
+				"mwid": 3235824115,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -3,
+				"x": 92.13333333333334,
+				"y": 194.48,
+				"map": "cold-dng.b3.room2",
+				"mwid": 3235824116,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -3,
+				"x": 131.4,
+				"y": 252.64,
+				"map": "cold-dng.b3.room3",
+				"mwid": 3235824117,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -3,
+				"x": 105.73333333333333,
+				"y": 254.08,
+				"map": "cold-dng.b3.room3",
+				"mwid": 3235824118,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -3,
+				"x": 169.84,
+				"y": 262.2,
+				"map": "cold-dng.b3.room6",
+				"mwid": 3235824119,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -3,
+				"x": 164.44,
+				"y": 274.8,
+				"map": "cold-dng.b3.room6",
+				"mwid": 3235824120,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -4,
+				"x": 144.4,
+				"y": 234.9,
+				"map": "cold-dng.b4.center",
+				"mwid": 3235824121,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -4,
+				"x": 152.22857142857143,
+				"y": 97.36,
+				"map": "cold-dng.b4.room10",
+				"mwid": 3235824122,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -4,
+				"x": 220.0,
+				"y": 237.0,
+				"map": "cold-dng.b4.room4",
+				"mwid": 3235824123,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -4,
+				"x": 221.44,
+				"y": 261.6,
+				"map": "cold-dng.b4.room5",
+				"mwid": 3235824124,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -4,
+				"x": 181.76,
+				"y": 286.0,
+				"map": "cold-dng.b4.room6",
+				"mwid": 3235824125,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -4,
+				"x": 83.52,
+				"y": 178.73333333333332,
+				"map": "cold-dng.b4.room7",
+				"mwid": 3235824126,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -4,
+				"x": 96.16,
+				"y": 290.1333333333333,
+				"map": "cold-dng.b4.room8",
+				"mwid": 3235824127,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 164.2,
+				"y": 221.0,
+				"map": "cold-dng.g.center",
+				"mwid": 3235824128,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 180.0,
+				"y": 163.68421052631578,
+				"map": "cold-dng.g.room2",
+				"mwid": 3235824129,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "EventTrigger",
+				"level": -3,
+				"x": 165.92000000000002,
+				"y": 150.4,
+				"map": "cold-dng.b3.room7",
+				"mwid": 3235824368,
+				"settings": {}
+			}
+		],
+		"forest": [
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 480.96363636363634,
+				"y": 614.8,
+				"map": "forest.caves.cave-013-pandza-01",
+				"mwid": 3235824130,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 479.2,
+				"y": 541.7,
+				"map": "forest.caves.cave-013-pandza-02",
+				"mwid": 3235824131,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 90.73076923076923,
+				"y": 458.0,
+				"map": "forest.caves.path-01-entrance",
+				"mwid": 3235824132,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 258.8,
+				"y": 386.3,
+				"map": "forest.caves.path-02-to-08",
+				"mwid": 3235824133,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 230.85714285714286,
+				"y": 341.3833333333333,
+				"map": "forest.caves.path-02-to-08",
+				"mwid": 3235824134,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 437.3,
+				"y": 427.5,
+				"map": "forest.caves.path-06-chasm",
+				"mwid": 3235824135,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 447.8,
+				"y": 397.5,
+				"map": "forest.caves.path-06-chasm",
+				"mwid": 3235824136,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 307.05454545454546,
+				"y": 389.0285714285714,
+				"map": "forest.caves.path-07-to-08",
+				"mwid": 3235824137,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 328.1454545454545,
+				"y": 400.34285714285716,
+				"map": "forest.caves.path-07-to-08",
+				"mwid": 3235824138,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 274.0,
+				"y": 253.17777777777778,
+				"map": "forest.caves.path-08-to-10",
+				"mwid": 3235824139,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 325.2,
+				"y": 229.84444444444443,
+				"map": "forest.caves.path-08-to-10",
+				"mwid": 3235824140,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 1,
+				"x": 338.71794871794873,
+				"y": 573.9285714285714,
+				"map": "forest.interior.inn-og-01",
+				"mwid": 3235824141,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 290.95238095238096,
+				"y": 554.2,
+				"map": "forest.interior.inn-storage",
+				"mwid": 3235824142,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 140.6,
+				"y": 448.0,
+				"map": "forest.path-01-entrance",
+				"mwid": 3235824143,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 143.9,
+				"y": 462.6,
+				"map": "forest.path-01-entrance",
+				"mwid": 3235824144,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 239.8,
+				"y": 469.6,
+				"map": "forest.path-02",
+				"mwid": 3235824145,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 241.6,
+				"y": 435.8,
+				"map": "forest.path-02",
+				"mwid": 3235824146,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 215.28,
+				"y": 499.2,
+				"map": "forest.path-03",
+				"mwid": 3235824147,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 241.6,
+				"y": 558.6,
+				"map": "forest.path-03",
+				"mwid": 3235824148,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 212.66666666666666,
+				"y": 568.6,
+				"map": "forest.path-03",
+				"mwid": 3235824149,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 299.53684210526313,
+				"y": 575.3142857142857,
+				"map": "forest.path-04-hostel",
+				"mwid": 3235824150,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 355.36842105263156,
+				"y": 619.4285714285714,
+				"map": "forest.path-04-hostel",
+				"mwid": 3235824151,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 321.0285714285714,
+				"y": 688.1739130434783,
+				"map": "forest.path-04-vaga",
+				"mwid": 3235824152,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 317.7714285714286,
+				"y": 651.304347826087,
+				"map": "forest.path-04-vaga",
+				"mwid": 3235824153,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 414.26666666666665,
+				"y": 493.4,
+				"map": "forest.path-05",
+				"mwid": 3235824154,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 381.6,
+				"y": 550.6,
+				"map": "forest.path-05",
+				"mwid": 3235824155,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 330.0,
+				"y": 429.0,
+				"map": "forest.path-06",
+				"mwid": 3235824156,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 370.4,
+				"y": 460.2,
+				"map": "forest.path-06",
+				"mwid": 3235824157,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 370.0,
+				"y": 385.25714285714287,
+				"map": "forest.path-07",
+				"mwid": 3235824158,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 409.06,
+				"y": 370.6857142857143,
+				"map": "forest.path-07",
+				"mwid": 3235824159,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 292.97777777777776,
+				"y": 324.4,
+				"map": "forest.path-08",
+				"mwid": 3235824160,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 332.26666666666665,
+				"y": 359.0,
+				"map": "forest.path-08",
+				"mwid": 3235824161,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 328.5333333333333,
+				"y": 321.8,
+				"map": "forest.path-08",
+				"mwid": 3235824162,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 458.08,
+				"y": 344.88,
+				"map": "forest.path-09",
+				"mwid": 3235824163,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 476.8,
+				"y": 314.82,
+				"map": "forest.path-09",
+				"mwid": 3235824164,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 426.0,
+				"y": 249.475,
+				"map": "forest.path-10",
+				"mwid": 3235824165,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 364.2,
+				"y": 237.575,
+				"map": "forest.path-10",
+				"mwid": 3235824166,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 375.8,
+				"y": 223.925,
+				"map": "forest.path-10",
+				"mwid": 3235824167,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 287.42857142857144,
+				"y": 42.66666666666667,
+				"map": "forest.path-11-behind-maze",
+				"mwid": 3235824168,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 345.3333333333333,
+				"y": 123.2,
+				"map": "forest.path-12",
+				"mwid": 3235824169,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 373.8,
+				"y": 117.28,
+				"map": "forest.path-12",
+				"mwid": 3235824170,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 354.6666666666667,
+				"y": 148.64,
+				"map": "forest.path-12",
+				"mwid": 3235824171,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 411.4,
+				"y": 663.7142857142857,
+				"map": "forest.path-13",
+				"mwid": 3235824172,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "NPC",
+				"level": 0,
+				"x": 320.34285714285716,
+				"y": 663.4782608695652,
+				"map": "forest.path-04-vaga",
+				"mwid": 3235824351,
+				"settings": {}
+			}
+		],
+		"heat-area": [
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 193.37142857142857,
+				"y": 493.4888888888889,
+				"map": "heat.caves.cliff-cave-01",
+				"mwid": 3235824173,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 204.1142857142857,
+				"y": 469.3777777777778,
+				"map": "heat.caves.cliff-cave-01",
+				"mwid": 3235824174,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 279.0,
+				"y": 451.52941176470586,
+				"map": "heat.caves.cliffs-temple-02",
+				"mwid": 3235824175,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 300.9,
+				"y": 438.47058823529414,
+				"map": "heat.caves.cliffs-temple-02",
+				"mwid": 3235824176,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -2,
+				"x": 287.54285714285714,
+				"y": 427.54285714285714,
+				"map": "heat.caves.cliffs-temple-03",
+				"mwid": 3235824177,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 530.1714285714286,
+				"y": 468.64,
+				"map": "heat.caves.maroon-cave-01",
+				"mwid": 3235824178,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 268.15,
+				"y": 466.54945054945057,
+				"map": "heat.cliffs.cliffs-path-01",
+				"mwid": 3235824179,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 219.675,
+				"y": 476.0,
+				"map": "heat.cliffs.cliffs-path-01",
+				"mwid": 3235824180,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 326.25454545454545,
+				"y": 517.6901408450705,
+				"map": "heat.cliffs.cliffs-path-02",
+				"mwid": 3235824181,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 338.4727272727273,
+				"y": 519.7183098591549,
+				"map": "heat.cliffs.cliffs-path-02",
+				"mwid": 3235824182,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 286.3272727272727,
+				"y": 535.7746478873239,
+				"map": "heat.cliffs.cliffs-path-02",
+				"mwid": 3235824183,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 507.0,
+				"y": 416.90666666666664,
+				"map": "heat.oasis.oasis-path-01",
+				"mwid": 3235824184,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 534.8,
+				"y": 392.82666666666665,
+				"map": "heat.oasis.oasis-path-01",
+				"mwid": 3235824185,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 534.5866666666667,
+				"y": 480.1904761904762,
+				"map": "heat.oasis.oasis-path-02",
+				"mwid": 3235824186,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 545.2266666666667,
+				"y": 442.8952380952381,
+				"map": "heat.oasis.oasis-path-02",
+				"mwid": 3235824187,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 499.4,
+				"y": 536.2,
+				"map": "heat.oasis.oasis-path-03",
+				"mwid": 3235824188,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 590.6666666666666,
+				"y": 298.42857142857144,
+				"map": "heat.path-00",
+				"mwid": 3235824189,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 478.4,
+				"y": 273.28,
+				"map": "heat.path-01-entrance",
+				"mwid": 3235824190,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 457.2,
+				"y": 310.0,
+				"map": "heat.path-02",
+				"mwid": 3235824191,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 448.0,
+				"y": 276.44444444444446,
+				"map": "heat.path-02",
+				"mwid": 3235824192,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 448.0,
+				"y": 385.37142857142857,
+				"map": "heat.path-03",
+				"mwid": 3235824193,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 421.6,
+				"y": 370.2857142857143,
+				"map": "heat.path-03",
+				"mwid": 3235824194,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 455.54285714285714,
+				"y": 471.1504424778761,
+				"map": "heat.path-04",
+				"mwid": 3235824195,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 369.8181818181818,
+				"y": 469.8,
+				"map": "heat.path-05",
+				"mwid": 3235824196,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 402.75,
+				"y": 486.6,
+				"map": "heat.path-05",
+				"mwid": 3235824197,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 402.225,
+				"y": 364.58666666666664,
+				"map": "heat.path-06",
+				"mwid": 3235824198,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 301.9047619047619,
+				"y": 403.0,
+				"map": "heat.path-07",
+				"mwid": 3235824199,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 249.9047619047619,
+				"y": 409.2,
+				"map": "heat.path-07",
+				"mwid": 3235824200,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 268.3,
+				"y": 370.0,
+				"map": "heat.path-08",
+				"mwid": 3235824201,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 293.15,
+				"y": 311.4,
+				"map": "heat.path-08",
+				"mwid": 3235824202,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 261.6,
+				"y": 267.2,
+				"map": "heat.path-09",
+				"mwid": 3235824203,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 286.2,
+				"y": 269.0,
+				"map": "heat.path-09",
+				"mwid": 3235824204,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 104.52000000000001,
+				"y": 317.2,
+				"map": "heat.path-11",
+				"mwid": 3235824205,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 350.72,
+				"y": 258.22222222222223,
+				"map": "heat.shortcut-02-09",
+				"mwid": 3235824206,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 406.15999999999997,
+				"y": 272.8888888888889,
+				"map": "heat.shortcut-02-09",
+				"mwid": 3235824207,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			}
+		],
+		"heat-dng": [
+			{
+				"type": "Chest",
+				"level": 1,
+				"x": 152.0,
+				"y": 100.92592592592592,
+				"map": "heat-dng.f1.room-03",
+				"mwid": 3235824208,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 3,
+				"x": 101.21739130434783,
+				"y": 131.75,
+				"map": "heat-dng.f3.room-02",
+				"mwid": 3235824209,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 3,
+				"x": 108.26666666666667,
+				"y": 60.6,
+				"map": "heat-dng.f3.room-05",
+				"mwid": 3235824210,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 3,
+				"x": 115.73333333333333,
+				"y": 60.6,
+				"map": "heat-dng.f3.room-05",
+				"mwid": 3235824211,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 3,
+				"x": 151.65217391304347,
+				"y": 147.16666666666666,
+				"map": "heat-dng.f3.room-07",
+				"mwid": 3235824212,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 4,
+				"x": 35.130434782608695,
+				"y": 119.13043478260869,
+				"map": "heat-dng.f4.room-02",
+				"mwid": 3235824213,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 4,
+				"x": 48.34782608695652,
+				"y": 182.88888888888889,
+				"map": "heat-dng.f4.room-03",
+				"mwid": 3235824214,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 4,
+				"x": 73.3913043478261,
+				"y": 77.6842105263158,
+				"map": "heat-dng.f4.room-05",
+				"mwid": 3235824215,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 4,
+				"x": 130.76923076923077,
+				"y": 75.5,
+				"map": "heat-dng.f4.room-09",
+				"mwid": 3235824216,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 4,
+				"x": 178.43478260869566,
+				"y": 132.69565217391303,
+				"map": "heat-dng.f4.room-10",
+				"mwid": 3235824217,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 4,
+				"x": 194.43478260869566,
+				"y": 182.66666666666666,
+				"map": "heat-dng.f4.room-11",
+				"mwid": 3235824218,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 4,
+				"x": 111.65217391304348,
+				"y": 135.84615384615384,
+				"map": "heat-dng.f4.room-12",
+				"mwid": 3235824219,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 64.25806451612902,
+				"y": 148.25,
+				"map": "heat-dng.g.room-03",
+				"mwid": 3235824220,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 42.54545454545455,
+				"y": 113.72,
+				"map": "heat-dng.g.room-07",
+				"mwid": 3235824221,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 161.15555555555557,
+				"y": 60.64,
+				"map": "heat-dng.g.room-09",
+				"mwid": 3235824222,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 61.91111111111111,
+				"y": 60.8,
+				"map": "heat-dng.g.room-09",
+				"mwid": 3235824223,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 141.94285714285715,
+				"y": 90.0,
+				"map": "heat-dng.g.room-10",
+				"mwid": 3235824224,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 150.17142857142858,
+				"y": 148.4,
+				"map": "heat-dng.g.room-12",
+				"mwid": 3235824225,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 188.7826086956522,
+				"y": 42.5,
+				"map": "heat-dng.g.room-13",
+				"mwid": 3235824226,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 34.69565217391305,
+				"y": 38.72,
+				"map": "heat-dng.g.room-14",
+				"mwid": 3235824227,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "EventTrigger",
+				"level": 2,
+				"x": 124.52173913043478,
+				"y": 115.13043478260869,
+				"map": "heat-dng.f2.room-cold",
+				"mwid": 3235824369,
+				"settings": {}
+			}
+		],
+		"heat-village": [
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 167.0857142857143,
+				"y": 54.4,
+				"map": "heat-village.baki-1",
+				"mwid": 3235824228,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 159.2,
+				"y": 156.4,
+				"map": "heat-village.baki-1",
+				"mwid": 3235824229,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 159.6060606060606,
+				"y": 268.0,
+				"map": "heat-village.baki-2",
+				"mwid": 3235824230,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 38.39393939393939,
+				"y": 253.06666666666666,
+				"map": "heat-village.baki-2",
+				"mwid": 3235824231,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 32.2,
+				"y": 196.34285714285716,
+				"map": "heat-village.interior.tradebuilding-eg",
+				"mwid": 3235824232,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "NPC",
+				"level": 0,
+				"x": 126.56,
+				"y": 270.4,
+				"map": "heat-village.interior.house-2",
+				"mwid": 3235824353,
+				"settings": {}
+			},
+			{
+				"type": "NPC",
+				"level": 1,
+				"x": 202.2,
+				"y": 206.68571428571428,
+				"map": "heat-village.interior.quest-hub-og",
+				"mwid": 3235824354,
+				"settings": {}
+			},
+			{
+				"type": "NPC",
+				"level": 0,
+				"x": 199.68,
+				"y": 213.92,
+				"map": "heat-village.interior.quest-hub-eg",
+				"mwid": 3235824375,
+				"settings": {}
+			}
+		],
+		"jungle": [
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 40.5,
+				"y": 406.12,
+				"map": "jungle.caves.grove-cave-01",
+				"mwid": 3235824233,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 31.52,
+				"y": 382.16,
+				"map": "jungle.caves.grove-cave-02",
+				"mwid": 3235824234,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 413.3818181818182,
+				"y": 722.9714285714285,
+				"map": "jungle.clearing.clear-path-01",
+				"mwid": 3235824237,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 478.83636363636367,
+				"y": 680.8571428571429,
+				"map": "jungle.clearing.clear-path-01",
+				"mwid": 3235824238,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 431.05454545454546,
+				"y": 721.0857142857143,
+				"map": "jungle.clearing.clear-path-01",
+				"mwid": 3235824239,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 539.6333333333333,
+				"y": 678.2,
+				"map": "jungle.clearing.clear-path-02",
+				"mwid": 3235824240,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 535.6,
+				"y": 694.0,
+				"map": "jungle.clearing.clear-path-02",
+				"mwid": 3235824241,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 532.6,
+				"y": 563.4,
+				"map": "jungle.clearing.clear-path-03",
+				"mwid": 3235824242,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 528.0,
+				"y": 580.2,
+				"map": "jungle.clearing.clear-path-03",
+				"mwid": 3235824243,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 525.0,
+				"y": 486.3272727272727,
+				"map": "jungle.clearing.clear-path-04",
+				"mwid": 3235824244,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 534.6,
+				"y": 449.23636363636365,
+				"map": "jungle.clearing.clear-path-04",
+				"mwid": 3235824245,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 530.4,
+				"y": 504.0,
+				"map": "jungle.clearing.clear-path-04",
+				"mwid": 3235824246,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 268.0,
+				"y": 116.64444444444445,
+				"map": "jungle.dng.tree-exterior",
+				"mwid": 3235824247,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 163.6,
+				"y": 129.4,
+				"map": "jungle.dng.wave-exterior",
+				"mwid": 3235824248,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 114.0,
+				"y": 435.0,
+				"map": "jungle.grove.grove-path-01",
+				"mwid": 3235824249,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 88.8,
+				"y": 372.6,
+				"map": "jungle.grove.grove-path-01",
+				"mwid": 3235824250,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 75.2,
+				"y": 325.0,
+				"map": "jungle.grove.grove-path-02",
+				"mwid": 3235824251,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 78.8,
+				"y": 297.2,
+				"map": "jungle.grove.grove-path-02",
+				"mwid": 3235824252,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 91.6,
+				"y": 282.4,
+				"map": "jungle.grove.grove-path-02",
+				"mwid": 3235824253,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 60.0,
+				"y": 256.2,
+				"map": "jungle.grove.grove-path-02",
+				"mwid": 3235824254,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 151.8,
+				"y": 258.8,
+				"map": "jungle.grove.grove-path-03",
+				"mwid": 3235824255,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 218.2,
+				"y": 226.6,
+				"map": "jungle.grove.grove-path-03",
+				"mwid": 3235824256,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 83.81818181818181,
+				"y": 189.75,
+				"map": "jungle.grove.lost-shrine-02",
+				"mwid": 3235824257,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 90.56,
+				"y": 194.65454545454546,
+				"map": "jungle.grove.lost-shrine-03",
+				"mwid": 3235824258,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -2,
+				"x": 79.36,
+				"y": 181.34545454545454,
+				"map": "jungle.grove.lost-shrine-04",
+				"mwid": 3235824259,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 506.3692307692308,
+				"y": 325.0,
+				"map": "jungle.infested.infested-path-01",
+				"mwid": 3235824260,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 535.2307692307693,
+				"y": 335.2,
+				"map": "jungle.infested.infested-path-01",
+				"mwid": 3235824261,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 488.0615384615385,
+				"y": 305.8,
+				"map": "jungle.infested.infested-path-01",
+				"mwid": 3235824262,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 475.6,
+				"y": 223.6,
+				"map": "jungle.infested.infested-path-02",
+				"mwid": 3235824263,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 412.4,
+				"y": 246.2,
+				"map": "jungle.infested.infested-path-02",
+				"mwid": 3235824264,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 512.6,
+				"y": 273.8,
+				"map": "jungle.infested.infested-path-03",
+				"mwid": 3235824265,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 570.6,
+				"y": 278.6,
+				"map": "jungle.infested.infested-path-03",
+				"mwid": 3235824266,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 525.6,
+				"y": 242.0,
+				"map": "jungle.infested.infested-path-03",
+				"mwid": 3235824267,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 572.8,
+				"y": 237.4,
+				"map": "jungle.infested.infested-path-03",
+				"mwid": 3235824268,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 509.2,
+				"y": 208.2,
+				"map": "jungle.infested.infested-path-04",
+				"mwid": 3235824269,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 552.2,
+				"y": 155.0,
+				"map": "jungle.infested.infested-path-04",
+				"mwid": 3235824270,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 564.425,
+				"y": 208.475,
+				"map": "jungle.infested.infested-path-04",
+				"mwid": 3235824271,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 572.6,
+				"y": 156.8,
+				"map": "jungle.infested.infested-path-04",
+				"mwid": 3235824272,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 160.56296296296296,
+				"y": 622.8,
+				"map": "jungle.left.path-left-01",
+				"mwid": 3235824273,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 232.27962962962962,
+				"y": 597.575,
+				"map": "jungle.left.path-left-01",
+				"mwid": 3235824274,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 158.8,
+				"y": 483.0833333333333,
+				"map": "jungle.left.path-left-02",
+				"mwid": 3235824275,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 137.2,
+				"y": 535.7333333333333,
+				"map": "jungle.left.path-left-02",
+				"mwid": 3235824276,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 119.2,
+				"y": 495.43333333333334,
+				"map": "jungle.left.path-left-02",
+				"mwid": 3235824277,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 178.16470588235293,
+				"y": 431.4,
+				"map": "jungle.left.path-left-03",
+				"mwid": 3235824278,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 186.8235294117647,
+				"y": 366.2,
+				"map": "jungle.left.path-left-03",
+				"mwid": 3235824279,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 252.4,
+				"y": 298.6,
+				"map": "jungle.left.path-left-04",
+				"mwid": 3235824280,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 162.0,
+				"y": 303.2,
+				"map": "jungle.left.path-left-04",
+				"mwid": 3235824281,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 284.4,
+				"y": 717.0,
+				"map": "jungle.path-01-entrance",
+				"mwid": 3235824282,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 296.8,
+				"y": 727.0,
+				"map": "jungle.path-01-entrance",
+				"mwid": 3235824283,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 261.6,
+				"y": 609.675,
+				"map": "jungle.path-02-crossroads",
+				"mwid": 3235824284,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 349.8,
+				"y": 610.025,
+				"map": "jungle.path-02-crossroads",
+				"mwid": 3235824285,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 290.1090909090909,
+				"y": 330.8,
+				"map": "jungle.path-03-sync",
+				"mwid": 3235824286,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 295.3454545454546,
+				"y": 295.6,
+				"map": "jungle.path-03-sync",
+				"mwid": 3235824287,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 331.43333333333334,
+				"y": 256.6,
+				"map": "jungle.path-04-end",
+				"mwid": 3235824288,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 249.53333333333333,
+				"y": 229.2,
+				"map": "jungle.path-04-end",
+				"mwid": 3235824289,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 424.4,
+				"y": 580.2,
+				"map": "jungle.right.right-path-01",
+				"mwid": 3235824290,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 400.4,
+				"y": 617.0,
+				"map": "jungle.right.right-path-01",
+				"mwid": 3235824291,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 476.2,
+				"y": 540.64,
+				"map": "jungle.right.right-path-02",
+				"mwid": 3235824292,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 434.0,
+				"y": 544.6,
+				"map": "jungle.right.right-path-02",
+				"mwid": 3235824293,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 424.8,
+				"y": 451.0,
+				"map": "jungle.right.right-path-03",
+				"mwid": 3235824294,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 444.4,
+				"y": 399.6,
+				"map": "jungle.right.right-path-03",
+				"mwid": 3235824295,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 420.8,
+				"y": 326.3272727272727,
+				"map": "jungle.right.right-path-04",
+				"mwid": 3235824296,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 329.875,
+				"y": 561.32,
+				"map": "jungle-city.entrance",
+				"mwid": 3235824301,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 397.7,
+				"y": 349.75,
+				"map": "jungle.caves.smuggle-route-2",
+				"mwid": 3235824235,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 449.05,
+				"y": 330.85,
+				"map": "jungle.caves.smuggle-route-2",
+				"mwid": 3235824236,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 372.0571428571429,
+				"y": 257.81666666666666,
+				"map": "jungle.caves.questcave-snowman-1",
+				"mwid": 3235824523,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			}
+		],
+		"jungle-city": [
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 244.08510638297872,
+				"y": 136.62857142857143,
+				"map": "jungle-city.center",
+				"mwid": 3235824297,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 312.1269841269841,
+				"y": 149.1830985915493,
+				"map": "jungle-city.east",
+				"mwid": 3235824298,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 306.1904761904762,
+				"y": 114.92957746478874,
+				"map": "jungle-city.east",
+				"mwid": 3235824299,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 314.92063492063494,
+				"y": 80.0,
+				"map": "jungle-city.east",
+				"mwid": 3235824300,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 196.48,
+				"y": 101.0,
+				"map": "jungle-city.interior.faction-guard-1",
+				"mwid": 3235824302,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 226.0,
+				"y": 42.666666666666664,
+				"map": "jungle-city.interior.questhub-01",
+				"mwid": 3235824303,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "NPC",
+				"level": 0,
+				"x": 214.2,
+				"y": 40.0,
+				"map": "jungle-city.interior.questhub-01",
+				"mwid": 3235824376,
+				"settings": {}
+			}
+		],
+		"rhombus-sqr": [
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 397.25333333333333,
+				"y": 442.2,
+				"map": "rhombus-sqr.arena-1",
+				"mwid": 3235824304,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 287.3066666666667,
+				"y": 441.6,
+				"map": "rhombus-sqr.arena-1",
+				"mwid": 3235824305,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 464.6666666666667,
+				"y": 373.55384615384617,
+				"map": "rhombus-sqr.center-e",
+				"mwid": 3235824306,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 492.3333333333333,
+				"y": 452.0153846153846,
+				"map": "rhombus-sqr.center-e",
+				"mwid": 3235824307,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 359.48571428571427,
+				"y": 516.6111111111111,
+				"map": "rhombus-sqr.center-s",
+				"mwid": 3235824308,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 451.92,
+				"y": 530.5352112676056,
+				"map": "rhombus-sqr.center-se",
+				"mwid": 3235824309,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 290.7,
+				"y": 610.8857142857142,
+				"map": "rhombus-sqr.residential-s1",
+				"mwid": 3235824310,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 384.48333333333335,
+				"y": 638.5428571428572,
+				"map": "rhombus-sqr.residential-s1",
+				"mwid": 3235824311,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			}
+		],
+		"rookie-harbor": [
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 217.4,
+				"y": 182.64,
+				"map": "rookie-harbor.center",
+				"mwid": 3235824312,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 285.7,
+				"y": 169.8,
+				"map": "rookie-harbor.east",
+				"mwid": 3235824313,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 141.52,
+				"y": 88.4,
+				"map": "rookie-harbor.inner-equip-north",
+				"mwid": 3235824314,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 253.32,
+				"y": 83.7,
+				"map": "rookie-harbor.inner-old",
+				"mwid": 3235824315,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 154.075,
+				"y": 303.609756097561,
+				"map": "rookie-harbor.south",
+				"mwid": 3235824316,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 216.1818181818182,
+				"y": 354.6,
+				"map": "rookie-harbor.teleporter",
+				"mwid": 3235824317,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 228.1818181818182,
+				"y": 406.8,
+				"map": "rookie-harbor.teleporter",
+				"mwid": 3235824318,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			}
+		],
+		"shock-dng": [
+			{
+				"type": "Chest",
+				"level": 1,
+				"x": 102.08,
+				"y": 85.15555555555555,
+				"map": "shock-dng.f1.room2",
+				"mwid": 3235824319,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 1,
+				"x": 120.32,
+				"y": 88.53333333333333,
+				"map": "shock-dng.f1.room2",
+				"mwid": 3235824320,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 1,
+				"x": 239.30434782608697,
+				"y": 86.82352941176471,
+				"map": "shock-dng.f1.room3to4",
+				"mwid": 3235824321,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 311.6521739130435,
+				"y": 83.6470588235294,
+				"map": "shock-dng.g.room4to5",
+				"mwid": 3235824322,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 0,
+				"x": 353.0,
+				"y": 91.6,
+				"map": "shock-dng.g.room5",
+				"mwid": 3235824323,
+				"settings": {
+					"defaultClearance": "Bronze"
+				}
+			},
+			{
+				"type": "EventTrigger",
+				"level": 2,
+				"x": 349.8,
+				"y": 84.08888888888889,
+				"map": "shock-dng.f2.room-element",
+				"mwid": 3235824371,
+				"settings": {}
+			}
+		],
+		"tree-dng": [
+			{
+				"type": "Chest",
+				"level": 3,
+				"x": 255.4,
+				"y": 130.82666666666665,
+				"map": "tree-dng.f3.branch-east",
+				"mwid": 3235824324,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 3,
+				"x": 227.6,
+				"y": 62.879999999999995,
+				"map": "tree-dng.f3.branch-east",
+				"mwid": 3235824325,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 3,
+				"x": 269.2,
+				"y": 63.57333333333333,
+				"map": "tree-dng.f3.branch-east",
+				"mwid": 3235824326,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 3,
+				"x": 18.560000000000002,
+				"y": 51.44,
+				"map": "tree-dng.f3.branch-west",
+				"mwid": 3235824327,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 3,
+				"x": 18.32,
+				"y": 134.98666666666668,
+				"map": "tree-dng.f3.branch-west",
+				"mwid": 3235824328,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 3,
+				"x": 151.52,
+				"y": 73.75,
+				"map": "tree-dng.f3.center-01",
+				"mwid": 3235824329,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 3,
+				"x": 206.1818181818182,
+				"y": 96.11764705882354,
+				"map": "tree-dng.f3.east-01",
+				"mwid": 3235824330,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 3,
+				"x": 122.8,
+				"y": 94.33333333333333,
+				"map": "tree-dng.f3.west-01",
+				"mwid": 3235824331,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": 3,
+				"x": 90.8,
+				"y": 95.66666666666667,
+				"map": "tree-dng.f3.west-01",
+				"mwid": 3235824332,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "EventTrigger",
+				"level": 5,
+				"x": 155.0857142857143,
+				"y": 7.085714285714285,
+				"map": "jungle.dng.tree-expo-space",
+				"mwid": 3235824357,
+				"settings": {}
+			},
+			{
+				"type": "EventTrigger",
+				"level": 5,
+				"x": 155.0857142857143,
+				"y": 7.085714285714285,
+				"map": "jungle.dng.tree-expo-space",
+				"mwid": 3235824367,
+				"settings": {}
+			}
+		],
+		"wave-dng": [
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 407.36,
+				"y": 143.77142857142857,
+				"map": "wave-dng.b1.center-01",
+				"mwid": 3235824333,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 265.6,
+				"y": 147.45454545454544,
+				"map": "wave-dng.b1.center-04-long",
+				"mwid": 3235824334,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 265.6,
+				"y": 144.54545454545456,
+				"map": "wave-dng.b1.center-04-long",
+				"mwid": 3235824335,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 267.73333333333335,
+				"y": 146.0,
+				"map": "wave-dng.b1.center-04-long",
+				"mwid": 3235824336,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 115.2,
+				"y": 143.8181818181818,
+				"map": "wave-dng.b1.center-04-long",
+				"mwid": 3235824337,
+				"settings": {
+					"defaultClearance": "Silver"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 115.2,
+				"y": 148.1818181818182,
+				"map": "wave-dng.b1.center-04-long",
+				"mwid": 3235824338,
+				"settings": {
+					"defaultClearance": "Gold"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 280.32,
+				"y": 76.6875,
+				"map": "wave-dng.b1.north-01",
+				"mwid": 3235824339,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 188.48,
+				"y": 72.96875,
+				"map": "wave-dng.b1.north-03",
+				"mwid": 3235824340,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 291.52,
+				"y": 42.0,
+				"map": "wave-dng.b1.north-06",
+				"mwid": 3235824341,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 108.8,
+				"y": 83.6875,
+				"map": "wave-dng.b1.north-08",
+				"mwid": 3235824342,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 269.12,
+				"y": 242.1818181818182,
+				"map": "wave-dng.b1.south-04",
+				"mwid": 3235824343,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "Chest",
+				"level": -1,
+				"x": 212.48,
+				"y": 212.84375,
+				"map": "wave-dng.b1.south-06",
+				"mwid": 3235824344,
+				"settings": {
+					"defaultClearance": "Default"
+				}
+			},
+			{
+				"type": "EventTrigger",
+				"level": -1,
+				"x": 94.72,
+				"y": 149.8181818181818,
+				"map": "wave-dng.b1.center-05-element",
+				"mwid": 3235824370,
+				"settings": {}
+			}
+		]
 	}
 }

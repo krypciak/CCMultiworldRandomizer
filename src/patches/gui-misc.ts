@@ -6,7 +6,7 @@ import type * as _ from 'nax-ccuilib/src/headers/nax/input-field.d.ts'
 declare global {
 	namespace sc {
 		interface APConnectionStatusGui extends sc.TextGui, sc.Model.Observer {
-			updateText(this: this): void;
+			updateText(this: this, status: string): void;
 		}
 		interface APConnectionStatusGuiConstructor extends ImpactClass<APConnectionStatusGui> {
 			new (): APConnectionStatusGui;
@@ -64,18 +64,18 @@ export function patch(plugin: MwRandomizer) {
 	sc.APConnectionStatusGui = sc.TextGui.extend({
 		init: function () {
 			this.parent("", {font: sc.fontsystem.tinyFont});
-			this.updateText();
+			this.updateText(sc.multiworld.status);
 
 			sc.Model.addObserver(sc.multiworld, this);
 		},
 
-		updateText: function () {
-			this.setText(`AP: ${plugin.getColoredStatus(sc.multiworld.client.status.toUpperCase())}`);
+		updateText: function (status: string) {
+			this.setText(`AP: ${plugin.getColoredStatus(status)}`);
 		},
 
 		modelChanged(model: any, msg: number, data: any) {
 			if (model == sc.multiworld && msg == sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED) {
-				this.updateText();
+				this.updateText(data);
 			}
 		},
 	});
@@ -85,21 +85,36 @@ export function patch(plugin: MwRandomizer) {
 			this.parent(...args);
 
 			this.apConnectionStatusGui = new sc.APConnectionStatusGui();
+			this.apConnectionStatusGui.setPos(3, 3);
 
 			this.apConnectionStatusGui.setAlign(this.versionGui.hook.align.x, this.versionGui.hook.align.y);
 			this.apConnectionStatusGui.setPos(0, this.versionGui.hook.size.y * 2);
 
 			this.versionGui.addChildGui(this.apConnectionStatusGui);
 
-			this.apSettingsButton = new sc.ButtonGui("\\i[ap-logo] Archipelago Settings");
+			this.apSettingsButton = new sc.ButtonGui(ig.lang.get("sc.gui.pause-screen.archipelago"), sc.BUTTON_DEFAULT_WIDTH);
+			this.apSettingsButton.setAlign(ig.GUI_ALIGN.X_RIGHT, ig.GUI_ALIGN.Y_BOTTOM);
 			this.apSettingsButton.setPos(3, 3);
 			this.buttonGroup.addFocusGui(this.apSettingsButton, 1000, 1000 /* makes it unfocusable by gamepad */);
 			this.apSettingsButton.onButtonPress = function () {
-				sc.menu.setDirectMode(true, sc.MENU_SUBMENU.AP_CONNECTION);
+				sc.menu.setDirectMode(true, sc.MENU_SUBMENU.AP_TEXT_CLIENT);
 				sc.model.enterMenu(true);
 			}.bind(this);
 
 			this.addChildGui(this.apSettingsButton);
+		},
+
+		updateButtons(refocus) {
+			this.parent(refocus);
+
+			this.resumeButton.hook.pos.y += 27;
+			this.skipButton.hook.pos.y += 27;
+			this.cancelButton.hook.pos.y += 27;
+			this.toTitleButton.hook.pos.y += 27;
+			this.saveGameButton.hook.pos.y += 27;
+			this.optionsButton.hook.pos.y += 27;
+
+			this.buttonGroup.addFocusGui(this.apSettingsButton, 0, this.buttonGroup.largestIndex.y + 1);
 		},
 	});
 
@@ -108,12 +123,8 @@ export function patch(plugin: MwRandomizer) {
 
 		fields: [
 			{
-				key: "hostname",
-				label: "Hostname",
-			},
-			{
-				key: "port",
-				label: "Port",
+				key: "url",
+				label: "URL",
 			},
 			{
 				key: "name",
@@ -162,11 +173,8 @@ export function patch(plugin: MwRandomizer) {
 			this.hook.size.y = ig.system.height;
 
 			this.buttongroup = new sc.ButtonGroup();
-			sc.menu.buttonInteract.pushButtonGroup(this.buttongroup);
 
 			this.buttongroup.addPressCallback(() => {});
-
-			sc.menu.pushBackCallback(this.onBackButtonPress.bind(this));
 
 			this.inputList = new ig.GuiElementBase();
 
@@ -183,6 +191,9 @@ export function patch(plugin: MwRandomizer) {
 					nax.ccuilib.INPUT_FIELD_TYPE.DEFAULT,
 					this.fields[i].obscure ?? false
 				);
+
+				inputGui.description = ig.lang.get("sc.gui.mw.connection-menu." + this.fields[i].key);
+
 				this.buttongroup.addFocusGui(inputGui, 0, i);
 				inputGui.hook.pos.y = (textGui.hook.size.y + this.vSpacer) * i;
 				
@@ -233,12 +244,26 @@ export function patch(plugin: MwRandomizer) {
 
 			this.connect = new sc.ButtonGui("Connect", sc.BUTTON_MENU_WIDTH);
 			this.connect.onButtonPress = this.connectFromInput.bind(this);
+			this.connect.description = ig.lang.get("sc.gui.mw.connection-menu.connect");
 			this.buttongroup.addFocusGui(this.connect, 0, this.fields.length);
 
 			this.disconnect = new sc.ButtonGui("Disconnect", sc.BUTTON_MENU_WIDTH);
-			this.disconnect.onButtonPress = () => { sc.multiworld.client.disconnect() };
+			this.disconnect.onButtonPress = () => { sc.multiworld.disconnect() };
 			this.disconnect.setPos(sc.BUTTON_MENU_WIDTH + this.hSpacer);
+			this.disconnect.description = ig.lang.get("sc.gui.mw.connection-menu.disconnect");
 			this.buttongroup.addFocusGui(this.disconnect, 1, this.fields.length);
+
+			this.buttongroup.addSelectionCallback(button => {
+				if (button == undefined) {
+					sc.menu.setInfoText("", true);
+					return;
+				}
+				sc.menu.setInfoText(button.description);
+			});
+
+			this.buttongroup.setMouseFocusLostCallback(() => {
+				sc.menu.setInfoText("", true);
+			});
 
 			this.buttonHolder = new ig.GuiElementBase();
 
@@ -250,6 +275,10 @@ export function patch(plugin: MwRandomizer) {
 			this.content.addChildGui(this.msgBoxBox);
 			this.content.addChildGui(this.buttonHolder);
 			this.content.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_CENTER);
+
+			if (sc.multiworld.status != sc.MULTIWORLD_CONNECTION_STATUS.DISCONNECTED) {
+				this.connect.setActive(false);
+			}
 
 			this.content.setSize(
 				Math.max(
@@ -274,47 +303,53 @@ export function patch(plugin: MwRandomizer) {
 
 		connectFromInput() {
 			let options = this.getOptions();
-			if (isNaN(options.port as unknown as number)) {
-				sc.Dialogs.showErrorDialog(
-					"Port is not a number",
-					true,
-				);
-				return;
-			}
-			let portNumber = Number(options.port);
 
-			if (portNumber > 65535 || portNumber < 1) {
-				sc.Dialogs.showErrorDialog(
-					"Port must be between 1 and 65535",
-					true
-				);
-				return;
+			let mw = sc.multiworld.loginMenuMultiworldVars;
+			if (!mw) {
+				mw = ig.vars.get("mw");
 			}
 
-			sc.multiworld.login({
-				game: 'CrossCode',
-				hostname: options.hostname,
-				password: options.password,
-				port: portNumber,
-				items_handling: ap.ITEMS_HANDLING_FLAGS.REMOTE_ALL,
-				name: options.name,
-			});
+			sc.multiworld.spawnLoginGui(options, mw, () => {});
 		},
 
 		showMenu: function () {
 			this.parent();
+
+			sc.menu.moveLeaSprite(0, 0, sc.MENU_LEA_STATE.HIDDEN);
+
 			ig.interact.setBlockDelay(0.1);
 			this.addObservers();
+
+			sc.menu.buttonInteract.pushButtonGroup(this.buttongroup);
+			sc.menu.pushBackCallback(this.onBackButtonPress.bind(this));
+
 			this.msgBox.doStateTransition("DEFAULT");
 			this.doStateTransition("DEFAULT");
 		},
 
+		hideMenu() {
+			this.removeObservers();
+			this.exitMenu();
+		},
+
 		exitMenu: function () {
 			this.parent();
+
+			if (sc.multiworld.postEditCallback) {
+				sc.multiworld.postEditCallback = null;
+
+				if (!sc.multiworld.client.socket.connected) {
+					// @ts-ignore
+					sc.multiworld.connectionInfo = null;
+				}
+			}
+
 			ig.interact.setBlockDelay(0.1);
-			this.removeObservers();
 			this.doStateTransition("HIDDEN", false);
 
+			sc.menu.buttonInteract.removeButtonGroup(this.buttongroup);
+
+			sc.multiworld.loginMenuMultiworldVars = undefined;
 		},
 
 		onBackButtonPress: function () {
@@ -333,17 +368,8 @@ export function patch(plugin: MwRandomizer) {
 		},
 
 		modelChanged: function(model: any, msg: number, data: any) {
-			if (model == sc.multiworld && msg == sc.MULTIWORLD_MSG.OPTIONS_PRESENT) {
-				// if we launched from the title screen that means we are in a context
-				// where we want to put in our login info and start the game.
-				// so we wait for options to be present and when they are, we exit the menu.
-				// exiting the menu automatically activates a bit of code
-				// set by the new game mode select callback.
-				// if connection details are available, it starts the game.
-				if (sc.model.isTitle()) {
-					this.doStateTransition("HIDDEN");
-					sc.menu.pushMenu(sc.MENU_SUBMENU.NEW_GAME);
-				}
+			if (model == sc.multiworld && msg == sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED) {
+				this.connect.setActive(data == sc.MULTIWORLD_CONNECTION_STATUS.DISCONNECTED);
 			}
 		},
 

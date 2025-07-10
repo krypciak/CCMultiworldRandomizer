@@ -1,7 +1,8 @@
 import { defineVarProperty } from "../utils";
+import { saveDataPackage, loadDataPackage } from "../package-utils";
 import * as ap from "archipelago.js";
-import { MultiworldOptions } from "../types/multiworld-model";
 import MwRandomizer from "../plugin";
+import { ItemInfo } from "../item-data.model";
 
 export function patch(plugin: MwRandomizer) {
 		sc.MULTIWORLD_MSG = {
@@ -9,12 +10,18 @@ export function patch(plugin: MwRandomizer) {
 			ITEM_SENT: 1,
 			ITEM_RECEIVED: 2,
 			OPTIONS_PRESENT: 3,
+			PRINT_JSON: 4,
+		};
+
+		sc.MULTIWORLD_CONNECTION_STATUS = {
+			CONNECTED: "CONNECTED",
+			CONNECTING: "CONNECTING",
+			DISCONNECTED: "DISCONNECTED",
 		};
 
 		sc.MultiWorldModel = ig.GameAddon.extend({
 			observers: [],
 			client: null,
-			previousConnectionStatus: ap.CONNECTION_STATUS.DISCONNECTED,
 
 			baseId: 3235824000,
 			baseNormalItemId: 3235824100,
@@ -23,20 +30,76 @@ export function patch(plugin: MwRandomizer) {
 			numItems: 0,
 
 			init() {
-				this.client = new ap.Client();
+				this.client = new ap.Client({autoFetchDataPackage: false});
 				ig.storage.register(this);
 				this.numItems = 676;
 
-				defineVarProperty(this, "connectionInfo", "mw.connectionInfo");
+				this.disconnectPlanned = false;
+
+				this.status = sc.MULTIWORLD_CONNECTION_STATUS.DISCONNECTED;
+
+				sc.Model.addObserver(sc.model, this);
+
+				// defineVarProperty(this, "connectionInfo", "mw.connectionInfo");
 				defineVarProperty(this, "lastIndexSeen", "mw.lastIndexSeen");
-				defineVarProperty(this, "locationInfo", "mw.locationInfo");
-				defineVarProperty(this, "localCheckedLocations", "mw.checkedLocations");
-				defineVarProperty(this, "mode", "mw.mode");
-				defineVarProperty(this, "options", "mw.options");
+				// defineVarProperty(this, "slimLocationInfo", "mw.locationInfo");
+				// defineVarProperty(this, "localCheckedLocations", "mw.checkedLocations");
+				// defineVarProperty(this, "mode", "mw.mode");
+				// defineVarProperty(this, "options", "mw.options");
 				defineVarProperty(this, "progressiveChainProgress", "mw.progressiveChainProgress");
 				defineVarProperty(this, "receivedItemMap", "mw.received");
+				defineVarProperty(this, "offlineCheckBuffer", "mw.offlineCheckBuffer");
 
-				window.setInterval(this.updateConnectionStatus.bind(this), 300);
+				this.client.items.on("itemsReceived", (items: ap.Item[], index: number) => {
+					if (!ig.game.mapName || ig.game.mapName == "newgame" || !this.receivedItemMap) {
+						return;
+					}
+
+					for (const [offset, item] of items.entries()) {
+						this.addMultiworldItem(item, index + offset);
+					}
+				});
+
+				this.client.messages.on("message", (text, nodes) => {
+					sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.PRINT_JSON, nodes);
+				});
+
+				this.client.socket.on("disconnected", () => {
+					this.updateConnectionStatus(sc.MULTIWORLD_CONNECTION_STATUS.DISCONNECTED);
+
+					if (!this.disconnectPlanned) {
+						sc.Dialogs.showYesNoDialog(
+							ig.lang.get("sc.gui.mw.warnings.unplanned-disconnect"),
+							sc.DIALOG_INFO_ICON.WARNING,
+							(button) => {
+								if (button.data == 0) {
+									this.spawnLoginGui(this.connectionInfo, ig.vars.get("mw"), () => {});
+								}
+							}
+						);
+					}
+
+					this.disconnectPlanned = false;
+				});
+
+				this.client.room.on("locationsChecked", locations => {
+					if (this.client.authenticated) {
+						for (const location of locations) {
+							this.localCheckedLocations.add(location);
+						}
+					}
+				});
+			},
+
+			modelChanged(model, message, data) {
+				if (
+					model == sc.model &&
+					message == sc.GAME_MODEL_MSG.STATE_CHANGED &&
+					sc.model.currentState == sc.GAME_MODEL_STATE.TITLE
+				) {
+					this.disconnect();
+					this.unsetVars();
+				}
 			},
 
 			getElementConstantFromComboId(comboId: number): number | null {
@@ -54,24 +117,75 @@ export function patch(plugin: MwRandomizer) {
 				}
 			},
 
-			getShopLabelsFromItemData(item: ap.NetworkItem): sc.ListBoxButton.Data {
+			createAPItem(item: sc.MultiWorldModel.LocalInternalItem, locationId: number): ap.Item {
+				let networkItem: ap.NetworkItem = {...item, location: locationId};
+
+				return new ap.Item(
+					this.client,
+					networkItem,
+					this.client.players.self,
+					this.client.players.findPlayer(networkItem.player)!
+				);
+			},
+
+			getItemInfo(item, nameIsSender): ItemInfo {
+				let gameName: string = item.receiver.name;
+				let label = item.name;
+				let player = nameIsSender ? item.sender.alias : item.receiver.alias;
+
+				if (gameName == "CrossCode") {
+					const comboId: number = item.id;
+					let level = 0;
+					let icon = "item-default";
+					let isScalable = false;
+					if (comboId >= sc.multiworld.baseNormalItemId && comboId < sc.multiworld.baseDynamicItemId) {
+						const [itemId, _] = sc.multiworld.getItemDataFromComboId(item.id);
+						const dbEntry = sc.inventory.getItem(itemId);
+						if (dbEntry) {
+							icon = dbEntry.icon + sc.inventory.getRaritySuffix(dbEntry.rarity);
+							isScalable = dbEntry.isScalable || false;
+							if (dbEntry.type == sc.ITEMS_TYPES.EQUIP) {
+								level = dbEntry.level;
+							}
+						}
+					}
+
+					return {icon, label, player, level, isScalable};
+				}
+
+				let cls = "unknown";
+				if (item.progression) {
+					cls = "prog";
+				} else if (item.useful) {
+					cls = "useful";
+				} else if (item.trap) {
+					cls = "trap";
+				} else if (item.filler) {
+					cls = "filler";
+				}
+
+				let icon = `ap-item-${cls}`;
+				return {icon, label, player, level: 0, isScalable: false};
+			},
+
+			getShopLabelsFromItemData(item: ap.Item, forSender?: boolean): sc.ListBoxButton.Data {
+				forSender = forSender ?? false;
+
 				let rarityString = "Looks like junk...";
 
-				if (item.flags & ap.ITEM_FLAGS.NEVER_EXCLUDE) {
+				if (item.useful) {
 					rarityString = "\\c[2]Looks helpful\\c[0].";
-				}
-
-				if (item.flags & ap.ITEM_FLAGS.PROGRESSION) {
+				} else if (item.progression) {
 					rarityString = "\\c[3]Looks important\\c[0]!";
-				}
-
-				if (item.flags & ap.ITEM_FLAGS.TRAP) {
+				} else if (item.trap) {
 					rarityString = "\\c[1]Looks dangerous\\c[0].";
 				}
 
-				if (sc.multiworld.client.players.get(item.player)?.game == "CrossCode") {
-					if (item.item >= sc.multiworld.baseNormalItemId && item.item < sc.multiworld.baseDynamicItemId) {
-						const [internalItem, internalQty] =  sc.multiworld.getItemDataFromComboId(item.item);
+				let game = (forSender ? item.sender : item.receiver).game;
+
+				if (game == "CrossCode") {
+					if (item.id >= sc.multiworld.baseNormalItemId && item.id < sc.multiworld.baseDynamicItemId) {
+						const [internalItem, internalQty] =  sc.multiworld.getItemDataFromComboId(item.id);
 						const internalData = sc.inventory.getItem(internalItem);
 						if (internalData != undefined) {
 							return {
@@ -81,10 +195,10 @@ export function patch(plugin: MwRandomizer) {
 						}
 					}
 
-					if (sc.randoData.descriptions[item.item] != undefined) {
+					if (sc.randoData.descriptions[item.id] != undefined) {
 						return {
 							id: 0,
-							description: ig.LangLabel.getText(sc.randoData.descriptions[item.item]),
+							description: ig.LangLabel.getText(sc.randoData.descriptions[item.id]),
 						}
 					}
 
@@ -109,28 +223,128 @@ export function patch(plugin: MwRandomizer) {
 				return [comboId % this.numItems, (comboId / this.numItems + 1) | 0];
 			},
 
-			onStoragePostLoad() {
-				if (this.client.status != "Connected") {
-					if (this.connectionInfo) {
-						console.log("Reading connection info from save file");
-						this.login(this.connectionInfo);
-					} else {
-						sc.Dialogs.showInfoDialog(
-							"This save file has no Archipelago connection associated with it. " +
-								"To play online, open the pause menu and enter the details.",
-							true,
-						);
+			notifyItemsSent(items: ap.Item[]) {
+				for (const item of items) {
+					if (item.receiver.slot == this.client.players.self.slot) {
+						continue;
 					}
+					sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.ITEM_SENT, item);
 				}
 			},
 
-			onLevelLoaded() {
-				if (this.lastIndexSeen == null) {
-					this.lastIndexSeen = -1;
+			updateConnectionStatus(status) {
+				this.status = status;
+				sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED, status);
+			},
+
+			addMultiworldItem(item: ap.Item, index: number): void {
+				if (index <= this.lastIndexSeen) {
+					return;
 				}
 
-				if (!this.localCheckedLocations) {
-					this.localCheckedLocations = [];
+				const foreign = item.sender.slot != this.client.players.self.slot;
+
+				let displayMessage = foreign || item.id < this.baseNormalItemId;
+
+				if (this.receivedItemMap[item.id]) {
+					this.receivedItemMap[item.id] += 1;
+				} else {
+					this.receivedItemMap[item.id] = 1;
+				}
+
+				if (item.id < this.baseId + 4) {
+					if (!sc.model.player.getCore(sc.PLAYER_CORE.ELEMENT_CHANGE)) {
+						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_CHANGE, true);
+						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_HEAT, false);
+						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_COLD, false);
+						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_WAVE, false);
+						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_SHOCK, false);
+					}
+					let elementConstant = this.getElementConstantFromComboId(item.id);
+					if (elementConstant != null) {
+						sc.model.player.setCore(elementConstant, true);
+					}
+				} else if (this.options.progressiveChains[item.id]) {
+					if (!this.progressiveChainProgress[item.id]) {
+						this.progressiveChainProgress[item.id] = 0;
+					}
+					const chain = this.options.progressiveChains[item.id];
+					const itemIdToGive = chain[this.progressiveChainProgress[item.id]++];
+					if (itemIdToGive != undefined) {
+						// clone the item, replacing the item field with the new id
+						const copiedItem = new ap.Item(
+							this.client,
+							{
+								flags: item.flags,
+								item: itemIdToGive,
+								location: item.locationId,
+								player: item.sender.slot,
+							},
+							item.sender,
+							item.receiver,
+						);
+
+						this.addMultiworldItem(copiedItem, index);
+					}
+
+					displayMessage = false;
+				} else if (item.id < this.baseNormalItemId) {
+					switch (item.name) {
+						case "SP Upgrade":
+							sc.model.player.setSpLevel(Number(sc.model.player.spLevel) + 1);
+							sc.party.currentParty.forEach((name: string) => {
+								sc.party.getPartyMemberModel(name).setSpLevel(sc.model.player.spLevel);
+							});
+
+							break;
+					}
+				} else if (item.id < this.baseDynamicItemId) {
+					let [itemId, quantity] = this.getItemDataFromComboId(item.id);
+					if (this.options.keyrings && this.options.keyrings.includes(itemId)) {
+						quantity = 99;
+					}
+					sc.model.player.addItem(Number(itemId), quantity, foreign);
+				} else {
+					displayMessage = true;
+				}
+
+				if (displayMessage) {
+					sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.ITEM_RECEIVED, item);
+				}
+
+				this.lastIndexSeen = index;
+			},
+
+			async storeAllLocationInfo() {
+				let toScout: number[] = this.client.room.allLocations;
+
+				if (this.slimLocationInfo) {
+					this.locationInfo = {};
+					for (const [mwid, internalItem] of Object.entries(this.slimLocationInfo)) {
+						this.locationInfo[Number(mwid)] = this.createAPItem(internalItem, Number(mwid));
+					}
+					return;
+				} else {
+					this.slimLocationInfo = {};
+					this.locationInfo = {};
+					return this.client.scout(toScout)
+						.then((items: ap.Item[]) => {
+							for (const item of items) {
+								let mwid: number = item.locationId;
+								this.locationInfo[mwid] = item;
+								this.slimLocationInfo[mwid] = {
+									item: item.id,
+									player: item.receiver.slot,
+									flags: item.flags,
+								};
+							};
+						});
+				}
+			},
+
+			setVars() {
+				if (this.lastIndexSeen == null) {
+					this.lastIndexSeen = -1;
 				}
 
 				if (!this.progressiveChainProgress) {
@@ -141,9 +355,31 @@ export function patch(plugin: MwRandomizer) {
 					this.receivedItemMap = {};
 				}
 
-				if (sc.model.isTitle() || ig.game.mapName == "newgame") {
+				if (!this.questSettings) {
+					const obfuscationLevel = this.options.hiddenQuestObfuscationLevel;
+
+					this.questSettings = {
+						hidePlayer: obfuscationLevel == "hide_text" || obfuscationLevel == "hide_all",
+						hideIcon: obfuscationLevel == "hide_all"
+					};
+				}
+
+				if (!this.offlineCheckBuffer) {
+					this.offlineCheckBuffer = [];
+				}
+
+				if (!this.seenChests) {
+					this.seenChests = new Set();
+				}
+
+				if (ig.game.mapName == "newgame") {
 					return;
 				}
+
+				ig.vars.setDefault("mw.mode", this.mode);
+				ig.vars.setDefault("mw.options", this.options);
+				ig.vars.setDefault("mw.dataPackageChecksums", this.dataPackageChecksums);
+				ig.vars.set("mw.connectionInfo", this.connectionInfo);
 
 				for (let i = this.lastIndexSeen + 1; i < this.client.items.received.length; i++) {
 					let item = this.client.items.received[i];
@@ -152,191 +388,56 @@ export function patch(plugin: MwRandomizer) {
 
 				let area = ig.game.mapName.split(".")[0];
 
-				if (this.client.status == ap.CONNECTION_STATUS.CONNECTED) {
-					this.client.send({
-						cmd: "Set",
-						key: "area",
-						default: "rookie-harbor",
-						want_reply: false,
-						operations: [
-							{
-								operation: "replace",
-								value: area,
-							}
-						]
-					});
+				if (this.client.authenticated) {
+					if (this.offlineCheckBuffer.length > 0) {
+						this.client.check(...this.offlineCheckBuffer);
+						this.offlineCheckBuffer = [];
+					}
+
+					this.client.storage.prepare("area", "rookie-harbor")
+						.replace(area)
+						.commit(false);
 				}
 			},
 
-			notifyItemsSent(items: ap.NetworkItem[]) {
-				for (const item of items) {
-					if (item.player == this.client.data.slot) {
-						continue;
-					}
-					sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.ITEM_SENT, item);
-				}
+			unsetVars() {
+				// Lots of errors here, sorry
+
+				// Unset all variables that aren't bound to properties already
+				this.slimLocationInfo = null;
+				this.locationInfo = null;
+				this.connectionInfo = null;
+				this.mode = null;
+				this.options = null;
+
+				this.dataPackageChecksums = null;
+
+				this.questSettings = null;
+				this.receivedItemMap = null;
+				this.offlineCheckBuffer = null;
+				this.seenChests = null;
 			},
 
-			updateConnectionStatus() {
-				if (this.previousConnectionStatus == this.client.status) {
-					return;
-				}
-
-				this.previousConnectionStatus = this.client.status;
-
-				sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.CONNECTION_STATUS_CHANGED, this.client.status);
+			onLevelLoadStart() {
+				this.setVars();
 			},
 
-			addMultiworldItem(itemInfo: ap.NetworkItem, index: number): void {
-				if (index <= this.lastIndexSeen) {
-					return;
-				}
-
-				const foreign = itemInfo.player != this.client.data.slot;
-
-				let displayMessage = foreign || itemInfo.item < this.baseNormalItemId;
-
-				if (this.receivedItemMap[itemInfo.item]) {
-					this.receivedItemMap[itemInfo.item] += 1;
-				} else {
-					this.receivedItemMap[itemInfo.item] = 1;
-				}
-
-				if (itemInfo.item < this.baseId + 4) {
-					if (!sc.model.player.getCore(sc.PLAYER_CORE.ELEMENT_CHANGE)) {
-						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_CHANGE, true);
-						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_HEAT, false);
-						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_COLD, false);
-						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_WAVE, false);
-						sc.model.player.setCore(sc.PLAYER_CORE.ELEMENT_SHOCK, false);
-					}
-					let elementConstant = this.getElementConstantFromComboId(itemInfo.item);
-					if (elementConstant != null) {
-						sc.model.player.setCore(elementConstant, true);
-					}
-				} else if (this.options.progressiveChains[itemInfo.item]) {
-					if (!this.progressiveChainProgress[itemInfo.item]) {
-						this.progressiveChainProgress[itemInfo.item] = 0;
-					}
-					const chain = this.options.progressiveChains[itemInfo.item];
-					const itemIdToGive = chain[this.progressiveChainProgress[itemInfo.item]++];
-					if (itemIdToGive != undefined) {
-						const copiedItem = {...itemInfo};
-						copiedItem.item = itemIdToGive;
-						this.addMultiworldItem(copiedItem, index);
-					}
-
-					displayMessage = false;
-				} else if (itemInfo.item < this.baseNormalItemId) {
-					switch (this.gamepackage.item_id_to_name[itemInfo.item]) {
-						case "SP Upgrade":
-							sc.model.player.setSpLevel(Number(sc.model.player.spLevel) + 1);
-							sc.party.currentParty.forEach((name: string) => {
-								sc.party.getPartyMemberModel(name).setSpLevel(sc.model.player.spLevel);
-							});
-
-							break;
-					}
-				} else if (itemInfo.item < this.baseDynamicItemId) {
-					let [itemId, quantity] = this.getItemDataFromComboId(itemInfo.item);
-					if (this.options.keyrings && this.options.keyrings.includes(itemId)) {
-						quantity = 99;
-					}
-					sc.model.player.addItem(Number(itemId), quantity, foreign);
-				} else {
-					displayMessage = true;
-				}
-
-				if (displayMessage) {
-					sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.ITEM_RECEIVED, itemInfo);
-				}
-
-				this.lastIndexSeen = index;
-			},
-
-			getLocationInfo(mode: ap.CreateAsHintMode, locations: number[], callback: (info: ap.NetworkItem[]) => void) {
-				let listener = (packet: ap.LocationInfoPacket) => {
-					let matches = true;
-					for (let i = 0; i < locations.length; i++) {
-						if (packet.locations[i].location != locations[i]) {
-							matches = false;
-							break;
-						}
-					}
-
-					if (!matches) {
-						return;
-					}
-
-					this.client.removeListener("LocationInfo", listener);
-
-					callback(packet.locations);
-				};
-
-				this.client.addListener('LocationInfo', listener);
-
-				// The following function's definition is broken, so I ignore the error.
-				// @ts-ignore
-				this.client.locations.scout(mode, ...locations);
-			},
-
-			async storeAllLocationInfo() {
-				let listener = (packet: ap.LocationInfoPacket) => {
-					let locationInfoMap = ig.vars.get("mw.locationInfo");
-					packet.locations.forEach((item: any) => {
-						let mwid: number = item.location;
-						
-						// cut down on save file space by not storing unimportant parts
-						// item.location is redundant because you'll have the key whenever that's relevant
-						// item.class is a string which is the same for every instance
-						// together this saves several kilobytes of space in the save data
-						delete item.location;
-						delete item.class;
-						// @ts-ignore
-						locationInfoMap[mwid] = item;
-					});
-
-					this.client.removeListener("LocationInfo", listener);
-				};
-
-				this.client.addListener('LocationInfo', listener);
-
-				// In case the file was loaded on a previous version, we need to add the checked locations too.
-				// This might be able to go away once there is version checking.
-				let toScout: number[] = this.client.locations.missing
-					.concat(this.client.locations.checked);
-
-				if (!this.locationInfo) {
-					this.locationInfo = {};
-				} else {
-					toScout = toScout.filter((mwid: number) => !this.locationInfo.hasOwnProperty(mwid));
-
-					if (toScout.length >= 1) {
-						console.warn(`Need to scout following locations:\n${toScout.join('\n')}`);
-					}
-				}
-
-				this.client.locations.scout(
-					ap.CREATE_AS_HINT_MODE.NO_HINT,
-					...toScout
-				);
+			onStorageSave(savefile) {
+				savefile.vars.storage.mw.localCheckedLocations = Array.from(this.localCheckedLocations.values());
+				savefile.vars.storage.mw.seenChests = Array.from(this.seenChests.values());
 			},
 
 			async reallyCheckLocation(mwid: number) {
-				this.client.locations.check(mwid);
+				if (this.client.authenticated) {
+					this.client.check(mwid);
+				} else {
+					this.offlineCheckBuffer.push(mwid);
+				}
 
 				let loc = this.locationInfo[mwid];
-				if (loc == undefined) {
-					this.getLocationInfo(ap.CREATE_AS_HINT_MODE.NO_HINT, [mwid], sc.multiworld.notifyItemsSent.bind(sc.multiworld));
-				} else {
-					sc.multiworld.notifyItemsSent([loc]);
-				}
+				sc.multiworld.notifyItemsSent([loc]);
 
-				if (this.localCheckedLocations.indexOf(mwid) >= 0) {
-					return;
-				}
-
-				this.localCheckedLocations.push(mwid);
+				this.localCheckedLocations.add(mwid);
 			},
 
 			async reallyCheckLocations(mwids: number[]) {
@@ -345,66 +446,145 @@ export function patch(plugin: MwRandomizer) {
 				}
 			},
 
-			async login(info: ap.ConnectionInformation) {
-				try {
-					info.version = {
-						major: 0,
-						minor: 5,
-						build: 0,
-					};
-					await this.client.connect(info);
-				} catch (e) {
-					sc.Dialogs.showErrorDialog(
-						"Could not connect to Archipelago server. " +
-							"You may still be able to play if you have logged in to this server before, " + 
-							"but your progress will not be uploaded until " +
-							"you connect to the server.",
-						true
-					);
-					console.error("Could not connect to Archipelago server: ", e);
+			async login(info, mw, listener) {
+				const fatalError = (message: string) => {
+					listener.onLoginError(message);
+					this.updateConnectionStatus(sc.MULTIWORLD_CONNECTION_STATUS.DISCONNECTED);
+				}
 
+				this.updateConnectionStatus(sc.MULTIWORLD_CONNECTION_STATUS.CONNECTING);
+				// if no connectionInfo is specified, assume we need to deduce it from the save slot
+				if (!info) {
+					info = mw?.connectionInfo;
+					if (!info) {
+						// if info is not defined, assume that the data is malformed. report error and return
+						fatalError("No connection information or slot provided.");
+						return;
+					}
+				}
+
+				if (info.hasOwnProperty("hostname")) {
+					listener.onLoginProgress("Migrating save file.");
+
+					// the "hostname" property is part of the deprecated format so we use it as an indicator
+					let legacyInfo = info as sc.MultiWorldModel.LegacyConnectionInformation;
+
+					info = {
+						url: `${legacyInfo.hostname}:${legacyInfo.port}`,
+						name: legacyInfo.name,
+						password: legacyInfo.password ?? "",
+					};
+				}
+
+				info = info as sc.MultiWorldModel.ConnectionInformation;
+
+				// start loading known data packages in the background
+				// this may constitute wasted effort if connection fails for other reasons
+				let dataPackagePromise = loadDataPackage(mw?.dataPackageChecksums ?? {});
+
+				// listen for room info for data package fetching purposes
+				let roomInfoPromise = this.client.socket.wait("roomInfo");
+
+				let slotData: sc.MultiWorldModel.SlotData;
+
+				// actually try the connection
+				try {
+					listener.onLoginProgress(`Connecting to ${info.url}.`);
+					slotData = await this.client.login<sc.MultiWorldModel.SlotData>(
+						info.url,
+						info.name,
+						"CrossCode",
+						{
+							items: ap.API.itemsHandlingFlags.all,
+							password: info.password,
+						}
+					);
+
+					listener.onLoginProgress("Checking local game package cache.");
+
+					// okay, if we actually successfully connected, we should have the roomInfo packet
+					// also, if we had any data packages cached, those should be available now
+					// in either case, we'll need all of that information for the next phase
+					// possibly the room info promise idles forever but there's no way that happens, right?
+					let [gamePackages, roomInfo] = await Promise.all([dataPackagePromise, roomInfoPromise]);
+					let remoteChecksums = roomInfo[0].datapackage_checksums;
+					this.dataPackageChecksums = remoteChecksums;
+
+					// list of expected checksums, loaded from save file
+					// return empty object instead of undefined if slot is null or dataPackage doesn't exist
+					let checksums: Optional<Record<string, string>> = mw?.dataPackageChecksums;
+
+					if (checksums != undefined && !ig.equal(checksums, remoteChecksums)) {
+						fatalError("Some game checksums do not match.");
+						return;
+					}
+
+					listener.onLoginProgress("Downloading remaining game packages.");
+
+					// filter out nulls, but tsserver doesn't understand what i'm doing
+					// @ts-ignore
+					this.client.package.importPackage({ games: gamePackages })
+
+					// now, get the rest of the game packages from the server
+					// no effort is wasted because ap.js filters out redundant work
+					await this.client.package.fetchPackage();
+
+					saveDataPackage(this.client.package.exportPackage());
+				} catch (e: any) {
+					fatalError(e.message);
+					this.roomInfo = null;
 					return;
 				}
 
-				this.gamepackage = this.client.data.package.get("CrossCode")!;
+				// if we got through all of that, then we are officially connected
 
-				this.client.addListener('ReceivedItems', (packet: ap.ReceivedItemsPacket) => {
-					if (!ig.game.mapName || ig.game.mapName == "newgame") {
-						return;
-					}
-					let index = packet.index;
-					for (const [offset, itemInfo] of packet.items.entries()) {
-						this.addMultiworldItem(itemInfo, index + offset);
-					}
-				});
-
+				this.mode = slotData.mode;
+				this.options = slotData.options;
 				this.connectionInfo = info;
 
-				// this is always going to be a string
-				this.mode = this.client.data.slotData.mode as unknown as string;
-				this.options = this.client.data.slotData.options as unknown as MultiworldOptions;
+				// workaround for cc-open-world to use
+				ig.vars.setDefault("mw.mode", this.mode);
+				ig.vars.setDefault("mw.options", this.options);
 
-				const obfuscationLevel = this.options.hiddenQuestObfuscationLevel;
-
-				this.questSettings = {
-					hidePlayer: obfuscationLevel == "hide_text" || obfuscationLevel == "hide_all",
-					hideIcon: obfuscationLevel == "hide_all"
-				};
-
-				sc.multiworld.onLevelLoaded();
-
-				sc.Model.notifyObserver(sc.multiworld, sc.MULTIWORLD_MSG.OPTIONS_PRESENT);
-
-				this.storeAllLocationInfo();
-
-				let checkedSet = new Set(this.client.locations.checked);
-
-				for (const location of this.localCheckedLocations) {
-					if (!checkedSet.has(location)) {
-						this.reallyCheckLocation(location);
-					}
+				if (mw?.locationInfo) {
+					this.slimLocationInfo = mw?.locationInfo;
 				}
+
+				await this.storeAllLocationInfo();
+
+				sc.Model.notifyObserver(this, sc.MULTIWORLD_MSG.OPTIONS_PRESENT, this.options);
+
+				this.localCheckedLocations = new Set(mw?.checkedLocations);
+
+				for (const location of this.client.room.checkedLocations) {
+					this.localCheckedLocations.add(location);
+				}
+
+				this.seenChests = new Set(mw?.seenChests);
+
+				// if we're in game, then run the level loading code
+				// these functions are intended to complement each other but when login() is called from the title screen,
+				// it needs to wait to be in game before everything can initialize.
+				// but we can also work with this.
+				if (sc.model.isGame()) {
+					this.setVars();
+				}
+
+				this.updateConnectionStatus(sc.MULTIWORLD_CONNECTION_STATUS.CONNECTED);
+				listener.onLoginSuccess(`Connected to ${info.url}.`);
 			},
+
+			spawnLoginGui(connectionInfo, mw, successCallback, postEditCallback) {
+				let listenerGui = new sc.MultiworldLoginListenerGui(successCallback, postEditCallback);
+				ig.gui.addGuiElement(listenerGui);
+				listenerGui.show();
+				listenerGui.startLogin(connectionInfo, mw);
+			},
+
+			disconnect(planned) {
+				this.disconnectPlanned = planned ?? true;
+				this.client.socket.disconnect();
+			}
 		});
 
 		ig.addGameAddon(() => {

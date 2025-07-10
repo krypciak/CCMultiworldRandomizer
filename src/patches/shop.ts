@@ -57,7 +57,7 @@ export function patch(plugin: MwRandomizer) {
 				if (
 					mwid == undefined ||
 					sc.multiworld.locationInfo[mwid] == undefined || 
-					sc.multiworld.localCheckedLocations.includes(mwid)
+					sc.multiworld.localCheckedLocations.has(mwid)
 				) {
 					continue;
 				}
@@ -107,7 +107,7 @@ export function patch(plugin: MwRandomizer) {
 				const itemId: number = gui.data.id;
 				const mwid: number = this.shopData[itemId];
 
-				if (sc.multiworld.localCheckedLocations.includes(mwid)) {
+				if (sc.multiworld.localCheckedLocations.has(mwid)) {
 					continue;
 				}
 
@@ -120,7 +120,7 @@ export function patch(plugin: MwRandomizer) {
 
 				button.removeChildGui(button.textChild);
 
-				const itemInfo = plugin.getItemInfo(item);
+				const itemInfo = sc.multiworld.getItemInfo(item);
 
 				gui.apItem = item;
 				gui.slot = itemInfo.player;
@@ -133,10 +133,7 @@ export function patch(plugin: MwRandomizer) {
 					{ autoScroll: false, holdOnReset: false }
 				);
 
-				if (
-					sc.multiworld.locationInfo[mwid] != undefined &&
-					sc.multiworld.locationInfo[mwid].flags & ap.ITEM_FLAGS.PROGRESSION
-				) {
+				if (item.progression) {
 					toHint.push(mwid);
 				}
 
@@ -173,9 +170,14 @@ export function patch(plugin: MwRandomizer) {
 				button.addChildGui(worldGui);
 			}
 
-			if (sc.multiworld.options.questDialogHints && sc.multiworld.options.shopDialogHints && toHint.length > 0) {
+			if (
+				sc.multiworld.options.questDialogHints &&
+				sc.multiworld.options.shopDialogHints &&
+				toHint.length > 0 &&
+				sc.multiworld.client.authenticated
+			) {
 				// @ts-ignore
-				sc.multiworld.client.locations.scout(ap.CREATE_AS_HINT_MODE.HINT_ONLY_NEW, ...toHint);
+				sc.multiworld.client.scout(toHint, 2);
 			}
 
 			this.list.list.contentPane.hook.size.y += accum;
@@ -199,7 +201,7 @@ export function patch(plugin: MwRandomizer) {
 				const gui = entry.gui as unknown as sc.ShopItemButton;
 
 				if (gui.apItem) { 
-					const owned = sc.multiworld.localCheckedLocations.includes(this.shopData[gui.itemId!]);
+					const owned = sc.multiworld.localCheckedLocations.has(this.shopData[gui.itemId!]);
 					gui.data = sc.multiworld.getShopLabelsFromItemData(gui.apItem!);
 					gui.owned.setNumber(
 						owned ? 1 : 0,
@@ -269,7 +271,7 @@ export function patch(plugin: MwRandomizer) {
 			this.button.textChild.labelGui?.activate();
 
 			if (this.worldGui != undefined && this.slot != undefined) {
-				this.worldGui.setText(`\\c[3]${this.slot}`);
+				this.worldGui.setText(`\\C[orange]${this.slot}`);
 			}
 		},
 
@@ -285,7 +287,7 @@ export function patch(plugin: MwRandomizer) {
 
 		showLockedMessage() {
 			if (this.unlockItem != null && sc.multiworld.receivedItemMap[this.unlockItem] == undefined) {
-				let itemName = sc.multiworld.gamepackage.item_id_to_name[this.unlockItem];
+				let itemName = sc.multiworld.client.package.lookupItemName(sc.multiworld.client.game, this.unlockItem, true);
 				sc.menu.setInfoText(`Collect \\c[3]${itemName}\\c[0] to unlock this slot.`);
 				sc.menu.setBuffText("");
 			}

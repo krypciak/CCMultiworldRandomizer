@@ -4,12 +4,19 @@ import {RawChest} from "../item-data.model";
 
 declare global {
 	namespace ig.ENTITY {
-		interface Chest {
+		interface Chest extends ig.Entity.Settings {
 			mwCheck?: RawChest;
 			analyzeColor: sc.ANALYSIS_COLORS;
 			analyzeLabel: string;
-			rawChest: ap.NetworkItem;
+			collectedLabel: string;
+			rawChest: ap.Item | undefined;
 		}
+
+		interface ChestConstructor extends ImpactClass<Chest> {
+			new(...args: any[]): Chest;
+		}
+
+		var Chest: ChestConstructor;
 	}
 	namespace sc {
 		namespace QUICK_MENU_TYPES {
@@ -33,6 +40,7 @@ declare global {
 			interface Chest extends ig.BoxGui {
 				areaGui: sc.TextGui;
 				locationGui: sc.TextGui;
+				collectedGui: sc.TextGui;
 				line: sc.LineGui;
 				clearance: sc.TextGui;
 				arrow: sc.QuickItemArrow;
@@ -40,6 +48,7 @@ declare global {
 				active: boolean;
 
 				show(this: this, tooltip: sc.QuickMenuTypesBase): void;
+				hide(this: this): void;
 				setData(this: this, chest: ig.ENTITY.Chest): boolean;
 				alignToBase(this: this, otherHook: ig.GuiHook): void;
 			}
@@ -70,6 +79,10 @@ export function patch(plugin: MwRandomizer) {
 				return;
 			}
 
+			if (!this.isOpen) {
+				sc.multiworld.seenChests.add(this.mwCheck.mwids[0]);
+			}
+
 			const clearance =  sc.multiworld.options.chestClearanceLevels?.[this.mwCheck.mwids[0]];
 
 			if (clearance != undefined) {
@@ -79,43 +92,50 @@ export function patch(plugin: MwRandomizer) {
 			const anims = this.animSheet.anims as unknown as {
 				idleKey: ig.MultiDirAnimationSet
 				idleMasterKey: ig.MultiDirAnimationSet
+				idleGold: ig.MultiDirAnimationSet
+				idleSilver: ig.MultiDirAnimationSet
+				idleBronze: ig.MultiDirAnimationSet
 				idle: ig.MultiDirAnimationSet
 				open: ig.MultiDirAnimationSet
 				end: ig.MultiDirAnimationSet
 			}
-			const keyLayer = anims.idleKey.animations[1];
-			const masterKeyLayer = anims.idleMasterKey.animations[1];
-			let layerToAdd = null;
 
+			// FILLER items get a normal chest with an archipelago logo on it
+			// These are the default values
 			this.analyzeColor = sc.ANALYSIS_COLORS.GREY;
-			this.analyzeLabel = "Filler";
+			this.analyzeLabel = "\\C[blue]Filler";
+			this.collectedLabel = "\\c[3]Not Collected";
+			let sequence = 8;
 
-			let newOffY = 0;
+			let newOffX = 0;
+			let newOffY = 80;
 			this.rawChest = sc.multiworld.locationInfo[this.mwCheck.mwids[0]];
 
 			if (this.rawChest == undefined) {
 				return;
 			}
 
-			let flags = this.rawChest.flags;
-			if (flags & (ap.ITEM_FLAGS.NEVER_EXCLUDE | ap.ITEM_FLAGS.TRAP)) {
-				// USEFUL and TRAP items get a blue chest
-				newOffY = 80;
-				layerToAdd = keyLayer;
-				this.analyzeColor = sc.ANALYSIS_COLORS.BLUE;
-				this.analyzeLabel = "Useful";
-			} else if (flags & ap.ITEM_FLAGS.PROGRESSION) {
+			if (this.rawChest.progression) {
 				// PROGRESSION items get a green chest
-				newOffY = 136;
-				layerToAdd = masterKeyLayer;
+				newOffY = 192;
 				this.analyzeColor = sc.ANALYSIS_COLORS.GREEN;
-				this.analyzeLabel = "Progression";
+				this.analyzeLabel = "\\C[green]Progression";
+				sequence = 6;
+			} else if (this.rawChest.useful || this.rawChest.trap) {
+				// USEFUL and TRAP items get a blue chest
+				newOffY = 136;
+				this.analyzeColor = sc.ANALYSIS_COLORS.BLUE;
+				this.analyzeLabel = "\\C[dark-blue]Useful";
+				sequence = 7;
 			}
 
-			anims.idleKey = anims.idleMasterKey = anims.idle;
-
-			if (newOffY == 0) {
-				return;
+			if (sc.multiworld.localCheckedLocations.has(this.mwCheck.mwids[0])) {
+				// If the item was checked (i.e. in a divergent play session), make it gray
+				newOffX = 128;
+				newOffY = 0;
+				this.analyzeColor = sc.ANALYSIS_COLORS.GREY;
+				this.collectedLabel = "\\C[gray]Collected";
+				sequence = 0;
 			}
 
 			for (const name of Object.keys(anims) as (keyof typeof anims)[]) {
@@ -123,17 +143,28 @@ export function patch(plugin: MwRandomizer) {
 
 				if (name.startsWith("idle")) {
 					animations[0].sheet.offY = newOffY;
-					layerToAdd && animations.splice(1, 0, layerToAdd);
+					animations[0].sheet.offX = newOffX;
 				}
+
+				if (name == "idleGold") {
+					animations[1].sequence = [sequence];
+				}
+
 				if (name == "open" || name == "end") {
 					anims[name].animations[0].sheet.offY = newOffY + 24;
 				}
 			}
 		},
 
+		_initGfx() {
+			if (!this.isOpen && this.chestType.anim) {
+				this.setCurrentAnim(this.chestType.anim, true, null, true);
+			}
+		},
+
 		getQuickMenuSettings() {
 			let disabled = this.isOpen || (this.hideManager && this.hideManager.hidden);
-			if (this.mwCheck && this.rawChest) {
+			if (this.rawChest != undefined) {
 				return {
 					type: "Chest",
 					disabled: disabled,
@@ -153,13 +184,7 @@ export function patch(plugin: MwRandomizer) {
 		},
 
 		_reallyOpenUp() {
-			if (
-				this.mwCheck === undefined ||
-				this.mwCheck.mwids === undefined ||
-				this.mwCheck.mwids.length == 0 ||
-				sc.multiworld.locationInfo[this.mwCheck.mwids[0]] === undefined
-			) {
-				console.warn("Chest not in logic");
+			if (this.rawChest == undefined) {
 				return this.parent();
 			}
 
@@ -231,9 +256,14 @@ export function patch(plugin: MwRandomizer) {
 			this.addChildGui(this.arrow);
 
 			this.typeGui = new sc.TextGui("", {font: sc.fontsystem.tinyFont});
-			this.typeGui.setPos(8, 5);
+			this.typeGui.setPos(8, 13);
 			this.typeGui.setAlign(ig.GUI_ALIGN.X_LEFT, ig.GUI_ALIGN.Y_BOTTOM);
 			this.addChildGui(this.typeGui);
+
+			this.collectedGui = new sc.TextGui("", {font: sc.fontsystem.tinyFont});
+			this.collectedGui.setPos(0, 4);
+			this.collectedGui.setAlign(ig.GUI_ALIGN.X_CENTER, ig.GUI_ALIGN.Y_BOTTOM);
+			this.addChildGui(this.collectedGui);
 		},
 
 		show(tooltip) {
@@ -281,9 +311,10 @@ export function patch(plugin: MwRandomizer) {
 				this.line.hook.size.x = 117;
 			}
 
-			this.hook.size.y = 34 + this.locationGui.hook.size.y;
+			this.hook.size.y = 41 + this.locationGui.hook.size.y;
 
-			this.typeGui.setText(`Type: \\c[3]${chest.analyzeLabel}\\c[0]`);
+			this.typeGui.setText(`Type: ${chest.analyzeLabel}\\c[0]`);
+			this.collectedGui.setText(chest.collectedLabel);
 
 			return true;
 		},

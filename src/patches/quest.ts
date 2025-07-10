@@ -216,9 +216,9 @@ export function patch(plugin: MwRandomizer) {
 
 			for (let i = 0; i < mwQuest.mwids.length; i++) {
 				const mwid: number = mwQuest.mwids[i];
-				const item: ap.NetworkItem = sc.multiworld.locationInfo[mwid];
+				const item = sc.multiworld.locationInfo[mwid];
 
-				const itemInfo = plugin.getItemInfo(item);
+				const itemInfo = sc.multiworld.getItemInfo(item);
 
 				let icon = "ap-logo";
 				let useGenericIcon = true;
@@ -274,9 +274,9 @@ export function patch(plugin: MwRandomizer) {
 		) {
 			this.parent();
 
-			if (sc.multiworld.client.status != ap.CONNECTION_STATUS.CONNECTED) {
-				return;
-			}
+			// if (sc.multiworld.client.status != ap.CONNECTION_STATUS.CONNECTED) {
+			// 	return;
+			// }
 			this.setSize(width, height);
 
 			const hiddenQuestRewardMode = sc.multiworld.options.hiddenQuestRewardMode;
@@ -299,11 +299,11 @@ export function patch(plugin: MwRandomizer) {
 			if (sc.multiworld.options.questDialogHints && !this.hideRewards) {
 				const toHint = mwQuest.mwids.filter(mwid =>
 					sc.multiworld.locationInfo[mwid] != undefined &&
-					sc.multiworld.locationInfo[mwid].flags & ap.ITEM_FLAGS.PROGRESSION
+					sc.multiworld.locationInfo[mwid].progression
 				);
 
-				if (toHint.length > 0) {
-					sc.multiworld.client.locations.scout(ap.CREATE_AS_HINT_MODE.HINT_ONLY_NEW, ...toHint);
+				if (toHint.length > 0 && sc.multiworld.client.authenticated) {
+					sc.multiworld.client.scout(toHint, 2);
 				}
 			}
 
@@ -314,10 +314,10 @@ export function patch(plugin: MwRandomizer) {
 			let accum = 0;
 
 			for (let i = 0; i < mwQuest.mwids.length; i++) {
-				const mwid: number = mwQuest.mwids[i]
-				const item: ap.NetworkItem = sc.multiworld.locationInfo[mwid];
+				const mwid: number = mwQuest.mwids[i];
+				const item = sc.multiworld.locationInfo[mwid];
 
-				const itemInfo = plugin.getItemInfo(item);
+				const itemInfo = sc.multiworld.getItemInfo(item);
 
 				if (this.hideRewards) {
 					itemInfo.label = "?????????????";

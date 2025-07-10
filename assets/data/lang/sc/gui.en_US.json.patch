@@ -1,8 +1,33 @@
 {
 	"labels": {
+		"pause-screen": {
+			"archipelago": "\\i[ap-logo]Archipelago"
+		},
 		"menu": {
 			"menu-titles": {
-				"apConnection": "Archipelago"
+				"apConnection": "Connection Info",
+				"apTextClient": "AP Text Client"
+			}
+		},
+		"title-screen": {
+			"start": "New Game \\i[ap-logo]",
+			"startPlus": "New Game \\i[ap-logo]"
+		},
+		"mw": {
+			"warnings": {
+				"no-new-game-plus": "It appears that you haven't completed the game before. It is \\c[3]highly recommended\\c[0] to do so before attempting CrossCode randomized. See the CCMultiworldRandomizer setup guide for more information.",
+				"unplanned-disconnect": "You were unexpectedly disconnected from the server. Would you like to reconnect?"
+			},
+			"connection-menu": {
+				"url": "The URL to connect to, (i.e. 'archipelago.gg:38281').",
+				"name": "The name field in your YAML, (i.e. 'Player1').",
+				"password": "The multiworld's password.",
+				"connect": "Connect to the multiworld using these details.",
+				"disconnect": "Disconnect from the multiworld if connected."
+			},
+			"text-client": {
+				"apConnection": "Modify connection details, disconnect, or reconnect.",
+				"new-game": "View or tweak New Game+ options."
 			}
 		}
 	}
