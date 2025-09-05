@@ -752,6 +752,7 @@
 			},
 			"condition": [
 				[ "quest", "Hot Trail" ],
+				[ "item", "Wave", 1 ],
 				[ "item", "Meteor Shade", 1 ]
 			],
 			"reward": [
