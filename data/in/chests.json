@@ -4975,6 +4975,11 @@
 					"item",
 					"Purple Bolt Shade",
 					1
+				],
+				[
+					"item",
+					"Wave",
+					1
 				]
 			],
 			"reward": [
@@ -5972,6 +5977,13 @@
 				"linear": "23",
 				"open": "open10"
 			},
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
+				]
+			],
 			"reward": [
 				[
 					"item",
@@ -5991,6 +6003,13 @@
 				"linear": "23",
 				"open": "open10"
 			},
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
+				]
+			],
 			"reward": [
 				[
 					"item",
@@ -6010,6 +6029,13 @@
 				"linear": "23",
 				"open": "open10"
 			},
+			"condition": [
+				[
+					"item",
+					"Wave",
+					1
+				]
+			],
 			"reward": [
 				[
 					"item",
