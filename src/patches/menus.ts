@@ -42,6 +42,12 @@ export function patch(plugin: MwRandomizer) {
 				textSpeed: ig.TextBlock.SPEED.FASTER,
 			},
 			{
+				label: "A New Home",
+				callback(options) {
+					return ig.lang.get(`sc.gui.mw.game-info-menu.enabled.${options.dlcActive}`);
+				},
+			},
+			{
 				label: "Keyrings",
 				callback(options) {
 					return ig.lang.get(`sc.gui.mw.game-info-menu.enabled.${options.keyrings.length !== 0}`);
@@ -71,6 +77,21 @@ export function patch(plugin: MwRandomizer) {
 					);
 				},
 				textSpeed: ig.TextBlock.SPEED.FAST,
+			},
+			{
+				label: "Botanics",
+				callback(options) {
+					const isRandomized = sc.multiworld.locationInfo[3235824920] !== undefined;
+					if (!isRandomized) {
+						return getRandomizedLabel(false);
+					}
+
+					return (
+						getRandomizedLabel(true) +
+						" (" + sc.menu.getTotalDropsFoundAndCompleted() +
+						"/" + options.botanicsCompletionAmount + ")"
+					);
+				},
 			},
 			{
 				label: "Chest Locks",
