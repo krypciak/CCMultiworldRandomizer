@@ -25,8 +25,10 @@ if (versionArray.length > 3) {
 	versionString += `-${versionArray[3]}`;
 }
 
-const ccmodJSON = JSON.parse((await fs.readFile("data/in/master.json")).toString("utf-8"));
+const ccmodJSON = JSON.parse((await fs.readFile("ccmod.json")).toString("utf-8"));
 ccmodJSON["version"] = versionString;
+await fs.writeFile("ccmod.json", JSON.stringify(ccmodJSON, undefined, "\t"));
+
 if (process.argv.length > 2) {
 	versionString += `-${process.argv[2]}`;
 }
