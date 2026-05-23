@@ -1353,6 +1353,7 @@
 				"open": "open10"
 			},
 			"condition": [
+				[ "region", "open", "open9" ],
 				[ "quest", "Meating Expectations" ]
 			],
 			"reward": [
