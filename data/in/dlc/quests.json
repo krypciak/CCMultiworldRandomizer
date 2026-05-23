@@ -15,11 +15,8 @@
 				"linear": "23",
 				"open": "openDLC_Beach" 
 			},
-			"condition": [ 
-				[ "item", "Wave", 1 ],
-				[ "item", "Shock", 1 ],
-				[ "item", "Heat", 1 ],
-				[ "item", "Cold", 1 ]
+			"condition": [
+				[ "region", "open", "open15.1" ]
 			],
 			"reward": [
 				[ "item", "Champion's Towel", 1 ],
