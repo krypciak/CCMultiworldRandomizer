@@ -67,7 +67,7 @@ for (const dir of directories) {
 			continue;
 		}
 		console.log("ADDING: ", path);
-		const zipstream = filename.endsWith(".png") ? new fflate.ZipPassThrough(path) : new fflate.ZipDeflate(path);
+		const zipstream = path.endsWith(".png") ? new fflate.ZipPassThrough(path) : new fflate.ZipDeflate(path);
 		zipfile.add(zipstream);
 		zipstream.push(await fs.readFile(path), true);
 	}
