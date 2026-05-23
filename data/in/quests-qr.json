@@ -286,7 +286,7 @@
 			},
 			"condition": [
 				[ "quest", "A Promise is a Promise 5" ],
-				[ "item", "Mine Pass" ]
+				[ "item", "Guild Pass" ]
 			],
 			"_comment": "1 cp for each element"
 		},
