@@ -19,7 +19,8 @@
 				[ "item", "Wave", 1 ],
 				[ "item", "Shock", 1 ],
 				[ "item", "Heat", 1 ],
-				[ "item", "Cold", 1 ]
+				[ "item", "Cold", 1 ],
+                [ "item", "Azure Archipelago Pass", 1 ]
 			],
 			"reward": [
 				[ "item", "Champion's Towel", 1 ],
@@ -36,7 +37,8 @@
 			"condition": [ 
 				[ "quest", "Trial of Progression" ],
 				[ "item", "Wave", 1 ],
-				[ "item", "Heat", 1 ]
+				[ "item", "Heat", 1 ],
+                [ "item", "Azure Archipelago Pass", 1 ]
 			],
 			"reward": [
 				[ "item", "Moonstone", 5 ],
@@ -104,7 +106,8 @@
 							]
 						]
 					]
-				]
+				],
+                [ "item", "Azure Archipelago Pass", 1 ]
 			],
 			"reward": [
 				[ "item", "Fox Sake", 3 ],
@@ -122,7 +125,8 @@
 				[ "quest", "Lakeside Escort" ],
 				[ "region", "open", "openDLC_Beach" ],
                 [ "item", "Cold", 1 ],
-                [ "item", "Wave", 1 ]
+                [ "item", "Wave", 1 ],
+                [ "item", "Azure Archipelago Pass", 1 ]
 			],
 			"reward": [
 				[ "item", "The Last Straw", 1 ],
@@ -139,7 +143,8 @@
 			},
 			"condition": [
 				[ "quest", "In Cawhoofs" ],
-				[ "region", "open", "open20" ]
+				[ "region", "open", "open20" ],
+                [ "item", "Azure Archipelago Pass", 1 ]
 			],
 			"reward": [
 				[ "item", "Asteroid Chunk", 1 ],
@@ -162,13 +167,14 @@
 				[ "region", "open", "open10.Right" ],
 				[ "region", "open", "open11" ],
 				[ "or",
-					[ "region", "open", "open10.Left"],
+					[ "region", "open", "open10.Left" ],
 					[ "and",
 						[ "region", "open", "open5" ],
 						[ "region", "open", "open8" ],
 						[ "region", "open", "open10.Infested" ]
 					]
-				]
+				],
+                [ "item", "Azure Archipelago Pass", 1 ]
 			],
 			"reward": [
 				[ "item", "Moon Chunk", 1 ],
@@ -188,7 +194,8 @@
 				[ "item", "Shock" ],
 				[ "region", "open", "open10.Right" ],
 				[ "region", "open", "open10.Infested" ],
-				[ "region", "open", "open16" ]
+				[ "region", "open", "open16" ],
+                [ "item", "Azure Archipelago Pass", 1 ]
 			],
 			"reward": [
 				[ "item", "Amethyst", 4 ],
@@ -207,7 +214,8 @@
 				[ "region", "open", "open3" ],
 				[ "region", "open", "open5" ],
 				[ "region", "open", "open10.Infested" ],
-				[ "item", "Heat" ]
+				[ "item", "Heat" ],
+                [ "item", "Azure Archipelago Pass", 1 ]
 			],
 			"reward": [
 				[ "item", "Garnet", 5 ],
@@ -225,7 +233,8 @@
 			"reward": [
 				[ "item", "Epic Metal", 3 ],
 				[ "item", "Antique Token", 1 ],
-				[ "item", "Echo Roll", 5 ]
+				[ "item", "Echo Roll", 5 ],
+                [ "item", "Azure Archipelago Pass", 1 ]
 			],
 			"_comment": "1 cp each element"
 		},
@@ -240,7 +249,8 @@
 				[ "item", "Humming Razor", 1 ],
 				[ "item", "Shock", 1 ],
 				[ "region", "open", "open10.Right" ],
-				[ "region", "open", "open16" ]
+				[ "region", "open", "open16" ],
+                [ "item", "Azure Archipelago Pass", 1 ]
 			],
 			"reward": [
 				[ "item", "Thrashing Ripper", 1 ],
@@ -256,7 +266,8 @@
 			},
 			"condition": [ 
 				[ "quest", "Wet Work" ],
-                [ "item", "Wave", 1 ]
+                [ "item", "Wave", 1 ],
+                [ "item", "Azure Archipelago Pass", 1 ]
 			],
 			"reward": [
 				[ "item", "Ruby", 6 ],
