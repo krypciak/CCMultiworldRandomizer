@@ -75,7 +75,10 @@
                 "Just Water",
                 "Goat Cheese",
                 "Goat Milk"
-			]
+			],
+            "metadata": {
+                "quest": true
+            }
 		},
 		"Rhombus Weapons + DLC": {
 			"location": {
