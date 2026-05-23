@@ -119,7 +119,7 @@
 				"open": "open10"
 			},
 			"condition": [
-				[ "quest", "Lakeside Escort" ],
+				[ "quest", "Rooting for Power" ],
 				[ "region", "open", "openDLC_Beach" ],
                 [ "item", "Cold", 1 ],
                 [ "item", "Wave", 1 ]
