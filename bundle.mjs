@@ -63,10 +63,10 @@ for (const dir of directories) {
 			continue;
 		}
 		const path = `${dirent.parentPath}/${dirent.name}`;
-		console.log("ADDING: ", path);
 		if (exclude.includes(path)) {
 			continue;
 		}
+		console.log("ADDING: ", path);
 		const zipstream = filename.endsWith(".png") ? new fflate.ZipPassThrough(path) : new fflate.ZipDeflate(path);
 		zipfile.add(zipstream);
 		zipstream.push(await fs.readFile(path), true);
