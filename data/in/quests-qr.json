@@ -1006,7 +1006,7 @@
 			"questid": "trailblaze-jungle-2",
 			"region": {
 				"linear": "23",
-				"open": "open10.Mid"
+				"open": "open10.Right"
 			},
 			"condition": [
 				[ "region", "open", "open10.Left" ]
