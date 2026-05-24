@@ -15,12 +15,9 @@
 				"linear": "23",
 				"open": "openDLC_Beach" 
 			},
-			"condition": [ 
-				[ "item", "Wave", 1 ],
-				[ "item", "Shock", 1 ],
-				[ "item", "Heat", 1 ],
-				[ "item", "Cold", 1 ],
-                [ "item", "Azure Archipelago Pass", 1 ]
+			"condition": [
+				[ "region", "open", "open15.1" ],
+				[ "item", "Azure Archipelago Pass", 1 ]
 			],
 			"reward": [
 				[ "item", "Champion's Towel", 1 ],
@@ -122,7 +119,7 @@
 				"open": "open10"
 			},
 			"condition": [
-				[ "quest", "Lakeside Escort" ],
+				[ "quest", "Rooting for Power" ],
 				[ "region", "open", "openDLC_Beach" ],
                 [ "item", "Cold", 1 ],
                 [ "item", "Wave", 1 ],
