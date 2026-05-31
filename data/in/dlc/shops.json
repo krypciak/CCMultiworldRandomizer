@@ -41,6 +41,24 @@
                 "Laser Boots"
 			]
 		},
+		"Homestedt Weapons + Azure A. Pass": {
+			"location": {
+				"shop": "homestedtWeapons",
+				"area": "evo-village"
+			},
+			"region": {
+				"open": "openDLC1"
+			},
+			"condition": [
+				[ "item", "Azure Archipelago Pass", 1 ]
+			],
+			"slots": [
+				"Cross Goggles",
+				"Cross Edge",
+				"Cross Mail",
+				"Cross Boots"
+			]
+		},
 		"Beach Weapons": {
 			"location": {
 				"shop": "beachWeapons",
