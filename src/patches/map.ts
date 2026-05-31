@@ -52,7 +52,7 @@ export function patch(plugin: MwRandomizer) {
 
 				let isSeen = sc.multiworld.seenChests.has(info.mwid);
 
-				if (!isSeen || sc.multiworld.options.chestReveal == true) {
+				if (isSeen || sc.multiworld.options.chestReveal == true) {
 					if (loc.progression) {
 						this.addMarkerIcon(sc.MULTIWORLD_MARKER_ICON_COORDS.progression);
 					} else if (loc.useful || loc.trap) {
