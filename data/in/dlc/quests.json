@@ -227,11 +227,13 @@
 				"linear": "23",
 				"open": "open20" 
 			},
+			"condition": [
+				[ "item", "Azure Archipelago Pass", 1 ]
+			],
 			"reward": [
 				[ "item", "Epic Metal", 3 ],
 				[ "item", "Antique Token", 1 ],
-				[ "item", "Echo Roll", 5 ],
-                [ "item", "Azure Archipelago Pass", 1 ]
+				[ "item", "Echo Roll", 5 ]
 			],
 			"_comment": "1 cp each element"
 		},
