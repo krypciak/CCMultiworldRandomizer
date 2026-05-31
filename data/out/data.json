@@ -4716,7 +4716,11 @@
 					"397": 3235824896,
 					"398": 3235824897,
 					"399": 3235824898,
-					"400": 3235824899
+					"400": 3235824899,
+					"568": 3235825008,
+					"567": 3235825009,
+					"569": 3235825010,
+					"570": 3235825011
 				},
 				"beachWeapons": {
 					"568": 3235824900,
@@ -5107,7 +5111,11 @@
 					"397": 3235924530,
 					"398": 3235924531,
 					"399": 3235924532,
-					"400": 3235924533
+					"400": 3235924533,
+					"568": 3235924556,
+					"567": 3235924557,
+					"569": 3235924558,
+					"570": 3235924559
 				},
 				"beachWeapons": {
 					"568": 3235924535,
@@ -6165,32 +6173,44 @@
 		"3235924533": {
 			"en_US": "Unlocks the slot selling \\c[3]Laser Boots\\c[0] in \\c[3]Homestedt Weaponry\\c[0]."
 		},
+		"3235924556": {
+			"en_US": "Unlocks the slot selling \\c[3]Cross Goggles\\c[0] in \\c[3]Homestedt Weaponry\\c[0]."
+		},
+		"3235924536": {
+			"en_US": "Unlocks slots selling \\c[3]Cross Goggles\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924557": {
+			"en_US": "Unlocks the slot selling \\c[3]Cross Edge\\c[0] in \\c[3]Homestedt Weaponry\\c[0]."
+		},
+		"3235924538": {
+			"en_US": "Unlocks slots selling \\c[3]Cross Edge\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924558": {
+			"en_US": "Unlocks the slot selling \\c[3]Cross Mail\\c[0] in \\c[3]Homestedt Weaponry\\c[0]."
+		},
+		"3235924540": {
+			"en_US": "Unlocks slots selling \\c[3]Cross Mail\\c[0] in \\c[3]all shops\\c[0]."
+		},
+		"3235924559": {
+			"en_US": "Unlocks the slot selling \\c[3]Cross Boots\\c[0] in \\c[3]Homestedt Weaponry\\c[0]."
+		},
+		"3235924542": {
+			"en_US": "Unlocks slots selling \\c[3]Cross Boots\\c[0] in \\c[3]all shops\\c[0]."
+		},
 		"3235924534": {
 			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Beach Weapon Store\\c[0]."
 		},
 		"3235924535": {
 			"en_US": "Unlocks the slot selling \\c[3]Cross Goggles\\c[0] in \\c[3]Beach Weapon Store\\c[0]."
 		},
-		"3235924536": {
-			"en_US": "Unlocks slots selling \\c[3]Cross Goggles\\c[0] in \\c[3]all shops\\c[0]."
-		},
 		"3235924537": {
 			"en_US": "Unlocks the slot selling \\c[3]Cross Edge\\c[0] in \\c[3]Beach Weapon Store\\c[0]."
-		},
-		"3235924538": {
-			"en_US": "Unlocks slots selling \\c[3]Cross Edge\\c[0] in \\c[3]all shops\\c[0]."
 		},
 		"3235924539": {
 			"en_US": "Unlocks the slot selling \\c[3]Cross Mail\\c[0] in \\c[3]Beach Weapon Store\\c[0]."
 		},
-		"3235924540": {
-			"en_US": "Unlocks slots selling \\c[3]Cross Mail\\c[0] in \\c[3]all shops\\c[0]."
-		},
 		"3235924541": {
 			"en_US": "Unlocks the slot selling \\c[3]Cross Boots\\c[0] in \\c[3]Beach Weapon Store\\c[0]."
-		},
-		"3235924542": {
-			"en_US": "Unlocks slots selling \\c[3]Cross Boots\\c[0] in \\c[3]all shops\\c[0]."
 		},
 		"3235924543": {
 			"en_US": "Unlocks \\c[3]all item slots\\c[0] in the shop \\c[3]Goat Zira's Shop\\c[0]."
