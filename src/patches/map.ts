@@ -60,8 +60,6 @@ export function patch(plugin: MwRandomizer) {
 					} else {
 						this.addMarkerIcon(sc.MULTIWORLD_MARKER_ICON_COORDS.filler);
 					}
-				} else {
-					this.addMarkerIcon(sc.MULTIWORLD_MARKER_ICON_COORDS.unknown);
 
 					let clearance = (info as MarkerInfo<"Chest">).settings.defaultClearance;
 
@@ -72,6 +70,8 @@ export function patch(plugin: MwRandomizer) {
 							sc.MULTIWORLD_MARKER_ICON_COORDS["rim-" + clearance.toLowerCase()]
 						);
 					}
+				} else {
+					this.addMarkerIcon(sc.MULTIWORLD_MARKER_ICON_COORDS.unknown);
 				}
 			}
 		},
