@@ -1,4 +1,5 @@
 import * as fs from "node:fs/promises";
+import { createWriteStream } from "node:fs"; 
 import * as process from "node:process";
 import * as fflate from "fflate";
 
@@ -34,17 +35,22 @@ if (process.argv.length > 2) {
 }
 
 const filename = `CCMultiworldRandomizer-${versionString}.ccmod`;
-const outfile = await fs.open(filename, "w");
+const outfile = createWriteStream(filename);
 
-const zipfile = new fflate.Zip((err, data, final) => {
-	if (err) {
-		console.error(err);
-		return;
-	}
-	outfile.write(data);
-	if (final) {
-		outfile.close();
-	}
+const zipfile = new fflate.Zip();
+
+const finishedPromise = new Promise((res, rej) => {
+	zipfile.ondata = (err, data, final) => {
+		if (err) {
+			console.error(err);
+			rej(err);
+		}
+		outfile.write(data);
+		if (final) {
+			outfile.close();
+			res();
+		}
+	};
 });
 
 for (const path of files) {
@@ -74,3 +80,5 @@ for (const dir of directories) {
 }
 
 zipfile.end();
+
+await finishedPromise;
