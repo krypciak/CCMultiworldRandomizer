@@ -37,20 +37,15 @@ if (process.argv.length > 2) {
 const filename = `CCMultiworldRandomizer-${versionString}.ccmod`;
 const outfile = createWriteStream(filename);
 
-const zipfile = new fflate.Zip();
-
-const finishedPromise = new Promise((res, rej) => {
-	zipfile.ondata = (err, data, final) => {
-		if (err) {
-			console.error(err);
-			rej(err);
-		}
-		outfile.write(data);
-		if (final) {
-			outfile.close();
-			res();
-		}
-	};
+const zipfile = new fflate.Zip((err, data, final) => {
+	if (err) {
+		console.error(err);
+		return;
+	}
+	outfile.write(data);
+	if (final) {
+		outfile.close();
+	}
 });
 
 for (const path of files) {
@@ -80,5 +75,3 @@ for (const dir of directories) {
 }
 
 zipfile.end();
-
-await finishedPromise;
